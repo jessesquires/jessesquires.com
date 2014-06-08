@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	{% include head.html %}
+
+	<body>
+		{% include header.html %}
+		{% include menu.html %}
+
+		<div id="main" class="container">
+			<div class="row">
+				<div class="col-sm-12 col-sm-offset-0 col-md-8 col-md-offset-2">
+					
+					{{ content }}
+
+				</div> <!-- col -->
+			</div> <!-- row -->
+		</div> <!-- main -->
+		
+		{% include footer.html %}
+
+		{% include foot.html %}
+	</body>
+
+</html>
