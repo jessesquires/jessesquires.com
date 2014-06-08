@@ -49,6 +49,13 @@ hr {
 	border-color: #d7d7d7;
 }
 
+#main {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
 #footer {
 	text-align: center;
 }
@@ -62,16 +69,18 @@ hr {
 	height: 80px;
 }
 
+.page {
 
-
-
-
-#main {
-	margin-top: 10px;
-	margin-bottom: 25px;
-	/*background-color: #666666;*/
-	padding: 20px;
 }
+
+.post {
+
+}
+
+.related {
+
+}
+
 
 a {
 	color: #5c9199;
