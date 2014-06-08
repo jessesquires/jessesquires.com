@@ -5,21 +5,19 @@
 
 	<body>
 		{% include header.html %}
-		{% include menu.html %}
 
-		<div id="main" class="container">
-			<div class="row">
-				<div class="col-sm-12 col-sm-offset-0 col-md-8 col-md-offset-2">
-
-					{{ content }}
-					
-				</div> <!-- col -->
-			</div> <!-- row -->
+		<div id="main">
+			<section class="container">
+				<div class="row">
+					<div class="col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1">
+						{{ content }}
+					</div> <!-- col -->
+				</div> <!-- row -->
+			</section> <!-- container -->
 		</div> <!-- main -->
 
 		{% include footer.html %}
 
 		{% include foot.html %}
 	</body>
-
 </html>
