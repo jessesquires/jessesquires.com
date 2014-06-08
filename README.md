@@ -2,7 +2,9 @@
 
 This blog mostly contains bits about iOS, Objective-C, and Swift.
 
-It was lovingly built with [Jekyll](http://jekyllrb.com) and [Bootstrap](http://getbootstrap.com) and is hosted by [GitHub](https://pages.github.com).
+>Lovingly built with [Jekyll](http://jekyllrb.com), [Bootstrap](http://getbootstrap.com), and [Font Awesome](http://fortawesome.github.io/Font-Awesome/).
+>
+>Generously hosted by [GitHub](https://pages.github.com).
 
 ## License
 
