@@ -1,4 +1,5 @@
 # Dependencies
+markdown: redcarpet
 highlighter: pygments
 
 # Permalinks
@@ -8,3 +9,5 @@ permalink: pretty
 title: 'Jesse Squires'
 tagline: 'Software developer in San Francisco'
 timezone: America/Los_Angeles
+
+paginate: 1
