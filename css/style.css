@@ -14,7 +14,6 @@ ul {
 
 ul li {
 	list-style-type: none;
-	/*color: #F2F2F2;*/
 	display: inline-block;
 	margin-top: 5px;
 	margin-bottom: 5px;
@@ -55,8 +54,6 @@ hr {
 }
 
 #footer small {
-	/*font-size: 11px;*/
-	/*color: #666666;*/
 	padding: 20px;
 }
 
@@ -72,7 +69,7 @@ hr {
 #main {
 	margin-top: 10px;
 	margin-bottom: 25px;
-	background-color: #666666;
+	/*background-color: #666666;*/
 	padding: 20px;
 }
 

@@ -1,2 +1,10 @@
-pygments: true
-github: [Repository metadata]
+# Dependencies
+highlighter: pygments
+
+# Permalinks
+permalink: pretty
+
+# Setup
+title: 'Jesse Squires'
+tagline: 'Software developer in San Francisco'
+timezone: America/Los_Angeles
