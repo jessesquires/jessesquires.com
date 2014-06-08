@@ -131,17 +131,10 @@ header hr {
 
 /* FOOTER */
 
-#footer {
-	text-align: center;
-}
-
-#footer small {
-	padding: 20px;
-}
-
-#footer img {
-	width: 80px;
-	height: 80px;
+#hblogo {
+	width: 22px;
+	height: 22px;
+	margin-bottom: 10px;
 }
 
 /* CUSTOM CLASSES */
