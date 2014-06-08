@@ -1,7 +1,5 @@
 # jessesquires.github.io
 
-## About
-
 This blog mostly contains bits about iOS, Objective-C, and Swift.
 
 It was lovingly built with [Jekyll](http://jekyllrb.com) and [Bootstrap](http://getbootstrap.com) and is hosted by [GitHub](https://pages.github.com).
