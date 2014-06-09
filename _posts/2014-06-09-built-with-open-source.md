@@ -14,7 +14,7 @@ This world would be significantly different without the concept of [open-source]
 This site is lovingly powered by [Jekyll](http://jekyllrb.com), [Bootstrap](http://getbootstrap.com), and [Font Awesome](http://fortawesome.github.io/Font-Awesome/), and it is generously hosted via [GitHub Pages](https://pages.github.com) &mdash; *all of which are built on and influenced by open-source*.
 
 <blockquote>
-	<p>If I have seen further it is by standing on ye sholders of giants.</p>
+	<p>If I have seen further it is by standing on the shoulders of giants.</p>
 	<footer>
 		<a href="http://en.wikiquote.org/wiki/Isaac_Newton" target="_blank">Isaac Newton</a>
 		(or <a href="http://en.wikipedia.org/wiki/Bernard_of_Chartres" target="_blank">Bernard of Chartres</a>, if you're hip with French philosophers)
