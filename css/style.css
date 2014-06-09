@@ -48,6 +48,11 @@ ul li {
 	margin: 2px;
 }
 
+blockquote {
+	border-color: #666666;
+	color: #999999;
+}
+
 .center { 
 	float: none; 
 	margin-left: auto; 
