@@ -2,26 +2,27 @@
 layout: default
 ---
 
-<article>
-	<div class="post">
-		<h1 class="post-title">{{ page.title }}</h1>
-		<span class="post-date">{{ page.date | date_to_string }}</span>
-		{{ content }}
-	</div>
+<article class="page">
+	
+	<span class="center return-home"><a href="/"><i class="fa fa-chevron-up fa-2x"></i></a></span>
+
+	<h1 class="post-title">{{ page.title }}</h1>
+		<h2 class="post-subtitle">
+			<small>{{ page.subtitle }}</small> 
+			<small class="post-date">{{ page.date | date_to_string }}</small>
+		</h2>
+		<div class="post-content">
+			{{ content }}
+		</div> <!-- post-content -->
 </article>
 
+<hr>
 
-<article>
-	<div class="related">
-		<h2>Related Posts</h2>
-		<ul class="related-posts">
-			{% for post in site.related_posts limit:3 %}
-				<li>
-					<h3>
-						<a href="{{ post.url }}">{{ post.title }} <small>{{ post.date | date_to_string }}</small></a>
-					</h3>
-				</li>
-			{% endfor %}
-		</ul>
-	</div>
-</article>
+<section>
+	<p class="text-muted">
+		<small>
+			Having trouble with the site? Find an error in this post?
+			Open a <a href="https://github.com/jessesquires/jessesquires.github.io/issues" target="_blank">new issue</a>, or submit a <a href="https://github.com/jessesquires/jessesquires.github.io/pulls" target="_blank">pull request</a> on <a href="https://github.com/jessesquires/jessesquires.github.io" target="_blank">GitHub</a>.
+		</small>
+	</p>
+</section>

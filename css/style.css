@@ -1,4 +1,16 @@
-/* LINKS */
+/* COMMON ELEMENTS */
+
+#main {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+body p {
+	line-height: 2.5rem;
+	padding: 1rem 0rem 1rem 0rem;
+}
 
 a {
 	color: #5c9199;
@@ -21,8 +33,6 @@ a:active {
 	text-decoration:none;
 }
 
-/* OTHER ELEMENTS */
-
 hr {
 	border-color: #d7d7d7;
 }
@@ -35,9 +45,15 @@ ul {
 
 ul li {
 	list-style-type: none;
-	display: inline-block;
-	margin-top: 5px;
-	margin-bottom: 5px;
+	margin: 2px;
+}
+
+.center { 
+	float: none; 
+	margin-left: auto; 
+	margin-right: auto; 
+	display: block;
+	text-align: center;
 }
 
 /* HEADER */
@@ -68,15 +84,6 @@ header hr {
 	margin-bottom: 10px;
 }
 
-/* MAIN */
-
-#main {
-	margin-top: 20px;
-	margin-bottom: 20px;
-	background-color: #f2f2f2;
-	padding: 20px;
-}
-
 /* POSTS */
 
 .post-list {
@@ -87,7 +94,7 @@ header hr {
 
 .post {
 	padding-top: 1rem;
-	padding-bottom: 5rem;
+	padding-bottom: 2rem;
 }
 
 .post-title {
@@ -131,6 +138,11 @@ header hr {
 
 /* PAGES */
 
+.page {
+	padding-top: 0rem;
+	padding-bottom: 1rem;
+}
+
 .pagination {
 	display: block;
 }
@@ -139,20 +151,26 @@ header hr {
 	color: #666666;
 }
 
+.return-home {
+	display: block;
+	text-align: center;
+	margin: 0rem;
+	padding: 0rem 0rem 3rem 0rem;
+
+}
+
 /* FOOTER */
+
+#footer {
+	padding-bottom: 30px;
+}
+
+#footer ul li {
+	display: inline-block;
+}
 
 #hblogo {
 	width: 22px;
 	height: 22px;
-	margin-bottom: 10px;
-}
-
-/* CUSTOM CLASSES */
-
-.center { 
-	float: none; 
-	margin-left: auto; 
-	margin-right: auto; 
-	display: block;
-	text-align: center;
+	margin-bottom: 12px;
 }
