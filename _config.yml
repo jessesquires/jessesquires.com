@@ -10,4 +10,10 @@ title: 'Jesse Squires'
 tagline: 'Software developer in San Francisco'
 timezone: America/Los_Angeles
 
+url: http://www.jessesquires.com
+
+author:
+  name: 'Jesse Squires'
+  url: https://twitter.com/jesse_squires
+
 paginate: 3
