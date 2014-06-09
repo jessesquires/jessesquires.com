@@ -1,6 +1,6 @@
 # jessesquires.github.io
 
-This blog mostly contains bits about iOS, Objective-C, and Swift.
+This blog mostly contains bits about iOS, Objective-C, Swift, and open-source.
 
 ## About
 
