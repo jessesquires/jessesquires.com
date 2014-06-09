@@ -20,12 +20,12 @@ layout: default
 <section class="sharing">
 	<div class="row">
 		<div class="col-md-2 col-xs-6">
-			<a href="https://twitter.com/intent/tweet?text={{ page.title }}%20{{ page.url }}%20via%20@jesse_squires" target="_blank">
+			<a href="https://twitter.com/intent/tweet?text={{ page.title }}%20{{ site.url }}{{ page.url }}%20via%20@jesse_squires" target="_blank">
 				<button class="btn btn-default btn-block"><i class="fa fa-twitter"></i> Tweet</button>
 			</a>
 		</div> <!-- col -->
 		<div class="col-md-2 col-xs-6">
-			<a href="https://www.facebook.com/sharer/sharer.php?u={{ post.url }}" target="_blank">
+			<a href="https://www.facebook.com/sharer.php?u={{ site.url }}{{ post.url }}" target="_blank">
 				<button class="btn btn-default btn-block"><i class="fa fa-facebook"></i> Share</button>
 			</a>
 		</div> <!-- col -->
