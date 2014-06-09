@@ -129,6 +129,16 @@ header hr {
 	color: #365459;
 }
 
+/* PAGES */
+
+.pagination {
+	display: block;
+}
+
+.btn-default {
+	color: #666666;
+}
+
 /* FOOTER */
 
 #hblogo {
