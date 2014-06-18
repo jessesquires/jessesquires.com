@@ -9,7 +9,7 @@
 
 body p {
 	line-height: 2.5rem;
-	padding: 0.5rem 0rem 0.5rem 0rem;
+	padding: 0.5rem 0rem 1rem 0rem;
 }
 
 a {
@@ -160,6 +160,21 @@ header hr {
 
 .sharing {
 	padding-top: 1.5rem;
+}
+
+.footnotes ul {
+	list-style-type: none;
+	-webkit-padding-start: 0px !important;
+	-webkit-margin-before: 0px !important;
+	-webkit-margin-after: 0px !important;
+}
+
+code {
+	background-color: #ffffff;
+}
+
+table {
+	background-color: #fafafa;
 }
 
 /* FOOTER */
