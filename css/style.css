@@ -9,7 +9,7 @@
 
 body p {
 	line-height: 2.5rem;
-	padding: 1rem 0rem 1rem 0rem;
+	padding: 0.5rem 0rem 0.5rem 0rem;
 }
 
 a {
@@ -134,6 +134,11 @@ header hr {
 
 .page {
 	padding-top: 0rem;
+	padding-bottom: 1rem;
+}
+
+.page ul {
+	padding-top: 0.5rem;
 	padding-bottom: 1rem;
 }
 
