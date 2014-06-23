@@ -2,7 +2,7 @@
 layout: post
 title: Apples to apples
 subtitle: A comparison of sorts between Objective-C and Swift
-excerpt: 
+excerpt: When Craig Federighi arrived at his presentation slide about Objective-C during this year's WWDC keynote everyone in the room seemed puzzled, curious, and maybe even a bit uneasy. What was happening? As he continued, he considered what Objective-C would be like without the C
 ---
 
 When Craig Federighi arrived at his presentation slide about Objective-C during this year's [WWDC keynote](http://www.apple.com/apple-events/june-2014/) everyone in the room seemed puzzled, curious, and maybe even a bit uneasy. *What was happening?* As he continued, he considered what Objective-C would be like **without the C**, and the room abruptly filled with rumblings and whispers <sup><a href="#note1" id="superscript1">[1]</a></sup> as developers in the audience confided in those around them. If you had been following the [discussions](http://kickingbear.com/blog/archives/412) in our community about the [state of Objective-C](http://nearthespeedoflight.com/article/2014_03_17_objective_next) (and why we [need to replace it](http://ashfurrow.com/blog/we-need-to-replace-objective-c)) during the previous months, you could only have imagined one thing: Objective-C was no more &mdash; at least not as we knew it. 
@@ -28,7 +28,7 @@ Each project is a command line app with a debug, release, and unit-test scheme. 
 
 The benchmarks consist of *T* trials, which are averaged at the end to obtain the average execution time for each algorithm. Each trial begins by generating an array of *N* random integers in the range `[0, UINT32_MAX)`. Then, each sorting algorithm is passed a copy of this initial array to sort. The current time is logged before and after each sort and the difference between the two yields the execution time for the algorithm for the current trial.
 
-These two programs were carefully crafted to be a true *apples-to-apples* comparison. All of the algorithms, as well as `main.swift` and `main.m`, are implemented as simiarly as possible, bounded only by the confines and paradigms of the languages themselves. In Objective-C, `NSArray` and `NSNumber` are used intentionally as the counterparts to Swift's `Array` and `Int`. The APIs are language-specific too, for example `exchangeObjectAtIndex: withObjectAtIndex:` versus `swap()`. 
+These two programs were carefully crafted to be a true *apples-to-apples* comparison. All of the algorithms, as well as `main.swift` and `main.m`, are implemented as similarly as possible, bounded only by the confines and paradigms of the languages themselves. In Objective-C, `NSArray` and `NSNumber` are used intentionally as the counterparts to Swift's `Array` and `Int`. The APIs are language-specific too, for example `exchangeObjectAtIndex: withObjectAtIndex:` versus `swap()`. 
 
 The following were used for the standard library sorts:
 
@@ -98,11 +98,11 @@ Below are the results of running each program over 10 trials with 10,000 integer
 	</table>
 </div>
 
-<p class="text-muted">Note that <code>-O</code> is the standard optimization level for Swift and <code>-Ofast</code>, though faster, removes <strong>all</strong> safety features (<em>array bounds-checking, integer overflow checking, etc.</em>) from Swift. In other words, do not ship an entire app compiled with <code>-Ofast</code>. According to the Apple engineers that I spoke with, <code>-O3</code> in Objective-C is essentially the eqivalent to <code>-O</code> in Swift.</p>
+<p class="text-muted">Note that <code>-O</code> is the standard optimization level for Swift and <code>-Ofast</code>, though faster, removes <strong>all</strong> safety features (<em>array bounds-checking, integer overflow checking, etc.</em>) from Swift. In other words, do not ship an entire app compiled with <code>-Ofast</code>. According to the Apple engineers that I spoke with, <code>-O3</code> in Objective-C is essentially the equivalent to <code>-O</code> in Swift.</p>
 
 There are a few notable discoveries here:
 
-1. Objective-C *without* optimizations running in debug outperforms Swift *with* optimizations running in release. Only with <code>-Ofast</code> do we begin to experience the swiftness of Swift, and even then the standard library sort in Objective-C is faster. According to Craig Federighi's slides on benchmarks during the keynote (1:45:30), we should (probably?) be seeing different results here. He noted benchmarks for complex object sort that showed Objective-C performing at 2.8x and Swift at 3.9x, using Python as the baseline (1.0x). It is not clear at this time how these benchmarks were acheived. What were the build and optimization settings? What is a "complex object"? In any case, surely Swift should be able to sort integers just as well as "complex objects", right?
+1. Objective-C *without* optimizations running in debug outperforms Swift *with* optimizations running in release. Only with <code>-Ofast</code> do we begin to experience the swiftness of Swift, and even then the standard library sort in Objective-C is faster. According to Craig Federighi's slides on benchmarks during the keynote (1:45:30), we should (probably?) be seeing different results here. He noted benchmarks for complex object sort that showed Objective-C performing at 2.8x and Swift at 3.9x, using Python as the baseline (1.0x). It is not clear at this time how these benchmarks were achieved. What were the build and optimization settings? What is a "complex object"? In any case, surely Swift should be able to sort integers just as well as "complex objects", right?
 
 2. We all know that selection sort and insertion sort are not particularly optimal algorithms, and Swift does a good job to emphasize this. But why are these two so terrible in Swift? Especially insertion sort. *Especially insertion sort.*
 
