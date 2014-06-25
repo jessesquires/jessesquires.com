@@ -5,7 +5,7 @@ subtitle: A comparison of sorts between Objective-C and Swift
 excerpt: When Craig Federighi arrived at his presentation slide about Objective-C during this year's WWDC keynote everyone in the room seemed puzzled, curious, and maybe even a bit uneasy. What was happening? As he continued, he considered what Objective-C would be like without the C
 ---
 
-When Craig Federighi arrived at his presentation slide about Objective-C during this year's [WWDC keynote](http://www.apple.com/apple-events/june-2014/) everyone in the room seemed puzzled, curious, and maybe even a bit uneasy. *What was happening?* As he continued, he considered what Objective-C would be like **without the C**, and the room abruptly filled with rumblings and whispers <sup><a href="#note1" id="superscript1">[1]</a></sup> as developers in the audience confided in those around them. If you had been following the [discussions](http://kickingbear.com/blog/archives/412) in our community about the [state of Objective-C](http://nearthespeedoflight.com/article/2014_03_17_objective_next) (and why we [need to replace it](http://ashfurrow.com/blog/we-need-to-replace-objective-c)) during the previous months, you could only have imagined one thing: Objective-C was no more &mdash; at least not as we knew it. 
+When Craig Federighi arrived at his presentation slide about Objective-C during this year's [WWDC keynote](http://www.apple.com/apple-events/june-2014/) everyone in the room seemed puzzled, curious, and maybe even a bit uneasy. *What was happening?* As he continued, he considered what Objective-C would be like **without the C**, and the room abruptly filled with rumblings and whispers <sup><a href="#note1" id="superscript1">[1]</a></sup> as developers in the audience confided in those around them. If you had been following the [discussions](http://informalprotocol.com/2014/02/replacing-cocoa/) in our community about the [state of Objective-C](http://nearthespeedoflight.com/article/2014_03_17_objective_next) (and why we [need to replace it](http://ashfurrow.com/blog/we-need-to-replace-objective-c)) during the previous months, you could only have imagined one thing: Objective-C was no more &mdash; at least not as we knew it. 
 
 <blockquote>
 	<p>And then Federighi said, let there be Swift; and there was Swift.</p>
@@ -24,7 +24,7 @@ As a fun and interesting [code kata](http://codekata.com), I decided to port my 
 * *Software:* OS X Mavericks 10.9.3, Xcode6-Beta WWDC seed
 * *Hardware:* 2008 unibody MacBook Pro, 2.4 Ghz Intel Core 2 Duo, 8 GB 1067 MHz DDR3 memory <sup><a href="#note2" id="superscript2">[2]</a></sup>
 
-Each project is a command line app with a debug, release, and unit-test scheme. After downloading, simply build and run, then watch the console for output.
+Each project is a command line app with a debug, release, and unit-test scheme. Build and run, then watch the console for output.
 
 The benchmarks consist of *T* trials, which are averaged at the end to obtain the average execution time for each algorithm. Each trial begins by generating an array of *N* random integers in the range `[0, UINT32_MAX)`. Then, each sorting algorithm is passed a copy of this initial array to sort. The current time is logged before and after each sort and the difference between the two yields the execution time for the algorithm for the current trial.
 
@@ -98,29 +98,29 @@ Below are the results of running each program over 10 trials with 10,000 integer
 	</table>
 </div>
 
-<p class="text-muted">Note that <code>-O</code> is the standard optimization level for Swift and <code>-Ofast</code>, though faster, removes <strong>all</strong> safety features (<em>array bounds-checking, integer overflow checking, etc.</em>) from Swift. In other words, do not ship an entire app compiled with <code>-Ofast</code>. According to the Apple engineers that I spoke with, <code>-O3</code> in Objective-C is essentially the equivalent to <code>-O</code> in Swift.</p>
+<p class="text-muted">Note that <code>-O</code> is the standard optimization level for Swift and <code>-Ofast</code>, though faster, removes <strong>all</strong> safety features (<em>array bounds-checking, integer overflow checking, etc.</em>) from Swift. In other words, do not ship an entire app compiled with <code>-Ofast</code>. According to the Apple engineers that I spoke with, <code>-O3</code> in Objective-C is essentially the equivalent to <code>-O</code> in Swift. Also, I realize that 10,000 is realiatively small, but Swift was taking quite a long time.</p>
 
 There are a few notable discoveries here:
 
-1. Objective-C *without* optimizations running in debug outperforms Swift *with* optimizations running in release. Only with <code>-Ofast</code> do we begin to experience the swiftness of Swift, and even then the standard library sort in Objective-C is faster. According to Craig Federighi's slides on benchmarks during the keynote (1:45:30), we should (probably?) be seeing different results here. He noted benchmarks for complex object sort that showed Objective-C performing at 2.8x and Swift at 3.9x, using Python as the baseline (1.0x). It is not clear at this time how these benchmarks were achieved. What were the build and optimization settings? What is a "complex object"? In any case, surely Swift should be able to sort integers just as well as "complex objects", right?
+1. Objective-C *without* optimizations running in debug outperforms Swift *with* optimizations running in release. Only with <code>-Ofast</code> do we begin to experience the swiftness of Swift, and even then the standard library sort in Objective-C is faster. According to the benchmarks presented during the keynote (1:45:30), we should (probably?) be seeing different results here. Federighi noted that for complex object sort, Objective-C performed at 2.8x and Swift performed at 3.9x, using Python as the baseline (1.0x). It is not clear at this time how these benchmarks were achieved. What were the build and optimization settings? What is a "complex object"? In any case, surely Swift should be able to sort integers just as well as "complex objects", right?
 
 2. We all know that selection sort and insertion sort are not particularly optimal algorithms, and Swift does a good job to emphasize this. But why are these two so terrible in Swift? Especially insertion sort. *Especially insertion sort.*
 
-3. My not-at-all-special quick sort implementation is faster than the standard library sort for both languages. Typically, these methods would utilize multiple sorting algorithms that are guided by a set of heuristics that help determine the best algorithm to use based on the dataset. I suspect that we would see the standard library sorts perform best with larger datasets and/or with complex objects. 
+3. My mundane quick sort implementation is faster than the standard library sort for both languages. Typically, these library methods would utilize multiple sorting algorithms that are guided by a set of heuristics that help determine the best algorithm to use based on the dataset. I suspect that we would see the standard library sorts perform best with larger datasets and/or with complex objects. 
 
 #### Swift Labs at WWDC
 
-The Apple engineers hanging out in the Swift Labs at WWDC were very interested in these benchmarks and were somewhat surprised to see them. Unfortunately, they did not really have an explanation for why we were seeing these results. We filed Radar #17201160, noting the three points above.
+The Apple engineers hanging out in the Swift Labs at WWDC were interested in these benchmarks and were somewhat surprised to see them. Unfortunately, the engineers that I spoke with did not have an explanation for why we were seeing these results. We filed Radar #17201160, noting the three points above.
 
-Additionally, I asked what the best practices are with regard to using <code>-Ofast</code>. They recommended the following approach: (1) profile your app to find out where it is slow, (2) extract this slow code into a separate module/framework, (3) very thoroughly test this framework, (4) compile the framework using <code>-Ofast</code> and link it to your app.
+Additionally, I asked what the best practices are with regard to using <code>-Ofast</code>. They recommended the following approach: (1) profile your app to find out where it is slow, (2) extract this slow code into a separate module/framework, (3) very thoroughly test this framework, and then (4) compile the framework using <code>-Ofast</code> and link it to your app.
 
 #### Moving forward
 
-The results above seem to indicate that Apple has not (yet) followed through on their promises of speed and safety, particularly in the sense that these features can be mutually inclusive. Again, it is still early. Hopefully these benchmarks will improve as Swift nears v1.0. As Brent Simmons [said](http://inessential.com/2014/02/12/on_replacing_objective-c), Objective-C used to be considered slow compared to plain C, but it is not slow compared to Java or Python. I am not sure if the correct reaction to these results should be *we have faster hardware, so a slower language is fine*, or *nothing will ever be as fast as C*. But after completing these two projects, I do know this: Swift is a pleasure to write and read. Many things came easier and more naturally in Swift, and Playgrounds are pure gold.
+The results above seem to indicate that Apple has not (yet) followed through on their promises of speed and safety &mdash; at least in the sense that these features can be mutually inclusive. Again, it is still early. Hopefully these benchmarks will improve as Swift nears v1.0. **I plan on updating this post or writing follow-up posts as Apple releases updates for Swift and Xcode6-beta.**
+
+As Brent Simmons [said](http://inessential.com/2014/02/12/on_replacing_objective-c), Objective-C used to be considered slow compared to plain C, but it is not slow compared to Java or Python. I am not sure if the reaction to these results should be *we have faster hardware, so a slower language is fine*, or *nothing will ever be as fast as C*, or somewhere in-between. But after completing these two projects, I do know this: Swift is a pleasure to write and read. Many things came easier and more naturally in Swift, and Playgrounds are pure gold.
 
 In the end, I think Apple was exactly right: Swift *is* Objective-C **without the C**.
-
-**I plan on updating this post or writing follow-up posts as Apple releases updates to Xcode6-beta and Swift.**
 
 #### Futher reading
 
