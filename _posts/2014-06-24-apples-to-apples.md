@@ -36,15 +36,18 @@ The following were used for the standard library sorts:
 
 #### Results
 
-Below are the results of running each program over 10 trials with 10,000 integers. The build configuration settings are noted for each language during each run and the execution times are displayed in seconds. The average case runtime complexity for each algorithm is also noted.
+Below are the results of running each program over 10 trials with 10,000 integers. The build configuration settings are noted for each run and the execution times are displayed in seconds. The average case runtime complexity for each algorithm is also noted. I realize that 10,000 is relatively small, but you'll see that Swift was taking quite a long time.
 
 <div class="table-responsive">
 	<table class="table table-bordered table-hover">
 		<thead>
 			<tr>
-				<th class="text-muted"><em>T</em> = 10
+				<th class="text-muted">
+					<em>T</em> = 10
 					<br />
 					<em>N</em> = 10,000
+					<br />
+					Debug
 				</th>
 				<th>Std lib sort</th>
 				<th>Quick sort<br/><code>O(n log n)</code></th>
@@ -55,7 +58,7 @@ Below are the results of running each program over 10 trials with 10,000 integer
 		</thead>
 		<tbody>
 			<tr>
-				<th>Objective-C <code>-O0</code> (debug)</th>
+				<th>Objective-C <code>-O0</code></th>
 				<td>0.015813 s</td>
 				<td>0.011393 s</td>
 				<td>0.023052 s</td>
@@ -63,7 +66,38 @@ Below are the results of running each program over 10 trials with 10,000 integer
 				<td>3.745795 s</td>
 			</tr>
 			<tr>
-				<th>Objective-C <code>-O3</code> (release)</th>
+				<th>Swift <code>-Onone</code></th>
+				<td>1.460893 s</td>
+				<td>1.585898 s</td>
+				<td>4.498561 s</td>
+				<td>599.164323 s</td>
+				<td>507.968824 s</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<div class="table-responsive">
+	<table class="table table-bordered table-hover">
+		<thead>
+			<tr>
+				<th class="text-muted">
+					<em>T</em> = 10
+					<br />
+					<em>N</em> = 10,000
+					<br />
+					Release
+				</th>
+				<th>Std lib sort</th>
+				<th>Quick sort<br/><code>O(n log n)</code></th>
+				<th>Heap sort<br/><code>O(n log n)</code></th>
+				<th>Insertion sort<br/><code>O(n<sup>2</sup>)</code></th>
+				<th>Selection sort<br/><code>O(n<sup>2</sup>)</code></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>Objective-C <code>-O3</code></th>
 				<td>0.012037 s</td>
 				<td>0.010317 s</td>
 				<td>0.020318 s</td>
@@ -71,23 +105,40 @@ Below are the results of running each program over 10 trials with 10,000 integer
 				<td>3.508259 s</td>
 			</tr>
 			<tr>
-				<th>Swift <code>-Onone</code> (debug)</th>
-				<td>1.460893 s</td>
-				<td>1.585898 s</td>
-				<td>4.498561 s</td>
-				<td>599.164323 s</td>
-				<td>507.968824 s</td>
-			</tr>
-			<tr>
-				<th>Swift <code>-O</code> (release)</th>
+				<th>Swift <code>-O</code></th>
 				<td>0.079272 s</td>
 				<td>0.072787 s</td>
 				<td>0.212094 s</td>
 				<td>28.431325 s</td>
 				<td>8.662720 s</td>
 			</tr>
+		</tbody>
+	</table>
+</div>
+
+<p class="text-muted">According to the Apple engineers that I spoke with, <code>-O3</code> in Objective-C is essentially the equivalent to <code>-O</code> in Swift. </p>
+
+<div class="table-responsive">
+	<table class="table table-bordered table-hover">
+		<thead>
 			<tr>
-				<th>Swift <code>-Ofast</code> (release)</th>
+				<th class="text-muted">
+					<em>T</em> = 10
+					<br />
+					<em>N</em> = 10,000
+					<br />
+					Release
+				</th>
+				<th>Std lib sort</th>
+				<th>Quick sort<br/><code>O(n log n)</code></th>
+				<th>Heap sort<br/><code>O(n log n)</code></th>
+				<th>Insertion sort<br/><code>O(n<sup>2</sup>)</code></th>
+				<th>Selection sort<br/><code>O(n<sup>2</sup>)</code></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>Swift <code>-Ofast</code></th>
 				<td>0.022573 s</td>
 				<td>0.005410 s</td>
 				<td>0.005903 s</td>
@@ -98,7 +149,7 @@ Below are the results of running each program over 10 trials with 10,000 integer
 	</table>
 </div>
 
-<p class="text-muted">Note that <code>-O</code> is the standard optimization level for Swift and <code>-Ofast</code>, though faster, removes <strong>all</strong> safety features (<em>array bounds-checking, integer overflow checking, etc.</em>) from Swift. In other words, do not ship an entire app compiled with <code>-Ofast</code>. According to the Apple engineers that I spoke with, <code>-O3</code> in Objective-C is essentially the equivalent to <code>-O</code> in Swift. Also, I realize that 10,000 is realiatively small, but Swift was taking quite a long time.</p>
+<p class="text-muted">Note that <code>-O</code> is the standard optimization level for Swift and <code>-Ofast</code>, though faster, removes <strong>all</strong> safety features (<em>array bounds-checking, integer overflow checking, etc.</em>) from Swift. In other words, do not ship an entire app compiled with <code>-Ofast</code>. More on that below.</p>
 
 There are a few notable discoveries here:
 
