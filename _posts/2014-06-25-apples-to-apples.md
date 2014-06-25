@@ -180,7 +180,7 @@ According to the benchmarks presented during the keynote (1:45:30), we should (p
 
 The Apple engineers hanging out in the Swift Labs at WWDC were interested in these benchmarks and were somewhat surprised to see them. Unfortunately, the engineers that I spoke with did not have an explanation for why we were seeing these results. We filed Radar #17201160, noting most of the points above.
 
-Additionally, I asked what the best practices are with regard to using <code>-Ofast</code>. They recommended the following approach: (1) profile your app to find out where it is slow, (2) extract this slow code into a separate module/framework, (3) very thoroughly test this framework, and then (4) compile the framework using <code>-Ofast</code> and link it to your app.
+Additionally, I asked what the best practices are with regard to using <code>-Ofast</code>. They recommended the following approach: (1) profile your app to find out where it is slow, (2) extract this slow code into a separate module/framework, (3) very thoroughly test this framework, and then (4) compile the framework using <code>-Ofast</code> and link it to your app. Remember, this removes <strong>all</strong> safety features from Swift.
 
 #### Moving forward
 
