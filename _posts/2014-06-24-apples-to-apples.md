@@ -128,10 +128,10 @@ As Brent Simmons [said](http://inessential.com/2014/02/12/on_replacing_objective
 <div class="footnotes text-muted">
 	<ul>
 		<li>
-			<a href="#superscript1" id="note1">[1]</a> If you turn up the volume and listen closely, you can hear this in the keynote video. It was much louder in person.
+			<a href="#superscript1" id="note1"><i class="fa fa-angle-up"></i> [1]</a> If you turn up the volume and listen closely, you can hear this in the keynote video. It was much louder in person.
 		</li>
 		<li>
-			<a href="#superscript2" id="note2">[2]</a> If you are thinking, <em>this guy needs a new MacBook</em> &mdash; you are correct! :)
+			<a href="#superscript2" id="note2"><i class="fa fa-angle-up"></i> [2]</a> If you are thinking, <em>this guy needs a new MacBook</em> &mdash; you are correct! :)
 		</li>
 	</ul>
 </div>
