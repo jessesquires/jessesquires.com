@@ -38,6 +38,7 @@ The following were used for the standard library sorts:
 
 Below are the results of running each program over 10 trials with 10,000 integers. The build configuration settings are noted for each run and the execution times are displayed in seconds. The average case runtime complexity for each algorithm is also noted. I realize that 10,000 is relatively small, but you'll see that Swift was taking quite a long time.
 
+<p class="text-muted text-center table-header-footer"><strong>Table 1</strong></p>
 <div class="table-responsive">
 	<table class="table table-bordered table-hover">
 		<thead>
@@ -77,6 +78,8 @@ Below are the results of running each program over 10 trials with 10,000 integer
 	</table>
 </div>
 
+
+<p class="text-muted text-center table-header-footer"><strong>Table 2</strong></p>
 <div class="table-responsive">
 	<table class="table table-bordered table-hover">
 		<thead>
@@ -115,9 +118,10 @@ Below are the results of running each program over 10 trials with 10,000 integer
 		</tbody>
 	</table>
 </div>
+<p class="text-muted text-center table-header-footer">According to the Apple engineers that I spoke with, <code>-O3</code> in Objective-C is essentially the equivalent to <code>-O</code> in Swift.</p><br />
 
-<p class="text-muted text-center">According to the Apple engineers that I spoke with, <code>-O3</code> in Objective-C is essentially the equivalent to <code>-O</code> in Swift. </p>
 
+<p class="text-muted text-center table-header-footer"><strong>Table 3</strong></p>
 <div class="table-responsive">
 	<table class="table table-bordered table-hover">
 		<thead>
@@ -156,20 +160,21 @@ Below are the results of running each program over 10 trials with 10,000 integer
 		</tbody>
 	</table>
 </div>
-
-<p class="text-muted text-center">Note that <code>-O</code> is the standard optimization level for Swift and <code>-Ofast</code>, though faster, removes <strong>all</strong> safety features (<em>array bounds-checking, integer overflow checking, etc.</em>) from Swift. In other words, do not ship an entire app compiled with <code>-Ofast</code>. More on that below.</p>
+<p class="text-muted text-center table-header-footer">Note that <code>-O</code> is the standard optimization level for Swift and <code>-Ofast</code>, though faster, removes <strong>all</strong> safety features (<em>array bounds-checking, integer overflow checking, etc.</em>) from Swift. In other words, do not ship an entire app compiled with <code>-Ofast</code>. More on that below.</p><br />
 
 There are a few notable discoveries here:
 
-1. Objective-C *without* optimizations running in debug outperforms Swift *with* optimizations running in release. Only with <code>-Ofast</code> do we begin to experience the swiftness of Swift, and even then the standard library sort in Objective-C is faster. According to the benchmarks presented during the keynote (1:45:30), we should (probably?) be seeing different results here. Federighi noted that for complex object sort, Objective-C performed at 2.8x and Swift performed at 3.9x, using Python as the baseline (1.0x). It is not clear at this time how these benchmarks were achieved. What were the build and optimization settings? What is a "complex object"? In any case, surely Swift should be able to sort integers just as well as "complex objects", right?
+1. Rather shockingly, debug is incredibly slow in Swift but improves dramatically with compiler flags. The difference in performance between *no* optimization and <code>-Ofast</code> in Swift is stark. Objective-C on the other hand sees relatively minor benefits.
 
-2. We all know that selection sort and insertion sort are not particularly optimal algorithms, and Swift does a good job to emphasize this. But why are these two so terrible in Swift? Especially insertion sort. *Especially insertion sort.*
+2. Objective-C *without* optimizations running in debug outperforms Swift *with* optimizations running in release. Only with <code>-Ofast</code> do we begin to experience the swiftness of Swift, and even then the standard library sort in Objective-C is faster. According to the benchmarks presented during the keynote (1:45:30), we should (probably?) be seeing different results here. Federighi noted that for complex object sort, Objective-C performed at 2.8x and Swift performed at 3.9x, using Python as the baseline (1.0x). It is not clear at this time how these benchmarks were achieved. What were the build and optimization settings? What is a "complex object"? In any case, surely Swift should be able to sort integers just as well as "complex objects", right?
 
-3. My mundane quick sort implementation is faster than the standard library sort for both languages. Typically, these library methods would utilize multiple sorting algorithms that are guided by a set of heuristics that help determine the best algorithm to use based on the dataset. I suspect that we would see the standard library sorts perform best with larger datasets and/or with complex objects. 
+3. We all know that selection sort and insertion sort are not particularly optimal algorithms, and Swift does a good job to emphasize this. But why are these two so terrible in Swift? Especially insertion sort. *Especially insertion sort.*
+
+4. My mundane quick sort implementation is faster than the standard library sort for both languages. Typically, these library methods would utilize multiple sorting algorithms that are guided by a set of heuristics that help determine the best algorithm to use based on the dataset. I suspect that we would see the standard library sorts perform best with larger datasets and/or with complex objects. 
 
 #### Swift Labs at WWDC
 
-The Apple engineers hanging out in the Swift Labs at WWDC were interested in these benchmarks and were somewhat surprised to see them. Unfortunately, the engineers that I spoke with did not have an explanation for why we were seeing these results. We filed Radar #17201160, noting the three points above.
+The Apple engineers hanging out in the Swift Labs at WWDC were interested in these benchmarks and were somewhat surprised to see them. Unfortunately, the engineers that I spoke with did not have an explanation for why we were seeing these results. We filed Radar #17201160, noting the points above.
 
 Additionally, I asked what the best practices are with regard to using <code>-Ofast</code>. They recommended the following approach: (1) profile your app to find out where it is slow, (2) extract this slow code into a separate module/framework, (3) very thoroughly test this framework, and then (4) compile the framework using <code>-Ofast</code> and link it to your app.
 
