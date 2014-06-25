@@ -56,43 +56,43 @@ Below are the results of running each program over 10 trials with 10,000 integer
 		<tbody>
 			<tr>
 				<th>Objective-C <code>-O0</code> (debug)</th>
-				<td>~0.015813 s</td>
-				<td>~0.011393 s</td>
-				<td>~0.023052 s</td>
-				<td>~1.945385 s</td>
-				<td>~3.745795 s</td>
+				<td>0.015813 s</td>
+				<td>0.011393 s</td>
+				<td>0.023052 s</td>
+				<td>1.945385 s</td>
+				<td>3.745795 s</td>
 			</tr>
 			<tr>
 				<th>Objective-C <code>-O3</code> (release)</th>
-				<td>~0.012037 s</td>
-				<td>~0.010317 s</td>
-				<td>~0.020318 s</td>
-				<td>~1.777335 s</td>
-				<td>~3.508259 s</td>
+				<td>0.012037 s</td>
+				<td>0.010317 s</td>
+				<td>0.020318 s</td>
+				<td>1.777335 s</td>
+				<td>3.508259 s</td>
 			</tr>
 			<tr>
 				<th>Swift <code>-Onone</code> (debug)</th>
-				<td>~</td>
-				<td>~</td>
-				<td>~</td>
-				<td>~</td>
-				<td>~</td>
+				<td>1.460893 s</td>
+				<td>1.585898 s</td>
+				<td>4.498561 s</td>
+				<td>599.164323 s</td>
+				<td>507.968824 s</td>
 			</tr>
 			<tr>
 				<th>Swift <code>-O</code> (release)</th>
-				<td>~0.079272 s</td>
-				<td>~0.072787 s</td>
-				<td>~0.212094 s</td>
-				<td>~28.431325 s</td>
-				<td>~8.662720 s</td>
+				<td>0.079272 s</td>
+				<td>0.072787 s</td>
+				<td>0.212094 s</td>
+				<td>28.431325 s</td>
+				<td>8.662720 s</td>
 			</tr>
 			<tr>
 				<th>Swift <code>-Ofast</code> (release)</th>
-				<td>~0.022573 s</td>
-				<td>~0.005410 s</td>
-				<td>~0.005903 s</td>
-				<td>~0.997563 s</td>
-				<td>~0.113045 s</td>
+				<td>0.022573 s</td>
+				<td>0.005410 s</td>
+				<td>0.005903 s</td>
+				<td>0.997563 s</td>
+				<td>0.113045 s</td>
 			</tr>
 		</tbody>
 	</table>
@@ -116,11 +116,9 @@ Additionally, I asked what the best practices are with regard to using <code>-Of
 
 #### Moving forward
 
-The results above seem to indicate that Apple has not (yet) followed through on their promises of speed and safety &mdash; at least in the sense that these features can be mutually inclusive. Again, it is still early. Hopefully these benchmarks will improve as Swift nears v1.0. **I plan on updating this post or writing follow-up posts as Apple releases updates for Swift and Xcode6-beta.**
+The results above seem to indicate that Apple has not (yet) followed through on their promises of speed and safety &mdash; at least in the sense that these features can be mutually inclusive. Again, it is still early. Hopefully these benchmarks will improve as Swift nears a 1.0 release. **I plan on updating this post or writing follow-up posts as Apple releases updates for Swift and Xcode6-beta.**
 
-As Brent Simmons [said](http://inessential.com/2014/02/12/on_replacing_objective-c), Objective-C used to be considered slow compared to plain C, but it is not slow compared to Java or Python. I am not sure if the reaction to these results should be *we have faster hardware, so a slower language is fine*, or *nothing will ever be as fast as C*, or somewhere in-between. But after completing these two projects, I do know this: Swift is a pleasure to write and read. Many things came easier and more naturally in Swift, and Playgrounds are pure gold.
-
-In the end, I think Apple was exactly right: Swift *is* Objective-C **without the C**.
+As Brent Simmons [said](http://inessential.com/2014/02/12/on_replacing_objective-c), Objective-C used to be considered slow compared to plain C, but it is not slow compared to Java or Python. I am not sure if the reaction to these results should be *we have faster hardware, so a slower language is fine*, or *nothing will ever be as fast as C*, or somewhere in-between. But after completing these two projects, I do know this: Swift is a pleasure to write and read. Many things came easier and more naturally in Swift, and Playgrounds are pure gold. Swift has a lot of potential. Let's hope this is the next step that we have all been waiting for, and not another [Copland](http://arstechnica.com/apple/2010/06/copland-2010-revisited/).
 
 #### Futher reading
 
