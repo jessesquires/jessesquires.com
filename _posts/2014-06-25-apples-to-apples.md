@@ -164,13 +164,17 @@ Below are the results of running each program over 10 trials with 10,000 integer
 
 There are a few notable discoveries here:
 
-1. Rather shockingly, debug is incredibly slow in Swift but improves dramatically with compiler flags. The difference in performance between *no* optimization and <code>-Ofast</code> in Swift is stark. Objective-C on the other hand sees relatively minor benefits.
+1. Rather shockingly, debug is incredibly slow in Swift but improves dramatically with compiler flags. The difference in performance between *no* optimizations and <code>-Ofast</code> in Swift is stark. On the other hand, Objective-C sees relatively minor benefits.
 
-2. Objective-C *without* optimizations running in debug outperforms Swift *with* optimizations running in release. Only with <code>-Ofast</code> do we begin to experience the swiftness of Swift, and even then the standard library sort in Objective-C is faster. According to the benchmarks presented during the keynote (1:45:30), we should (probably?) be seeing different results here. Federighi noted that for complex object sort, Objective-C performed at 2.8x and Swift performed at 3.9x, using Python as the baseline (1.0x). It is not clear at this time how these benchmarks were achieved. What were the build and optimization settings? What is a "complex object"? In any case, surely Swift should be able to sort integers just as well as "complex objects", right?
+2. At the standard optimization level (see *Table 2*), the two languages begin to perform more similarly. Objective-C is still noticeably faster though. Std lib sort is 6.5x faster. Quick sort is 7.0x faster. Heap sort is 10.4x faster. Insertion sort is 16.0x faster. Selection sort is 2.47x faster.
 
-3. We all know that selection sort and insertion sort are not particularly optimal algorithms, and Swift does a good job to emphasize this. But why are these two so terrible in Swift? Especially insertion sort. *Especially insertion sort.*
+3. Only with <code>-Ofast</code> do we begin to experience the swiftness of Swift, and even then the standard library sort in Objective-C is almost twice as fast (1.84x). However, when comparing Swift to Swift to discrepancies are enormous. Swift performs orders of magnitude better than it did without optimizations and puts Objective-C to shame with regard to quick sort, heap sort, insertion sort, and selection sort.
 
-4. My mundane quick sort implementation is faster than the standard library sort for both languages. Typically, these library methods would utilize multiple sorting algorithms that are guided by a set of heuristics that help determine the best algorithm to use based on the dataset. I suspect that we would see the standard library sorts perform best with larger datasets and/or with complex objects. 
+4. We all know that selection sort and insertion sort are not particularly optimal algorithms, and Swift does a good job to emphasize this (when not using <code>-Ofast</code>, see *Table 1* and *Table 2*). But why are these two so terrible in Swift? Especially insertion sort. *Especially insertion sort.* In debug, Objective-C is 308x faster.
+
+5. My mundane quick sort implementation is faster than the standard library sort for both languages. Typically, these library methods would utilize multiple sorting algorithms that are guided by a set of heuristics that help determine the best algorithm to use based on the dataset. I suspect that we would see the standard library sorts perform best with larger datasets and/or with complex objects. 
+
+According to the benchmarks presented during the keynote (1:45:30), we should (probably?) be seeing different results here. Federighi noted that for complex object sort, Objective-C performed at 2.8x and Swift performed at 3.9x, using Python as the baseline (1.0x). It is not clear at this time how these benchmarks were achieved. What were the build and optimization settings? What is a "complex object"? In any case, surely Swift should be able to sort integers just as well as "complex objects", right?
 
 #### Swift Labs at WWDC
 
