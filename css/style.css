@@ -177,7 +177,8 @@ code {
 	background-color: #ffffff;
 }
 
-table {
+table,
+.table-responsive {
 	background-color: #fafafa;
 }
 
