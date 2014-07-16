@@ -78,6 +78,7 @@ Below are the results of running each program over 10 trials with 10,000 integer
 	</table>
 </div>
 
+<br />
 
 <p class="text-muted text-center table-header-footer"><strong>Table 2</strong></p>
 <div class="table-responsive">
@@ -118,8 +119,10 @@ Below are the results of running each program over 10 trials with 10,000 integer
 		</tbody>
 	</table>
 </div>
-<p class="text-muted text-center table-header-footer">According to the Apple engineers that I spoke with, <code>-O3</code> in Objective-C is essentially the equivalent to <code>-O</code> in Swift.</p><br />
 
+<p class="text-muted text-center table-header-footer">According to the Apple engineers that I spoke with, <code>-O3</code> in Objective-C is essentially the equivalent to <code>-O</code> in Swift.</p>
+
+<br />
 
 <p class="text-muted text-center table-header-footer"><strong>Table 3</strong></p>
 <div class="table-responsive">
@@ -160,7 +163,10 @@ Below are the results of running each program over 10 trials with 10,000 integer
 		</tbody>
 	</table>
 </div>
-<p class="text-muted text-center table-header-footer">Note that <code>-O</code> is the standard optimization level for Swift and <code>-Ofast</code>, though faster, removes <strong>all</strong> safety features (<em>array bounds-checking, integer overflow checking, etc.</em>) from Swift. In other words, do not ship an entire app compiled with <code>-Ofast</code>. More on that below.</p><br />
+
+<p class="text-muted text-center table-header-footer">Note that <code>-O</code> is the standard optimization level for Swift and <code>-Ofast</code>, though faster, removes <strong>all</strong> safety features (<em>array bounds-checking, integer overflow checking, etc.</em>) from Swift. In other words, do not ship an entire app compiled with <code>-Ofast</code>. More on that below.</p>
+
+<br />
 
 There are a few notable discoveries here:
 
