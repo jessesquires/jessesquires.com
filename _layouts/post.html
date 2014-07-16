@@ -20,7 +20,7 @@ layout: default
 <div class="sharing">
 	<div class="row">
 		<div class="col-md-2 col-xs-6">
-			<a class="btn btn-default btn-block" href="https://twitter.com/intent/tweet?text={{ page.title }}%20{{ site.url }}{{ page.url }}%20via%20@jesse_squires" target="_blank">
+			<a class="btn btn-default btn-block" href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}%20{{ site.url }}{{ page.url }}%20via%20@jesse_squires" target="_blank">
 				<i class="fa fa-twitter"></i> Tweet
 				<!-- <button class="btn btn-default btn-block"><i class="fa fa-twitter"></i> Tweet</button> -->
 			</a>
