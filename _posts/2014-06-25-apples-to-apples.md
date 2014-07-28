@@ -20,8 +20,13 @@ As a fun and interesting [code kata](http://codekata.com), I decided to port my 
 
 #### Setup
 
+<div class="alert alert-danger" role="alert">
+	<strong>Update: Xcode6-beta2</strong> <span class="pull-right"><em>27 July 2014</em></span>
+	<p>This post has been updated for Xcode-beta2. All trials were re-run as described below using Xcode-beta2. Results were largely similar, no significant changes.</p>
+</div>
+
 * *Code:* [Swift Sorts](https://github.com/jessesquires/swift-sorts) and [Objective-C Sorts](https://github.com/jessesquires/objc-sorts)
-* *Software:* OS X Mavericks 10.9.3, Xcode6-Beta WWDC seed
+* *Software:* OS X Mavericks ~~10.9.3~~ 10.9.4, Xcode6-beta2 ~~WWDC seed~~
 * *Hardware:* 2008 unibody MacBook Pro, 2.4 Ghz Intel Core 2 Duo, 8 GB 1067 MHz DDR3 memory <sup><a href="#note2" id="superscript2">[2]</a></sup>
 
 Each project is a command line app with a debug, release, and unit-test scheme. Build and run, then watch the console for output.
