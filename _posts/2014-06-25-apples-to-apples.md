@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Apples to apples
+date-updated: 1 Aug 2014
 subtitle: A comparison of sorts between Objective-C and Swift
 excerpt: When Craig Federighi arrived at his presentation slide about Objective-C during this year's WWDC keynote everyone in the room seemed puzzled, curious, and maybe even a bit uneasy. What was happening? As he continued, he considered what Objective-C would be like without the C
 ---
@@ -229,7 +230,7 @@ Additionally, I asked what the best practices are with regard to using <code>-Of
 
 #### Moving forward
 
-The results above seem to indicate that Apple has not (yet) followed through on their promises of speed and safety &mdash; at least in the sense that these features can be mutually inclusive. Again, it is still early. Hopefully these benchmarks will improve as Swift nears a 1.0 release. **I plan on updating this post or writing follow-up posts as Apple releases updates for Swift and Xcode6-beta.** <span class="text-danger"><strong>(Updated 2X)</strong></span>
+The results above seem to indicate that Apple has not (yet) followed through on their promises of speed and safety &mdash; at least in the sense that these features can be mutually inclusive. Again, it is still early. Hopefully these benchmarks will improve as Swift nears a 1.0 release. **I plan on updating this post or writing follow-up posts as Apple releases updates for Swift and Xcode6-beta.** <span class="text-danger"><strong>[Updated 2X]</strong></span>
 
 As Brent Simmons [said](http://inessential.com/2014/02/12/on_replacing_objective-c), Objective-C used to be considered slow compared to plain C, but it is not slow compared to Java or Python. I am not sure if the reaction to these results should be *we have faster hardware, so a slower language is fine*, or *nothing will ever be as fast as C*, or somewhere in-between. But after completing these two projects, I do know this: Swift is a pleasure to write and read. Many things came easier and more naturally in Swift, and Playgrounds are pure gold. Swift has a lot of potential. Let's hope this is the next step that we have all been waiting for, and not another [Copland](http://arstechnica.com/apple/2010/06/copland-2010-revisited/).
 
