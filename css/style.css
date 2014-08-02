@@ -29,6 +29,10 @@ a:hover {
 	color: #365459;
 }
 
+h1 > a:hover {
+	text-decoration:none;
+}
+
 a:active {
 	text-decoration:none;
 }
