@@ -13,7 +13,7 @@ body p {
 }
 
 a {
-	color: #5c9199;
+	color: #3F828C;
 }
 
 a:link {
@@ -26,7 +26,7 @@ a:visited {
 
 a:hover {
 	text-decoration:underline;
-	color: #365459;
+	color: #355459;
 }
 
 h1 > a:hover {
@@ -121,7 +121,7 @@ header hr {
 }
 
 .post-continue {
-	color: #8FAEB3;
+	color: #355459;
 }
 
 .post-continue a {
