@@ -46,6 +46,10 @@ blockquote {
 	color: #999999;
 }
 
+.small-quote {
+	font-size: 13px;
+}
+
 .center { 
 	float: none; 
 	margin-left: auto; 
