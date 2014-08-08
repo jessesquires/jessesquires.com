@@ -128,12 +128,11 @@ header hr {
 	line-height: 2.5rem;
 }
 
-.post-continue,
-.post-continue a {
+.post-continue {
 	color: #358C99;
 }
 
-.post-continue :hover {
+.post-continue:hover {
 	color: #245D66;
 }
 
@@ -204,7 +203,7 @@ table,
 }
 
 #footer a {
-	border-bottom: 0px;
+	border-width: 0px;
 }
 
 #footer ul {
@@ -225,24 +224,4 @@ table,
 	width: 22px;
 	height: 22px;
 	margin-bottom: 12px;
-}
-
-/* 
-	fix google custom search conflicts with bootstrap 
-	solution: http://css-tricks.com/forums/topic/troubles-with-box-sizing-and-google-custom-search/
-*/
-
-*, .cse:before, .cse:after {
-	-webkit-box-sizing: inherit;
-	-moz-box-sizing: inherit
-	box-sizing: inherit;
-}
-
-/*
-	other hacks for gcs
-*/
-.gcsc-branding,
-.gsc-control-wrapper-cse,
-.gsc-control-cse.gsc-control-cse-en {
-	background-color: #fafafa;
 }
