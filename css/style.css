@@ -13,11 +13,11 @@ body p {
 }
 
 a {
-	color: #3F828C;
+	color: #358C99;
 }
 
 a:link {
-	text-decoration:none;
+	border-bottom: 1px dotted #358C99;
 }
 
 a:visited {
@@ -25,15 +25,19 @@ a:visited {
 }
 
 a:hover {
-	text-decoration:underline;
-	color: #355459;
-}
-
-h1 > a:hover {
-	text-decoration:none;
+	color: #245D66;
+	text-decoration: none;
 }
 
 a:active {
+	text-decoration:none;
+}
+
+h1 > a:link {
+	border-width: 0px;
+}
+
+h1 > a:hover {
 	text-decoration:none;
 }
 
@@ -124,18 +128,13 @@ header hr {
 	line-height: 2.5rem;
 }
 
-.post-continue {
-	color: #355459;
-}
-
+.post-continue,
 .post-continue a {
-	color: #8FAEB3;
-	border-bottom: 1px dotted #8FAEB3;
-    text-decoration: none;
+	color: #358C99;
 }
 
 .post-continue :hover {
-	color: #365459;
+	color: #245D66;
 }
 
 /* PAGES */
@@ -167,7 +166,10 @@ header hr {
 	text-align: center;
 	margin: 0rem;
 	padding: 0rem 0rem 3rem 0rem;
+}
 
+.return-home a {
+	border-width: 0px;
 }
 
 .sharing {
@@ -201,6 +203,10 @@ table,
 	padding-bottom: 30px;
 }
 
+#footer a {
+	border-bottom: 0px;
+}
+
 #footer ul {
 	-webkit-padding-start: 0px !important;
 	-webkit-margin-before: 0px !important;
@@ -211,10 +217,32 @@ table,
 	display: inline-block;
 	list-style-type: none;
 	margin: 2px;
+	padding-left: 6px;
+	padding-right: 6px;
 }
 
 #hblogo {
 	width: 22px;
 	height: 22px;
 	margin-bottom: 12px;
+}
+
+/* 
+	fix google custom search conflicts with bootstrap 
+	solution: http://css-tricks.com/forums/topic/troubles-with-box-sizing-and-google-custom-search/
+*/
+
+*, .cse:before, .cse:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit
+	box-sizing: inherit;
+}
+
+/*
+	other hacks for gcs
+*/
+.gcsc-branding,
+.gsc-control-wrapper-cse,
+.gsc-control-cse.gsc-control-cse-en {
+	background-color: #fafafa;
 }
