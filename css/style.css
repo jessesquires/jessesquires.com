@@ -41,6 +41,10 @@ h1 > a:hover {
 	text-decoration:none;
 }
 
+#tagline a {
+	border-width: 0px;
+}
+
 a.btn {
 	border-width: 0px;
 }
