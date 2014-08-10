@@ -41,6 +41,10 @@ h1 > a:hover {
 	text-decoration:none;
 }
 
+a.btn {
+	border-width: 0px;
+}
+
 hr {
 	border-color: #d7d7d7;
 }
