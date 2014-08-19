@@ -45,7 +45,7 @@ h1 > a:hover {
 	border-width: 0px;
 }
 
-a.btn {
+a.btn, .btn {
 	border-width: 0px;
 }
 
