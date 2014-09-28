@@ -2,6 +2,8 @@
 
 This blog mostly contains bits about iOS, Cocoa, Objective-C, Swift, and open-source.
 
+![Logo](https://raw.githubusercontent.com/jessesquires/jessesquires.github.io/master/ico/icon120.png)
+
 ## About
 
 Lovingly built with [Jekyll](http://jekyllrb.com), [Bootstrap](http://getbootstrap.com), and [Font Awesome](http://fortawesome.github.io/Font-Awesome/).
