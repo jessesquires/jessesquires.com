@@ -5,7 +5,7 @@ subtitle: Exploring iOS size classes and trait collections
 excerpt: When the App Store launched, there was one iPhone with one screen size and one pixel density. Designing your user interfaces was relatively simple and the technical debt of hard-coding them was cheap. Today, developers and designers face many challenges in creating apps that must work on dozens of different devices. Long gone are the days
 ---
 
-When the App Store launched, there was one iPhone with one screen size and one pixel density. Designing your user interfaces was relatively simple and the [technical debt](http://martinfowler.com/bliki/TechnicalDebt.html) of hard-coding them was cheap. Today, developers and designers face many challenges in creating apps that must work on dozens of different devices. [Long gone](https://www.apple.com/iphone/compare/) are the days of 480x320. We can no longer depend on phyiscal screen sizes and must always be prepared for the next generation of devices.
+When the App Store launched, there was one iPhone with one screen size and one pixel density. Designing your user interfaces was relatively simple and the [technical debt](http://martinfowler.com/bliki/TechnicalDebt.html) of hard-coding them was cheap. Today, developers and designers face many challenges in creating apps that must work on dozens of different devices. [Long gone](https://www.apple.com/iphone/compare/) are the days of 480x320. We can no longer depend on physical screen sizes and must always be prepared for the next generation of devices.
 
 #### Devices have traits
 
@@ -24,13 +24,13 @@ A size class identifies a relative amount of display space for a UI element. The
 
 There's a lot of information in this diagram. Let's break down the most important details:
 
-1. We no longer have dozens of phyiscal devices. We have four abstract devices: Regular-Compact, Regular-Regular, Compact-Compact, Compact-Regular.
+1. We no longer have dozens of physical devices. We have four abstract devices: Regular-Compact, Regular-Regular, Compact-Compact, Compact-Regular.
 
 2. **All iPhones** (top left) in the portrait orientation have a **regular height** and a **compact width**. This means that your UI should behave and appear nearly the same on an iPhone 4S as it does on an iPhone 6 Plus.
 
 3. **All iPads** (top right) in **any** orientation have a **regular** size class for both dimensions.
 
-4. In the landscape orientation, iPhone 4/S, iPhone 5/S, and iPhone 6 (bottom left) have a **compact** size class for both dimensions. This is incredibly important as it highlights that *phyiscal device dimensions and size classes __do not__ correspond one-to-one*. For example, consider the iPhone 5. When in the portrait orientation it has a **regular height** and a **compact width**. Knowing this, your intuition may lead you to believe that when the device rotates, the size classes also "rotate" to yield a **compact height** and a **regular width**. However, this is not the case. When in the landscape orientation, the iPhone 5 has a **compact width**.
+4. In the landscape orientation, iPhone 4/S, iPhone 5/S, and iPhone 6 (bottom left) have a **compact** size class for both dimensions. This is incredibly important as it highlights that *physical device dimensions and size classes __do not__ correspond one-to-one*. For example, consider the iPhone 5. When in the portrait orientation it has a **regular height** and a **compact width**. Knowing this, your intuition may lead you to believe that when the device rotates, the size classes also "rotate" to yield a **compact height** and a **regular width**. However, this is not the case. When in the landscape orientation, the iPhone 5 has a **compact width**.
 
 5. The iPhone 6 Plus in the landscape orientation is unique (bottom right). It is currently the only device that adopts a **compact height** and a **regular width**. In iOS 8, we find that this means when the iPhone 6 Plus is in the landscape orientation, its UI behaves similarly to the iPad. For example, Mail displays as a [split view](https://developer.apple.com/library/ios/documentation/userexperience/conceptual/mobilehig/Art/split_view_2x.png) with the list of emails on the left and the currently selected email content on the right.
 
