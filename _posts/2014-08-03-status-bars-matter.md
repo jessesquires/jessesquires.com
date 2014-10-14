@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Status bars matter
+date-updated: 13 Oct 2014
 subtitle: Perfecting your app screenshots for the App Store
 excerpt: You have spent countless hours, days, months, or maybe even years perfecting your app. There has been plenty of blood, sweat, and tears. Your relationships and your health have suffered through the development process. You are ready for 1.0 and the time has arrived to prepare all of your content
 ---
@@ -41,3 +42,10 @@ The only aspect of the status bar that you should customize, aside from the colo
 
 Don't let your app be a victim of status bar neglect. 
 This is about polishing your app and its presentation in the App Store to the highest degree. **Status bars matter**, and every detail counts.
+
+<div class="alert alert-danger" role="alert">
+	<strong>Update</strong> <span class="pull-right"><em>13 Oct 2014</em></span>
+	<p>
+		<a href="http://shinydevelopment.com" class="alert-link">Shiny Development</a> has removed Status Magic from the App Store. Find out why on <a href="http://shinydevelopment.com/blog/status-magic-and-iphone6-screen-sizes/" class="alert-link">their blog</a> and how you can still get perfect status bars with OS X Yosemite and iOS 8.
+	</p>
+</div>
