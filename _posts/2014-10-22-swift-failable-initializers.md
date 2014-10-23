@@ -24,7 +24,7 @@ The issue with failable initializers in Swift is the same issue with [overloaded
 
 "Too young for conventions" is the language's latest tagline, which is probably as frightening to some as it is empowering to others. In this unique situation, we have the opportunity to influence what are considered Swift's best practices. Using failable initializers in Swift should be done sparingly and carefully.
 
-The [article](https://developer.apple.com/swift/blog/?id=17) provides an example of initializing an `NSImage` object. Putting Cocoa and Objective-C aside, I think this is an excellent use case. When you are trying to load an asset or other resource, it makes sense to fail and return `nil` in the situation that the resource is... well, `nil`.
+Apple's [article](https://developer.apple.com/swift/blog/?id=17) provides an example of initializing an `NSImage` object. Putting Cocoa and Objective-C aside, I think this is an excellent use case. When you are trying to load an asset or other resource, it makes sense to fail and return `nil` in the situation that the resource is... well, `nil`.
 
 However, failable initializers might seduce you into doing something bad. Suppose we have a blog post object. It requires the body text, the date it was written, and an image. To "simplify" construction of a post, you decide to pass the name of an image, instead of a `UIImage` object.
 
