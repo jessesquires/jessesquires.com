@@ -1,10 +1,10 @@
 /* COMMON ELEMENTS */
 
 #main {
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 2.5rem;
+	margin-bottom: 2.5rem;
 	background-color: #f2f2f2;
-	padding: 20px;
+	padding: 3rem;
 }
 
 body p {
@@ -41,11 +41,11 @@ h1 > a:hover {
 	text-decoration:none;
 }
 
-#tagline a {
-	border-width: 0px;
-}
-
-a.btn, .btn {
+#tagline a,
+a.btn, 
+.btn, 
+a.alert-link,
+.footnotes a {
 	border-width: 0px;
 }
 
@@ -96,6 +96,10 @@ header hr {
 	width: 45%;
 	margin-top: 0px;
 	margin-bottom: 10px;
+}
+
+header h1 a {
+	color: #333333;
 }
 
 /* POSTS */
@@ -194,14 +198,19 @@ code {
 	background-color: #ffffff;
 }
 
-table,
-.table-responsive {
-	background-color: #fafafa;
+th, td {
+	background-color: #ffffff;
 }
 
 .table-header-footer {
-	padding: 0px;
-	margin: 0px;
+	padding: 0rem;
+	margin: 0rem;
+}
+
+/* GITHUB GISTS */
+
+.file-data {
+	background-color: #ffffff;
 }
 
 /* FOOTER */
