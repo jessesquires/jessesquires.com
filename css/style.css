@@ -4,7 +4,7 @@
 	margin-top: 2.5rem;
 	margin-bottom: 2.5rem;
 	background-color: #f2f2f2;
-	padding: 3rem;
+	padding: 1rem;
 }
 
 body p {
@@ -45,7 +45,8 @@ h1 > a:hover {
 a.btn, 
 .btn, 
 a.alert-link,
-.footnotes a {
+.footnotes a,
+.gist-meta a {
 	border-width: 0px;
 }
 
