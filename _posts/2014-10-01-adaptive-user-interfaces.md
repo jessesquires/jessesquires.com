@@ -19,7 +19,7 @@ Just as the iPhone 6 [Retina HD display](https://www.apple.com/iphone-6/display/
 
 A size class identifies a relative amount of display space for a UI element. There are two primary size classes in iOS 8, compact and regular. Every screen or view defines a size class for both its horizontal and vertical dimensions &mdash; that is, its width and height. Describing each dimension with a size class results in a total of four options: compact width, regular width, compact height, regular height. The size classes for all iOS devices are defined in the following diagram.
 
-<img class="img-thumbnail img-responsive center" src="/img/size_classes.png" title="iOS 8 Size Classes" alt="iOS 8 Size Classes"/>
+<img class="img-thumbnail img-responsive center" src="{{ site.url }}/img/size_classes.png" title="iOS 8 Size Classes" alt="iOS 8 Size Classes"/>
 <small class="text-muted center">iOS 8 size classes by device. Device images taken from <a href="https://developer.apple.com/library/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS8.html">What's New in iOS 8</a>.</small>
 
 There's a lot of information in this diagram. Let's break down the most important details:
