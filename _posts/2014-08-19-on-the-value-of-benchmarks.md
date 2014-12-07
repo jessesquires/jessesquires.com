@@ -4,7 +4,9 @@ title: On the value of benchmarks
 subtitle: A brief examination of measuring code performance
 ---
 
-As [*Apples to apples, Part II*]({{ site.url }}/apples-to-apples-part-two/) made its way around the web, it was [praised](https://twitter.com/SwiftLang/status/497057489766981632) as well as [critiqued](https://twitter.com/benpickering/status/497127012814041088). The latter largely consisted of questions regarding the real-world applications of these benchmarks. In general, benchmarks should be taken with a grain of salt. I want to take a minute to clarify my thoughts on benchmarks and how I think they can be valuable.<!--excerpt-->
+As [*Apples to apples, Part II*]({{ site.url }}/apples-to-apples-part-two/) made its way around the web, it was [praised](https://twitter.com/SwiftLang/status/497057489766981632) as well as [critiqued](https://twitter.com/benpickering/status/497127012814041088). The latter largely consisted of questions regarding the real-world applications of these benchmarks. In general, benchmarks should be taken with a grain of salt. I want to take a minute to clarify my thoughts on benchmarks and how I think they can be valuable.
+
+<!--excerpt-->
 
 Benchmarks in software (and also [in hardware](http://www.macrumors.com/2013/12/15/new-12-core-mac-pro-once-again-shows-up-in-benchmarks/)) inherently do not reflect real-world performance scenarios. Just as with scientific experiments in academia, we have contrived a special situation in a fabricated environment that isolates a particular feature of a particular system, in order to examine it more closely. It does not matter whether we are measuring the speed of sorting large arrays of numbers, or examining the mechanisms of the behavior of *Caenorhaditis elegans* (i.e. the nematode worm) by [embedding a model of its connectome in a simplified body and environment simulation](http://www.ploscompbiol.org/article/info:doi/10.1371/journal.pcbi.1002890) &mdash; limitations and restrictions exist. By virtue of these processes, external factors that are normally present are absent.
 

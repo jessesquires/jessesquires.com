@@ -4,7 +4,9 @@ title: Apples to apples, Part III
 subtitle: A modest proposal&#58; can Swift outperform plain C?
 ---
 
-*When I find my code is slow or troubled, friends and colleagues comfort me. Speaking words of wisdom, write in C.* It is understood that foregoing the features and abstractions of [high-level](http://en.wikipedia.org/wiki/High-level_programming_language) programming languages in favor of their [low-level](http://en.wikipedia.org/wiki/Low-level_programming_language) counterparts can yield faster, more efficient code. If you abandon your favorite runtime, forget about garbage collection, eschew dynamic typing, and leave message passing behind; then you will be left with scalar operations, manual memory management, and raw pointers. However, the closer we get to the hardware, the further we get from readability, safety, and maintainability.<!--excerpt-->
+*When I find my code is slow or troubled, friends and colleagues comfort me. Speaking words of wisdom, write in C.* It is understood that foregoing the features and abstractions of [high-level](http://en.wikipedia.org/wiki/High-level_programming_language) programming languages in favor of their [low-level](http://en.wikipedia.org/wiki/Low-level_programming_language) counterparts can yield faster, more efficient code. If you abandon your favorite runtime, forget about garbage collection, eschew dynamic typing, and leave message passing behind; then you will be left with scalar operations, manual memory management, and raw pointers. However, the closer we get to the hardware, the further we get from readability, safety, and maintainability.
+
+<!--excerpt-->
 
 In [*Apples to apples, Part II*]({{ site.url }}/apples-to-apples-part-two/), we discovered that Swift was finally performing better than Objective-C. As expected, some common [reactions](https://twitter.com/OldManKris/status/497102303833255936) and [responses](https://twitter.com/mpweiher/status/497066155224608768) on Twitter were, *then how does it compare to C?* This is precisely what we are investigating today to welcome this week's arrival of [Xcode 6 beta 6](https://developer.apple.com/xcode/downloads/).
 
