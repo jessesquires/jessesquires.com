@@ -8,7 +8,7 @@ subtitle: A modest proposal&#58; can Swift outperform plain C?
 
 <!--excerpt-->
 
-In [*Apples to apples, Part II*]({{ site.url }}/apples-to-apples-part-two/), we discovered that Swift was finally performing better than Objective-C. As expected, some common [reactions](https://twitter.com/OldManKris/status/497102303833255936) and [responses](https://twitter.com/mpweiher/status/497066155224608768) on Twitter were, *then how does it compare to C?* This is precisely what we are investigating today to welcome this week's arrival of [Xcode 6 beta 6](https://developer.apple.com/xcode/downloads/).
+In [*Apples to apples, Part II*](/apples-to-apples-part-two/), we discovered that Swift was finally performing better than Objective-C. As expected, some common [reactions](https://twitter.com/OldManKris/status/497102303833255936) and [responses](https://twitter.com/mpweiher/status/497066155224608768) on Twitter were, *then how does it compare to C?* This is precisely what we are investigating today to welcome this week's arrival of [Xcode 6 beta 6](https://developer.apple.com/xcode/downloads/).
 
 #### Setup
 
@@ -73,7 +73,7 @@ Below are the results of running each program over 20 trials with 100,000 intege
 </div>
 
 <span class="text-muted">
-	**Note:** I should point out that Swift has **slightly regressed** in beta 6 &mdash; but it is still substantially faster than Objective-C on all algorithms. When comparing the results above with [*Table 4* from Part II]({{ site.url }}/apples-to-apples-part-two/), we see that Swift is slower for each sort by the following rates: 1.01x, 1.06x, 1.15x, 1.23x, 1.33x, respectively. Remember, Swift is still in beta. Things happen. If previous releases are any indication, we will surely see improvements.
+	**Note:** I should point out that Swift has **slightly regressed** in beta 6 &mdash; but it is still substantially faster than Objective-C on all algorithms. When comparing the results above with [*Table 4* from Part II](/apples-to-apples-part-two/), we see that Swift is slower for each sort by the following rates: 1.01x, 1.06x, 1.15x, 1.23x, 1.33x, respectively. Remember, Swift is still in beta. Things happen. If previous releases are any indication, we will surely see improvements.
 </span>
 
 Unexpectedly, **Swift outperforms C** for the standard library sort. This may reveal more about the standard library sorting algorithms than it does about the languages, but it is fascinating nonetheless. Examining the other sorts, C comes out ahead as most would have guessed &mdash; but its **margins are small**, relatively speaking. Recall how Swift nailed Objective-C in the previous post. At its slowest, Swift was still 6x faster than Objective-C, which means that Objective-C could not dream of performing this well. This is a big deal.
