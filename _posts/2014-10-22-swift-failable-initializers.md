@@ -2,11 +2,9 @@
 layout: post
 title: Swift Failable Initializers
 subtitle: When failable becomes fallible, and how to avoid it
-excerpt: Swift is still young and ever-changing. With each release, we have seen dozens of tweaks, additions, and deletions. And there is no reason for us to think that this rapid evolution will decline anytime soon. To remind us of exactly that, the latest post on Apple's Swift Developer Blog introduces a new feature
 ---
 
-Swift is still young and ever-changing. With each release, we have seen dozens of tweaks, additions, and deletions. And there is no reason for us to think that this rapid evolution will decline anytime soon. To remind us of exactly that, the latest [post](https://developer.apple.com/swift/blog/?id=17) on Apple's [Swift Developer Blog](https://developer.apple.com/swift/) introduces a new feature in Swift 1.1 in [Xcode 6.1](https://developer.apple.com/xcode/downloads/) &mdash; *failable initializers*.
-
+Swift is still young and ever-changing. With each release, we have seen dozens of tweaks, additions, and deletions. And there is no reason for us to think that this rapid evolution will decline anytime soon. To remind us of exactly that, the latest [post](https://developer.apple.com/swift/blog/?id=17) on Apple's [Swift Developer Blog](https://developer.apple.com/swift/) introduces a new feature in Swift 1.1 in [Xcode 6.1](https://developer.apple.com/xcode/downloads/) &mdash; *failable initializers*.<!--excerpt-->
 #### Failable initializers
 
 The idea is simple &mdash; sometimes objects fail to successfully initialize and we need a way to handle this. If you have ever read the iOS or OS X [documentation](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSObject_Class/index.html#//apple_ref/occ/instm/NSObject/init) for the Cocoa frameworks, then you have often had the pleasure of reading method descriptions similar to the following:

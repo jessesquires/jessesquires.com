@@ -23,3 +23,5 @@ author:
   url: https://twitter.com/jesse_squires
 
 paginate: 3
+
+excerpt_separator: <!--excerpt-->
