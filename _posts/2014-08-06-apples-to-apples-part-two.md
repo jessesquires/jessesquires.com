@@ -9,7 +9,7 @@ If at first you don't succeed, try, try again. Practice makes perfect. These pro
 
 This week, Apple has reminded us of the value of this iterative process and its rewards with the fifth beta release of Xcode 6, iOS 8, OS X Yosemite, and most importantly &mdash; *Swift*. This update includes a [number of improvements](http://adcdownload.apple.com//Developer_Tools/xcode_6_beta_5_za4gu6/xcode_6_beta_5_release_notes.pdf), but perhaps the most interesting are those not listed. Swift was rough around the edges during its launch at [WWDC](https://developer.apple.com/wwdc/), but it is **definitely** beginning to live up to its name.
 
-If you missed my first post, [*Apples to Apples*](/apples-to-apples/), you should head over there now to catch up.
+If you missed my first post, [*Apples to Apples*]({{ site.url }}/apples-to-apples/), you should head over there now to catch up.
 
 #### Setup
 
@@ -131,7 +131,7 @@ When not optimized, Swift is nothing to write home about. You can see that Objec
 	</table>
 </div>
 
-If you recall the results from the [previous post](/apples-to-apples/), then this should be quite shocking (in a good way). Take a deep breath. Yes, yes this is real life. The tables have completely turned (no pun intended). I've been running these trials since the first beta, and this is the *first time* that Swift has performed **better than Objective-C** for every single algorithm, with standard optimizations. And not only is Swift faster, but it is faster by significant margins.
+If you recall the results from the [previous post]({{ site.url }}/apples-to-apples/), then this should be quite shocking (in a good way). Take a deep breath. Yes, yes this is real life. The tables have completely turned (no pun intended). I've been running these trials since the first beta, and this is the *first time* that Swift has performed **better than Objective-C** for every single algorithm, with standard optimizations. And not only is Swift faster, but it is faster by significant margins.
 
 <p class="text-muted text-center table-header-footer"><strong>Table 3</strong></p>
 <div class="table-responsive">
