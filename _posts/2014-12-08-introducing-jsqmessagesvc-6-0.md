@@ -15,7 +15,7 @@ A few weeks ago I published the [sixth major release](https://github.com/jessesq
 
 It all began with [Hemoglobe](http://bit.ly/hemoglobeapp), an app for the bleeding disorder community. I built this app with [Michael Schultz](http://michaelschultz.com) almost two years ago, and one of the main features was... *private user messages*. I searched on [GitHub](https://github.com) and [CocoaControls](https://www.cocoacontrols.com) for an existing open-source framework. What I found was a lot of [great attempts](https://www.cocoacontrols.com/search?utf8=✓&q=messages) and partially completed projects. However, one [abandoned project](https://github.com/samsoffes/ssmessagesviewcontroller) stuck out and gave me some great ideas to get started.
 
-[CocoaPods](http://cocoapods.org) was just entering its third year back then and was not very mainstream. I hadn't even heard of it until [an issue](https://github.com/jessesquires/JSQMessagesViewController/issues/3) was opened that requested CocoaPod support and I received my [first pull-request](https://github.com/jessesquires/JSQMessagesViewController/pull/4) to add a [podspec](http://guides.cocoapods.org/syntax/podspec.html). 
+[CocoaPods](http://cocoapods.org) was just entering its third year back then and was not very mainstream. I knew very little about it until [an issue](https://github.com/jessesquires/JSQMessagesViewController/issues/3) was opened that requested CocoaPod support and I received my [first pull-request](https://github.com/jessesquires/JSQMessagesViewController/pull/4) to add a [podspec](http://guides.cocoapods.org/syntax/podspec.html). 
 
 After the app launched, I extracted the messages UI into a separate component and published [version 1.0](https://github.com/jessesquires/JSQMessagesViewController/releases/tag/1.0.0) on GitHub. I figured this was the least I could do, given how much the abandoned projects had helped me even though they were only partially completed. I figured there were probably other developers out there searching for a "finished" messages UI framework I like was before.
 
@@ -43,12 +43,12 @@ So how do we implement *the model* in *Model-View-Controller* when we have no id
 
 There are 4 data protocols for the model layer: 
 
-1. `JSQMessageData`: defines methods for message data (text or media) and metadata (sender, date, etc.)
-2. `JSQMessageMediaData`: defines method for representing media as a `UIView`
-3. `JSQMessageAvatarImageDataSource`: defines methods for avatar images
-4. `JSQMessageBubbleImageDataSource`: defines methods for message bubble images
+1. `JSQMessageData`: defines methods for providing message data (text or media) and metadata (sender, date, etc.)
+2. `JSQMessageMediaData`: defines methods for representing media as a `UIView`
+3. `JSQMessageAvatarImageDataSource`: defines methods for providing avatar images
+4. `JSQMessageBubbleImageDataSource`: defines methods for providing message bubble images
 
-Together, these protocols define the complete interface through which the `JSQMessagesViewController` framework communicates with your data. This means it does not matter how your data is structured or defined &mdash; you simply need to conform to the protocols by implementing their methods. This is very flexible and gives you the freedom to implement *your* model however *you* like.
+Together, these protocols specify the comprehensive interface through which the `JSQMessagesViewController` framework communicates with your data. This means it does not matter how your data is structured or defined &mdash; you simply need to conform to the protocols by implementing their methods. This is very flexible and gives you the freedom to implement *your* model however *you* like.
 
 Finally, I want to mention that the library *does* provide concrete model classes for those who want to use them. This allows you to get started using this library more quickly, and also serves as an example for how to implement these protocols in your custom classes should you choose to do so.
 
@@ -61,7 +61,7 @@ Earlier I mentioned that the new media message API allows you to display **any a
 
 The media message API was built with extensibility in mind. If the provided media items do not suit your needs, you can extend them to do so. And, with very little effort you can define *your own* **custom** media items. 
 
-An alternative approach to this API would have been to define the different message or media types as an [Enum](http://nshipster.com/ns_enum-ns_options/). And a few contributors have suggested or asked about this. Hopefully, you can see how limiting this would have been, especially regarding the library-provided media types. Using an enum would liter the code base with `switch` statements &mdash; a [code smell](http://en.wikipedia.org/wiki/Code_smell) &mdash; and require special handling for each kind of media. The only option for extensibilty would be providing a "custom" enum case, such as `JSQMediaTypeCustom`, which would defer all the work to the consumer of the API. This special enum case further increases complexity. And more importantly, this solution **cannot** address the situation where a developer wants to add **more than one** custom media type. By using a protocol, we avoid these pitfalls and every single media type is handled in the exact same way by the library.
+An alternative approach to this API would have been to define the different message or media types as an [Enum](http://nshipster.com/ns_enum-ns_options/). And a few contributors have suggested or asked about this. Hopefully, you can see how limiting this would have been, especially regarding the library-provided media types. Using an enum would liter the code base with `switch` statements &mdash; a [code smell](http://en.wikipedia.org/wiki/Code_smell) &mdash; and require special handling for each kind of media. The only option for extensibilty would have been providing a "custom" enum case, such as `JSQMediaTypeCustom`, which would defer all the work to the consumer of the API. This special enum case further increases complexity. And more importantly, this solution **cannot** address the situation where a developer wants to add **more than one** custom media type. By using a protocol, we avoid these pitfalls and every single media type is handled in the exact same way by the library.
 
 ### Examples
 
@@ -69,12 +69,12 @@ Check out the [Getting Started](https://github.com/jessesquires/JSQMessagesViewC
 
 ### Future work
 
-There's still plenty of work to do moving forward. There are plenty of [feature requests](https://github.com/jessesquires/JSQMessagesViewController/labels/feature%20request) and [bugs](https://github.com/jessesquires/JSQMessagesViewController/labels/bug) to address. And as mentioned above, frameworks are constantly evolving. I can't wait to see what this framework looks like in another year. I would love to rewrite it in [Swift](https://developer.apple.com/swift/) eventually. We'll see what happens.
+I think this library is in a very good state. It's stable and extensbile, but there's still plenty of work to do moving forward. There are plenty of [feature requests](https://github.com/jessesquires/JSQMessagesViewController/labels/feature%20request) and some [bugs](https://github.com/jessesquires/JSQMessagesViewController/labels/bug) to address. And as mentioned above, frameworks are constantly evolving. I can't wait to see what this framework looks like in another year. I would love to rewrite it in [Swift](https://developer.apple.com/swift/) eventually. We'll see what happens.
 
 ### Thanks for contributing
 
-Needless to say, this project **would not** be where it is today without the enthusiasm and support of our **awesome community**. The initial release of this library was so limited, and I never expected that I would still be developing it *years* later. It is only because of the interest, kindness, and [encouragement](https://github.com/jessesquires/JSQMessagesViewController/issues/608) from the community that I've continued working on this. (Well, programming is also pretty fun for me too.)
+Needless to say, this project **would not** be where it is today without the enthusiasm and support of our **awesome community**. The initial release of this library was so limited, and I never expected that I would still be developing it *years* later. It is only because of the interest, [kindness](https://github.com/jessesquires/JSQMessagesViewController/issues/172#issuecomment-41995394), and [encouragement](https://github.com/jessesquires/JSQMessagesViewController/issues/608) from the community that I've continued working on this. (Well, programming is also pretty fun for me too.)
 
-Developing this library, and doing it openly, has taught me **so much**. I've improved my programming skills, I've learned more about open-source, I discovered CocoaPods, I learned how to effectively manage a large project, and the list continues. And I continue to learn. Open-source has brought so many great things to me. I could not be more grateful for that. And I'm very excited to continue supporting and maintaining this library. 
+Developing this library, and doing it openly, has **taught me so much** and given me **so many opportunities**. I've improved my programming skills, I've met dozens of great developers, I discovered CocoaPods, I've learned how to effectively manage a large project with dozens of individual contributors, and the list continues. And I continue to learn. Open-source has given me all of these amazing things. I could not be more grateful for that. And I'm very excited to continue supporting and maintaining this library. 
 
 **Thank you for this opportunity to learn, share, and collaborate.**
