@@ -55,12 +55,10 @@ The benchmarks consist of *T* trials, which are averaged at the end to obtain th
 These two programs were carefully crafted to be a true *apples-to-apples* comparison. All of the algorithms, as well as `main.swift` and `main.m`, are implemented as similarly as possible, bounded only by the confines and paradigms of the languages themselves. In Objective-C, `NSArray` and `NSNumber` are used intentionally as the counterparts to Swift's `Array` and `Int`. The APIs are language-specific too, for example `exchangeObjectAtIndex: withObjectAtIndex:` versus `swap()`. 
 
 The following were used for the standard library sorts:
-
-<script src="https://gist.github.com/jessesquires/06b6bd68a7d18810651f.js"></script>
-
-<p class="text-muted text-center table-header-footer">
+{% gist jessesquires/06b6bd68a7d18810651f %}
+<span class="text-muted text-center center table-header-footer">
 	Previous Swift std lib sort <a href="https://gist.github.com/jessesquires/06b6bd68a7d18810651f/ee5aa0a7427f830fadd4d369c9d04a895fc2b49b">implementation here</a>.
-</p>
+</span>
 
 #### Results
 
