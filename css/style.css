@@ -195,7 +195,7 @@ header h1 a {
 	-webkit-margin-after: 0px !important;
 }
 
-code {
+code, pre {
 	background-color: #ffffff;
 }
 
