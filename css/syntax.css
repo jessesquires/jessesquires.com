@@ -3,7 +3,7 @@
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .highlight .k { color: #a81c5d; font-weight: bold } /* Keyword */
 .highlight .o { color: #000000; font-weight: bold } /* Operator */
-.highlight .cm { color: #999988; font-style: italic } /* Comment.Multiline */
+.highlight .cm { color: #999988; font-weight: bold; } /* Comment.Multiline */
 .highlight .cp { color: #999999; font-weight: bold; } /* Comment.Preproc */
 .highlight .c1 { color: #999988; font-style: italic } /* Comment.Single */
 .highlight .cs { color: #999999; font-weight: bold; font-style: italic } /* Comment.Special */
