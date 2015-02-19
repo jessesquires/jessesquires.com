@@ -113,7 +113,7 @@ header h1 a {
 
 .post {
 	padding-top: 1rem;
-	padding-bottom: 2rem;
+	padding-bottom: 2.5rem;
 }
 
 .post-title {
@@ -147,6 +147,11 @@ header h1 a {
 
 .post-continue:hover {
 	color: #245D66;
+}
+
+a.post-continue {
+	border-width: 0px;
+	text-decoration: none;
 }
 
 /* PAGES */

@@ -6,8 +6,9 @@ title: Home
 <div class="post-list">
 	{% for post in paginator.posts %}
 		<article class="post">
-
-			<h1 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+			<h1 class="post-title">
+				<a href="{{ post.url }}">{{ post.title }} <small class="post-continue"><i class="fa fa-long-arrow-right"></i></small></a>
+			</h1>
 
 			<h2 class="post-subtitle">
 				<small>{{ post.subtitle }}</small> 
@@ -21,7 +22,6 @@ title: Home
 			<div class="post-excerpt">
 				{{ post.excerpt }}
 			</div>
-
 		</article>
 	{% endfor %}
 </div> <!-- post-list -->
