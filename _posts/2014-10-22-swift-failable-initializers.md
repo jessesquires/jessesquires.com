@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Swift Failable Initializers
+title: Swift failable initializers
 subtitle: When failable becomes fallible, and how to avoid it
 ---
 

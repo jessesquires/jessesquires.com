@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Rosetta Stone Contributes
+title: Rosetta Stone contributes
 subtitle: Rosetta Stone officially joins the open-source community
 ---
 
