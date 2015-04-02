@@ -113,7 +113,7 @@ header h1 a {
 
 .post {
 	padding-top: 1rem;
-	padding-bottom: 2.5rem;
+	padding-bottom: 4rem;
 }
 
 .post-title {
@@ -141,8 +141,15 @@ header h1 a {
 	line-height: 2.5rem;
 }
 
+.post-excerpt p {
+	margin-bottom: 0rem;
+	padding-bottom: 0rem;
+}
+
 .post-continue {
-	color: #358C99;
+	color: #666666;
+	margin: 0rem;
+	padding: 0rem;
 }
 
 .post-continue:hover {
