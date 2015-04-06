@@ -4,7 +4,7 @@ title: Failable initializers, revisited
 subtitle: Functional approaches to avoid Swift's failable initializers
 ---
 
-In a [previous](/swift-failable-initializers/) post, I discussed how Swift's [failable initializers](https://developer.apple.com/swift/blog/?id=17) could be problematic. Specifically, I argued that their ease of use could persuade or encourage us to revert to old (bad) Objective-C habits of returning `nil` from `init`. Initialization is usually *not the right place* to fail. We should aim to avoid optionals as much as possible to reduce having to handle this absence of values. Recently, **@danielgomezrico** asked a great [question](https://github.com/jessesquires/jessesquires.github.io/issues/8) about a possible use case for a failable initializer &mdash; parsing JSON. [Given](http://owensd.io/2014/06/18/json-parsing.html) [this](http://chris.eidhof.nl/posts/json-parsing-in-swift.html) problem's [popularity](https://github.com/SwiftyJSON/SwiftyJSON) in the Swift community, I thought sharing my ideas here would be helpful.
+In a [previous](/swift-failable-initializers/) post, I discussed how Swift's [failable initializers](https://developer.apple.com/swift/blog/?id=17) could be problematic. Specifically, I argued that their ease of use could persuade or encourage us to revert to old (bad) Objective-C habits of returning `nil` from `init`. Initialization is usually *not the right place* to fail. We should aim to avoid optionals as much as possible to reduce having to handle this absence of values. Recently, **@danielgomezrico** asked a great [question](https://github.com/jessesquires/jessesquires.github.io/issues/8) about a possible use case for a failable initializer &mdash; parsing JSON. [Given](http://owensd.io/2014/06/18/json-parsing.html) [this](http://chris.eidhof.nl/posts/json-parsing-in-swift.html) problem's [popularity](https://github.com/SwiftyJSON/SwiftyJSON) in the Swift community, I thought sharing my response here would be helpful.
 
 <!--excerpt-->
 
@@ -42,11 +42,13 @@ This rather straightforward, but is using `init?` the best solution? There are s
 
 What if the structure or keys in the JSON change? Then we would have to update our model. What if we are using [Core Data](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CoreData/cdProgrammingGuide.html), and our model is an `NSManagedObject` subclass? Then we would have to stand up an **entire** Core Data stack just to unit test the JSON parsing. What if the service from which we receive the JSON changes and instead we receive XML? Then we would need a new initializer, `init?(xml: XML)`, and the model would know all about XML.
 
+This design has put our model in a fragile position. 
+
 ### The solution
 
-The issues above can be addressed with single-purpose objects for each step of the process: (1) validating the JSON, (2) parsing the JSON, and (3) constructing the model.
+The issues above can be addressed by removing the model's dependency on JSON (or XML) and creating single-purpose objects for each step of the process: (1) validating the JSON, (2) parsing the JSON, and (3) constructing the model.
 
-The first step is creating a generic validator object. We'll use a [phantom type](http://www.objc.io/snippets/13.html) to ensure that a validator can only validate the JSON for a specific type of model. We initialize the validator with a closure that receives JSON and returns a `Bool` indicating whether or not it is valid.
+The first step is creating a generic validator object. We'll use a [phantom type](http://www.objc.io/snippets/13.html) to ensure that a validator can only validate the JSON for a specific type of model. We initialize the validator with a closure that receives JSON and returns a `Bool` indicating whether or not it is valid. This closure is saved as a property on the validator.
 
 {% highlight swift linenos %}
 
@@ -73,9 +75,9 @@ let validator = JSONValidator<MyModel> { (json) -> Bool in
 
 {% endhighlight %}
 
-As you can see, this brings type-safety and readability to the validator. We know that this validator is for `MyModel` instances.
+The combination of a phantom type and a closure property enable us to construct many unique validators, while maintaining a single generic interface through which validation occurs. In other words, we do not have to create many different concrete validators (or validator subclasses) for many different models. Additionally, in this example you can see how this brings type-safety and readability to the validator. We know that this validator is for `MyModel` instances.
 
-Next, we'll define a JSON parser protocol, and implement a concrete parser. The protocol will allow us to reference parsers throughout our code in a generic way, while enabling each concrete parser to know about parsing a specific type of model. The parser will receive JSON, parse it, and return a model. We'll also add a new initializer to `MyModel` that uses dependency injection and remove the old one, `init?(json: JSON)`. This parser assumes that the JSON has already been validated.
+Next, we'll define a JSON parser protocol, and implement a concrete parser. The protocol will allow us to reference parsers throughout our code in a generic way, while enabling each concrete parser to know about parsing a specific type of model. The parser will receive JSON, parse it, and return a model. We'll also add a new (more proper) designated initializer to `MyModel` that uses [dependency injection](http://en.wikipedia.org/wiki/Dependency_injection) and remove the old one, `init?(json: JSON)`. This parser assumes that the JSON has already been validated.
 
 {% highlight swift linenos %}
 
@@ -146,12 +148,12 @@ else {
 
 {% endhighlight %}
 
-Let's break this down. The type parameter `T` specifies the model type. The validator must be a validator for `T`, and the function returns an optional `T?`. The type parameter `P` specifies the parser type, and the `where` clause enforces that the parser `P` parses models of type `T`. If validation fails, then the function returns `nil`, otherwise it will parse the JSON and return a model.
+Suffering from [angle-brack-T blindness](http://inessential.com/2015/02/04/random_swift_things)? Me too. Let's break this down. The type parameter `T` specifies the model type. The validator must be a validator for `T`, and the function returns an optional `T?`. The type parameter `P` specifies the parser type, and the `where` clause enforces that the parser `P` parses models of type `T`. If validation fails, then the function returns `nil`, otherwise it will parse the JSON and return a model.
 
-<span class="text-muted"><strong>Note:</strong> Depending on your architecture, it may not be possible nor worthwhile to have separate validation and parsing steps. If so, these two steps could be combined into the parser object and the rest of this example is still valid and works.</span>
+<span class="text-muted"><strong>Note:</strong> Depending on your architecture, it may not be possible nor worthwhile to have separate validation and parsing steps for JSON. If so, these two steps could be combined into the parser object and everything will still work wonderfully.</span>
 
 ### When to fail
 
-As you can see, we have a clear separation of concerns, easily testable code, and no failable initializers. Of course there will be situations where a solution like this is not possible, namely, resource loading. For example, a `UIImage` or `NSBundle` represents an actual resource on disk. If a resource does not exist, then the class that represents it cannot be instantiated and using a failable initializer is perfect. In this situation, `init?` has exactly the semantics we want. But for models? Probably not. 
+As you can see, we have a clear separation of concerns, easily testable code, and no failable initializers. Of course there will be situations where a solution like this is not possible, namely, resource loading. For example, a `UIImage` or `NSBundle` represents an actual resource on disk. If a resource does not exist, then the class that represents it cannot be instantiated and using a failable initializer is perfect. In this situation, `init?` has exactly the semantics we want. But for models and similar instances, using `init?` is probably not a good idea.
 
 Next time you find yourself wanting to write `init?` instead of `init`, there is likely a way to avoid it with a more thoughtful design that will push optionals and failure states further toward the edges of your object graph. Remember, **_where_ we choose to fail _does_ matter.**
