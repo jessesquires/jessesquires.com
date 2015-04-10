@@ -143,13 +143,11 @@ header h1 a {
 
 .post-excerpt p {
 	margin-bottom: 0rem;
-	padding-bottom: 0rem;
+	padding-bottom: 1rem;
 }
 
 .post-continue {
 	color: #666666;
-	margin: 0rem;
-	padding: 0rem;
 }
 
 .post-continue:hover {
