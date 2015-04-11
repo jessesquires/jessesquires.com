@@ -33,14 +33,6 @@ a:active {
 	text-decoration:none;
 }
 
-h1 > a:link {
-	border-width: 0px;
-}
-
-h1 > a:hover {
-	text-decoration:none;
-}
-
 #tagline a,
 a.btn, 
 .btn, 
@@ -154,7 +146,8 @@ header h1 a {
 	color: #245D66;
 }
 
-a.post-continue {
+a.post-continue,
+.post-title a {
 	border-width: 0px;
 	text-decoration: none;
 }
@@ -223,6 +216,13 @@ th, td {
 .table-header-footer {
 	padding: 0rem;
 	margin: 0rem;
+}
+
+/* STANDALONE PAGES */
+
+h1.page-title {
+	font-size: 30px;
+	color: #666666;
 }
 
 /* GITHUB GISTS */
