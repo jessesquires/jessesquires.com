@@ -95,6 +95,14 @@ header h1 a {
 	color: #333333;
 }
 
+h1 > a:link {
+	border-width: 0px;
+}
+
+h1 > a:hover {
+	text-decoration:none;
+}
+
 /* POSTS */
 
 .post-list {
@@ -223,6 +231,23 @@ th, td {
 h1.page-title {
 	font-size: 30px;
 	color: #666666;
+}
+
+/* ARCHIVE */
+
+.archive-post {
+	margin-bottom: 4rem;
+}
+
+.archive-post h3 {
+	line-height: 3rem;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.archive-post h4 {
+	color: #777777;
+	line-height: 2rem;
 }
 
 /* GITHUB GISTS */
