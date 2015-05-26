@@ -20,6 +20,8 @@ Realm's notes and transcription are excellent, but I want to briefly to reiterat
 
 1. Use [JSQCoreDataKit](https://github.com/jessesquires/JSQCoreDataKit)! :) I plan on improving and adding to the framework as I use it in my side projects. If you are building an app using Swift and Core Data, please consider using it &mdash; contributions are more than welcome!
 
+1. I'm interested in bringing type-safety and functional paradigms to Core Data. Currently, this approach means eschewing much of Objective-C's dynamicism, which unfortunately leaves popular libraries like [Mantle](https://github.com/Mantle/Mantle) incompatible. This is mostly due to using designated initializers in Swift.
+
 ### Other notes
 
 There was a comment about iterating through the [`NSManagedObjectModel`](https://developer.apple.com/library/prerelease/ios/documentation/Cocoa/Reference/CoreDataFramework/Classes/NSManagedObjectModel_Class/index.html). Details and discussion can be found at [this gist](https://gist.github.com/nevyn/d22c4684370fa07078dd).
