@@ -71,4 +71,4 @@ What is most interesting here is realizing how **extensions can limit our design
 
 Let me know what you think! You can find me [on Twitter](http://twitter.com/jesse_squires).
 
-<span class="text-muted">**Note:** There have been some attempts to [automate](https://github.com/indragiek/swiftrsrc) something similar to what I have described, but not exactly. Some of the deeper nesting might be difficult to automate, but I have yet to try this.</span>
+<span class="text-muted">**Note:** There have been some attempts to automate something similar to what I have described, like [swiftrsrc](https://github.com/indragiek/swiftrsrc) and [Natalie](https://github.com/krzyzanowskim/Natalie), but not exactly. Some of the deeper nesting might be difficult to automate, but I have yet to try this.</span>
