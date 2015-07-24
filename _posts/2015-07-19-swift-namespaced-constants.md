@@ -2,6 +2,7 @@
 layout: post
 title: Namespaced constants in Swift
 subtitle: Using nested types for clarity
+date-updated: 23 July 2015
 ---
 
 Mike Ash has a great [Friday Q&A](https://www.mikeash.com/pyblog/friday-qa-2011-08-19-namespaced-constants-and-functions.html) on namespaced constants and functions in C. It is a powerful and elegant technique to avoid using `#define` and verbose Objective-C prefixes. Although Swift types are namespaced by their module, we can still benefit from implementing this pattern with `struct` and `enum` types. I've been experimenting with this approach for constants in Swift and it has been incredibly useful.
@@ -61,7 +62,7 @@ let red = ColorPalette.Red
 let darkGray = ColorPalette.Gray.Dark
 {% endhighlight %}
 
-Again, we should not add our custom colors to `UIColor` globally via an extension. For colors, using an extension presents even more challenges regarding naming. For example if you have a custom red color, you cannot name the method `redColor()` because `UIColor` already defines this class method. Do you name your method `red()`? That's kind of awkward. Do you prefix the method name like you would in Objective-C, `jsq_redColor()`? That's *more* awkward in Swift. Given light and dark versions of colors, do you use `darkPurple()`, or `purpleDark()`? If you have many dark and light variants, it might be better to use the `<colorName><variant>` naming convention. Regardless, everyone on your team will have different opinions on naming &mdash; and they will *__all__ be great!*
+Again, we should not add our custom colors to `UIColor` globally via an extension. For colors, using an extension presents even more challenges regarding naming. For example if you have a custom red color, you cannot name the method `redColor()` because `UIColor` already defines this class method. Do you name your method `red()`? That's kind of awkward. Do you prefix the method name like you would in Objective-C, `jsq_redColor()`? That's *more* awkward in Swift. Given light and dark versions of colors, do you use `darkPurple()`, or `purpleDark()`? If you have many dark and light variants, it might be better to use the `{colorName}{variant}` naming convention. Regardless, everyone on your team will have different opinions on naming &mdash; and they will *__all__ be great!*
 
 Luckily we can avoid the naming wars (hopefully). Using nested structs gives us our own namespace with much richer semantics, avoids naming collisions with `UIColor`, and provides precise code-completion from our editor.
 
@@ -72,3 +73,9 @@ What is most interesting here is realizing how **extensions can limit our design
 Let me know what you think! You can find me [on Twitter](http://twitter.com/jesse_squires).
 
 <span class="text-muted">**Note:** There have been some attempts to automate something similar to what I have described, like [swiftrsrc](https://github.com/indragiek/swiftrsrc) and [Natalie](https://github.com/krzyzanowskim/Natalie), but not exactly. Some of the deeper nesting might be difficult to automate, but I have yet to try this.</span>
+
+<p class="alert alert-danger" role="alert">
+   <strong>Update</strong> <span class="pull-right"><em>{{ page.date-updated }}</em></span>
+   <br />
+   Inspired by this post, <a href="https://twitter.com/leemorgan" class="alert-link" target="_blank">Lee Morgan</a> has written a build script that generates a Swift source file based on Xcode assets. Checkout the repo <a href="https://github.com/leemorgan/AutoAssets" class="alert-link" target="_blank">AutoAssets</a> on GitHub. Thanks Lee!
+</p>
