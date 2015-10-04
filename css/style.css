@@ -233,6 +233,17 @@ h1.page-title {
    color: #666666;
 }
 
+/* ABOUT */
+
+#about {
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+}
+
+#about p {
+   line-height: 2rem;
+}
+
 /* ARCHIVE */
 
 .archive-post {
@@ -279,10 +290,4 @@ h1.page-title {
    padding-left: 6px;
    padding-right: 6px;
    padding-bottom: 10px;
-}
-
-#hblogo {
-   width: 22px;
-   height: 22px;
-   margin-bottom: 12px;
 }

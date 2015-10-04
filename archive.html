@@ -1,15 +1,13 @@
 ---
-layout: default
+layout: toplevel
 title: Archive
+icon: fa-archive
 ---
 
-<span class="center return-home"><a href="/"><i class="fa fa-chevron-up fa-2x"></i></a></span>
-<h1 class="page-title text-center"><i class="fa fa-archive"></i> Archive</h1>
-  
 <article class="archive-list">
    <div class="row">
-   <div class="col-sm-8 col-sm-offset-2">
-   
+      <div class="col-sm-8 col-sm-offset-2">
+
    {% for post in site.posts %}
       <div class="archive-post">
          <h3><small class="post-date">{{ post.date | date_to_string }}</small> <a href="{{ post.url }}">{{ post.title }}</a></h3>
@@ -17,6 +15,6 @@ title: Archive
       </div>
    {% endfor %}
 
-   <!-- </div> -->
+      </div>
    </div>
 </article>
