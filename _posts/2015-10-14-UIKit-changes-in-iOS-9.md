@@ -34,7 +34,7 @@ Why do these details about weak references matter? Because up until iOS 8, UIKit
 
 <span class="text-muted"><b>Note:</b> this extends well beyond UITableView and UICollectionView. UIBarButtonItem.target is assign. UIGestureRecognizer.delegate is assign. UIActionSheet.delegate is assign. UIAccelerometer.delegate is assign. The list goes on, everywhere in UIKit.</span>
 
-These references are `assign` (non-zeroing). That is, _**not**_ `weak` (zeroing). Have you ever had a bug because of this? [I have](https://github.com/jessesquires/JSQMessagesViewController/issues/201). What happens is your `dataSource` or `delegate` object is deallocated *before* the view, and then the view attempts to send a message to an object that's been destroyed, and you crash. And then you confusingly look through obscure stack traces and repeatedly fail to reproduce the issue. You lie awake at night, unable to sleep.
+These references are `assign` (non-zeroing). That is, _**not**_ `weak` (zeroing). Have you ever had a bug because of this? [I have](https://github.com/jessesquires/JSQMessagesViewController/issues/201). What happens is the `dataSource` or `delegate` object is deallocated *before* the view, and then the view attempts to send a message to an object that has been destroyed, and you crash. And then you confusingly look through obscure stack traces and repeatedly fail to reproduce the issue. You lie awake at night, unable to sleep.
 
 For correctness, you should be setting these to `nil` in `dealloc`. In the comments of Mike's post, he [explains further](https://mikeash.com/pyblog/friday-qa-2011-09-30-automatic-reference-counting.html#comment-4010c9e897b775d2d9a6f2eca3baa77e):
 
