@@ -35,7 +35,7 @@ A while back, [objc.io](http://www.objc.io) posted functional [snippet 16](http:
 
 {% endhighlight %}
 
-This is problematic for a few reasons. 
+This is problematic for a few reasons.
 
 1. We need to remember to explicitly add and remove `self` as an observer. Forgetting to remove `self` in `dealloc` is a bug.
 2. The code that actually handles the notification is in a totally different area (the `handleNotification:` method). As more code is added to this class, it becomes more difficult to see what is happening and when.
@@ -81,7 +81,7 @@ postNotification(notification, value: CGSizeMake(200, 200))
 
 {% endhighlight %}
 
-When the observer is set to `nil` (when it is deallocated), then it is removed from `NSNotificationCenter`. 
+When the observer is set to `nil` (when it is deallocated), then it is removed from `NSNotificationCenter`.
 
 {% highlight swift linenos %}
 
@@ -106,19 +106,23 @@ A notification can be configured in 4 different ways:
 For notifications without a sender, or for which the observer does not care about the sender, we can specify a sender of type `AnyObject`. When we initialize a `Notification`, we can omit the `sender` parameter which defaults to `nil`. The semantics here are great. *Any object* can send this notification, it does not matter to the observer.
 
 {% highlight swift linenos %}
+
 let myValue = MyValueType()
 
 let notification = Notification<MyValueType, AnyObject>(name: "Notification")
 
 postNotification(notification, value: myValue)
+
 {% endhighlight %}
 
 For notifications without a value, we simply specify a value type of `Void`. Then when the notification is posted we send the empty tuple, `()`. Remember, the empty tuple is equivalent to `Void`.
 
 {% highlight swift linenos %}
+
 let notification = Notification<Void, MyObjectType>(name: "Notification", sender: MyObject)
 
 postNotification(notification, value: ())
+
 {% endhighlight %}
 
 From here, it is easy to see how we can construct and post a notification with neither a value nor a sender. Furthermore, the value type could be a `Dictionary` which allows this API to conform to the existing patterns in Cocoa. For more examples on usage, see the unit tests included with [JSQNotificationObserverKit](https://github.com/jessesquires/JSQNotificationObserverKit).

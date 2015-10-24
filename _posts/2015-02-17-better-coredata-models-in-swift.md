@@ -10,7 +10,7 @@ As I continue my work with [Core Data](https://developer.apple.com/library/mac/d
 
 ### A great case for optionals
 
-There's been plenty of [feedback](http://owensd.io/2014/10/18/optionals-beware.html) in the community about [optionals](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-ID330) and how they are often [cumbersome](http://natashatherobot.com/unit-testing-optionals-in-swift-xctassertnotnil/) to use. However, this relatively simple construct brings a welcoming clarity to managed objects when working with Core Data. When defining entities in Core Data, it is possible to set some basic validation rules for an entity's attributes in the Data Model Inspector. 
+There's been plenty of [feedback](http://owensd.io/2014/10/18/optionals-beware.html) in the community about [optionals](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-ID330) and how they are often [cumbersome](http://natashatherobot.com/unit-testing-optionals-in-swift-xctassertnotnil/) to use. However, this relatively simple construct brings a welcoming clarity to managed objects when working with Core Data. When defining entities in Core Data, it is possible to set some basic validation rules for an entity's attributes in the Data Model Inspector.
 
 <img class="img-thumbnail img-responsive center" src="/img/coredata_inspector.jpg" title="Core Data Model Inspector" alt="Core Data Model Inspector"/>
 <small class="text-muted center">Data Model Inspector for Core Data managed objects.</small>
@@ -51,7 +51,7 @@ class Employee: NSManagedObject {
     @NSManaged var firstName: String
     @NSManaged var lastName: String
     @NSManaged var middleName: String?
-    
+
     @NSManaged var salary: NSDecimalNumber
     @NSManaged var status: Int32
 }
@@ -73,7 +73,7 @@ class Employee: NSManagedObject {
 
     @NSManaged var firstName: String
     @NSManaged var lastName: String
-    
+
     @NSManaged var salary: NSDecimalNumber
     @NSManaged var status: Int32
 }
@@ -172,6 +172,6 @@ Furthermore, this is not limited to integers. You can apply this strategy with a
 
 ### Clarity, or something slightly less terrible
 
-Swift has a lot of potential to improve Core Data, but it does require more effort for developers and has some inconvenient workarounds and shortcomings. While I think it's worth the time, the wrapping and unwrapping of values described above can be tedious to implement. And having to use the underlying private property names for fetch requests feels dirty. On the bright side, we get optionals and type aliases for free &mdash; a great step forward. 
+Swift has a lot of potential to improve Core Data, but it does require more effort for developers and has some inconvenient workarounds and shortcomings. While I think it's worth the time, the wrapping and unwrapping of values described above can be tedious to implement. And having to use the underlying private property names for fetch requests feels dirty. On the bright side, we get optionals and type aliases for free &mdash; a great step forward.
 
-In any case, I do think this is better than what we had before. Sometimes it seems like Swift is bringing out the worst in Cocoa and Objective-C. Here's to hoping the toolset will improve &mdash; and when Cocoa finally [dies](http://nshipster.com/the-death-of-cocoa/), I'll be cheering for a Swift re-implementation of Core Data. 
+In any case, I do think this is better than what we had before. Sometimes it seems like Swift is bringing out the worst in Cocoa and Objective-C. Here's to hoping the toolset will improve &mdash; and when Cocoa finally [dies](http://nshipster.com/the-death-of-cocoa/), I'll be cheering for a Swift re-implementation of Core Data.

@@ -23,6 +23,7 @@ The issue is that a non-zeroing reference ends up pointing to invalid memory (be
 Why do these details about weak references matter? Because up until iOS 8, UIKit views that have a `delegate` or `dataSource` property have been declared as the following.
 
 {% highlight swift linenos %}
+
 // UITableView iOS 8 and below
 @property(nonatomic, assign) id<UITableViewDataSource> dataSource
 @property(nonatomic, assign) id<UITableViewDelegate> delegate
@@ -30,6 +31,7 @@ Why do these details about weak references matter? Because up until iOS 8, UIKit
 // UICollectionView iOS 8 and below
 @property(nonatomic, assign) id<UICollectionViewDelegate> delegate
 @property(nonatomic, assign) id<UICollectionViewDataSource> dataSource
+
 {% endhighlight %}
 
 <span class="text-muted"><b>Note:</b> this extends well beyond UITableView and UICollectionView. UIBarButtonItem.target is assign. UIGestureRecognizer.delegate is assign. UIActionSheet.delegate is assign. UIAccelerometer.delegate is assign. The list goes on, everywhere in UIKit.</span>
@@ -45,6 +47,7 @@ For correctness, you should be setting these to `nil` in `dealloc`. In the comme
 As of iOS 9, the aforementioned APIs have changed. In fact, all of UIKit looks like it [has been audited](https://developer.apple.com/library/prerelease/ios/releasenotes/General/iOS90APIDiffs/Objective-C/UIKit.html). Everywhere I looked, `assign` was replaced with `weak, nullable`.
 
 {% highlight swift linenos %}
+
 // UITableView iOS 9
 @property(nonatomic, weak, nullable) id<UITableViewDataSource> dataSource
 @property(nonatomic, weak, nullable) id<UITableViewDelegate> delegate
@@ -52,6 +55,7 @@ As of iOS 9, the aforementioned APIs have changed. In fact, all of UIKit looks l
 // UICollectionView iOS 9
 @property(nonatomic, weak, nullable) id<UICollectionViewDelegate> delegate
 @property(nonatomic, weak, nullable) id<UICollectionViewDataSource> dataSource
+
 {% endhighlight %}
 
 I can't say for certain, but my guess is that we can thank Swift for this. Swift was the impetus for [nullability annotations](https://developer.apple.com/swift/blog/?id=25) and generics in Objective-C, and we know the teams at Apple have been [working hard](https://developer.apple.com/swift/blog/?id=31) to update all of the Cocoa frameworks with these features. Maybe `assign` affects interoperability with Swift? In any case, non-zeroing weak references are finally gone. As developers, we can finally get some sleep.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Built with open-source
-subtitle: The beginnings of this blog 
+subtitle: The beginnings of this blog
 ---
 
 XKCD's posts on [saving time](http://xkcd.com/1205/) and [automation](http://xkcd.com/1319/) are precisely how this blog came to be. Until now, I never had the time or motivation to write on a regular basis, though I considered it often. I've been developing for iOS for a few years now and I've become increasingly involved in the Objective-C open-source community via [GitHub](https://github.com/jessesquires) and [CocoaPods](http://cocoapods.org), and was lucky enough to attend (*my first!*) [WWDC](https://developer.apple.com/wwdc) this year on its 25th anniversary. It was an awesome experience. With that said, I can't think of a better time or better reason to begin writing about my experiences with iOS and Objective-C (and now [Swift](https://developer.apple.com/swift/)), as well as my involvement in open-source. I hope to share worthwhile and interesting things here.

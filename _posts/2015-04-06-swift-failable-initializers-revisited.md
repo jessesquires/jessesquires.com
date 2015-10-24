@@ -42,7 +42,7 @@ This rather straightforward, but is using `init?` the best solution? There are s
 
 What if the structure or keys in the JSON change? Then we would have to update our model. What if we are using [Core Data](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CoreData/cdProgrammingGuide.html), and our model is an `NSManagedObject` subclass? Then we would have to stand up an **entire** Core Data stack just to unit test the JSON parsing. What if the service from which we receive the JSON changes and instead we receive XML? Then we would need a new initializer, `init?(xml: XML)`, and the model would know all about XML.
 
-This design has put our model in a fragile position. 
+This design has put our model in a fragile position.
 
 ### The solution
 
