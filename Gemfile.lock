@@ -135,6 +135,7 @@ DEPENDENCIES
   github-pages
   jekyll-feed
   jekyll-sitemap
+  jemoji
 
 BUNDLED WITH
    1.10.6
