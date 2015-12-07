@@ -44,7 +44,7 @@ For the past few days I have been watching the repositories on [GitHub](https://
 
 - The Swift team seems [very keen](https://twitter.com/clattner_llvm/status/673162286127714304) on getting the community involved. No contribution is too small!
 
-- Much of the [swift-corelibs-foundation](https://github.com/apple/swift-corelibs-foundation) framework has yet-to-be-implemented. There seems to be a lot of low hanging fruit. I wonder if this is intentional to encourage contributions, or if it is the result of a tight deadline?
+- Much of the [swift-corelibs-foundation](https://github.com/apple/swift-corelibs-foundation) framework is currently [unimplemented](https://github.com/apple/swift-corelibs-foundation/search?utf8=✓&q=NSUnimplemented). There seems to be a lot of low hanging fruit. I wonder if this is intentional to encourage contributions, or if it is the result of a tight deadline?
 
 - The [initial checkin](https://github.com/apple/swift/commit/afc81c1855bf711315b8e5de02db138d3d487eeb) from 2010 was actually revision 4 and imported from an internal SVN repo. "Swift SVN r4". You will notice the following in the header comments: *"This source file is part of the Swift.org open source project. Copyright (c) 2014 - 2015 Apple Inc."* I have three theories:
       1. Commit history was edited and cleaned up before being published on GitHub.
