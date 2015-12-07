@@ -8,6 +8,8 @@ It has only been a few days since the announcement of [Swift going open source](
 
 <!--excerpt-->
 
+<img class="img-thumbnail img-responsive center" src="/img/swift-logo.png" title="Swift" alt="Swift"/>
+
 ### Expectations
 
 No one really knew what to expect. Was Swift going to be dumped on [opensource.apple.com](http://www.opensource.apple.com) and grow stale with the other projects? Would it be put on GitHub like [ResearchKit](https://github.com/ResearchKit)? Not only is Swift on [GitHub](https://github.com/apple/), but the Swift team will be [working completely in the open](http://arstechnica.com/apple/2015/12/craig-federighi-talks-open-source-swift-and-whats-coming-in-version-3-0/). Apple did a spectacular job with the release. Not only do we have the source code, but we have the [entire commit history](https://github.com/apple/swift/commits/master) for each project, a very detailed view into the Swift team's development process, and access to the [Swift evolution process](https://github.com/apple/swift-evolution). Everything you need to know is on [Swift.org](http://swift.org).
@@ -38,7 +40,7 @@ For the past few days I have been watching the repositories on [GitHub](https://
 
 - It looks like there's a [good chance](https://github.com/apple/swift-evolution/pull/33/files) that `typealias` will be replaced with `associated` for associated type declarations.
 
-- [Jacob Bandes-Storch](https://twitter.com/jtbandes) has [submitted](https://github.com/apple/swift/pull/253) [two](https://github.com/apple/swift/pull/272) pull requests that fix a total of over 400 crashes.
+- [Jacob Bandes-Storch](https://twitter.com/jtbandes) has [submitted](https://github.com/apple/swift/pull/253) [two](https://github.com/apple/swift/pull/272) pull requests that fix a total of over 400 crashes. 😲
 
 - The Swift team seems [very keen](https://twitter.com/clattner_llvm/status/673162286127714304) on getting the community involved. No contribution is too small!
 
