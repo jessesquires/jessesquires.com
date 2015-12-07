@@ -4,7 +4,7 @@ title: Swift open source
 subtitle: Let the revolution begin
 ---
 
-It has only been a few days since the announcement of [Swift going open source](https://developer.apple.com/swift/blog/?id=34) and the activity around the project has been incredible. When Apple revealed that Swift would be open source at [WWDC](https://developer.apple.com/wwdc/) earlier this year, I don't think anyone anticipated this.
+It has only been a few days since the announcement of [Swift going open source](https://developer.apple.com/swift/blog/?id=34) and the activity around the project has been incredible. When Apple revealed that Swift would be open source at [WWDC](https://developer.apple.com/wwdc/) earlier this year, I do not think anyone anticipated a release like this.
 
 <!--excerpt-->
 
