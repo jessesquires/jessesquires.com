@@ -38,4 +38,4 @@ It looks many developers in the community enjoyed my [previous post](http://www.
 
 - Programming is little more than a ["nights and weekends" hobby](https://twitter.com/clattner_llvm/status/674254974629502976) for Chris Lattner. 😂
 
-**That's it for this week!** [Subscribe](http://jessesquires.local/feed.xml) or [follow me](https://twitter.com/jesse_squires) to stay up-to-date!
+**That's it for this week!** [Subscribe](http://jessesquires.com/feed.xml) or [follow me](https://twitter.com/jesse_squires) to stay up-to-date!
