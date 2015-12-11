@@ -34,7 +34,7 @@ It looks many developers in the community enjoyed my [previous post](http://www.
 
 - There's an [interesting discussion](https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20151207/000873.html) on the mailing lists to make classes and methods `final` by default. Anything that discourages or prevents subclassing is [fine by me](https://twitter.com/jesse_squires/status/664588682997964800). 😊
 
-- The Swift Programming Language iBook (ePub) is available for *direct download* on Swift.org (instead of only the iBook Store) and is now under a [Creative Commons Attribution 4.0 International (CC BY 4.0) License.](https://swift.org/documentation/). Translations [would be great](https://twitter.com/clattner_llvm/status/674454905449373696).
+- The Swift Programming Language iBook (ePub) is available for *direct download* on Swift.org (instead of only the iBook Store) and is now under a [Creative Commons Attribution 4.0 International (CC BY 4.0) License](https://swift.org/documentation/)! Translations [would be great](https://twitter.com/clattner_llvm/status/674454905449373696).
 
 - Programming is little more than a ["nights and weekends" hobby](https://twitter.com/clattner_llvm/status/674254974629502976) for Chris Lattner. 😂
 
