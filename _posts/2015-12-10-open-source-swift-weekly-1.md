@@ -8,7 +8,7 @@ It looks many developers in the community enjoyed my [previous post](http://www.
 
 <!--excerpt-->
 
-### This week on Swift.org <small>*Week of December 7, 2015*</small>
+### This week on Swift.org
 
 - [Manav Gabhawala](https://twitter.com/ManavGabhawala) submitted an [interesting proposal](https://github.com/apple/swift-evolution/pull/37) to add implicit initializers to Swift. In particular, this would address the verbosity of converting between number types. However, as pointed out on the [mailing list discussion](https://lists.swift.org/pipermail/swift-evolution/2015-December/000352.html) there are safety and precision concerns.
 
