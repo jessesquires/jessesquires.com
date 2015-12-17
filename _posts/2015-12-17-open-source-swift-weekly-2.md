@@ -30,7 +30,7 @@ Chris Lattner [fixed](http://github.com/apple/swift/commit/a2d9b10b64c3115c2eed7
 
 [@PracticalSwift](https://twitter.com/practicalswift) fixed [a ton](https://github.com/apple/swift/pull/561) of [typos](https://github.com/apple/swift/pull/526). 😂
 
-William Dillon [began support](https://github.com/apple/swift/pull/439) for for ARMv7 hosts such as the Raspberry Pi, BeagleBone, and Nvidia Tegras.
+William Dillon [began support](https://github.com/apple/swift/pull/439) for ARMv7 hosts such as the Raspberry Pi, BeagleBone, and Nvidia Tegras.
 
 Brian Gesiak [continued to pursue](https://github.com/apple/swift-corelibs-xctest/pull/14) testing the XCTest framework, and in terms of number of commits, he is now the [#3 contributor](https://github.com/apple/swift-corelibs-xctest/graphs/contributors) on corelibs-xctest. 👏
 
@@ -40,7 +40,7 @@ The first independent Swift language evolution proposal has been [accepted](http
 
 [Max Howell](https://github.com/mxcl), [Daniel Dunbar](https://github.com/ddunbar), and [Mattt Thompson](https://github.com/mattt) have prepared [a proposal](https://github.com/apple/swift-evolution/pull/51) to add testing support to the [Swift package manager](https://github.com/apple/swift-package-manager)! *"Testing is an essential part of modern software development. Tight integration of testing into the Swift Package Manager will help ensure a stable and reliable packaging ecosystem. We propose to extend our conventional package directory layout to accommodate test modules."* 🎉
 
-Max Moiseev's [proposal](https://github.com/apple/swift-evolution/blob/master/proposals/0014-constrained-AnySequence.md) to constrain `AnySequence.init` is due for review this week. I don't see any reason why this would fail to be accepted. *"These constraints, in fact, should be applied to `SequenceType` protocol itself (although, that is not currently possible), as we expect every `SequenceType` implementation to satisfy them already."*
+Max Moiseev's [proposal](https://github.com/apple/swift-evolution/blob/master/proposals/0014-constrained-AnySequence.md) to constrain `AnySequence.init` is due for review this week. I don't see any reason why this would not be accepted. *"These constraints, in fact, should be applied to `SequenceType` protocol itself (although, that is not currently possible), as we expect every `SequenceType` implementation to satisfy them already."*
 
 David Hart's [proposal](https://github.com/apple/swift-evolution/blob/master/proposals/0009-require-self-for-accessing-instance-members.md) to require `self` for accessing instance members is currently under review. If you haven't been following along, this would make `self` *always required* even when it can be inferred implicitly. For example, using `self.view` versus simply `view`. There's a ton of discussion on the [mailing list]((https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20151214/002407.html)) and [twitter](https://twitter.com/ashfurrow/status/676881928168017921). I'm not a fan, but I can understand some of the arguments to do this.
 
