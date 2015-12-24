@@ -28,7 +28,7 @@ Joe Groff submitted [a proposal](https://lists.swift.org/pipermail/swift-evoluti
 
 ### Mailing lists
 
-Andyy Hope started [a discussion](https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20151221/003819.html) around adding an `.allValues` static variable to enums, which would return an array of all cases in the enum. Looks like there is a lot of support for the idea so far. [Jacob Bandes-Storch](https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20151207/001233.html) also brough this idea up a couple of weeks ago. I would definitely be in favor of this, as I've found myself writing this boilerplate multiple times. 👍
+Andyy Hope started [a discussion](https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20151221/003819.html) around adding an `.allValues` static variable to enums, which would return an array of all cases in the enum. Looks like there is a lot of support for the idea so far. [Jacob Bandes-Storch](https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20151207/001233.html) also brought up this idea up a couple of weeks ago. I would definitely be in favor of this, as I've found myself writing this boilerplate multiple times. 👍
 
 Kevin Ballard [suggests](https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20151221/004223.html) a more formal "This Week In Swift" newsletter. 😁 Maybe I should go ahead and setup swiftweekly.org?
 
