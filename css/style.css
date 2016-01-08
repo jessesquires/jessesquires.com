@@ -21,7 +21,9 @@ a:link {
 }
 
 a:visited {
-   text-decoration:none;
+   color: #245D66;
+   border-width: 0px;
+   text-decoration: none;
 }
 
 a:hover {
