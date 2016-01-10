@@ -4,7 +4,6 @@ highlighter: pygments
 
 gems:
   - jekyll-sitemap
-  - jekyll-feed
 
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "strikethrough", "superscript"]
@@ -13,6 +12,7 @@ redcarpet:
 permalink: /:title/
 
 # Setup
+name: 'Jesse Squires'
 title: 'Jesse Squires'
 tagline: 'Software developer in San Francisco'
 timezone: America/Los_Angeles
