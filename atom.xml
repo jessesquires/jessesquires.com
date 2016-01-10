@@ -18,6 +18,7 @@ layout: null
    {% for post in site.posts %}
    <entry>
       <title>{{ post.title }}</title>
+      <subtitle>{{ post.subtitle }}</subtitle>
       <link href="{{ site.url }}{{ post.url }}" />
       <id>{{ site.url }}{{ post.id }}</id>
 
