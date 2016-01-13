@@ -133,7 +133,6 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll-feed
   jekyll-sitemap
   jemoji
 
