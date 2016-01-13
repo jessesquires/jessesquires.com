@@ -1,12 +1,14 @@
 # jessesquires.github.io
 
-This blog mostly contains bits about iOS, Cocoa, Objective-C, Swift, and open-source.
+Turing complete with a side of `0xdeadbeef`
+
+>This blog mostly contains bits about Swift, iOS, Cocoa, Objective-C, and open-source.
 
 ![Logo](https://raw.githubusercontent.com/jessesquires/jessesquires.github.io/master/ico/icon120.png)
 
 ## About
 
-Lovingly built with [Jekyll](http://jekyllrb.com), [Bootstrap](http://getbootstrap.com), and [Font Awesome](http://fortawesome.github.io/Font-Awesome/).
+Lovingly built with [Jekyll](http://jekyllrb.com), [Bootstrap](http://getbootstrap.com), [jQuery](http://jquery.com), and [Font Awesome](http://fortawesome.github.io/Font-Awesome/).
 
 Generously hosted by [GitHub](https://pages.github.com).
 
