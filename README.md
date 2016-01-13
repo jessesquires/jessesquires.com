@@ -1,4 +1,4 @@
-# jessesquires.github.io
+# [jessesquires.github.io](http://www.jessesquires.com)
 
 Turing complete with a side of `0xdeadbeef`
 
