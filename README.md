@@ -1,6 +1,6 @@
 # [jessesquires.github.io](http://www.jessesquires.com)
 
-Turing complete with a side of `0xdeadbeef`
+Turing complete with a stack of `0xdeadbeef`
 
 >This blog mostly contains bits about Swift, iOS, Cocoa, Objective-C, and open-source.
 
