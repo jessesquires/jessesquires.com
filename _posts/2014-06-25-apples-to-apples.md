@@ -20,23 +20,23 @@ As the keynote continued, we were assured safety, optimizations, clarity, modern
 
 As a fun and interesting [code kata](http://codekata.com), I decided to port my [objc-sorts](https://github.com/jessesquires/objc-sorts) project on GitHub to Swift. Behold, [swift-sorts](https://github.com/jessesquires/swift-sorts). These projects are collections of sorting algorithms implemented in Objective-C and Swift, respectively. I completed a rough version of the Swift project during the week of WWDC and have since refined both. I also shared the results below with Apple engineers in the Swift Labs during WWDC, but more on that later.
 
-#### Setup
+### Setup
 
-<div class="alert alert-danger" role="alert">
+<div class="alert alert-danger">
 	<strong>Update 1: Xcode6-beta2</strong> <span class="pull-right"><em>27 July 2014</em></span>
 	<p>
-		This post has been updated for Xcode6-beta2. All trials were re-run as described below using Xcode6-beta2. 
+		This post has been updated for Xcode6-beta2. All trials were re-run as described below using Xcode6-beta2.
 		Results were largely similar, no significant changes.
 	</p>
 </div>
 
-<div class="alert alert-danger" role="alert">
+<div class="alert alert-danger">
 	<strong>Update 2: Xcode6-beta4</strong> <span class="pull-right"><em>1 Aug 2014</em></span>
 	<p>
-		This post has been updated for Xcode6-beta4. All trials were re-run as described below using Xcode6-beta4. 
+		This post has been updated for Xcode6-beta4. All trials were re-run as described below using Xcode6-beta4.
 	</p>
 	<p>
-		Major changes to the Swift language include the <a href="https://developer.apple.com/swift/blog/?id=3" class="alert-link">redesign of arrays</a> to have full value semantics and new syntactic sugar &mdash; introduced in Xcode6-beta3. 
+		Major changes to the Swift language include the <a href="https://developer.apple.com/swift/blog/?id=3" class="alert-link">redesign of arrays</a> to have full value semantics and new syntactic sugar &mdash; introduced in Xcode6-beta3.
 		As of the beta4 release, Swift has seen <strong>dramatic</strong> performance improvements. See the updated results below.
 	</p>
 	<p>
@@ -52,15 +52,31 @@ Each project is a command line app with a debug, release, and unit-test scheme. 
 
 The benchmarks consist of *T* trials, which are averaged at the end to obtain the average execution time for each algorithm. Each trial begins by generating an array of *N* random integers in the range `[0, UINT32_MAX)`. Then, each sorting algorithm is passed a copy of this initial array to sort. The current time is logged before and after each sort and the difference between the two yields the execution time for the algorithm for the current trial.
 
-These two programs were carefully crafted to be a true *apples-to-apples* comparison. All of the algorithms, as well as `main.swift` and `main.m`, are implemented as similarly as possible, bounded only by the confines and paradigms of the languages themselves. In Objective-C, `NSArray` and `NSNumber` are used intentionally as the counterparts to Swift's `Array` and `Int`. The APIs are language-specific too, for example `exchangeObjectAtIndex: withObjectAtIndex:` versus `swap()`. 
+These two programs were carefully crafted to be a true *apples-to-apples* comparison. All of the algorithms, as well as `main.swift` and `main.m`, are implemented as similarly as possible, bounded only by the confines and paradigms of the languages themselves. In Objective-C, `NSArray` and `NSNumber` are used intentionally as the counterparts to Swift's `Array` and `Int`. The APIs are language-specific too, for example `exchangeObjectAtIndex: withObjectAtIndex:` versus `swap()`.
 
 The following were used for the standard library sorts:
-{% gist jessesquires/06b6bd68a7d18810651f %}
+
+{% highlight swift linenos %}
+
+// Swift
+var arr: [Int] = // some array
+let newArr = sorted(arr);
+
+// Objective-C
+NSMutableArray *arr = // some array
+[arr sortUsingComparator:^NSComparisonResult(NSNumber *n1, NSNumber *n2) {
+    return [n1 compare:n2];
+}];
+
+{% endhighlight %}
+
 <span class="text-muted text-center center table-header-footer">
-	Previous Swift std lib sort <a href="https://gist.github.com/jessesquires/06b6bd68a7d18810651f/ee5aa0a7427f830fadd4d369c9d04a895fc2b49b">implementation here</a>.
+Previous Swift std lib sort <a href="https://gist.github.com/jessesquires/06b6bd68a7d18810651f/ee5aa0a7427f830fadd4d369c9d04a895fc2b49b">implementation here</a>.
 </span>
 
-#### Results
+<br/>
+
+<h3>Results</h3>
 
 Below are the results of running each program over 10 trials with 10,000 integers. The build configuration settings are noted for each run and the execution times are displayed in seconds. The average case runtime complexity for each algorithm is also noted. I realize that 10,000 is relatively small, but you'll see that Swift was taking quite a long time.
 
@@ -194,7 +210,7 @@ Below are the results of running each program over 10 trials with 10,000 integer
 
 <br />
 
-<div class="alert alert-danger" role="alert">
+<div class="alert alert-danger">
 	<strong>Update 2: Xcode6-beta4</strong> <span class="pull-right"><em>1 Aug 2014</em></span>
 	<p>
 		We see the following notable changes with Xcode-beta4:
@@ -217,23 +233,23 @@ There are a few notable discoveries here:
 
 4. We all know that selection sort and insertion sort are not particularly optimal algorithms, and Swift does a good job to emphasize this (when not using <code>-Ofast</code>, see *Table 1* and *Table 2*). But why are these two so terrible in Swift? Especially insertion sort &mdash; in debug Objective-C is 308.0x faster. I'm still puzzled by this. These two sorting algorithms are not complex, but they stand apart from the other sorts in the following ways: selection sort has nested for-loops and insertion sort has a while-loop nested in a for-loop. Perhaps Swift is having trouble optimizing these? Is this a bug?
 
-5. My mundane quick sort implementation is faster than the standard library sort for both languages. Typically, these library methods would utilize multiple sorting algorithms that are guided by a set of heuristics that help determine the best algorithm to use based on the dataset. I suspect that we would see the standard library sorts perform best with larger datasets and/or with complex objects. 
+5. My mundane quick sort implementation is faster than the standard library sort for both languages. Typically, these library methods would utilize multiple sorting algorithms that are guided by a set of heuristics that help determine the best algorithm to use based on the dataset. I suspect that we would see the standard library sorts perform best with larger datasets and/or with complex objects.
 
 According to the benchmarks presented during the keynote (1:45:30), we should (probably?) be seeing different results here. Federighi noted that for complex object sort, Objective-C performed at 2.8x and Swift performed at 3.9x, using Python as the baseline (1.0x). It is not clear at this time how these benchmarks were achieved. What were the build and optimization settings? What is a "complex object"? In any case, surely Swift should be able to sort integers just as well as "complex objects", right?
 
-#### Swift Labs at WWDC
+### Swift Labs at WWDC
 
 The Apple engineers hanging out in the Swift Labs at WWDC were interested in these benchmarks and were somewhat surprised to see them. Unfortunately, the engineers that I spoke with did not have an explanation for why we were seeing these results. We filed Radar #17201160, noting most of the points above.
 
 Additionally, I asked what the best practices are with regard to using <code>-Ofast</code>. They recommended the following approach: (1) profile your app to find out where it is slow, (2) extract this slow code into a separate module/framework, (3) very thoroughly test this module, and then (4) compile the module using <code>-Ofast</code> and link it to your app. Remember, this removes <strong>all</strong> safety features from Swift.
 
-#### Moving forward
+### Moving forward
 
 The results above seem to indicate that Apple has not (yet) followed through on their promises of speed and safety &mdash; at least in the sense that these features can be mutually inclusive. Again, it is still early. Hopefully these benchmarks will improve as Swift nears a 1.0 release. **I plan on updating this post or writing follow-up posts as Apple releases updates for Swift and Xcode6-beta.** <span class="text-danger"><strong>[Updated 2X]</strong></span>
 
 As Brent Simmons [said](http://inessential.com/2014/02/12/on_replacing_objective-c), Objective-C used to be considered slow compared to plain C, but it is not slow compared to Java or Python. I am not sure if the reaction to these results should be *we have faster hardware, so a slower language is fine*, or *nothing will ever be as fast as C*, or somewhere in-between. But after completing these two projects, I do know this: Swift is a pleasure to write and read. Many things came easier and more naturally in Swift, and Playgrounds are pure gold. Swift has a lot of potential. Let's hope this is the next step that we have all been waiting for, and not another [Copland](http://arstechnica.com/apple/2010/06/copland-2010-revisited/).
 
-#### Futher reading
+### Futher reading
 
 * The *Official* [Apple Swift Blog](https://developer.apple.com/swift/blog/)
 * [*Swift?*](http://www.splasmata.com/?p=2798) from Splasm Software

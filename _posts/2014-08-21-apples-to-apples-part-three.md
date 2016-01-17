@@ -10,7 +10,7 @@ subtitle: A modest proposal&#58; can Swift outperform plain C?
 
 In [*Apples to apples, Part II*](/apples-to-apples-part-two/), we discovered that Swift was finally performing better than Objective-C. As expected, some common [reactions](https://twitter.com/OldManKris/status/497102303833255936) and [responses](https://twitter.com/mpweiher/status/497066155224608768) on Twitter were, *then how does it compare to C?* This is precisely what we are investigating today to welcome this week's arrival of [Xcode 6 beta 6](https://developer.apple.com/xcode/downloads/).
 
-#### Setup
+### Setup
 
 * *Code:* [swift-sorts](https://github.com/jessesquires/swift-sorts) and [c-sorts](https://github.com/jessesquires/c-sorts)
 * *Software:* OS X Mavericks 10.9.4, Xcode 6 beta 6
@@ -20,7 +20,7 @@ In [*Apples to apples, Part II*](/apples-to-apples-part-two/), we discovered tha
 
 The sorting algorithms are written as [textbook implementations](http://en.wikipedia.org/wiki/Introduction_to_Algorithms) for clarity, objectivity, and fairness to each language. The standard library sort for Swift uses the `sorted()` [function](https://gist.github.com/jessesquires/06b6bd68a7d18810651f#file-sorts-m) while C uses `qsort()` from [cstdlib](http://www.cplusplus.com/reference/cstdlib/qsort/).
 
-#### Results
+### Results
 
 Below are the results of running each program over 20 trials with 100,000 integers. The average execution times are displayed in seconds with the standard deviation listed underneath. All trials were run with the release build configuration, since we know Swift would be too slow in debug. The final row in each table is the difference in speed of Swift compared to C. A positive value indicates that Swift is faster, while a negative value indicates that Swift is slower. For example, if C runs in 1.2 seconds and Swift runs in 3.6 seconds, then Swift is 3 times (-3x) slower. Also note that the different compiler optimization levels have no affect on C, but are listed for consistency.
 
@@ -128,7 +128,7 @@ Unexpectedly, **Swift outperforms C** for the standard library sort. This may re
 
 Here we see what we should expect from `-Ounchecked`, given the results in *Table 1*. There is a similar pattern, only amplified. Swift gets even faster and even closer to C.
 
-#### Approaching the speed of C
+### Approaching the speed of C
 
 It's serendipitous that `c` denotes [the speed of light](http://en.wikipedia.org/wiki/Speed_of_light) in physics, isn't it? A common view in the programming community is that *nothing beats C*, and rightly so. It paved the road ahead and has endured the decades since its inception. I doubt that C is going anywhere, but this new kid on the block is pretty swift.
 

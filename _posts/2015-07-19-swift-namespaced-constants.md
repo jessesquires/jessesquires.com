@@ -78,7 +78,7 @@ Let me know what you think! You can find me [on Twitter](http://twitter.com/jess
 
 <span class="text-muted">**Note:** There have been some attempts to automate something similar to what I have described, like [swiftrsrc](https://github.com/indragiek/swiftrsrc) and [Natalie](https://github.com/krzyzanowskim/Natalie), but not exactly. Some of the deeper nesting might be difficult to automate, but I have yet to try this.</span>
 
-<p class="alert alert-danger" role="alert">
+<p class="alert alert-danger">
    <strong>Update</strong> <span class="pull-right"><em>{{ page.date-updated }}</em></span>
    <br />
    Inspired by this post, <a href="https://twitter.com/leemorgan" class="alert-link" target="_blank">Lee Morgan</a> has written a build script that generates a Swift source file based on Xcode assets. Checkout the repo <a href="https://github.com/leemorgan/AutoAssets" class="alert-link" target="_blank">AutoAssets</a> on GitHub. Thanks Lee!

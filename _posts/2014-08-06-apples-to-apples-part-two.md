@@ -12,7 +12,7 @@ This week, Apple has reminded us of the value of this iterative process and its 
 
 If you missed my first post, [*Apples to Apples*](/apples-to-apples/), you should head over there now to catch up.
 
-#### Setup
+### Setup
 
 The setup is the same as before, but I'll reiterate for clarity.
 
@@ -28,7 +28,7 @@ The setup is the same as before, but I'll reiterate for clarity.
 	<p>These two programs were carefully crafted to be a true <em>apples-to-apples</em> comparison. All of the algorithms, as well as <code>main.swift</code> and <code>main.m</code>, are implemented as similarly as possible, bounded only by the confines and paradigms of the languages themselves. In Objective-C, <code>NSArray</code> and <code>NSNumber</code> are used intentionally as the counterparts to Swift's <code>Array</code> and <code>Int</code>. The APIs are language-specific too, for example <code>exchangeObjectAtIndex: withObjectAtIndex:</code> versus <code>swap()</code>.</p>
 </blockquote>
 
-#### Results
+### Results
 
 Below are the results of running each program over 10 trials with 10,000 integers. The build configuration settings are noted for each run and the average execution times are displayed in seconds. The average case runtime complexity for each algorithm is also noted.
 
@@ -236,7 +236,7 @@ The benchmarks above were gathered with `N = 10,000` to be consistent with the p
 	</table>
 </div>
 
-#### Full speed ahead
+### Full speed ahead
 
 When Apple introduced Swift, we were assured safety, clarity, modernity, and speed. It is clear to me that they have delivered and are continuing to deliver on these promises. The refinements and enhancements made over the past few months have been absolutely great. Some highlights for me include array value semantics, array and dictionary syntactic sugar, the `..<` operator replacing the `..` operator, and the performance improvements seen here. I think Swift is coming along quite nicely and I am more excited than ever for the next beta.
 

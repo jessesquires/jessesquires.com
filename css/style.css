@@ -173,3 +173,11 @@ header h2 {
    -webkit-margin-before: 0px !important;
    -webkit-margin-after: 0px !important;
 }
+
+.footnotes a, sup a:link {
+   border-width: 0px;
+}
+
+blockquote {
+   color: #555;
+}
