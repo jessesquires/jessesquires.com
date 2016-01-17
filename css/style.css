@@ -146,6 +146,7 @@ header h2 {
 
 .pagination {
    display: block;
+   margin-bottom: 0rem;
 }
 
 .pager {
