@@ -33,21 +33,19 @@ h3 > code {
 /* LINKS */
 
 a {
-   color: #f05138;
+   color: #31808c;
 }
 
 a:link {
-   border-bottom: 1px dotted #f05138;
+   border-bottom: 1px dotted #31808c;
 }
 
 a:visited {
-   color: #f05138;
-   border-width: 0px;
-   text-decoration: none;
+   border-bottom: 0px none #31808c;
 }
 
 a:hover {
-   color: #fbaf40;
+   color: #47bacc;
    text-decoration: none;
 }
 
@@ -83,6 +81,11 @@ header h2 {
 .tagline a {
    color: #666666;
    border-bottom: 1px dotted #666666;
+}
+
+.tagline a:hover {
+   color: #47bacc;
+   border-color: #47bacc;
 }
 
 .subscribe a,
