@@ -1,16 +1,11 @@
-
-<footer class="container">
-   <div class="row center">
-      <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3">
-         <ul>
-            <li><a href="http://bit.ly/jsgithub" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
-            <li><a href="http://bit.ly/jsqrsTW" target="_blank"><i class="fa fa-twitter fa-2x"></i> </a></li>
-            <li><a href="http://bit.ly/jslnkdin" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
-            <li><a href="/about"><i class="fa fa-coffee fa-2x"></i></a></li>
-            <li><a href="/feed.xml"><i class="fa fa-rss fa-2x"></i></a></li>
-            <li><a href="/search"><i class="fa fa-search fa-2x"></i></a></li>
-         </ul>
-         <small class="text-muted">&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</small>
-      </div> <!-- col -->
-   </div> <!-- row -->
+<footer class="container container-fluid">
+   <hr>
+    <p class="text-muted text-center"><small>
+    <strong>Questions? Feedback? Corrections?</strong><br/>
+    Open an <a href="{{ site.links.issue }}" target="_blank">issue</a> or
+    submit a <a href="{{ site.links.pull }}" target="_blank">pull request</a>
+    on <a href="{{ site.links.github }}" target="_blank">GitHub</a>.<br/>
+    &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}.
+    This site is <a href="{{ site.links.github }}" target="_blank">open source</a>.
+    </small></p>
 </footer>

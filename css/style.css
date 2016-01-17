@@ -61,6 +61,26 @@ h1 > a:link {
    border-width: 0px;
 }
 
+.tagline a {
+   color: #666666;
+   border-bottom: 1px dotted #666666;
+}
+
+.tagline a:hover {
+   color: #47bacc;
+   border-color: #47bacc;
+}
+
+.subscribe a,
+.subscribe a:visited {
+   color: #444444;
+}
+
+footer a, footer a:link {
+   color: #444444;
+   border-bottom: 1px dotted #444444;
+}
+
 /* HEADER */
 
 header, .tagline, header code {
@@ -80,21 +100,6 @@ header h2 {
    line-height: 18px;
    margin: 0rem 0rem 1rem 0rem;
    display: inline-block;
-}
-
-.tagline a {
-   color: #666666;
-   border-bottom: 1px dotted #666666;
-}
-
-.tagline a:hover {
-   color: #47bacc;
-   border-color: #47bacc;
-}
-
-.subscribe a,
-.subscribe a:visited {
-   color: #444444;
 }
 
 .subscribe ul {
@@ -173,30 +178,4 @@ a.post-continue,
    -webkit-padding-start: 0px !important;
    -webkit-margin-before: 0px !important;
    -webkit-margin-after: 0px !important;
-}
-
-/* FOOTER */
-
-footer {
-   padding-bottom: 30px;
-}
-
-footer a {
-   border-width: 0px;
-}
-
-footer ul {
-    -webkit-padding-start: 0px !important;
-    -webkit-margin-before: 0px !important;
-    -webkit-margin-after: 0px !important;
- }
-
-footer ul li {
-   display: inline-block;
-   list-style-type: none;
-   margin: 2px;
-   padding-left: 6px;
-   padding-right: 6px;
-   padding-bottom: 10px;
-   padding: 0.5rem;
 }
