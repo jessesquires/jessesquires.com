@@ -193,3 +193,13 @@ blockquote {
       font-size: 42px;
    }
 }
+
+@media (max-width: 667px) {
+   body {
+      padding-top: 1rem;
+   }
+
+   header h2 {
+      font-size: 13px;
+   }
+}
