@@ -30,6 +30,10 @@ h3 > code {
    text-align: center;
 }
 
+.btn-default {
+   color: #444444;
+}
+
 /* LINKS */
 
 a {
@@ -149,21 +153,6 @@ a.post-continue,
 .pager {
    margin-top: 0rem;
    padding-top: 0rem;
-}
-
-.btn-default {
-   color: #666666;
-}
-
-.return-home {
-   display: block;
-   text-align: center;
-   margin: 0rem 0rem 3rem 0rem;
-   padding: 0rem;
-}
-
-.return-home a {
-   border-width: 0px;
 }
 
 /* PAGES */
