@@ -103,7 +103,7 @@ header h1 {
 }
 
 header h2 {
-   font-size: 15px;
+   font-size: 14px;
    line-height: 19px;
    margin: 0rem 0rem 1rem 0rem;
    display: inline-block;
@@ -191,10 +191,5 @@ blockquote {
 
    header h1 {
       font-size: 42px;
-   }
-
-   header h2 {
-      font-size: 14px;
-      line-height: 17px;
    }
 }
