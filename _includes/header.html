@@ -1,21 +1,17 @@
-
 <header class="container">
    <div class="row">
       <div class="col-sm-12 col-sm-offset-0 col-md-8 col-md-offset-2">
-         <h1><a href="/">{{ site.author.name }}</a></h1>
-         <h2>Turing complete with a side of <code>0xdeadbeef</code></h2>
-         <hr>
-         <div id="tagline" class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3">
-         <small class="text-muted">
-         Software developer in San Francisco.
-         I'm passionate about mobile computing and open-source.
-         Coding <a href="https://twitter.com/instagram" target="_blank">@instagram</a> by day,
-         hacking <a href="http://bit.ly/hexbitsTW" target="_blank">@hexedbits</a> by night.
-         All views my own.
-         Follow me on <a href="http://bit.ly/jsgithub" target="_blank">GitHub</a>
-         and <a href="http://bit.ly/jsqrsTW" target="_blank">Twitter</a>.
-         </small>
+         <h1><a href="/">{{ site.title }}</a></h1>
+         <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+            <h2 class="tagline">&mdash; Turing complete with a stack of <code>0xdeadbeef</code>&mdash;</h2>
+            <h2 class="tagline">Software developer in San Francisco.
+            I'm passionate about mobile computing and open-source.
+            All views my own. Learn more <a href="/about" title="Learn more about me">about me</a>.
+            </h2>
          </div> <!-- col -->
       </div> <!-- col -->
    </div> <!-- row -->
+
+   {% include subscribe.html %}
+   <hr>
 </header>

@@ -16,7 +16,7 @@ If you missed my first post, [*Apples to Apples*](/apples-to-apples/), you shoul
 
 The setup is the same as before, but I'll reiterate for clarity.
 
-<blockquote class="small-quote">
+<blockquote>
 	<ul>
 		<li><strong>Code:</strong> <a href="https://github.com/jessesquires/swift-sorts">swift-sorts</a>, <a href="https://github.com/jessesquires/objc-sorts">objc-sorts</a>, and <a href="https://gist.github.com/jessesquires/06b6bd68a7d18810651f#file-sorts-m">std lib sort</a> implementations</li>
 		<li><strong>Software:</strong> OS X Mavericks 10.9.4, Xcode 6 beta 5</li>
@@ -30,7 +30,7 @@ The setup is the same as before, but I'll reiterate for clarity.
 
 #### Results
 
-Below are the results of running each program over 10 trials with 10,000 integers. The build configuration settings are noted for each run and the average execution times are displayed in seconds. The average case runtime complexity for each algorithm is also noted. 
+Below are the results of running each program over 10 trials with 10,000 integers. The build configuration settings are noted for each run and the average execution times are displayed in seconds. The average case runtime complexity for each algorithm is also noted.
 
 The final row in each table is the difference in speed of Swift compared to Objective-C. A positive value indicates that Swift is faster, while a negative value indicates that Swift is slower. For example, if Objective-C runs in 3.6 seconds and Swift runs in 1.2 seconds, then Swift is 3 times (3x) faster.
 
@@ -184,7 +184,7 @@ If you recall the results from the [previous post](/apples-to-apples/), then thi
 
 <p class="text-muted text-center table-header-footer">As of beta 5, the Swift optimization level of <code>-Ofast</code> has been deprecated in favor <code>-Ounchecked</code>. This renaming is a delightful change. Previously it read as, <em>"Ooooh fast!"</em>, begging for misuse and misunderstanding. But now it's more like <em>"Oh... unchecked?"</em>, which better reflects its unsafe nature.</p>
 
-This should come as no surprise. Swift performance at this optimization level was always better than Objective-C, with the exception of the std lib sort &mdash; which no longer the case. 
+This should come as no surprise. Swift performance at this optimization level was always better than Objective-C, with the exception of the std lib sort &mdash; which no longer the case.
 
 The benchmarks above were gathered with `N = 10,000` to be consistent with the previous post. However, this is no longer a challenge for Swift. Let's see what happens when `N = 100,000`. Given that most, if not all, developers will be compliling their modules and apps at the standard optimization level, the trials below were only run with `-O` and release. As expected, Swift comes out on top.
 
@@ -238,7 +238,7 @@ The benchmarks above were gathered with `N = 10,000` to be consistent with the p
 
 #### Full speed ahead
 
-When Apple introduced Swift, we were assured safety, clarity, modernity, and speed. It is clear to me that they have delivered and are continuing to deliver on these promises. The refinements and enhancements made over the past few months have been absolutely great. Some highlights for me include array value semantics, array and dictionary syntactic sugar, the `..<` operator replacing the `..` operator, and the performance improvements seen here. I think Swift is coming along quite nicely and I am more excited than ever for the next beta. 
+When Apple introduced Swift, we were assured safety, clarity, modernity, and speed. It is clear to me that they have delivered and are continuing to deliver on these promises. The refinements and enhancements made over the past few months have been absolutely great. Some highlights for me include array value semantics, array and dictionary syntactic sugar, the `..<` operator replacing the `..` operator, and the performance improvements seen here. I think Swift is coming along quite nicely and I am more excited than ever for the next beta.
 
 Swift is a breath of fresh air that makes reading and writing Objective-C feel archaic. I cannot wait for 1.0 and the moment when I can say goodbye to Objective-C.
 

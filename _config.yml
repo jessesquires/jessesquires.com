@@ -12,17 +12,24 @@ redcarpet:
 permalink: /:title/
 
 # Setup
-name: 'Jesse Squires'
 title: 'Jesse Squires'
-tagline: 'Turing complete with a side of 0xdeadbeef'
+tagline: 'Turing complete with a stack of 0xdeadbeef'
 timezone: America/Los_Angeles
 
 url: http://www.jessesquires.com
 
 author:
   name: 'Jesse Squires'
-  url: https://twitter.com/jesse_squires
+  handle: '@jesse_squires'
+  twitter: 'https://twitter.com/jesse_squires'
+  github: 'https://github.com/jessesquires/'
+  linkedin: 'https://www.linkedin.com/in/jessesquires'
 
 paginate: 4
 
 excerpt_separator: <!--excerpt-->
+
+links:
+   github: 'https://github.com/jessesquires/jessesquires.github.io'
+   issue: 'https://github.com/jessesquires/jessesquires.github.io/issues/new'
+   pull: 'https://github.com/jessesquires/jessesquires.github.io/compare'
