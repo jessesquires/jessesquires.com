@@ -1,4 +1,4 @@
-# [jessesquires.github.io](http://www.jessesquires.com)
+# [jessesquires.github.io](http://www.jessesquires.com) [![Build Status](https://travis-ci.org/jessesquires/jessesquires.github.io.svg?branch=master)](https://travis-ci.org/jessesquires/jessesquires.github.io)
 
 Turing complete with a stack of `0xdeadbeef`
 
