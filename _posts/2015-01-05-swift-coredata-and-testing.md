@@ -17,9 +17,10 @@ Because Swift classes are namespaced, you must prefix the class name with the na
 
 This is certainly easy to forget, and if you do, you'll see this error:
 
-````
-CoreData: warning: Unable to load class named 'Person' for entity 'Person'.  Class not found, using default NSManagedObject instead.
-````
+```
+CoreData: warning: Unable to load class named 'Person' for entity 'Person'.
+Class not found, using default NSManagedObject instead.
+```
 
 Not very helpful, is it? When I first saw this, it took me a few puzzling minutes to realize that I had forgotten to prefix my class names. And there's another catch. You must add the module name prefix **after** you generate the classes, otherwise Xcode will not create the classes properly (or at all). This is a bug.
 
@@ -27,7 +28,7 @@ Not very helpful, is it? When I first saw this, it took me a few puzzling minute
 
 Most of the existing Objective-C Core Data libraries that you'll find implement the following helper methods in some way, if not verbatim. These methods mitigate the awkwardness of inserting new objects into Core Data and avoid [*stringly-typed* Objective-C](http://corner.squareup.com/2014/02/objc-codegenutils.html).
 
-{% highlight objective-c linenos %}
+{% highlight objective-c %}
 
 @implementation NSManagedObject (Helpers)
 
@@ -48,7 +49,7 @@ Most of the existing Objective-C Core Data libraries that you'll find implement 
 
 I have decided to use Swift for one of my side projects, and in designing the model layer of the app my first thought was to rewrite these methods in Swift. Let's see what that would look like.
 
-{% highlight swift linenos %}
+{% highlight swift %}
 
 extension NSManagedObject {
 
@@ -70,7 +71,7 @@ Hm. The `entityName()` function just became much less elegant. Remember, we have
 
 Despite these issues, I decided to let it be for the moment so that I could continue working and give some thought to a *swifter* design. I continued building out my model classes, standing up my core data stack, and writing unit tests. Much to my surprise, using the extension functions above crashed when running my unit tests. I ran the same code from the Application Target and everything was fine. After more investigation, I realized that I had just found a Swift compiler [bug](http://openradar.appspot.com/19368054). You can find an [example project](https://github.com/jessesquires/rdar-19368054) on GitHub that exhibits the bug. The issue is that the following function incorrectly returns `nil` in a project's Test Target.
 
-{% highlight swift linenos %}
+{% highlight swift %}
 
 class func insertNewObjectForEntityForName(_ entityName: String,
                     inManagedObjectContext context: NSManagedObjectContext) -> AnyObject
@@ -96,7 +97,7 @@ Let's reiterate what we are trying to achieve. We want:
 
 The solution that meets all the criteria above is a convenience initializer:
 
-{% highlight swift linenos %}
+{% highlight swift %}
 
 class Person: NSManagedObject {
 

@@ -36,7 +36,7 @@ As mentioned above, I want to avoid the baggage of `@objc` and prevent `NSObject
 
 4. **`DataSourceProvider` &mdash;** Data source provider objects are composed of an array of sections, a cell factory, and a bridged data source. (And for collection views, there's also a supplementary view factory.) A provider object orchestrates and mediates the communications between its constituent parts, which know nothing about each other. Finally, as the name suggests, it provides the data source for a table view or a collection view, which happens via its private bridged data source instance. To clients, it looks like this:
 
-{% highlight swift linenos %}
+{% highlight swift %}
 
 // TableViewDataSourceProvider
 public var dataSource: UITableViewDataSource {
@@ -54,7 +54,7 @@ public var dataSource: UICollectionViewDataSource {
 
 Let's take a look at how this works in practice. Here's an example for a simple collection view.
 
-{% highlight swift linenos %}
+{% highlight swift %}
 
 let section0 = CollectionViewSection(items: ViewModel(), ViewModel(), ViewModel())
 let section1 = CollectionViewSection(items: ViewModel(), ViewModel())
@@ -83,7 +83,7 @@ First, we populate our section objects with our models. Then we create our cell 
 
 Also remember that the `CollectionViewDataSourceProvider` only speaks to protocols &mdash; not the concrete objects used in the example above. Its signature is the following.
 
-{% highlight swift linenos %}
+{% highlight swift %}
 
 public final class CollectionViewDataSourceProvider <
     SectionInfo: CollectionViewSectionInfo,

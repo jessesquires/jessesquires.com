@@ -56,7 +56,7 @@ These two programs were carefully crafted to be a true *apples-to-apples* compar
 
 The following were used for the standard library sorts:
 
-{% highlight swift linenos %}
+{% highlight swift %}
 
 // Swift
 var arr: [Int] = // some array

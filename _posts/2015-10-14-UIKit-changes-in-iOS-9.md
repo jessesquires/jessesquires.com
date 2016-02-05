@@ -22,7 +22,7 @@ The issue is that a non-zeroing reference ends up pointing to invalid memory (be
 
 Why do these details about weak references matter? Because up until iOS 8, UIKit views that have a `delegate` or `dataSource` property have been declared as the following.
 
-{% highlight swift linenos %}
+{% highlight swift %}
 
 // UITableView iOS 8 and below
 @property(nonatomic, assign) id<UITableViewDataSource> dataSource
@@ -46,7 +46,7 @@ For correctness, you should be setting these to `nil` in `dealloc`. In the comme
 
 As of iOS 9, the aforementioned APIs have changed. In fact, all of UIKit looks like it [has been audited](https://developer.apple.com/library/prerelease/ios/releasenotes/General/iOS90APIDiffs/Objective-C/UIKit.html). Everywhere I looked, `assign` was replaced with `weak, nullable`.
 
-{% highlight swift linenos %}
+{% highlight swift %}
 
 // UITableView iOS 9
 @property(nonatomic, weak, nullable) id<UITableViewDataSource> dataSource

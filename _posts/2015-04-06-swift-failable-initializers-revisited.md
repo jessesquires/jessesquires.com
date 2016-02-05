@@ -12,7 +12,7 @@ In a [previous](/swift-failable-initializers/) post, I discussed how Swift's [fa
 
 Suppose we have a JSON object that contains the data for a model object. Should we write a failable initializer for this model that receives the JSON, and fails if there is problem with parsing or validation? This scenario would look similar to the following:
 
-{% highlight swift linenos %}
+{% highlight swift %}
 
 // Some JSON for MyModel
 struct JSON {
@@ -50,7 +50,7 @@ The issues above can be addressed by removing the model's dependency on JSON (or
 
 The first step is creating a generic validator object. We'll use a [phantom type](http://www.objc.io/snippets/13.html) to ensure that a validator can only validate the JSON for a specific type of model. We initialize the validator with a closure that receives JSON and returns a `Bool` indicating whether or not it is valid. This closure is saved as a property on the validator.
 
-{% highlight swift linenos %}
+{% highlight swift %}
 
 struct JSONValidator<T> {
 
@@ -79,7 +79,7 @@ The combination of a phantom type and a closure property enable us to construct 
 
 Next, we'll define a JSON parser protocol, and implement a concrete parser. The protocol will allow us to reference parsers throughout our code in a generic way, while enabling each concrete parser to know about parsing a specific type of model. The parser will receive JSON, parse it, and return a model. We'll also add a new (more proper) designated initializer to `MyModel` that uses [dependency injection](http://en.wikipedia.org/wiki/Dependency_injection) and remove the old one, `init?(json: JSON)`. This parser assumes that the JSON has already been validated.
 
-{% highlight swift linenos %}
+{% highlight swift %}
 
 struct MyModel {
     let name: String
@@ -106,7 +106,7 @@ struct MyModelParser: JSONParserType {
 
 Now we can put everything together. Once we receive JSON, we can validate it. If validation fails, then we are finished and there is no need to continue. With this solution, no failable initializers are required.
 
-{% highlight swift linenos %}
+{% highlight swift %}
 
 let json = JSON(data: dataFromServer)
 
@@ -128,7 +128,7 @@ let myModel = parser.parseJSON(json)
 
 This is much better. We have divided the problem into smaller subproblems and addressed each one individually. Even better, we can now unit test each component in isolation. However, because we are using Swift we can make this better. We can combine all the steps above into a top-level generic function. This function receives each of the components above &mdash; JSON, a validator, and a parser &mdash; and returns a model.
 
-{% highlight swift linenos %}
+{% highlight swift %}
 
 func parse<T, P: JSONParserType where P.T == T>(json: JSON, validator: JSONValidator<T>, parser: P) -> T? {
     if !validator.isValid(json) {

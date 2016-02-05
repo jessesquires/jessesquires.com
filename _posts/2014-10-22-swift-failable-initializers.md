@@ -29,7 +29,7 @@ Apple's [article](https://developer.apple.com/swift/blog/?id=17) provides an exa
 
 However, failable initializers might seduce you into doing something bad. Suppose we have a blog post object. It requires the body text, the date it was written, and an image. To "simplify" construction of a post, you decide to pass the name of an image, instead of a `UIImage` object.
 
-{% highlight swift linenos %}
+{% highlight swift %}
 
 class MyPost {
 
@@ -56,7 +56,7 @@ If the image cannot be constructed, then the initialization of `MyPost` fails. W
 
 We can fix these issues by passing a non-optional image to our initializer.
 
-{% highlight swift linenos %}
+{% highlight swift %}
 
 class MyBetterPost {
 

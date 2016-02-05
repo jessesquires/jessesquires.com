@@ -19,7 +19,7 @@ You can define minimum and maximum values, provide default values, mark attribut
 
 For example, imagine we have the following `Employee` class. What fields are required for a save to succeed?
 
-{% highlight objective-c linenos %}
+{% highlight objective-c %}
 
 @interface Employee : NSManagedObject
 
@@ -40,7 +40,7 @@ For example, imagine we have the following `Employee` class. What fields are req
 
 By contrast, when using Swift we immediately know what properties are optional simply by looking at the code.
 
-{% highlight swift linenos %}
+{% highlight swift %}
 
 class Employee: NSManagedObject {
 
@@ -64,7 +64,7 @@ This seems like a minor detail, but it's a huge win &mdash; especially when you 
 
 Given this, let's review our `Employee` class. Is `middleName` important? No, let's remove it. Suppose that we know that all employees have an email address with the form: `<firstName><LastName>@<companyName>.com`. Do we really need to store it? No, we can write a function or computed property to generate that. Finally, let's assume that employees should be required to have an `address`. Ahh, this is looking much better now.
 
-{% highlight swift linenos %}
+{% highlight swift %}
 
 class Employee: NSManagedObject {
 
@@ -84,7 +84,7 @@ class Employee: NSManagedObject {
 
 Another Swift feature we can use is a [type alias declaration](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Declarations.html#//apple_ref/doc/uid/TP40014097-CH34-ID361), which allows a new name to refer to an existing type. For an `Employee`, it could be very helpful to work with a `Salary` type instead of an `NSDecimalNumber` type. In the depths of the codebase, there may be operations on `NSDecimalNumber` values where it is not clear what those values represent. A `typealias` makes our model much more descriptive and allows us to operate on values of a much more expressive `Salary` type.
 
-{% highlight swift linenos %}
+{% highlight swift %}
 
 class Employee: NSManagedObject {
     // other properties...
@@ -98,7 +98,7 @@ class Employee: NSManagedObject {
 
 We can then write functions that receive and return an `Employee.Salary` type. Such functions can retain their brevity, while maximizing their clarity.
 
-{% highlight swift linenos %}
+{% highlight swift %}
 
 func computeRaise(salary: Employee.Salary) -> Employee.Salary
 
@@ -106,7 +106,7 @@ func computeRaise(salary: Employee.Salary) -> Employee.Salary
 
 As noted in [objc.io](http://www.objc.io), *we can take this one step further* by using a [wrapper type](http://www.objc.io/snippets/8.html). To do this with an `NSManagedObject` subclass, we'll need to do some wrapping and unwrapping (no pun intended). First, the original property in Core Data should be marked as `private`. Then we can use a computed property for the new wrapper type that transforms the private property value to and from the wrapper value. This is a bit of work, but the clarity and safety we receive in return are well worth it.
 
-{% highlight swift linenos %}
+{% highlight swift %}
 
 struct Salary {
     let amount: NSDecimalNumber
@@ -140,7 +140,7 @@ It is not uncommon for a model object to encode some type of state as an `enum`.
 
 Let's see what this would look like for the `status` property in the `Employee` class.
 
-{% highlight swift linenos %}
+{% highlight swift %}
 
 enum EmployeeStatus: Int32 {
     case ReadyForHire, Hired, Retired, Resigned, Fired, Deceased

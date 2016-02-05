@@ -12,7 +12,7 @@ The [observer pattern](http://en.wikipedia.org/wiki/Observer_pattern) is a power
 
 A while back, [objc.io](http://www.objc.io) posted functional [snippet 16](http://www.objc.io/snippets/16.html), on *Typed Notification Observers*. I had already been working on a generic, reusable way to observe notifications in iOS, but this snippet really pointed me in the right direction. One major motivation here is to remove the boilerplate of handling notifications. A typical example would be a view controller that registers to observe a notification and implements an instance method to be called when the notification is received.
 
-{% highlight objective-c linenos %}
+{% highlight objective-c %}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -48,7 +48,7 @@ Say hello to [JSQNotificationObserverKit](https://github.com/jessesquires/JSQNot
 
 We begin by creating a `Notification`. This struct has two type parameters: a value `V` and sender `S`. The type of value `V` that the notification sends is a [phantom type](http://www.objc.io/snippets/13.html), while `S` is the type of sender associated with the notification. A `Notification` also has a `name` property and an optional `sender` property.
 
-{% highlight swift linenos %}
+{% highlight swift %}
 
 // 1. Suppose we have a UIView that posts a notification when its size changes
 let myView = UIView()
@@ -60,7 +60,7 @@ let notification = Notification<CGSize, UIView>(name: "NewViewSizeNotif", sender
 
 Next, we create our `NotificationObserver`, which is initialized with the notification described above and a closure to be called when the notification is received. Instantiating this observer automatically adds it to `NSNotificationCenter` for the notification `name` and `sender` specified by the `Notification` function parameter. Because `NotificationObserver` has the same type parameters as `Notification`, it can *only* observe that *specific* kind of notification.
 
-{% highlight swift linenos %}
+{% highlight swift %}
 
 // 3. This observer listens for the notification described above
 var observer: NotificationObserver<CGSize, UIView>?
@@ -74,7 +74,7 @@ observer = NotificationObserver(notification: notification) { (value: CGSize, se
 
 Finally, we post the notification using the `postNotification(_:value:)` function. Again, this function has the same type parameters as `Notification`, which enforces sending a value of the type specified by the phantom type of `Notification`. In this example, we can **only** send a `CGSize` as the value. Anything else would result in a compiler error.
 
-{% highlight swift linenos %}
+{% highlight swift %}
 
 // 5. Post the notification with the updated CGSize value
 postNotification(notification, value: CGSizeMake(200, 200))
@@ -83,7 +83,7 @@ postNotification(notification, value: CGSizeMake(200, 200))
 
 When the observer is set to `nil` (when it is deallocated), then it is removed from `NSNotificationCenter`.
 
-{% highlight swift linenos %}
+{% highlight swift %}
 
 // 6. Unregister observer, stop listening for notifications
 observer = nil
@@ -105,7 +105,7 @@ A notification can be configured in 4 different ways:
 
 For notifications without a sender, or for which the observer does not care about the sender, we can specify a sender of type `AnyObject`. When we initialize a `Notification`, we can omit the `sender` parameter which defaults to `nil`. The semantics here are great. *Any object* can send this notification, it does not matter to the observer.
 
-{% highlight swift linenos %}
+{% highlight swift %}
 
 let myValue = MyValueType()
 
@@ -117,7 +117,7 @@ postNotification(notification, value: myValue)
 
 For notifications without a value, we simply specify a value type of `Void`. Then when the notification is posted we send the empty tuple, `()`. Remember, the empty tuple is equivalent to `Void`.
 
-{% highlight swift linenos %}
+{% highlight swift %}
 
 let notification = Notification<Void, MyObjectType>(name: "Notification", sender: MyObject)
 

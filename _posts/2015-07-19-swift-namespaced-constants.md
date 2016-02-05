@@ -18,7 +18,7 @@ We are all familiar with handling assets, particularly icons, using the `UIImage
 
 In the past, we strove to avoid [stringly-typed](https://corner.squareup.com/2014/02/objc-codegenutils.html) Objective-C in Cocoa by creating constants or categories. But rather than apply these same techniques in Swift with an `extension`, we can do something more sophisticated.
 
-{% highlight swift linenos %}
+{% highlight swift %}
 
 enum Icon: String {
     case Music
@@ -46,7 +46,7 @@ You may be thinking that we could implement an extension on `UIImage` instead. B
 
 Another common use case for constants, or a Swift extension are for the custom colors in an app. It would be nice to be able to use an enum in this scenario, but an enum raw value type must be a **value type** &mdash; sorry `UIColor`. Alternatively, we can use structs and nested structs.
 
-{% highlight swift linenos %}
+{% highlight swift %}
 
 struct ColorPalette {
     static let Red = UIColor(red: 1.0, green: 0.1491, blue: 0.0, alpha: 1.0)
