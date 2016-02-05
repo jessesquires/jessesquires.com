@@ -28,7 +28,7 @@ Not very helpful, is it? When I first saw this, it took me a few puzzling minute
 
 Most of the existing Objective-C Core Data libraries that you'll find implement the following helper methods in some way, if not verbatim. These methods mitigate the awkwardness of inserting new objects into Core Data and avoid [*stringly-typed* Objective-C](http://corner.squareup.com/2014/02/objc-codegenutils.html).
 
-{% highlight objective-c %}
+{% highlight swift %}
 
 @implementation NSManagedObject (Helpers)
 
