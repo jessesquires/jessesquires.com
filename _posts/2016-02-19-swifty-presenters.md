@@ -12,7 +12,7 @@ A few weeks ago, I spoke at [Realm](https://realm.io) in San Francisco at the Sw
 
 Realm's [transcript](https://realm.io/news/slug-jesse-squires-swifty-view-controller-presenters/) of the talk is excellent. They always do such an amazing job with these posts! 🙌
 
-This talk examines the `UIPresentationController` API that was introduced in iOS 8 and explores ideas for making it more *swifty*. It isn't too technical, but these APIs are really interesting to me and can be really powerful. However, I feel like they are often overlooked. (Maybe this is because a lot of developers are still supporting iOS 7?) Where developers could utilize these API, they instead opt for view controller containment &mdash; which is often more cumbersome.
+This talk examines the `UIPresentationController` API that was introduced in iOS 8 and explores ideas for making it more *swifty*. It isn't too technical, but these APIs are really interesting to me and can be really powerful. However, I feel like they are often overlooked. (Maybe this is because a lot of developers are still supporting iOS 7?) Where developers could utilize these APIs, they instead opt for view controller containment &mdash; which is often more cumbersome.
 
 I'm formalizing these ideas from the talk (and possibly more!) in a new framework &mdash; [PresenterKit](https://github.com/jessesquires/PresenterKit). It is not quite finished, but when it is I will push it to [CocoaPods](https://cocoapods.org). Meanwhile, feel free to check it out. There is also an [example project](https://github.com/jessesquires/PresenterKit/tree/develop/Example), which includes all the code from the talk.
 
