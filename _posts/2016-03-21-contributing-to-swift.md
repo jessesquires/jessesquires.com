@@ -4,7 +4,7 @@ title: Contributing to open source Swift
 subtitle: Talk at try! Swift conference in Tokyo
 ---
 
-Earlier this month I had the incredible opportunity to speak at the [try! Swift conference](http://www.tryswiftconf.com/en) in Tokyo, Japan. 🇯🇵 It was such a fun and rewarding experience. A [video of the talk](https://realm.io/news/) is now online over at [Realm's](https://realm.io) blog, where it is synced with my [slides](https://speakerdeck.com/jessesquires/contributing-to-open-source-swift). If you have not already seen it, go check it out!
+Earlier this month I had the incredible opportunity to speak at the [try! Swift conference](http://www.tryswiftconf.com/en) in Tokyo, Japan. 🇯🇵 It was such a fun and rewarding experience. A [video of the talk](https://realm.io/news/tryswift-jesse-squires-contributing-open-source-swift/) is now online over at [Realm's](https://realm.io) blog, where it is synced with my [slides](https://speakerdeck.com/jessesquires/contributing-to-open-source-swift). If you have not already seen it, go check it out!
 
 <!--excerpt-->
 
@@ -15,7 +15,7 @@ The speakers met with the translation team multiple times to review our slide de
 
 Because of this, you will notice that I'm speaking somewhat slowly during the presentation and pausing often. And so for me personally, it feels a bit awkward when I watch this. Nonetheless, I think the talk was really well received. If you have any feedback, I would love to hear it. [Let me know!](https://twitter.com/jesse_squires) 😄
 
-Also, one part of preparing for the live translation was providing a rough transcript before the conference. You can find all of my talk materials [on GitHub](https://github.com/jessesquires/talks). And as always, Realm's [transcript](https://realm.io/news/) of the talk is excellent. 🙌
+Also, one part of preparing for the live translation was providing a rough transcript before the conference. You can find all of my talk materials [on GitHub](https://github.com/jessesquires/talks). And as always, Realm's [transcript](https://realm.io/news/tryswift-jesse-squires-contributing-open-source-swift/) of the talk is excellent. 🙌
 
 ### Thoughts
 
