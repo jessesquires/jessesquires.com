@@ -10,8 +10,7 @@ Earlier this month I had the incredible opportunity to speak at the [try! Swift 
 
 ### Live translation
 
-One of the most interesting aspects of the conference was that there was live translation between English and Japanese. Most talks were in given in English, but there were at least a couple of talks given in Japanese each day &mdash; even some non-native speakers presented in Japanese! 😎
-The speakers met with the translation team multiple times to review our slide decks before presenting to ensure top quality. Then attendees were given receivers with earphones, and the translators sat in the back in a cubicle listening and translating. We also had Q&A sessions with speakers and attendees where the translators helped bridge the language barrier. It was awesome. 🎉
+One of the most interesting aspects of the conference was that there was live translation between English and Japanese. Most talks were in given in English, but there were at least a couple of talks given in Japanese each day &mdash; even some non-native speakers presented in Japanese! 😎 The speakers met with the translation team multiple times to review our slide decks before presenting to ensure top quality. Then attendees were given receivers with earphones, and the translators sat in the back in a cubicle listening and translating. We also had Q&A sessions with speakers and attendees where the translators helped bridge the language barrier. It was awesome. 🎉
 
 Because of this, you will notice that I'm speaking somewhat slowly during the presentation and pausing often. And so for me personally, it feels a bit awkward when I watch this. Nonetheless, I think the talk was really well received. If you have any feedback, I would love to hear it. [Let me know!](https://twitter.com/jesse_squires) 😄
 
