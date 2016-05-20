@@ -142,6 +142,8 @@ cd ~/GitHub-Pages/JSQCoreDataKit
 
 Right now, I prefer running the `publish_docs.sh` script manually so that the docs only update when I want them to &mdash; for corrections and major releases. However, you could easily do this in the `after_success:` step of your [Travis-CI](https://travis-ci.org) script.
 
+Here's the [final product](http://www.jessesquires.com/JSQCoreDataKit/) for JSQCoreDataKit.
+
 ### It's easy
 
 Writing, even if technical, is a great way to take a break from coding &mdash; which I think we can all agree is a good thing to do. The workflow I've outlined above is how I setup *all* of my libraries now. When we have the tools that make this *so easy*, there are no excuses to not do it!
