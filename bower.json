@@ -1,0 +1,24 @@
+{
+  "name": "jessesquires",
+  "homepage": "https://github.com/jessesquires/jessesquires.github.io",
+  "authors": [
+    "Jesse Squires"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.6.3",
+    "html5shiv": "^3.7.3",
+    "respond": "^1.4.2"
+  }
+}
