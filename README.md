@@ -2,11 +2,63 @@
 
 Turing complete with a stack of `0xdeadbeef`
 
->This blog mostly contains bits about Swift, iOS, Cocoa, Objective-C, and open-source.
-
 ![Logo](https://raw.githubusercontent.com/jessesquires/jessesquires.github.io/master/ico/icon180.png)
 
+## Requirements
+
+- [Jekyll](https://jekyllrb.com)
+- [Bundler](https://bundler.io)
+- [Bower](http://bower.io)
+
+## Dependencies
+
+- [Bootstrap](https://getbootstrap.com)
+- [jQuery](https://jquery.com)
+- [Font Awesome](https://fortawesome.github.io/Font-Awesome/)
+- [html5shiv](https://github.com/aFarkas/html5shiv)
+- [respond](https://github.com/scottjehl/Respond)
+- [Ubuntu Mono font](https://www.google.com/fonts/specimen/Ubuntu+Mono)
+
+### Updating dependencies
+
+```bash
+$ bower update
+```
+
+## Usage
+
+#### Installation
+
+```bash
+$ git clone https://github.com/jessesquires/jessesquires.github.io.git
+$ cd jessesquires.github.io/
+$ bundle install
+$ bower install
+$ bower update
+```
+
+#### Building the site
+
+```bash
+$ bundle exec jekyll build
+```
+
+#### Previewing the site locally
+
+```bash
+$ bundle exec jekyll serve 
+# Now browse to http://localhost:4000
+```
+
+#### Writing a draft
+
+```bash
+$ bundle exec jekyll build --future --drafts --watch
+```
+
 ## About
+
+This is my personal site and blog. It mostly contains bits about Swift, iOS, Cocoa, Objective-C, and open-source.
 
 Lovingly built with [Jekyll](https://jekyllrb.com), [Bootstrap](https://getbootstrap.com), [jQuery](https://jquery.com), and [Font Awesome](https://fortawesome.github.io/Font-Awesome/). Generously hosted by [GitHub](https://pages.github.com).
 
