@@ -1,0 +1,15 @@
+{
+  "name": "ubuntuMono",
+  "main": [
+    "*.ttf",
+    "*.css"
+  ],
+  "_cacheHeaders": {
+    "Content-Type": "application/octet-stream",
+    "Content-Disposition": "attachment; filename=ubuntuMono.zip"
+  },
+  "_source": "https://google-fonts.azurewebsites.net/googleFonts/ubuntumono?family=Ubuntu+Mono",
+  "_target": "*",
+  "_originalSource": "https://google-fonts.azurewebsites.net/googleFonts/ubuntumono?family=Ubuntu+Mono",
+  "_direct": true
+}
