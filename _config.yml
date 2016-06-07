@@ -13,25 +13,32 @@ exclude: [vendor]
 # Permalinks
 permalink: /:title/
 
-# Setup
+# Site
 title: 'Jesse Squires'
-tagline: 'Turing complete with a stack of 0xdeadbeef'
+description: 'Turing complete with a stack of 0xdeadbeef'
+url: http://www.jessesquires.com
+logo: /img/logo.png
 timezone: America/Los_Angeles
 
-url: http://www.jessesquires.com
+twitter:
+  username: jesse_squires
 
+# Author
 author:
   name: 'Jesse Squires'
-  handle: '@jesse_squires'
+  twitter: jesse_squires
+
+# Setup
+paginate: 4
+excerpt_separator: <!--excerpt-->
+
+# Data
+links:
+  github: 'https://github.com/jessesquires/jessesquires.github.io'
+  issue: 'https://github.com/jessesquires/jessesquires.github.io/issues/new'
+  pull: 'https://github.com/jessesquires/jessesquires.github.io/compare'
+
+social_links:
   twitter: 'https://twitter.com/jesse_squires'
   github: 'https://github.com/jessesquires/'
   linkedin: 'https://www.linkedin.com/in/jessesquires'
-
-paginate: 4
-
-excerpt_separator: <!--excerpt-->
-
-links:
-   github: 'https://github.com/jessesquires/jessesquires.github.io'
-   issue: 'https://github.com/jessesquires/jessesquires.github.io/issues/new'
-   pull: 'https://github.com/jessesquires/jessesquires.github.io/compare'

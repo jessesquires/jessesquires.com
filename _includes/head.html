@@ -4,16 +4,18 @@
    <meta http-equiv="Cache-control" content="public">
    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
    <meta name="keywords" content="hexed bits, apps, iOS, objective-c, swift, cocoa, apple, xcode, app store, software, programming, engineering, design patterns">
-   <meta name="description" content="{{ site.tagline }}">
+   <meta name="description" content="{{ site.description }}">
    <meta name="author" content="{{ site.author.name }}">
 
    <title>
       {% if page.title == "Home" %}
-         {{ site.title }} &middot; {{ site.tagline }}
+         {{ site.title }} &middot; {{ site.description }}
       {% else %}
          {{ page.title }} &middot; {{ site.title }}
       {% endif %}
    </title>
+
+   {% seo title=false %}
 
    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
    <link href="/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
