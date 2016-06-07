@@ -60,7 +60,7 @@ $ bundle exec jekyll build --future --drafts --watch
 
 This is my personal site and blog. It mostly contains bits about Swift, iOS, Cocoa, Objective-C, and open source.
 
-Lovingly built with [Jekyll](https://jekyllrb.com), [Bootstrap](https://getbootstrap.com), [jQuery](https://jquery.com), and [Font Awesome](https://fortawesome.github.io/Font-Awesome/). Generously hosted by [GitHub](https://pages.github.com).
+Lovingly built with [Jekyll](https://jekyllrb.com), [Bootstrap](https://getbootstrap.com), [jQuery](https://jquery.com), and [Font Awesome](https://fortawesome.github.io/Font-Awesome/). Generously hosted by [GitHub Pages](https://pages.github.com).
 
 ## License
 
