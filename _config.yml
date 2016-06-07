@@ -6,7 +6,7 @@ kramdown:
    input: GFM
    syntax_highlighter: rouge
 
-gems: [jekyll-sitemap, jekyll-paginate]
+gems: [jekyll-sitemap, jekyll-paginate, jekyll-seo-tag]
 
 exclude: [vendor]
 
