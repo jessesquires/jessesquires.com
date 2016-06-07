@@ -58,7 +58,7 @@ $ bundle exec jekyll build --future --drafts --watch
 
 ## About
 
-This is my personal site and blog. It mostly contains bits about Swift, iOS, Cocoa, Objective-C, and open-source.
+This is my personal site and blog. It mostly contains bits about Swift, iOS, Cocoa, Objective-C, and open source.
 
 Lovingly built with [Jekyll](https://jekyllrb.com), [Bootstrap](https://getbootstrap.com), [jQuery](https://jquery.com), and [Font Awesome](https://fortawesome.github.io/Font-Awesome/). Generously hosted by [GitHub](https://pages.github.com).
 
@@ -70,4 +70,4 @@ Lovingly built with [Jekyll](https://jekyllrb.com), [Bootstrap](https://getboots
 
 All code is licensed under an [MIT License](https://opensource.org/licenses/MIT).
 
-The *Ubuntu Mono* font is licensed under the [Ubuntu Font License](https://github.com/jessesquires/jessesquires.github.io/blob/master/fonts/Ubuntu_Mono/UFL.txt).
+The *Ubuntu Mono* font is licensed under the [Ubuntu Font License](http://font.ubuntu.com/ufl/).
