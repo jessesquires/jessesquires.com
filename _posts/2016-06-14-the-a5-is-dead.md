@@ -8,6 +8,8 @@ As developers, we've been [lamenting](http://arstechnica.com/apple/2015/09/ios-9
 
 <!--excerpt-->
 
+<img class="img-thumbnail img-responsive center" src="/img/a5-chip.jpg" title="A5 SoC" alt="A5 SoC"/>
+
 ### iOS 10
 
 [iOS 10](http://www.apple.com/ios/ios10-preview/) has dropped support for these older A5-powered devices &mdash; a reason for celebration. However, most developers support *at least* the two most recent versions of iOS, per Apple's recommendations. This means we'll been writing modern apps on modern OSes for 6-year-old or 7-year-old devices, depending on when you drop support for iOS 9. But the good news is, once you *are* ready to drop iOS 9 support in your app, you can say goodbye to the A5 forever. Oh, and you can also say goodbye to 3.5-inch screen sizes. Rejoice.
