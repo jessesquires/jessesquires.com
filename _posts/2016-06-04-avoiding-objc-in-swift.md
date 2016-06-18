@@ -110,6 +110,15 @@ protocol ViewModelConfigurable {
 @objc protocol NavigationItemConfigurable: class {
     func didTapCancelButton(sender: UIBarButtonItem)
 }
+
+extension NavigationItemConfigurable where Self: UIViewController {
+    func configureNavigationItem() {
+        navigationItem.leftBarButtonItem = UIBarButtonItem(
+            barButtonSystemItem: .Cancel,
+            target: self,
+            action: #selector(didTapCancelButton(_:)))
+    }
+}
 {% endhighlight %}
 
 Finally, we can define our original `ViewControllerType` protocol as a `typealias`.
