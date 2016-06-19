@@ -8,7 +8,7 @@ As developers, we've been [lamenting](http://arstechnica.com/apple/2015/09/ios-9
 
 <!--excerpt-->
 
-<img class="img-thumbnail img-responsive center" src="/img/a5-chip.jpg" title="A5 SoC" alt="A5 SoC"/>
+<img class="img-thumbnail img-responsive center" src="{{ site.img_url }}/a5-chip.jpg" title="A5 SoC" alt="A5 SoC"/>
 
 ### iOS 10
 

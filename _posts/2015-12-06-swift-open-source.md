@@ -8,7 +8,7 @@ It has only been a few days since the announcement of [Swift going open source](
 
 <!--excerpt-->
 
-<img class="img-thumbnail img-responsive center" src="/img/swift-logo.png" title="Swift" alt="Swift"/>
+<img class="img-thumbnail img-responsive center" src="{{ site.img_url }}/swift-logo.png" title="Swift" alt="Swift"/>
 
 ### Expectations
 

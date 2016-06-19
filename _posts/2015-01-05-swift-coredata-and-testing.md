@@ -12,7 +12,7 @@ subtitle: Working around Swift's constraints to unit test models
 
 Because Swift classes are namespaced, you must prefix the class name with the name of the module in which it is compiled. You can do this by opening your `.xcdatamodeld` file in Xcode, selecting an entity, and opening the model entity inspector.
 
-<img class="img-thumbnail img-responsive center" src="/img/coredata_namespace.png" title="Core Data namespace" alt="Core Data namespace"/>
+<img class="img-thumbnail img-responsive center" src="{{ site.img_url }}/coredata_namespace.png" title="Core Data namespace" alt="Core Data namespace"/>
 <small class="text-muted center">Using Swift namespaces with Core Data. Image taken from <a href="https://developer.apple.com/library/ios/documentation/Swift/Conceptual/BuildingCocoaApps/WritingSwiftClassesWithObjective-CBehavior.html#//apple_ref/doc/uid/TP40014216-CH5-XID_56">Using Swift with Cocoa and Objective-C</a>.</small>
 
 This is certainly easy to forget, and if you do, you'll see this error:

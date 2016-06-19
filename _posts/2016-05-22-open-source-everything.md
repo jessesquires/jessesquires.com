@@ -14,7 +14,7 @@ A couple of weeks ago, I released the fourth major version of [JSQCoreDataKit](h
 
 The release was seamless and free of regressions. So, how did we do this?
 
-<img class="img-thumbnail img-responsive center" src="/img/success_release.jpg" title="No regressions" alt="No regressions"/>
+<img class="img-thumbnail img-responsive center" src="{{ site.img_url }}/success_release.jpg" title="No regressions" alt="No regressions"/>
 
 ### The *other* kind of documentation
 
@@ -30,7 +30,7 @@ Collectively, *all* of these things serve as *documentation* &mdash; not just th
 
 With excellent API documentation and test coverage, contributors can fix bugs and add features without worrying about breaking something. Together, the docs and tests provide the complete picture for how your APIs should behave. Continuous integration keeps this in check by regularly running tests for each change, and notifying you of any regressions in test failures or test coverage. Once [travis-ci](https://travis-ci.org/jessesquires/JSQCoreDataKit) and [codecov.io](https://codecov.io/gh/jessesquires/JSQCoreDataKit) were green for each pull request, I was **certain** that it was safe to merge. To me, this is the most liberating feeling in software development.
 
-<img class="img-thumbnail img-responsive center" src="/img/tests_pass.jpg" title="All tests pass" alt="All tests pass"/>
+<img class="img-thumbnail img-responsive center" src="{{ site.img_url }}/tests_pass.jpg" title="All tests pass" alt="All tests pass"/>
 
 ### Transparency via issues and milestones
 

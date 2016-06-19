@@ -46,7 +46,7 @@ Also, strive to provide [100% coverage](https://twitter.com/orta/status/47100957
 
 One final tip &mdash; use [Wei Wang](https://github.com/onevcat)'s plug-in, [VVDocumenter-Xcode](https://github.com/onevcat/VVDocumenter-Xcode). This Xcode plug-in will generate the doc comment templates for you. All you have to do is type `///` above any method or class and then fill-in the docs.
 
-<img class="img-thumbnail img-responsive center" src="/img/feels_good_docs.jpg" title="100% docs" alt="100% docs"/>
+<img class="img-thumbnail img-responsive center" src="{{ site.img_url }}/feels_good_docs.jpg" title="100% docs" alt="100% docs"/>
 
 ### Generating docs
 

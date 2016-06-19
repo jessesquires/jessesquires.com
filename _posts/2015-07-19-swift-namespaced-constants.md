@@ -13,7 +13,7 @@ Mike Ash has a great [Friday Q&A](https://www.mikeash.com/pyblog/friday-qa-2011-
 
 We are all familiar with handling assets, particularly icons, using the `UIImage(named:)` API. And since iOS 7, many icons have two distinct visual states &mdash; *lined* and *filled*, or *normal* and *selected*. Thus, we find ourselves with two versions of each icon, for example `UIImage(named:"music")` and `UIImage(named:"music-selected")`.
 
-<img class="img-thumbnail img-responsive center" src="/img/tabbar.png" title="iOS Tab Bar" alt="iOS Tab Bar"/>
+<img class="img-thumbnail img-responsive center" src="{{ site.img_url }}/tabbar.png" title="iOS Tab Bar" alt="iOS Tab Bar"/>
 <small class="text-muted center">iOS Tab Bar, taken from <a href="https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/Bars.html#//apple_ref/doc/uid/TP40006556-CH12-SW1" target="_blank">iOS Human Interface Guidelines</a>.</small>
 
 In the past, we strove to avoid [stringly-typed](https://corner.squareup.com/2014/02/objc-codegenutils.html) Objective-C in Cocoa by creating constants or categories. But rather than apply these same techniques in Swift with an `extension`, we can do something more sophisticated.

@@ -23,6 +23,9 @@ timezone: America/Los_Angeles
 twitter:
   username: jesse_squires
 
+img_url: http://www.jessesquires.com/img
+# img_url: /img
+
 # Author
 author:
   name: 'Jesse Squires'

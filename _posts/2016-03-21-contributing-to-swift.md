@@ -29,4 +29,4 @@ You **do not** need to be a compiler expert to have an impact on Swift or any of
 >Do you want to contribute to Swift? Not sure how or where to begin? It can be overwhelming! In this talk we'll explore the different parts of Swift, see how the various Swift projects are related, discuss the skills you need to get started, and learn the best ways to get your first fix accepted.
 
 <a href="https://speakerdeck.com/jessesquires/contributing-to-open-source-swift">
-<img class="img-thumbnail img-responsive center" src="/img/try-swift-slides.jpeg" title="Contributing to open source Swift" alt="Contributing to open source Swift"/></a>
+<img class="img-thumbnail img-responsive center" src="{{ site.img_url }}/try-swift-slides.jpeg" title="Contributing to open source Swift" alt="Contributing to open source Swift"/></a>

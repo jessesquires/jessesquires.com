@@ -22,5 +22,4 @@ Overall, I think the talk was really well received. If you have any feedback, I 
 
 >One major shortcoming of UIKit is that view controllers have too many responsibilities. This talk focuses on one — presenting and dismissing view controllers — and how we can re-examine and redefine these common operations with a more Swifty API that reduces boilerplate and increases expressivity.
 
-
-<img class="img-thumbnail img-responsive center" src="/img/yodawg-swifty-presenters.jpg" itle="Swifty Presenters" alt="Swifty Presenters"/>
+<img class="img-thumbnail img-responsive center" src="{{ site.img_url }}/yodawg-swifty-presenters.jpg" itle="Swifty Presenters" alt="Swifty Presenters"/>
