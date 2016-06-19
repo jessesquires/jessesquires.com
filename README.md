@@ -1,8 +1,10 @@
 # [jessesquires.github.io](http://www.jessesquires.com) [![Build Status](https://travis-ci.org/jessesquires/jessesquires.github.io.svg?branch=master)](https://travis-ci.org/jessesquires/jessesquires.github.io)
 
-Turing complete with a stack of `0xdeadbeef`
+*Turing complete with a stack of `0xdeadbeef`*
 
 ![Logo](https://raw.githubusercontent.com/jessesquires/jessesquires.github.io/master/ico/icon180.png)
+
+> **You can [subscribe here](http://www.jessesquires.com/subscribe/) to have articles delivered directly to your inbox.**
 
 ## Requirements
 
