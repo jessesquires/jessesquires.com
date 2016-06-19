@@ -14,6 +14,13 @@ layout: null
    <author>
       <name>{{ site.author.name }}</name>
    </author>
+   <icon>/img/logo.png</icon>
+   <category term="programming"/>
+   <category term="ios"/>
+   <category term="swift"/>
+   <category term="objective-c"/>
+   <category term="software"/>
+   <category term="mobile"/>
 
    {% for post in site.posts %}
    <entry>
