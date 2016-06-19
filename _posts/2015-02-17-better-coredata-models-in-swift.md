@@ -19,7 +19,8 @@ You can define minimum and maximum values, provide default values, mark attribut
 
 For example, imagine we have the following `Employee` class. What fields are required for a save to succeed?
 
-{% highlight swift %}
+{% highlight objc %}
+
 @interface Employee : NSManagedObject
 
 @property (nonatomic, retain) NSString * address;

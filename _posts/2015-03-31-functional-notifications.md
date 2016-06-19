@@ -12,7 +12,7 @@ The [observer pattern](http://en.wikipedia.org/wiki/Observer_pattern) is a power
 
 A while back, [objc.io](http://www.objc.io) posted functional [snippet 16](http://www.objc.io/snippets/16.html), on *Typed Notification Observers*. I had already been working on a generic, reusable way to observe notifications in iOS, but this snippet really pointed me in the right direction. One major motivation here is to remove the boilerplate of handling notifications. A typical example would be a view controller that registers to observe a notification and implements an instance method to be called when the notification is received.
 
-{% highlight swift %}
+{% highlight objc %}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
