@@ -207,9 +207,9 @@ blockquote {
 /* BUTTONS */
 
 .btn-subscribe {
-  color: #fff;
+  color: #ffffff;
   background-color: #31808C;
-  border-color: #FFFFFF;
+  border-color: #47bacc;
 }
 
 .btn-subscribe:hover,
@@ -217,9 +217,9 @@ blockquote {
 .btn-subscribe:active,
 .btn-subscribe.active,
 .open .dropdown-toggle.btn-subscribe {
-  color: #fff;
+  color: #ffffff;
   background-color: #47BACC;
-  border-color: #FFFFFF;
+  border-color: #47bacc;
 }
 
 .btn-subscribe:active,
@@ -244,10 +244,10 @@ fieldset[disabled] .btn-subscribe:active,
 .btn-subscribe[disabled].active,
 fieldset[disabled] .btn-subscribe.active {
   background-color: #31808C;
-  border-color: #FFFFFF;
+  border-color: #47bacc;
 }
 
 .btn-subscribe .badge {
   color: #31808C;
-  background-color: #fff;
+  background-color: #ffffff;
 }
