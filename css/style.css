@@ -156,15 +156,15 @@ header h2 {
 
 /* PAGES */
 
-.sharing {
-   margin: 2rem 0.5rem 0.5rem 0.5rem;
-}
-
-.sharing a,
-.sharing a:visited,
-.sharing a:link {
+a.btn,
+a:visited.btn,
+a:link.btn {
    color: #666666;
    border: 1px solid #ccc;
+}
+
+.sharing {
+   margin: 2rem 0.5rem 0.5rem 0.5rem;
 }
 
 .footnotes ul {
