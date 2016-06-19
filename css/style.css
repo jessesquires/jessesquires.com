@@ -203,3 +203,51 @@ blockquote {
       font-size: 13px;
    }
 }
+
+/* BUTTONS */
+
+.btn-subscribe {
+  color: #fff;
+  background-color: #31808C;
+  border-color: #FFFFFF;
+}
+
+.btn-subscribe:hover,
+.btn-subscribe:focus,
+.btn-subscribe:active,
+.btn-subscribe.active,
+.open .dropdown-toggle.btn-subscribe {
+  color: #fff;
+  background-color: #47BACC;
+  border-color: #FFFFFF;
+}
+
+.btn-subscribe:active,
+.btn-subscribe.active,
+.open .dropdown-toggle.btn-subscribe {
+  background-image: none;
+}
+
+.btn-subscribe.disabled,
+.btn-subscribe[disabled],
+fieldset[disabled] .btn-subscribe,
+.btn-subscribe.disabled:hover,
+.btn-subscribe[disabled]:hover,
+fieldset[disabled] .btn-subscribe:hover,
+.btn-subscribe.disabled:focus,
+.btn-subscribe[disabled]:focus,
+fieldset[disabled] .btn-subscribe:focus,
+.btn-subscribe.disabled:active,
+.btn-subscribe[disabled]:active,
+fieldset[disabled] .btn-subscribe:active,
+.btn-subscribe.disabled.active,
+.btn-subscribe[disabled].active,
+fieldset[disabled] .btn-subscribe.active {
+  background-color: #31808C;
+  border-color: #FFFFFF;
+}
+
+.btn-subscribe .badge {
+  color: #31808C;
+  background-color: #fff;
+}
