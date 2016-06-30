@@ -85,7 +85,7 @@ a.post-continue {
 
 footer a, footer a:link {
    color: #444444;
-   border-bottom: 1px dotted #444444;
+   border-width: 0px;
 }
 
 /* HEADER */
