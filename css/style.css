@@ -61,7 +61,10 @@ h1 > a:link {
    border-width: 0px;
 }
 
-.tagline a {
+.tagline a,
+.tagline a:link,
+footer a,
+footer a:link {
    color: #666666;
    border-bottom: 1px dotted #666666;
 }
@@ -81,11 +84,6 @@ a.post-continue {
 .subscribe a,
 .subscribe a:visited {
    color: #444444;
-}
-
-footer a, footer a:link {
-   color: #151515;
-   border-width: 0px;
 }
 
 /* HEADER */
