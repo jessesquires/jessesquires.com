@@ -122,13 +122,13 @@ class CommonTableCell: UITableViewCell {
 }
 {% endhighlight %}
 
-Instead of an `enum`, we created a `struct` that represents our cell style. Not only does this clearly define all attributes of the style, but we can now **map this value directly onto** the cell in a less procedural, more [declarative](https://en.wikipedia.org/wiki/Declarative_programming) way. In other scenarios, we could pass a configuration to a class's designated initializer.
+Instead of an `enum`, we can create a `struct` that represents our cell style. Not only does this clearly define all attributes of the style, but we can now **map this value directly onto** the cell in a less procedural, more [declarative](https://en.wikipedia.org/wiki/Declarative_programming) way. In other scenarios, we could pass a configuration to a class's designated initializer.
 
 We've eliminated a ton of code and complexity from this class, leaving it smaller, easier to read, and easier to reason about. There is a well-defined, one-to-one mapping from the style attributes to the cell attributes. We no longer have the maintenance burden of the giant `switch` statement, nor its proclivity towards introducing errors. Finally, not only can clients express infinitely many styles, but introducing new styles **no longer results in changing the original class**, nor does it result in breaking changes if creating a library.
 
 ### Providing default and custom values
 
-Another reason this design is superior is because it allows us to provide sensible default values, and add new styles in a purely additive, non-breaking way. Some of Swift's features really shine here &mdash; default parameter values, extensions, and type inference. The language is so conducive to these types of patterns, whereas Objective-C feels clumsy, tedious, and verbose.
+Another reason this design is superior is because it allows us to provide sensible default values, and add new styles in a purely additive, non-breaking way. Some of Swift's features really shine here &mdash; default parameter values, [extensions](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Extensions.html), and [type inference](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Types.html#//apple_ref/doc/uid/TP40014097-CH31-ID457). The language is so conducive to these types of patterns, whereas Objective-C feels clumsy, tedious, and verbose.
 
 In Swift, we can provide default values in the initializer:
 
@@ -171,7 +171,7 @@ extension CellStyle {
 cell.apply(style: .settings)
 {% endhighlight %}
 
-Notice the call site can actually remains *unchanged* due to Swift's type inference. Previously `.settings` referred to the `enum` value, but it now refers to the `static var` property in the extension. We can provide a more modular, extensible API without sacrificing conciseness or clarity.
+Notice the call site can actually remain *unchanged* due to Swift's type inference. Previously `.settings` referred to the `enum` value, but it now refers to the `static var` property in the extension. We can provide a more modular, extensible API without sacrificing conciseness or clarity.
 
 As mentioned above, clients can now effortlessly provide their own styles by adding an extension. Even more, they can choose to only override some of the default properties:
 
