@@ -34,6 +34,10 @@ h3 > code {
    color: #444444;
 }
 
+a > code {
+  border-bottom: 1px dotted #c7254e;
+}
+
 /* LINKS */
 
 a {
