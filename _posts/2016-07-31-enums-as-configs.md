@@ -14,7 +14,7 @@ Let's first define the problem we're solving. Suppose we have a class that is us
 
 > **Note:** the following examples will be in Swift (3.0), but this applies to Objective-C as well. In fact, this discussion is relevant for any programming language with similar concepts.
 
-Let's use a simple, familiar example &mdash; a `UITableViewCell`. Suppose we have a cell layout with an image, a couple of labels, and an accessory view. The layout is pretty generic, and we want to reuse the same cell across different views in our app. Suppose our *login view* styles all of its cells with specific colors, fonts, etc. However, when we reuse these cells in our *settings view* we want all of our fonts, colors, etc. to be *different*. All views that use this cell need the same basic cell layout and subviews, but different visual treatments.
+Let's use a simple, familiar example &mdash; a [`UITableViewCell`](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UITableViewCell_Class/). Suppose we have a cell layout with an image, a couple of labels, and an accessory view. The layout is pretty generic, and we want to reuse the same cell across different views in our app. Suppose our *login view* styles all of its cells with specific colors, fonts, etc. However, when we reuse these cells in our *settings view* we want all of our fonts, colors, etc. to be *different*. All views that use this cell need the same basic cell layout and subviews, but different visual treatments.
 
 ### Using an `enum` for configuration
 
@@ -78,7 +78,7 @@ class SettingsViewController: UITableViewController {
 }
 {% endhighlight %}
 
-We create our usual `UITableViewCell` and `UITableViewController` subclasses, and define a style `enum`. Within each view controller we set the appropriate style when we create and configure the cell. Easy enough, right?
+We create our usual `UITableViewCell` and [`UITableViewController`](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UITableViewController_Class/) subclasses, and define a style `enum`. Within each view controller we set the appropriate style when we create and configure the cell. Easy enough, right?
 
 ### Why `enum` configurations are bad
 
