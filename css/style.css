@@ -38,11 +38,6 @@ a > code {
   border-bottom: 1px dotted #c7254e;
 }
 
-footer > p {
-   margin: 0px;
-   padding: 0px;
-}
-
 /* LINKS */
 
 a {
@@ -190,8 +185,19 @@ a:link.btn {
    -webkit-margin-after: 0px !important;
 }
 
-.footnotes a, sup a:link {
+.post-share-subscribe a,
+.footnotes a,
+sup a:link {
    border-width: 0px;
+}
+
+.post-share-subscribe p {
+   margin: 0px;
+   padding: 0px;
+}
+
+.feedback {
+  margin: 1rem;
 }
 
 blockquote {
