@@ -1,21 +1,32 @@
 ---
-layout: default
+layout: standalone
 title: Search this site
 ---
 
 <style type="text/css">
    /*
-      fix google custom search conflicts with bootstrap
-      solution: http://css-tricks.com/forums/topic/troubles-with-box-sizing-and-google-custom-search/
+   fix google custom search conflicts with bootstrap
+   solutions:
+   http://css-tricks.com/forums/topic/troubles-with-box-sizing-and-google-custom-search/
+   http://stackoverflow.com/questions/21932819/google-cse-with-twitter-bootstrap-not-displaying-the-search-box-correctly
    */
-   *, .cse:before, .cse:after {
+   .cse:before, .cse:after {
       -webkit-box-sizing: inherit;
       -moz-box-sizing: inherit;
       box-sizing: inherit;
    }
 
+   input.gsc-input,
+   .gsc-input-box,
+   .gsc-input-box-hover,
+   .gsc-input-box-focus,
+   .gsc-search-button {
+      box-sizing: content-box;
+      line-height: normal;
+   }
+
    /*
-      other hacks for google custom search (gcs)
+   other hacks for google custom search (gcs)
    */
    .gcsc-branding,
    .gsc-control-wrapper-cse,
@@ -40,14 +51,9 @@ title: Search this site
       background-color: #fff;
       border-color: #fff;
    }
-
-   .searchbox {
-      margin: 2.5rem 0rem 2.5rem 0rem;
-   }
 </style>
 
-<div class="searchbox">
-   <h1 class="text-center">{{ page.title }}</h1><br />
+<div>
    <script>
       (function() {
          var cx = '011538828544940938420:pybhfqtto2c';
@@ -60,10 +66,5 @@ title: Search this site
          s.parentNode.insertBefore(gcse, s);
       })();
    </script>
-
-   <div class="row">
-      <div class="col-sm-8 col-sm-offset-2">
-         <gcse:search></gcse:search>
-      </div>
-   </div>
+   <gcse:search></gcse:search>
 </div>
