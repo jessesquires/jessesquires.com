@@ -38,6 +38,11 @@ a > code {
   border-bottom: 1px dotted #c7254e;
 }
 
+footer > p {
+   margin: 0px;
+   padding: 0px;
+}
+
 /* LINKS */
 
 a {
@@ -85,8 +90,8 @@ a.post-continue {
    border-width: 0px;
 }
 
-.subscribe a,
-.subscribe a:visited {
+.contact a,
+.contact a:visited {
    color: #444444;
 }
 
@@ -111,13 +116,13 @@ header h2 {
    display: inline-block;
 }
 
-.subscribe ul {
+.contact ul {
    -webkit-padding-start: 0px !important;
    -webkit-margin-before: 0px !important;
    -webkit-margin-after: 0px !important;
 }
 
-.subscribe ul li {
+.contact ul li {
    display: inline-block;
    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }

@@ -6,6 +6,12 @@ title: Archive
 <div class="row">
    <div class="col-sm-8 col-sm-offset-2">
    <h1 class="text-center">Archive</h1>
+   <br/>
+   <nav>
+      <ul class="pager">
+         <li><a href="/search" class="btn btn-default" title="Search this site"><i class="fa fa-search"></i> Search</a></li>
+      </ul>
+   </nav>
    {% for post in site.posts %}
       <article class="post">
          <h3> <a href="{{ post.url }}">{{ post.title }}</a></h3>
