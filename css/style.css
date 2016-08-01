@@ -95,6 +95,10 @@ a.post-continue {
    color: #444444;
 }
 
+.dropdown-menu a {
+  border-width: 0px;
+}
+
 /* HEADER */
 
 header, .tagline, header code {
@@ -170,8 +174,13 @@ a:link.btn {
    border: 1px solid #ccc;
 }
 
-.sharing {
+.post-share-subscribe {
    margin: 5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.dropdown-menu li {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .footnotes ul {
