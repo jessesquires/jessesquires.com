@@ -198,6 +198,10 @@ blockquote {
    color: #555;
 }
 
+.standalone {
+  margin-bottom: 1rem;
+}
+
 .standalone .btn {
    margin-bottom: 0.5rem;
 }
