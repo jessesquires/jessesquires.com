@@ -212,4 +212,4 @@ What we've explored in this post is a manifestation of the [open/closed principl
 
 We've seen that attempting to implement this principle via enumeration types is limiting for clients, error-prone, and a maintenance burden. By using configuration and behavior objects or data sources and delegates, we can simplify our code, eliminate errors, maintain concision and clarity, provide a modular and extensible API for clients, and avoid breaking changes.
 
-What kind of styles, configurations, or behaviors can you identity in your app? Time to refactor. 🤓
+What kind of styles, configurations, or behaviors can you identify in your app? Time to refactor. 🤓
