@@ -1,0 +1,44 @@
+---
+layout: standalone
+title: Speaking
+---
+
+<p>I enjoy speaking at conferences and meetups to share my thoughts and ideas on software &mdash; particularly open source, iOS, Swift, and Objective-C. You can find the materials and details for all of my talks <a href="https://github.com/jessesquires/talks" target="_blank">on GitHub</a> and all of my slides <a href="https://speakerdeck.com/jessesquires" target="_blank">on Speaker Deck</a>.</p>
+<p>Please feel free to <a href="mailto:jesse@jessesquires.com">contact me</a> about speaking engagements.</p>
+
+### Talks
+
+| <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp; Date | <i class="fa fa-quote-left" aria-hidden="true"></i>&nbsp; Title | <i class="fa fa-video-camera" aria-hidden="true"></i>&nbsp; Event | <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; Location | <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;  Links |
+|:--------------|:----------------------------------|:--------------------------------|:-------------------------------------|:-----------------------------------|
+| 28 Jul 2016   | Keynote Panel                     | [Forward Swift][event5]         | [Regency Ballroom][location5], SF    |                                    |
+| 13 Jun 2016   | WWDC Swift Live Panel, take 2     | [WWDC Swift Panel][event4]      | [Realm][location4], San Francisco    | [video][video4]                    |
+| 04 Mar 2016   | Contributing to open source Swift | [try! Swift conference][event3] | [Cyber Agent][location3], Tokyo 🇯🇵 | [slides][slides3], [video][video3] |
+| 28 Jan 2016   | Swifty view controller presenters | [Swift meetup][event2] (SLUG)   | [Realm][location2], San Francisco    | [slides][slides2], [video][video2] |
+| 14 Apr 2015   | Using Core Data in Swift          | [Swift meetup][event1] (SLUG)   | [Realm][location1], San Francisco    | [slides][slides1], [video][video1] |
+{: class="table table-striped table-bordered table-responsive"}
+
+[event1]:https://www.meetup.com/swift-language/events/220612410/
+[location1]:https://realm.io
+[slides1]:https://speakerdeck.com/jessesquires/using-core-data-in-swift
+[video1]:https://realm.io/news/jesse-squires-core-data-swift
+
+[event2]:https://www.meetup.com/swift-language/events/227833264/
+[location2]:https://realm.io
+[slides2]:https://speakerdeck.com/jessesquires/swifty-view-controller-presenters
+[video2]:https://realm.io/news/slug-jesse-squires-swifty-view-controller-presenters
+
+[event3]:http://www.tryswiftconf.com/en
+[location3]:https://www.cyberagent.co.jp
+[slides3]:https://speakerdeck.com/jessesquires/contributing-to-open-source-swift
+[video3]:https://realm.io/news/tryswift-jesse-squires-contributing-open-source-swift/
+
+[event4]:http://www.meetup.com/swift-language/events/231196358/
+[location4]:https://realm.io
+[video4]:https://www.periscope.tv/realmlive/1eaKbeEbRRexX
+
+[event5]:https://forwardswift.com
+[location5]:http://www.theregencyballroom.com
+
+[event6]:http://frenchkit.fr
+
+[event7]:https://swiftsummit.com/
