@@ -36,6 +36,11 @@ a > code {
   border-bottom: 1px dotted #c7254e;
 }
 
+.contact ul li {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 /* LINKS */
 
 a {
@@ -80,6 +85,15 @@ footer a, footer a:visited,
 
 .dropdown-menu a {
    border-width: 0px;
+}
+
+.contact ul li a {
+  border-width: 0px;
+}
+
+.contact ul li a:hover {
+   color: #666666;
+   text-decoration: none;
 }
 
 /* HEADER / FOOTER */
