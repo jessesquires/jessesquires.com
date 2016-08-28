@@ -8,6 +8,8 @@ title: Speaking
 
 ### Talks
 
+<div class="table-responsive" markdown="1">
+
 | <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp; Date | <i class="fa fa-quote-left" aria-hidden="true"></i>&nbsp; Title | <i class="fa fa-video-camera" aria-hidden="true"></i>&nbsp; Event | <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; Location | <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;  Links |
 |:--------------|:----------------------------------|:--------------------------------|:-------------------------------------|:-----------------------------------|
 | 28 Jul 2016   | Keynote Panel                     | [Forward Swift][event5]         | [Regency Ballroom][location5], SF    |                                    |
@@ -15,7 +17,9 @@ title: Speaking
 | 04 Mar 2016   | Contributing to open source Swift | [try! Swift conference][event3] | [Cyber Agent][location3], Tokyo 🇯🇵 | [slides][slides3], [video][video3] |
 | 28 Jan 2016   | Swifty view controller presenters | [Swift meetup][event2] (SLUG)   | [Realm][location2], San Francisco    | [slides][slides2], [video][video2] |
 | 14 Apr 2015   | Using Core Data in Swift          | [Swift meetup][event1] (SLUG)   | [Realm][location1], San Francisco    | [slides][slides1], [video][video1] |
-{: class="table table-striped table-bordered table-responsive"}
+{: class="table table-striped table-bordered"}
+
+</div>
 
 [event1]:https://www.meetup.com/swift-language/events/220612410/
 [location1]:https://realm.io
