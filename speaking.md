@@ -3,8 +3,9 @@ layout: standalone
 title: Speaking
 ---
 
-<p>I enjoy speaking at conferences and meetups to share my thoughts and ideas on software &mdash; particularly open source, iOS, Swift, and Objective-C. You can find the materials and details for all of my talks <a href="https://github.com/jessesquires/talks" target="_blank">on GitHub</a> and all of my slides <a href="https://speakerdeck.com/jessesquires" target="_blank">on Speaker Deck</a>.</p>
-<p>Please feel free to <a href="mailto:jesse@jessesquires.com">contact me</a> about speaking engagements.</p>
+I enjoy speaking at conferences and meetups to share my thoughts and ideas on software &mdash; particularly open source, iOS, Swift, and Objective-C. You can find the materials and details for all of my talks [on GitHub](https://github.com/jessesquires/talks) and all of my slides [on Speaker Deck](https://speakerdeck.com/jessesquires).
+
+Feel free to [contact me](mailto:jesse@jessesquires.com) about speaking at your event!
 
 ### Talks
 
