@@ -13,7 +13,7 @@ Feel free to [contact me](mailto:jesse@jessesquires.com) about speaking at your 
 
 | <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp; Date | <i class="fa fa-quote-left" aria-hidden="true"></i>&nbsp; Title | <i class="fa fa-video-camera" aria-hidden="true"></i>&nbsp; Event | <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; Location | <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;  Links |
 |:--------------|:----------------------------------|:--------------------------------|:-------------------------------------|:-----------------------------------|
-| 28 Jul 2016   | Keynote Panel                     | [Forward Swift][event5]         | [Regency Ballroom][location5], SF    |                                    |
+| 28 Jul 2016   | Keynote Panel                     | [Forward Swift][event5]         | [Regency Ballroom][location5], SF    | [video][video5]                    |
 | 13 Jun 2016   | WWDC Swift Live Panel, take 2     | [WWDC Swift Panel][event4]      | [Realm][location4], San Francisco    | [video][video4]                    |
 | 04 Mar 2016   | Contributing to open source Swift | [try! Swift conference][event3] | [Cyber Agent][location3], Tokyo 🇯🇵 | [slides][slides3], [video][video3] |
 | 28 Jan 2016   | Swifty view controller presenters | [Swift meetup][event2] (SLUG)   | [Realm][location2], San Francisco    | [slides][slides2], [video][video2] |
@@ -43,6 +43,7 @@ Feel free to [contact me](mailto:jesse@jessesquires.com) about speaking at your 
 
 [event5]:https://forwardswift.com
 [location5]:http://www.theregencyballroom.com
+[video5]:https://forwardcourses.com/lectures/178
 
 [event6]:http://frenchkit.fr
 
