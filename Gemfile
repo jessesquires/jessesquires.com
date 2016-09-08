@@ -6,5 +6,7 @@ gem 'jekyll-seo-tag'
 gem 'jekyll-sitemap'
 gem 'jekyll-paginate'
 
-gem 'danger'
-gem 'danger-prose'
+group :distribution do
+  gem 'danger'
+  gem 'danger-prose'
+end
