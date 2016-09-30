@@ -4,8 +4,6 @@
 
 ![Logo](https://raw.githubusercontent.com/jessesquires/jessesquires.github.io/master/ico/icon180.png)
 
-> **You can [subscribe here](http://www.jessesquires.com/subscribe/) to have articles delivered directly to your inbox.**
-
 ## Requirements
 
 - [Jekyll](https://jekyllrb.com)
