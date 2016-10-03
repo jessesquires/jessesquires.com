@@ -35,7 +35,7 @@ final class Proposal {
     let seNumber: String // SE-0001, etc.
 
     let authors: [Author]
-    let status: status // Accepted, Rejected, etc.
+    let status: Status // Accepted, Rejected, etc.
 
     let fileName: String
     let fileContents: String
