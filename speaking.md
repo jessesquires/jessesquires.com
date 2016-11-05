@@ -13,7 +13,7 @@ Feel free to [contact me](mailto:jesse@jessesquires.com) about speaking at your 
 
 | <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp; Date | <i class="fa fa-quote-left" aria-hidden="true"></i>&nbsp; Title | <i class="fa fa-video-camera" aria-hidden="true"></i>&nbsp; Event | <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; Location | <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;  Links |
 |:--------------|:----------------------------------|:--------------------------------|:-------------------------------------|:--------------------------------------------------|
-| 23 Sep 2016   | 140 proposals in 30 minutes       | [FrenchKit][event6]             | [Pan Piper][location6], Paris 🇫🇷   | [slides][slides6], [code][code6]                  |
+| 23 Sep 2016   | 140 proposals in 30 minutes       | [FrenchKit][event6]             | [Pan Piper][location6], Paris 🇫🇷   | [slides][slides6], [video][video6], [code][code6] |
 | 28 Jul 2016   | Keynote Panel                     | [Forward Swift][event5]         | [Regency Ballroom][location5], SF    | [video][video5]                                   |
 | 13 Jun 2016   | WWDC Swift Live Panel, take 2     | [WWDC Swift Panel][event4]      | [Realm][location4], San Francisco    | [video][video4]                                   |
 | 04 Mar 2016   | Contributing to open source Swift | [try! Swift conference][event3] | [Cyber Agent][location3], Tokyo 🇯🇵 | [slides][slides3], [video][video3]                |
@@ -53,6 +53,7 @@ Feel free to [contact me](mailto:jesse@jessesquires.com) about speaking at your 
 [event6]:http://frenchkit.fr
 [location6]:http://www.pan-piper.com/en/
 [slides6]:https://speakerdeck.com/jessesquires/140-proposals-in-30-minutes
+[video6]:https://www.youtube.com/watch?v=0sYQAtoK3VQ
 [code6]:https://github.com/jessesquires/swift-proposal-analyzer
 
 [event7]:https://swiftsummit.com/
