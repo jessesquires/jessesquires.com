@@ -98,7 +98,7 @@ footer a, footer a:visited,
 
 /* HEADER / FOOTER */
 
-header, .tagline, header code {
+header, header code {
    text-align: center;
    color: #444444;
 }
@@ -221,6 +221,19 @@ blockquote {
 }
 
 /* MEDIA QUERIES */
+@media (max-width: 667px) {
+   body {
+      padding-top: 1rem;
+   }
+
+   header h1 {
+      font-size: 49px;
+   }
+
+   header h2 {
+      font-size: 13px;
+   }
+}
 
 @media (max-width: 320px) {
    body {
@@ -230,62 +243,8 @@ blockquote {
    header h1 {
       font-size: 42px;
    }
-}
-
-@media (max-width: 667px) {
-   body {
-      padding-top: 1rem;
-   }
 
    header h2 {
-      font-size: 13px;
+      font-size: 11px;
    }
-}
-
-/* BUTTONS */
-
-.btn-subscribe {
-  color: #ffffff;
-  background-color: #31808C;
-  border-color: #47bacc;
-}
-
-.btn-subscribe:hover,
-.btn-subscribe:focus,
-.btn-subscribe:active,
-.btn-subscribe.active,
-.open .dropdown-toggle.btn-subscribe {
-  color: #ffffff;
-  background-color: #47BACC;
-  border-color: #47bacc;
-}
-
-.btn-subscribe:active,
-.btn-subscribe.active,
-.open .dropdown-toggle.btn-subscribe {
-  background-image: none;
-}
-
-.btn-subscribe.disabled,
-.btn-subscribe[disabled],
-fieldset[disabled] .btn-subscribe,
-.btn-subscribe.disabled:hover,
-.btn-subscribe[disabled]:hover,
-fieldset[disabled] .btn-subscribe:hover,
-.btn-subscribe.disabled:focus,
-.btn-subscribe[disabled]:focus,
-fieldset[disabled] .btn-subscribe:focus,
-.btn-subscribe.disabled:active,
-.btn-subscribe[disabled]:active,
-fieldset[disabled] .btn-subscribe:active,
-.btn-subscribe.disabled.active,
-.btn-subscribe[disabled].active,
-fieldset[disabled] .btn-subscribe.active {
-  background-color: #31808C;
-  border-color: #47bacc;
-}
-
-.btn-subscribe .badge {
-  color: #31808C;
-  background-color: #ffffff;
 }
