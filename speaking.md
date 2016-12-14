@@ -5,7 +5,7 @@ title: Speaking
 
 I enjoy speaking at conferences and meetups to share my thoughts, ideas, and experiences about programming, software, and community &mdash; particularly open source, iOS, Swift, and Objective-C. You can find the materials and details for all of my talks [on GitHub](https://github.com/jessesquires/talks) and all of my slides [on Speaker Deck](https://speakerdeck.com/jessesquires).
 
-Feel free to [contact me](mailto:jesse@jessesquires.com) about speaking at your event!
+Feel free to contact me about speaking at your event! You can email **jesse** at *this domain*.
 
 ### Talks
 
