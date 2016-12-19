@@ -3,68 +3,22 @@ layout: standalone
 title: Search this site
 ---
 
-<style type="text/css">
-   /*
-   fix google custom search conflicts with bootstrap
-   solutions:
-   http://css-tricks.com/forums/topic/troubles-with-box-sizing-and-google-custom-search/
-   http://stackoverflow.com/questions/21932819/google-cse-with-twitter-bootstrap-not-displaying-the-search-box-correctly
-   */
-   .cse:before, .cse:after {
-      -webkit-box-sizing: inherit;
-      -moz-box-sizing: inherit;
-      box-sizing: inherit;
-   }
-
-   input.gsc-input,
-   .gsc-input-box,
-   .gsc-input-box-hover,
-   .gsc-input-box-focus,
-   .gsc-search-button {
-      box-sizing: content-box;
-      line-height: normal;
-   }
-
-   /*
-   other hacks for google custom search (gcs)
-   */
-   .gcsc-branding,
-   .gsc-control-wrapper-cse,
-   .gsc-control-cse.gsc-control-cse-en {
-      background-color: #fff;
-      border-radius: 0.5em;
-      border-color: #d7d7d7;
-   }
-
-   a.gsst_a,
-   a.gcsc-branding-clickable {
-      text-decoration: none;
-      border-width: 0px;
-   }
-
-   #gs_cb50 {
-      color: #358C99;
-   }
-
-   .gsc-webResult.gsc-result,
-   .gsc-webResult.gsc-result:hover {
-      background-color: #fff;
-      border-color: #fff;
-   }
-</style>
-
-<div>
-   <script>
-      (function() {
-         var cx = '011538828544940938420:pybhfqtto2c';
-         var gcse = document.createElement('script');
-         gcse.type = 'text/javascript';
-         gcse.async = true;
-         gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-             '//www.google.com/cse/cse.js?cx=' + cx;
-         var s = document.getElementsByTagName('script')[0];
-         s.parentNode.insertBefore(gcse, s);
-      })();
-   </script>
-   <gcse:search></gcse:search>
+<div class="row">
+<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+    <form name="search" action="//duckduckgo.com/" target="_blank">
+        <div class="form-group">
+            <div class="input-group">
+                <input type="search" class="form-control" placeholder="DuckDuckGo" name="q">
+                <input type="hidden" value="jessesquires.com" name="sites">
+                <input type="hidden" value="1" name="kh">
+                <input type="hidden" value="1" name="kn">
+                <input type="hidden" value="1" name="kac">
+                <input type="hidden" value="1" name="kc">
+                <span class="input-group-btn"><button class="btn btn-default" type="submit">
+                    <i class="fa fa-search" aria-hidden="true"></i></button>
+                </span>
+            </div>
+        </div>
+    </form>
+</div>
 </div>
