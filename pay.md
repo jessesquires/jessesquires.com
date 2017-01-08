@@ -15,12 +15,16 @@ Do you need to pay me for contracting, consulting, or freelance work? You can do
 
 <div class="row">
    <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
-      <a class="btn btn-default btn-block" href="https://www.paypal.me/jessesquires" target="_blank"><i class="fa fa-lg fa-paypal" aria-hidden="true"></i>&nbsp; Paypal.Me</a>
+      <a class="btn btn-default btn-block" href="{{ site.social_links.paypal }}" target="_blank">
+      <i class="fa fa-lg fa-paypal" aria-hidden="true"></i>&nbsp; Paypal.Me
+      </a>
    </div> <!-- col -->
 </div> <!-- row -->
 
 <div class="row">
    <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
-      <a class="btn btn-default btn-block" href="https://cash.me/$jsq" target="_blank"><i class="fa fa-lg fa-usd" aria-hidden="true"></i>&nbsp; Square Cash</a>
+      <a class="btn btn-default btn-block" href="{{ site.social_links.square }}" target="_blank">
+      <i class="fa fa-lg fa-usd" aria-hidden="true"></i>&nbsp; Square Cash
+      </a>
    </div> <!-- col -->
 </div> <!-- row -->
