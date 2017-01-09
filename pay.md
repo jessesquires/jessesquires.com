@@ -28,3 +28,11 @@ Do you need to pay me for contracting, consulting, or freelance work? You can do
       </a>
    </div> <!-- col -->
 </div> <!-- row -->
+
+<div class="row">
+   <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+      <a class="btn btn-default btn-block" href="{{ site.social_links.coinbase }}" target="_blank">
+      <i class="fa fa-lg fa-btc" aria-hidden="true"></i>&nbsp; Bitcoin
+      </a>
+   </div> <!-- col -->
+</div> <!-- row -->
