@@ -10,17 +10,17 @@
                </button>
                <ul class="dropdown-menu">
                   <li>
-                     <a href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}%20{{ site.url }}{{ page.url }}%20via%20@{{ site.author.twitter }}" target="_blank">
+                     <a href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}%20{{ site.url }}{{ page.url }}%20via%20@{{ site.author.twitter }}" title="Tweet" target="_blank">
                      Twitter &nbsp;<i class="fa fa-twitter" aria-hidden="true"></i>
                      </a>
                   </li>
                   <li>
-                     <a href="https://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank">
+                     <a href="https://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" title="Post" target="_blank">
                      Facebook &nbsp;<i class="fa fa-facebook" aria-hidden="true"></i>
                      </a>
                   </li>
                   <li>
-                     <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" target="_blank">
+                     <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" title="Share" target="_blank">
                      Google &nbsp;<i class="fa fa-google-plus" aria-hidden="true"></i>
                      </a>
                   </li>
@@ -42,9 +42,9 @@
                   Support &nbsp;<i class="fa fa-money" aria-hidden="true"></i>
                </button>
                <ul class="dropdown-menu">
-                  <li><a href="{{ site.social_links.paypal }}" title="Donate via PayPal">Donate via PayPal &nbsp;<i class="fa fa-paypal" aria-hidden="true"></i></a></li>
-                  <li><a href="{{ site.social_links.square }}" title="Donate via Square Cash">Donate via Square &nbsp;<i class="fa fa-dollar" aria-hidden="true"></i></a></li>
-                  <li><a href="{{ site.social_links.coinbase }}" title="Donate Bitcoin">Donate Bitcoin &nbsp;<i class="fa fa-btc" aria-hidden="true"></i></a></li>
+                  <li><a href="{{ site.social_links.paypal }}" title="Donate via PayPal" target="_blank">Donate via PayPal &nbsp;<i class="fa fa-paypal" aria-hidden="true"></i></a></li>
+                  <li><a href="{{ site.social_links.square }}" title="Donate via Square Cash" target="_blank">Donate via Square &nbsp;<i class="fa fa-dollar" aria-hidden="true"></i></a></li>
+                  <li><a href="{{ site.social_links.coinbase }}" title="Donate Bitcoin" target="_blank">Donate Bitcoin &nbsp;<i class="fa fa-btc" aria-hidden="true"></i></a></li>
                </ul>
             </div> <!-- donate drop-up -->
 
