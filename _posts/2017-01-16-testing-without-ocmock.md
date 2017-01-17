@@ -102,7 +102,7 @@ func testDidTapYes() {
 
 If the test fails, that means tapping this button *does not* notify the delegate.
 
-<span class="text-muted"><b>Note:</b> we can write the exact same code in pure Objective-C, too.</span>
+<span class="text-muted"><b>Note:</b> we can write the same test code in pure Objective-C, too.</span>
 
 ### Testing all the things
 
