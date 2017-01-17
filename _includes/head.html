@@ -8,23 +8,21 @@
    <meta name="author" content="{{ site.author.name }}">
 
    <title>
-      {% if page.title == "Home" %}
-         {{ site.title }} &middot; {{ site.description }}
-      {% else %}
+      {% if page.title %}
          {{ page.title }} &middot; {{ site.title }}
+      {% else %}
+         {{ site.title }} &middot; {{ site.description }}
       {% endif %}
    </title>
 
    {% seo title=false %}
+
    <meta name="twitter:image" content="/img/logo.png" />
    <meta property="og:image" content="/img/logo.png" />
 
-
    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
    <link href="/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-
    <link href="/bower_components/ubuntuMono/ubuntuMono.css" rel="stylesheet">
-
    <link href="/css/syntax.css" rel="stylesheet">
    <link href="/css/style.css" rel="stylesheet">
 
@@ -42,7 +40,6 @@
    <link rel="apple-touch-icon" sizes="180x180" href="/ico/icon180.png">
 
    <link rel="shortcut icon" href="/favicon.ico">
-
    <link type="application/atom+xml" rel="alternate" href="/feed.xml" title="{{ site.title }}" />
 
    <script>
