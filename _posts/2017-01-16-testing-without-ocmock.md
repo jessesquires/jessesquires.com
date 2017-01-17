@@ -67,13 +67,11 @@ class FakeDelegate: ControllerProtocol {
     var noExpectation: XCTestExpectation?
 
     func controllerDidSelectYes(_ controller: Controller) {
-        XCTAssertNotNil(yesExpectation)
-        yesExpectation?.fulfill()
+        yesExpectation!.fulfill()
     }
 
     func controllerDidSelectNo(_ controller: Controller) {
-        XCTAssertNotNil(noExpectation)
-        noExpectation?.fulfill()
+        noExpectation!.fulfill()
     }
 }
 {% endhighlight %}
