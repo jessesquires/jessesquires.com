@@ -19,7 +19,7 @@ However, writing testable code and mock-free unit tests is not always possible, 
 There are a couple of strategies to avoid mocking:
 
 1. Use actual instances of classes. For example, if you have a `User` class, then simply construct a `User` in your test instead of mocking. If using Swift, this is exceedingly easy if you make heavy use of value types (`struct`, `enum`, etc.), which cannot be mocked in the first place. If using a persistence framework like [Core Data](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/CoreData/index.html), then you can write test helpers to generate fake models, which you can use in your tests. (See also: [Fox](https://github.com/jeffh/Fox))
-2. Use protocols. If a function or class receives a protocol instead of a concrete type, then your `XCTestCase` can conform to that protocol to provide fake inputs. For example, if you have a `UserDataSource` class that provides and array of `User` objects, then your test case can conform to this and generate an array of users to pass into the function or class.
+2. Use protocols. If a function or class receives a protocol instead of a concrete type, then your `XCTestCase` can conform to that protocol to provide fake inputs. For example, if you have a `UserDataSource` protocol that provides and array of `User` objects, then your test case can conform to that protocol and generate an array of users to pass into the function or class.
 
 ### Common uses for mocking
 
@@ -67,13 +67,11 @@ class FakeDelegate: ControllerProtocol {
     var noExpectation: XCTestExpectation?
 
     func controllerDidSelectYes(_ controller: Controller) {
-        XCTAssertNotNil(yesExpectation)
-        yesExpectation?.fulfill()
+        yesExpectation!.fulfill()
     }
 
     func controllerDidSelectNo(_ controller: Controller) {
-        XCTAssertNotNil(noExpectation)
-        noExpectation?.fulfill()
+        noExpectation!.fulfill()
     }
 }
 {% endhighlight %}
