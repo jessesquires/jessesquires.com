@@ -41,4 +41,4 @@ Serendipitously, I received the following message **today**. This is a perfect i
 
 Firstly, note the two redactions. **These were two different names.** This person introduced themselves with one name, and signed with a completely different name. This is the beauty in life that wakes me up each morning. I do love pasta, but not copy-pasta. Secondly, if anyone has seen my "impressive background in web development" lying around, please send it back to me along with my "expertise in PHP." LAMP stack for an iOS developer? WAT.
 
-<img class="img-thumbnail img-responsive center" src="{{ site.img_url }}/love-lamp.png" title="TalentBin class action lawsuit" alt="TalentBin class action lawsuit"/>
+<img class="img-thumbnail img-responsive center" src="{{ site.img_url }}/love-lamp.png" title="LAMP stack for an iOS developer" alt="LAMP stack for an iOS developer"/>
