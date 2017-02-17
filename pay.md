@@ -1,17 +1,13 @@
 ---
 layout: standalone
-title: Pay / Donate
+title: Payments
 ---
 
-<h3>Payments<br/><small>contracting, consulting, freelance</small></h3>
+<h3 class="text-muted">Contracting, Consulting, Freelance, Sponsorships</h3>
 
-Do you need to pay me for contracting, consulting, or freelance work? You can do that here with one of the methods below. If there's a problem with the payment options or if you have any questions, please email **jesse** at *this domain*. Thanks!
+Do you need to pay for [sponsorships](http://swiftweekly.github.io/sponsorship/), contracting, consulting, or freelance work? You can do that here with one of the methods below. If there's a problem with the payment options or if you have any questions, please email **jesse** at *this domain*.
 
-<h3>Donations<br/><small>open source software, blogging</small></h3>
-
-There are **no advertisements** on this site. I write and share code for **free**. If you enjoy my writing or use my open source code, you can support [my blog](/archive/) and [my open source work](https://github.com/jessesquires/) by making a donation via the methods below. Any amount is deeply appreciated.
-
-<br>
+<p class="text-center"><b>Thanks!</b></p>
 
 <div class="row">
    <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
