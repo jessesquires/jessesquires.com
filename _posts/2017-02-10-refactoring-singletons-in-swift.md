@@ -146,7 +146,7 @@ present(controller, animated: true, completion: nil)
 
 ### Conclusion
 
-Swift makes this kind of "partial" dependency injection so effortless. By adding a new property and an initializer parameter with a default value to your class, you can make your code immensely more modular and testable &mdash; without having to refactor the world, nor completely buy in to full-fledged dependency injection. If you design your classes like this *from the beginning* then you will find yourself coded into a corner much less frequently &mdash; and when are you backed into a corner, it will be easier to escape.
+Swift makes this kind of "partial" dependency injection so effortless. By adding a new property and an initializer parameter with a default value to your class, you can make your code immensely more modular and testable &mdash; without having to refactor the world, nor completely buy in to full-fledged dependency injection. If you design your classes like this *from the beginning* then you will find yourself coded into a corner much less frequently &mdash; and when you *are* backed into a corner, it will be easier to escape.
 
 You can apply these concepts and designs to all areas of your code beyond the simple examples here &mdash; classes, structs, enums, functions. Every function in Swift can take default parameter values. By taking the time to think ahead about what might change in the future, we can create types and functions that can effortlessly adapt to change.
 
