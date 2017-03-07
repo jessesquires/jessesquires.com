@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ! 'Open source Swift: weekly brief'
+title: "Open source Swift&#58; weekly brief"
 subtitle: What's been happening during the first full week on Swift.org?
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ! 'Enums as configuration: the anti-pattern'
+title: "Enums as configuration&#58; the anti-pattern"
 subtitle: Implementing the open/closed principle
 ---
 
