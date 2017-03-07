@@ -13,8 +13,5 @@ You can [subscribe on iTunes](https://itunes.apple.com/us/podcast/swift-unwrappe
 If you enjoy it, please consider [leaving a review](https://itunes.apple.com/us/podcast/swift-unwrapped/id1209817203) on iTunes or sharing with your friends. We would really appreciate it!
 
 <a href="https://itunes.apple.com/us/podcast/swift-unwrapped/id1209817203">
-<img class="img-thumbnail img-responsive img-half-width center"
-     src="https://media.simplecast.com/podcast/image/2693/small_1488855184-artwork.jpg"
-     title="Swift Unwrapped"
-     alt="Swift Unwrapped"/>
+<img class="img-thumbnail img-responsive img-half-width center" src="https://media.simplecast.com/podcast/image/2693/small_1488855184-artwork.jpg" title="Swift Unwrapped" alt="Swift Unwrapped"/>
 </a>
