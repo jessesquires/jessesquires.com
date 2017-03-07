@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Swift Unwrapped
-subtitle: Co-hosting a new podcast with JP Simard
+subtitle: Hosting a new podcast with JP Simard
 ---
 
 A few months back, [JP Simard](https://twitter.com/simjp) and I decided to start a podcast about [Swift](https://swift.org) &mdash; the language itself, its evolution and development, the Swift.org open source projects, and general Swifty news. There are a ton of great podcasts out there about developing for Apple platforms and Apple news, but there's nothing exclusively about Swift the language. In many ways, this podcast is an extension of and commentary on the [*Swift Weekly Brief*](https://swiftweekly.github.io) newsletter. However, we'll be doing deep dives on various topics and elaborating on concepts in greater detail. I'm excited to share that we launched [Swift Unwrapped](https://spec.fm/podcasts/swift-unwrapped) yesterday with [Spec.fm](https://twitter.com/specfm)!
