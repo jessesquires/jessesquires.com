@@ -41,6 +41,10 @@ a > code {
   margin-right: 0.5rem;
 }
 
+.img-half-width {
+   width: 50%;
+}
+
 /* LINKS */
 
 a {
