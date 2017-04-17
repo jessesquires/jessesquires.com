@@ -7,7 +7,18 @@ I enjoy speaking at conferences and meetups to share my thoughts, ideas, and exp
 
 Feel free to contact me about speaking at your event! You can email **jesse** at *this domain*.
 
-### Talks
+### Upcoming talks
+
+<div class="table-responsive" markdown="1">
+
+| <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp; Date | <i class="fa fa-video-camera" aria-hidden="true"></i>&nbsp; Event |
+|:--------------|:--------------|
+| TBA           | TBA           |
+{: class="table table-striped table-bordered"}
+
+</div>
+
+### Past talks
 
 <div class="table-responsive" markdown="1">
 
