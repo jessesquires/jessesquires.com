@@ -7,7 +7,7 @@ I'm a software developer in Oakland, California. I'm primarily an iOS developer,
 
 I'm currently an iOS developer at [PlanGrid](https://plangrid.com). Previously, I've worked at [Instagram](https://instagram.com) and [Rosetta Stone](https://rosettastone.com).
 
-I'm passionate about mobile computing, open source, and coffee. My interests include software design patterns and architecture, cognitive science, moral philosophy, and avant-garde art. I believe in political resistance and [fighting against fascism](https://crimethinc.com/tce/). I enjoy barefoot trail running and body modification. I like my coffee like my metal &mdash; **black**. When I'm not working or running, you can find me at punk and metal shows in the Bay Area.
+My interests include software design patterns and architecture, cognitive science, moral philosophy, avant-garde art, and coffee. I enjoy barefoot trail running and body modification. When I'm not working or running, you can find me at punk and metal shows in the Bay Area.
 
 You can contact me by emailing **jesse** at *this domain*.
 
