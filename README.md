@@ -12,7 +12,7 @@
 
 ## Dependencies
 
-- [GitHub-Pages](https://pages.github.com/versions/)
+- [GitHub-Pages](https://github.com/github/pages-gem) ([gem versions](https://pages.github.com/versions/))
 - [Bootstrap](https://getbootstrap.com)
 - [jQuery](https://jquery.com)
 - [Font Awesome](https://fortawesome.github.io/Font-Awesome/)
