@@ -1,10 +1,11 @@
 source 'https://rubygems.org'
 
-gem 'github-pages', '~> 136', group: :jekyll_plugins
+gem 'github-pages', '~> 138', group: :jekyll_plugins
 
+gem 'jekyll-paginate'
 gem 'jekyll-seo-tag'
 gem 'jekyll-sitemap'
-gem 'jekyll-paginate'
+gem 'jekyll-redirect-from'
 
 group :distribution do
   gem 'danger'

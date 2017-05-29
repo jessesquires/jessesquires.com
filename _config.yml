@@ -5,7 +5,14 @@ kramdown:
    input: GFM
    syntax_highlighter: rouge
 
-gems: [jekyll-sitemap, jekyll-paginate, jekyll-seo-tag]
+gems:
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+whitelist:
+  - jekyll-redirect-from
 
 exclude: [vendor]
 
