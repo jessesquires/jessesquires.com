@@ -2,6 +2,7 @@
 layout: post
 title: Swift documentation
 subtitle: Writing, generating, and publishing great docs in Swift
+redirect_from: /swift-documentation/
 ---
 
 The Swift community is ecstatic about Swift. There are so many new libraries being released each week that some have created [package indexes](https://swiftmodules.com) &mdash; even [IBM](https://developer.ibm.com/swift/products/package-catalog/). But of course, a library is only as great as its documentation.

@@ -2,6 +2,7 @@
 layout: post
 title: UIKit changes in iOS 9
 subtitle: Goodbye non-zeroing weak references
+redirect_from: /UIKit-changes-in-iOS-9/
 ---
 
 Surprisingly, I have not seen anyone talking about what I just discovered in the [iOS 9.0 API Diffs](https://developer.apple.com/library/prerelease/ios/releasenotes/General/iOS90APIDiffs/index.html#//apple_ref/doc/uid/TP40016222). (Well, actually what [Max von Webel](https://twitter.com/343max/status/654513094559817728) discovered.) There's a hidden gem in the [UIKit diffs](https://developer.apple.com/library/prerelease/ios/releasenotes/General/iOS90APIDiffs/Objective-C/UIKit.html). We no longer have to suffer through tracking down obscure bugs due to non-zeroing weak references.

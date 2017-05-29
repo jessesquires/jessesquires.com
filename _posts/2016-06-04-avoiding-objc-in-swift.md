@@ -2,6 +2,7 @@
 layout: post
 title: Avoiding the overuse of @objc in Swift
 subtitle: Don't let Objective-C cramp your style
+redirect_from: /avoiding-objc-in-swift/
 ---
 
 A few days ago I was (finally!) updating a project to use Swift 2.2 and I ran into a few issues when converting to use the new `#selector` syntax introduced by proposal [SE-0022](https://github.com/apple/swift-evolution/blob/master/proposals/0022-objc-selectors.md). If using `#selector` from within a protocol extension, that protocol must be declared as `@objc`. The former `Selector("method:")` syntax did not have this requirement.

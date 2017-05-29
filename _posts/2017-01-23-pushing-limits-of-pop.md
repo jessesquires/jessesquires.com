@@ -2,6 +2,7 @@
 layout: post
 title: Pushing the limits of protocol-oriented programming
 subtitle: Talk at Swift Summit in San Francisco
+redirect_from: /pushing-limits-of-pop/
 ---
 
 A few months ago, I spoke at [Swift Summit](https://swiftsummit.com) in San Francisco. The conference has a reputation for providing high-quality talks, and this year was no different. Fortunately, I was able to see nearly all of the talks and not a single one disappointed me. It was such a great conference. The [video and full transcript](https://www.skilled.io/u/swiftsummit/pushing-the-limits-of-protocol-oriented-programming) of my talk are now available. The videos of the other talks will be coming online over the next few weeks. I would recommend watching all of them!

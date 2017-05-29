@@ -2,6 +2,7 @@
 layout: post
 title: Swifty view controller presenters
 subtitle: Talk at Realm in San Francisco
+redirect_from: /swifty-presenters/
 ---
 
 A few weeks ago, I spoke at [Realm](https://realm.io) in San Francisco at the Swift Language User Group ([#SLUG](https://www.meetup.com/swift-language/events/227833264/)) meetup. A [video of the talk](https://realm.io/news/slug-jesse-squires-swifty-view-controller-presenters/) is now online over at Realm's blog, where it is synced with my [slides](https://speakerdeck.com/jessesquires/swifty-view-controller-presenters). If you haven’t already seen it, go check it out!

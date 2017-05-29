@@ -2,6 +2,7 @@
 layout: post
 title: Prioritization
 subtitle: Or how I learned to stop worrying and love being a normal human
+redirect_from: /prioritization/
 ---
 
 Let me [list](https://medium.com/@thejameskyle/dear-javascript-7e14ffcae36c#.4kno1s8mc) the [ways](https://medium.com/@azerbike/i-ve-just-liberated-my-modules-9045c06be67c#.o23m0vlx3) that [burnout](http://chris.eidhof.nl/post/burnout/) [happens](https://medium.com/@oleg008/fighting-burnout-with-open-source-ba87559ad844#.b4u5csdav) in this [industry](https://medium.com/@jedwatson/sustainable-open-source-ff29c42a54c5#.5i277t9vl), and [especially](https://medium.com/the-javascript-collection/healthy-open-source-967fa8be7951#.9w8myd6u4) in [open source](https://medium.com/@fox/the-dark-side-of-open-source-ba5a66c8a4c3#.g76f3syvn). No, I don't need to. Because [you know them already](http://www.stilldrinking.com/programming-sucks). I'm not burnt out, I promise. I'm reprioritizing, just letting you know.

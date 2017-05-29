@@ -2,6 +2,7 @@
 layout: post
 title: A Fair Hotel
 subtitle: Choosing a place to stay for your next conference
+redirect_from: /a-fair-hotel/
 ---
 
 Earlier this week, the [Tech Workers Coalition](https://techworkerscoalition.org) and [UNITE HERE!](http://unitehere.org) in San Francisco hosted a [panel discussion](https://www.meetup.com/Tech-Workers-Coalition/events/240112005/) on how we can use our power as consumers to support hotel workers in the Bay Area and across the United States. The tech industry is full of remote workers, as well as conference organizers that host thousands of conferences each year &mdash; meaning thousands of programmers, designers, product managers, and others **travel all the time** to attend these conferences or attend their own company's events. By choosing to stay at [a fair hotel](http://www.fairhotel.org), you can make a significant impact on an industry where workers are struggling to negotiate fair wages and benefits.

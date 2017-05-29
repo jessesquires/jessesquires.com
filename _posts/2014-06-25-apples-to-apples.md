@@ -3,6 +3,7 @@ layout: post
 title: Apples to apples
 date-updated: 1 Aug 2014
 subtitle: A comparison of sorts between Objective-C and Swift
+redirect_from: /apples-to-apples/
 ---
 
 When Craig Federighi arrived at his presentation slide about Objective-C during this year's [WWDC keynote](http://www.apple.com/apple-events/june-2014/) everyone in the room seemed puzzled, curious, and maybe even a bit uneasy. *What was happening?* As he continued, he considered what Objective-C would be like **without the C**, and the room abruptly filled with rumblings and whispers <sup><a href="#note1" id="superscript1">[1]</a></sup> as developers in the audience confided in those around them. If you had been following the [discussions](http://informalprotocol.com/2014/02/replacing-cocoa/) in our community about the [state of Objective-C](http://nearthespeedoflight.com/article/2014_03_17_objective_next) (and why we [need to replace it](http://ashfurrow.com/blog/we-need-to-replace-objective-c)) during the previous months, you could only have imagined one thing: Objective-C was no more &mdash; at least not as we knew it.

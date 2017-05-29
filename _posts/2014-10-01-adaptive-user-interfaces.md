@@ -2,6 +2,7 @@
 layout: post
 title: Adaptive user interfaces
 subtitle: Exploring iOS size classes and trait collections
+redirect_from: /adaptive-user-interfaces/
 ---
 
 When the App Store launched, there was one iPhone with one screen size and one pixel density. Designing your user interfaces was relatively simple and the [technical debt](http://martinfowler.com/bliki/TechnicalDebt.html) of hard-coding them was cheap. Today, developers and designers face many challenges in creating apps that must work on dozens of different devices. [Long gone](https://www.apple.com/iphone/compare/) are the days of 480x320. We can no longer depend on physical screen sizes and must always be prepared for the next generation of devices.

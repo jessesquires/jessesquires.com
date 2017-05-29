@@ -2,6 +2,7 @@
 layout: post
 title: Apples to apples, Part II
 subtitle: An analysis of sorts between Objective-C and Swift
+redirect_from: /apples-to-apples-part-two/
 ---
 
 If at first you don't succeed, try, try again. Practice makes perfect. These proverbs have encouraged us all in many different contexts. But in software development, they tug at our heartstrings uniquely. Programmers persevere through countless nights of fixing bugs. Companies march vigilantly toward an [MVP](http://en.wikipedia.org/wiki/Minimum_viable_product). But after 1.0 there is no finish line, there is no bottom of the 9th inning. There are more bugs to be fixed. There are new releases ahead. The march continues, because software is not a *product*, it is a *process*.

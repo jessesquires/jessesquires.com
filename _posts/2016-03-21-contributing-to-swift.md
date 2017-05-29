@@ -2,6 +2,7 @@
 layout: post
 title: Contributing to open source Swift
 subtitle: Talk at try! Swift conference in Tokyo
+redirect_from: /contributing-to-swift/
 ---
 
 Earlier this month I had the incredible opportunity to speak at the [try! Swift conference](http://www.tryswiftconf.com/en) in Tokyo, Japan. 🇯🇵 It was such a fun and rewarding experience. A [video of the talk](https://realm.io/news/tryswift-jesse-squires-contributing-open-source-swift/) is now online over at [Realm's](https://realm.io) blog, where it is synced with my [slides](https://speakerdeck.com/jessesquires/contributing-to-open-source-swift). If you have not already seen it, go check it out!

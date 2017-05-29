@@ -17,7 +17,7 @@ whitelist:
 exclude: [vendor]
 
 # Permalinks
-permalink: /:title/
+permalink: /blog/:title/
 
 # Site
 title: 'Jesse Squires'

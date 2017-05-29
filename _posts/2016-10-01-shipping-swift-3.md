@@ -2,6 +2,7 @@
 layout: post
 title: Shipping Swift 3.0
 subtitle: An update on my open source libraries
+redirect_from: /shipping-swift-3/
 ---
 
 I'm happy to share that all of my open source Swift libraries have (finally) been updated for Swift 3. If you've been waiting for any of these final releases, you can now run `pod update` or `carthage update` and relax &mdash; sorry it took so long! I wrote about [migrating to Swift 3](/migrating-to-swift-3/) a few months ago and this post shares the final results of the process that I outlined in there.

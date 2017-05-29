@@ -2,6 +2,7 @@
 layout: post
 title: Swift 3 sherlocked my library
 subtitle: Many of our "Swifty" wrappers are no longer necessary
+redirect_from: /swift-3-sherlocked-my-libraries/
 ---
 
 What's my favorite thing about Swift 3? Not maintaining third-party libraries that make Cocoa more "Swifty".

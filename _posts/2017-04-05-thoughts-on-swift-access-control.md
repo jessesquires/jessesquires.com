@@ -2,6 +2,7 @@
 layout: post
 title: Thoughts on Swift access control
 subtitle: And the opportunity costs of Swift evolution
+redirect_from: /thoughts-on-swift-access-control/
 ---
 
 There has been a ton of debate on the [swift-evolution mailing lists](https://lists.swift.org/mailman/listinfo/swift-evolution) about [access control](https://twitter.com/swiftlybrief/status/846938309666492417) in Swift. A couple of days ago, the proposal [SE-0159](https://github.com/apple/swift-evolution/blob/master/proposals/0159-fix-private-access-levels.md): *Fix Private Access Levels* was [rejected](https://lists.swift.org/pipermail/swift-evolution-announce/2017-April/000337.html). I want to share my thoughts on this, as well as thoughts on the larger story for access control in general. But first, let's begin with a brief history of access control in Swift.

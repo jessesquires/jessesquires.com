@@ -2,6 +2,7 @@
 layout: post
 title: Building type-safe, composable data sources in Swift
 subtitle: A modern approach to collection views and table views
+redirect_from: /building-data-sources-in-swift/
 ---
 
 In iOS development, the core of nearly every app rests on the foundations provided by `UICollectionView` and `UITableView`. These APIs make it simple to build interfaces that display the data in our app, and allow us to easily interact with those data. Because they are so frequently used, it makes sense to optimize and refine how we use them &mdash; to reduce the boilerplate involved in setting them up, to make them testable, and more. With Swift, we have new ways with which we can approach these APIs and reimagine how we use them to build apps.

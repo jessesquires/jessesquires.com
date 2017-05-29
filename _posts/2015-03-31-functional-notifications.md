@@ -2,6 +2,7 @@
 layout: post
 title: Functional notifications
 subtitle: Exploring the flexibility of Swift micro-libraries
+redirect_from: /functional-notifications/
 ---
 
 The [observer pattern](http://en.wikipedia.org/wiki/Observer_pattern) is a powerful way to decouple the sending and handling of events between objects in a system. On iOS, one implementation of this pattern is via [NSNotificationCenter](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSNotificationCenter_Class). However, the `NSNotificationCenter` APIs are kind of cumbersome to use and require some boilerplate code. Luckily, Swift gives us the tools to improve `NSNotificationCenter` with very little code.

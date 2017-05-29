@@ -2,6 +2,7 @@
 layout: post
 title: 140 proposals in 30 minutes
 subtitle: Talk at FrenchKit conference in Paris
+redirect_from: /140-proposals-frenchkit-video/
 ---
 
 As you may know, I [spoke at FrenchKit](/speaking-at-frenchkit/) a couple of months ago. The organizers have been working hard to get all of [the videos](http://frenchkit.fr/#videos) edited and uploaded, and my talk is [now available here](https://www.youtube.com/watch?v=0sYQAtoK3VQ). 😄

@@ -2,6 +2,7 @@
 layout: post
 title: Call for contributors
 subtitle: Join the JSQMessagesViewController team!
+redirect_from: /jsqmessages-call-for-contributors/
 ---
 
 Do you love writing code? Are you passionate about open source? Do you want to get more involved, but have yet to find a project to which you want contribute? Are you interested in contributing to a widely used, impactful project? Then I have a proposition for you! 😄 I am looking for dedicated core contributors to help maintain [JSQMessagesViewController](https://github.com/jessesquires/JSQMessagesViewController)!

@@ -2,6 +2,7 @@
 layout: post
 title: Apples to apples, Part III
 subtitle: A modest proposal&#58; can Swift outperform plain C?
+redirect_from: /apples-to-apples-part-three/
 ---
 
 *When I find my code is slow or troubled, friends and colleagues comfort me. Speaking words of wisdom, write in C.* It is understood that foregoing the features and abstractions of [high-level](http://en.wikipedia.org/wiki/High-level_programming_language) programming languages in favor of their [low-level](http://en.wikipedia.org/wiki/Low-level_programming_language) counterparts can yield faster, more efficient code. If you abandon your favorite runtime, forget about garbage collection, eschew dynamic typing, and leave message passing behind; then you will be left with scalar operations, manual memory management, and raw pointers. However, the closer we get to the hardware, the further we get from readability, safety, and maintainability.

@@ -3,6 +3,7 @@ layout: post
 title: Status bars matter
 date-updated: 13 Oct 2014
 subtitle: Perfecting your app screenshots for the App Store
+redirect_from: /status-bars-matter/
 ---
 
 You have spent countless hours, days, months, or maybe even [years](http://www.polygon.com/2014/2/6/5386200/why-it-took-a-year-to-make-and-then-break-down-an-amazing-puzzle-game) perfecting your app. There has been plenty of blood, sweat, and tears. Your relationships and your health have [suffered through](http://blog.jaredsinclair.com/post/93118460565/a-candid-look-at-unreads-first-year) the development process. You are ready for 1.0 and the time has arrived to prepare all of your content for the App Store &mdash; app icon, keywords, description, localizations, and screenshots (and soon [app previews](https://developer.apple.com/support/appstore/app-previews/)).

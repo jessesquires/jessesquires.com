@@ -2,6 +2,7 @@
 layout: post
 title: "Enums as configuration&#58; the anti-pattern"
 subtitle: Implementing the open/closed principle
+redirect_from: /enums-as-configs/
 ---
 
 One of the most common patterns I see in software design with Objective-C (and sometimes Swift), is the use of enumeration types (`enum`) as configurations for a class. For example, passing an `enum` to a `UIView` to style it in a certain way. In this article, I explain why I think this is an [anti-pattern](https://en.wikipedia.org/wiki/Anti-pattern) and provide a more robust, modular, and extensible approach to solving this problem.
