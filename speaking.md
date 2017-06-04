@@ -12,8 +12,9 @@ Feel free to contact me about speaking at your event! You can email **jesse** at
 <div class="table-responsive" markdown="1">
 
 | <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp; Date | <i class="fa fa-video-camera" aria-hidden="true"></i>&nbsp; Event |
-|:--------------|:--------------|
-| TBA           | TBA           |
+|:------------|:-----------------|
+| 06 Jun 2017 | WWDC Swift Panel |
+| TBA         | TBA              |
 {: class="table table-striped table-bordered"}
 
 </div>
