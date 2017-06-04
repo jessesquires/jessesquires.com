@@ -20,7 +20,7 @@ A brief look at Cocoa and Cocoa Touch reveal a clue. Take a look at [`FileManage
 
 What this reveals is that "singleton-ness" is not hard-coded into the design of these classes. The essence of a singleton is not an intrinsic aspect of the class, but merely an option. You can allocate and initialize a regular instance of the class with no global state, use it and discard it later.
 
-**This** is how we should write singletons &mdash; as regular classes with a single designated `init()` and a [single responsibility](https://en.wikipedia.org/wiki/Single_responsibility_principle). After writing and unit testing the class, *then* add a `.shared` class property for clients to use. Further, put this class in its own framework. Swift makes creating lightweight micro-libraries easy. This will add an additional barrier to prevent adding unrelated functionality and state over time.
+**This** is how we should write singletons &mdash; as regular classes with a single designated `init()` and a [single responsibility](https://en.wikipedia.org/wiki/Single_responsibility_principle). After writing and unit testing the class, *then* add a `.shared` class property for clients to use. Then you can either remove `init()`, make it `private`, or put this class in its own framework and make it `internal` to restrict access. Swift makes creating lightweight micro-libraries easy. Moving the class to its own framework will add an additional barrier to prevent adding unrelated functionality and state over time.
 
 Create a singleton, **but only when there is no other solution**. And when you do, do it right:
 
@@ -28,5 +28,4 @@ Create a singleton, **but only when there is no other solution**. And when you d
 2. Write unit tests
 3. Put this class and tests in their own framework / micro-library
 4. Add a `.shared` class property to "make it a singleton"
-
-If you need to prevent clients from allocating an instance, you can then mark the initializer as `internal`. This will restrict access to only within the framework (and tests), allowing clients to only access the `public` singleton property.
+5. Either mark `init()` as `internal`, remove it altogether, or mark it as `private` to prevent clients from allocating an instance. (I would recommend `internal` so that `init()` is accessible within the test target of the framework, allowing you to maintain your test suite while ensuring clients can only access the singleton.)
