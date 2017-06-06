@@ -25,6 +25,7 @@ layout: null
    {% for post in site.posts %}
    <entry>
       <title>{{ post.title }}</title>
+      <subtitle>{{ post.subtitle }}</subtitle>
       <link href="{{ site.url }}{{ post.url }}" />
       <id>{{ site.url }}{{ post.id }}</id>
 
@@ -35,7 +36,7 @@ layout: null
       <updated>{{ post.date | date_to_xmlschema }}</updated>
       {% endif %}
 
-      <summary>{{ post.subtitle }}</summary>
+      <summary>{{ post.excerpt }}</summary>
       <content type="html">{{ post.content | xml_escape }}</content>
    </entry>
    {% endfor %}
