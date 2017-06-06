@@ -179,6 +179,17 @@ let canMove = dataSource?.reordering?.tableView(tableView: self, canMoveRowAtInd
 
 This reduces the API surface area of `UITableView` by only having a single `dataSource` property instead of five &mdash; not to mention the 10 potential `delegate` properties there could have been after splitting up `UITableViewDelegate`. It unifies all of the methods of the data source protocol without resorting to using `optional`, while allowing you to opt out of the additional behavior in a concise way. In the case of Objective-C, the check for `-respondsToSelector:` becomes a simple check for `nil` instead, and the compiler can enforce that the entire protocol is implemented. Overall, it feels cleaner and much more cohesive, especially at the call site.
 
+**UPDATE:**  [@IanKay](https://twitter.com/IanKay/status/871773445373149184) pointed out that you [can further reduce boilerplate](https://gist.github.com/IanKeen/68eba888221a1a8de03dbbdd8a4dfcf1) from the child protocols by using protocol extensions. For example:
+
+{% highlight swift %}
+extension TableViewDataSource {
+    var titles: TableViewTitlesDataSource? { return nil }
+    var reordering: TableViewReorderingDataSource? { return nil }
+}
+{% endhighlight %}
+
+See [the full gist](https://gist.github.com/IanKeen/68eba888221a1a8de03dbbdd8a4dfcf1) for more details.
+
 ### Conclusion
 
 As we've explored, there are a number of ways to design a solution to the "optional protocol problem". You can design a model that avoids optionality altogether, you can provide many protocols with corresponding properties, or you can design a "nested composition" of protocols. Every situation is different, but I often find this nested composition approach to be the most elegant, powerful, and intuitive.
