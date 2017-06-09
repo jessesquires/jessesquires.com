@@ -13,7 +13,6 @@ Feel free to contact me about speaking at your event! You can email **jesse** at
 
 | <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp; Date | <i class="fa fa-video-camera" aria-hidden="true"></i>&nbsp; Event |
 |:------------|:-----------------|
-| 06 Jun 2017 | WWDC Swift Panel |
 | TBA         | TBA              |
 {: class="table table-striped table-bordered"}
 
@@ -25,6 +24,7 @@ Feel free to contact me about speaking at your event! You can email **jesse** at
 
 | <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp; Date | <i class="fa fa-quote-left" aria-hidden="true"></i>&nbsp; Title | <i class="fa fa-video-camera" aria-hidden="true"></i>&nbsp; Event | <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; Location | <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;  Links |
 |:--------------|:----------------------------------------------------|:--------------------------------|:-------------------------------------|:--------------------------------------------------|
+| 06 Jun 2017   | WWDC 2017 Swift Panel                               | [WWDC Swift Panel][event8]      | [The Westin][location8], San Jose    | [video][video8]                                   |
 | 08 Nov 2016   | Pushing the limits of protocol-oriented programming | [Swift Summit][event7]          | [Palace of Fine Arts][location7], SF | [slides][slides7], [video][video7], [code][code7] |
 | 23 Sep 2016   | 140 proposals in 30 minutes                         | [FrenchKit][event6]             | [Pan Piper][location6], Paris 🇫🇷     | [slides][slides6], [video][video6], [code][code6] |
 | 28 Jul 2016   | Keynote Panel                                       | [Forward Swift][event5]         | [Regency Ballroom][location5], SF    | [video][video5]                                   |
@@ -74,3 +74,7 @@ Feel free to contact me about speaking at your event! You can email **jesse** at
 [slides7]:https://speakerdeck.com/jessesquires/pushing-the-limits-of-protocol-oriented-programming
 [video7]:https://www.skilled.io/u/swiftsummit/pushing-the-limits-of-protocol-oriented-programming
 [code7]:https://github.com/jessesquires/JSQDataSourcesKit
+
+[event8]:https://www.meetup.com/swift-language/events/240443949/
+[location8]:http://www.westinsanjose.com
+[video8]:https://news.realm.io/news/wwdc-2017-swift-panel/
