@@ -12,8 +12,8 @@ Feel free to contact me about speaking at your event! You can email **jesse** at
 <div class="table-responsive" markdown="1">
 
 | <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp; Date | <i class="fa fa-video-camera" aria-hidden="true"></i>&nbsp; Event |
-|:------------|:-----------------|
-| TBA         | TBA              |
+|:------------|:---------------------------|
+| 16 Nov 2017 | [try! Swift India][event9] |
 {: class="table table-striped table-bordered"}
 
 </div>
@@ -26,10 +26,10 @@ Feel free to contact me about speaking at your event! You can email **jesse** at
 |:--------------|:----------------------------------------------------|:--------------------------------|:-------------------------------------|:--------------------------------------------------|
 | 06 Jun 2017   | WWDC 2017 Swift Panel                               | [WWDC Swift Panel][event8]      | [The Westin][location8], San Jose    | [video][video8]                                   |
 | 08 Nov 2016   | Pushing the limits of protocol-oriented programming | [Swift Summit][event7]          | [Palace of Fine Arts][location7], SF | [slides][slides7], [video][video7], [code][code7] |
-| 23 Sep 2016   | 140 proposals in 30 minutes                         | [FrenchKit][event6]             | [Pan Piper][location6], Paris 🇫🇷     | [slides][slides6], [video][video6], [code][code6] |
+| 23 Sep 2016   | 140 proposals in 30 minutes                         | [FrenchKit][event6]             | [Pan Piper][location6], Paris 🇫🇷   | [slides][slides6], [video][video6], [code][code6] |
 | 28 Jul 2016   | Keynote Panel                                       | [Forward Swift][event5]         | [Regency Ballroom][location5], SF    | [video][video5]                                   |
 | 13 Jun 2016   | WWDC Swift Live Panel, take 2                       | [WWDC Swift Panel][event4]      | [Realm][location4], San Francisco    | [video][video4]                                   |
-| 04 Mar 2016   | Contributing to open source Swift                   | [try! Swift conference][event3] | [Cyber Agent][location3], Tokyo 🇯🇵   | [slides][slides3], [video][video3]                |
+| 04 Mar 2016   | Contributing to open source Swift                   | [try! Swift Tokyo][event3]      | [Cyber Agent][location3], Tokyo 🇯🇵 | [slides][slides3], [video][video3]                |
 | 28 Jan 2016   | Swifty view controller presenters                   | [Swift meetup][event2] (SLUG)   | [Realm][location2], San Francisco    | [slides][slides2], [video][video2], [code][code2] |
 | 14 Apr 2015   | Using Core Data in Swift                            | [Swift meetup][event1] (SLUG)   | [Realm][location1], San Francisco    | [slides][slides1], [video][video1], [code][code1] |
 {: class="table table-striped table-bordered"}
@@ -78,3 +78,5 @@ Feel free to contact me about speaking at your event! You can email **jesse** at
 [event8]:https://www.meetup.com/swift-language/events/240443949/
 [location8]:http://www.westinsanjose.com
 [video8]:https://news.realm.io/news/wwdc-2017-swift-panel/
+
+[event9]:https://www.tryswift.co/events/2017/bangalore/
