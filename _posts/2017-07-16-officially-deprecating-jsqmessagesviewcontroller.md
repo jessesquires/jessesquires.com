@@ -2,11 +2,18 @@
 layout: post
 title: Officially deprecating JSQMessagesViewController
 subtitle: No longer maintaining or supporting this project
+date-updated: 18 July 2017
 ---
 
 Beginning immediately, [JSQMessagesViewController](https://github.com/jessesquires/JSQMessagesViewController) is no longer officially supported or maintained. In fact, you may have noticed that it has been neglected for the past year. The most recent release was published almost exactly one year ago today. This is an incredibly difficult post for me to write and I have not made this decision carelessly. This open source project had a great run. There was (and still is) a great community around it, and I'm sorry for bringing this to an end.
 
 <!--excerpt-->
+
+<p class="alert alert-danger">
+<b>Update</b> <span class="pull-right"><i>{{ page.date-updated }}</i></span>
+<br />
+The community has started a thread about alternative solutions and is organizing a new GitHub organization for a new community-driven library. This would be a great project to get involved with. See <a href="https://github.com/jessesquires/JSQMessagesViewController/issues/2159" class="alert-link">#2159</a> for details.
+</p>
 
 ### Why now?
 
