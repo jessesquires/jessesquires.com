@@ -3,6 +3,8 @@ layout: standalone
 title: Archive
 ---
 
+{% include search_box.html %}
+
 {% for post in site.posts %}
     <article class="post">
         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
