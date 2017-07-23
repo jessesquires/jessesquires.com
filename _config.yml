@@ -14,7 +14,7 @@ gems:
 whitelist:
   - jekyll-redirect-from
 
-exclude: [vendor]
+exclude: [vendor, Dangerfile, Gemfile, Gemfile.lock, LICENSE, README.md, bower.json, scripts/]
 
 # Permalinks
 permalink: /blog/:title/
