@@ -164,6 +164,12 @@ header h2 {
    display: inline-block;
 }
 
+.post-date-subtitle {
+   font-size: 21px;
+   font-weight: normal;
+   margin-top: 0rem;
+}
+
 .pagination {
    display: block;
    margin-bottom: 0rem;
