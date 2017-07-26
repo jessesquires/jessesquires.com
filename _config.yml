@@ -11,9 +11,6 @@ gems:
   - jekyll-sitemap
   - jekyll-redirect-from
 
-whitelist:
-  - jekyll-redirect-from
-
 exclude: [vendor, Dangerfile, Gemfile, Gemfile.lock, LICENSE, README.md, bower.json, scripts/]
 
 # Permalinks
