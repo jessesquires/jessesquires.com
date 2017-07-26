@@ -1,8 +1,8 @@
-# [jessesquires.github.io](http://www.jessesquires.com) [![Build Status](https://travis-ci.org/jessesquires/jessesquires.github.io.svg?branch=master)](https://travis-ci.org/jessesquires/jessesquires.github.io)
+# [jessesquires.com](https://www.jessesquires.com) [![Build Status](https://travis-ci.org/jessesquires/jessesquires.com.svg?branch=master)](https://travis-ci.org/jessesquires/jessesquires.com)
 
 *Turing complete with a stack of `0xdeadbeef`*
 
-![Logo](https://raw.githubusercontent.com/jessesquires/jessesquires.github.io/master/ico/icon180.png)
+![Logo](https://raw.githubusercontent.com/jessesquires/jessesquires.com/master/ico/icon180.png)
 
 ## Requirements
 
@@ -31,8 +31,8 @@ $ bower update
 #### Installation
 
 ```bash
-$ git clone https://github.com/jessesquires/jessesquires.github.io.git
-$ cd jessesquires.github.io/
+$ git clone https://github.com/jessesquires/jessesquires.com.git
+$ cd jessesquires.com/
 $ bundle install
 $ bower install
 $ bower update
@@ -61,7 +61,7 @@ $ bundle exec jekyll build --future --drafts --watch
 
 This is my personal site and blog. It mostly contains bits about Swift, iOS, Cocoa, Objective-C, and open source.
 
-Lovingly built with [Jekyll](https://jekyllrb.com), [Bootstrap](https://getbootstrap.com), [jQuery](https://jquery.com), and [Font Awesome](https://fortawesome.github.io/Font-Awesome/). Generously hosted by [GitHub Pages](https://pages.github.com).
+Lovingly built with [Jekyll](https://jekyllrb.com), [Bootstrap](https://getbootstrap.com), [jQuery](https://jquery.com), and [Font Awesome](https://fortawesome.github.io/Font-Awesome/).
 
 ## License
 
