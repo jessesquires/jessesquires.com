@@ -4,6 +4,13 @@
 
 ![Logo](https://raw.githubusercontent.com/jessesquires/jessesquires.com/master/ico/icon180.png)
 
+## About
+
+This is my personal site and blog. It mostly contains bits about Swift, iOS, Cocoa, Objective-C, and open source.
+
+Lovingly built with [Jekyll](https://jekyllrb.com), [Bootstrap](https://getbootstrap.com), [jQuery](https://jquery.com), and [Font Awesome](https://fortawesome.github.io/Font-Awesome/). Hosted at [NearlyFreeSpeech](https://nearlyfreespeech.net/).
+
+
 ## Requirements
 
 - [Jekyll](https://jekyllrb.com)
@@ -57,17 +64,11 @@ $ bundle exec jekyll serve
 $ bundle exec jekyll build --future --drafts --watch
 ```
 
-### Verifying DNS setup
+## Verifying DNS setup
 
 ```bash
 $ dig www.jessesquires.com +nostats +nocomments +nocmd
 ```
-
-## About
-
-This is my personal site and blog. It mostly contains bits about Swift, iOS, Cocoa, Objective-C, and open source.
-
-Lovingly built with [Jekyll](https://jekyllrb.com), [Bootstrap](https://getbootstrap.com), [jQuery](https://jquery.com), and [Font Awesome](https://fortawesome.github.io/Font-Awesome/). Hosted at [NearlyFreeSpeech.net](https://nearlyfreespeech.net/).
 
 ## License
 
