@@ -12,8 +12,9 @@ gems:
   - jekyll-redirect-from
 
 exclude: [vendor, Dangerfile, Gemfile, Gemfile.lock, LICENSE, README.md, bower.json, scripts/]
+include: [.htaccess]
 
-keep_files: [.well-known/]
+keep_files: [.well-known]
 
 # Permalinks
 permalink: /blog/:title/
