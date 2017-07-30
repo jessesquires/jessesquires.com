@@ -2,7 +2,6 @@
 layout: post
 title: Adapting to change
 subtitle: And cutting corners
-redirect_from: /adapting-to-change-and-cutting-corners/
 ---
 
 In my [previous post](/refactoring-singletons-in-swift/) I mentioned writing *adaptive* code. That is to say, writing code that is easy to change, code that is malleable. It's like creating [adaptive user interfaces](/adaptive-user-interfaces/) but for all of your classes, modules, and other components.

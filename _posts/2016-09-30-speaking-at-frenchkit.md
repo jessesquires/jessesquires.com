@@ -2,7 +2,6 @@
 layout: post
 title: Speaking at FrenchKit
 subtitle: Paris, France
-redirect_from: /speaking-at-frenchkit/
 ---
 
 Last week I attended and [gave a talk](https://speakerdeck.com/jessesquires/140-proposals-in-30-minutes) at [FrenchKit](http://frenchkit.fr) in Paris, France. As expected, it was an amazing conference &mdash; especially considering it was the first FrenchKit ever. I think the organizers are already thinking about FrenchKit 2017, so keep an eye out and definitely go if you can. I know I will.

@@ -2,7 +2,6 @@
 layout: post
 title: Swift enumerations and equatable
 subtitle: Implementing equatable for enums with associated values
-redirect_from: /swift-enumerations-and-equatable/
 ---
 
 Recently, I came across a **case** (*pun intended*) where I needed to compare two instances of an `enum` type in Swift. However, it was an `enum` where some cases had [associated values](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Enumerations.html#//apple_ref/doc/uid/TP40014097-CH12-ID148). At first glance, it is not obvious how to do this.

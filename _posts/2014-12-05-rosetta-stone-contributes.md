@@ -2,7 +2,6 @@
 layout: post
 title: Rosetta Stone contributes
 subtitle: Rosetta Stone officially joins the open-source community
-redirect_from: /rosetta-stone-contributes/
 ---
 
 I'm incredibly happy and incredibly proud to share that [Rosetta Stone](http://www.rosettastone.com) is an [open-source software](http://en.wikipedia.org/wiki/Open-source_software) contributor. Since I started working at Rosetta Stone a little more than a year ago, I've been encouraging and advocating for the company to get involved in open-source. Today, we did just that. Today is a big day for Rosetta Stone.

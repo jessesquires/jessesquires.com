@@ -3,7 +3,6 @@ layout: post
 title: Namespaced constants in Swift
 subtitle: Using nested types for clarity
 date-updated: 23 July 2015
-redirect_from: /swift-namespaced-constants/
 ---
 
 Mike Ash has a great [Friday Q&A](https://www.mikeash.com/pyblog/friday-qa-2011-08-19-namespaced-constants-and-functions.html) on namespaced constants and functions in C. It is a powerful and elegant technique to avoid using `#define` and verbose Objective-C prefixes. Although Swift types are namespaced by their module, we can still benefit from implementing this pattern with `struct` and `enum` types. I've been experimenting with this approach for constants in Swift and it has been incredibly useful.

@@ -2,7 +2,6 @@
 layout: post
 title: Contributing to Swift Weekly Brief
 subtitle: Join us as a guest writer
-redirect_from: /contributing-to-swift-weekly/
 ---
 
 You may have noticed that I did not write [the](http://swiftweekly.github.io/issue-38/) [last](http://swiftweekly.github.io/issue-39/) [few](http://swiftweekly.github.io/issue-40/) issues of the [*Swift Weekly Brief*](http://swiftweekly.github.io). I took some much needed time off, and I was able to unplug and relax thanks to the wonderful [JP Simard](https://twitter.com/simjp) and [Brian Gesiak](https://twitter.com/modocache). They took over for those weeks and I can't thank them enough! [Bas Broek](https://twitter.com/BasThomas) also made regular contributions, which was super helpful.

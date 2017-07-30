@@ -2,7 +2,6 @@
 layout: post
 title: "Open source Swift&#58; weekly brief #3"
 subtitle: What's been happening on Swift.org?
-redirect_from: /open-source-swift-weekly-3/
 ---
 
 As expected with the holiday season, [things are](https://lists.swift.org/pipermail/swift-corelibs-dev/Week-of-Mon-20151214/000179.html) [slowing down](https://lists.swift.org/pipermail/swift-dev/Week-of-Mon-20151221/000540.html) for a bit on Swift.org. I have been traveling for the holidays as well, so this issue will be shorter than usual. If you haven't already, be sure you take some time away from coding to enjoy the holidays and [avoid burnout](https://twitter.com/chriseidhof/status/679213894343200768). 😄 Now, the weekly brief!

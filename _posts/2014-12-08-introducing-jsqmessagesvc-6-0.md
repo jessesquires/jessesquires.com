@@ -2,7 +2,6 @@
 layout: post
 title: Introducing JSQMessagesVC 6.0
 subtitle: A brief history and celebration of the popular messages UI library for iOS
-redirect_from: /introducing-jsqmessagesvc-6-0/
 ---
 
 A few weeks ago I published the [sixth major release](https://github.com/jessesquires/JSQMessagesViewController/releases/tag/6.0.0) of ~~my~~ *our* [messages UI library](http://www.jessesquires.com/JSQMessagesViewController/) for iOS. This release closes the door on a major milestone for this project, so I wanted to take the time to highlight its significance, discuss its new features, and examine its design. Of course, this would not have been possible without our amazing open-source [community](https://github.com) and the [contributors](https://github.com/jessesquires/JSQMessagesViewController/graphs/contributors) to this project.

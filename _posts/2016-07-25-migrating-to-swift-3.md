@@ -2,7 +2,6 @@
 layout: post
 title: Migrating to Swift 3
 subtitle: Advice, tips, and warnings
-redirect_from: /migrating-to-swift-3/
 ---
 
 I spent most of my free time last weekend and a few days of last week on migrating my Swift code to Swift 3.0 &mdash; I migrated my open source projects as well as my private side projects. Overall, I would say my experience was "OK". It definitely could have been better, but I think the largest problem was overcoming the cognitive hurdle of seeing all the changes and errors from Xcode's migration tool at once. The best thing to do is wipe away the tears, put your headphones on, and start hacking. 🤓

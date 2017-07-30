@@ -2,7 +2,6 @@
 layout: post
 title: The A5 is dead (almost)
 subtitle: iOS 10 drops support for A5 devices
-redirect_from: /the-a5-is-dead/
 ---
 
 As developers, we've been [lamenting](http://arstechnica.com/apple/2015/09/ios-9-on-the-ipad-2-not-worse-than-ios-8-but-missing-many-features/) the continued existence of the inferior [A5 system-on-a-chip](https://en.wikipedia.org/wiki/Apple_A5) for the past couple of years. Both [iOS 8](https://en.wikipedia.org/wiki/IOS_8) and [iOS 9](https://en.wikipedia.org/wiki/IOS_9) continued to support *iPhone 4S, iPad 2, and iPad Mini 1* &mdash; devices that struggled to run the OS itself. I had hoped that iOS 9 would finally drop support for these less powerful devices, but it didn't. Today, we can finally [say goodbye](http://arstechnica.com/apple/2016/06/goodbye-a5-ios-10-ends-support-for-iphone-4s-ipad-2-and-more/) to the A5. Well, almost.

@@ -2,7 +2,6 @@
 layout: post
 title: Open source everything
 subtitle: Getting meaningful contributions to move your projects forward
-redirect_from: /open-source-everything/
 ---
 
 I recently had an incredible experience with one of my open source projects that I'd like to share. It's a story of openness and collaboration that I hope other open source project maintainers will find valuable. This post continues the theme of "building successful open source projects" from my [previous article](/swift-documentation/) on documentation.
