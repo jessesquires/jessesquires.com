@@ -37,6 +37,7 @@ author:
 
 # Setup
 paginate: 4
+paginate_path: /blog/page/:num/
 excerpt_separator: <!--excerpt-->
 
 # Data
