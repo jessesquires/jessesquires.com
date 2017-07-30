@@ -12,7 +12,7 @@ My interests include software design patterns and architecture, cognitive scienc
 You can contact me by emailing **jesse** at *this domain*.
 
 <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-    <a href="/img/avatar_iceland.jpg">
-        <img class="img-thumbnail img-responsive center" src="/img/avatar_iceland.jpg" title="Jesse Squires" alt="Jesse Squires"/>
+    <a href="/img/avatar.jpg">
+        <img class="img-thumbnail img-responsive center" src="/img/avatar.jpg" title="Jesse Squires" alt="Jesse Squires"/>
     </a>
 </div>
