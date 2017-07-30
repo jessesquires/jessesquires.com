@@ -19,7 +19,6 @@
     "bootstrap": "^3.3.6",
     "font-awesome": "^4.6.3",
     "html5shiv": "^3.7.3",
-    "respond": "^1.4.2",
-    "ubuntuMono": "https://google-fonts.azurewebsites.net/googleFonts/ubuntumono?family=Ubuntu+Mono"
+    "respond": "^1.4.2"
   }
 }
