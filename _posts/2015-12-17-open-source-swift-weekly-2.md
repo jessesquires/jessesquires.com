@@ -2,7 +2,6 @@
 layout: post
 title: "Open source Swift&#58; weekly brief #2"
 subtitle: What's been happening on Swift.org?
-redirect_from: /open-source-swift-weekly-2/
 ---
 
 The Swift.org community is finishing up its second full week of open source development. If you were hoping for a quiet week, you will definitely be disappointed. There is still a ton of activity with no signs of slowing down. The Swift team [continues](https://twitter.com/uint_min/status/675022507527684096) to work openly and to be [encouraging](https://github.com/apple/swift/pull/389#issuecomment-163851653) to contributors. This week brought more crash fixes and more Swift Evolution proposals. Let's get to it &mdash; the weekly brief!

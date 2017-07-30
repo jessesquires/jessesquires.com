@@ -2,7 +2,6 @@
 layout: post
 title: Swift documentation, Part 2
 subtitle: Generating and publishing docs in Swift
-redirect_from: /swift-documentation-part-2/
 ---
 
 I previously wrote about [writing great documentation in Swift](/swift-documentation/). If you haven't read that post, head there now to catch up. This post is a follow-up with updates for GitHub's new way [to publish docs](https://github.com/blog/2228-simpler-github-pages-publishing). This is how I've setup all of my Swift open source projects.

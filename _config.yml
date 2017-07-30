@@ -2,14 +2,13 @@
 markdown: kramdown
 
 kramdown:
-   input: GFM
-   syntax_highlighter: rouge
+    input: GFM
+    syntax_highlighter: rouge
 
 gems:
-  - jekyll-paginate
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-redirect-from
+    - jekyll-paginate
+    - jekyll-seo-tag
+    - jekyll-sitemap
 
 exclude: [vendor, Dangerfile, Gemfile, Gemfile.lock, LICENSE, README.md, bower.json, scripts/]
 include: [.htaccess]
@@ -27,14 +26,14 @@ logo: /img/logo.png
 timezone: America/Los_Angeles
 
 twitter:
-  username: jesse_squires
+    username: jesse_squires
 
 img_url: /img
 
 # Author
 author:
-  name: 'Jesse Squires'
-  twitter: jesse_squires
+    name: 'Jesse Squires'
+    twitter: jesse_squires
 
 # Setup
 paginate: 4
@@ -42,15 +41,15 @@ excerpt_separator: <!--excerpt-->
 
 # Data
 links:
-  github: 'https://github.com/jessesquires/jessesquires.com'
-  issue: 'https://github.com/jessesquires/jessesquires.com/issues/new'
-  pull: 'https://github.com/jessesquires/jessesquires.com/compare'
+    github: 'https://github.com/jessesquires/jessesquires.com'
+    issue: 'https://github.com/jessesquires/jessesquires.com/issues/new'
+    pull: 'https://github.com/jessesquires/jessesquires.com/compare'
 
 social_links:
-  twitter: 'https://twitter.com/jesse_squires'
-  github: 'https://github.com/jessesquires/'
-  linkedin: 'https://www.linkedin.com/in/jessesquires'
-  applenews: 'https://apple.news/Td_gVU2BDSS2oPbz_sD150w'
-  paypal: 'https://www.paypal.me/jessesquires'
-  square: 'https://cash.me/$jsq'
-  coinbase: 'https://www.coinbase.com/jsq'
+    twitter: 'https://twitter.com/jesse_squires'
+    github: 'https://github.com/jessesquires/'
+    linkedin: 'https://www.linkedin.com/in/jessesquires'
+    applenews: 'https://apple.news/Td_gVU2BDSS2oPbz_sD150w'
+    paypal: 'https://www.paypal.me/jessesquires'
+    square: 'https://cash.me/$jsq'
+    coinbase: 'https://www.coinbase.com/jsq'

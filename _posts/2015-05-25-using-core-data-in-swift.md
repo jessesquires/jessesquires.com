@@ -2,7 +2,6 @@
 layout: post
 title: Using Core Data in Swift
 subtitle: Talk at Realm in San Francisco
-redirect_from: /using-core-data-in-swift/
 ---
 
 I recently gave a talk at the Swift Language User Group ([#SLUG](http://www.meetup.com/swift-language/events/220612410/)) meetup at [Realm](http://realm.io) in San Francisco. A [video of the talk](http://realm.io/news/jesse-squires-core-data-swift/) is now online over at Realm's blog, where it is synced up with my [slides](https://speakerdeck.com/jessesquires/using-core-data-in-swift). If you haven't already seen it, go check it out! Realm does an absolutely amazing job with posting these meetup talks &mdash; in addition to the video and slides, there's a full transcript and subtitles.

@@ -2,7 +2,6 @@
 layout: post
 title: "Open source Swift&#58; weekly brief #4"
 subtitle: What's been happening on Swift.org?
-redirect_from: /open-source-swift-weekly-4/
 ---
 
 Now that the holidays are over, things have started to pick up again on Swift.org. If you are following any of the repos on GitHub, you have probably noticed. I'm not sure how I missed this before, but this week I just discovered [SwiftExperimental.swift](https://github.com/apple/swift/blob/master/stdlib/internal/SwiftExperimental/SwiftExperimental.swift). For now, it defines a bunch of custom unicode operators for `Set`. It's really cool. I would love to see more APIs like this in the standard library. Anyway, here's the weekly brief!

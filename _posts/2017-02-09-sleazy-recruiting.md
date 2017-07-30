@@ -2,7 +2,6 @@
 layout: post
 title: Sleazy recruiting
 subtitle: LAMP stack for an iOS developer
-redirect_from: /sleazy-recruiting/
 ---
 
 Today I found out that I'm part of a [class action lawsuit](http://www.courthousenews.com/2015/10/07/class-of-users-irked-by-talentbin-dossiers.htm) against a service that I never signed up for called [*TalentBin*](https://www.crunchbase.com/organization/talentbin#/entity). As you have likely experienced, most recruiting in the tech industry is debase, disingenuous, boilerplate garbage. But this &mdash; this is definitely a new a low.

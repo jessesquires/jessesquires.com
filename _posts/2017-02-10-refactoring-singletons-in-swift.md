@@ -2,7 +2,6 @@
 layout: post
 title: Refactoring singleton usage in Swift
 subtitle: Tips for a cleaner, modular, and testable codebase
-redirect_from: /refactoring-singletons-in-swift/
 ---
 
 In software development, [singletons](https://en.wikipedia.org/wiki/Singleton_pattern) are widely [discouraged](https://www.objc.io/issues/13-architecture/singletons/) and [frowned upon](http://coliveira.net/software/day-19-avoid-singletons/) &mdash; but with good reason. They are difficult or impossible to test, and they entangle your codebase when used implicitly in other classes, making code reuse difficult. Most of the time, a singleton amounts to nothing more than a disguise for global, mutable state. Everyone knows at least knows *that* is a terrible idea. However, singletons are occasionally an unavoidable and necessary evil. How can we incorporate them into our code in a clean, modular, and testable way?

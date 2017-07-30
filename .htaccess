@@ -1,1 +1,56 @@
+# custom error pages
+
 ErrorDocument 404 /404.html
+
+# custom redirects for old blog URLs
+
+Redirect 301 /built-with-open-source/ /blog/built-with-open-source/
+Redirect 301 /apples-to-apples/ /blog/apples-to-apples/
+Redirect 301 /status-bars-matter/ /blog/status-bars-matter/
+Redirect 301 /apples-to-apples-part-two/ /blog/apples-to-apples-part-two/
+Redirect 301 /on-the-value-of-benchmarks/ /blog/on-the-value-of-benchmarks/
+Redirect 301 /apples-to-apples-part-three/ /blog/apples-to-apples-part-three/
+Redirect 301 /adaptive-user-interfaces/ /blog/adaptive-user-interfaces/
+Redirect 301 /swift-failable-initializers/ /blog/swift-failable-initializers/
+Redirect 301 /rosetta-stone-contributes/ /blog/rosetta-stone-contributes/
+Redirect 301 /introducing-jsqmessagesvc-6-0/ /blog/introducing-jsqmessagesvc-6-0/
+Redirect 301 /swift-coredata-and-testing/ /blog/swift-coredata-and-testing/
+Redirect 301 /better-coredata-models-in-swift/ /blog/better-coredata-models-in-swift/
+Redirect 301 /functional-notifications/ /blog/functional-notifications/
+Redirect 301 /swift-failable-initializers-revisited/ /blog/swift-failable-initializers-revisited/
+Redirect 301 /using-core-data-in-swift/ /blog/using-core-data-in-swift/
+Redirect 301 /swift-namespaced-constants/ /blog/swift-namespaced-constants/
+Redirect 301 /swift-enumerations-and-equatable/ /blog/swift-enumerations-and-equatable/
+Redirect 301 /UIKit-changes-in-iOS-9/ /blog/UIKit-changes-in-iOS-9/
+Redirect 301 /building-data-sources-in-swift/ /blog/building-data-sources-in-swift/
+Redirect 301 /swift-open-source/ /blog/swift-open-source/
+Redirect 301 /open-source-swift-weekly-1/ /blog/open-source-swift-weekly-1/
+Redirect 301 /open-source-swift-weekly-2/ /blog/open-source-swift-weekly-2/
+Redirect 301 /open-source-swift-weekly-3/ /blog/open-source-swift-weekly-3/
+Redirect 301 /open-source-swift-weekly-4/ /blog/open-source-swift-weekly-4/
+Redirect 301 /new-weekly-brief/ /blog/new-weekly-brief/
+Redirect 301 /jsqmessages-call-for-contributors/ /blog/jsqmessages-call-for-contributors/
+Redirect 301 /swifty-presenters/ /blog/swifty-presenters/
+Redirect 301 /contributing-to-swift/ /blog/contributing-to-swift/
+Redirect 301 /swift-documentation/ /blog/swift-documentation/
+Redirect 301 /open-source-everything/ /blog/open-source-everything/
+Redirect 301 /avoiding-objc-in-swift/ /blog/avoiding-objc-in-swift/
+Redirect 301 /the-a5-is-dead/ /blog/the-a5-is-dead/
+Redirect 301 /swift-3-sherlocked-my-libraries/ /blog/swift-3-sherlocked-my-libraries/
+Redirect 301 /migrating-to-swift-3/ /blog/migrating-to-swift-3/
+Redirect 301 /enums-as-configs/ /blog/enums-as-configs/
+Redirect 301 /speaking-at-frenchkit/ /blog/speaking-at-frenchkit/
+Redirect 301 /shipping-swift-3/ /blog/shipping-swift-3/
+Redirect 301 /understanding-swift-evolution/ /blog/understanding-swift-evolution/
+Redirect 301 /contributing-to-swift-weekly/ /blog/contributing-to-swift-weekly/
+Redirect 301 /140-proposals-frenchkit-video/ /blog/140-proposals-frenchkit-video/
+Redirect 301 /swift-documentation-part-2/ /blog/swift-documentation-part-2/
+Redirect 301 /testing-without-ocmock/ /blog/testing-without-ocmock/
+Redirect 301 /pushing-limits-of-pop/ /blog/pushing-limits-of-pop/
+Redirect 301 /prioritization/ /blog/prioritization/
+Redirect 301 /sleazy-recruiting/ /blog/sleazy-recruiting/
+Redirect 301 /refactoring-singletons-in-swift/ /blog/refactoring-singletons-in-swift/
+Redirect 301 /adapting-to-change-and-cutting-corners/ /blog/adapting-to-change-and-cutting-corners/
+Redirect 301 /swift-unwrapped/ /blog/swift-unwrapped/
+Redirect 301 /thoughts-on-swift-access-control/ /blog/thoughts-on-swift-access-control/
+Redirect 301 /a-fair-hotel/ /blog/a-fair-hotel/
