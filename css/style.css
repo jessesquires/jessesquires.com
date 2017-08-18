@@ -133,6 +133,9 @@ header h2 {
    -webkit-padding-start: 0px !important;
    -webkit-margin-before: 0px !important;
    -webkit-margin-after: 0px !important;
+   -moz-padding-start: 0px !important;
+   -moz-padding-before: 0px !important;
+   -moz-padding-after: 0px !important;
 }
 
 .contact ul li {
