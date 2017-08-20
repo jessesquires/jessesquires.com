@@ -22,7 +22,7 @@ permalink: /blog/:title/
 title: 'Jesse Squires'
 description: 'Turing complete with a stack of 0xdeadbeef'
 url: https://www.jessesquires.com
-logo: /img/logo.png
+logo: img/logo.png
 timezone: America/Los_Angeles
 
 twitter:
@@ -34,6 +34,7 @@ img_url: /img
 author:
     name: 'Jesse Squires'
     twitter: jesse_squires
+    avatar: img/avatar.jpg
 
 # Setup
 paginate: 4

@@ -4,19 +4,18 @@ layout: null
 
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-
     <title>{{ site.title }}</title>
     <subtitle>{{ site.description }}</subtitle>
     <link href="{{ site.url }}/feed.xml" rel="self"/>
     <link href="{{ site.url }}/"/>
     <updated>{{ site.time | date_to_xmlschema }}</updated>
-    <id>{{ site.url }}/</id>
+    <id>{{ site.url }}</id>
 
     <author>
         <name>{{ site.author.name }}</name>
     </author>
 
-    <icon>/img/logo.png</icon>
+    <icon>{{ site.url }}/{{ site.logo }}</icon>
 
     <category term="programming"/>
     <category term="ios"/>
@@ -27,26 +26,20 @@ layout: null
 
     {% for post in site.posts %}
     <entry>
-        <title>{{ post.title }}</title>
-
-        {% if post.subtitle %}
-            <subtitle>{{ post.subtitle }}</subtitle>
-        {% endif %}
-
         <link href="{{ site.url }}{{ post.url }}" />
         <id>{{ site.url }}{{ post.id }}</id>
-
+        <title>{{ post.title }}</title>
+        {% if post.subtitle %}<subtitle>{{ post.subtitle }}</subtitle>{% endif %}
         <published>{{ post.date | date_to_xmlschema }}</published>
-
         {% if post.date-updated %}
-            <updated>{{ post.date-updated | date_to_xmlschema }}</updated>
+        <updated>{{ post.date-updated | date_to_xmlschema }}</updated>
         {% else %}
-            <updated>{{ post.date | date_to_xmlschema }}</updated>
+        <updated>{{ post.date | date_to_xmlschema }}</updated>
         {% endif %}
-
-        <summary>{{ post.excerpt }}</summary>
-        <content type="html">{{ post.content | xml_escape }}</content>
+        <summary>{{ post.excerpt }}
+        </summary>
+        <content type="html">{{ post.content | xml_escape }}
+        </content>
     </entry>
     {% endfor %}
-
 </feed>
