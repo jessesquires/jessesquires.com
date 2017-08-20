@@ -7,7 +7,6 @@ kramdown:
 
 gems:
     - jekyll-paginate
-    - jekyll-seo-tag
     - jekyll-sitemap
 
 exclude: [vendor, Dangerfile, Gemfile, Gemfile.lock, LICENSE, README.md, bower.json, scripts/]
@@ -24,9 +23,6 @@ description: 'Turing complete with a stack of 0xdeadbeef'
 url: https://www.jessesquires.com
 logo: img/logo.png
 timezone: America/Los_Angeles
-
-twitter:
-    username: jesse_squires
 
 img_url: /img
 

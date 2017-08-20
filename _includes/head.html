@@ -6,7 +6,6 @@
     <meta name="keywords" content="hexed bits, apps, iOS, objective-c, swift, cocoa, apple, xcode, app store, software, programming, engineering, design patterns">
     <meta name="description" content="{{ site.description }}">
     <meta name="author" content="{{ site.author.name }}">
-
     <title>
         {% if page.title %}
             {{ page.title }} &middot; {{ site.title }}
@@ -15,13 +14,44 @@
         {% endif %}
     </title>
 
-    {% seo title=false %}
+    <meta itemprop="canonical" href="{{ site.url }}{{ page.url }}" />
+    <meta itemprop="url" content="{{ site.url }}{{ page.url }}" />
+    <meta itemprop="about" content="{{ site.description }}" />
 
-    <meta name="twitter:image" content="/img/logo.png" />
-    <meta property="og:image" content="/img/logo.png" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="512" />
-    <meta property="og:image:height" content="512" />
+    {% if page.title %}
+    <meta itemprop="name" content="{{ page.title }}" />
+    <meta itemprop="description" content="{{ page.excerpt | normalize_whitespace | strip_html | truncatewords: 40 }}" />
+    {% else %}
+    <meta itemprop="name" content="{{ site.title }}" />
+    <meta itemprop="description" content="{{ site.description }}" />
+    {% endif %}
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="{{ site.title }}" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="{{ site.url }}/{{ site.logo }}" />
+    {% if page.title %}
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:description" content="{{ page.excerpt | normalize_whitespace | strip_html | truncatewords: 40 }}"/>
+    {% else %}
+    <meta property="og:title" content="{{ site.title }}" />
+    <meta property="og:description" content="{{ site.description }}" />
+    {% endif %}
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@{{ site.author.twitter }}" />
+    <meta name="twitter:creator" content="@{{ site.author.twitter }}" />
+    <meta name="twitter:image" content="{{ site.url }}/{{ site.logo }}" />
+    {% if page.title %}
+    <meta name="twitter:title" content="{{ page.title }}" />
+    <meta name="twitter:description" content="{{ page.excerpt | normalize_whitespace | strip_html | truncatewords: 40 }}" />
+    {% else %}
+    <meta name="twitter:title" content="{{ site.title }}" />
+    <meta name="twitter:description" content="{{ site.description }}" />
+    {% endif %}
 
     <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
