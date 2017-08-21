@@ -8,13 +8,13 @@ layout: null
     "home_page_url": "{{ site.url }}",
     "feed_url": "{{ site.url }}/feed.json",
     "description": "{{ site.description }}",
-    "icon": "{{ site.url }}/{{ site.logo }}",
+    "icon": "{{ site.url }}{{ site.logo }}",
     "favicon": "{{ site.url }}/favicon.ico",
     "expired": false,
     "author": {
         "name": "{{ site.author.name }}",
         "url": "{{ site.url }}",
-        "avatar": "{{ site.url }}/{{ site.author.avatar }}"
+        "avatar": "{{ site.url }}{{ site.author.avatar }}"
     },
     "items": [
         {% for post in site.posts %}
@@ -31,7 +31,7 @@ layout: null
             "author": {
                 "name": "{{ site.author.name }}",
                 "url": "{{ site.url }}",
-                "avatar": "{{ site.url }}/{{ site.author.avatar }}"
+                "avatar": "{{ site.url }}{{ site.author.avatar }}"
             },
             "summary": "{{ post.excerpt | jsonify }}",
             "content_html": "{{ post.content | jsonify }}"

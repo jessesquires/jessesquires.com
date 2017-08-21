@@ -6,6 +6,7 @@ plugins:
     - jekyll-paginate
     - jekyll-sitemap
 
+# File rules
 exclude: [vendor, Dangerfile, Gemfile, Gemfile.lock, LICENSE, README.md, bower.json, scripts/]
 include: [.htaccess]
 
@@ -18,16 +19,15 @@ permalink: /blog/:title/
 title: 'Jesse Squires'
 description: 'Turing complete with a stack of 0xdeadbeef'
 url: https://www.jessesquires.com
-logo: img/logo.png
+logo: /ico/logo.png
 timezone: America/Los_Angeles
-
 img_url: /img
 
 # Author
 author:
     name: 'Jesse Squires'
     twitter: jesse_squires
-    avatar: img/avatar.jpg
+    avatar: /ico/avatar.jpg
 
 # Setup
 paginate: 4

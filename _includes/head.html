@@ -31,7 +31,7 @@
     <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:image" content="{{ site.url }}/{{ site.logo }}" />
+    <meta property="og:image" content="{{ site.url }}{{ site.logo }}" />
     {% if page.title %}
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:description" content="{{ page.excerpt | normalize_whitespace | strip_html | truncatewords: 40 }}"/>
@@ -44,7 +44,7 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@{{ site.author.twitter }}" />
     <meta name="twitter:creator" content="@{{ site.author.twitter }}" />
-    <meta name="twitter:image" content="{{ site.url }}/{{ site.logo }}" />
+    <meta name="twitter:image" content="{{ site.url }}{{ site.logo }}" />
     {% if page.title %}
     <meta name="twitter:title" content="{{ page.title }}" />
     <meta name="twitter:description" content="{{ page.excerpt | normalize_whitespace | strip_html | truncatewords: 40 }}" />

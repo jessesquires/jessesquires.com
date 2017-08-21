@@ -10,5 +10,5 @@ Outside of programming, my interests include cognitive science, moral philosophy
 You can contact me by emailing **jesse** at *this domain*.
 
 <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-<img class="img-thumbnail img-responsive center" src="/img/avatar.jpg" title="Jesse Squires" alt="Jesse Squires"/>
+<img class="img-thumbnail img-responsive center" src="{{ site.author.avatar }}" title="Jesse Squires" alt="Jesse Squires"/>
 </div>

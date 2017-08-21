@@ -6,8 +6,8 @@ layout: null
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>{{ site.title }}</title>
     <subtitle>{{ site.description }}</subtitle>
-    <link href="{{ site.url }}/feed.xml" rel="self"/>
-    <link href="{{ site.url }}/"/>
+    <link href="{{ site.url }}/feed.xml" rel="self" />
+    <link href="{{ site.url }}" />
     <updated>{{ site.time | date_to_xmlschema }}</updated>
     <id>{{ site.url }}</id>
 
@@ -15,7 +15,7 @@ layout: null
         <name>{{ site.author.name }}</name>
     </author>
 
-    <icon>{{ site.url }}/{{ site.logo }}</icon>
+    <icon>{{ site.url }}{{ site.logo }}</icon>
 
     <category term="programming"/>
     <category term="ios"/>
