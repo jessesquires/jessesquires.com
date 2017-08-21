@@ -2,7 +2,7 @@
 
 *Turing complete with a stack of `0xdeadbeef`*
 
-![Logo](https://raw.githubusercontent.com/jessesquires/jessesquires.com/master/ico/icon180.png)
+![Logo](https://www.jessesquires.com/ico/apple-touch-icon.png)
 
 ## About
 
