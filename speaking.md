@@ -12,8 +12,9 @@ Feel free to contact me about speaking at your event! You can email **jesse** at
 <div class="table-responsive" markdown="1">
 
 | <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp; Date | <i class="fa fa-video-camera" aria-hidden="true"></i>&nbsp; Event |
-|:------------|:---------------------------|
-| 16 Nov 2017 | [try! Swift India][event9] |
+|:------------|:-----------------------------|
+| 19 Oct 2017 | [iOS Conf Singapore][event10] |
+| 16 Nov 2017 | [try! Swift India][event9]   |
 {: class="table table-striped table-bordered"}
 
 </div>
@@ -80,3 +81,5 @@ Feel free to contact me about speaking at your event! You can email **jesse** at
 [video8]:https://news.realm.io/news/wwdc-2017-swift-panel/
 
 [event9]:https://www.tryswift.co/events/2017/bangalore/
+
+[event10]:http://iosconf.sg
