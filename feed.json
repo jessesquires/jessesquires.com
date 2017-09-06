@@ -21,7 +21,7 @@ layout: null
         {
             "id": "{{ post.url | absolute_url | sha1 }}",
             "url": "{{ site.url }}{{ post.url }}",
-            "title": "{{ post.title | jsonify }}",
+            "title": {{ post.title | jsonify }},
             "date_published": "{{ post.date | date_to_xmlschema }}",
             {% if post.date-updated %}
             "date_modified": "{{ post.date-updated | date_to_xmlschema }}",
@@ -33,8 +33,8 @@ layout: null
                 "url": "{{ site.url }}",
                 "avatar": "{{ site.url }}{{ site.author.avatar }}"
             },
-            "summary": "{{ post.excerpt | jsonify }}",
-            "content_html": "{{ post.content | jsonify }}"
+            "summary": {{ post.excerpt | jsonify }},
+            "content_html": {{ post.content | jsonify }}
         }{% if forloop.last == false %},{% endif %}
         {% endfor %}
     ]
