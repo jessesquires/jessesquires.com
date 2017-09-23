@@ -12,7 +12,7 @@ The Swift type-checker remains [a performance bottleneck](https://www.cocoawithl
 
 [Bryan Irace](http://irace.me/swift-profiling) and [Soroush Khanlou](http://khanlou.com/2016/12/guarding-against-long-compiles/) originally wrote about the `-warn-long-function-bodies` flag when it was first introduced. You could specify a threshold in milliseconds that would trigger a warning. For example: `-Xfrontend -warn-long-function-bodies=100` would trigger a warning in Xcode for any function that took longer than 100ms to type-check. This was always considered an experimental flag, as Jordan notes in his original [commit](https://github.com/apple/swift/commit/18c75928639acf0ccf0e1fb6729eea75bc09cbd5): *As a frontend option, this is UNSUPPORTED and may be removed without notice at any future date.* As far as I can tell, this is still the case. However, this flag still works in Xcode 9 and I haven't seen any discussion about removing it.
 
-### About `warn-long-expression-type-checking`
+### About `-warn-long-expression-type-checking`
 
 In Xcode 9, there is a new, similar flag for type-checking expressions, not just functions. However, this time the flag made an appearance in the *official* Xcode 9 GM [release notes](https://download.developer.apple.com/Developer_Tools/Xcode_9_GM_seed_build_9A235/Xcode_9_GM_seed_Release_Notes.pdf):
 
