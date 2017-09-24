@@ -13,13 +13,23 @@ Lovingly built with [Jekyll](https://jekyllrb.com), [Bootstrap](https://getboots
 
 ## Requirements
 
-- [Jekyll](https://jekyllrb.com)
 - [Bundler](https://bundler.io)
 - [Bower](http://bower.io)
 
+## Gems
+
+- [jekyll](https://jekyllrb.com) ([Latest](https://github.com/jekyll/jekyll/releases/latest))
+- [jekyll-paginate](https://github.com/jekyll/jekyll-paginate)
+- [jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap)
+
+#### Updating gems
+
+```bash
+$ bundle update
+```
+
 ## Dependencies
 
-- [GitHub-Pages](https://github.com/github/pages-gem) ([gem versions](https://pages.github.com/versions/))
 - [Bootstrap](https://getbootstrap.com)
 - [jQuery](https://jquery.com)
 - [Font Awesome](https://fortawesome.github.io/Font-Awesome/)
@@ -27,7 +37,7 @@ Lovingly built with [Jekyll](https://jekyllrb.com), [Bootstrap](https://getboots
 - [respond](https://github.com/scottjehl/Respond)
 - [Ubuntu Mono font](https://www.google.com/fonts/specimen/Ubuntu+Mono)
 
-### Updating dependencies
+#### Updating dependencies
 
 ```bash
 $ bower update
@@ -54,7 +64,7 @@ $ bundle exec jekyll build
 #### Previewing the site locally
 
 ```bash
-$ bundle exec jekyll serve 
+$ bundle exec jekyll serve
 # Now browse to http://localhost:4000
 ```
 
