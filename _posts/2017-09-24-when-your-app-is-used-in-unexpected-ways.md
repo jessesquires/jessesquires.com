@@ -13,7 +13,7 @@ As software developers, we build software for specific purposes. We anticipate t
 At PlanGrid, we recently discovered that the app was [being used as a digital archaeological tool](http://popular-archaeology.com/issue/fall-2017/article/adapting-plangrid-to-archaeology).
 
 <img class="img-thumbnail img-responsive center"
-     src="https://farm5.staticflickr.com/4435/37173464062_5ebff91de1_z.jpg"
+     src="{{ site.img_url }}/plangrid-archaeology-1.jpg"
      title="PlanGrid for Archaeology"
      alt="PlanGrid for Archaeology"/>
 <small class="text-muted center">PlanGrid used for Archaeology
@@ -39,7 +39,7 @@ At PlanGrid, we recently discovered that the app was [being used as a digital ar
 How **awesome** is that! 🤓 I doubt anyone anticipated this use case, and it's remarkable how well-suited the app is as an archaeological tool by default. It's important (and fun) to envision how our apps will be used for the reasons we created them, but sometimes it's even more interesting to see the novel ways in which our users hack our apps to be used for something completely different. That's worth thinking about more often. How could *your* app be used differently?
 
 <img class="img-thumbnail img-responsive center"
-     src="https://farm5.staticflickr.com/4425/37155549866_09241b1771_z.jpg"
+     src="{{ site.img_url }}/plangrid-archaeology-2.jpg"
      title="PlanGrid for Archaeology"
      alt="PlanGrid for Archaeology"/>
 <small class="text-muted center">PlanGrid used for Archaeology
