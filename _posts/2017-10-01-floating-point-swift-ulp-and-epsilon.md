@@ -125,7 +125,7 @@ Double.ulpOfOne
 // 0.00000000000000022204460492503130808472633361816406250
 {% endhighlight %}
 
-Given these initial epsilon or `ulpOfOne` values, we can compute the `ulp` for any value `v` with an exponent `exp` as: `epsilon * 2^exponent`, where 2 is the radix, or base.
+Given these initial epsilon or `ulpOfOne` values, we can compute the `ulp` for any value `v` with an exponent `exp` as: `epsilon * 2^exp`, where 2 is the radix, or base.
 
 {% highlight swift %}
 let value = Float(3.14)
@@ -260,7 +260,7 @@ let exponentMaskLeftShift = exponent &<< UInt32(Float.significandBitCount) // 88
 let bitPattern = signMaskLeftShift | exponentMaskLeftShift | significand // 880803840
 
 // 880803840 in binary is 00110100100000000000000000000000
-// Sign  Exponent  Mantissa
+// Sign  Exponent  Significand
 // [0]  [01101001]  [00000000000000000000000]
 
 // 3. initialize with the computed bit pattern
