@@ -125,7 +125,7 @@ Double.ulpOfOne
 // 0.00000000000000022204460492503130808472633361816406250
 {% endhighlight %}
 
-Given these initial epsilon or `ulpOfOne` values, we can compute the `ulp` for any value `v` with an exponent `exp` as: `epsilon * 2^exp`, where 2 is the radix, or base.
+Given these initial epsilon or `ulpOfOne` values, [we can compute](https://en.wikipedia.org/wiki/Unit_in_the_last_place#Definition) the `ulp` for any value `v` with an exponent `exp` as: `epsilon * 2^exp`, where 2 is the radix, or base.
 
 {% highlight swift %}
 let value = Float(3.14)
