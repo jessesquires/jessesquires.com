@@ -2,12 +2,17 @@
 
 body {
    background-color: #ffffff;
+   font-size: 17px;
+   line-height: 1.7;
    padding: 2rem 0rem 2rem 0rem;
 }
 
 body p {
-   line-height: 2.5rem;
    padding: 0.5rem 0rem 0.5rem 0rem;
+}
+
+.container {
+   max-width: 900px;
 }
 
 hr {
