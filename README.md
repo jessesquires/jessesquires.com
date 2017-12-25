@@ -6,42 +6,46 @@
 
 ## About
 
-This is my personal site and blog. It mostly contains bits about Swift, iOS, Cocoa, Objective-C, and open source.
+This is my personal site and blog. It mostly contains bits about Swift, Objective-C, iOS and open source. However, I also write about other programming topics and the ethics of tech.
 
 Lovingly built with [Jekyll](https://jekyllrb.com), [Bootstrap](https://getbootstrap.com), [jQuery](https://jquery.com), and [Font Awesome](https://fortawesome.github.io/Font-Awesome/). Hosted at [NearlyFreeSpeech](https://nearlyfreespeech.net/).
-
 
 ## Requirements
 
 - [Bundler](https://bundler.io)
-- [Bower](http://bower.io)
+- [Yarn](https://yarnpkg.com/en/)
 
-## Gems
+## Dependencies
+
+### Gems
 
 - [jekyll](https://jekyllrb.com) ([Latest](https://github.com/jekyll/jekyll/releases/latest))
 - [jekyll-paginate](https://github.com/jekyll/jekyll-paginate)
 - [jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap)
 
-#### Updating gems
+#### Updating Gems
 
 ```bash
 $ bundle update
 ```
 
-## Dependencies
+### Yarn dependencies
 
-- [Bootstrap](https://getbootstrap.com)
-- [jQuery](https://jquery.com)
-- [Font Awesome](https://fortawesome.github.io/Font-Awesome/)
-- [html5shiv](https://github.com/aFarkas/html5shiv)
-- [respond](https://github.com/scottjehl/Respond)
-- [Ubuntu Mono font](https://www.google.com/fonts/specimen/Ubuntu+Mono)
+- [Bootstrap](https://getbootstrap.com) ([pkg](https://yarnpkg.com/en/package/bootstrap))
+- [jQuery](https://jquery.com) ([pkg](https://yarnpkg.com/en/package/jquery))
+- [Font Awesome](https://fortawesome.github.io/Font-Awesome/) ([pkg](https://yarnpkg.com/en/package/font-awesome))
+- [html5shiv](https://github.com/aFarkas/html5shiv) ([pkg](https://yarnpkg.com/en/package/html5shiv))
+- [respond.js](https://github.com/scottjehl/Respond) ([pkg](https://yarnpkg.com/en/package/respond.js))
 
-#### Updating dependencies
+#### Updating Yarn dependencies
 
 ```bash
-$ bower update
+$ yarn update
 ```
+
+### Other
+
+- [Ubuntu Mono font](https://www.google.com/fonts/specimen/Ubuntu+Mono)
 
 ## Usage
 
@@ -51,8 +55,7 @@ $ bower update
 $ git clone https://github.com/jessesquires/jessesquires.com.git
 $ cd jessesquires.com/
 $ bundle install
-$ bower install
-$ bower update
+$ yarn install
 ```
 
 #### Building the site
@@ -71,7 +74,7 @@ $ bundle exec jekyll serve
 #### Writing a draft
 
 ```bash
-$ bundle exec jekyll build --future --drafts --watch
+$ bundle exec jekyll serve --future --drafts --watch
 ```
 
 ## Verifying DNS setup
