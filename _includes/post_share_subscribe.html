@@ -1,3 +1,10 @@
+{% assign base_edit_url = 'https://github.com/jessesquires/jessesquires.com/edit/master/_posts/' %}
+
+{% assign issue_date = page.date | date: "%Y-%m-%d" %}
+{% assign page_title = page.url | remove: '/blog/' | remove: '/' %}
+{% assign file_name = issue_date | append: '-' | append: page_title | append: '.md' %}
+
+{% assign edit_url = base_edit_url | append: file_name %}
 
 <div class="post-share-subscribe">
    <div class="row">
@@ -56,10 +63,10 @@
    <div class="row feedback">
       <div class="col-md-6 col-sm-6 col-xs-12 center">
          <p class="text-muted text-center"><small><b>Questions? Feedback? Corrections?</b></small></p>
-         <p class="text-muted text-center"><small>
-         Open an <a href="{{ open_issue_url }}" target="_blank">issue</a> or
-         submit a <a href="{{ site.links.pull }}" target="_blank">pull request</a>.
-         </small></p>
+         <p class="text-muted text-center">
+         <small>Open an <a href="{{ open_issue_url }}" target="_blank"><b>issue</b></a>,
+         submit a <a href="{{ site.links.pull }}" target="_blank"><b>pull request</b></a>,
+         or <a href="{{ edit_url }}" target="_blank"><b>edit</b></a> this post.</small></p>
       </div> <!-- col -->
    </div> <!-- row -->
 
