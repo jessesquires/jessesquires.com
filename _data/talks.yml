@@ -1,0 +1,139 @@
+talk10:
+    date: 19 Nov 2017
+    title: 'Adapting to change: designing for modularity and maintainability'
+    event:
+        name: try! Swift India
+        link: https://www.tryswift.co/
+    location:
+        name: The Grand Magrath Hotel
+        link: http://www.thegrandmagrath.com/
+        city: Bangalore 🇮🇳
+    links:
+        slides: https://speakerdeck.com/jessesquires/adapting-to-change-designing-for-modularity-and-maintainability-in-swift
+
+talk9:
+    date: 19 Oct 2017
+    title: Exploring Swift’s numeric types and protocols
+    event:
+        name: iOS Conf Singapore
+        link: http://iosconf.sg/
+    location:
+        name: Nanyang Polytechnic
+        link: http://www.nyp.edu.sg/
+        city: Singapore 🇸🇬
+    links:
+        slides: https://speakerdeck.com/jessesquires/exploring-swifts-numeric-types-and-protocols
+        video: https://www.youtube.com/watch?v=cdRn4DJq9eY
+
+talk8:
+    date: 06 Jun 2017
+    title: WWDC 2017 Swift Panel
+    event:
+        name: WWDC Swift Panel
+        link: https://www.meetup.com/swift-language/events/240443949/
+    location:
+        name: The Westin
+        link: http://www.westinsanjose.com/
+        city: San Jose 🇺🇸
+    links:
+        video: https://news.realm.io/news/wwdc-2017-swift-panel/
+
+talk7:
+    date: 08 Nov 2016
+    title: Pushing the limits of protocol-oriented programming
+    event:
+        name: Swift Summit
+        link: https://swiftsummit.com/
+    location:
+        name: Palace of Fine Arts
+        link: https://palaceoffinearts.org/
+        city: San Francisco 🇺🇸
+    links:
+        slides: https://speakerdeck.com/jessesquires/pushing-the-limits-of-protocol-oriented-programming
+        video: https://www.skilled.io/u/swiftsummit/pushing-the-limits-of-protocol-oriented-programming
+        code: https://github.com/jessesquires/JSQDataSourcesKit
+
+talk6:
+    date: 23 Sep 2016
+    title: 140 proposals in 30 minutes
+    event:
+        name: FrenchKit
+        link: http://frenchkit.fr/
+    location:
+        name: Pan Piper
+        link: http://www.pan-piper.com/en/
+        city: Paris 🇫🇷
+    links:
+        slides: https://speakerdeck.com/jessesquires/140-proposals-in-30-minutes
+        video: https://www.youtube.com/watch?v=0sYQAtoK3VQ
+        code: https://github.com/jessesquires/swift-proposal-analyzer
+
+talk5:
+    date: 28 Jul 2016
+    title: Keynote Panel
+    event:
+        name: Forward Swift
+        link: https://forwardswift.com/
+    location:
+        name: Regency Ballroom
+        link: http://www.theregencyballroom.com/
+        city: San Francisco 🇺🇸
+    links:
+        video: https://forwardcourses.com/lectures/178
+
+talk4:
+    date: 13 Jun 2016
+    title: WWDC Swift Live Panel, take 2
+    event:
+        name: WWDC Swift Panel
+        link: http://www.meetup.com/swift-language/events/231196358/
+    location:
+        name: Realm
+        link: https://realm.io/
+        city: San Francisco 🇺🇸
+    links:
+        video: https://www.periscope.tv/realmlive/1eaKbeEbRRexX
+
+talk3:
+    date: 04 Mar 2016
+    title: Contributing to open source Swift
+    event:
+        name: try! Swift Tokyo
+        link: http://www.tryswiftconf.com/en
+    location:
+        name: Cyber Agent
+        link: https://www.cyberagent.co.jp/
+        city: Tokyo 🇯🇵
+    links:
+        slides: https://speakerdeck.com/jessesquires/contributing-to-open-source-swift
+        video: https://academy.realm.io/posts/tryswift-jesse-squires-contributing-open-source-swift/
+
+talk2:
+    date: 28 Jan 2016
+    title: Swifty view controller presenters
+    event:
+        name: Swift meetup (SLUG)
+        link: https://www.meetup.com/swift-language/events/227833264/
+    location:
+        name: Realm
+        link: https://realm.io
+        city: San Francisco 🇺🇸
+    links:
+        slides: https://speakerdeck.com/jessesquires/swifty-view-controller-presenters
+        video: https://academy.realm.io/posts/slug-jesse-squires-swifty-view-controller-presenters/
+        code: https://github.com/jessesquires/PresenterKit
+
+talk1:
+    date: 14 Apr 2015
+    title: Using Core Data in Swift
+    event:
+        name: Swift meetup (SLUG)
+        link: https://www.meetup.com/swift-language/events/220612410/
+    location:
+        name: Realm
+        link: https://realm.io
+        city: San Francisco 🇺🇸
+    links:
+        slides: https://speakerdeck.com/jessesquires/using-core-data-in-swift
+        video: https://academy.realm.io/posts/jesse-squires-core-data-swift/
+        code: https://github.com/jessesquires/JSQCoreDataKit

@@ -3,89 +3,54 @@ layout: standalone
 title: Speaking
 ---
 
-I enjoy speaking at conferences and meetups to share my thoughts, ideas, and experiences about programming, software, and community &mdash; particularly open source, iOS, Swift, and Objective-C. You can find the materials and details for all of my talks [on GitHub](https://github.com/jessesquires/talks) and all of my slides [on Speaker Deck](https://speakerdeck.com/jessesquires).
+I enjoy speaking at conferences and meetups to share my thoughts, ideas, and experiences about programming,
+software, and community &mdash; particularly open source, iOS, Swift, and Objective-C.
+You can find the materials and details for all of my talks [on GitHub](https://github.com/jessesquires/talks)
+and all of my slides [on Speaker Deck](https://speakerdeck.com/jessesquires).
 
 Feel free to contact me about speaking at your event! You can email **jesse** at *this domain*.
 
 ### Upcoming talks
 
 <div class="table-responsive" markdown="1">
-
 | <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp; Date | <i class="fa fa-video-camera" aria-hidden="true"></i>&nbsp; Event |
 |:------------|:-----------------------------|
 | TBA         | TBA                          |
 {: class="table table-striped table-bordered"}
-
 </div>
 
 ### Past talks
 
-<div class="table-responsive" markdown="1">
-
-| <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp; Date | <i class="fa fa-quote-left" aria-hidden="true"></i>&nbsp; Title | <i class="fa fa-video-camera" aria-hidden="true"></i>&nbsp; Event | <i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; Location | <i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;  Links |
-|:--------------|:----------------------------------------------------|:--------------------------------|:-------------------------------------------------------|:--------------------------------------------------|
-| 19 Nov 2017   | Adapting to change: designing for modularity        | [try! Swift India][event10]     | [The Grand Magrath Hotel][location10], Bangalore 🇮🇳 | [slides][slides10], *Video TBA*                   |
-| 19 Oct 2017   | Exploring Swift's numeric types and protocols       | [iOS Conf Singapore][event9]    | [Nanyang Polytechnic][location9], Singapore 🇸🇬      | [slides][slides9], [video][video9]                |
-| 06 Jun 2017   | WWDC 2017 Swift Panel                               | [WWDC Swift Panel][event8]      | [The Westin][location8], San Jose 🇺🇸                | [video][video8]                                   |
-| 08 Nov 2016   | Pushing the limits of protocol-oriented programming | [Swift Summit][event7]          | [Palace of Fine Arts][location7],  San Francisco 🇺🇸 | [slides][slides7], [video][video7], [code][code7] |
-| 23 Sep 2016   | 140 proposals in 30 minutes                         | [FrenchKit][event6]             | [Pan Piper][location6], Paris 🇫🇷                    | [slides][slides6], [video][video6], [code][code6] |
-| 28 Jul 2016   | Keynote Panel                                       | [Forward Swift][event5]         | [Regency Ballroom][location5],  San Francisco 🇺🇸    | [video][video5]                                   |
-| 13 Jun 2016   | WWDC Swift Live Panel, take 2                       | [WWDC Swift Panel][event4]      | [Realm][location4], San Francisco 🇺🇸                | [video][video4]                                   |
-| 04 Mar 2016   | Contributing to open source Swift                   | [try! Swift Tokyo][event3]      | [Cyber Agent][location3], Tokyo 🇯🇵                  | [slides][slides3], [video][video3]                |
-| 28 Jan 2016   | Swifty view controller presenters                   | [Swift meetup][event2] (SLUG)   | [Realm][location2], San Francisco 🇺🇸                | [slides][slides2], [video][video2], [code][code2] |
-| 14 Apr 2015   | Using Core Data in Swift                            | [Swift meetup][event1] (SLUG)   | [Realm][location1], San Francisco 🇺🇸                | [slides][slides1], [video][video1], [code][code1] |
-{: class="table table-striped table-bordered"}
-
+<div class="table-responsive">
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp; Date</th>
+                <th><i class="fa fa-quote-left" aria-hidden="true"></i>&nbsp; Title</th>
+                <th><i class="fa fa-video-camera" aria-hidden="true"></i>&nbsp; Event</th>
+                <th><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; Location</th>
+                <th><i class="fa fa-file-text" aria-hidden="true"></i>&nbsp; Links</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for t in site.data.talks %}
+        {% assign talk = t[1] %}
+        {% assign event = talk.event %}
+        {% assign location = talk.location %}
+        {% assign links = talk.links %}
+            <tr>
+                <td>{{ talk.date }}</td>
+                <td><i>{{ talk.title }}</i></td>
+                <td><a href="{{ event.link }}">{{ event.name }}</a></td>
+                <td><a href="{{ location.link }}">{{ location.name }}</a>, {{ location.city }}</td>
+                <td>
+                    {% if links.slides %}<a href="{{ links.slides }}">slides</a>{% endif %}
+                    {% if links.slides and links.video %}&bull;{% endif %}
+                    {% if links.video %}<a href="{{ links.video }}">video</a>{% endif %}
+                    {% if links.code %}&bull; <a href="{{ links.code }}">code</a>{% endif %}
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
 </div>
-
-<!-- Links -->
-
-[event1]:https://www.meetup.com/swift-language/events/220612410/
-[location1]:https://realm.io
-[slides1]:https://speakerdeck.com/jessesquires/using-core-data-in-swift
-[video1]:https://academy.realm.io/posts/jesse-squires-core-data-swift/
-[code1]:https://github.com/jessesquires/JSQCoreDataKit
-
-[event2]:https://www.meetup.com/swift-language/events/227833264/
-[location2]:https://realm.io
-[slides2]:https://speakerdeck.com/jessesquires/swifty-view-controller-presenters
-[video2]:https://academy.realm.io/posts/slug-jesse-squires-swifty-view-controller-presenters/
-[code2]:https://github.com/jessesquires/PresenterKit
-
-[event3]:http://www.tryswiftconf.com/en
-[location3]:https://www.cyberagent.co.jp
-[slides3]:https://speakerdeck.com/jessesquires/contributing-to-open-source-swift
-[video3]:https://academy.realm.io/posts/tryswift-jesse-squires-contributing-open-source-swift/
-
-[event4]:http://www.meetup.com/swift-language/events/231196358/
-[location4]:https://realm.io
-[video4]:https://www.periscope.tv/realmlive/1eaKbeEbRRexX
-
-[event5]:https://forwardswift.com
-[location5]:http://www.theregencyballroom.com
-[video5]:https://forwardcourses.com/lectures/178
-
-[event6]:http://frenchkit.fr
-[location6]:http://www.pan-piper.com/en/
-[slides6]:https://speakerdeck.com/jessesquires/140-proposals-in-30-minutes
-[video6]:https://www.youtube.com/watch?v=0sYQAtoK3VQ
-[code6]:https://github.com/jessesquires/swift-proposal-analyzer
-
-[event7]:https://swiftsummit.com/
-[location7]:https://palaceoffinearts.org
-[slides7]:https://speakerdeck.com/jessesquires/pushing-the-limits-of-protocol-oriented-programming
-[video7]:https://www.skilled.io/u/swiftsummit/pushing-the-limits-of-protocol-oriented-programming
-[code7]:https://github.com/jessesquires/JSQDataSourcesKit
-
-[event8]:https://www.meetup.com/swift-language/events/240443949/
-[location8]:http://www.westinsanjose.com
-[video8]:https://news.realm.io/news/wwdc-2017-swift-panel/
-
-[event9]:http://iosconf.sg
-[location9]:http://www.nyp.edu.sg
-[slides9]:https://speakerdeck.com/jessesquires/exploring-swifts-numeric-types-and-protocols
-[video9]:https://www.youtube.com/watch?v=cdRn4DJq9eY
-
-[event10]:https://www.tryswift.co/events/2017/bangalore/
-[location10]:http://www.thegrandmagrath.com
-[slides10]:https://speakerdeck.com/jessesquires/adapting-to-change-designing-for-modularity-and-maintainability-in-swift
