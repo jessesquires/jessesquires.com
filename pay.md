@@ -25,14 +25,6 @@ Do you need to pay me for contracting, consulting, or freelance work? Or, do you
    </div> <!-- col -->
 </div> <!-- row -->
 
-<div class="row">
-   <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
-      <a class="btn btn-default btn-block" href="{{ site.social_links.gratipay }}" target="_blank">
-      <i class="fa fa-lg fa-gratipay" aria-hidden="true"></i>&nbsp; Gratipay
-      </a>
-   </div> <!-- col -->
-</div> <!-- row -->
-
 <p class="text-center text-muted"><small>
 If you run into any issues, or if you have any questions, please email <b>jesse</b> at <i>this domain</i>.
 </small></p>
