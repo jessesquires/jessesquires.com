@@ -8,7 +8,7 @@ software, and community &mdash; particularly open source, iOS, Swift, and Object
 You can find the materials and details for all of my talks [on GitHub](https://github.com/jessesquires/talks)
 and all of my slides [on Speaker Deck](https://speakerdeck.com/jessesquires).
 
-Feel free to contact me about speaking at your event! You can email **jesse** at *this domain*.
+Feel free to [contact me](/contact) about speaking at your event!
 
 ### Upcoming talks
 

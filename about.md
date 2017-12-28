@@ -7,7 +7,7 @@ I'm a software developer in Oakland, California. I'm primarily an iOS developer,
 
 Outside of programming, my interests include cognitive science, moral philosophy, avant-garde art, and coffee. I enjoy barefoot trail running and body modification. In the Bay Area, you can often find me at punk and metal shows.
 
-You can contact me by emailing **jesse** at *this domain*.
+You can [contact me here](/contact).
 
 <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
 <img class="img-thumbnail img-responsive center" src="{{ site.author.avatar }}" title="Jesse Squires" alt="Jesse Squires"/>
