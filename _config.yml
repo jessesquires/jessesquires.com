@@ -7,7 +7,7 @@ plugins:
     - jekyll-sitemap
 
 # File rules
-exclude: [vendor, Dangerfile, Gemfile, Gemfile.lock, LICENSE, README.md, bower.json, scripts/]
+exclude: [vendor, Dangerfile, Gemfile, Gemfile.lock, LICENSE, README.md, assets/, package.json, yarn.lock, scripts/]
 include: [.htaccess]
 
 keep_files: [.well-known]
@@ -30,7 +30,7 @@ author:
     avatar: /ico/avatar.jpg
 
 # Setup
-paginate: 4
+paginate: 3
 paginate_path: /blog/page/:num/
 excerpt_separator: <!--excerpt-->
 
