@@ -2,6 +2,12 @@
 layout: post
 title: Measuring Swift compile times in Xcode 9
 subtitle: Using -Xfrontend Swift compiler flags
+image:
+    file: xcode-front-end-flags.png
+    alt: Swift frontend flags
+    caption: Xcode "Other Swift Flags" build settings
+    source_link: null
+    half_width: false
 ---
 
 The Swift type-checker remains [a performance bottleneck](https://www.cocoawithlove.com/blog/2016/07/12/type-checker-issues.html) for compile times, though it has [improved](https://github.com/apple/swift/search?utf8=✓&q=type+checker+improve&type=Commits) [tremendously](https://github.com/apple/swift/search?utf8=✓&q=type+checker+performance&type=Commits) over the past two years. You could even say the type-checker has gone from being [drunk](https://spin.atomicobject.com/2016/04/26/swift-long-compile-time/) to [sober](https://github.com/apple/swift/commit/2cdd7d64e1e2add7bcfd5452d36e7f5fc6c86a03). To help users debug these issues, awhile back [Jordan Rose added](https://github.com/apple/swift/commit/18c75928639acf0ccf0e1fb6729eea75bc09cbd5) a frontend Swift compiler flag that would emit warnings in Xcode for functions that took too long to compile, or rather took too long to type-check. In Xcode 9, there's a new, similar flag for checking expressions.
@@ -31,8 +37,7 @@ As mentioned, after you add these flags you will start getting warnings. Keep in
 
 There are two common scenarios where Xcode will start emitting warnings with these flags: (1) very complex expressions or functions, and (2) expressions that omit explicit types and rely on [type inference](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Types.html). To silence the warnings &mdash; and thus improve compile times &mdash; try breaking up expressions into smaller steps with intermediate variables, and adding explicit types to variable declarations and closure parameters. The code may not look as elegant after these changes, but what's more important to you and your team?
 
-<img class="img-thumbnail img-responsive center" src="{{ site.img_url }}/xcode-front-end-flags.png" title="Swift frontend flags" alt="Swift frontend flags"/>
-<small class="text-muted center">Xcode "Other Swift Flags" build settings</small>
+{% include post_image.html %}
 
 ### A temporary solution
 

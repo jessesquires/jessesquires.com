@@ -2,6 +2,12 @@
 layout: post
 title: Sleazy recruiting
 subtitle: LAMP stack for an iOS developer
+image:
+    file: talentbin.png
+    alt: TalentBin class action lawsuit
+    caption: TalentBin class action lawsuit
+    source_link: null
+    half_width: false
 ---
 
 Today I found out that I'm part of a [class action lawsuit](http://www.courthousenews.com/2015/10/07/class-of-users-irked-by-talentbin-dossiers.htm) against a service that I never signed up for called [*TalentBin*](https://www.crunchbase.com/organization/talentbin#/entity). As you have likely experienced, most recruiting in the tech industry is debase, disingenuous, boilerplate garbage. But this &mdash; this is definitely a new a low.
@@ -10,7 +16,7 @@ Today I found out that I'm part of a [class action lawsuit](http://www.courthous
 
 Here's an excerpt of the email I received this morning.
 
-<img class="img-thumbnail img-responsive center" src="{{ site.img_url }}/talentbin.png" title="TalentBin class action lawsuit" alt="TalentBin class action lawsuit"/>
+{% include post_image.html %}
 
 From [Courthouse News](http://www.courthousenews.com/2015/10/07/class-of-users-irked-by-talentbin-dossiers.htm), emphasis mine:
 
@@ -41,4 +47,10 @@ Serendipitously, I received the following message **today**. This is a perfect i
 
 Firstly, note the two redactions. **These were two different names.** This person introduced themselves with one name, and signed with a completely different name. This is the beauty in life that wakes me up each morning. I do love pasta, but not copy-pasta. Secondly, if anyone has seen my "impressive background in web development" lying around, please send it back to me along with my "expertise in PHP." LAMP stack for an iOS developer? WAT.
 
-<img class="img-thumbnail img-responsive center" src="{{ site.img_url }}/love-lamp.png" title="LAMP stack for an iOS developer" alt="LAMP stack for an iOS developer"/>
+{% include image.html
+    file="love-lamp.png"
+    alt="LAMP stack for an iOS developer"
+    caption=null
+    source_link=null
+    half_width=false
+%}

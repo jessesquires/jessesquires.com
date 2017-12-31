@@ -2,13 +2,19 @@
 layout: post
 title: Swift open source
 subtitle: Let the revolution begin
+image:
+    file: swift-logo.png
+    alt: Swift
+    caption: null
+    source_link: null
+    half_width: false
 ---
 
 It has only been a few days since the announcement of [Swift going open source](https://developer.apple.com/swift/blog/?id=34) and the activity around the project has been incredible. When Apple revealed that Swift would be open source at [WWDC](https://developer.apple.com/wwdc/) earlier this year, I do not think anyone anticipated a release like this.
 
 <!--excerpt-->
 
-<img class="img-thumbnail img-responsive center" src="{{ site.img_url }}/swift-logo.png" title="Swift" alt="Swift"/>
+{% include post_image.html %}
 
 ### Expectations
 

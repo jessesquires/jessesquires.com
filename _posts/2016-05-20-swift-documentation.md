@@ -2,6 +2,12 @@
 layout: post
 title: Swift documentation
 subtitle: Writing, generating, and publishing great docs in Swift
+image:
+    file: feels_good_docs.jpg
+    alt: 100% docs
+    caption: null
+    source_link: null
+    half_width: false
 ---
 
 The Swift community is ecstatic about Swift. There are so many new libraries being released each week that some have created [package indexes](https://swiftmodules.com) &mdash; even [IBM](https://developer.ibm.com/swift/products/package-catalog/). But of course, a library is only as great as its documentation.
@@ -46,7 +52,7 @@ Also, strive to provide [100% coverage](https://twitter.com/orta/status/47100957
 
 One final tip &mdash; use [Wei Wang](https://github.com/onevcat)'s plug-in, [VVDocumenter-Xcode](https://github.com/onevcat/VVDocumenter-Xcode). This Xcode plug-in will generate the doc comment templates for you. All you have to do is type `///` above any method or class and then fill-in the docs.
 
-<img class="img-thumbnail img-responsive center" src="{{ site.img_url }}/feels_good_docs.jpg" title="100% docs" alt="100% docs"/>
+{% include post_image.html %}
 
 ### Generating docs
 

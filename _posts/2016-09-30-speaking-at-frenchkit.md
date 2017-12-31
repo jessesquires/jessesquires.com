@@ -2,13 +2,19 @@
 layout: post
 title: Speaking at FrenchKit
 subtitle: Paris, France
+image:
+    file: frenchkit.jpg
+    alt: FrenchKit
+    caption: FrenchKit venue
+    source_link: null
+    half_width: false
 ---
 
 Last week I attended and [gave a talk](https://speakerdeck.com/jessesquires/140-proposals-in-30-minutes) at [FrenchKit](http://frenchkit.fr) in Paris, France. As expected, it was an amazing conference &mdash; especially considering it was the first FrenchKit ever. I think the organizers are already thinking about FrenchKit 2017, so keep an eye out and definitely go if you can. I know I will.
 
 <!--excerpt-->
 
-<img class="img-thumbnail img-responsive center" src="{{ site.img_url }}/frenchkit.jpg" title="FrenchKit" alt="FrenchKit"/>
+{% include post_image.html %}
 
 ### Talk
 
@@ -22,12 +28,14 @@ Aside from the fantastic lineup of [speakers](http://frenchkit.fr/#programme), I
 
 The organizers opened with a mock Apple-esque keynote. It was hilarious and I hope this part was also recorded. The conference closed with 🧀 and 🍷 (of course) and a fun pub quiz. We had a good time with lots of laughs.
 
-<img class="img-thumbnail img-responsive center" src="{{ site.img_url }}/frenchkit-michel.jpg" title="FrenchKit pub quiz" alt="FrenchKit pub quiz"/>
-<small class="text-muted center">Michel explains the specs of the Macintosh Classic I, which had something called a "headphone jack"?</small>
-
+{% include image.html
+    file="frenchkit-michel.jpg"
+    alt="FrenchKit pub quiz"
+    caption="Michel explains the specs of the Macintosh Classic I, which had something called a 'headphone jack'?"
+    source_link=null
+    half_width=false
+%}
 
 ### Thanks
 
-I can't say thank you enough to [Simone](https://twitter.com/viteinfinite), [Michel](https://twitter.com/guilletmichel), [Nicolas](https://twitter.com/nlauquin), [Mathieu](https://twitter.com/MonsieurDart), and everyone at [Xebia](https://twitter.com/XebiaFr) who helped make this conference great for everyone.
-
-Until we meet again, let's keep chatting on Twitter and coding together on GitHub.
+I can't say thank you enough to [Simone](https://twitter.com/viteinfinite), [Michel](https://twitter.com/guilletmichel), [Nicolas](https://twitter.com/nlauquin), [Mathieu](https://twitter.com/MonsieurDart), and everyone at [Xebia](https://twitter.com/XebiaFr) who helped make this conference great for everyone. Until we meet again, let's keep chatting on Twitter and coding together on GitHub.

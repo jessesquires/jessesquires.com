@@ -2,6 +2,12 @@
 layout: post
 title: Better Core Data models in Swift
 subtitle: How Swift can bring clarity and safety to your managed objects
+image:
+    file: coredata_inspector.jpg
+    alt: Core Data Model Inspector
+    caption: Data Model Inspector for Core Data managed objects
+    source_link: null
+    half_width: false
 ---
 
 As I continue my work with [Core Data](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CoreData/cdProgrammingGuide.html) and [Swift](http://www.apple.com/swift/), I have been trying to find ways to make Core Data **better**. Among my goals are clarity and safety, specifically regarding types. Luckily, we can harness Swift's optionals, enums, and other features to make managed objects more robust and more clear. But even with the improvements that Swift brings, there are still some drawbacks and limitations with Xcode's current toolset.
@@ -12,8 +18,7 @@ As I continue my work with [Core Data](https://developer.apple.com/library/mac/d
 
 There's been plenty of [feedback](http://owensd.io/2014/10/18/optionals-beware.html) in the community about [optionals](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-ID330) and how they are often [cumbersome](http://natashatherobot.com/unit-testing-optionals-in-swift-xctassertnotnil/) to use. However, this relatively simple construct brings a welcoming clarity to managed objects when working with Core Data. When defining entities in Core Data, it is possible to set some basic validation rules for an entity's attributes in the Data Model Inspector.
 
-<img class="img-thumbnail img-responsive center" src="{{ site.img_url }}/coredata_inspector.jpg" title="Core Data Model Inspector" alt="Core Data Model Inspector"/>
-<small class="text-muted center">Data Model Inspector for Core Data managed objects.</small>
+{% include post_image.html %}
 
 You can define minimum and maximum values, provide default values, mark attributes as optional, and more. This is nothing new. But in Objective-C, the optionality of a property on a managed object could only be discovered by opening the `.xcdatamodeld` file in Xcode, then selecting the entity, then selecting the attribute, and then opening the Data Model Inspector in the sidebar. Or, at runtime you find out that your `NSManagedObjectContext` fails to save because of `Cocoa error 1570`. Neither of these experiences are enjoyable.
 

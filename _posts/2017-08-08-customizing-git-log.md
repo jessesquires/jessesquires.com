@@ -2,6 +2,12 @@
 layout: post
 title: Customizing git-log
 subtitle: Creating a 'smartlog' alias in git
+image:
+    file: git-smartlog.jpg
+    alt: git-smartlog
+    caption: git-smartlog before and after
+    source_link: null
+    half_width: false
 ---
 
 [Git](https://www.git-scm.com) is sometimes rough around the edges, but fortunately it's not too difficult to customize and make more user-friendly. The other day I spent some time experimenting with `git log` and crafting a new `git smartlog` alias.
@@ -34,7 +40,7 @@ $ git config --global alias.smartlog "log --graph --pretty=format:'commit: %C(bo
 
 Here's a comparison (using [IGListKit](https://github.com/Instagram/IGListKit/commits/master)) between the default `git log` (left) and this new `git smartlog` (right):
 
-<img class="img-thumbnail img-responsive center" src="{{ site.img_url }}/git-smartlog.jpg" title="git-smartlog" alt="git-smartlog"/>
+{% include post_image.html %}
 
 The default log displays the commit hash, author, date, and *full* commit message. The result is barely seeing just two commits. By contrast, `smartlog` displays the 10 most recent commits. Let's breakdown what's happening how it corresponds to the options passed to `--pretty=format:`. The first line contains the abbreviated commit hash (`%h`) in bold, followed by the full commit hash (`%H`). If available, ref names (e.g. branches, tags, etc.) (`%d`) come after the commit. The second line displays the RFC2822 style date (`%cd`) followed by a relative date (e.g. "2 days ago") (`%cr`). Next is the author name (`%an`) and email (`%ae`). Finally, there's the commit subject (`%s`). Interspersed in `--pretty=format:` are color settings, for example `%C(red)` sets the color to red and `%Creset` resets to the default terminal color. And `%n` inserts a newline.
 

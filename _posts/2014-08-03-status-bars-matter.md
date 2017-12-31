@@ -3,6 +3,12 @@ layout: post
 title: Status bars matter
 date-updated: 13 Oct 2014
 subtitle: Perfecting your app screenshots for the App Store
+image:
+    file: statusbar.jpg
+    alt: iOS status bar
+    caption: iOS status bar
+    source_link: null
+    half_width: false
 ---
 
 You have spent countless hours, days, months, or maybe even [years](http://www.polygon.com/2014/2/6/5386200/why-it-took-a-year-to-make-and-then-break-down-an-amazing-puzzle-game) perfecting your app. There has been plenty of blood, sweat, and tears. Your relationships and your health have [suffered through](http://blog.jaredsinclair.com/post/93118460565/a-candid-look-at-unreads-first-year) the development process. You are ready for 1.0 and the time has arrived to prepare all of your content for the App Store &mdash; app icon, keywords, description, localizations, and screenshots (and soon [app previews](https://developer.apple.com/support/appstore/app-previews/)).
@@ -11,21 +17,35 @@ You have spent countless hours, days, months, or maybe even [years](http://www.p
 
 But even with all of Dan Counsell's [excellent advice](http://dancounsell.com/articles) on how to promote your app and refine your App Store presence, I continue to see iOS developers make one glaring mistake in their screenshots. This common flaw is even overlooked in Dan's article on [*Designing Great App Store Screenshots*](http://dancounsell.com/articles/designing-great-app-store-screenshots), which should be required reading for all iOS developers. But what does it fail to mention? **The status bar.**
 
-<img class="img-thumbnail img-responsive center" src="{{ site.img_url }}/statusbar.jpg" title="iOS status bar" alt="iOS status bar"/>
-<small class="text-muted center">iOS status bar</small>
+{% include post_image.html %}
 
 #### Sore thumbs
 
 Status bars matter. If configured well, they go unnoticed. But if they are sloppily ignored, they stick out like a sore thumb. And sadly, there are a lot of sore thumbs in the App Store. Below are actual status bars taken from the screenshots of three different apps curently in the App Store. All apps were on one of the top charts within the top 50.
 
-<img class="img-thumbnail img-responsive center" src="{{ site.img_url }}/statusbar-bad1.jpg" title="Status bar example 1" alt="Status bar example 1"/>
-<small class="text-muted center">Sample 1: status bars seen in the App Store</small>
+{% include image.html
+    file="statusbar-bad1.jpg"
+    alt="Status bar example 1"
+    caption="Sample 1: status bars seen in the App Store"
+    source_link=null
+    half_width=false
+%}
 
-<img class="img-thumbnail img-responsive center" src="{{ site.img_url }}/statusbar-bad2.jpg" title="Status bar example 2" alt="Status bar example 2"/>
-<small class="text-muted center">Sample 2: status bars seen in the App Store</small>
+{% include image.html
+    file="statusbar-bad2.jpg"
+    alt="Status bar example 2"
+    caption="Sample 2: status bars seen in the App Store"
+    source_link=null
+    half_width=false
+%}
 
-<img class="img-thumbnail img-responsive center" src="{{ site.img_url }}/statusbar-bad3.jpg" title="Status bar example 3" alt="Status bar example 3"/>
-<small class="text-muted center">Sample 3: status bars seen in the App Store</small>
+{% include image.html
+    file="statusbar-bad3.jpg"
+    alt="Status bar example 3"
+    caption="Sample 3: status bars seen in the App Store"
+    source_link=null
+    half_width=false
+%}
 
 There's a lot of information in an untamed status bar. In *Sample 1* it looks like someone is from Canada, and working late through the evening. At least she had good reception and an adequate power supply. In *Sample 2* the developer lives in the UK, and has extremly poor reception. She needs to charge her iPhone soon, but at least she knows her current location. *Sample 3* is by far the most interesting. We can see AT&amp;T's typically poor reception, thus the developer is in the US. This guy was up late, but at least he remembered to set his alarm so that he could wake up in the morning to take more screenshots and charge his device.
 

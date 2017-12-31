@@ -2,6 +2,12 @@
 layout: post
 title: Contributing to open source Swift
 subtitle: Talk at try! Swift conference in Tokyo
+image:
+    file: try-swift-slides.jpeg
+    alt: Contributing to open source Swift
+    caption: View slides <a href="https://speakerdeck.com/jessesquires/contributing-to-open-source-swift">on Speaker Deck</a>
+    source_link: null
+    half_width: false
 ---
 
 Earlier this month I had the incredible opportunity to speak at the [try! Swift conference](http://www.tryswiftconf.com/en) in Tokyo, Japan. 🇯🇵 It was such a fun and rewarding experience. A [video of the talk](https://realm.io/news/tryswift-jesse-squires-contributing-open-source-swift/) is now online over at [Realm's](https://realm.io) blog, where it is synced with my [slides](https://speakerdeck.com/jessesquires/contributing-to-open-source-swift). If you have not already seen it, go check it out!
@@ -28,5 +34,4 @@ You **do not** need to be a compiler expert to have an impact on Swift or any of
 
 >Do you want to contribute to Swift? Not sure how or where to begin? It can be overwhelming! In this talk we'll explore the different parts of Swift, see how the various Swift projects are related, discuss the skills you need to get started, and learn the best ways to get your first fix accepted.
 
-<a href="https://speakerdeck.com/jessesquires/contributing-to-open-source-swift">
-<img class="img-thumbnail img-responsive center" src="{{ site.img_url }}/try-swift-slides.jpeg" title="Contributing to open source Swift" alt="Contributing to open source Swift"/></a>
+{% include post_image.html %}

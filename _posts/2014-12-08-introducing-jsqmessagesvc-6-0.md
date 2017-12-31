@@ -2,14 +2,19 @@
 layout: post
 title: Introducing JSQMessagesVC 6.0
 subtitle: A brief history and celebration of the popular messages UI library for iOS
+image:
+    file: jsqmessages6.png
+    alt: JSQMessagesViewController 6.0
+    caption: "JSQMessagesViewController: An elegant messages UI library for iOS"
+    source_link: null
+    half_width: false
 ---
 
 A few weeks ago I published the [sixth major release](https://github.com/jessesquires/JSQMessagesViewController/releases/tag/6.0.0) of ~~my~~ *our* [messages UI library](http://www.jessesquires.com/JSQMessagesViewController/) for iOS. This release closes the door on a major milestone for this project, so I wanted to take the time to highlight its significance, discuss its new features, and examine its design. Of course, this would not have been possible without our amazing open-source [community](https://github.com) and the [contributors](https://github.com/jessesquires/JSQMessagesViewController/graphs/contributors) to this project.
 
 <!--excerpt-->
 
-<img class="img-thumbnail img-responsive center" src="{{ site.img_url }}/jsqmessages6.png" title="JSQMessagesViewController 6.0" alt="JSQMessagesViewController 6.0"/>
-<small class="text-muted center">JSQMessagesViewController: An elegant messages UI library for iOS</small>
+{% include post_image.html %}
 
 ### A brief history
 
@@ -25,8 +30,13 @@ The component was originally implemented with a `UITableView`, until [version 5.
 
 The flagship feature of 6.0 is the *most requested* feature to date &mdash; media messages. In order to display anything other than text in the message bubbles, some major changes were required in the core library. With these new changes it is now possible to display **any arbitrary** `UIView` in a message bubble. The messages view (picture above) is backed by subclasses of `UICollectionViewCell`, `UICollectionView`, and `UICollectionViewFlowLayout`. Each message is represented as a cell in the collection view and has a number of customizable subviews and properties, which are outlined in the following diagram. The labels for the subviews in the diagram are the names of the actual subview properties for a cell. See the [JSQMessagesCollectionViewCell](http://cocoadocs.org/docsets/JSQMessagesViewController/6.1.0/Classes/JSQMessagesCollectionViewCell.html) documentation for further details.
 
-<img class="img-thumbnail img-responsive center" src="{{ site.img_url }}/jsqmessages_cell_anatomy.jpg" title="Anatomy of a cell" alt="Anatomy of a cell"/>
-<small class="text-muted center">Anatomy of a cell</small>
+{% include image.html
+    file="jsqmessages_cell_anatomy.jpg"
+    alt="Anatomy of a cell"
+    caption="Anatomy of a cell"
+    source_link=null
+    half_width=false
+%}
 
 There are two basic types of cells, incoming and outgoing. Each cell has three labels for message metadata &mdash; the sender, the date, and delivery status. Each of these labels is optional, and you can hide or show any combination of them. Next, there are two top-level container views, one for the message content and one for the avatar. The `messageBubbleContainerView` holds the `messageBubbleImageView` and either a `textView` or `mediaView`. The `avatarContainerView` holds the `avatarImageView`. Avatars are also optional. Finally, there's a customizable margin (`messageBubbleLeftRightMargin`) on the side of the cell that is opposite the avatar. For outgoing messages, this is the left-side margin. For incoming messages, this is the right-side margin. You can modify this margin using [the property](http://cocoadocs.org/docsets/JSQMessagesViewController/6.1.0/Classes/JSQMessagesCollectionViewFlowLayout.html#//api/name/messageBubbleLeftRightMargin) on the flow layout object. Each of these subviews is customizable via the usual [UIKit](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIKit_Framework/) APIs. Now that we understand the basics about the views, it's time to examine the model behind them.
 
@@ -56,8 +66,13 @@ Finally, I want to mention that the library *does* provide concrete model classe
 
 Earlier I mentioned that the new media message API allows you to display **any arbitrary** `UIView` in a message bubble. This means that your media message can be *anything* and you only need to implement the `JSQMessageMediaData` protocol that defines how to display your specific media. For example, media data could be a [CLLocation](https://developer.apple.com/library/mac/documentation/CoreLocation/Reference/CLLocation_Class/index.html), or a [UIImage](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIImage_Class/index.html), or an [ABRecordRef](https://developer.apple.com/library/ios/documentation/AddressBook/Reference/ABRecordRef_iPhoneOS/index.html#//apple_ref/c/tdef/ABRecordRef). The 6.0 release provides 3 concrete media types: `JSQLocationMediaItem`, `JSQPhotoMediaItem`, and `JSQVideoMediaItem`. I think these are the most common kind of media that users want to send and that developers want to support. They should cover about 80 percent of use cases.
 
-<img class="img-thumbnail img-responsive center" src="{{ site.img_url }}/jsqmessages_media_type.jpg" title="JSQMessage Media Items" alt="JSQMessage Media Items"/>
-<small class="text-muted center">Provided media message types</small>
+{% include image.html
+    file="jsqmessages_media_type.jpg"
+    alt="JSQMessage Media Items"
+    caption="Provided media message types"
+    source_link=null
+    half_width=false
+%}
 
 The media message API was built with extensibility in mind. If the provided media items do not suit your needs, you can extend them to do so. And, with very little effort you can define *your own* **custom** media items.
 

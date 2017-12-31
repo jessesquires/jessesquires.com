@@ -2,6 +2,12 @@
 layout: post
 title: Open source everything
 subtitle: Getting meaningful contributions to move your projects forward
+image:
+    file: success_release.jpg
+    alt: No regressions
+    caption: null
+    source_link: null
+    half_width: false
 ---
 
 I recently had an incredible experience with one of my open source projects that I'd like to share. It's a story of openness and collaboration that I hope other open source project maintainers will find valuable. This post continues the theme of "building successful open source projects" from my [previous article](/swift-documentation/) on documentation.
@@ -14,7 +20,7 @@ A couple of weeks ago, I released the fourth major version of [JSQCoreDataKit](h
 
 The release was seamless and free of regressions. So, how did we do this?
 
-<img class="img-thumbnail img-responsive center" src="{{ site.img_url }}/success_release.jpg" title="No regressions" alt="No regressions"/>
+{% include post_image.html %}
 
 ### The *other* kind of documentation
 
@@ -30,7 +36,13 @@ Collectively, *all* of these things serve as *documentation* &mdash; not just th
 
 With excellent API documentation and test coverage, contributors can fix bugs and add features without worrying about breaking something. Together, the docs and tests provide the complete picture for how your APIs should behave. Continuous integration keeps this in check by regularly running tests for each change, and notifying you of any regressions in test failures or test coverage. Once [travis-ci](https://travis-ci.org/jessesquires/JSQCoreDataKit) and [codecov.io](https://codecov.io/gh/jessesquires/JSQCoreDataKit) were green for each pull request, I was **certain** that it was safe to merge. To me, this is the most liberating feeling in software development.
 
-<img class="img-thumbnail img-responsive center" src="{{ site.img_url }}/tests_pass.jpg" title="All tests pass" alt="All tests pass"/>
+{% include image.html
+    file="tests_pass.jpg"
+    alt="All tests pass"
+    caption=null
+    source_link=null
+    half_width=false
+%}
 
 ### Transparency via issues and milestones
 

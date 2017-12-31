@@ -2,6 +2,12 @@
 layout: post
 title: Swifty view controller presenters
 subtitle: Talk at Realm in San Francisco
+image:
+    file: yodawg-swifty-presenters.jpg
+    alt: Swifty Presenters
+    caption: null
+    source_link: null
+    half_width: false
 ---
 
 A few weeks ago, I spoke at [Realm](https://realm.io) in San Francisco at the Swift Language User Group ([#SLUG](https://www.meetup.com/swift-language/events/227833264/)) meetup. A [video of the talk](https://realm.io/news/slug-jesse-squires-swifty-view-controller-presenters/) is now online over at Realm's blog, where it is synced with my [slides](https://speakerdeck.com/jessesquires/swifty-view-controller-presenters). If you haven’t already seen it, go check it out!
@@ -22,4 +28,4 @@ Overall, I think the talk was really well received. If you have any feedback, I 
 
 >One major shortcoming of UIKit is that view controllers have too many responsibilities. This talk focuses on one — presenting and dismissing view controllers — and how we can re-examine and redefine these common operations with a more Swifty API that reduces boilerplate and increases expressivity.
 
-<img class="img-thumbnail img-responsive center" src="{{ site.img_url }}/yodawg-swifty-presenters.jpg" title="Swifty Presenters" alt="Swifty Presenters"/>
+{% include post_image.html %}
