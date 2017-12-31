@@ -1,13 +1,19 @@
 
-{% assign file = include.file %}
+{% assign local_url = site.img_url | append: "/" | append: include.file %}
+
+{% assign external_url = include.external_url %}
+
 {% assign alt = include.alt %}
+
 {% assign caption = include.caption %}
+
 {% assign source_link = include.source_link %}
+
 {% assign half_width = include.half_width %}
 
 <figure>
     <img class="img-thumbnail img-responsive center {% if half_width %} img-half-width {% endif %}"
-         src="{{ site.img_url }}/{{ file }}"
+         src="{{ external_url | default: local_url }}"
          title="{{ alt }}"
          alt="{{ alt }}"/>
     {% if caption %}
