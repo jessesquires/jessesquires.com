@@ -1,0 +1,18 @@
+
+{% assign file = include.file %}
+{% assign alt = include.alt %}
+{% assign caption = include.caption %}
+{% assign source_link = include.source_link %}
+{% assign half_width = include.half_width %}
+
+<figure>
+    <img class="img-thumbnail img-responsive center {% if half_width %} img-half-width {% endif %}"
+         src="{{ site.img_url }}/{{ file }}"
+         title="{{ alt }}"
+         alt="{{ alt }}"/>
+    {% if caption %}
+        <figcaption>
+            <p><small class="text-muted center">{{ caption }} {% if source_link %} / <a href="{{ source_link }}" target="_blank">Source</a> {% endif %}</small></p>
+        </figcaption>
+    {% endif %}
+</figure>

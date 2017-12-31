@@ -15,7 +15,6 @@ while true; do
     fi
 done
 
-
 while true; do
     read -p "Enter title (alphanumeric with dashes): " TITLE
 
@@ -27,7 +26,6 @@ while true; do
         break
     fi
 done
-
 
 POST_DIR="_drafts"
 
@@ -52,10 +50,33 @@ touch $POST
 echo "---
 layout: post
 title: $TITLE
-subtitle:
+subtitle: null
+image:
+    file: TODO
+    alt: TODO
+    caption: null
+    source_link: null
+    half_width: false
 ---
 
+> TODO: excerpt here
+
 <!--excerpt-->
+
+{% include post_image.html %}
+
+> TODO: content here
+
+<!--image example-->
+
+{% include image.html
+    file=TODO
+    alt=TODO
+    caption=null
+    source_link=null
+    half_width=false
+%}
+
 " > $POST
 
 echo "Successfully created '$POST'"

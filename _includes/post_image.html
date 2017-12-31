@@ -1,0 +1,18 @@
+
+{% if page.image %}
+
+{% assign img_file = page.image.file %}
+{% assign img_alt = page.image.alt %}
+{% assign img_caption = page.image.caption %}
+{% assign img_source = page.image.source_link %}
+{% assign img_width = page.image.half_width %}
+
+{% include image.html
+    file=img_file
+    alt=img_alt
+    caption=img_caption
+    source_link=img_source
+    half_width=img_width
+%}
+
+{% endif %}

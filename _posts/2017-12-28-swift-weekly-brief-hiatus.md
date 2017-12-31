@@ -2,13 +2,19 @@
 layout: post
 title: Ending the Swift Weekly Brief
 subtitle: Taking an indefinite hiatus from writing the newsletter, and looking for a new owner
+image:
+    file: weekly_brief.png
+    alt: Swift Weekly Brief
+    caption: null
+    source_link: null
+    half_width: true
 ---
 
 Next week's issue of [Swift Weekly Brief](https://swiftweekly.github.io) will be its 100th and final issue. I started this newsletter a little over two years ago, covering the [initial open sourcing of Swift](https://swiftweekly.github.io/issue-0/), the 3.0 release, the 4.0 release, and many significant milestones in-between for the language and the community. With few exceptions, there was a new issue every week thanks to the [other amazing writers and contributors](https://swiftweekly.github.io/authors/). The newsletter quickly became an important resource for the Swift community. Because of this, I'm sure many of you will be saddened to hear that the 100th issue will be the last. At least, *Issue #100* will be the last issue **for me, for now** &mdash; but if someone from the community is willing to take over this project, it can continue.
 
 <!--excerpt-->
 
-<img class="img-thumbnail img-responsive img-half-width center" src="{{ site.img_url }}/weekly_brief.png" title="Swift Weekly Brief" alt="Swift Weekly Brief"/>
+{% include post_image.html %}
 
 ### Why now?
 

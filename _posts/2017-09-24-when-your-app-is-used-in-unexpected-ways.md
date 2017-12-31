@@ -2,23 +2,23 @@
 layout: post
 title: When your app is used in unexpected ways
 subtitle: PlanGrid as a digital archaeological tool
+image:
+    file: plangrid-archaeology-1.jpg
+    alt: PlanGrid for Archaeology
+    caption: PlanGrid used for Archaeology
+    source_link: http://popular-archaeology.com/issue/fall-2017/article/adapting-plangrid-to-archaeology
+    half_width: false
 ---
 
 [PlanGrid](https://www.plangrid.com) is a [productivity app](https://itunes.apple.com/us/app/plangrid-construction-collaboration/id498795789) for construction fieldworkers. The easiest way to explain it to software developers is that it's like an IDE, Git, and GitHub or JIRA &mdash; but for construction. Think of all the amazing software tools we have to do our jobs as programmers. The equivalent tools for construction simply did not exist before PlanGrid, and they still have a lot of room to grow.
 
 As software developers, we build software for specific purposes. We anticipate that people will use an app in certain ways. Yet, we often discover that users are behaving differently than we expected. They hack a custom, "unsupported" workflow to workaround an app's unintended limitations. Once we realize this, we have the power to turn these user workarounds into first-class features. However, sometimes we find that our apps are being used in totally different, unimaginable ways.
 
-<!--excerpt-->
-
 At PlanGrid, we recently discovered that the app was [being used as a digital archaeological tool](http://popular-archaeology.com/issue/fall-2017/article/adapting-plangrid-to-archaeology).
 
-<img class="img-thumbnail img-responsive center"
-     src="{{ site.img_url }}/plangrid-archaeology-1.jpg"
-     title="PlanGrid for Archaeology"
-     alt="PlanGrid for Archaeology"/>
-<small class="text-muted center">PlanGrid used for Archaeology
-    (<a href="http://popular-archaeology.com/issue/fall-2017/article/adapting-plangrid-to-archaeology">Source</a>)
-</small>
+<!--excerpt-->
+
+{% include post_image.html %}
 
 > **Adapting PlanGrid to Archaeology**
 >
@@ -38,10 +38,10 @@ At PlanGrid, we recently discovered that the app was [being used as a digital ar
 
 How **awesome** is that! 🤓 I doubt anyone anticipated this use case, and it's remarkable how well-suited the app is as an archaeological tool by default. It's important (and fun) to envision how our apps will be used for the reasons we created them, but sometimes it's even more interesting to see the novel ways in which our users hack our apps to be used for something completely different. That's worth thinking about more often. How could *your* app be used differently?
 
-<img class="img-thumbnail img-responsive center"
-     src="{{ site.img_url }}/plangrid-archaeology-2.jpg"
-     title="PlanGrid for Archaeology"
-     alt="PlanGrid for Archaeology"/>
-<small class="text-muted center">PlanGrid used for Archaeology
-    (<a href="http://popular-archaeology.com/issue/fall-2017/article/adapting-plangrid-to-archaeology">Source</a>)
-</small>
+{% include image.html
+    file="plangrid-archaeology-2.jpg"
+    alt="PlanGrid for Archaeology"
+    caption="PlanGrid used for Archaeology"
+    source_link="http://popular-archaeology.com/issue/fall-2017/article/adapting-plangrid-to-archaeology"
+    half_width=false
+%}
