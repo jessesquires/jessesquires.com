@@ -10,6 +10,7 @@ talk10:
         city: Bangalore 🇮🇳
     links:
         slides: https://speakerdeck.com/jessesquires/adapting-to-change-designing-for-modularity-and-maintainability-in-swift
+        video: https://youtu.be/N0GweXS9Ilw
 
 talk9:
     date: 19 Oct 2017
@@ -23,7 +24,7 @@ talk9:
         city: Singapore 🇸🇬
     links:
         slides: https://speakerdeck.com/jessesquires/exploring-swifts-numeric-types-and-protocols
-        video: https://www.youtube.com/watch?v=cdRn4DJq9eY
+        video: https://youtu.be/cdRn4DJq9eY
 
 talk8:
     date: 06 Jun 2017
