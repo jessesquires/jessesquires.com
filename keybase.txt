@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/jsq
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://jessesquires.com
+  * I am jsq (https://keybase.io/jsq) on keybase.
+  * I have a public key ASCnG6W7g0yrKiGbqO08wRN6AKgzPSbuI6MncjsY6WigLAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120a71ba5bb834cab2a219ba8ed3cc1137a00a8333d26ee23a327723b18e968a02c0a",
+      "host": "keybase.io",
+      "kid": "0120a71ba5bb834cab2a219ba8ed3cc1137a00a8333d26ee23a327723b18e968a02c0a",
+      "uid": "edbcb2e6a0d97005afa67db0d9271619",
+      "username": "jsq"
+    },
+    "merkle_root": {
+      "ctime": 1517849670,
+      "hash": "0e39f92076d06267bc85ef89e509bd8b8054e61cdc6bca50a589b1f9188915c42968e396c572300f67b179ef3ee7ea2fa2f604a8af3e16305d4986da50a2f609",
+      "hash_meta": "3a2bd87d5fdfb408170b79fb7cf4b8bea4836236758d193488cc91b6aa472b79",
+      "seqno": 2036049
+    },
+    "service": {
+      "hostname": "jessesquires.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.39"
+  },
+  "ctime": 1517849688,
+  "expire_in": 504576000,
+  "prev": "1c4f5fcf1d69f7de7ff020f1c3f31dd88cce8e8458e59b071a4a462e3500b1ad",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgpxulu4NMqyohm6jtPMETegCoMz0m7iOjJ3I7GOlooCwKp3BheWxvYWTFA0N7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwYTcxYmE1YmI4MzRjYWIyYTIxOWJhOGVkM2NjMTEzN2EwMGE4MzMzZDI2ZWUyM2EzMjc3MjNiMThlOTY4YTAyYzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwYTcxYmE1YmI4MzRjYWIyYTIxOWJhOGVkM2NjMTEzN2EwMGE4MzMzZDI2ZWUyM2EzMjc3MjNiMThlOTY4YTAyYzBhIiwidWlkIjoiZWRiY2IyZTZhMGQ5NzAwNWFmYTY3ZGIwZDkyNzE2MTkiLCJ1c2VybmFtZSI6ImpzcSJ9LCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTUxNzg0OTY3MCwiaGFzaCI6IjBlMzlmOTIwNzZkMDYyNjdiYzg1ZWY4OWU1MDliZDhiODA1NGU2MWNkYzZiY2E1MGE1ODliMWY5MTg4OTE1YzQyOTY4ZTM5NmM1NzIzMDBmNjdiMTc5ZWYzZWU3ZWEyZmEyZjYwNGE4YWYzZTE2MzA1ZDQ5ODZkYTUwYTJmNjA5IiwiaGFzaF9tZXRhIjoiM2EyYmQ4N2Q1ZmRmYjQwODE3MGI3OWZiN2NmNGI4YmVhNDgzNjIzNjc1OGQxOTM0ODhjYzkxYjZhYTQ3MmI3OSIsInNlcW5vIjoyMDM2MDQ5fSwic2VydmljZSI6eyJob3N0bmFtZSI6Implc3Nlc3F1aXJlcy5jb20iLCJwcm90b2NvbCI6Imh0dHBzOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4zOSJ9LCJjdGltZSI6MTUxNzg0OTY4OCwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsInByZXYiOiIxYzRmNWZjZjFkNjlmN2RlN2ZmMDIwZjFjM2YzMWRkODhjY2U4ZTg0NThlNTliMDcxYTRhNDYyZTM1MDBiMWFkIiwic2Vxbm8iOjcsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RA241+VDdFyywn0uqMOAKtX2ov6+4MJBjyUIMtQ/21umpV+x4dfsntS4NWbU4mvDsynSZ0t8/v0eH3vRCycGgnBqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEINWVOePSer+Wq7IZ1I5IG0gfdG4EGmpv/MLwUapCrukYo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jsq
+
+==================================================================
