@@ -20,5 +20,9 @@
         <figcaption>
             <p><small class="text-muted center">{{ caption }} {% if source_link %} / <a href="{{ source_link }}" target="_blank">Source</a> {% endif %}</small></p>
         </figcaption>
+    {% elsif source_link %}
+        <figcaption>
+            <p><small class="text-muted center"><a href="{{ source_link }}" target="_blank">Source</a></small></p>
+        </figcaption>
     {% endif %}
 </figure>
