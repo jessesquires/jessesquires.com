@@ -9,7 +9,7 @@ image:
     half_width: false
 ---
 
-When you [file a radar](https://developer.apple.com/bug-reporting/) for a bug on one of Apple's platforms, you should always attach a sysdiagnose. A sysdiagnose provides a lot of helpful information for the person who is trying to understand how the bug happened. Amongst other things, it contains logs from various parts of the OS, and all recent crash logs. Without it, the person on the other end of your report inside Apple may not be of much help. On macOS running sysdiagnose is somewhat common, but what about iOS?
+When you [file a radar](https://developer.apple.com/bug-reporting/) for a bug on one of Apple's platforms, you should (usually) always attach a sysdiagnose. A sysdiagnose provides a lot of helpful information for the person who is trying to understand how the bug happened. Amongst other things, it contains logs from various parts of the OS, and all recent crash logs. Without it, the person on the other end of your report inside Apple may not be of much help. On macOS running sysdiagnose is somewhat common, but what about iOS?
 
 <!--excerpt-->
 
@@ -41,4 +41,4 @@ Some macOS applications have their own sysdiagnose. For Xcode, you can run `sudo
 
 ### Writing better bug reports
 
-Peter Steinberger already wrote a great guide to [writing good bug reports](https://pspdfkit.com/blog/2016/writing-good-bug-reports/). In addition to all of his excellent advice, often attaching a sysdiagnose can be a huge help. It's easy to do and available on all platforms.
+Peter Steinberger already wrote a great guide to [writing good bug reports](https://pspdfkit.com/blog/2016/writing-good-bug-reports/). In addition to all of his excellent advice, often attaching a sysdiagnose can be a huge help &mdash; even if you have reliable steps to reproduce or a specific crash report. A sysdiagnose contains additional helpful information. It's easy to do and available on all platforms.
