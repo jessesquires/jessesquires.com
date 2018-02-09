@@ -2,6 +2,7 @@
 layout: post
 title: How to run sysdiagnose on iOS
 subtitle: And on all the Apple things
+date-updated: 09 Feb 2018
 image:
     file: apple-bug-report.png
     alt: 'Apple Bug Report'
@@ -12,6 +13,13 @@ image:
 When you [file a radar](https://developer.apple.com/bug-reporting/) for a bug on one of Apple's platforms, you should (usually) always attach a sysdiagnose. A sysdiagnose provides a lot of helpful information for the person who is trying to understand how the bug happened. Amongst other things, it contains logs from various parts of the OS, and all recent crash logs. Without it, the person on the other end of your report inside Apple may not be of much help. On macOS running sysdiagnose is somewhat common, but what about iOS?
 
 <!--excerpt-->
+
+<p class="alert alert-danger">
+<b>Update</b> <span class="pull-right"><i>{{ page.date-updated }}</i></span>
+<br />
+Apparently the direct links to the instructions below are not working, even if you are logged in to your Apple developer account.
+You can find all sysdiagnose instructions on the <a href="https://developer.apple.com/bug-reporting/profiles-and-logs/?name=sysdiagnose" class="alert-link">official Bug Reporting page</a>.
+</p>
 
 {% include post_image.html %}
 
