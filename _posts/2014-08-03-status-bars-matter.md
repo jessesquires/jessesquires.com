@@ -15,6 +15,10 @@ You have spent countless hours, days, months, or maybe even [years](http://www.p
 
 <!--excerpt-->
 
+{% include updated_notice.html
+    update_message='<a href="http://shinydevelopment.com" class="alert-link">Shiny Development</a> has removed Status Magic from the App Store. Find out why on <a href="http://shinydevelopment.com/blog/status-magic-and-iphone6-screen-sizes/" class="alert-link">their blog</a> and how you can still get perfect status bars with OS X Yosemite and iOS 8.'
+%}
+
 But even with all of Dan Counsell's [excellent advice](http://dancounsell.com/articles) on how to promote your app and refine your App Store presence, I continue to see iOS developers make one glaring mistake in their screenshots. This common flaw is even overlooked in Dan's article on [*Designing Great App Store Screenshots*](http://dancounsell.com/articles/designing-great-app-store-screenshots), which should be required reading for all iOS developers. But what does it fail to mention? **The status bar.**
 
 {% include post_image.html %}
@@ -63,10 +67,3 @@ The only aspect of the status bar that you should customize, aside from the colo
 
 Don't let your app be a victim of status bar neglect.
 This is about polishing your app and its presentation in the App Store to the highest degree. **Status bars matter**, and every detail counts.
-
-<div class="alert alert-danger">
-	<strong>Update</strong> <span class="pull-right"><em>{{ page.date-updated }}</em></span>
-	<p>
-		<a href="http://shinydevelopment.com" class="alert-link" target="_blank">Shiny Development</a> has removed Status Magic from the App Store. Find out why on <a href="http://shinydevelopment.com/blog/status-magic-and-iphone6-screen-sizes/" class="alert-link" target="_blank">their blog</a> and how you can still get perfect status bars with OS X Yosemite and iOS 8.
-	</p>
-</div>

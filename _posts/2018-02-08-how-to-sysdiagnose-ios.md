@@ -14,12 +14,9 @@ When you [file a radar](https://developer.apple.com/bug-reporting/) for a bug on
 
 <!--excerpt-->
 
-<p class="alert alert-danger">
-<b>Update</b> <span class="pull-right"><i>{{ page.date-updated }}</i></span>
-<br />
-Apparently the direct links to the instructions below are not working, even if you are logged in to your Apple developer account.
-You can find all sysdiagnose instructions on the <a href="https://developer.apple.com/bug-reporting/profiles-and-logs/?name=sysdiagnose" class="alert-link">official Bug Reporting page</a>.
-</p>
+{% include updated_notice.html
+    update_message='Apparently the direct links to the instructions below are not working, even if you are logged in to your Apple developer account. You can find all sysdiagnose instructions on the <a href="https://developer.apple.com/bug-reporting/profiles-and-logs/?name=sysdiagnose" class="alert-link">official Bug Reporting page</a>.'
+%}
 
 {% include post_image.html %}
 

@@ -1,0 +1,11 @@
+
+{% if page.date-updated %}
+
+<div class="alert alert-warning">
+    <h4>Updated <small class="text-warning"><i>{{ page.date-updated }}</i></small></h4>
+    <p>
+        {{ include.update_message }}
+    </p>
+</div>
+
+{% endif %}

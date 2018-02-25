@@ -9,6 +9,10 @@ Mike Ash has a great [Friday Q&A](https://www.mikeash.com/pyblog/friday-qa-2011-
 
 <!--excerpt-->
 
+{% include updated_notice.html
+    update_message='Inspired by this post, <a href="https://twitter.com/leemorgan" class="alert-link">Lee Morgan</a> has written a build script that generates a Swift source file based on Xcode assets. Checkout the repo <a href="https://github.com/leemorgan/AutoAssets" class="alert-link">AutoAssets</a> on GitHub. Thanks Lee!'
+%}
+
 ### Icon image assets
 
 We are all familiar with handling assets, particularly icons, using the `UIImage(named:)` API. And since iOS 7, many icons have two distinct visual states &mdash; *lined* and *filled*, or *normal* and *selected*. Thus, we find ourselves with two versions of each icon, for example `UIImage(named:"music")` and `UIImage(named:"music-selected")`.
@@ -82,9 +86,3 @@ What is most interesting here is realizing how **extensions can limit our design
 Let me know what you think! You can find me [on Twitter](http://twitter.com/jesse_squires).
 
 <span class="text-muted">**Note:** There have been some attempts to automate something similar to what I have described, like [swiftrsrc](https://github.com/indragiek/swiftrsrc) and [Natalie](https://github.com/krzyzanowskim/Natalie), but not exactly. Some of the deeper nesting might be difficult to automate, but I have yet to try this.</span>
-
-<p class="alert alert-danger">
-   <strong>Update</strong> <span class="pull-right"><em>{{ page.date-updated }}</em></span>
-   <br />
-   Inspired by this post, <a href="https://twitter.com/leemorgan" class="alert-link" target="_blank">Lee Morgan</a> has written a build script that generates a Swift source file based on Xcode assets. Checkout the repo <a href="https://github.com/leemorgan/AutoAssets" class="alert-link" target="_blank">AutoAssets</a> on GitHub. Thanks Lee!
-</p>

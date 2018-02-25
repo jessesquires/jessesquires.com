@@ -15,11 +15,9 @@ Next week's issue of [Swift Weekly Brief](https://swiftweekly.github.io) will be
 
 <!--excerpt-->
 
-<p class="alert alert-danger">
-<b>Update</b> <span class="pull-right"><i>{{ page.date-updated }}</i></span>
-<br />
-The <a href="https://swiftweekly.github.io/issue-101/" class="alert-link">newsletter has resumed</a> under the leadership of <a href="https://twitter.com/BasThomas" class="alert-link">Bas Broek</a> and other contributors. They will now publish new issues on a bi-weekly basis. You can subscribe via RSS/Atom, JSON feed, AppleNews, or Twitter.
-</p>
+{% include updated_notice.html
+    update_message='The <a href="https://swiftweekly.github.io/issue-101/" class="alert-link">newsletter has resumed</a> under the leadership of <a href="https://twitter.com/BasThomas" class="alert-link">Bas Broek</a> and other contributors. They will now publish new issues on a bi-weekly basis. You can subscribe via RSS/Atom, JSON feed, AppleNews, or Twitter.'
+%}
 
 {% include post_image.html %}
 
