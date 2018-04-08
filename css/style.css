@@ -6,6 +6,7 @@ body {
 }
 
 body p {
+   font-size: 14px;
    /*font-size: 1.5rem;*/
    /*line-height: 2.5rem;*/
    padding: 0.5rem 0rem 0.5rem 0rem;
@@ -29,7 +30,7 @@ h1 > code, h2 > code, h3 > code {
    text-align: center;
 }
 
-.btn-default {
+.btn-light {
    color: #444444;
 }
 
@@ -123,10 +124,7 @@ header h2 {
 }
 
 .menu {
-   margin-top: 1rem;
-}
-
-.menu .btn {
+   margin-top: 0.5rem;
    margin-bottom: 0.5rem;
 }
 
@@ -174,7 +172,7 @@ header h2 {
    margin-top: 0rem;
 }
 
-.pagination {
+/*.pagination {
    display: block;
    margin-bottom: 0rem;
 }
@@ -182,7 +180,7 @@ header h2 {
 .pager {
    margin-top: 0rem;
    padding-top: 0rem;
-}
+}*/
 
 /* PAGES */
 

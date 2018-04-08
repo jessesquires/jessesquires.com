@@ -12,17 +12,17 @@ Feel free to [contact me](/contact) about speaking at your event!
 
 ### Upcoming talks
 
-<div class="table-responsive" markdown="1">
+<div markdown="1">
 | <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp; Date | <i class="fa fa-video-camera" aria-hidden="true"></i>&nbsp; Event |
 |:------------|:-----------------------------|
 | TBA         | TBA                          |
-{: class="table table-striped table-bordered"}
+{: class="table table-responsive table-striped table-bordered"}
 </div>
 
 ### Past talks
 
-<div class="table-responsive">
-    <table class="table table-striped table-bordered">
+<div>
+    <table class="table table-responsive table-striped table-bordered">
         <thead>
             <tr>
                 <th><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp; Date</th>

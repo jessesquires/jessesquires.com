@@ -12,7 +12,7 @@
 {% assign half_width = include.half_width %}
 
 <figure>
-    <img class="img-thumbnail img-responsive center {% if half_width %} img-half-width {% endif %}"
+    <img class="img-thumbnail img-fluid center {% if half_width %} img-half-width {% endif %}"
          src="{{ external_url | default: local_url }}"
          title="{{ alt }}"
          alt="{{ alt }}"/>
