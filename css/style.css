@@ -6,8 +6,8 @@ body {
 }
 
 body p {
-   font-size: 1.5rem;
-   line-height: 2.5rem;
+   /*font-size: 1.5rem;*/
+   /*line-height: 2.5rem;*/
    padding: 0.5rem 0rem 0.5rem 0rem;
 }
 
@@ -152,13 +152,13 @@ header h2 {
 }
 
 .post-title {
-   font-size: 42px;
+   /*font-size: 42px;*/
    font-weight: lighter;
 }
 
 .post-subtitle {
    color: #444444;
-   font-size: 26px;
+   font-size: 22px;
    font-weight: normal;
    margin-top: 0rem;
 }
@@ -169,7 +169,7 @@ header h2 {
 }
 
 .post-date-subtitle {
-   font-size: 21px;
+   font-size: 18px;
    font-weight: normal;
    margin-top: 0rem;
 }

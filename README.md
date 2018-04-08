@@ -40,7 +40,7 @@ $ bundle update
 #### Updating Yarn dependencies
 
 ```bash
-$ yarn update
+$ yarn upgrade
 ```
 
 ### Other
