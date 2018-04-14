@@ -83,8 +83,18 @@ a.post-continue {
 }
 
 footer a, footer a:visited,
-.contact a, .contact a:visited {
+.contact a, .contact a:visited,
+.page-link {
   color: #444444;
+}
+
+.page-link:link,
+.page-link:visited {
+   border: 1px solid #dee2e6;
+}
+
+.page-link:hover {
+   color: #666666;
 }
 
 .dropdown-menu a {
@@ -147,7 +157,6 @@ header h2 {
 }
 
 .post-title {
-   /*font-size: 42px;*/
    font-weight: lighter;
 }
 

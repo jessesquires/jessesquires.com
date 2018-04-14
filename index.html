@@ -30,7 +30,7 @@ layout: default
 <nav aria-label="Navigation">
     <ul class="pagination justify-content-center">
         <li class="page-item {% if paginator.next_page == nil %}disabled{% endif %}">
-            <a href="{{ paginator.next_page_path }}" class="page-link">
+            <a href="{{ paginator.next_page_path }}" class="page-link" title="Older posts">
                 <i class="fa fa-chevron-left"></i> Older
             </a>
         </li>
@@ -41,7 +41,7 @@ layout: default
             <a href="/archive" class="page-link" title="Blog Archive"><i class="fa fa-list"></i></a>
         </li>
         <li class="page-item {% if paginator.previous_page == nil %}disabled{% endif %}">
-            <a href="{% if paginator.page != 2 %} {{ paginator.previous_page_path }} {% else %} / {% endif %}" class="page-link">
+            <a href="{% if paginator.page != 2 %} {{ paginator.previous_page_path }} {% else %} / {% endif %}" class="page-link" title="Newer posts">
                 Newer <i class="fa fa-chevron-right"></i>
             </a>
         </li>
