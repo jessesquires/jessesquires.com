@@ -7,6 +7,7 @@ body {
 
 body p {
     font-size: 14px;
+    line-height: 24px;
     padding: 0.25rem 0rem 0.25rem 0rem;
 }
 
@@ -48,6 +49,10 @@ code p {
 
 pre code {
     font-size: 13px;
+}
+
+.badge p {
+    line-height: 12px;
 }
 
 /* SEARCH */
