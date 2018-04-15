@@ -245,7 +245,14 @@ sup a:link {
 }
 
 blockquote {
-   color: #555;
+   color: #444;
+   padding: 0rem 1rem 0rem 1.5rem;
+   border-left: 3px solid #666;
+}
+
+blockquote p {
+   font-size: 1.1rem;
+   line-height: 1.5rem;
 }
 
 .standalone {
