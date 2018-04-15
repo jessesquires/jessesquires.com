@@ -4,7 +4,9 @@ layout: default
 
 <div class="post-list">
     {% for post in paginator.posts %}
-        {% include post_entry.html post_entry=post include_excerpt=true %}
+        <article class="post">
+            {% include post_entry.html post_entry=post include_excerpt=true %}
+        </article>
     {% endfor %}
 </div> <!-- post-list -->
 
@@ -28,4 +30,4 @@ layout: default
             </a>
         </li>
     </ul>
-</nav>
+</nav> <!-- Navigation -->

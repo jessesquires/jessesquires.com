@@ -191,10 +191,18 @@ header h2 {
    margin-top: 0rem;
 }
 
-.post-updated p {
+.post-date-updated {
+   margin-bottom: 0.5rem;
+   display: inline-block;
+}
+
+.post-date-updated p {
    font-size: 11px;
    margin: 0rem;
-   display: inline-block;
+}
+
+.post-excerpt p {
+   margin-bottom: 0rem;
 }
 
 /* PAGES */

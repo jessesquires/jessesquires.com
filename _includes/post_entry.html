@@ -1,24 +1,24 @@
 {% assign post_entry = include.post_entry %}
 
-<article class="post">
-    <h1 class="post-title"><a href="{{ post_entry.url }}">{{ post_entry.title }}</a></h1>
+<h1 class="post-title"><a href="{{ post_entry.url }}">{{ post_entry.title }}</a></h1>
 
-    {% if post_entry.subtitle %}
-        <h2 class="post-subtitle">{{ post_entry.subtitle }} <small class="post-date">{{ post_entry.date | date_to_string }}</small></h2>
-    {% else %}
-        <h2 class="post-date-subtitle post-date">{{ post_entry.date | date_to_string }}</h2>
-    {% endif %}
+{% if post_entry.subtitle %}
+    <h2 class="post-subtitle">{{ post_entry.subtitle }} <small class="post-date">{{ post_entry.date | date_to_string }}</small></h2>
+{% else %}
+    <h2 class="post-date-subtitle post-date">{{ post_entry.date | date_to_string }}</h2>
+{% endif %}
 
-    {% if post_entry.date-updated %}
-        <span class="badge badge-dark post-updated">
-            <p>Updated: {{ post_entry.date-updated }}</p>
-        </span>
-    {% endif %}
-
-    {% if include.include_excerpt %}
-    <div class="post-excerpt">
-        {{ post_entry.excerpt }}
-        <a href="{{ post_entry.url }}" class="post-continue">Continue&hellip; <i class="fa fa-chevron-right"></i></a>
+{% if post_entry.date-updated %}
+    <div class="post-date-updated">
+    <span class="badge badge-dark">
+        <p>Updated: {{ post_entry.date-updated }}</p>
+    </span>
     </div>
-    {% endif %}
-</article>
+{% endif %}
+
+{% if include.include_excerpt %}
+<div class="post-excerpt">
+    {{ post_entry.excerpt }}
+    <a href="{{ post_entry.url }}" class="post-continue">Continue&hellip; <i class="fa fa-chevron-right"></i></a>
+</div>
+{% endif %}
