@@ -203,6 +203,10 @@ header h2 {
    font-size: 18px;
 }
 
+.table-date-column {
+   width: 100px;
+}
+
 a.btn, a:visited.btn, a:link.btn {
    color: #666666;
    border: 1px solid #ccc;

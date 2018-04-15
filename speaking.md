@@ -12,24 +12,21 @@ Feel free to [contact me](/contact) about speaking at your event!
 
 ### Upcoming talks
 
-<div markdown="1">
-| <i class="fa fa-calendar" aria-hidden="true"></i>&nbsp; Date | <i class="fa fa-video-camera" aria-hidden="true"></i>&nbsp; Event |
-|:------------|:-----------------------------|
-| TBA         | TBA                          |
-{: class="table table-responsive table-striped table-bordered"}
-</div>
+*Upcoming talks will be listed here as they are announced.*
+
+<br/>
 
 ### Past talks
 
-<div>
-    <table class="table table-responsive table-striped table-bordered">
+<div class="table-responsive">
+    <table class="table table-striped">
         <thead>
             <tr>
-                <th><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp; Date</th>
-                <th><i class="fa fa-quote-left" aria-hidden="true"></i>&nbsp; Title</th>
-                <th><i class="fa fa-video-camera" aria-hidden="true"></i>&nbsp; Event</th>
-                <th><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; Location</th>
-                <th><i class="fa fa-file-text" aria-hidden="true"></i>&nbsp; Links</th>
+                <th class="table-date-column"><i class="fa fa-calendar fa-lg" aria-hidden="true"></i></th>
+                <th><i class="fa fa-quote-left fa-lg" aria-hidden="true"></i></th>
+                <th><i class="fa fa-video-camera fa-lg" aria-hidden="true"></i></th>
+                <th><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i></th>
+                <th><i class="fa fa-file-text fa-lg" aria-hidden="true"></i></th>
             </tr>
         </thead>
         <tbody>
@@ -39,15 +36,16 @@ Feel free to [contact me](/contact) about speaking at your event!
         {% assign location = talk.location %}
         {% assign links = talk.links %}
             <tr>
-                <td>{{ talk.date }}</td>
+                <td class="table-date-column">{{ talk.date }}</td>
                 <td><i>{{ talk.title }}</i></td>
                 <td><a href="{{ event.link }}">{{ event.name }}</a></td>
                 <td><a href="{{ location.link }}">{{ location.name }}</a>, {{ location.city }}</td>
                 <td>
-                    {% if links.slides %}<a href="{{ links.slides }}">slides</a>{% endif %}
-                    {% if links.slides and links.video %}&bull;{% endif %}
-                    {% if links.video %}<a href="{{ links.video }}">video</a>{% endif %}
-                    {% if links.code %}&bull; <a href="{{ links.code }}">code</a>{% endif %}
+                    <ul class="list-unstyled">
+                    {% if links.slides %}<li><a href="{{ links.slides }}">slides</a></li>{% endif %}
+                    {% if links.video %}<li><a href="{{ links.video }}">video</a></li>{% endif %}
+                    {% if links.code %}<li><a href="{{ links.code }}">code</a></li>{% endif %}
+                    </ul>
                 </td>
             </tr>
         {% endfor %}
