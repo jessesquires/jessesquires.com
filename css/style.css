@@ -36,11 +36,6 @@ a > code {
   border-bottom: 1px dotted #c7254e;
 }
 
-.contact ul li {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-
 .img-half-width {
    width: 50%;
 }
@@ -90,7 +85,6 @@ a.post-continue {
 }
 
 footer a, footer a:visited,
-.contact a, .contact a:visited,
 .page-link {
   color: #444444;
 }
@@ -114,16 +108,7 @@ footer a, footer a:visited,
    border-width: 0px;
 }
 
-.contact ul li a {
-  border-width: 0px;
-}
-
-.contact ul li a:hover {
-   color: #666666;
-   text-decoration: none;
-}
-
-/* HEADER / FOOTER */
+/* HEADER */
 
 header, header code {
    text-align: center;
@@ -144,22 +129,21 @@ header h2 {
    display: inline-block;
 }
 
-.menu {
-   margin-top: 0.5rem;
-   margin-bottom: 0.5rem;
+/* FOOTER */
+
+.contact-follow ul li {
+   margin-left: 0.25rem;
+   margin-right: 0.25rem;
 }
 
-.contact ul {
-   -webkit-padding-start: 0px !important;
-   -webkit-margin-before: 0px !important;
-   -webkit-margin-after: 0px !important;
-   -moz-padding-start: 0px !important;
-   -moz-padding-before: 0px !important;
-   -moz-padding-after: 0px !important;
+.contact-follow ul li a {
+   color: #444444;
+   border-width: 0px;
 }
 
-.contact ul li {
-   display: inline-block;
+.contact-follow ul li a:hover {
+   color: #666666;
+   text-decoration: none;
 }
 
 /* POST LIST */
