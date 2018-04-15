@@ -27,6 +27,6 @@ Do you need to pay me for contracting, consulting, or freelance work? Or, do you
    <div class="col"></div>
 </div> <!-- row -->
 
-<p class="text-center text-muted"><small>
+<p class="text-center text-muted">
 If you run into any issues, or if you have any questions, please <a href="/contact">contact me</a>.
-</small></p>
+</p>
