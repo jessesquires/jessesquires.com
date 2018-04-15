@@ -24,8 +24,22 @@ h1 > code, h2 > code, h3 > code {
    color: #444444;
 }
 
-a > code {
-  border-bottom: 1px dotted #c7254e;
+a:link > code,
+a:visited > code,
+a:hover > code {
+    color: #c7254e;
+    border-bottom: 1px dotted #c7254e;
+    border-top: 0px none;
+    border-left: 0px none;
+    border-right: 0px none;
+    border-radius: 0px;
+}
+
+code {
+    color: #c7254e;
+    background-color: #f8f9fa;
+    border-radius: 3px;
+    padding: 3px;
 }
 
 /* SEARCH */
