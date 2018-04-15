@@ -36,10 +36,15 @@ a:hover > code {
 }
 
 code {
+    font-size: 13px;
     color: #c7254e;
     background-color: #f8f9fa;
     border-radius: 3px;
     padding: 3px;
+}
+
+pre code {
+    font-size: 13px;
 }
 
 /* SEARCH */
