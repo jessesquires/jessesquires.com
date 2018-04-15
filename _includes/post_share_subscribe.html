@@ -7,66 +7,76 @@
 {% assign edit_url = base_edit_url | append: file_name %}
 
 <div class="post-share-subscribe">
-   <div class="row">
-      <div class="col-md-6 col-sm-6 col-xs-12 center">
-         <div class="btn-group btn-group-justified" role="group">
+    <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+            <div class="btn-group" role="group">
 
             <div class="btn-group dropup" role="group">
-               <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Share <i class="fa fa-share-alt" aria-hidden="true"></i>
-               </button>
-               <ul class="dropdown-menu">
-                  <li>
-                     <a href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}%20{{ site.url }}{{ page.url }}%20via%20@{{ site.author.twitter }}" title="Tweet" target="_blank">
-                     Twitter &nbsp;<i class="fa fa-twitter" aria-hidden="true"></i>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="https://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" title="Post" target="_blank">
-                     Facebook &nbsp;<i class="fa fa-facebook" aria-hidden="true"></i>
-                     </a>
-                  </li>
-                  <li>
-                     <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" title="Share" target="_blank">
-                     Google &nbsp;<i class="fa fa-google-plus" aria-hidden="true"></i>
-                     </a>
-                  </li>
-               </ul>
-            </div> <!-- share dropup -->
+                <button class="btn btn-sm btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Share <i class="fa fa-share-alt" aria-hidden="true"></i>
+                </button>
+                <div class="dropdown-menu">
+                    <h6 class="dropdown-header">Share this post</h6>
+                    <a class="dropdown-item btn-sm" href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}%20{{ site.url }}{{ page.url }}%20via%20@{{ site.author.twitter }}" title="Tweet" target="_blank">
+                        Twitter &nbsp;<i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a class="dropdown-item btn-sm" href="https://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" title="Post" target="_blank">
+                        Facebook &nbsp;<i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a class="dropdown-item btn-sm" href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" title="Share" target="_blank">
+                        Google &nbsp;<i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </a>
+                </div>  <!-- dropdown-menu -->
+            </div> <!-- btn-group dropup -->
 
             <div class="btn-group dropup" role="group">
-               <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Subscribe <i class="fa fa-rss" aria-hidden="true"></i>
-               </button>
-               <ul class="dropdown-menu">
-                  <li><a href="/feed.xml" title="Subscribe via RSS/Atom">RSS/Atom &nbsp;<i class="fa fa-rss" aria-hidden="true"></i></a></li>
-                  <li><a href="/feed.json" title="Subscribe via JSON Feed">JSON Feed &nbsp;<i class="fa fa-code" aria-hidden="true"></i></a></li>
-                  <li><a href="{{ site.social_links.applenews }}" title="Add to Apple News">Apple News &nbsp;<i class="fa fa-apple" aria-hidden="true"></i></a></li>
-               </ul>
-            </div> <!-- subscribe drop-up -->
+                <button class="btn btn-sm btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Subscribe <i class="fa fa-rss" aria-hidden="true"></i>
+                </button>
+                <div class="dropdown-menu">
+                    <h6 class="dropdown-header">Subscribe</h6>
+                    <a class="dropdown-item btn-sm" href="/feed.xml" title="Subscribe via RSS/Atom">
+                        RSS/Atom &nbsp;<i class="fa fa-rss" aria-hidden="true"></i>
+                    </a>
+                    <a class="dropdown-item btn-sm" href="/feed.json" title="Subscribe via JSON Feed">
+                        JSON Feed &nbsp;<i class="fa fa-code" aria-hidden="true"></i>
+                    </a>
+                    <a class="dropdown-item btn-sm" href="{{ site.social_links.applenews }}" title="Add to Apple News">
+                        Apple News &nbsp;<i class="fa fa-apple" aria-hidden="true"></i>
+                    </a>
+                </div>  <!-- dropdown-menu -->
+            </div> <!-- btn-group dropup -->
 
             <div class="btn-group dropup" role="group">
-               <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Support <i class="fa fa-star" aria-hidden="true"></i>
-               </button>
-               <ul class="dropdown-menu">
-                  <li><a href="{{ site.social_links.paypal }}" title="Donate via PayPal" target="_blank">Donate via PayPal &nbsp;<i class="fa fa-paypal" aria-hidden="true"></i></a></li>
-                  <li><a href="{{ site.social_links.square }}" title="Donate via Square Cash" target="_blank">Donate via Square &nbsp;<i class="fa fa-dollar" aria-hidden="true"></i></a></li>
-               </ul>
-            </div> <!-- donate drop-up -->
+                <button class="btn btn-sm btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Support <i class="fa fa-star" aria-hidden="true"></i>
+                </button>
+                <div class="dropdown-menu">
+                    <h6 class="dropdown-header">Donate to support</h6>
+                    <a class="dropdown-item btn-sm" href="{{ site.social_links.paypal }}" title="Donate via PayPal" target="_blank">
+                        PayPal &nbsp;<i class="fa fa-paypal" aria-hidden="true"></i>
+                    </a>
+                    <a class="dropdown-item btn-sm" href="{{ site.social_links.square }}" title="Donate via Square Cash" target="_blank">
+                        Square &nbsp;<i class="fa fa-dollar" aria-hidden="true"></i>
+                    </a>
+                </div>  <!-- dropdown-menu -->
+            </div> <!-- btn-group dropup -->
 
-         </div> <!-- btn-group -->
-      </div> <!-- col -->
-   </div> <!-- row -->
+            </div> <!-- btn-group -->
+        </div> <!-- col -->
+    </div> <!-- row -->
 
-   <div class="row feedback">
-      <div class="col-md-6 col-sm-6 col-xs-12 center">
-         <p class="text-muted text-center"><small><b>Questions? Feedback? Corrections?</b></small></p>
-         <p class="text-muted text-center">
-         <small>Open an <a href="{{ open_issue_url }}" target="_blank"><b>issue</b></a>,
-         submit a <a href="{{ site.links.pull }}" target="_blank"><b>pull request</b></a>,
-         or <a href="{{ edit_url }}" target="_blank"><b>edit</b></a> this post.</small></p>
-      </div> <!-- col -->
-   </div> <!-- row -->
+    <div class="row">
+        <div class="col">
+            <p class="text-muted text-center"><small><b>Questions? Feedback? Corrections?</b></small></p>
+            <p class="text-muted text-center">
+                <small>
+                    Open an <a href="{{ open_issue_url }}" target="_blank"><b>issue</b></a>,
+                    submit a <a href="{{ site.links.pull }}" target="_blank"><b>pull request</b></a>,
+                    or <a href="{{ edit_url }}" target="_blank"><b>edit</b></a> this post.
+                </small>
+            </p>
+        </div> <!-- col -->
+    </div> <!-- row -->
 
 </div> <!-- post-share-subscribe -->

@@ -1,31 +1,23 @@
 /* COMMON ELEMENTS */
 
 body {
-   background-color: #ffffff;
-   padding: 2rem 0rem 2rem 0rem;
+    background-color: #ffffff;
+    padding: 2rem 0rem 2rem 0rem;
 }
 
 body p {
-   font-size: 14px;
-   padding: 0.25rem 0rem 0.25rem 0rem;
+    font-size: 14px;
+    padding: 0.25rem 0rem 0.25rem 0rem;
 }
 
 hr {
-   border-color: #d7d7d7;
-   width: 50%;
+    border-color: #d7d7d7;
+    width: 50%;
 }
 
 h1 > code, h2 > code, h3 > code {
-   background-color: #ffffff;
-   font-weight: bolder;
-}
-
-.center {
-   float: none;
-   margin-left: auto;
-   margin-right: auto;
-   display: block;
-   text-align: center;
+    background-color: #ffffff;
+    font-weight: bolder;
 }
 
 .btn-light {
@@ -86,26 +78,24 @@ a.post-continue {
 
 footer a, footer a:visited,
 .page-link {
-  color: #444444;
+    color: #444444;
+    border-color: #444444;
 }
 
 .page-link:link,
 .page-link:visited {
-   border: 1px solid #dee2e6;
+    border: 1px solid #dee2e6;
 }
 
-.page-link:hover {
-   color: #666666;
+.page-link:hover,
+footer a:hover {
+    color: #666666;
 }
 
 .alert-link:link,
 .alert-link:visited,
 .alert-link:hover {
-   border-color: #533f03;
-}
-
-.dropdown-menu a {
-   border-width: 0px;
+    border-color: #533f03;
 }
 
 /* HEADER */
@@ -204,20 +194,16 @@ a.btn, a:visited.btn, a:link.btn {
    border: 1px solid #ccc;
 }
 
-.post-share-subscribe {
-   margin: 5rem 0.5rem 0.5rem 0.5rem;
-}
-
-.dropdown-menu li {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
 .footnotes ul {
    list-style-type: none;
    -webkit-padding-start: 0px !important;
    -webkit-margin-before: 0px !important;
    -webkit-margin-after: 0px !important;
+}
+
+.post-share-subscribe {
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .post-share-subscribe a,
@@ -229,10 +215,6 @@ sup a:link {
 .post-share-subscribe p {
    margin: 0px;
    padding: 0px;
-}
-
-.feedback {
-  margin: 1rem;
 }
 
 blockquote {
