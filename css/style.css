@@ -104,6 +104,12 @@ footer a, footer a:visited,
    color: #666666;
 }
 
+.alert-link:link,
+.alert-link:visited,
+.alert-link:hover {
+   border-color: #533f03;
+}
+
 .dropdown-menu a {
    border-width: 0px;
 }
@@ -192,6 +198,10 @@ header h2 {
 }
 
 /* PAGES */
+
+.alert h3 {
+   font-size: 18px;
+}
 
 a.btn, a:visited.btn, a:link.btn {
    color: #666666;
