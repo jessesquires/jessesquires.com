@@ -20,9 +20,7 @@ layout: default
         <h2 class="post-date-subtitle post-date">{{ page.date | date_to_string }}</h2>
     {% endif %}
 
-    {% if page.date-updated %}
-        <small class="text-warning bg-warning"><strong>Updated: {{ page.date-updated }}</strong></small>
-    {% endif %}
+    {% include post_updated.html %}
 
     <div class="post-content">
         {{ content }}

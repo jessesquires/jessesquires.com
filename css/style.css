@@ -185,6 +185,12 @@ header h2 {
    margin-top: 0rem;
 }
 
+.post-updated p {
+   font-size: 11px;
+   margin: 0rem;
+   display: inline-block;
+}
+
 /* PAGES */
 
 a.btn, a:visited.btn, a:link.btn {

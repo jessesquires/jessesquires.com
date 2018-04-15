@@ -1,0 +1,11 @@
+{% if post.date-updated %}
+    <span class="badge badge-dark post-updated">
+        <p>Updated: {{ post.date-updated }}</p>
+    </span>
+{% endif %}
+
+{% if page.date-updated %}
+    <span class="badge badge-light post-updated">
+        <p>Updated: {{ page.date-updated }}</p>
+    </span>
+{% endif %}
