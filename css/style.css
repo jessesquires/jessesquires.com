@@ -55,6 +55,10 @@ pre code {
     line-height: 12px;
 }
 
+li {
+    font-size: 14px;
+}
+
 /* SEARCH */
 
 .search {
