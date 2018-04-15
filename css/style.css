@@ -45,6 +45,13 @@ a > code {
    width: 50%;
 }
 
+/* SEARCH */
+
+.search {
+   margin-top: 1.5rem;
+   margin-bottom: 1.5rem;
+}
+
 /* LINKS */
 
 a {
