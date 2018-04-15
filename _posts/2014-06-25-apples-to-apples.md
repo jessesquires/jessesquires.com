@@ -26,7 +26,7 @@ When Craig Federighi arrived at his presentation slide about Objective-C during 
 
 <blockquote>
 	<p>And then Federighi said, let there be Swift; and there was Swift.</p>
-	<footer>WWDC 2014, 1:44:48</footer>
+	<footer class="blockquote-footer">WWDC 2014, 1:44:48</footer>
 </blockquote>
 
 The third floor of Moscone West erupted with applause as if we had traveled back in time to Steve Jobs' [2007 announcement](https://www.youtube.com/watch?v=EHWRkuDlNOE) of _**the**_ iPhone: *"An iPod, a phone, and an Internet communicator"*.
@@ -67,9 +67,7 @@ NSMutableArray *arr = // some array
 Previous Swift std lib sort <a href="https://gist.github.com/jessesquires/06b6bd68a7d18810651f/ee5aa0a7427f830fadd4d369c9d04a895fc2b49b">implementation here</a>.
 </span>
 
-<br/>
-
-<h3>Results</h3>
+### Results
 
 Below are the results of running each program over 10 trials with 10,000 integers. The build configuration settings are noted for each run and the execution times are displayed in seconds. The average case runtime complexity for each algorithm is also noted. I realize that 10,000 is relatively small, but you'll see that Swift was taking quite a long time.
 
@@ -113,8 +111,6 @@ Below are the results of running each program over 10 trials with 10,000 integer
 	</table>
 </div>
 
-<br />
-
 <p class="text-muted text-center table-header-footer"><strong>Table 2</strong></p>
 <div class="table-responsive">
 	<table class="table table-bordered table-hover">
@@ -156,8 +152,6 @@ Below are the results of running each program over 10 trials with 10,000 integer
 </div>
 
 <p class="text-muted text-center table-header-footer">According to the Apple engineers that I spoke with, <code>-O3</code> in Objective-C is essentially the equivalent to <code>-O</code> in Swift.</p>
-
-<br />
 
 <p class="text-muted text-center table-header-footer"><strong>Table 3</strong></p>
 <div class="table-responsive">
@@ -201,13 +195,9 @@ Below are the results of running each program over 10 trials with 10,000 integer
 
 <p class="text-muted text-center table-header-footer">Note that <code>-O</code> is the standard optimization level for Swift and <code>-Ofast</code>, though faster, removes <strong>all</strong> safety features (<em>array bounds-checking, integer overflow checking, etc.</em>) from Swift. In other words, do not ship an entire app compiled with <code>-Ofast</code>. More on that below.</p>
 
-<br />
-
 <div class="alert alert-info">
-	<h4>Xcode6-beta4 <small class="text-info"><i>1 Aug 2014</i></small></h4>
-	<p>
-		We see the following notable changes with Xcode-beta4:
-	</p>
+	<h3>Xcode6-beta4 <small><i>1 Aug 2014</i></small></h3>
+	<p>We see the following notable changes with Xcode-beta4:</p>
 	<ol>
 		<li>Swift is now slightly worse without optimizations. (see <em>Table 1</em>)</li>
 		<li>With optimizations, Swift performance is incredibly better and much closer to Objective-C. However, Objective-C is still faster. (see <em>Table 2</em>)</li>
@@ -248,13 +238,13 @@ As Brent Simmons [said](http://inessential.com/2014/02/12/on_replacing_objective
 * [*Swift?*](http://www.splasmata.com/?p=2798) from Splasm Software
 * [*The Foundation Collection Classes*](http://www.objc.io/issue-7/collections.html) by Peter Steinberger, objc.io issue #7
 
-<div class="footnotes text-muted">
-	<ul>
+<div class="text-muted">
+	<ul class="list-unstyled">
 		<li>
-			<a href="#superscript1" id="note1"><i class="fa fa-angle-up"></i> [1]</a> If you turn up the volume and listen closely, you can hear this in the keynote video. It was much louder in person.
+			<a href="#superscript1" id="note1">[1]</a> If you turn up the volume and listen closely, you can hear this in the keynote video. It was much louder in person.
 		</li>
 		<li>
-			<a href="#superscript2" id="note2"><i class="fa fa-angle-up"></i> [2]</a> If you are thinking, <em>this guy needs a new MacBook</em> &mdash; you are correct! :)
+			<a href="#superscript2" id="note2">[2]</a> If you are thinking, <em>this guy needs a new MacBook</em> &mdash; you are correct! :)
 		</li>
 	</ul>
 </div>

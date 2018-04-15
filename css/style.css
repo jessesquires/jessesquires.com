@@ -221,20 +221,12 @@ a.btn, a:visited.btn, a:link.btn {
    border: 1px solid #ccc;
 }
 
-.footnotes ul {
-   list-style-type: none;
-   -webkit-padding-start: 0px !important;
-   -webkit-margin-before: 0px !important;
-   -webkit-margin-after: 0px !important;
-}
-
 .post-share-subscribe {
     margin-top: 2.5rem;
     margin-bottom: 0.5rem;
 }
 
 .post-share-subscribe a,
-.footnotes a,
 sup a:link {
    border-width: 0px;
 }
