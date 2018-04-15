@@ -2,13 +2,13 @@
 layout: default
 ---
 
-<div class="post-list">
-    {% for post in paginator.posts %}
-        <article class="post">
-            {% include post_entry.html post_entry=post include_excerpt=true %}
-        </article>
-    {% endfor %}
-</div> <!-- post-list -->
+<div>
+{% for post in paginator.posts %}
+    <article class="post-entry">
+        {% include post_entry.html post_entry=post include_excerpt=true %}
+    </article>
+{% endfor %}
+</div>
 
 
 <nav aria-label="Navigation">
