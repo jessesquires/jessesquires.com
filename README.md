@@ -29,15 +29,13 @@ Lovingly built with [Jekyll](https://jekyllrb.com), [Bootstrap](https://getboots
 $ bundle update
 ```
 
-### Yarn dependencies
+### Yarn
 
 - [Bootstrap](https://getbootstrap.com) ([pkg](https://yarnpkg.com/en/package/bootstrap))
 - [jQuery](https://jquery.com) ([pkg](https://yarnpkg.com/en/package/jquery))
 - [Font Awesome](https://fortawesome.github.io/Font-Awesome/) ([pkg](https://yarnpkg.com/en/package/font-awesome))
-- [html5shiv](https://github.com/aFarkas/html5shiv) ([pkg](https://yarnpkg.com/en/package/html5shiv))
-- [respond.js](https://github.com/scottjehl/Respond) ([pkg](https://yarnpkg.com/en/package/respond.js))
 
-#### Updating Yarn dependencies
+#### Updating Yarn
 
 ```bash
 $ yarn upgrade
