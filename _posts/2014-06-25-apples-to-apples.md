@@ -212,7 +212,7 @@ There are a few notable discoveries here:
 
 2. At the standard optimization level (see *Table 2*), the two languages begin to perform more similarly. Objective-C is still noticeably faster though. Std lib sort is 6.5x faster. Quick sort is 7.0x faster. Heap sort is 10.4x faster. Insertion sort is 16.0x faster. Selection sort is 2.47x faster.
 
-3. Only with <code>-Ofast</code> do we begin to experience the swiftness of Swift, and even then the standard library sort in Objective-C is almost twice as fast (1.84x). However, when comparing Swift to Swift the discrepancies are enormous. Swift performs orders of magnitude better than it did without optimizations and puts Objective-C to shame with regard to quick sort, heap sort, insertion sort, and selection sort (see *Table 3*).
+3. Only with <code>-Ofast</code> do we begin to experience the swiftness of Swift, and even then the standard library sort in Objective-C is almost twice as fast (1.84x). However, when comparing Swift to Swift the discrepancies are enormous. Swift performs orders of magnitude better than it did without optimizations and puts Objective-C to shame with quick sort, heap sort, insertion sort, and selection sort (see *Table 3*).
 
 4. We all know that selection sort and insertion sort are not particularly optimal algorithms, and Swift does a good job to emphasize this (when not using <code>-Ofast</code>, see *Table 1* and *Table 2*). But why are these two so terrible in Swift? Especially insertion sort &mdash; in debug Objective-C is 308.0x faster. I'm still puzzled by this. These two sorting algorithms are not complex, but they stand apart from the other sorts in the following ways: selection sort has nested for-loops and insertion sort has a while-loop nested in a for-loop. Perhaps Swift is having trouble optimizing these? Is this a bug?
 
@@ -224,7 +224,7 @@ According to the benchmarks presented during the keynote (1:45:30), we should (p
 
 The Apple engineers hanging out in the Swift Labs at WWDC were interested in these benchmarks and were somewhat surprised to see them. Unfortunately, the engineers that I spoke with did not have an explanation for why we were seeing these results. We filed Radar #17201160, noting most of the points above.
 
-Additionally, I asked what the best practices are with regard to using <code>-Ofast</code>. They recommended the following approach: (1) profile your app to find out where it is slow, (2) extract this slow code into a separate module/framework, (3) very thoroughly test this module, and then (4) compile the module using <code>-Ofast</code> and link it to your app. Remember, this removes <strong>all</strong> safety features from Swift.
+Additionally, I asked what the best practices are regarding using <code>-Ofast</code>. They recommended the following approach: (1) profile your app to find out where it is slow, (2) extract this slow code into a separate module/framework, (3) thoroughly test this module, and then (4) compile the module using <code>-Ofast</code> and link it to your app. Remember, this removes <strong>all</strong> safety features from Swift.
 
 ### Moving forward
 

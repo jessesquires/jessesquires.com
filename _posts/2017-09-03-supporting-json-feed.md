@@ -20,7 +20,7 @@ There are obvious benefits to adopting JSON Feed over something less modern like
 
 ### JSON Feed and Jekyll
 
-This site is built using [Jekyll](https://jekyllrb.com), so supporting JSON Feed just requires adding a new template `feed.json` file in the root directory of your site. It's the same as supporting RSS/Atom, where you provide a `feed.xml` template. Your site configuration will vary, but your `feed.json` should be similar to mine. [Here it is](https://github.com/jessesquires/jessesquires.com/blob/master/feed.json). You fill-in your site metadata, and iterate through each post to build an array of items. You'll notice that it's very similar to [the feed.xml](https://github.com/jessesquires/jessesquires.com/blob/master/feed.xml) for RSS/Atom.
+This site is built using [Jekyll](https://jekyllrb.com), so supporting JSON Feed just requires adding a new template `feed.json` file in the root directory of your site. It's the same as supporting RSS/Atom, where you provide a `feed.xml` template. Your site configuration will vary, but your `feed.json` should be similar to mine. [Here it is](https://github.com/jessesquires/jessesquires.com/blob/master/feed.json). You fill-in your site metadata, and iterate through each post to build an array of items. You'll notice that it's similar to [the feed.xml](https://github.com/jessesquires/jessesquires.com/blob/master/feed.xml) for RSS/Atom.
 
 <script src="https://gist.github.com/jessesquires/45c9173e1b2e3e7bf7e24b02dedc243a.js"></script>
 
