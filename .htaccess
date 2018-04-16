@@ -2,7 +2,11 @@
 
 ErrorDocument 404 /404.html
 
-# custom redirects for old blog URLs
+# redirects
+
+Redirect 301 /blog /
+
+# redirects for old blog URLs
 
 Redirect 301 /built-with-open-source/ /blog/built-with-open-source/
 Redirect 301 /apples-to-apples/ /blog/apples-to-apples/
