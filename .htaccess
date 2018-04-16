@@ -2,10 +2,6 @@
 
 ErrorDocument 404 /404.html
 
-# redirects
-
-Redirect 301 /blog /
-
 # redirects for old blog URLs
 
 Redirect 301 /built-with-open-source/ /blog/built-with-open-source/
