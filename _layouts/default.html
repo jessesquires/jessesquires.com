@@ -4,15 +4,18 @@
    <body>
       {% include header.html %}
 
-      <div class="container container-fluid">
-         <div class="row">
-            <div class="col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+      <div class="container">
+         <div class="row justify-content-md-center">
+            <div class="col"></div>
+            <div class="col-12 col-md-8">
                {{ content }}
-            </div> <!-- col -->
+            </div>
+            <div class="col"></div>
          </div> <!-- row -->
       </div> <!-- container -->
 
       {% include footer.html %}
+
       {% include foot.html %}
    </body>
 </html>

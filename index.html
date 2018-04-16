@@ -2,48 +2,32 @@
 layout: default
 ---
 
-<div class="post-list">
-    {% for post in paginator.posts %}
-        <article class="post">
-            <h1 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+<div>
+{% for post in paginator.posts %}
+    <article class="post-entry">
+        {% include post_entry.html post_entry=post include_excerpt=true %}
+    </article>
+{% endfor %}
+</div>
 
-            {% if post.subtitle %}
-                <h2 class="post-subtitle">{{ post.subtitle }} <small class="post-date">{{ post.date | date_to_string }}</small></h2>
-            {% else %}
-                <h2 class="post-date-subtitle post-date">{{ post.date | date_to_string }}</h2>
-            {% endif %}
 
-            {% if post.date-updated %}
-                <small class="text-warning bg-warning"><strong>Updated: {{ post.date-updated }}</strong></small>
-            {% endif %}
-
-            <div class="post-excerpt">
-                {{ post.excerpt }}
-                <a href="{{ post.url }}" class="post-continue">Continue&hellip; <i class="fa fa-chevron-right"></i></a>
-            </div>
-
-        </article>
-    {% endfor %}
-</div> <!-- post-list -->
-
-<div class="pagination">
-    <div class="row center">
-        <nav>
-            <ul class="pager">
-                <li>
-                    <a href="{{ paginator.next_page_path }}" class="btn btn-default {% if paginator.next_page == nil %}disabled{% endif %}">
-                    <i class="fa fa-chevron-left"></i> Older
-                    </a>
-                </li>
-                <li><a href="/search" class="btn btn-default" title="Search this site"><i class="fa fa-search"></i></a></li>
-                <li><a href="/archive" class="btn btn-default" title="Blog Archive"><i class="fa fa-list"></i></a></li>
-                <li>
-                    <a href="{% if paginator.page != 2 %} {{ paginator.previous_page_path }} {% else %} / {% endif %}"
-                    class="btn btn-default {% if paginator.previous_page == nil %}disabled{% endif %}">
-                    Newer <i class="fa fa-chevron-right"></i>
-                    </a>
-                </li>
-                </ul>
-        </nav>
-    </div> <!-- row -->
-</div> <!-- pagination -->
+<nav aria-label="Navigation">
+    <ul class="pagination justify-content-center">
+        <li class="page-item {% if paginator.next_page == nil %}disabled{% endif %}">
+            <a href="{{ paginator.next_page_path }}" class="page-link" title="Older posts">
+                <i class="fa fa-chevron-left"></i> Older
+            </a>
+        </li>
+        <li class="page-item">
+            <a href="/search" class="page-link" title="Search this site"><i class="fa fa-search"></i></a>
+        </li>
+        <li class="page-item">
+            <a href="/archive" class="page-link" title="Blog Archive"><i class="fa fa-list"></i></a>
+        </li>
+        <li class="page-item {% if paginator.previous_page == nil %}disabled{% endif %}">
+            <a href="{% if paginator.page != 2 %} {{ paginator.previous_page_path }} {% else %} / {% endif %}" class="page-link" title="Newer posts">
+                Newer <i class="fa fa-chevron-right"></i>
+            </a>
+        </li>
+    </ul>
+</nav> <!-- Navigation -->

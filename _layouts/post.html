@@ -12,17 +12,7 @@ layout: default
 {% assign open_issue_url = site.links.issue | append: issue_all_params %}
 
 <article>
-    <h1 class="post-title"><a href="{{ post.url }}">{{ page.title }}</a></h1>
-
-    {% if page.subtitle %}
-        <h2 class="post-subtitle">{{ page.subtitle }} <small class="post-date">{{ page.date | date_to_string }}</small></h2>
-    {% else %}
-        <h2 class="post-date-subtitle post-date">{{ page.date | date_to_string }}</h2>
-    {% endif %}
-
-    {% if page.date-updated %}
-        <small class="text-warning bg-warning"><strong>Updated: {{ page.date-updated }}</strong></small>
-    {% endif %}
+    {% include post_entry.html post_entry=page include_excerpt=false %}
 
     <div class="post-content">
         {{ content }}

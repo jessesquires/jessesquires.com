@@ -5,18 +5,10 @@ title: Archive
 
 {% include search_box.html %}
 
+<br/>
+
 {% for post in site.posts %}
-    <article class="post">
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-
-        {% if post.subtitle %}
-            <h4>{{ post.subtitle }} <small class="post-date">{{ post.date | date_to_string }}</small></h4>
-        {% else %}
-            <h4 class="post-date">{{ post.date | date_to_string }}</h4>
-        {% endif %}
-        {% if post.date-updated %}
-            <small class="text-warning bg-warning"><strong>Updated: {{ post.date-updated }}</strong></small>
-        {% endif %}
-
+    <article class="post-entry">
+        {% include post_entry.html post_entry=post include_excerpt=false %}
     </article>
 {% endfor %}

@@ -33,14 +33,6 @@ node_modules/font-awesome/*
 node_modules/font-awesome/css/*
 !node_modules/font-awesome/css/*.min.css
 
-# html5shiv
-
-node_modules/html5shiv/*
-!node_modules/html5shiv/dist
-
-node_modules/html5shiv/dist/*
-!node_modules/html5shiv/dist/*.min.js
-
 # jquery
 
 node_modules/jquery/*
@@ -48,11 +40,3 @@ node_modules/jquery/*
 
 node_modules/jquery/dist/*
 !node_modules/jquery/dist/*.min.js
-
-# respond.js
-
-node_modules/respond.js/*
-!node_modules/respond.js/dest
-
-node_modules/respond.js/dest/*
-!node_modules/respond.js/dest/*.min.js

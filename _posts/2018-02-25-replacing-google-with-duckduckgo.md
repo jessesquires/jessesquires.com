@@ -32,7 +32,7 @@ Similar to many Apple products and services, DuckDuckGo was established with [pr
 
 > You can usually find out a lot about a person from their search history.
 >
-> &mdash; *Gabriel Weinberg, [DuckDuckGo Privacy](https://duckduckgo.com/privacy#s2)*
+> <footer class="blockquote-footer">Gabriel Weinberg, <a href="https://duckduckgo.com/privacy#s2">DuckDuckGo Privacy</a></footer>
 
 Gabriel Weinberg has a rather [comprehensive list](https://www.quora.com/Why-should-I-use-DuckDuckGo-instead-of-Google) of reasons to use DuckDuckGo. I won't bother reiterating each of them, but I will highlight one of my favorite features &mdash; [!bangs](https://duckduckgo.com/bang), which let you search other sites directly. For example, you can type `!giphy oh yeah` into DuckDuckGo and land directly on [Giphy's search results](https://giphy.com/search/oh-yeah) for "oh yeah".
 

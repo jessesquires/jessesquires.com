@@ -11,18 +11,32 @@
 
 {% assign half_width = include.half_width %}
 
-<figure>
-    <img class="img-thumbnail img-responsive center {% if half_width %} img-half-width {% endif %}"
-         src="{{ external_url | default: local_url }}"
-         title="{{ alt }}"
-         alt="{{ alt }}"/>
-    {% if caption %}
-        <figcaption>
-            <p><small class="text-muted center">{{ caption }} {% if source_link %} / <a href="{{ source_link }}" target="_blank">Source</a> {% endif %}</small></p>
-        </figcaption>
-    {% elsif source_link %}
-        <figcaption>
-            <p><small class="text-muted center"><a href="{{ source_link }}" target="_blank">Source</a></small></p>
-        </figcaption>
-    {% endif %}
-</figure>
+<div class="row">
+    <div class="col"></div>
+    <div class="d-flex justify-content-center col-12 {% if half_width %} col-sm-8 col-md-6 {% endif %}">
+        <figure>
+            <img class="img-thumbnail img-fluid"
+                 src="{{ external_url | default: local_url }}"
+                 title="{{ alt }}"
+                 alt="{{ alt }}"/>
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                {% if caption %}
+                    <figcaption>
+                        <p><small class="text-muted text-center">
+                            {{ caption }} {% if source_link %} / <a href="{{ source_link }}" target="_blank">Source</a> {% endif %}
+                        </small></p>
+                    </figcaption>
+                {% elsif source_link %}
+                    <figcaption>
+                        <p><small class="text-muted text-center">
+                            <a href="{{ source_link }}" target="_blank">Source</a>
+                        </small></p>
+                    </figcaption>
+                {% endif %}
+                </div>
+            </div>
+        </figure>
+    </div>
+    <div class="col"></div>
+</div>
