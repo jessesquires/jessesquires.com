@@ -2,6 +2,7 @@
 layout: post
 title: Floating-point Swift, ulp, and epsilon
 subtitle: Exploring floating-point precision
+date-updated: 18 Apr 2018
 ---
 
 Epsilon. `ε`. The fifth letter of the Greek alphabet. In calculus, an arbitrarily small positive quantity. In formal language theory, [the empty string](https://en.wikipedia.org/wiki/Empty_string). In the theory of computation, the empty transition of an automaton. In the [ISO C Standard](http://www.open-std.org/jtc1/sc22/WG14/www/docs/n1570.pdf), `1.19e-07` for single precision and `2.22e-16` for double precision.
@@ -9,6 +10,10 @@ Epsilon. `ε`. The fifth letter of the Greek alphabet. In calculus, an arbitrari
 The other day I was attempting to use `FLT_EPSILON` (which I later learned was laughably incorrect) when the Swift 4 compiler emitted a warning saying that `FLT_EPSILON` is deprecated and to use `.ulpOfOne` instead. *What the hell is `ulpOfOne`?* I [read the documentation](https://developer.apple.com/documentation/swift/floatingpoint/2884058-ulpofone) and then everything made sense &mdash; ha, just kidding. The `FloatingPoint.ulpOfOne` docs generously describe the static variable as *the unit in the last place of 1.0* &mdash; whatever *that* means. Let's find out.
 
 <!--excerpt-->
+
+{% include updated_notice.html
+    update_message='I gave a talk on the topics discussed in this post and more at iOS Conf Singapore. You can <a href="https://youtu.be/cdRn4DJq9eY" class="alert-link">watch the video here</a>!'
+%}
 
 {% include image.html
     external_url="https://media.giphy.com/media/xDQ3Oql1BN54c/giphy.gif"

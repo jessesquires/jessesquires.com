@@ -2,6 +2,7 @@
 layout: post
 title: Swift documentation
 subtitle: Writing, generating, and publishing great docs in Swift
+date-updated: 18 Apr 2018
 image:
     file: feels_good_docs.jpg
     alt: 100% docs
@@ -13,6 +14,10 @@ image:
 The Swift community is ecstatic about Swift. There are so many new libraries being released each week that some have created [package indexes](https://swiftmodules.com) &mdash; even [IBM](https://developer.ibm.com/swift/products/package-catalog/). But of course, a library is only as great as its documentation.
 
 <!--excerpt-->
+
+{% include updated_notice.html
+    update_message='After reading this, be sure to checkout my follow-up post, <a href="https://www.jessesquires.com/blog/swift-documentation-part-2/" class="alert-link">Swift documentation, Part 2</a>.'
+%}
 
 ### Successful open source projects
 
