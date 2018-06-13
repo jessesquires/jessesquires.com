@@ -35,3 +35,5 @@ To recap:
 3. `cmd-shift-O` to open files in the currently focused pane
 
 This is a much better dev experience.
+
+**Update:** As a few readers [have noted](https://github.com/jessesquires/jessesquires.com/issues/79), if you `option-enter` when doing 'Quick Open', then the selected file will open in the 'Assistant Editor' immediately. Another good tip!
