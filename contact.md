@@ -7,7 +7,7 @@ title: Contact
 
 You can contact me by emailing **jesse** at *this domain*.
 
-**PGP:**<br/>
+**PGP [public key](/squires-pgp.asc)** <br/>
 `BBAE BA80 7CF2 7BC2 5E5C FB43 1537 66AC 1FA1 A758`
 
 You can also find me on [keybase]({{ site.social_links.keybase }}). Message me securely for my contact info on [Signal](https://www.signal.org).
