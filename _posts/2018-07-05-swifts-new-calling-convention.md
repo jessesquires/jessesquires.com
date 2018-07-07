@@ -47,7 +47,7 @@ In practice, we can see how this can produce a lot of superfluous, wasteful reta
 {% highlight swift %}
 func caller() {
     // 'x' created with +1 reference count
-    let x + X()
+    let x = X()
     // retain x
     bar(x) // release x in callee
     // retain x
