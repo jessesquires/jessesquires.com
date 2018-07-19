@@ -6,7 +6,7 @@
 
 ## About
 
-This is my personal site and blog. It mostly contains bits about Swift, Objective-C, iOS and open source. However, I also write about other programming topics and the ethics of tech.
+This is my personal site and blog. It mostly contains bits about Swift, Objective-C, iOS and open source. However, I also write about other programming topics, the ethics of tech, and sometimes politics.
 
 Lovingly built with [Jekyll](https://jekyllrb.com), [Bootstrap](https://getbootstrap.com), [jQuery](https://jquery.com), and [Font Awesome](https://fortawesome.github.io/Font-Awesome/). Hosted at [NearlyFreeSpeech](https://nearlyfreespeech.net/).
 
