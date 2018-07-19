@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TIL there's a Tor Browser
+title: The Tor Browser
 ---
 
 I've known about the [Tor Project](https://www.torproject.org/index.html.en) for a long time, but I guess it's been awhile. 😅 The last time I was actively using Tor was with [Vidalia](https://en.wikipedia.org/wiki/Vidalia_(software)), which was apparently [discontinued](https://blog.torproject.org/plain-vidalia-bundles-be-discontinued-dont-panic) about 5 to 6 years ago. Ha! Whoops.
