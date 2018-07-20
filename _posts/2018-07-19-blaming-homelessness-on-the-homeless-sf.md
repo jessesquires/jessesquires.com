@@ -57,7 +57,7 @@ What always comes to my mind is the song [*Land* by Fifteen](https://open.spotif
 >
 > [...]
 >
-> Is there a connection?<br/>
+> Is there a connection<br/>
 > Who owns the Land?<br/>
 > To my daily eviction<br/>
 > Who owns the Land?<br/>
