@@ -108,7 +108,7 @@ protocol ViewModelConfigurable {
 }
 
 @objc protocol NavigationItemConfigurable: class {
-    func didTapCancelButton(sender: UIBarButtonItem)
+    func didTapCancelButton(_ sender: UIBarButtonItem)
 }
 
 extension NavigationItemConfigurable where Self: UIViewController {
