@@ -108,13 +108,13 @@ protocol ViewModelConfigurable {
 }
 
 @objc protocol NavigationItemConfigurable: class {
-    func didTapCancelButton(sender: UIBarButtonItem)
+    func didTapCancelButton(_ sender: UIBarButtonItem)
 }
 
 extension NavigationItemConfigurable where Self: UIViewController {
     func configureNavigationItem() {
         navigationItem.leftBarButtonItem = UIBarButtonItem(
-            barButtonSystemItem: .Cancel,
+            barButtonSystemItem: .cancel,
             target: self,
             action: #selector(didTapCancelButton(_:)))
     }
@@ -124,7 +124,7 @@ extension NavigationItemConfigurable where Self: UIViewController {
 Finally, we can define our original `ViewControllerType` protocol as a `typealias`.
 
 {% highlight swift %}
-typealias ViewControllerType = protocol<ViewModelConfigurable, NavigationItemConfigurable>
+typealias ViewControllerType = ViewModelConfigurable & NavigationItemConfigurable
 {% endhighlight %}
 
 Now everything works exactly as it did before migrating to Swift 2.2 and our original view controller definition above does not have to change. Nothing is ruined. If you ever face a similar situation, or if you generally want to contain the use of `@objc` (*which you should*), then I highly recommend adopting this strategy.
