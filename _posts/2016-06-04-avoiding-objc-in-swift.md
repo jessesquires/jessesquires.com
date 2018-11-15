@@ -114,7 +114,7 @@ protocol ViewModelConfigurable {
 extension NavigationItemConfigurable where Self: UIViewController {
     func configureNavigationItem() {
         navigationItem.leftBarButtonItem = UIBarButtonItem(
-            barButtonSystemItem: .Cancel,
+            barButtonSystemItem: .cancel,
             target: self,
             action: #selector(didTapCancelButton(_:)))
     }
