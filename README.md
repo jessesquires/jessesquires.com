@@ -81,6 +81,19 @@ $ bundle exec jekyll serve --future --drafts --watch
 $ dig www.jessesquires.com +nostats +nocomments +nocmd
 ```
 
+## Install software on NFSN
+
+```bash
+$ cd home/protected/      # preferred directory for installing
+$ wget <URL-to-some-file> # download
+$ tar -zxvf file.tar.gz   # extract
+$ mkdir bin               # if needed
+
+# follow any install instructions
+# put binary in protected/bin/
+# add `export PATH=$PATH:/home/protected/bin/` to your `.bash_profile`
+```
+
 ## License
 
 > **Copyright &copy; 2014-present Jesse Squires.**
