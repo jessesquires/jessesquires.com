@@ -8,7 +8,7 @@ I just updated my blog to use [Bootstrap 4.1](https://blog.getbootstrap.com/2018
 
 <!--excerpt-->
 
-I’m not a web developer, which is probably why it took me so long to update this. I can only write CSS and HTML for so many hours before I'm ready to move on to something else. It's fun, but in small quantities. That's also why I use [Jekyll](https://jekyllrb.com). Most of the time I only have to write markdown. But that’s what’s great about having a blog. In addition to writing, which I enjoy, this site is my primary exposure to web development and web design. It’s a fun hobby to build and maintain your own site, which [I've written about before]({{ site.url }}/blog/building-a-site-with-jekyll-on-nfsn/).
+I’m not a web developer, which is probably why it took me so long to update this. I can only write CSS and HTML for so many hours before I'm ready to move on to something else. It's fun, but in small quantities. That's also why I use [Jekyll](https://jekyllrb.com). Most of the time I only have to write markdown. But that’s what’s great about having a blog. In addition to writing, which I enjoy, this site is my primary exposure to web development and web design. It’s a fun hobby to build and maintain your own site, which [I've written about before]({{ site.url }}{% post_url 2017-09-10-building-a-site-with-jekyll-on-nfsn %}).
 
 ### Migrating
 

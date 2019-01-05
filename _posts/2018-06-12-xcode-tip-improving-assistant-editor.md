@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ! 'Xcode tip: improving the assistant editor'
+title: ! 'Xcode tip: Improving the assistant editor'
 image:
     file: xcode-assistant-editor.png
     alt: Xcode navigation settings
