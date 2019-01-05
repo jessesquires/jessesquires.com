@@ -1,8 +1,14 @@
 
 {% if page.date-updated %}
 
+    {% if include.date != null %}
+        {% assign date = include.date %}
+    {% else %}
+        {% assign date = page.date-updated %}
+    {% endif %}
+
 <div class="alert alert-warning">
-    <h3>Updated <small><i>{{ page.date-updated }}</i></small></h3>
+    <h3>Updated <small><i>{{ date }}</i></small></h3>
     <p>
         {{ include.update_message }}
     </p>

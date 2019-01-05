@@ -2,7 +2,7 @@
 layout: post
 title: How to run sysdiagnose on iOS
 subtitle: And on all the Apple things
-date-updated: 09 Feb 2018
+date-updated: 05 Jan 2019
 image:
     file: apple-bug-report.png
     alt: 'Apple Bug Report'
@@ -15,7 +15,12 @@ When you [file a radar](https://developer.apple.com/bug-reporting/) for a bug on
 <!--excerpt-->
 
 {% include updated_notice.html
-    update_message='Apparently the direct links to the instructions below are not working, even if you are logged in to your Apple developer account. You can find all sysdiagnose instructions on the <a href="https://developer.apple.com/bug-reporting/profiles-and-logs/?name=sysdiagnose" class="alert-link">official Bug Reporting page</a>.'
+    date='09 Feb 2018'
+    update_message='Apparently the direct links to the instructions below are not working, even if you are logged-in to your Apple developer account. You can find all sysdiagnose instructions on the <a href="https://developer.apple.com/bug-reporting/profiles-and-logs/?name=sysdiagnose" class="alert-link">official Bug Reporting page</a>.'
+%}
+
+{% include updated_notice.html
+    update_message='Many thanks to Michael Prentice for <a href="https://github.com/jessesquires/jessesquires.com/issues/87#issuecomment-450595104" class="alert-link">pointing out</a> that you can also run sysdiagnose on the iOS simulator. To do this, run <code>xcrun simctl diagnose</code> and the output will be placed in <code>/private/tmp/</code>.'
 %}
 
 {% include post_image.html %}
