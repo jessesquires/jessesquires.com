@@ -7,7 +7,7 @@ I'm a software developer in Oakland, California. I'm primarily an iOS developer,
 
 **Other interests:** reading books (ones made of paper, not bits), biking, trail running, body modification, hook suspension, tea and coffee, cognitive science, moral philosophy, avant-garde art, punk/hardcore/metal, [building worker power](https://www.techworkerscoalition.org)
 
-More generally, I hope to contribute to a society that values community over hierarchy, [self-determination over capitalist exploitation](https://crimethinc.com/tce), and public ownership over private property.
+More generally, I hope to contribute to a society that values community over hierarchy, [self-determination over capitalist exploitation](https://crimethinc.com/tce), and public ownership over private property. No gods, no masters.
 
 You can [contact me here](/contact).
 
