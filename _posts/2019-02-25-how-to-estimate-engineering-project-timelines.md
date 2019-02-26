@@ -12,6 +12,8 @@ I [tweeted a joke](https://twitter.com/jesse_squires/status/1099113115080257537)
 
 <!--excerpt-->
 
+<span class="text-muted"><i>Estimated reading time: approx. 3 minutes (or 37.4 hours)</i></span>
+
 > New idea for engineering estimations:
 >
 > 1. Choose number of weeks you think it will take
@@ -60,3 +62,7 @@ The whole thread on Twitter was comical and fun to read. Here are some of my fav
 28 more weeks needed!"* &mdash; [@quoll](https://twitter.com/quoll/status/1099289094121840640)
 
 *"If you called it 'agile by degrees' you could just live off the interest of your book sales"* &mdash; [@TJChecketts](https://twitter.com/TJChecketts/status/1099263521198551040)
+
+*"And then back to Celsius again for how long you'll have time to fix everything after requirement changes are announced."* &mdash; [@s1guza](https://twitter.com/s1guza/status/1100074377696157696)
+
+*"5. Explain to project managers that a bigger number means a higher temperature and so the burn down will happen faster."* &mdash; [@dylansmith](https://twitter.com/dylansmith/status/1099966711225372672)
