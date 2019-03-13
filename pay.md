@@ -3,7 +3,7 @@ layout: standalone
 title: Payments
 ---
 
-<h3 class="text-muted">Contracting, Freelance, Open Source</h3>
+<h4 class="text-muted text-center">Contracting, Open Source, Freelance</h4>
 
 Do you need to pay me for contracting, consulting, or freelance work? Or, do you want to support my open source work and blog? You can do that here with the options below. **Thanks!**
 

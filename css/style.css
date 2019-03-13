@@ -21,7 +21,7 @@ h1 > code, h2 > code, h3 > code {
     font-weight: bolder;
 }
 
-.btn-light {
+.btn-light, li > .nav-link {
    color: #444444;
 }
 
