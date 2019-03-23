@@ -75,6 +75,11 @@ $ bundle exec jekyll serve
 $ bundle exec jekyll serve --future --drafts --watch
 ```
 
+## Handling Links
+
+- To other blog posts: `[link]({{ site.url }}{% post_url 2000-01-01-my-blog-post-title %})`
+- To images: `{{ site.url }}{{ site.img_url}}/path-to/image.png`
+
 ## Verifying DNS setup
 
 ```bash
