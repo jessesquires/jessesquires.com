@@ -1,13 +1,14 @@
 language: ruby
-rvm: 2.3.0
+rvm: 2.6.0
 
 sudo: false
 cache: bundler
 
 before_install:
   - gem --version
-  - gem update bundler
-  
+  - gem update --system
+  - gem install bundler
+
 script:
   - bundle exec jekyll build
   - bundle exec danger
