@@ -20,7 +20,7 @@ The issue is that a non-zeroing reference ends up pointing to invalid memory (be
 
 ### Playing with fire
 
-Why do these details about weak references matter? Because through iOS 8, UIKit views that have a `delegate` or `dataSource` property have been declared as the following.
+Why do these details about weak references matter? Because up to iOS 9, UIKit views that have a `delegate` or `dataSource` property have been declared as the following.
 
 {% highlight swift %}
 
