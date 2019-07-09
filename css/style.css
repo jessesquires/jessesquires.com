@@ -1,24 +1,24 @@
 /* COMMON ELEMENTS */
 
 body {
-    background-color: #ffffff;
-    padding: 2rem 0rem 2rem 0rem;
+  background-color: #ffffff;
+  padding: 2rem 0rem 2rem 0rem;
 }
 
 body p {
-    font-size: 14px;
-    line-height: 24px;
-    padding: 0.25rem 0rem 0.25rem 0rem;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 0.25rem 0rem 0.25rem 0rem;
 }
 
 hr {
-    border-color: #d7d7d7;
-    width: 50%;
+  border-color: #d7d7d7;
+  width: 50%;
 }
 
 h1 > code, h2 > code, h3 > code {
-    background-color: #ffffff;
-    font-weight: bolder;
+  background-color: #ffffff;
+  font-weight: bolder;
 }
 
 .btn-light, li > .nav-link {
@@ -28,35 +28,35 @@ h1 > code, h2 > code, h3 > code {
 a:link > code,
 a:visited > code,
 a:hover > code {
-    color: #c7254e;
-    border-bottom: 1px dotted #c7254e;
-    border-top: 0px none;
-    border-left: 0px none;
-    border-right: 0px none;
-    border-radius: 0px;
+  color: #c7254e;
+  border-bottom: 1px dotted #c7254e;
+  border-top: 0px none;
+  border-left: 0px none;
+  border-right: 0px none;
+  border-radius: 0px;
 }
 
 code {
-    color: #c7254e;
-    background-color: #f8f9fa;
-    border-radius: 3px;
-    padding: 3px;
+  color: #c7254e;
+  background-color: #f8f9fa;
+  border-radius: 3px;
+  padding: 3px;
 }
 
 code p {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 pre code {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 .badge p {
-    line-height: 12px;
+  line-height: 12px;
 }
 
 li {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 /* RESUME */
@@ -69,184 +69,192 @@ li {
 /* SEARCH */
 
 .search {
-   margin-top: 1.5rem;
-   margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 /* LINKS */
 
 a {
-   color: #31808c;
+  color: #31808c;
 }
 
 a:link {
-   border-bottom: 1px dotted #31808c;
+  border-bottom: 1px dotted #31808c;
 }
 
 a:visited {
-   border-bottom: 0px none #31808c;
+  border-bottom: 0px none #31808c;
 }
 
 a:hover {
-   color: #47bacc;
-   text-decoration: none;
+  color: #47bacc;
+  text-decoration: none;
 }
 
 a:active {
-   text-decoration:none;
+  text-decoration:none;
 }
 
 h1 > a:link {
-   border-width: 0px;
+  border-width: 0px;
 }
 
 a.post-continue:hover {
-   color: #47bacc;
-   border-color: #47bacc;
+  color: #47bacc;
+  border-color: #47bacc;
 }
 
 a.post-continue {
-   color: #666666;
-   border-width: 0px;
+  color: #666666;
+  border-width: 0px;
 }
 
 footer a, footer a:visited,
 .page-link {
-    color: #444444;
-    border-color: #444444;
+  color: #444444;
+  border-color: #444444;
 }
 
 .page-link:link,
 .page-link:visited {
-    border: 1px solid #dee2e6;
+  border: 1px solid #dee2e6;
 }
 
 .page-link:hover,
 footer a:hover {
-    color: #666666;
+  color: #666666;
 }
 
 .alert-link:link,
 .alert-link:visited,
 .alert-link:hover {
-    border-color: #533f03;
+  border-color: #533f03;
 }
 
 /* HEADER */
 
 header, header code {
-   text-align: center;
-   color: #444444;
+  text-align: center;
+  color: #444444;
 }
 
 header h1 {
-   font-size: 50px;
-   font-weight: normal;
-   font-family: 'Ubuntu Mono', 'Arial';
-   display: inline-block;
+  font-size: 50px;
+  font-weight: normal;
+  font-family: 'Ubuntu Mono', 'Arial';
+  display: inline-block;
 }
 
 header h2 {
-   font-size: 14px;
-   line-height: 19px;
-   margin: 0rem 0rem 1rem 0rem;
-   display: inline-block;
+  font-size: 14px;
+  line-height: 19px;
+  margin: 0rem 0rem 1rem 0rem;
+  display: inline-block;
+}
+
+a.nav-link, a:visited.nav-link , a:link.nav-link  {
+  border: 1px solid #d7d7d7;
+}
+
+.nav-pills .nav-link.active {
+  color: #444444;
 }
 
 /* FOOTER */
 
 .contact-follow ul li a {
-   color: #444444;
-   border-width: 0px;
+  color: #444444;
+  border-width: 0px;
 }
 
 .contact-follow ul li a:hover {
-   color: #666666;
-   text-decoration: none;
+  color: #666666;
+  text-decoration: none;
 }
 
 /* POST LIST */
 
 .post-entry {
-   padding-top: 0rem;
-   padding-bottom: 3rem;
+  padding-top: 0rem;
+  padding-bottom: 3rem;
 }
 
 .post-title {
-   font-weight: lighter;
+  font-weight: lighter;
 }
 
 .post-subtitle {
-   color: #444444;
-   font-size: 22px;
-   font-weight: normal;
-   margin-top: 0rem;
+  color: #444444;
+  font-size: 22px;
+  font-weight: normal;
+  margin-top: 0rem;
 }
 
 .post-date {
-   color: #666666;
-   display: inline-block;
+  color: #666666;
+  display: inline-block;
 }
 
 .post-date-subtitle {
-   font-size: 18px;
-   font-weight: normal;
-   margin-top: 0rem;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 0rem;
 }
 
 .post-date-updated {
-   margin-bottom: 0.5rem;
-   display: inline-block;
+  margin-bottom: 0.5rem;
+  display: inline-block;
 }
 
 .post-date-updated p {
-   font-size: 11px;
-   margin: 0rem;
+  font-size: 11px;
+  margin: 0rem;
 }
 
 .post-excerpt p {
-   margin-bottom: 0rem;
+  margin-bottom: 0rem;
 }
 
 /* PAGES */
 
 .alert h3 {
-   font-size: 18px;
+  font-size: 18px;
 }
 
 .table-date-column {
-   width: 100px;
+  width: 100px;
 }
 
 a.btn, a:visited.btn, a:link.btn {
-   color: #666666;
-   border: 1px solid #ccc;
+  color: #666666;
+  border: 1px solid #ccc;
 }
 
 .post-share-subscribe {
-    margin-top: 2.5rem;
-    margin-bottom: 0.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .post-share-subscribe a,
 sup a:link {
-   border-width: 0px;
+  border-width: 0px;
 }
 
 .post-share-subscribe p {
-   margin: 0px;
-   padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 blockquote {
-   color: #444;
-   padding: 0rem 1rem 0rem 1.5rem;
-   border-left: 3px solid #666;
+  color: #444;
+  padding: 0rem 1rem 0rem 1.5rem;
+  border-left: 3px solid #666;
 }
 
 blockquote p {
-   font-size: 1.1rem;
-   line-height: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
 }
 
 .standalone {
@@ -256,29 +264,29 @@ blockquote p {
 /* MEDIA QUERIES */
 
 @media (max-width: 667px) {
-   body {
-      padding-top: 1rem;
-   }
+  body {
+    padding-top: 1rem;
+  }
 
-   header h1 {
-      font-size: 49px;
-   }
+  header h1 {
+    font-size: 49px;
+  }
 
-   header h2 {
-      font-size: 13px;
-   }
+  header h2 {
+    font-size: 13px;
+}
 }
 
 @media (max-width: 320px) {
-   body {
-      padding-top: 1rem;
-   }
+  body {
+    padding-top: 1rem;
+  }
 
-   header h1 {
-      font-size: 42px;
-   }
+  header h1 {
+    font-size: 42px;
+  }
 
-   header h2 {
-      font-size: 11px;
-   }
+  header h2 {
+    font-size: 11px;
+  }
 }

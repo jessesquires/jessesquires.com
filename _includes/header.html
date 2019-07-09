@@ -15,27 +15,27 @@
     <div class="row justify-content-md-center">
         <div class="col"></div>
         <div class="col-12 col-md-8">
-            <ul class="nav nav-tabs justify-content-center">
-                <li class="nav-item">
+            <ul class="nav nav-pills justify-content-center">
+                <li class="nav-item mr-2 mb-2">
                     <a class="nav-link {% if page.url == '/' or page.url == '/blog/' or page.url contains '/page/' %}active bg-light{% endif %}" href="/">Writing</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mr-2 mb-2">
                     <a class="nav-link {% if page.url == '/speaking/' %}active bg-light{% endif %}" href="/speaking/">Speaking</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mr-2 mb-2">
                     <a class="nav-link {% if page.url == '/projects/' %}active bg-light{% endif %}" href="/projects/">Projects</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mr-2 mb-2">
                     <a class="nav-link {% if page.url == '/linkedout/' %}active bg-light{% endif %}" href="/linkedout/">Resume</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mr-1 mb-1">
                     <a class="nav-link {% if page.url == '/about/' %}active bg-light{% endif %}" href="/about/">About</a>
                 </li>
                 {% if page.url == '/contact/'
                     or page.url == '/archive/'
                     or page.url == '/search/'
                     or page.url == '/pay/' %}
-                <li class="nav-item">
+                <li class="nav-item mr-2 mb-2">
                     <a class="nav-link active bg-light" href="{{ page.url }}">{{ page.title }}</a>
                 </li>
                 {% endif %}
