@@ -1,0 +1,21 @@
+{
+    "title": "Volunteering",
+    "entries": [
+        {
+            "title": "Self-Help Hunger Program",
+            "location": "Oakland, CA",
+            "start": "Jan 2019",
+            "end": "Present",
+            "link": "https://www.facebook.com/selfhelphungerprogram/",
+            "description": "Volunteered directly with former Black Panther, [Aunti Frances Moore](https://www.defendauntifrances.org). The Self-Help Hunger Program is run primarily by Frances. She provides a meal every Tuesday at Driver Plaza in North Oakland. My role was clean up and washing dishes."
+        },
+        {
+            "title": "Teacher, CodeNation",
+            "location": "Oakland, CA",
+            "start": "Aug 2018",
+            "end": "May 2019",
+            "link": "https://codenation.org",
+            "description": "Taught high school students how to code at [Emiliano Zapata Street Academy](http://oaklandstreetacademy.org). Code Nation equips students in under-resourced high schools with the skills, experiences, and connections that together create access to careers in technology. Note: Code Nation was formerly called ScriptEd. "
+        }
+    ]
+}

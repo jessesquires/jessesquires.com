@@ -1,0 +1,25 @@
+{% assign entry = include.resume_entry %}
+
+<li class="media mt-3">
+    {% if entry.img %}
+    <img src="{{ site.img_url}}/resume/{{ entry.img.name }}" class="mr-3 img-thumbnail img-resume" title="{{ entry.img.title }}" alt="{{ entry.img.title }}">
+    {% endif %}
+
+    <div class="media-body">
+        <h5 class="mt-0 mb-1"><a href="{{ entry.link }}">{{ entry.title }}</a></h5>
+        <h6 class="mt-0 mb-1 text-muted"><small>{{ entry.location}} &bull; {{ entry.start }} &mdash; {{ entry.end }}</small></h6>
+
+        {% if entry.description %}
+        <p class="mt-0 mb-1" markdown="1">{{ entry.description }}</p>
+        {% endif %}
+
+        {% if entry.bullets %}
+        <ul>
+        {% for item in entry.bullets %}
+            <li><span markdown="1">{{ item }}</span></li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+
+    </div>
+</li>

@@ -1,0 +1,40 @@
+{
+    "title": "Research",
+    "entries": [
+        {
+            "title": "Visiting Undergraduate Research Fellowship, IU",
+            "location": "Indiana University, Bloomington, IN",
+            "start": "Aug 2012",
+            "end": "Jul 2013",
+            "link": "http://www.cogs.indiana.edu/undergraduate/opportunities/visiting-undergraduate-research.php",
+            "img": {
+                "name": "school-iu.png",
+                "title": "Indiana University"
+            },
+            "description": "Visiting Undergraduate Research Fellowship (VURF) in Cognitive Science. Awarded to only one or two students each year. I worked on the following research projects.",
+            "bullets": [
+                "**Advisor: Dr. Randy Beer.** Researched evolutionary algorithms, evolutionary robotics and dynamical systems approaches to behavior and cognition. Developed software to support the evolution of model agents controlled by continuous-time recurrent neural networks that exhibited minimally cognitive behavior.",
+                "**Advisor: Dr. Colin Allen.** Joined the [Indiana Philosophy Ontology (InPhO) Project](https://www.inphoproject.org) development team in building new and improving existing mechanisms for facilitating expert feedback in digital philosophy that utilize crowd-sourcing techniques in order to improve the InPhO model. The InPhO Project is an attempt to model the discipline of philosophy, which leverages expert knowledge by augmenting it with machine reasoning.",
+                "**Advisor: Dr. Rob Goldstone.** Developed an iOS app to facilitate research in collective decision-making. The app is a game that prompts users to answer various trivia questions, after which all responses are displayed and each user has the opportunity to re-evaluate his or her answer based on the group’s collective response."
+            ]
+        },
+        {
+            "title": "Undergraduate Researcher, USF",
+            "location": "University of South Florida, Tampa, FL",
+            "start": "Jun 2011",
+            "end": "Aug 2011",
+            "link": "https://www.usf.edu/engineering/research/undergraduate-research.aspx",
+            "img": {
+                "name": "school-usf.png",
+                "title": "University of South Florida"
+            },
+            "description": "Research experience for undergraduates (REU) summer program.",
+            "bullets": [
+                "Researched mobile mapping applications and mobile device sensors.",
+                "Developed a trail mapping application for Android OS that uses only sensor data, not GPS, to map trails in real time and produced a research paper and poster on the project.",
+                "Awarded 1st place in the REU Poster Competition.",
+                "Presented at Math, Engineering and Science Conference (MESCON) 2012 at University of Evansville."
+            ]
+        }
+    ]
+}

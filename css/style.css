@@ -59,6 +59,13 @@ li {
     font-size: 14px;
 }
 
+/* RESUME */
+
+.img-resume {
+  width: 75px;
+  height: 75px;
+}
+
 /* SEARCH */
 
 .search {
@@ -147,11 +154,6 @@ header h2 {
 }
 
 /* FOOTER */
-
-.contact-follow ul li {
-   margin-left: 0.25rem;
-   margin-right: 0.25rem;
-}
 
 .contact-follow ul li a {
    color: #444444;
