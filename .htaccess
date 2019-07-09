@@ -2,6 +2,12 @@
 
 ErrorDocument 404 /404.html
 
+# redirects
+
+Redirect 301 /resume/ /linkedout/
+Redirect 301 /work/ /linkedout/
+Redirect 301 /opensource/ /projects/
+
 # redirects for old blog URLs
 
 Redirect 301 /built-with-open-source/ /blog/built-with-open-source/
