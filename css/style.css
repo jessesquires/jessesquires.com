@@ -27,7 +27,10 @@ h1 > code, h2 > code, h3 > code {
 
 .nav-link:link,
 .nav-link:visited,
-.nav-link:hover {
+.nav-link:hover,
+.navbar-brand:link,
+.navbar-brand:visited,
+.navbar-brand:hover {
   border: none;
 }
 
@@ -143,6 +146,11 @@ header h1 {
   font-weight: normal;
   font-family: 'Ubuntu Mono', 'Arial';
   display: inline-block;
+}
+
+.navbar-brand {
+  font-weight: normal;
+  font-family: 'Ubuntu Mono', 'Arial';
 }
 
 header h2 {
