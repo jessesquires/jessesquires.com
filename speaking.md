@@ -14,8 +14,6 @@ Feel free to [contact me](/contact) about speaking at your event!
 
 *Upcoming talks will be listed here as they are announced.*
 
-<br/>
-
 ### Past talks
 
 <div class="table-responsive">
