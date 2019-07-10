@@ -2,7 +2,7 @@
 
 body {
   background-color: #ffffff;
-  padding: 2rem 0rem 2rem 0rem;
+  padding: 0rem 0rem 2rem 0rem;
 }
 
 body p {
@@ -23,6 +23,12 @@ h1 > code, h2 > code, h3 > code {
 
 .btn-light, li > .nav-link {
    color: #444444;
+}
+
+.nav-link:link,
+.nav-link:visited,
+.nav-link:hover {
+  border: none;
 }
 
 a:link > code,
@@ -153,14 +159,6 @@ header h2 {
   display: inline-block;
 }
 
-a.nav-link, a:visited.nav-link , a:link.nav-link  {
-  border: 1px solid #d7d7d7;
-}
-
-.nav-pills .nav-link.active {
-  color: #444444;
-}
-
 /* FOOTER */
 
 .contact-follow ul li a {
@@ -177,7 +175,7 @@ a.nav-link, a:visited.nav-link , a:link.nav-link  {
 
 .post-entry {
   padding-top: 0rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 }
 
 .post-title {
@@ -264,10 +262,6 @@ blockquote p {
 /* MEDIA QUERIES */
 
 @media (max-width: 667px) {
-  body {
-    padding-top: 1rem;
-  }
-
   header h1 {
     font-size: 49px;
   }
@@ -278,10 +272,6 @@ blockquote p {
 }
 
 @media (max-width: 320px) {
-  body {
-    padding-top: 1rem;
-  }
-
   header h1 {
     font-size: 42px;
   }

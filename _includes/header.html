@@ -1,5 +1,31 @@
 
-<header class="container container-fluid">
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <span class="navbar-brand">jsq/</span>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item mr-2">
+                <a class="nav-link {% if page.url == '/' or page.url == '/blog/' or page.url contains '/page/' %}active{% endif %}" href="/">Writing</a>
+            </li>
+            <li class="nav-item mr-2">
+                <a class="nav-link {% if page.url == '/speaking/' %}active{% endif %}" href="/speaking/">Speaking</a>
+            </li>
+            <li class="nav-item mr-2">
+                <a class="nav-link {% if page.url == '/projects/' %}active{% endif %}" href="/projects/">Projects</a>
+            </li>
+            <li class="nav-item mr-2">
+                <a class="nav-link {% if page.url == '/linkedout/' %}active{% endif %}" href="/linkedout/">Resume</a>
+            </li>
+            <li class="nav-item mr-2">
+                <a class="nav-link {% if page.url == '/about/' %}active{% endif %}" href="/about/">About</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<header class="container container-fluid mt-1 mb-1">
     <div class="row">
         <div class="col">
             <h1><a href="/">{{ site.title }}</a></h1>
@@ -11,37 +37,4 @@
             <h2>&mdash; Turing complete with a stack of <code>0xdeadbeef</code> &mdash;</h2>
         </div> <!-- col -->
      </div> <!-- row -->
-
-    <div class="row justify-content-md-center">
-        <div class="col"></div>
-        <div class="col-12 col-md-8">
-            <ul class="nav nav-pills justify-content-center">
-                <li class="nav-item mr-2 mb-2">
-                    <a class="nav-link {% if page.url == '/' or page.url == '/blog/' or page.url contains '/page/' %}active bg-light{% endif %}" href="/">Writing</a>
-                </li>
-                <li class="nav-item mr-2 mb-2">
-                    <a class="nav-link {% if page.url == '/speaking/' %}active bg-light{% endif %}" href="/speaking/">Speaking</a>
-                </li>
-                <li class="nav-item mr-2 mb-2">
-                    <a class="nav-link {% if page.url == '/projects/' %}active bg-light{% endif %}" href="/projects/">Projects</a>
-                </li>
-                <li class="nav-item mr-2 mb-2">
-                    <a class="nav-link {% if page.url == '/linkedout/' %}active bg-light{% endif %}" href="/linkedout/">Resume</a>
-                </li>
-                <li class="nav-item mr-1 mb-1">
-                    <a class="nav-link {% if page.url == '/about/' %}active bg-light{% endif %}" href="/about/">About</a>
-                </li>
-                {% if page.url == '/contact/'
-                    or page.url == '/archive/'
-                    or page.url == '/search/'
-                    or page.url == '/pay/' %}
-                <li class="nav-item mr-2 mb-2">
-                    <a class="nav-link active bg-light" href="{{ page.url }}">{{ page.title }}</a>
-                </li>
-                {% endif %}
-            </ul>
-        </div>
-        <div class="col"></div>
-    </div>
-   <br/>
 </header>

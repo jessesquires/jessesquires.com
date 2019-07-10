@@ -3,9 +3,11 @@ layout: standalone
 title: Payments
 ---
 
-<h4 class="text-muted text-center">Contracting, Open Source, Freelance</h4>
-
-Do you need to pay me for contracting, consulting, or freelance work? Or, do you want to support my open source work and blog? You can do that here with the options below. **Thanks!**
+Do you need to pay me for contracting/consulting work?
+Or do you want to support my open source work and blog?
+You can do that here with the options below.
+If you run into any issues, or if you have any questions, please [contact me](/contact).
+**Thanks!**
 
 <div class="row">
    <div class="col"></div>
@@ -26,7 +28,3 @@ Do you need to pay me for contracting, consulting, or freelance work? Or, do you
    </div> <!-- col -->
    <div class="col"></div>
 </div> <!-- row -->
-
-<p class="text-center text-muted">
-If you run into any issues, or if you have any questions, please <a href="/contact">contact me</a>.
-</p>
