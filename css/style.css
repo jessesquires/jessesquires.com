@@ -137,7 +137,6 @@ footer a:hover {
 /* HEADER */
 
 header, header code {
-  text-align: center;
   color: #444444;
 }
 
@@ -156,7 +155,6 @@ header h1 {
 header h2 {
   font-size: 14px;
   line-height: 19px;
-  margin: 0rem 0rem 1rem 0rem;
   display: inline-block;
 }
 
