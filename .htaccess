@@ -2,11 +2,12 @@
 
 ErrorDocument 404 /404.html
 
-# redirects
+# redirects for top-level pages
 
 Redirect 301 /resume/ /linkedout/
 Redirect 301 /work/ /linkedout/
 Redirect 301 /opensource/ /projects/
+Redirect 301 /archive/ /blog/
 
 # redirects for old blog URLs
 
