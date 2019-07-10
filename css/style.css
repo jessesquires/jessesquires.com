@@ -156,6 +156,7 @@ header h2 {
   font-size: 14px;
   line-height: 19px;
   display: inline-block;
+  padding-left: 1rem;
 }
 
 /* FOOTER */
