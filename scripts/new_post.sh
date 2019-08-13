@@ -67,7 +67,7 @@ image:
 
 > TODO: content here
 
-<!--image example-->
+<!-- image example -->
 
 {% include image.html
     file=TODO
@@ -76,6 +76,18 @@ image:
     source_link=null
     half_width=false
 %}
+
+<!-- break -->
+
+{% include break.html %}
+
+<!--
+handling links
+
+posts: [link]({{ site.url }}{% post_url 2000-01-01-my-blog-post-title %})
+
+images: {{ site.url }}{{ site.img_url}}/path-to/image.png
+-->
 
 " > $POST
 
