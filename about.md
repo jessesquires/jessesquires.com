@@ -9,7 +9,7 @@ I am currently working on indie projects, as well as contracting and consulting.
 
 More generally, I hope to contribute to a society that values community over hierarchy, [self-determination over capitalist exploitation](https://crimethinc.com/tce), and public ownership over private property.
 
-**Other interests:** reading books, bike touring, trail running, body modification, hook suspension, tea and coffee, cognitive science, moral philosophy, avant-garde art, punk/hardcore/metal, [building worker power](https://www.techworkerscoalition.org).
+**Other interests:** reading books, bike touring, trail running, body modification, hook suspension, tea and coffee, cognitive science, moral philosophy, avant-garde art, punk/hardcore/metal, worker power.
 
 You can [contact me here](/contact).
 
