@@ -5,7 +5,7 @@ title: Writing
 
 I mostly write about Swift, Objective-C, iOS, open source, and other software development topics.
 Sometimes I write about the ethics of tech, labor, and politics.
-However, I also write personal essays and notes on what I'm currently reading.
+I also write personal essays and notes on what I'm currently reading.
 If you are trying to find something specific, you can also [search this site](/search).
 
 {% for post in site.posts %}
