@@ -140,14 +140,7 @@ header, header code {
   color: #444444;
 }
 
-header h1 {
-  font-size: 50px;
-  font-weight: normal;
-  font-family: 'Ubuntu Mono', 'Arial';
-  display: inline-block;
-}
-
-.navbar-brand {
+.branded {
   font-weight: normal;
   font-family: 'Ubuntu Mono', 'Arial';
 }
