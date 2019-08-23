@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev, essays]
+tags: [ethics, tech, web]
 title: Removing Google Analytics, too
 subtitle: null
 ---

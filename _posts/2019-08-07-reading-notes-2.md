@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [reading-notes]
+tags: [relationships, anarchism]
 title: ! 'Reading Notes #2: Relationship Anarchy'
 ---
 

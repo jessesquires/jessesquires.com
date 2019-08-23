@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [swift, ios, coredata]
 title: Using Core Data in Swift
 subtitle: Talk at Realm in San Francisco
 ---

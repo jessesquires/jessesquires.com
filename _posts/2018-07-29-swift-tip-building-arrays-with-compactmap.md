@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [swift, design]
 title: ! 'Swift tip: Building arrays with compactMap'
 ---
 

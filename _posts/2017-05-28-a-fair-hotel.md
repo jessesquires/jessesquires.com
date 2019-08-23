@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [essays]
+tags: [tech, politics, labor]
 title: A Fair Hotel
 subtitle: Choosing a place to stay for your next conference
 ---

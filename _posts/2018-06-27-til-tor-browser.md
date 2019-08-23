@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [tech, web]
 title: The Tor Browser
 ---
 

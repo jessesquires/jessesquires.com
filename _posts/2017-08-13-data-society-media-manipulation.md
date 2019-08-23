@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [reading-notes]
+tags: [tech, ethics, politics]
 title: ! 'Data &amp; Society: Media Manipulation and Disinformation online'
 subtitle: New report from the Data &amp; Society Research Institute
 ---

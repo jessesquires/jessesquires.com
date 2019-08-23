@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [essays]
+tags: [politics, ethics]
 title: The impossible
 subtitle: Or, how my Dad just ate an Impossible Whopper and loved it
 ---

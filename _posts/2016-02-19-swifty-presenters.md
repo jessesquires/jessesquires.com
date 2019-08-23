@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [swift, ios, uikit, open-source]
 title: Swifty view controller presenters
 subtitle: Talk at Realm in San Francisco
 image:

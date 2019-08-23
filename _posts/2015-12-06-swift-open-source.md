@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [swift, open-source]
 title: Swift open source
 subtitle: Let the revolution begin
 image:

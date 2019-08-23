@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [reading-notes]
+tags: [capitalism]
 title: ! 'Reading Notes #1: The Individual, Society, and the State'
 subtitle: null
 ---

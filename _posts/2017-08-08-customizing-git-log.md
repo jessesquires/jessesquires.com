@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [git, open-source]
 title: Customizing git-log
 subtitle: Creating a 'smartlog' alias in git
 image:

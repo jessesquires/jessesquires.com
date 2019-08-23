@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [swift, open-source]
 title: Swift 3 sherlocked my library
 subtitle: Many of our "Swifty" wrappers are no longer necessary
 ---

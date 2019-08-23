@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [essays]
+tags: [swift, wwdc]
 title: Thoughts on WWDC 2018
 subtitle: Community over technology
 ---

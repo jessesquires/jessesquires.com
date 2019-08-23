@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [swift, ios, design, architecture]
 title: Refactoring singleton usage in Swift
 subtitle: Tips for a cleaner, modular, and testable codebase
 ---

@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev, essays]
+tags: [tech]
 title: ! 'Agile by degrees: How to estimate engineering project timelines'
 subtitle: You were always wrong, until now
 image:

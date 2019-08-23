@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [essays]
+tags: [relationships]
 title: Lars And The Basket Of Apples
 ---
 

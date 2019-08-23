@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [swift, ios, xcode, uikit]
 title: UIKit changes in iOS 9
 subtitle: Goodbye non-zeroing weak references
 ---

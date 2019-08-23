@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [swift, objective-c, wwdc, xcode]
 title: Apples to apples
 date-updated: 1 Aug 2014
 subtitle: A comparison of sorts between Objective-C and Swift

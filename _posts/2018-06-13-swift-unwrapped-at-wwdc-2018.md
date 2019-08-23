@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [wwdc, swift, open-source]
 title: Swift Unwrapped at WWDC 2018
 subtitle: Interviews with Ted Kremenek and Greg Heo
 image:

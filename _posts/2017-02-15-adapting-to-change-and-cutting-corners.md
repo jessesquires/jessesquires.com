@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev, essays]
+tags: [design, architecture]
 title: Adapting to change
 subtitle: And cutting corners
 ---

@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [swift, open-source, swift-evolution]
 title: Contributing to Swift Weekly Brief
 subtitle: Join us as a guest writer
 ---

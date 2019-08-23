@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev, essays]
+tags: [swift, open-source, swift-evolution]
 title: Thoughts on Swift access control
 subtitle: And the opportunity costs of Swift evolution
 image:

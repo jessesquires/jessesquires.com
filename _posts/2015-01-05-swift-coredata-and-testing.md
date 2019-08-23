@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [swift, ios, xcode, coredata]
 title: Swift, Core Data, and unit testing
 subtitle: Working around Swift's constraints to unit test models
 image:

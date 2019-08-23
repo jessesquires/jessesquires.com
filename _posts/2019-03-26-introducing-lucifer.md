@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [macos, apps]
 title: ! 'Summoning Lucifer: on making my first Mac app as an iOS developer'
 image:
     file: lucifer-app.jpg

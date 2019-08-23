@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [essays]
+tags: [tech, recruiting]
 title: Sleazy recruiting
 subtitle: LAMP stack for an iOS developer
 image:

@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [essays]
+tags: [tech, ethics]
 title: Linked Out
 subtitle: Or why I'm getting off of LinkedIn
 ---

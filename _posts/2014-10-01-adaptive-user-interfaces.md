@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [swift, objective-c, ios, xcode]
 title: Adaptive user interfaces
 subtitle: Exploring iOS size classes and trait collections
 image:

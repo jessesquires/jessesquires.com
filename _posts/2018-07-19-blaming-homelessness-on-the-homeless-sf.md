@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [essays]
+tags: [ethics, capitalism, politics]
 title: Hold it! Or, how to blame homelessness on the homeless in San Francisco
 subtitle: An essay on capital and compassion
 image:

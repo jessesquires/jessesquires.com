@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [apps, design]
 title: Status bars matter
 date-updated: 13 Oct 2014
 subtitle: Perfecting your app screenshots for the App Store

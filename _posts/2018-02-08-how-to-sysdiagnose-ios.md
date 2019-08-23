@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [ios, macos, tvos, watchos, apple, xcode]
 title: How to run sysdiagnose on iOS
 subtitle: And on all the Apple things
 date-updated: 05 Jan 2019

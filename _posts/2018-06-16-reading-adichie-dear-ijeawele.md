@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [reading-notes]
+tags: [politics]
 title: Reading Adichie
 subtitle: Language is the repository of our prejudices
 ---

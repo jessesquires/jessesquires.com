@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [apps]
 title: An update to Lucifer
 image:
     file: lucifer-about.png

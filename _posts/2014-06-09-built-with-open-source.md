@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [open-source, web, jekyll, bootstrap]
 title: Built with open-source
 subtitle: The beginnings of this blog
 ---

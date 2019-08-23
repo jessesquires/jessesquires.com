@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev, essays]
+tags: [ios, tech]
 title: When your app is used in unexpected ways
 subtitle: PlanGrid as a digital archaeological tool
 image:

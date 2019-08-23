@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [swift]
 title: Swift Unwrapped
 subtitle: Co-hosting a new podcast with JP Simard
 image:

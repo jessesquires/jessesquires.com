@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [swift, open-source, github, documentation, jazzy]
 title: Swift documentation, Part 2
 subtitle: Generating and publishing docs in Swift
 ---

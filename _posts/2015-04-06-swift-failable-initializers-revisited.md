@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [swift, ios, architecture]
 title: Failable initializers, revisited
 subtitle: Functional approaches to avoid Swift's failable initializers
 ---

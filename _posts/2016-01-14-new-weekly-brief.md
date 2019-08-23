@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [swift, open-source]
 title: The new weekly brief
 subtitle: The Swift Weekly Brief gets a new home
 ---

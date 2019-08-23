@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [swift, open-source, design, architecture]
 title: Pushing the limits of protocol-oriented programming
 subtitle: Talk at Swift Summit in San Francisco
 image:

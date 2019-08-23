@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [xcode]
 title: ! 'Xcode tip: Improving the assistant editor'
 image:
     file: xcode-assistant-editor.png

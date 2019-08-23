@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [swift, open-source, documentation, jazzy]
 title: Swift documentation
 subtitle: Writing, generating, and publishing great docs in Swift
 date-updated: 18 Apr 2018

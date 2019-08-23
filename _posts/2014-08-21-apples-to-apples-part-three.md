@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [swift, objective-c, wwdc, xcode]
 title: Apples to apples, Part III
 subtitle: A modest proposal&#58; can Swift outperform plain C?
 ---

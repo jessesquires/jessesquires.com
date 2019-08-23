@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [ethics, tech, web]
 title: Replacing Google Search with DuckDuckGo
 subtitle: And how to add a custom DuckDuckGo search box to your site
 image:

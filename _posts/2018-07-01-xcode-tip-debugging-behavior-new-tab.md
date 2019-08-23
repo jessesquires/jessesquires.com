@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [xcode, debugging]
 title: ! 'Xcode tip: Using behaviors to improve debugging'
 subtitle: null
 image:

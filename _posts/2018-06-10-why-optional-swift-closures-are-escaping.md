@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [swift, open-source, design]
 title: Why optional closures in Swift are escaping
 ---
 

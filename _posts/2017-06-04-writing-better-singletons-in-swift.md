@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [swift, design, architecture]
 title: Writing better singletons in Swift
 subtitle: Avoiding common pitfalls
 ---

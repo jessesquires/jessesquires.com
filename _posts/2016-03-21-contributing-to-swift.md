@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [swift, open-source]
 title: Contributing to open source Swift
 subtitle: Talk at try! Swift conference in Tokyo
 image:

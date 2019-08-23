@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [swift, open-source]
 title: Swift's new calling convention
 subtitle: From callee-owned to guaranteed
 ---

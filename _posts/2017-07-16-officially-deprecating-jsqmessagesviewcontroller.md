@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [objective-c, open-source, ios, github]
 title: Officially deprecating JSQMessagesViewController
 subtitle: No longer maintaining or supporting this project
 date-updated: 18 July 2017

@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [web, bootstrap]
 title: Upgrading to Bootstrap 4
 subtitle: And some minor design tweaks
 ---

@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [macos, appkit, uikit, apps]
 title: Implementing right-click for NSButton
 ---
 

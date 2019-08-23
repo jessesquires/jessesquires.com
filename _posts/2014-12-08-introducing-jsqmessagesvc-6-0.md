@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [open-source, ios]
 title: Introducing JSQMessagesVC 6.0
 subtitle: A brief history and celebration of the popular messages UI library for iOS
 image:

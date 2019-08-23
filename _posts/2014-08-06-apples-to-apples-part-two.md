@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [swift, objective-c, wwdc, xcode]
 title: Apples to apples, Part II
 subtitle: An analysis of sorts between Objective-C and Swift
 ---

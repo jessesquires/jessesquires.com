@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [swift, objective-c, ios, macos]
 title: Swift failable initializers
 subtitle: When failable becomes fallible, and how to avoid it
 ---

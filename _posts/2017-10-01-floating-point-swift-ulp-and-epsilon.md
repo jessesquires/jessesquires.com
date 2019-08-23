@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [swift, floating-point]
 title: Floating-point Swift, ulp, and epsilon
 subtitle: Exploring floating-point precision
 date-updated: 18 Apr 2018

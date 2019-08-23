@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [essays]
+tags: [ethics, relationships]
 title: The Four Agreements
 ---
 

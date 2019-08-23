@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [web, json, rss, jekyll]
 title: Supporting JSON feed
 subtitle: Now available
 ---

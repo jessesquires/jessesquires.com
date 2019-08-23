@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [swift, testing, xcode]
 title: Testing and mocking without OCMock
 subtitle: For Swift and Objective-C
 ---

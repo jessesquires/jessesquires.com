@@ -1,5 +1,7 @@
 ---
 layout: post
+categories: [software-dev]
+tags: [swift, open-source, swift-evolution]
 title: Speaking at FrenchKit
 subtitle: Paris, France
 image:
