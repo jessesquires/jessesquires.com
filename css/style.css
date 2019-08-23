@@ -25,12 +25,12 @@ h1 > code, h2 > code, h3 > code {
    color: #444444;
 }
 
-.nav-link:link,
-.nav-link:visited,
-.nav-link:hover,
-.navbar-brand:link,
-.navbar-brand:visited,
-.navbar-brand:hover {
+.navbar .nav-link:link,
+.navbar .nav-link:visited,
+.navbar .nav-link:hover,
+.navbar .navbar-brand:link,
+.navbar .navbar-brand:visited,
+.navbar .navbar-brand:hover {
   border: none;
 }
 

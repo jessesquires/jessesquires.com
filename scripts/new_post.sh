@@ -49,6 +49,8 @@ touch $POST
 
 echo "---
 layout: post
+categories: [software-dev | essays | reading-notes]
+tags: [TODO]
 title: $TITLE
 subtitle: null
 image:
