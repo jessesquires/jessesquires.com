@@ -9,7 +9,7 @@ If you are looking for a more formal resume, you can [find that here](/linkedout
 
 ### Apps
 
-You can find my indie iOS and macOS apps at [Hexed Bits](https://hexedbits.com). Most were personal projects, some were for clients. As I continue to develop and release new apps, you will find them here.
+You can find my indie iOS and macOS apps at [Hexed Bits](https://hexedbits.com). Most were personal projects, some were for clients. As I continue to develop and release new apps, you will find them there.
 
 ### Swift Unwrapped
 
@@ -21,9 +21,7 @@ I started the [Swift Weekly Brief](https://swiftweekly.github.io) newsletter in 
 
 I started this project with the intention of making it a community effort. To my knowledge it was the first newsletter of its kind, to be completely open source, and run by the community, for the community. I'm proud to say it inspired [Colin Eberhardt](https://twitter.com/ColinEberhardt) to [start his own](https://github.com/SwiftWeekly/swiftweekly.github.io/issues/339) newsletter, [WebAssembly Weekly](http://wasmweekly.news), which started as a fork of Swift Weekly Brief.
 
-The newsletter also inspired the [Swift Community Podcast](https://www.swiftcommunitypodcast.org/episodes/1), which is structured in a similar way &mdash; a podcast for the Swift community, by the Swift community.
-
-You can [read more about the newsletter here]({{ site.url }}{% post_url 2017-12-28-swift-weekly-brief-hiatus %}).
+The newsletter also inspired the [Swift Community Podcast](https://www.swiftcommunitypodcast.org/episodes/1), which is structured in a similar way &mdash; a podcast for the Swift community, by the Swift community. You can [read more about the newsletter here]({{ site.url }}{% post_url 2017-12-28-swift-weekly-brief-hiatus %}).
 
 ### Open source
 
