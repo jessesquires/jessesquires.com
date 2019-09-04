@@ -227,7 +227,7 @@ a.btn, a:visited.btn, a:link.btn {
   margin-bottom: 0.5rem;
 }
 
-.post-share-subscribe a,
+.btn-group a,
 sup a:link {
   border-width: 0px;
 }
