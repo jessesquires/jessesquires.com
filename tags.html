@@ -1,0 +1,43 @@
+---
+layout: standalone
+title: Tags
+permalink: /blog/tags
+---
+
+<p><b>Subscribe:</b> <a href="/feed.xml">RSS</a>, <a href="/feed.json">JSON feed</a>, <a href="{{ site.social_links.applenews }}">Apple News</a></p>
+
+<div class="mb-4">
+    <nav>
+    <div class="nav nav-pills" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="nav-all-tab" data-toggle="tab" href="#nav-all" role="tab" aria-controls="nav-all" aria-selected="true">
+            <small><i class="fa fa-tags" aria-hidden="true"></i> all</small>
+        </a>
+
+        {% for tag in site.tags %}
+        <a class="nav-item nav-link" id="nav-{{ tag[0] }}-tab" data-toggle="tab" href="#nav-{{ tag[0] }}" role="tab" aria-controls="nav-{{ tag[0] }}" aria-selected="false">
+            <small><i class="fa fa-hashtag" aria-hidden="true"></i> {{ tag[0] }}</small>
+        </a>
+        {% endfor %}
+    </div>
+    </nav>
+</div>
+
+<div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
+        {% for post in site.posts %}
+        <article class="post-entry">
+            {% include post_entry.html post_entry=post include_excerpt=false %}
+        </article>
+        {% endfor %}
+    </div>
+
+    {% for tag in site.tags %}
+    <div class="tab-pane fade" id="nav-{{ tag[0] }}" role="tabpanel" aria-labelledby="nav-{{ tag[0] }}-tab">
+        {% for post in tag[1] %}
+            <article class="post-entry">
+                {% include post_entry.html post_entry=post include_excerpt=false %}
+            </article>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</div>

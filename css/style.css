@@ -207,6 +207,15 @@ header h2 {
   margin-bottom: 0rem;
 }
 
+.nav-pills .nav-link {
+  border-width: 0px;
+  padding: 0.25rem 0.5rem;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #31808c;
+}
+
 /* PAGES */
 
 .alert h3 {

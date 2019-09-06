@@ -7,7 +7,7 @@ title: Writing
 I mostly write about Swift, Objective-C, iOS, open source, and other software development topics.
 Sometimes I write about the ethics of tech, labor, and politics.
 I also write personal essays and notes on what I'm currently reading.
-If you are trying to find something specific, you can <a href="/search">search this site</a>.
+Looking for something specific? You can <a href="/blog/tags">view posts by tag</a>, or <a href="/search">search this site</a>.
 </p>
 
 <p><b>Subscribe:</b> <a href="/feed.xml">RSS</a>, <a href="/feed.json">JSON feed</a>, <a href="{{ site.social_links.applenews }}">Apple News</a></p>
@@ -17,10 +17,18 @@ If you are trying to find something specific, you can <a href="/search">search t
 <div class="mt-4 mb-4">
 <nav>
 <div class="nav nav-tabs" id="nav-tab" role="tablist">
-    <a class="nav-item nav-link active" id="nav-all-tab" data-toggle="tab" href="#nav-all" role="tab" aria-controls="nav-all" aria-selected="true">all</a>
-    <a class="nav-item nav-link" id="nav-software-dev-tab" data-toggle="tab" href="#nav-software-dev" role="tab" aria-controls="nav-software-dev" aria-selected="false">software dev</a>
-    <a class="nav-item nav-link" id="nav-essays-tab" data-toggle="tab" href="#nav-essays" role="tab" aria-controls="nav-essays" aria-selected="false">essays</a>
-    <a class="nav-item nav-link" id="nav-reading-notes-tab" data-toggle="tab" href="#nav-reading-notes" role="tab" aria-controls="nav-reading-notes" aria-selected="false">reading notes</a>
+    <a class="nav-item nav-link active" id="nav-all-tab" data-toggle="tab" href="#nav-all" role="tab" aria-controls="nav-all" aria-selected="true">
+        <i class="fa fa-bookmark" aria-hidden="true"></i> all
+    </a>
+    <a class="nav-item nav-link" id="nav-software-dev-tab" data-toggle="tab" href="#nav-software-dev" role="tab" aria-controls="nav-software-dev" aria-selected="false">
+        <i class="fa fa-code" aria-hidden="true"></i> software dev
+    </a>
+    <a class="nav-item nav-link" id="nav-essays-tab" data-toggle="tab" href="#nav-essays" role="tab" aria-controls="nav-essays" aria-selected="false">
+        <i class="fa fa-pencil" aria-hidden="true"></i> essays
+    </a>
+    <a class="nav-item nav-link" id="nav-reading-notes-tab" data-toggle="tab" href="#nav-reading-notes" role="tab" aria-controls="nav-reading-notes" aria-selected="false">
+        <i class="fa fa-book" aria-hidden="true"></i> reading notes
+    </a>
 </div>
 </nav>
 </div>
@@ -34,7 +42,7 @@ If you are trying to find something specific, you can <a href="/search">search t
         {% endfor %}
     </div>
 
-{% for category in site.categories %}
+    {% for category in site.categories %}
     <div class="tab-pane fade" id="nav-{{ category[0] }}" role="tabpanel" aria-labelledby="nav-{{ category[0] }}-tab">
         {% for post in category[1] %}
             <article class="post-entry">
@@ -42,6 +50,5 @@ If you are trying to find something specific, you can <a href="/search">search t
             </article>
         {% endfor %}
     </div>
-{% endfor %}
-
+    {% endfor %}
 </div>
