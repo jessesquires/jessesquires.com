@@ -109,7 +109,6 @@ a.post-continue:hover {
 
 a.post-continue {
   color: #666666;
-  border-width: 0px;
 }
 
 footer a, footer a:visited,
@@ -208,7 +207,6 @@ header h2 {
 }
 
 .nav-pills .nav-link {
-  border-width: 0px;
   padding: 0.25rem 0.5rem;
 }
 
