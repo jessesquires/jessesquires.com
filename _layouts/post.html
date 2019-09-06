@@ -12,7 +12,7 @@ layout: default
 {% assign open_issue_url = site.links.issue | append: issue_all_params %}
 
 <article>
-    {% include post_entry.html post_entry=page include_excerpt=false %}
+    {% include post_entry.html post_entry=page display_excerpt=false display_categories=true display_tags=true %}
 
     <div class="post-content">
         {{ content }}

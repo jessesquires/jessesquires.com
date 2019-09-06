@@ -27,7 +27,7 @@ permalink: /blog/tags
     <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
         {% for post in site.posts %}
         <article class="post-entry">
-            {% include post_entry.html post_entry=post include_excerpt=false %}
+            {% include post_entry.html post_entry=post display_excerpt=false display_categories=false display_tags=false %}
         </article>
         {% endfor %}
     </div>
@@ -36,7 +36,7 @@ permalink: /blog/tags
     <div class="tab-pane fade" id="nav-{{ tag[0] }}" role="tabpanel" aria-labelledby="nav-{{ tag[0] }}-tab">
         {% for post in tag[1] %}
             <article class="post-entry">
-                {% include post_entry.html post_entry=post include_excerpt=false %}
+                {% include post_entry.html post_entry=post display_excerpt=false display_categories=false display_tags=false %}
             </article>
         {% endfor %}
     </div>

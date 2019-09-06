@@ -16,7 +16,19 @@
     </div>
 {% endif %}
 
-{% if include.include_excerpt %}
+{% if include.display_categories or include.display_tags %}
+<p class="text-muted">
+    {% if include.display_categories %}
+    <i class="fa fa-bookmark" aria-hidden="true"></i> <a class="text-muted border-0" href="/blog" title="categories">{{ post_entry.categories | sort | join: ", " }}</a>
+    {% endif %}
+
+    {% if include.display_tags %}
+    <i class="fa fa-tags" aria-hidden="true"></i> <a class="text-muted border-0" href="/blog/tags" title="tags">{{ post_entry.tags | sort | join: ", " }}</a>
+    {% endif %}
+</p>
+{% endif %}
+
+{% if include.display_excerpt %}
 <div class="post-excerpt">
     {{ post_entry.excerpt }}
     <p><a href="{{ post_entry.url }}" class="post-continue">Continue&hellip; <i class="fa fa-chevron-right"></i></a></p>

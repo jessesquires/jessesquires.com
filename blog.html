@@ -37,7 +37,7 @@ Looking for something specific? You can <a href="/blog/tags">view posts by tag</
     <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
         {% for post in site.posts %}
         <article class="post-entry">
-            {% include post_entry.html post_entry=post include_excerpt=true %}
+            {% include post_entry.html post_entry=post display_excerpt=true display_categories=false display_tags=false %}
         </article>
         {% endfor %}
     </div>
@@ -46,7 +46,7 @@ Looking for something specific? You can <a href="/blog/tags">view posts by tag</
     <div class="tab-pane fade" id="nav-{{ category[0] }}" role="tabpanel" aria-labelledby="nav-{{ category[0] }}-tab">
         {% for post in category[1] %}
             <article class="post-entry">
-                {% include post_entry.html post_entry=post include_excerpt=true %}
+                {% include post_entry.html post_entry=post display_excerpt=true display_categories=false display_tags=false %}
             </article>
         {% endfor %}
     </div>
