@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [macOS, apps]
+tags: [macos, apps, mac-app-store]
 title: Introducing Red Eye
 subtitle: Another menu bar app for macOS
 image:
