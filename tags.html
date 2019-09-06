@@ -13,7 +13,8 @@ permalink: /blog/tags
             <small><i class="fa fa-tags" aria-hidden="true"></i> all</small>
         </a>
 
-        {% for tag in site.tags %}
+        {% assign sorted_tags = site.tags | sort %}
+        {% for tag in sorted_tags %}
         <a class="nav-item nav-link" id="nav-{{ tag[0] }}-tab" data-toggle="tab" href="#nav-{{ tag[0] }}" role="tab" aria-controls="nav-{{ tag[0] }}" aria-selected="false">
             <small><i class="fa fa-hashtag" aria-hidden="true"></i> {{ tag[0] }}</small>
         </a>
