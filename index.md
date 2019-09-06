@@ -1,5 +1,6 @@
 ---
 layout: default
+tags: [hexed bits, software development, programming, engineering, design patterns, ios, objective-c, swift, ethics]
 ---
 
 <h3 class="branded">jsq</h3>

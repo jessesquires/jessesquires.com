@@ -1,6 +1,7 @@
 ---
 layout: standalone
 title: Speaking
+tags: [conference, talk, speaking]
 ---
 
 I enjoy speaking at conferences and meetups to share my thoughts, ideas, and experiences about programming,
