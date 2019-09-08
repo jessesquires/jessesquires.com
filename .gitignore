@@ -3,6 +3,7 @@
 # jekyll
 
 .jekyll-metadata
+.sass-cache
 _site/
 
 # ignore all extra node_modules from yarn

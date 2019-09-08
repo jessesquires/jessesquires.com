@@ -1,0 +1,20 @@
+---
+# front matter comment to ensure jekyll properly reads file
+---
+
+$font-brand: 'Ubuntu Mono', Arial, sans-serif;
+
+$color-bg: #ffffff;
+
+$color-gray: #444;
+
+$color-brand: #31808c;
+$color-brand-bright: #47bacc;
+
+$color-code: #c7254e;
+$color-code-bg: #f8f9fa;
+
+@import "common";
+@import "media-queries";
+@import "pages";
+@import "post-list";

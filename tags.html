@@ -9,13 +9,13 @@ permalink: /blog/tags/
 <div class="mb-4">
     <nav>
     <div class="nav nav-pills" id="nav-tab" role="tablist">
-        <a class="nav-item nav-link border-0 active" id="nav-all-tab" data-toggle="tab" href="#nav-all" role="tab" aria-controls="nav-all" aria-selected="true">
+        <a class="nav-item nav-link active" id="nav-all-tab" data-toggle="tab" href="#nav-all" role="tab" aria-controls="nav-all" aria-selected="true">
             <small><i class="fa fa-tags" aria-hidden="true"></i> all</small>
         </a>
 
         {% assign sorted_tags = site.tags | sort %}
         {% for tag in sorted_tags %}
-        <a class="nav-item nav-link border-0" id="nav-{{ tag[0] }}-tab" data-toggle="tab" href="#nav-{{ tag[0] }}" role="tab" aria-controls="nav-{{ tag[0] }}" aria-selected="false">
+        <a class="nav-item nav-link" id="nav-{{ tag[0] }}-tab" data-toggle="tab" href="#nav-{{ tag[0] }}" role="tab" aria-controls="nav-{{ tag[0] }}" aria-selected="false">
             <small><i class="fa fa-hashtag" aria-hidden="true"></i>{{ tag[0] }}</small>
         </a>
         {% endfor %}

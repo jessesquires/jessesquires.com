@@ -14,6 +14,8 @@ keep_files: [.well-known]
 # Site
 permalink: /blog/:title/
 img_url: /img
+sass:
+    style: compressed
 
 # Metadata
 title: 'Jesse Squires'

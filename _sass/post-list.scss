@@ -1,0 +1,43 @@
+
+.post-entry {
+  padding-top: 0rem;
+  padding-bottom: 2rem;
+}
+
+.post-title {
+  font-weight: lighter;
+}
+
+.post-subtitle {
+  font-size: 22px;
+  font-weight: normal;
+  margin-top: 0rem;
+}
+
+.post-date-subtitle {
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 0rem;
+}
+
+.post-date-updated {
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.post-date-updated p {
+  font-size: 11px;
+  margin: 0rem;
+}
+
+.post-excerpt p {
+  margin-bottom: 0rem;
+}
+
+.nav-pills .nav-link {
+  padding: 0.25rem 0.5rem;
+}
+
+.nav-pills .nav-link.active {
+  background-color: $color-brand;
+}
