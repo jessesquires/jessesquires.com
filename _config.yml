@@ -9,19 +9,18 @@ plugins:
 # File rules
 exclude: [vendor, Dangerfile, Gemfile, Gemfile.lock, LICENSE, README.md, assets/, package.json, yarn.lock, scripts/]
 include: [.htaccess]
-
 keep_files: [.well-known]
 
-# Permalinks
-permalink: /blog/:title/
-
 # Site
+permalink: /blog/:title/
+img_url: /img
+
+# Metadata
 title: 'Jesse Squires'
 description: 'Turing complete with a stack of 0xdeadbeef'
 url: https://www.jessesquires.com
 logo: /ico/logo.png
 timezone: America/Los_Angeles
-img_url: /img
 
 # Author
 author:

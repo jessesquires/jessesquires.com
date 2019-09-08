@@ -16,7 +16,9 @@ hr {
   width: 50%;
 }
 
-h1 > code, h2 > code, h3 > code {
+h1 > code,
+h2 > code,
+h3 > code {
   background-color: #ffffff;
   font-weight: bolder;
 }
