@@ -2,13 +2,13 @@
 
 *Turing complete with a stack of `0xdeadbeef`*
 
-![Logo](https://www.jessesquires.com/ico/apple-touch-icon.png)
+![Logo](https://www.jessesquires.com/ico/favicon-180-precomposed.png)
 
 ## About
 
-This is my personal site and blog. It mostly contains bits about Swift, Objective-C, iOS and open source. However, I also write about other programming topics, the ethics of tech, and sometimes politics.
+This is my personal site and blog. 
 
-Lovingly built with [Jekyll](https://jekyllrb.com), [Bootstrap](https://getbootstrap.com), [jQuery](https://jquery.com), and [Font Awesome](https://fortawesome.github.io/Font-Awesome/). Hosted at [NearlyFreeSpeech](https://nearlyfreespeech.net/).
+Built with [Jekyll](https://jekyllrb.com), [Bootstrap](https://getbootstrap.com), [jQuery](https://jquery.com), and [Font Awesome](https://fortawesome.github.io/Font-Awesome/). Hosted at [NearlyFreeSpeech](https://nearlyfreespeech.net/).
 
 ## Requirements
 
