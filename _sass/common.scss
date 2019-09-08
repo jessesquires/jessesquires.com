@@ -55,7 +55,9 @@ li {
   font-size: 14px;
 }
 
-a:link {
+a:link,
+a:active,
+a:visited {
   color: $color-brand;
 }
 
@@ -70,6 +72,8 @@ h1 > a:hover {
 }
 
 a:link > code,
-a:hover > code {
+a:hover > code,
+a:active > code,
+a:visited > code {
   color: $color-code;
 }
