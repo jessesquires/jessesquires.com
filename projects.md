@@ -9,7 +9,7 @@ If you are looking for a more formal resume, you can [find that here](/linkedout
 
 ### Apps
 
-You can find my indie iOS and macOS apps at [Hexed Bits](https://hexedbits.com). Most were personal projects, some were for clients. As I continue to develop and release new apps, you will find them there.
+You can find my indie iOS and macOS apps at [Hexed Bits](https://hexedbits.com). As I continue to develop and release new apps, you will find them there.
 
 ### Swift Unwrapped
 
