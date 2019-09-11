@@ -3,7 +3,8 @@ layout: standalone
 title: Resume
 ---
 
-This is my resume. I do not use LinkedIn.
+*Last updated: 10 September 2019*. Please [contact me](/contact/) if you have any questions.
+I [don't use LinkedIn]({{ site.url }}{% post_url 2019-08-13-linked-out %}) and I don't have a pdf or word doc copy.
 
 {% assign resume = site.data.resume %}
 

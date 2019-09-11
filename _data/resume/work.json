@@ -3,6 +3,18 @@
 
     "entries": [
         {
+            "title": "HexedBits",
+            "location": "Remote",
+            "start": "Aug 2019",
+            "end": "Present",
+            "link": "https://www.hexedbits.com",
+            "img": {
+                "name": "work-hexedbits.png",
+                "title": "HexedBits"
+            },
+            "description": "Independent and freelance app development. See [hexedbits.com](https://www.hexedbits.com)."
+        },
+        {
             "title": "Software Engineer (iOS), PlanGrid",
             "location": "San Francisco, CA",
             "start": "May 2017",
@@ -54,12 +66,29 @@
                 "title": "Rosetta Stone"
             },
             "bullets": [
-                "Released and maintained the [Advanced Languages](https://apps.apple.com/us/app/id879261486) app. (Previously named \"Advanced English For Business\")",
+                "Released and maintained the [Advanced Languages](https://apps.apple.com/us/app/id879261486) app. Previously named \"Advanced English For Business\".",
                 "Used CoreText and speech recognition engine to build a read-along learning activity.",
                 "Built vocabulary cards, matching, and other learning activity frameworks.",
                 "Authored over a dozen internal frameworks (private CocoaPods) in efforts to build up mobile infrastructure.",
                 "Worked effectively with remote teammates.",
                 "Authored and published the company's first ever [open-source projects](https://github.com/rosettastone/)."
+            ]
+        },
+        {
+            "title": "Contractor (iOS), Hemoglobe",
+            "location": "Remote",
+            "start": "Jan 2013",
+            "end": "Apr 2013",
+            "link": "https://www.hemoglobe.com",
+            "img": {
+                "name": "work-hemoglobe.jpg",
+                "title": "Hemoglobe"
+            },
+            "description": "A collaboration with designer [Michael Schultz](https://michaelschultz.com) and funded by Affinity Biotech. Hemoglobe was an iOS app for staying in touch and meeting new people with bleeding disorders. It was shutdown in early 2016 and is no longer available.",
+            "bullets": [
+                "Built the entire app and collaborated with Michael on implementing his designs.",
+                "Used [Parse](https://parseplatform.org) BaaS for backend.",
+                "Features included a feed of nearby users, private 1:1 messaging, and user profiles."
             ]
         },
         {
