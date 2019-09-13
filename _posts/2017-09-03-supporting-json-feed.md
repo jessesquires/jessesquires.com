@@ -6,7 +6,7 @@ title: Supporting JSON feed
 subtitle: Now available
 ---
 
-A couple of weeks ago I finally got around to adding support for Brent Simmons' and Manton Reece's [JSON Feed](https://jsonfeed.org/version/1) for this blog. You can subscribe to the feed [here](https://jessesquires.com/feed.json). It was simple and fun to implement.
+A couple of weeks ago I finally got around to adding support for Brent Simmons' and Manton Reece's [JSON Feed](https://jsonfeed.org/version/1) for this blog. You can subscribe to the feed [here]({{ site.url }}{{site.feeds.json }}). It was simple and fun to implement.
 
 <!--excerpt-->
 
@@ -32,4 +32,4 @@ Then, you'll need to add a `<link />` tag in the `<head>` section of your site:
 <link type="application/json" rel="alternate" href="/feed.json" title="YOUR SITE TITLE" />
 {% endhighlight %}
 
-That's all. When you run `jekyll build`, your [full feed](https://jessesquires.com/feed.json) will be generated. Now, go add JSON Feed support to your blog, too.
+That's all. When you run `jekyll build`, your [full feed]({{ site.url }}{{site.feeds.json }}) will be generated. Now, go add JSON Feed support to your blog, too.

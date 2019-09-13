@@ -6,7 +6,7 @@ layout: null
     "version": "https://jsonfeed.org/version/1",
     "title": "{{ site.title }}",
     "home_page_url": "{{ site.url }}",
-    "feed_url": "{{ site.url }}/feed.json",
+    "feed_url": "{{ site.url }}{{ site.feeds.json }}",
     "description": "{{ site.description }}",
     "icon": "{{ site.url }}{{ site.logo }}",
     "favicon": "{{ site.url }}/favicon.ico",

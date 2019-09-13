@@ -3,8 +3,7 @@ markdown: kramdown
 highlighter: rouge
 
 plugins:
-    - jekyll-paginate
-    - jekyll-sitemap
+  - jekyll-sitemap
 
 # File rules
 exclude: [vendor, Dangerfile, Gemfile, Gemfile.lock, LICENSE, README.md, assets/, package.json, yarn.lock, scripts/]
@@ -13,9 +12,10 @@ keep_files: [.well-known]
 
 # Site
 permalink: /blog/:title/
+excerpt_separator: <!--excerpt-->
 img_url: /img
 sass:
-    style: compressed
+  style: compressed
 
 # Metadata
 title: 'Jesse Squires'
@@ -26,23 +26,23 @@ timezone: America/Los_Angeles
 
 # Author
 author:
-    name: 'Jesse Squires'
-    twitter: jesse_squires
-    avatar: /ico/avatar.jpg
-
-# Setup
-paginate_path: /blog/page/:num/
-excerpt_separator: <!--excerpt-->
+  name: 'Jesse Squires'
+  twitter: jesse_squires
+  avatar: /ico/avatar.jpg
 
 # Data
 links:
-    github: 'https://github.com/jessesquires/jessesquires.com'
-    issue: 'https://github.com/jessesquires/jessesquires.com/issues/new'
-    pull: 'https://github.com/jessesquires/jessesquires.com/compare'
+  github: 'https://github.com/jessesquires/jessesquires.com'
+  issue: 'https://github.com/jessesquires/jessesquires.com/issues/new'
+  pull: 'https://github.com/jessesquires/jessesquires.com/compare'
 
 social_links:
-    twitter: 'https://twitter.com/jesse_squires'
-    github: 'https://github.com/jessesquires/'
-    stackoverflow: 'https://stackoverflow.com/users/2195632/jessesquires'
-    keybase: 'https://keybase.io/jsq'
-    applenews: 'https://apple.news/Td_gVU2BDSS2oPbz_sD150w'
+  twitter: 'https://twitter.com/jesse_squires'
+  github: 'https://github.com/jessesquires/'
+  stackoverflow: 'https://stackoverflow.com/users/2195632/jessesquires'
+  keybase: 'https://keybase.io/jsq'
+
+feeds:
+  rss: '/feed.xml'
+  json: '/feed.json'
+  applenews: 'https://apple.news/Td_gVU2BDSS2oPbz_sD150w'

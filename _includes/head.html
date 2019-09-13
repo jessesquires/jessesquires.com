@@ -76,6 +76,6 @@
 
     {% include favicons.html %}
 
-    <link type="application/atom+xml" rel="alternate" href="/feed.xml" title="{{ site.title }}" />
-    <link type="application/json" rel="alternate" href="/feed.json" title="{{ site.title }}" />
+    <link type="application/atom+xml" rel="alternate" href="{{ site.url }}{{ site.feeds.rss }}" title="{{ site.title }}" />
+    <link type="application/json" rel="alternate" href="{{ site.url }}{{ site.feeds.json }}" title="{{ site.title }}" />
 </head>

@@ -6,7 +6,7 @@ title: "Open source Swift&#58; weekly brief"
 subtitle: What's been happening during the first full week on Swift.org?
 ---
 
-It looks many developers in the community enjoyed my [previous post](http://www.jessesquires.com/swift-open-source/) detailing my thoughts and observations on the activity around the [Swift open source project](https://swift.org). So, I'm going to try to do this weekly &mdash; every Thursday, since the open source announcement was on a Thursday. Each week I'll provide a high-level summary of what's been happening, updates on interesting statistics, and links to interesting content. If you have any suggestions, please [let me know](https://twitter.com/jesse_squires)! And now, the weekly brief!
+It looks many developers in the community enjoyed my [previous post]({{ site.url }}{% post_url 2015-12-06-swift-open-source %}) detailing my thoughts and observations on the activity around the [Swift open source project](https://swift.org). So, I'm going to try to do this weekly &mdash; every Thursday, since the open source announcement was on a Thursday. Each week I'll provide a high-level summary of what's been happening, updates on interesting statistics, and links to interesting content. If you have any suggestions, please [let me know]({{ site.social_links.twitter }})! And now, the weekly brief!
 
 <!--excerpt-->
 
@@ -40,4 +40,4 @@ It looks many developers in the community enjoyed my [previous post](http://www.
 
 - Programming is little more than a ["nights and weekends" hobby](https://twitter.com/clattner_llvm/status/674254974629502976) for Chris Lattner. 😂
 
-**That's it for this week!** [Subscribe](/feed.xml) or [follow me](https://twitter.com/jesse_squires) to stay up-to-date!
+**That's it for this week!** [Subscribe]({{ site.url }}{{ site.feeds.rss }}) or [follow me]({{ site.social_links.twitter }}) to stay up-to-date!

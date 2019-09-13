@@ -32,13 +32,13 @@
                 </button>
                 <div class="dropdown-menu">
                     <h6 class="dropdown-header">Subscribe</h6>
-                    <a class="dropdown-item btn-sm text-dark" href="/feed.xml" title="Subscribe via RSS">
+                    <a class="dropdown-item btn-sm text-dark" href="{{ site.feeds.rss }}" title="Subscribe via RSS">
                         RSS &nbsp;<i class="fa fa-rss" aria-hidden="true"></i>
                     </a>
-                    <a class="dropdown-item btn-sm text-dark" href="/feed.json" title="Subscribe via JSON Feed">
+                    <a class="dropdown-item btn-sm text-dark" href="{{ site.feeds.json }}" title="Subscribe via JSON Feed">
                         JSON Feed &nbsp;<i class="fa fa-code" aria-hidden="true"></i>
                     </a>
-                    <a class="dropdown-item btn-sm text-dark" href="{{ site.social_links.applenews }}" title="Add to Apple News">
+                    <a class="dropdown-item btn-sm text-dark" href="{{ site.feeds.applenews }}" title="Add to Apple News">
                         Apple News &nbsp;<i class="fa fa-apple" aria-hidden="true"></i>
                     </a>
                 </div>
