@@ -4,7 +4,7 @@ https://keybase.io/jsq
 
 I hereby claim:
 
-  * I am an admin of https://www.jessesquires.com
+  * I am an admin of https://jessesquires.com
   * I am jsq (https://keybase.io/jsq) on keybase.
   * I have a public key with fingerprint BBAE BA80 7CF2 7BC2 5E5C  FB43 1537 66AC 1FA1 A758
 
@@ -22,16 +22,16 @@ To do so, I am signing this object:
       "username": "jsq"
     },
     "service": {
-      "hostname": "www.jessesquires.com",
+      "hostname": "jessesquires.com",
       "protocol": "https:"
     },
     "type": "web_service_binding",
     "version": 1
   },
-  "ctime": 1568337911,
+  "ctime": 1568338152,
   "expire_in": 157680000,
-  "prev": "b3f5db49b23ec178a85c577f24d5c698f17be16fe63bd0b598d6ff094d37a10c",
-  "seqno": 17,
+  "prev": "980f87ad8f86972f7abed0aec0577fb810b806c4faca95192da7449bdcdf0123",
+  "seqno": 18,
   "tag": "signature"
 }
 
@@ -41,29 +41,29 @@ which yields the signature:
 Version: Keybase OpenPGP v2.1.3
 Comment: https://keybase.io/crypto
 
-yMNIAnicrZJ/UBRlGMcPMGbC1CBxUkGaxRnGIty9vd139wQmhgrFKIiA5hKv9919
-91iBu2P3OATFaARKRnMEDkONIhWcLNBwRJnBH4ADDBxlEigR1gyQGgyJlOYf0C5j
-//Vn7z/vPM/7/X7e53net2uZnyHAJxhIX4fVN77r03f1aL4hs2jm4S4COcRCwryL
-yMaLG84RseqyZssiYSZIiqQgDTgAAWciMUQ8KwEgsSJCSKJYhhEwlIwsDzDgkJHU
-FAJkOMSbJCTQIjDRiBJISEQSkmy3YcWpyHaXhkUIYgQ5EgiSESDByGBGkJCJphga
-sCwUKAlSEDCcZsxyqLpDKw5BFUfJDi2nBdbF8v5D/z/Xnb+IwyISkBGzkBR5QJIM
-lCALRKRFRkCxFK8LVazYYS7W1DvUPKI4ktASblnA+kz1Jp4cFhQURO3AqorVvHxZ
-wWqU4MjV7E7F4XIIjhxNkeVyOVWzTnAVOhctGFmfwKxItovaKDWHGyuq7LATZkpT
-Ci5Zp1MMy9E04CkqksA7nRrfKusKBrAcqS39HuzWH4CWGBGZeGSksUABDnKMwGgD
-MppERmB5TqIAwhQrYZZGIokYnhNZSSJ5k0gDSJECobeXZ3dobKDVCW0aU5VtdujK
-VzBR3HF12xKDT4DB/ylf/Y8ZAp5+9t+f9+PLKxYstRuv3EmtGm85NNOSEnP/+5SH
-VV3HXa2rG6+l7t4Q0xU3uS/i2Cd776Ymha7PXJlxfUPOvm1sYlxBRmHbpoF1xDuT
-80um3hr4IK3nWHtWVPZNlDEiPbMsqHK4Jrn3vq3GffLK9OGKsTPRl0oiPoR/2nLO
-Xyu55fNlYp91OJk1xjclnvO+V10e07/0M3ZkcKeAJiO+7W4a3Ny04G0+a7ydVvyD
-wZAQ+P7gH/EhZqLGr/KBtS5me2rSVE7tfNWEIve5ew8ycbvLSn+NvRzb07VKzFpR
-MtTL8nX+3c2qZXQNaKt5nIAmx7fPrIof/+7nW9VNLybP/nVImSJWjr2Z9dHZ9L0n
-QuZOHbV8nLHH0vn58wmd4M454VHH6Udjsqf7pfV3TxYn5h4ZKfVtmS1vmFr3U1O/
-eiOkKMWeOrRvrTu3vfVe/dBceLhnKG7PPDO85pWgpKK2IEt1qzusLP2ed6zdVT5S
-Ufr67cOXkvd3L3/75vWZCb8THex5pfn44IGFC5aL3umyirTaLTcMiQMT38j9tS2e
-M4+DvKHLlUZrT8PFyc350QF/yzBiJvY1kpLrgp1fnfaZPngk3F3Vs/X3T/fH5m28
-HPjcWtsF/61F/p11De5fhk89KF1dHurNDI7/onAs2jfsVSdRJDtDPZ5NVeYt9G9z
-YHRp5hv16ROBaVIl7RFG6wfNhtkX/gFgV86O
-=O/Mt
+yMNDAnicrVJtUFRVGF7ECGlJ8CuGgchbAwEb3Lu792OXJRmrtWZidLLAFHY9595z
+8fKxF/beBQQhCgOK/ACdFoNG1IASRpRhQjBolBwQbZEpooDGdIAwImkqSyvsLJP/
++tn5c+a87/M853mfeT8L9NUE+KxlxbaIYy3bfC6fd7s06UULs8UElIXdhLmYyEJL
+F8oWkKLasySBMBMkRVLAwHIsYDkjiQA0MSLLiowAIRQphqZ5BEQ9Y2IRy0E9iRE8
+oDloMoqQNwis0QApngSEjhAlRwZy5jolh4plIQQIAo5keVHPQl5PI5oXodFA0QaW
+YQBPiYACLM1h4i5Z8TKwOQgUFCfJuIYf9iV7/4H/n327luSQAHmoRwwgBRNLkjQQ
+AcMKEL/0LMVQJi9QQU4HyEEYnankESU6AhfyJR55M/UOcb+JFAUpeS7JiZQ4Xs7B
+1FynrMq8nI27u1Q1VzF72eruXC+8AEH7v0J2KDkEHCNm5COnIskOwkxhJK9KXmWK
+ZjiDgaNovY5AhblY3y55ETTLcCQ+3n9QPpY0caSIgxE4kcMB6EUWQCSQAPEkjSOC
+HEVCjmR4o4gzMdGUSS8A1mg0QYEXRJLSGwjvaHkOGWtz2CfIwJqKlOEAqsuJiJIL
+59OWa3wCNH4PLPPulyZgRdD9rfMLDdJUe87Qq68ullZp7FpZs2PglX1HynwS20M9
+0aU3K+vdXYmbXvXkxwZ7lKd2rg8ZibzhHzEWH+POshR1T13pObJwadXzVQmCbfs7
+t2um9k5UpC67tbZ6aDI4ceMKJjBRl3M5pOfcuO/GVMSVzE9cjwo9ftO/u7FzsP/R
+/ZvLwmau3GnlR+d+/+CUZ7Z+YX3jWdTVMta/MoWxyrb3LR2D8VrZ/eb44bsFrafv
+DZ+yt6V8ea0tp1SXNFGQVm6uZISrJtLywvSGhqhPNmWDznVaov9iuivl9czu1c8c
+yqwcKSuuif7Tvab80y0vIa7hwXO/pZ9Idkelf8H8Ot3+1+z0z1szn3tR/XHHZPt2
+62zqoZWHu05PQuudocc+nFpcdI00OtZ8Pqp66hZCpq5ffHs+KeH290F+71oz50xv
+PPHwQMKl3ub+rwdrPuqrcrS4K746UCmVXDj708eWezNcQ/IfYTdObijTrlpMOyrP
+PTtMxafWFpr7hi3dsUN5FRm26Mh9OdXptVygED3vCm9undsZYROjNxNHM47vCd/S
+EVDQoos82b+8+tumg9qtqu/4I80PHfCdDLcAW+97YX+Hlscu7Kk1aq2939QlxQw8
+qar+hU9rfJLr1v3ygy3hmqY1OC5yZm9iRNN3Y313Ze61+o6emGMw9q0286gucmD+
+VtO2ovGuTucJyVr98uM9Z/4B6N/DSQ==
+=9PHi
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
