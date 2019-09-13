@@ -46,7 +46,7 @@ This is problematic for a few reasons.
 
 ### A new micro-library
 
-Say hello to [JSQNotificationObserverKit](https://github.com/jessesquires/JSQNotificationObserverKit), a Swift framework based on [snippet 16](http://www.objc.io/snippets/16.html). This framework remedies the issues described above with a *tiny* API that is *extremely* flexible. As you'll notice from the [documentation](http://www.jessesquires.com/JSQNotificationObserverKit), there is only 1 class, 1 struct, and 1 function. This is all we need, which is as awesome as it is surprising. Let's see how it works.
+Say hello to [JSQNotificationObserverKit](https://github.com/jessesquires/JSQNotificationObserverKit), a Swift framework based on [snippet 16](http://www.objc.io/snippets/16.html). This framework remedies the issues described above with a *tiny* API that is *extremely* flexible. As you'll notice from the [documentation](https://jessesquires.github.io/JSQNotificationObserverKit), there is only 1 class, 1 struct, and 1 function. This is all we need, which is as awesome as it is surprising. Let's see how it works.
 
 We begin by creating a `Notification`. This struct has two type parameters: a value `V` and sender `S`. The type of value `V` that the notification sends is a [phantom type](http://www.objc.io/snippets/13.html), while `S` is the type of sender associated with the notification. A `Notification` also has a `name` property and an optional `sender` property.
 

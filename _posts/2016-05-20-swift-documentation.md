@@ -155,7 +155,7 @@ cd ~/GitHub-Pages/JSQCoreDataKit
 
 Right now, I prefer running the `publish_docs.sh` script manually so that the docs only update when I want them to &mdash; for corrections and major releases. However, you could easily do this in the `after_success:` step of your [Travis-CI](https://travis-ci.org) script.
 
-Here's the [final product](http://www.jessesquires.com/JSQCoreDataKit/) for JSQCoreDataKit.
+Here's the [final product](https://jessesquires.github.io/JSQCoreDataKit/) for JSQCoreDataKit.
 
 ### It's easy
 

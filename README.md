@@ -6,7 +6,7 @@
 
 ## About
 
-This is my personal site and blog. 
+This is my personal site and blog.
 
 Built with [Jekyll](https://jekyllrb.com), [Bootstrap](https://getbootstrap.com), [jQuery](https://jquery.com), and [Font Awesome](https://fortawesome.github.io/Font-Awesome/). Hosted at [NearlyFreeSpeech](https://nearlyfreespeech.net/).
 

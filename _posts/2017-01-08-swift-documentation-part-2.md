@@ -29,7 +29,7 @@ jazzy \
 
 You need to tell jazzy where your source code is and provide some basic author information. It couldn't be easier. Run `jazzy --help` to see all of the possible usage options.
 
-> **New!** With the latest version of jazzy, you can pass `--documentation` and provide additional, custom markdown docs. In PresenterKit, this is used to generate the [*Getting Started*](http://www.jessesquires.com/PresenterKit/getting-started.html) guide.
+> **New!** With the latest version of jazzy, you can pass `--documentation` and provide additional, custom markdown docs. In PresenterKit, this is used to generate the [*Getting Started*](https://jessesquires.github.io/PresenterKit/getting-started.html) guide.
 
 ### Publishing docs
 
@@ -37,4 +37,4 @@ In the previous post, publishing docs with GitHub was a somewhat clunky process 
 
 ### Complete workflow
 
-Once you've made changes to your code and header docs, run [your script](https://github.com/jessesquires/PresenterKit/blob/develop/build_docs.sh) to generate the documentation which should dump everything into `docs/`. Then simply commit your changes and push to GitHub, where your documentation will be [rendered automatically](http://www.jessesquires.com/JSQCoreDataKit/).
+Once you've made changes to your code and header docs, run [your script](https://github.com/jessesquires/PresenterKit/blob/develop/build_docs.sh) to generate the documentation which should dump everything into `docs/`. Then simply commit your changes and push to GitHub, where your documentation will be [rendered automatically](https://jessesquires.github.io/JSQCoreDataKit/).

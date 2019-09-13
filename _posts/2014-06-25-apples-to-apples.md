@@ -13,14 +13,14 @@ When Craig Federighi arrived at his presentation slide about Objective-C during 
 
 {% include updated_notice.html
     update_message='
-    <p>
+    <p class="my-0">
     	This post has been updated for Xcode6-beta4. All trials were re-run as described below using Xcode6-beta4.
 	</p>
-	<p>
+	<p class="my-0">
 		Major changes to the Swift language include the <a href="https://developer.apple.com/swift/blog/?id=3" class="alert-link">redesign of arrays</a> to have full value semantics and new syntactic sugar &mdash; introduced in Xcode6-beta3.
 		As of the beta4 release, Swift has seen <strong>dramatic</strong> performance improvements. See the updated results below.
 	</p>
-	<p>
+	<p class="my-0">
 		<strong>Note:</strong> because of the new array semantics and syntax, code changes were required for Swift. You can find the previous code on the <code>xcode6-beta1and2</code> branch <a href="https://github.com/jessesquires/swift-sorts/branches" class="alert-link">on GitHub</a>.
 	</p>
     '

@@ -28,7 +28,7 @@ The release was seamless and free of regressions. So, how did we do this?
 
 The success of this release was the result of a number of attributes about this project:
 
-1. It has [100% API documentation](http://www.jessesquires.com/JSQCoreDataKit/)
+1. It has [100% API documentation](https://jessesquires.github.io/JSQCoreDataKit/)
 2. It has [96% test coverage](https://codecov.io/gh/jessesquires/JSQCoreDataKit)
 3. It has [continuous integration](https://travis-ci.org/jessesquires/JSQCoreDataKit) with Travis CI
 4. [All issues](https://github.com/jessesquires/JSQCoreDataKit/issues?utf8=✓&q=is%3Aissue) are organized, labeled, and clearly explained
