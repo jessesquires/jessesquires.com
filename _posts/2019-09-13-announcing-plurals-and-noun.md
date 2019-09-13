@@ -6,7 +6,7 @@ title: ! 'New iMessage sticker pack: plurals and noun'
 image:
     file: plurals-and-noun-icon.png
     alt: 'Plurals and Noun'
-    caption: 'plurals and noun sticker pack'
+    caption: 'plurals and noun is written and illustrated by Lisa Sy'
     half_width: true
 ---
 
