@@ -2,7 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [apps, ios, imessage, app store]
-title: ! 'New iMessage sticker pack: Plurals and Noun'
+title: ! 'New iMessage sticker pack: plurals and noun'
 image:
     file: plurals-and-noun-icon.png
     alt: 'Plurals and Noun'
