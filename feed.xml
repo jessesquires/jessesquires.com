@@ -39,6 +39,8 @@ layout: null
 
         {% if post.date-updated %}
         <updated>{{ post.date-updated | date_to_xmlschema }}</updated>
+        {% else %}
+        <updated>{{ post.date | date_to_xmlschema }}</updated>
         {% endif %}
 
         <summary>{{ post.excerpt }}</summary>
