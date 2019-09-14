@@ -9,7 +9,7 @@ layout: null
     <link href="{{ site.url }}{{ site.feeds.rss }}" rel="self" />
     <link href="{{ site.url }}" />
     <updated>{{ site.time | date_to_xmlschema }}</updated>
-    <id>{{ site.url }}</id>
+    <id>{{ site.url }}/</id>
 
     <author>
         <name>{{ site.author.name }}</name>
@@ -27,19 +27,23 @@ layout: null
     {% for post in site.posts %}
     <entry>
         <link href="{{ site.url }}{{ post.url }}" />
-        <id>{{ site.url }}{{ post.id }}</id>
+        <id>{{ site.url }}{{ post.url }}</id>
+
         <title>{{ post.title }}</title>
-        {% if post.subtitle %}<subtitle>{{ post.subtitle }}</subtitle>{% endif %}
+
+        {% if post.subtitle %}
+        <subtitle>{{ post.subtitle }}</subtitle>
+        {% endif %}
+
         <published>{{ post.date | date_to_xmlschema }}</published>
+
         {% if post.date-updated %}
         <updated>{{ post.date-updated | date_to_xmlschema }}</updated>
-        {% else %}
-        <updated>{{ post.date | date_to_xmlschema }}</updated>
         {% endif %}
-        <summary>{{ post.excerpt }}
-        </summary>
-        <content type="html">{{ post.content | xml_escape }}
-        </content>
+
+        <summary>{{ post.excerpt }}</summary>
+
+        <content type="html">{{ post.content | xml_escape }}</content>
     </entry>
     {% endfor %}
 </feed>
