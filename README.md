@@ -19,9 +19,9 @@ Built with [Jekyll](https://jekyllrb.com), [Bootstrap](https://getbootstrap.com)
 
 ### Gems
 
-- [jekyll](https://jekyllrb.com) ([Latest](https://github.com/jekyll/jekyll/releases/latest))
-- [jekyll-paginate](https://github.com/jekyll/jekyll-paginate)
+- [jekyll](https://jekyllrb.com) ([Latest](https://github.com/jekyll/jekyll/releases/latest)) ([Cheat Sheet](https://learn.cloudcannon.com/jekyll-cheat-sheet/))
 - [jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap)
+- [jekyll-paginate](https://github.com/jekyll/jekyll-paginate)
 
 #### Updating Gems
 
