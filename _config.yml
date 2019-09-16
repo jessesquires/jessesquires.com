@@ -6,14 +6,31 @@ plugins:
   - jekyll-sitemap
 
 # File rules
-exclude: [vendor, Dangerfile, Gemfile, Gemfile.lock, LICENSE, README.md, assets/, package.json, yarn.lock, scripts/]
-include: [.htaccess]
-keep_files: [.well-known]
+exclude:
+  - vendor
+  - Dangerfile
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - assets/
+  - package.json
+  - yarn.lock
+  - scripts/
+
+include:
+  - .htaccess
+  - node_modules/bootstrap/dist/css/bootstrap.min.css
+  - node_modules/bootstrap/dist/js/bootstrap.bundle.min.js
+  - node_modules/jquery/dist/jquery.slim.min.js
+
+keep_files:
+  - .well-known
 
 # Site
 permalink: /blog/:title/
-excerpt_separator: <!--excerpt-->
 img_url: /img
+excerpt_separator: <!--excerpt-->
 sass:
   style: compressed
 
