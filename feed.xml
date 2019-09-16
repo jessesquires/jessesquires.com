@@ -4,15 +4,20 @@ layout: null
 
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
+    <link href="{{ site.url }}{{ site.feeds.rss }}" rel="self" type="application/atom+xml"/>
+
     <title>{{ site.title }}</title>
+    <link href="{{ site.url }}/" />
     <subtitle>{{ site.description }}</subtitle>
-    <link href="{{ site.url }}{{ site.feeds.rss }}" rel="self" />
-    <link href="{{ site.url }}" />
+
     <updated>{{ site.time | date_to_xmlschema }}</updated>
     <id>{{ site.url }}/</id>
 
+    <rights>Copyright © 2012-{{ site.time | date: '%Y' }}, {{ site.author.name }}</rights>
+
     <author>
         <name>{{ site.author.name }}</name>
+        <uri>{{ site.url }}/</uri>
     </author>
 
     <icon>{{ site.url }}{{ site.logo }}</icon>
@@ -21,8 +26,8 @@ layout: null
     <category term="ios"/>
     <category term="swift"/>
     <category term="objective-c"/>
-    <category term="software"/>
-    <category term="mobile"/>
+    <category term="software design"/>
+    <category term="mobile apps"/>
 
     {% for post in site.posts %}
     <entry>
@@ -30,10 +35,6 @@ layout: null
         <id>{{ site.url }}{{ post.url }}</id>
 
         <title>{{ post.title }}</title>
-
-        {% if post.subtitle %}
-        <subtitle>{{ post.subtitle }}</subtitle>
-        {% endif %}
 
         <published>{{ post.date | date_to_xmlschema }}</published>
 
@@ -43,9 +44,13 @@ layout: null
         <updated>{{ post.date | date_to_xmlschema }}</updated>
         {% endif %}
 
-        <summary>{{ post.excerpt }}</summary>
+        {% if post.subtitle %}
+        <summary type="text">{{ post.subtitle }}</summary>
+        {% else %}
+        <summary type="html">{{ post.excerpt | escape }}</summary>
+        {% endif %}
 
-        <content type="html">{{ post.content | xml_escape }}</content>
+        <content type="html">{{ post.content | escape }}</content>
     </entry>
     {% endfor %}
 </feed>
