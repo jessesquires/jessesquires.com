@@ -24,7 +24,51 @@ There are obvious benefits to adopting JSON Feed over something less modern like
 
 This site is built using [Jekyll](https://jekyllrb.com), so supporting JSON Feed just requires adding a new template `feed.json` file in the root directory of your site. It's the same as supporting RSS/Atom, where you provide a `feed.xml` template. Your site configuration will vary, but your `feed.json` should be similar to mine. [Here it is](https://github.com/jessesquires/jessesquires.com/blob/master/feed.json). You fill-in your site metadata, and iterate through each post to build an array of items. You'll notice that it's similar to [the feed.xml](https://github.com/jessesquires/jessesquires.com/blob/master/feed.xml) for RSS/Atom.
 
-<script src="https://gist.github.com/jessesquires/45c9173e1b2e3e7bf7e24b02dedc243a.js"></script>
+{% raw %}
+```json
+---
+layout: null
+---
+
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "{{ site.title }}",
+    "home_page_url": "{{ site.url }}",
+    "feed_url": "{{ site.url }}/feed.json",
+    "description": "{{ site.description }}",
+    "icon": "{{ site.url }}{{ site.logo }}",
+    "favicon": "{{ site.url }}/favicon.ico",
+    "expired": false,
+    "author": {
+        "name": "{{ site.author.name }}",
+        "url": "{{ site.url }}",
+        "avatar": "{{ site.url }}{{ site.author.avatar }}"
+    },
+    "items": [
+        {% for post in site.posts %}
+        {
+            "id": "{{ post.url | absolute_url | sha1 }}",
+            "url": "{{ site.url }}{{ post.url }}",
+            "title": {{ post.title | jsonify }},
+            "date_published": "{{ post.date | date_to_xmlschema }}",
+            {% if post.date-updated %}
+            "date_modified": "{{ post.date-updated | date_to_xmlschema }}",
+            {% else %}
+            "date_modified": "{{ post.date | date_to_xmlschema }}",
+            {% endif %}
+            "author": {
+                "name": "{{ site.author.name }}",
+                "url": "{{ site.url }}",
+                "avatar": "{{ site.url }}{{ site.author.avatar }}"
+            },
+            "summary": {{ post.excerpt | jsonify }},
+            "content_html": {{ post.content | jsonify }}
+        }{% if forloop.last == false %},{% endif %}
+        {% endfor %}
+    ]
+}
+```
+{% endraw %}
 
 Then, you'll need to add a `<link />` tag in the `<head>` section of your site:
 
