@@ -8,7 +8,7 @@
     {% endif %}
 
 <div class="alert alert-warning">
-    <h3>Updated <small><i>{{ date }}</i></small></h3>
+    <h3>Update <small><i>{{ date | date_to_string }}</i></small></h3>
     <p class="my-0">
         {{ include.update_message }}
     </p>

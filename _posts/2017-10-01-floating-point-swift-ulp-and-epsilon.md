@@ -4,7 +4,7 @@ categories: [software-dev]
 tags: [swift, floating-point]
 title: Floating-point Swift, ulp, and epsilon
 subtitle: Exploring floating-point precision
-date-updated: 18 Apr 2018
+date-updated: 2018-04-18T08:00:00-07:00
 ---
 
 Epsilon. `ε`. The fifth letter of the Greek alphabet. In calculus, an arbitrarily small positive quantity. In formal language theory, [the empty string](https://en.wikipedia.org/wiki/Empty_string). In the theory of computation, the empty transition of an automaton. In the [ISO C Standard](http://www.open-std.org/jtc1/sc22/WG14/www/docs/n1570.pdf), `1.19e-07` for single precision and `2.22e-16` for double precision.

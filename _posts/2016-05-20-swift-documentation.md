@@ -4,7 +4,7 @@ categories: [software-dev]
 tags: [swift, open-source, documentation, jazzy]
 title: Swift documentation
 subtitle: Writing, generating, and publishing great docs in Swift
-date-updated: 18 Apr 2018
+date-updated: 2018-04-18T10:00:00-07:00
 image:
     file: feels_good_docs.jpg
     alt: 100% docs

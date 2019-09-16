@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [macos, debugging]
+date: 2019-08-16T08:00:00-07:00
 title: Workaround for highlight bug in NSStatusItem
 ---
 

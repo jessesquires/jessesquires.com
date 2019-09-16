@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [apps]
+date: 2019-08-16T10:00:00-07:00
 title: An update to Lucifer
 image:
     file: lucifer-about.png

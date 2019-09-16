@@ -14,7 +14,7 @@ Over a weekend recently I built a tiny Mac app (more on that later). What I was 
 
 It is surprisingly easy to run AppleScript within a Mac app. All you need to do is create an instance of [`NSAppleScript`](https://developer.apple.com/documentation/foundation/nsapplescript). Swift's multi-line string literals make it especially nice. You can write your script in the Script Editor, then copy it to your Swift source verbatim. AppleScript can be incredibly powerful and useful. I wrote [this one](https://github.com/jessesquires/safari-tabs-to-omnifocus) to send my currently open Safari tabs to OmniFocus.
 
-{% highlight swift %}
+```swift
 // Example:
 //
 // AppleScript that tells Safari to search for "macOS"
@@ -26,7 +26,7 @@ tell application "Safari" to search the web for "macOS"
 let script = NSAppleScript(source: source)!
 let error: NSDictionary?
 script.executeAndReturnError(&error)
-{% endhighlight %}
+```
 
 My script was interacting with "System Events", which provides a lot of miscellaneous system-level functionality. I verified that my script was working as expected with the Script Editor app, but it was not working when executed from within my mac app.
 
@@ -34,9 +34,9 @@ My script was interacting with "System Events", which provides a lot of miscella
 
 The first error in the Xcode console seemed completely unrelated to my app.
 
-{% highlight bash %}
+```bash
 skipped scripting addition "/Library/ScriptingAdditions/Adobe Unit Types.osax" because it is not SIP-protected.
-{% endhighlight %}
+```
 
 I'm not familiar with "Scripting Additions" but I discovered there were [some big changes in Mojave](https://latenightsw.com/mojave-brings-in-big-security-changes/) that essentially killed this feature. (Shocking.) As expected, this error was in fact completely unrelated to my app &mdash; this file, `Adobe Unit Types.osax`, belongs to Adobe. (I have an older version of Photoshop installed.) I don't know why Xcode displays this error in the console for *my app*. It seems like it would be simple filter out these irrelevant logs. It makes for a confusing developer experience. Anyway, it was a great way to foreshadow the pain ahead.
 
@@ -44,7 +44,7 @@ I'm not familiar with "Scripting Additions" but I discovered there were [some bi
 
 The other error in the console was produced by my code. This is contents of printing the `error` parameter after calling `script.executeAndReturnError(&error)`.
 
-{% highlight bash %}
+```bash
 {
     NSAppleScriptErrorAppName = "System Events";
     NSAppleScriptErrorBriefMessage = "Application isn't running.";
@@ -52,7 +52,7 @@ The other error in the console was produced by my code. This is contents of prin
     NSAppleScriptErrorNumber = "-600";
     NSAppleScriptErrorRange = "NSRange: {151, 9}";
 }
-{% endhighlight %}
+```
 
 Interesting. System Events definitely *is* running. As far as I know, it is *always* running. My guess was that this was a permissions issue. It did not take long to find these posts by [Daniel Jalkut](https://twitter.com/danielpunkass) and [Felix Schwarz](https://twitter.com/felix_schwarz):
 
@@ -81,12 +81,12 @@ There's an entire section on temporary exceptions for AppleEvents.
 
 I needed to add the following entitlement to my `App.entitlements` file. The "temporary exception" in the key name was worrisome. I wondered if this would this be allowed in the Mac App Store? But, now my app worked as expected. Progress!
 
-{% highlight xml %}
+```xml
 <key>com.apple.security.temporary-exception.apple-events</key>
 <array>
     <string>com.apple.systemevents</string>
 </array>
-{% endhighlight %}
+```
 
 ### Discovering scripting targets
 
@@ -96,7 +96,7 @@ Despite my uncertainty around this entitlement, I decided to submit my app to th
 
 The [guide](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/AppSandboxTemporaryExceptionEntitlements.html) provides this example for the Mail app.
 
-{% highlight xml %}
+```xml
 <key>com.apple.security.temporary-exception.apple-events:before:10.8</key>
     <string>com.apple.mail</string>
 
@@ -107,31 +107,31 @@ The [guide](https://developer.apple.com/library/archive/documentation/Miscellane
         <string>com.apple.mail.compose</string>
     </array>
 </dict>
-{% endhighlight %}
+```
 
 Scripting access groups are provided by applications that support scripting via AppleScript. Access groups define groups of scriptable operations, which you can learn more about in [this WWDC talk](https://developer.apple.com/videos/play/wwdc2012/206/). There are a couple of ways to discover what is scriptable in an app. You can open the Script Editor, select `File > Open Dictionary...`, then select the application you want to automate and explore what is possible. This is great for simply writing AppleScript scripts, but I could not find anything that specified which actions were part of an access group. For that, you need to use the `sdef` tool, the scripting definition extractor.
 
-{% highlight bash %}
+```bash
 sdef /Applications/Mail.app
-{% endhighlight %}
+```
 
 This will dump the specified application's scripting definition to stdout. I'd recommend tossing the output into a file, so you can open it in an editor.
 
-{% highlight bash %}
+```bash
 sdef /Applications/Mail.app > ~/Desktop/mail_sdef.xml
-{% endhighlight %}
+```
 
 Once you have this, you can search for `access-group` in the definition file. For the Mail app, you will eventually find:
 
-{% highlight xml %}
+```xml
 <access-group identifier="com.apple.mail.compose" access="rw"/>
-{% endhighlight %}
+```
 
 Cool. Now I have a much better understanding of scripting targets and access groups. What's left is finding out the access groups I need to specify for System Events, so that I can use the approved `com.apple.security.scripting-targets` entitlement.
 
-{% highlight bash %}
+```bash
 sdef /System/Library/CoreServices/System\ Events.app > ~/Desktop/system_events_sdef.xml
-{% endhighlight %}
+```
 
 And disappointment ensues. The access groups I need are not there. In fact, the only one available is `com.apple.systemevents.window.position`, which [looks like it was added](https://mjtsai.com/blog/2014/03/04/add-security-access-groups-for-accessibility-apis/) because of [this radar](http://www.openradar.me/16224269) from Craig Hockenberry. About four years later, and no additional access groups have been added.
 
