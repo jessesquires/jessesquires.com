@@ -6,7 +6,7 @@ date: 2019-09-19T19:00:00-07:00
 title: The ACA and your credit report
 ---
 
-As some of you may know, I recently quit my job in San Francisco to pursue personal projects, freedom (sort of) from our collective capitalist nightmare, and self-determination. But I'll write more on that later. This post is about dealing with health care as an independent developer in the United States.
+As some of you may know, I recently quit my job in San Francisco to pursue personal projects, freedom (sort of) from our collective capitalist nightmare, and self-determination. But I'll write more on that later. This post is about dealing with health care as an independent software developer in the United States.
 
 <!--excerpt-->
 
