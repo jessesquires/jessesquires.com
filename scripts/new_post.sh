@@ -51,6 +51,7 @@ echo "---
 layout: post
 categories: [software-dev | essays | reading-notes]
 tags: [TODO]
+date: $YEAR T10:00:00-07:00
 title: $TITLE
 subtitle: null
 image:
