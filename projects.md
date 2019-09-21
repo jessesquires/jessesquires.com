@@ -13,7 +13,7 @@ You can find my indie iOS and macOS apps at [Hexed Bits](https://hexedbits.com).
 
 ### Swift Unwrapped
 
-I co-host the [Swift Unwrapped](https://spec.fm/podcasts/swift-unwrapped) podcast with my good friend, [JP Simard](https://www.jpsim.com). We started this podcast in February 2017 and continue to publish new episodes.
+I co-host the [Swift Unwrapped](https://spec.fm/podcasts/swift-unwrapped) podcast with my good friend, [JP Simard](https://www.jpsim.com). We started this podcast in February 2017 and continue to publish new episodes. We have welcomed a number of guests to our show, including members of the [Swift Core Team](https://swift.org/community/#community-structure). We were even mentioned on the official Swift [blog post announcing the Swift 5.1 release](https://swift.org/blog/swift-5-1-released/).
 
 ### Swift Weekly Brief
 
