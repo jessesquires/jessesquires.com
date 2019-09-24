@@ -17,3 +17,7 @@ incr:
 .PHONY: pub
 pub:
 	./scripts/publish.sh
+
+.PHONY: tags
+tags:
+	./scripts/tags_publish.sh
