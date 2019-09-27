@@ -5,7 +5,6 @@
 build:
 	bundle exec jekyll build
 
-
 .PHONY: watch
 watch:
 	bundle exec jekyll build --watch
@@ -13,6 +12,10 @@ watch:
 .PHONY: incr
 incr:
 	bundle exec jekyll build --watch --incremental
+
+.PHONY: future
+future:
+	bundle exec jekyll build --watch --future
 
 .PHONY: pub
 pub:
