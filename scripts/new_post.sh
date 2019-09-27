@@ -27,24 +27,8 @@ while true; do
     fi
 done
 
-POST_DIR="_drafts"
-
-echo "Generate a post or a draft?"
-select pd in "post" "draft"; do
-    case $pd in
-        post )
-            echo "Generating new post in _posts/ ...";
-            POST_DIR="_posts";
-    break;;
-        draft )
-            echo "Generating new post in _drafts/ ...";
-    break;;
-    esac
-done
-
-mkdir -p "$POST_DIR"
-
-POST="$POST_DIR/$YEAR-$TITLE.md"
+echo "Generating new post in _posts/ ...";
+POST="_posts/$YEAR-$TITLE.md"
 touch $POST
 
 echo "---
