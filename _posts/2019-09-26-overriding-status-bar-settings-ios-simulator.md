@@ -4,6 +4,7 @@ categories: [software-dev]
 tags: [ios, xcode]
 date: 2019-09-24T16:00:00-07:00
 title: Overriding status bar display settings in the iOS simulator
+date-updated: 2019-09-28T12:00:00-07:00
 image:
     file: simctl-status-bar.png
     alt: iOS status bar
@@ -30,7 +31,7 @@ This produces the following:
 
 You can specify the time, WiFi state, cellular state, and battery state. What's really nice is that you can specify the simulator using only its name, not some obscure identifier. If you hover your mouse over a simulator device, or bring its window to the front, it will display its name and OS version beneath it. Or, if you have "Show Device Bezels" turned off, the name and OS version will display in the window's title bar.
 
-The overrides in this example are the ones I plan to use for all of my screenshots, and I recommend you do the same &mdash; full cellular bars, full WiFi bars, full battery, and 9:41 for the time. This is what Apple uses for all of their marketing screenshots, and there is no doubt that it is intentional. The time 9:41 is strangely aesthetically pleasing, and I'm sure someone spent a lot of time to figure that out.
+The overrides in this example are the ones I plan to use for all of my screenshots, and I recommend you do the same &mdash; full cellular bars, full WiFi bars, full battery, and 9:41 for the time. This is what Apple uses for all of their marketing screenshots, and there is no doubt that it is intentional. The time 9:41 is strangely aesthetically pleasing, and I'm sure someone spent a lot of time to figure that out. **Update:** Or, [perhaps not](https://www.engadget.com/2014/04/14/why-9-41-am-is-the-always-the-time-displayed-on-iphones-and-ipad/). 😄
 
 ### Shortcomings
 
@@ -54,7 +55,9 @@ This is much more usable. Note: using `set -x;` and wrapping the command in `( )
 
 One nice-to-have would be to make these overrides the defaults such that you could run `xcrun simctl status_bar "<DEVICE>" override` without specifying any options to get "Apple Marketing approved" status bars.
 
-Another aspect of the simulator status bars on "notch-less" iPhones (iPhones before the X) is that they display "Carrier" for the cellular carrier. I do not think `simctl status_bar` should let you override this with a custom value, since cellular carriers are not the same in all locales. However, I think you should be able to **remove** this. You cannot. But, I suppose most folks are going to be taking screenshots using the latest devices, which means this should not be much of a concern.
+Another aspect of the simulator status bars on "notch-less" iPhones (iPhones before the X) is that they display "Carrier" for the cellular carrier. I do not think `simctl status_bar` should let you override this with a custom value, since cellular carriers are not the same in all locales. However, I think you should be able to **remove** this. ~~You cannot. But, I suppose most folks are going to be taking screenshots using the latest devices, which means this should not be much of a concern.~~
+
+**Update:** Some readers have pointed out that you *can* remove the "Carrier" text by specifying `--cellularMode notSupported`. However, this has the unfortunate side-effect of also removing the cellular bars. Also, currently the App Store requires that you provide two sets of screenshots, one for "notched" iPhones (e.g. iPhone XS Max) and one for "notch-less" (e.g. iPhone 8 Plus). One reader noted a recent experience of getting rejected for using iPhone X screenshots for the iPhone Plus. It appears this shortcoming is worse than I initially anticipated.
 
 Finally, I think all of these options should be present in the Simulator.app File menu, which already includes options like showing the in-call status bar and setting a custom location.
 
