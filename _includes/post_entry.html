@@ -12,7 +12,7 @@
 {% endif %}
 
 {% if post_entry.date-updated %}
-    <div class="post-date-updated">
+    <div class="post-date-updated d-block">
     <span class="badge badge-dark">
         <p title="{{ post_entry.date-updated | date: '%d %b %Y %r %Z' }}">Updated: {{ post_entry.date-updated | date_to_string }}</p>
     </span>
