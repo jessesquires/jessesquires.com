@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [open-source, web, jekyll, bootstrap]
+date: 2014-06-09T10:00:00-07:00
 title: Built with open-source
 subtitle: The beginnings of this blog
 ---

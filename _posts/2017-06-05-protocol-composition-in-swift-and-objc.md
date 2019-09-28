@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [swift, objective-c, design, architecture]
+date: 2017-06-05T10:00:00-07:00
 title: Protocol composition in Swift and Objective-C
 subtitle: Designing optional semantics without optional methods
 ---

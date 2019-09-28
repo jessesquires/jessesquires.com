@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [swift, ios, frp]
+date: 2015-03-31T10:00:00-07:00
 title: Functional notifications
 subtitle: Exploring the flexibility of Swift micro-libraries
 ---

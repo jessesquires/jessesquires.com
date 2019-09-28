@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [swift, open-source]
+date: 2017-12-28T10:00:00-07:00
 title: Ending the Swift Weekly Brief
 subtitle: Taking an indefinite hiatus from writing the newsletter, and looking for a new owner
 image:

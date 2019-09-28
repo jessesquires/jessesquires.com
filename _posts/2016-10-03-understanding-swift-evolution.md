@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [swift, open-source, swift-evolution]
+date: 2016-10-03T10:00:00-07:00
 title: Understanding Swift Evolution
 subtitle: What can we learn by analyzing the proposals?
 ---

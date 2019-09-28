@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [swift, open-source, documentation, coredata]
+date: 2016-05-22T10:00:00-07:00
 title: Open source everything
 subtitle: Getting meaningful contributions to move your projects forward
 image:

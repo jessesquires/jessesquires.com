@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [web, jekyll, ruby, git]
+date: 2017-09-10T10:00:00-07:00
 title: Building a site with Jekyll on NearlyFreeSpeech
 subtitle: My blog infrastructure, and migrating off of GitHub pages
 ---

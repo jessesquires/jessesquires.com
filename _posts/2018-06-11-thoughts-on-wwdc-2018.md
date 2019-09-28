@@ -2,6 +2,7 @@
 layout: post
 categories: [essays]
 tags: [swift, wwdc]
+date: 2018-06-11T10:00:00-07:00
 title: Thoughts on WWDC 2018
 subtitle: Community over technology
 ---

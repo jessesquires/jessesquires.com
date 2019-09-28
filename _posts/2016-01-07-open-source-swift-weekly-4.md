@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [swift, open-source]
+date: 2016-01-07T10:00:00-07:00
 title: "Open source Swift&#58; weekly brief #4"
 subtitle: What's been happening on Swift.org?
 ---

@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev, essays]
 tags: [design, architecture]
+date: 2017-02-15T10:00:00-07:00
 title: Adapting to change
 subtitle: And cutting corners
 ---

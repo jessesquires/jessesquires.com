@@ -2,6 +2,7 @@
 layout: post
 categories: [essays]
 tags: [politics, ethics]
+date: 2019-08-19T10:00:00-07:00
 title: The impossible
 subtitle: Or, how my Dad just ate an Impossible Whopper and loved it
 ---

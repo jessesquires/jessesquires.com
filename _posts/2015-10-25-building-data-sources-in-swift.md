@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [swift, ios, xcode, uikit, design, architecture, open-source]
+date: 2015-10-25T10:00:00-07:00
 title: Building type-safe, composable data sources in Swift
 subtitle: A modern approach to collection views and table views
 ---

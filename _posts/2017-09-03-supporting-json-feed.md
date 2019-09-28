@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [web, json, rss, jekyll]
+date: 2017-09-03T10:00:00-07:00
 title: Supporting JSON feed
 subtitle: Now available
 ---

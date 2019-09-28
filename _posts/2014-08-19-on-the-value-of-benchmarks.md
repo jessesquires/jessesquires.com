@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [swift, objective-c, wwdc, xcode]
+date: 2014-08-19T10:00:00-07:00
 title: On the value of benchmarks
 subtitle: A brief examination of measuring code performance
 ---

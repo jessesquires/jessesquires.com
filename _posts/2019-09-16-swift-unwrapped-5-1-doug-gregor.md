@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [swift]
+date: 2019-09-16T10:00:00-07:00
 title: Swift 5.1 with Doug Gregor
 subtitle: Latest episode of Swift Unwrapped
 ---

@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [swift, enums, design ,architecture]
+date: 2016-07-31T10:00:00-07:00
 title: "Enums as configuration&#58; the anti-pattern"
 subtitle: Implementing the open/closed principle
 ---

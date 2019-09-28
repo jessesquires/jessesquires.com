@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [tech, web]
+date: 2018-06-27T10:00:00-07:00
 title: The Tor Browser
 ---
 

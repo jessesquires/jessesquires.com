@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [swift, debugging, xcode, ios]
+date: 2018-11-07T10:00:00-07:00
 title: Debugging a subtle Swift bug that will make you facepalm
 image:
     file: swift-function-ref.jpg

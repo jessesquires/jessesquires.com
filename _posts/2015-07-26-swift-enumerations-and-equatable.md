@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [swift, enums]
+date: 2015-07-26T10:00:00-07:00
 title: Swift enumerations and equatable
 subtitle: Implementing equatable for enums with associated values
 ---

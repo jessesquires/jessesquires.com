@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [swift, macos, apps, applescript]
+date: 2018-11-17T10:00:00-07:00
 title: Executing AppleScript in a Mac app on macOS Mojave and dealing with AppleEvent sandboxing
 subtitle: Or, how I learned about a labyrinth of app entitlements
 ---

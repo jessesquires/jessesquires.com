@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [ios, open-source]
+date: 2016-02-06T10:00:00-07:00
 title: Call for contributors
 subtitle: Join the JSQMessagesViewController team!
 ---

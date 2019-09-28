@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [swift, open-source, swift-evolution]
+date: 2016-09-30T10:00:00-07:00
 title: Speaking at FrenchKit
 subtitle: Paris, France
 image:

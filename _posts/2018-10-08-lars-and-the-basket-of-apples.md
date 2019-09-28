@@ -2,6 +2,7 @@
 layout: post
 categories: [essays]
 tags: [relationships]
+date: 2018-10-08T10:00:00-07:00
 title: Lars And The Basket Of Apples
 ---
 

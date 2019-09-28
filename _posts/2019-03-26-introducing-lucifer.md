@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [macos, apps, mac-app-store]
+date: 2019-03-26T10:00:00-07:00
 title: ! 'Summoning Lucifer: on making my first Mac app as an iOS developer'
 image:
     file: lucifer-app.jpg

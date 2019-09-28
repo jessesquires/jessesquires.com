@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [swift, open-source]
+date: 2016-01-14T10:00:00-07:00
 title: The new weekly brief
 subtitle: The Swift Weekly Brief gets a new home
 ---

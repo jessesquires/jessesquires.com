@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [swift, ios, xcode, coredata]
+date: 2015-02-17T10:00:00-07:00
 title: Better Core Data models in Swift
 subtitle: How Swift can bring clarity and safety to your managed objects
 image:

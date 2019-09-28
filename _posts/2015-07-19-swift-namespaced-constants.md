@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [swift, ios, architecture, design]
+date: 2015-07-19T10:00:00-07:00
 title: Namespaced constants in Swift
 subtitle: Using nested types for clarity
 date-updated: 2015-07-23T10:00:00-07:00

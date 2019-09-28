@@ -2,6 +2,7 @@
 layout: post
 categories: [reading-notes]
 tags: [relationships, anarchism]
+date: 2019-08-07T10:00:00-07:00
 title: ! 'Reading Notes #2: Relationship Anarchy'
 ---
 

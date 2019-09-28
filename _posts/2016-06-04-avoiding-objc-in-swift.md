@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [swift, objective-c, design, architecture]
+date: 2016-06-04T10:00:00-07:00
 title: Avoiding the overuse of @objc in Swift
 subtitle: Don't let Objective-C cramp your style
 ---

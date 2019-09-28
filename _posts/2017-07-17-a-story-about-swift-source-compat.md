@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [swift, open-source]
+date: 2017-07-17T10:00:00-07:00
 title: A story about Swift source compatibility
 subtitle: How to add your projects to the swift-source-compat-suite and why you should
 ---

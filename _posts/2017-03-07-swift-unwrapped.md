@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [swift]
+date: 2017-03-07T10:00:00-07:00
 title: Swift Unwrapped
 subtitle: Co-hosting a new podcast with JP Simard
 image:

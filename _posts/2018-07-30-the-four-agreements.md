@@ -2,6 +2,7 @@
 layout: post
 categories: [essays]
 tags: [ethics, relationships]
+date: 2018-07-30T10:00:00-07:00
 title: The Four Agreements
 ---
 

@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [swift, open-source, design, architecture]
+date: 2017-01-23T10:00:00-07:00
 title: Pushing the limits of protocol-oriented programming
 subtitle: Talk at Swift Summit in San Francisco
 image:

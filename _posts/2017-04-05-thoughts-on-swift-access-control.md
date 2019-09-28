@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev, essays]
 tags: [swift, open-source, swift-evolution]
+date: 2017-04-05T10:00:00-07:00
 title: Thoughts on Swift access control
 subtitle: And the opportunity costs of Swift evolution
 image:

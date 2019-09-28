@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [swift, design]
+date: 2018-07-29T10:00:00-07:00
 title: ! 'Swift tip: Building arrays with compactMap'
 ---
 

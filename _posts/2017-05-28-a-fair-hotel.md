@@ -2,6 +2,7 @@
 layout: post
 categories: [essays]
 tags: [tech, politics, labor]
+date: 2017-05-28T10:00:00-07:00
 title: A Fair Hotel
 subtitle: Choosing a place to stay for your next conference
 ---

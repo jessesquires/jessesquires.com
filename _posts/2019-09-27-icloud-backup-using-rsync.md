@@ -2,7 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [icloud, apple, ios, macos]
-date: 2019-09-27 T10:00:00-07:00
+date: 2019-09-27T10:00:00-07:00
 title: Backing up your iCloud Drive files using rsync
 ---
 

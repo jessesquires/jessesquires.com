@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [ios, macos, xcode, swift]
+date: 2017-09-18T10:00:00-07:00
 title: Measuring Swift compile times in Xcode 9
 subtitle: Using -Xfrontend Swift compiler flags
 image:

@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [swift, xcode, git]
+date: 2016-07-25T10:00:00-07:00
 title: Migrating to Swift 3
 subtitle: Advice, tips, and warnings
 image:

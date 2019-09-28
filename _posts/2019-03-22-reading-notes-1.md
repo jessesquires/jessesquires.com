@@ -2,6 +2,7 @@
 layout: post
 categories: [reading-notes]
 tags: [capitalism, politics, labor]
+date: 2019-03-22T10:00:00-07:00
 title: ! 'Reading Notes #1: The Individual, Society, and the State'
 subtitle: null
 ---

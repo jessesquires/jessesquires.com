@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [ios, iphone, ipad]
+date: 2016-06-14T10:00:00-07:00
 title: The A5 is dead (almost)
 subtitle: iOS 10 drops support for A5 devices
 image:

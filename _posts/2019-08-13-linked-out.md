@@ -2,6 +2,7 @@
 layout: post
 categories: [essays]
 tags: [tech, ethics]
+date: 2019-08-13T10:00:00-07:00
 title: Linked Out
 subtitle: Or why I'm getting off of LinkedIn
 ---

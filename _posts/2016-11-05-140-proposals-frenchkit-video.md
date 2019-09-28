@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [swift, open-source, swift-evolution]
+date: 2016-11-05T10:00:00-07:00
 title: 140 proposals in 30 minutes
 subtitle: Talk at FrenchKit conference in Paris
 image:

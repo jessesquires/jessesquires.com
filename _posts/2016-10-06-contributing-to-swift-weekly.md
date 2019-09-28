@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [swift, open-source, swift-evolution]
+date: 2016-10-06T10:00:00-07:00
 title: Contributing to Swift Weekly Brief
 subtitle: Join us as a guest writer
 ---

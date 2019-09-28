@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [swift, open-source]
+date: 2018-07-05T10:00:00-07:00
 title: Swift's new calling convention
 subtitle: From callee-owned to guaranteed
 ---

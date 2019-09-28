@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [open-source]
+date: 2014-12-05T10:00:00-07:00
 title: Rosetta Stone contributes
 subtitle: Rosetta Stone officially joins the open-source community
 ---

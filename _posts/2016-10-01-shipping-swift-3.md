@@ -2,6 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [swift, open-source, git]
+date: 2016-10-01T10:00:00-07:00
 title: Shipping Swift 3.0
 subtitle: An update on my open source libraries
 ---
