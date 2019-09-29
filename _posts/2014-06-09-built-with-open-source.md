@@ -21,8 +21,9 @@ This site is lovingly powered by [Jekyll](http://jekyllrb.com), [Bootstrap](http
 
 This world would be significantly different without the concept of [open-source](http://en.wikipedia.org/wiki/Open_source), which is an idea that has been around for millennia. Though it was not always referred to as "open-source", the core ideas persist. Only through the processes of sharing, [collaboration](http://blogs.sciencemag.org/origins/2009/09/on-the-origin-of-cooperation.html), and [reciprocity](http://www.sciencedaily.com/releases/2013/08/130820094643.htm) did our ancestors establish a stable, thriving society. It is this kind of openness and cooperation that has fostered our thriving community of programmers. Whether or not we can describe it as [*stable*](http://heartbleed.com), I'll leave up to you. Nearly all of the software in-use today was built on, supported by, or influenced by [**open-source software**](http://en.wikipedia.org/wiki/Open-source_software). It would be naive to think that the different technologies and apps that we take for granted every single day would be here without that help.
 
-> If I have seen further it is by standing on the shoulders of giants.
->
-> <footer class="blockquote-footer"><a href="http://en.wikiquote.org/wiki/Isaac_Newton">Isaac Newton</a> (or <a href="http://en.wikipedia.org/wiki/Bernard_of_Chartres">Bernard of Chartres</a>, if you're hip with French philosophers)</footer>
+{% include blockquote.html
+    quote="If I have seen further it is by standing on the shoulders of giants."
+    source="<a href='http://en.wikiquote.org/wiki/Isaac_Newton'>Isaac Newton</a> (or <a href='http://en.wikipedia.org/wiki/Bernard_of_Chartres'>Bernard of Chartres</a>, if you're hip with French philosophers)"
+%}
 
 **Future posts will focus on iOS, Cocoa, Objective-C, Swift, and open-source.**

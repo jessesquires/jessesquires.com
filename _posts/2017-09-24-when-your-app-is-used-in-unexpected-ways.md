@@ -23,21 +23,22 @@ At PlanGrid, we recently discovered that the app was [being used as a digital ar
 
 {% include post_image.html %}
 
-> **Adapting PlanGrid to Archaeology**
->
-> This report presents the past four years of our adaptation and implementation of the construction program PlanGrid as a digital field registration system at the Tel Burna Archaeological Project (Israel). In this report, we will discuss the following: (1) the benefits of using PlanGrid with tablets and smartphones; (2) details related to our specific adaptation at Tel Burna; (3) this past season’s innovation of replacing traditional architectural top plans with photographs taken with a camera attached to an overhead apparatus; and (4) instructions on how other projects may implement PlanGrid as a digital archaeological tool.
->
-> In recent years, many archaeological projects have adapted their field registration methods to incorporate new technological innovations in order to improve the accuracy, efficiency, and publication of their projects.
->
-> [...]
->
-> Over the last few seasons, the Tel Burna Archaeological Project has taken part in this discipline-wide endeavor through our adaptation of PlanGrid as a replacement for our hand-written paper forms and plans. PlanGrid is a widely-used construction app that has revolutionized the construction industry...
->
-> Significantly, many of the main features that allow PlanGrid to streamline workflow within a construction project have a parallel application for an archaeological excavation. These include the following: architectural plan management; searchable and adaptable annotations; archived field photos that can be linked to specific data; scaled field measurements; well-defined and useable administrator tools; simple report compilations in both CSV and annotated PDF formats; and reliable cloud storage across multiple devices with or without an internet connection.
->
-> [...]
->
-> <footer class="blockquote-footer"><a href="http://popular-archaeology.com/issue/fall-2017/article/adapting-plangrid-to-archaeology">Popular Archaeology, Fall 2017</a></footer>
+{% include blockquote.html
+    quote="**Adapting PlanGrid to Archaeology**
+
+This report presents the past four years of our adaptation and implementation of the construction program PlanGrid as a digital field registration system at the Tel Burna Archaeological Project (Israel). In this report, we will discuss the following: (1) the benefits of using PlanGrid with tablets and smartphones; (2) details related to our specific adaptation at Tel Burna; (3) this past season’s innovation of replacing traditional architectural top plans with photographs taken with a camera attached to an overhead apparatus; and (4) instructions on how other projects may implement PlanGrid as a digital archaeological tool.
+
+In recent years, many archaeological projects have adapted their field registration methods to incorporate new technological innovations in order to improve the accuracy, efficiency, and publication of their projects.
+
+[...]
+
+Over the last few seasons, the Tel Burna Archaeological Project has taken part in this discipline-wide endeavor through our adaptation of PlanGrid as a replacement for our hand-written paper forms and plans. PlanGrid is a widely-used construction app that has revolutionized the construction industry...
+
+Significantly, many of the main features that allow PlanGrid to streamline workflow within a construction project have a parallel application for an archaeological excavation. These include the following: architectural plan management; searchable and adaptable annotations; archived field photos that can be linked to specific data; scaled field measurements; well-defined and useable administrator tools; simple report compilations in both CSV and annotated PDF formats; and reliable cloud storage across multiple devices with or without an internet connection.
+
+[...]"
+    source="[Popular Archaeology, Fall 2017](http://popular-archaeology.com/issue/fall-2017/article/adapting-plangrid-to-archaeology)"
+%}
 
 How **awesome** is that! 🤓 I doubt anyone anticipated this use case, and it's remarkable how well-suited the app is as an archaeological tool by default. It's important (and fun) to envision how our apps will be used for the reasons we created them, but sometimes it's even more interesting to see the novel ways in which our users hack our apps to be used for something completely different. That's worth thinking about more often. How could *your* app be used differently?
 

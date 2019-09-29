@@ -24,11 +24,22 @@
 
 blockquote {
   color: $color-gray;
-  padding: 0rem 1rem 0rem 1.5rem;
-  border-left: 3px solid #666;
+  padding-left: 1.1rem;
+  border-left: 1px solid $color-gray;
 }
 
-blockquote p {
-  font-size: 1.1rem;
-  line-height: 1.5rem;
+blockquote {
+  p {
+    font-size: 15px;
+  }
+
+  .blockquote-source {
+    p {
+      font-size: 13px;
+    }
+  }
+
+  mark {
+    color: $color-gray;
+  }
 }

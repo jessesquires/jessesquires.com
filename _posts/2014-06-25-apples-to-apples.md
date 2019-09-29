@@ -27,10 +27,10 @@ When Craig Federighi arrived at his presentation slide about Objective-C during 
     '
 %}
 
-<blockquote>
-	<p>And then Federighi said, let there be Swift; and there was Swift.</p>
-	<footer class="blockquote-footer">WWDC 2014, 1:44:48</footer>
-</blockquote>
+{% include blockquote.html
+    quote="And then Federighi said, let there be Swift; and there was Swift."
+    source="WWDC 2014, 1:44:48"
+%}
 
 The third floor of Moscone West erupted with applause as if we had traveled back in time to Steve Jobs' [2007 announcement](https://www.youtube.com/watch?v=EHWRkuDlNOE) of _**the**_ iPhone: *"An iPod, a phone, and an Internet communicator"*.
 
