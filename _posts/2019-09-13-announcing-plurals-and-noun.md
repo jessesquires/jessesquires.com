@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [apps, ios, imessage, app store]
+tags: [apps, ios, imessage, app-store]
 date: 2019-09-13T10:00:00-07:00
 title: ! 'New iMessage sticker pack: plurals and noun'
 image:
