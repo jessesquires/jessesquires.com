@@ -24,3 +24,7 @@ pub:
 .PHONY: tags
 tags:
 	./scripts/tags_publish.sh
+
+.PHONY: new
+new:
+	./scripts/new-post.swift
