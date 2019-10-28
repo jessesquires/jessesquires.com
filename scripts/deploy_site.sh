@@ -9,22 +9,22 @@ GIT_DIR=$SITE_CHECKOUT/.git
 PUBLIC_WWW=/home/public
 
 echo '🛠 Pulling latest changes and building site...'
-( set -x; cd $SITE_CHECKOUT )
+cd $SITE_CHECKOUT
 
-echo '⏩'
-( set -x; git --git-dir=$GIT_DIR status )
+echo '⏩ git status'
+git --git-dir=$GIT_DIR status
 
-echo '⏩'
-( set -x; git --git-dir=$GIT_DIR pull -f )
+echo '⏩ git pull'
+git --git-dir=$GIT_DIR pull -f
 
-echo '⏩'
-( set -x; git --git-dir=$GIT_DIR status )
+echo '⏩ git status'
+git --git-dir=$GIT_DIR status
 
-echo '⏩'
-( set -x; bundle install )
+echo '⏩ bundle install'
+bundle install
 
-echo '⏩'
-( set -x; bundle exec jekyll build --destination $PUBLIC_WWW )
+echo '⏩ jekyll build'
+bundle exec jekyll build --destination $PUBLIC_WWW
 
 echo '⏩'
 echo '🌈 Done! Site built and deployed successfully.'
