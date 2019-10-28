@@ -2,6 +2,13 @@
 
 ErrorDocument 404 /404.html
 
+# cache-control
+# one month for most static assets
+
+<filesMatch ".(css|jpg|jpeg|png|gif|js|ico|tff)$">
+Header set Cache-Control "max-age=2628000, public"
+</filesMatch>
+
 # redirects for top-level pages
 
 Redirect 301 /resume/ /linkedout/
@@ -9,7 +16,7 @@ Redirect 301 /work/ /linkedout/
 Redirect 301 /opensource/ /projects/
 Redirect 301 /archive/ /blog/
 
-# redirects for old blog URLs
+# redirects for old blog URLs from / to /blog/
 
 Redirect 301 /built-with-open-source/ /blog/built-with-open-source/
 Redirect 301 /apples-to-apples/ /blog/apples-to-apples/
