@@ -1,9 +1,9 @@
 #!/bin/bash
 
-echo "Publishing..."
+echo "🚀 Publishing..."
 git push origin
 
-echo "Pushing to GitHub..."
+echo "🚀 Pushing to GitHub..."
 git push github
 
 echo ""

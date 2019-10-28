@@ -8,25 +8,25 @@ GIT_DIR=$SITE_CHECKOUT/.git
 
 PUBLIC_WWW=/home/public
 
-echo 'Pulling latest changes and building site...'
+echo '🛠 Pulling latest changes and building site...'
 ( set -x; cd $SITE_CHECKOUT )
 
-echo ''
+echo '⏩'
 ( set -x; git --git-dir=$GIT_DIR status )
 
-echo ''
+echo '⏩'
 ( set -x; git --git-dir=$GIT_DIR pull -f )
 
-echo ''
+echo '⏩'
 ( set -x; git --git-dir=$GIT_DIR status )
 
-echo ''
+echo '⏩'
 ( set -x; bundle install )
 
-echo ''
+echo '⏩'
 ( set -x; bundle exec jekyll build --destination $PUBLIC_WWW )
 
-echo ''
-echo 'Done! Site built and deployed successfully.'
+echo '⏩'
+echo '🌈 Done! Site built and deployed successfully.'
 
 exit
