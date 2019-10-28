@@ -24,13 +24,13 @@
                 {% if caption %}
                     <figcaption>
                         <p><small class="text-muted text-center">
-                            {{ caption }} {% if source_link %} / <a href="{{ source_link }}" target="_blank">Source</a> {% endif %}
+                            {{ caption }} {% if source_link %} / <a href="{{ source_link }}" target="_blank" rel="noreferrer">Source</a> {% endif %}
                         </small></p>
                     </figcaption>
                 {% elsif source_link %}
                     <figcaption>
                         <p><small class="text-muted text-center">
-                            <a href="{{ source_link }}" target="_blank">Source</a>
+                            <a href="{{ source_link }}" target="_blank" rel="noreferrer">Source</a>
                         </small></p>
                     </figcaption>
                 {% endif %}

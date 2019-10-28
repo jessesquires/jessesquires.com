@@ -17,10 +17,10 @@
                 </button>
                 <div class="dropdown-menu">
                     <h6 class="dropdown-header">Share this post</h6>
-                    <a class="dropdown-item btn-sm text-dark" href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}%20{{ site.url }}{{ page.url }}%20via%20@{{ site.author.twitter }}" title="Tweet" target="_blank">
+                    <a class="dropdown-item btn-sm text-dark" href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}%20{{ site.url }}{{ page.url }}%20via%20@{{ site.author.twitter }}" title="Tweet" target="_blank" rel="noreferrer">
                         Twitter &nbsp;<i class="fa fa-twitter" aria-hidden="true"></i>
                     </a>
-                    <a class="dropdown-item btn-sm text-dark" href="https://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" title="Post" target="_blank">
+                    <a class="dropdown-item btn-sm text-dark" href="https://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" title="Post" target="_blank" rel="noreferrer">
                         Facebook &nbsp;<i class="fa fa-facebook" aria-hidden="true"></i>
                     </a>
                 </div>
@@ -53,9 +53,9 @@
             <p class="text-muted text-center"><small><b>Questions? Feedback? Corrections?</b></small></p>
             <p class="text-muted text-center">
                 <small>
-                    Open an <a href="{{ open_issue_url }}" class="text-secondary" target="_blank"><b>issue</b></a>,
-                    submit a <a href="{{ site.links.pull }}" class="text-secondary" target="_blank"><b>pull request</b></a>,
-                    or <a href="{{ edit_url }}" class="text-secondary" target="_blank"><b>edit</b></a> this post.
+                    Open an <a href="{{ open_issue_url }}" class="text-secondary" target="_blank" rel="noreferrer"><b>issue</b></a>,
+                    submit a <a href="{{ site.links.pull }}" class="text-secondary" target="_blank" rel="noreferrer"><b>pull request</b></a>,
+                    or <a href="{{ edit_url }}" class="text-secondary" target="_blank" rel="noreferrer"><b>edit</b></a> this post.
                 </small>
             </p>
         </div> <!-- col -->
