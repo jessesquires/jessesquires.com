@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "🚀 Publishing..."
+echo "🚀 Publishing to NFSN..."
 git push origin
 
 echo "🚀 Pushing to GitHub..."
