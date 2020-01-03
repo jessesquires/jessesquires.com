@@ -7,13 +7,14 @@ enum Category: String {
     case essay = "essays"
     case readingNotes = "reading-notes"
 
-    init(_ choice: Int) {
-        switch choice {
+    init(_ choice: String?) {
+        let value = Int(choice ?? "0")!
+        switch value {
         case 1: self = .dev
         case 2: self = .essay
         case 3: self = .readingNotes
         default:
-            fatalError("Invalid category choice: \(choice)")
+            fatalError("Invalid category choice: \(value)")
         }
     }
 }
@@ -27,11 +28,11 @@ Category options:
     3. \(Category.readingNotes)
 """)
 print("Choice:", terminator: " ")
-let choice = Int(readLine()!)!
+let choice = readLine()
 let category = Category(choice)
 
 print("Enter title:", terminator: " ")
-let title = readLine()!
+let title = readLine() ?? "untitled"
 
 let fullDateTime = ISO8601DateFormatter.string(
     from: Date(),
