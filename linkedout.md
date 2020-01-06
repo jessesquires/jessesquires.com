@@ -3,8 +3,8 @@ layout: standalone
 title: Resume
 ---
 
-*Last updated: 10 September 2019*. Please [contact me](/contact/) if you have any questions.
-I [don't use LinkedIn]({{ site.url }}{% post_url 2019-08-13-linked-out %}) and I don't have a pdf or word doc copy.
+*Last updated: 6 January 2020*. **I'm currently available for iOS contracting and consulting.**
+If you're interested in working together, please [get in touch](/contact).
 
 {% assign resume = site.data.resume %}
 

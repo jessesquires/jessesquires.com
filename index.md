@@ -12,4 +12,4 @@ If you appreciate my work, [consider becoming a sponsor](/sponsor).
 
 I'm currently working on personal projects, as well as contracting and consulting.
 
-If you're interested in working together, please [get in touch](/contact).
+**Need an iOS developer?** If you're interested in working together, please [get in touch](/contact).
