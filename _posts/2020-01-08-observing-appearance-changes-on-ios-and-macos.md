@@ -31,9 +31,7 @@ override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollect
 
 I was hoping to find an equivalent `NSTraitCollection` in AppKit, but unfortunately that does not exist. Solving this will require some creativity.
 
-After some searching online, I found that the [`UserDefaults`](https://developer.apple.com/documentation/foundation/userdefaults) key for the appearance setting on macOS is `"AppleInterfaceStyle"`. Of course, this is not officially documented. But this is the only solution I could find without having a proper API like iOS.
-
-If you did not know, you can respond to changes in `UserDefaults` via [key-value observing](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html) and [since iOS 9.3 and macOS Sierra](http://dscoder.com/defaults.html) KVO will notify of changes made by other programs. That is exactly what I needed.
+After some searching online, I found that the [`UserDefaults`](https://developer.apple.com/documentation/foundation/userdefaults) key for the appearance setting on macOS is `"AppleInterfaceStyle"`. Of course, this is not officially documented. If you did not know, you can respond to changes in `UserDefaults` via [key-value observing](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html) and [since iOS 9.3 and macOS Sierra](http://dscoder.com/defaults.html) KVO will notify of changes made by other programs.
 
 ```swift
 // in a view controller or similar
@@ -53,28 +51,14 @@ override func observeValue(forKeyPath keyPath: String?,
 }
 ```
 
-This works reliably, though in my testing it can take a few seconds before `observeValue(forKeyPath: of: change: context:)` gets called. But the bug is fixed. Now my menu bar icon will stay in sync with the current appearance setting.
+This works but it is a hack. And in my testing it can take a few seconds before `observeValue(forKeyPath: of: change: context:)` gets called.
 
-Considering dark mode came to macOS first (in Mojave), it is disappointing that there is no official API for this like there is for UIKit on iOS 13. It makes AppKit and macOS feel second-class.
+It turns out there is a better option. Instead, you can KVO on [`NSApp.effectiveappearance`](https://developer.apple.com/documentation/appkit/nsapplication/2967171-effectiveappearance). This is a much better and more reliable solution, and the observation closure is called immediately.
 
+```swift
+let observer = NSApp.observe(\.effectiveAppearance, options: [.new, .old, .initial, .prior]) { app, change in
+    // respond to change...
+}
+```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+That is exactly what I needed. Using KVO still does not feel great, but this is the best solution I could find without having an explicit API like iOS. The bug is fixed! Now my menu bar icon will stay in sync with the current appearance setting. I would still rather have an API similar to iOS, but this will do. Also note, if you are in the context of an `NSView` then you can implement [`viewDidChangeEffectiveAppearance()`](https://developer.apple.com/documentation/appkit/nsview/2977088-viewdidchangeeffectiveappearance).
