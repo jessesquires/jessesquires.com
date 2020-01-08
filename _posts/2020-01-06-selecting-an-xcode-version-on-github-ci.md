@@ -3,7 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [xcode, git, github, ci]
 date: 2020-01-06T11:03:45-08:00
-title: Selecting an Xcode Version on GitHub Actions CI
+title: Selecting an Xcode version on GitHub Actions CI
 ---
 
 I have started using [GitHub Actions](https://github.blog/2019-08-08-github-actions-now-supports-ci-cd/) for CI on a new project as a replacement for my usual setup on [Travis CI](https://travis-ci.org). It generally seems to be much faster and more reliable so far. It also has an equivalent feature set, as far as I can tell. But one issue that I have run into is selecting a specific Xcode version, which is a bit cumbersome and not fully documented.
