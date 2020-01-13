@@ -7,6 +7,7 @@ plugins:
 
 # File rules
 exclude:
+  - Makefile
   - vendor
   - Dangerfile
   - Gemfile
