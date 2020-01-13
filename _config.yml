@@ -18,6 +18,7 @@ exclude:
   - package.json
   - yarn.lock
   - scripts/
+  - .github/
 
 include:
   - .htaccess
