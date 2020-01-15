@@ -28,3 +28,7 @@ tags:
 .PHONY: new
 new:
 	./scripts/new-post.swift
+
+.PHONY: date
+date:
+	./scripts/current-date-time.swift
