@@ -3,7 +3,7 @@ layout: standalone
 title: Resume
 ---
 
-*Last updated: 6 January 2020*. **I'm currently available for iOS contracting and consulting.**
+*Last updated: 6 January 2020*. **I'm currently available for iOS freelance and contracting.**
 If you're interested in working together, please [get in touch](/contact).
 
 {% assign resume = site.data.resume %}
