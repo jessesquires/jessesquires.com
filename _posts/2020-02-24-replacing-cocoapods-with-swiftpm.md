@@ -49,8 +49,12 @@ There is no flexibility or ability to customize how packages are integrated. The
 
 As mentioned above, SwiftPM is open-source but upstreaming changes and fixes is a slower process than a community-driven tool like CocoaPods. CocoaPods can release new versions quickly for fixes and new features. SwiftPM is bound to the Xcode release schedule. You could use development snapshots, but this comes with its own concerns and disadvantages.
 
+SwiftPM currently does not support libraries that are mixed Objective-C and Swift.
+
+SwiftPM currently does not support bundling resources like images, Storyboards, asset catalogs, etc.
+
 ### Summary
 
-Again, the projects where I'm using SwiftPM are small and simple. I am the only developer and I own all of the dependencies that I'm using. In this scenario, using SwiftPM is pretty great, since the cons mentioned above do not really affect me. For larger and more complex apps, or when working on a team, I think the flexibility and customization made possible by CocoaPods would be preferred for most projects. For my larger apps, I will continue using CocoaPods for now.
+Again, the projects where I'm using SwiftPM are small and simple. I am the only developer and I own all of the dependencies that I'm using. These dependencies also do not contain any Objective-C or bundled resources. In this scenario, using SwiftPM is pretty great, since the cons mentioned above do not really affect me. For larger and more complex apps, or when working on a team, I think the flexibility and customization made possible by CocoaPods would be preferred for most projects. For my larger apps, I will continue using CocoaPods for now.
 
-Still, I think there is a lot of potential with SwiftPM integration in Xcode. The majority of the issues noted above can be easily fixed &mdash; adding a per-package update, adding a per-package target for linking, adding an option to keep a `SwiftPM/` directory in your project root. I am hopeful that these shortcomings will be addressed, but unfortunately that is subject to Apple's internal release schedule.
+Still, I think there is a lot of potential with SwiftPM integration in Xcode. The majority of the issues noted above can be easily fixed &mdash; adding a per-package update, adding a per-package target for linking, adding an option to keep a `SwiftPM/` directory in your project root, allow including bundled resources, and allow mixing Objective-C and Swift. I am hopeful that these shortcomings will be addressed, but unfortunately that is subject to Apple's internal release schedule.
