@@ -20,3 +20,5 @@ In Sublime Text, you can add the following options to your preferences file to d
 ```
 
 And now your eyes can rest. If you prefer ligatures, don't @ me.
+
+**Update:** There is [an open issue](https://github.com/JetBrains/JetBrainsMono/issues/19) on GitHub discussing providing a version without ligatures.
