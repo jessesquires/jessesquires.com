@@ -1,6 +1,6 @@
 ---
 layout: standalone
-title: Résumé
+title: Curriculum Vitae
 ---
 
 *Last updated: 28 March 2020*. **I'm currently available for iOS freelance and contracting.**
