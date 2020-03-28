@@ -1,9 +1,9 @@
 ---
 layout: standalone
-title: Resume
+title: Résumé
 ---
 
-*Last updated: 6 January 2020*. **I'm currently available for iOS freelance and contracting.**
+*Last updated: 28 March 2020*. **I'm currently available for iOS freelance and contracting.**
 If you're interested in working together, please [get in touch](/contact).
 
 {% assign resume = site.data.resume %}

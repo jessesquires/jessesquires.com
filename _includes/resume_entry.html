@@ -7,7 +7,14 @@
 
     <div class="media-body">
         <h5 class="mt-0 mb-1"><a href="{{ entry.link }}">{{ entry.title }}</a></h5>
-        <h6 class="mt-0 mb-1 text-muted"><small>{{ entry.location}} &bull; {{ entry.start }} &mdash; {{ entry.end }}</small></h6>
+
+        {% if entry.end == 'Present' %}
+            {% assign entry_end = '<b>Present</b> <i class="fa fa-star" aria-hidden="true"></i>'%}
+        {% else %}
+            {% assign entry_end = entry.end %}
+        {% endif %}
+
+        <h6 class="mt-0 mb-1 text-muted"><small>{{ entry.location}} &bull; {{ entry.start }} &mdash; {{ entry_end }}</small></h6>
 
         {% if entry.description %}
         <p class="mt-0 mb-1" markdown="1">{{ entry.description }}</p>
