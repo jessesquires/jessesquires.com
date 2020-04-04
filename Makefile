@@ -5,6 +5,16 @@
 build:
 	bundle exec jekyll build
 
+.PHONY: install
+install:
+	bundle install
+	yarn install
+
+.PHONY: update
+update:
+	bundle update
+	yarn upgrade --latest
+
 .PHONY: watch
 watch:
 	bundle exec jekyll build --watch
