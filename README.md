@@ -38,7 +38,7 @@ $ bundle update
 #### Updating Yarn
 
 ```bash
-$ yarn upgrade
+$ yarn upgrade --latest
 ```
 
 ### Other
@@ -47,46 +47,38 @@ $ yarn upgrade
 
 ## Usage
 
-#### Installation
+### Installation
 
 ```bash
 $ git clone https://github.com/jessesquires/jessesquires.com.git
 $ cd jessesquires.com/
-$ bundle install
-$ yarn install
+$ make install
 ```
 
-#### Building the site
+### Building the site
 
 ```bash
-$ bundle exec jekyll build
+$ make build
 ```
 
-#### Previewing the site locally
+### Previewing the site locally
 
 ```bash
-$ bundle exec jekyll serve
-# Now browse to http://localhost:4000
+$ bundle exec jekyll serve # browse to http://localhost:4000
 ```
 
-#### Writing a draft
-
-```bash
-$ bundle exec jekyll serve --future --drafts --watch
-```
-
-## Handling Links
+### Handling Links
 
 - To other blog posts: `[link]({{ site.url }}{% post_url 2000-01-01-my-blog-post-title %})`
 - To images: `{{ site.url }}{{ site.img_url}}/path-to/image.png`
 
-## Verifying DNS setup
+### Verifying DNS setup
 
 ```bash
 $ dig www.jessesquires.com +nostats +nocomments +nocmd
 ```
 
-## Install software on NFSN
+### Install software on NFSN
 
 ```bash
 $ cd home/protected/      # preferred directory for installing
