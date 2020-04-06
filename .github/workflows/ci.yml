@@ -39,7 +39,8 @@ jobs:
         run: bundle exec jekyll build
 
       - name: danger
-        run: bundle exec danger
-        env:
+        env: 
           DANGER_GITHUB_API_TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
-
+        run: |
+          echo "::add-path::/Users/runner/Library/Python/2.7/bin"
+          bundle exec danger
