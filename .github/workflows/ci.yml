@@ -34,6 +34,7 @@ jobs:
         run: |
           bundle config path vendor/bundle
           bundle install --without=documentation --jobs 4 --retry 3
+          echo "::add-path::/Users/runner/Library/Python/2.7/bin"
 
       - name: jekyll build
         run: bundle exec jekyll build
@@ -41,6 +42,4 @@ jobs:
       - name: danger
         env: 
           DANGER_GITHUB_API_TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
-        run: |
-          echo "::add-path::/Users/runner/Library/Python/2.7/bin"
-          bundle exec danger
+        run: bundle exec danger
