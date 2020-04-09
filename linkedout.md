@@ -16,7 +16,7 @@ If you're interested in working together, please [get in touch](/contact).
 
 <h3>Projects & Open Source</h3>
 
-<p>See <a href="/projects">projects</a>.</p>
+<p>See <a href="/projects">projects</a>, my <a href="{{ site.social_links.github }}">GitHub profile</a>, and <a href="https://www.hexedbits.com">Hexed Bits</a>.</p>
 
 <h3>Conference Talks</h3>
 
