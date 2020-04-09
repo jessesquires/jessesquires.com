@@ -56,7 +56,11 @@ li {
 }
 
 a:link,
-a:active {
+a:active,
+a:visited,
+h1 > a:link,
+h1 > a:active,
+h1 > a:visited {
   color: $color-brand;
 }
 
@@ -65,14 +69,9 @@ a:hover {
   text-decoration: underline dotted;
 }
 
-h1 > a:link,
-h1 > a:active,
-h1 > a:hover {
-  text-decoration: none;
-}
-
 h1 > a:hover {
   color: $color-brand-bright;
+  text-decoration: none;
 }
 
 a:link > code,
@@ -80,9 +79,4 @@ a:hover > code,
 a:active > code,
 a:visited > code {
   color: $color-code;
-}
-
-a:visited,
-h1 > a:visited {
-  color: $color-brand-dark;
 }
