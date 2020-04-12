@@ -2,7 +2,7 @@
 layout: post
 categories: [software-dev]
 tags: [ios, xcode]
-date: 2019-09-24T16:00:00-07:00
+date: 2019-09-26T16:00:00-07:00
 title: Overriding status bar display settings in the iOS simulator
 date-updated: 2019-09-28T12:00:00-07:00
 image:
