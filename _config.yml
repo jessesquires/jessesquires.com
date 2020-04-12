@@ -48,7 +48,7 @@ keep_files:
   - .well-known
 
 # Site
-permalink: /blog/:title/
+permalink: /blog/:year/:month/:day/:title/
 img_url: /img
 excerpt_separator: <!--excerpt-->
 sass:
