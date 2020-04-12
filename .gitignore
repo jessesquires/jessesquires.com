@@ -6,6 +6,9 @@
 .sass-cache
 _site/
 
+# swift playgrounds
+xcuserdata/*
+
 # ignore all extra node_modules from yarn
 # only keep dependency source (not entire git repo)
 
