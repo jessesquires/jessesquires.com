@@ -10,6 +10,6 @@ I [write here](/blog), occasionally [speak at conferences](/speaking), and work 
 You can learn more [about me here](/about).
 If you appreciate my work, [consider becoming a sponsor](/sponsor).
 
-I'm currently working on personal projects, as well as freelance and contracting.
+I'm currently working on personal projects, as well as freelance and contracting for iOS.
 
-**Need an iOS developer? Hire me!** If you're interested in working together, please [get in touch](/contact).
+**Need an iOS developer? Hire me!** If you're interested in working together, please **[get in touch](/contact)**.

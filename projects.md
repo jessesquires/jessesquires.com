@@ -3,7 +3,7 @@ layout: standalone
 title: Projects
 ---
 
-I'm working on a number of side projects, indie apps, and open source projects.
+I'm working on a number of side projects, indie apps, and [open source projects]({{ site.social_links.github }}).
 I want to highlight a few of them here and link out to others.
 If you are looking for a complete CV, you can [find that here](/linkedout).
 
