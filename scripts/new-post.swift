@@ -46,7 +46,7 @@ layout: post
 categories: [\(category.rawValue)]
 tags: [TODO]
 date: \(fullDateTime)
-title: \(title.localizedLowercase)
+title: \(title)
 subtitle: null
 image:
     file: TODO
