@@ -4,8 +4,15 @@ title: Sponsor
 ---
 
 If you enjoy reading [my blog](/blog), watching [my conference talks](/speaking), or using one of [my open source projects]({{ site.social_links.github }}), please consider becoming a sponsor!
-Or, buy me a metaphorical cup of coffee. ☕️
+You can donate regularly, or buy me a metaphorical cup of coffee.
 Your support is very much appreciated. 🙌
 
-**Recurring donations:** [Liberapay](https://liberapay.com/jsq/) <br/>
-**One-time donations:** [PayPal](https://www.paypal.me/jessesquires) or [SquareCash](https://cash.app/$jsq)
+##### Recurring donations 📆
+
+- [GitHub Sponsors](https://github.com/sponsors/jessesquires) (preferred)
+- [Liberapay](https://liberapay.com/jsq/)
+
+##### One-time donations ☕️
+
+- [PayPal](https://www.paypal.me/jessesquires)
+- [SquareCash](https://cash.app/$jsq)
