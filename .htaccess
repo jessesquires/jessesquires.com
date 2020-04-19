@@ -4,9 +4,14 @@ ErrorDocument 404 /404.html
 
 # cache-control
 
-# one month for most static assets
+# one month for images and fonts
 <filesMatch ".(jpg|jpeg|png|gif|ico|tff|svg|eot|woff|woff2)$">
 Header set Cache-Control "max-age=2628000, public"
+</filesMatch>
+
+# one week for css and js assets
+<filesMatch ".(css|js)$">
+Header set Cache-Control "max-age=604800, public"
 </filesMatch>
 
 # redirects for top-level pages
