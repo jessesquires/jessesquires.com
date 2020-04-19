@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [software-dev, essays]
+categories: [software-dev]
 tags: [ios, tech]
 date: 2017-09-24T10:00:00-07:00
 title: When your app is used in unexpected ways

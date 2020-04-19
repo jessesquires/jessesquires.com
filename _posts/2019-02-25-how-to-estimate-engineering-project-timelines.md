@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [software-dev, essays]
+categories: [essays]
 tags: [tech]
 date: 2019-02-25T10:00:00-07:00
 title: ! 'Agile by degrees: How to estimate engineering project timelines'
