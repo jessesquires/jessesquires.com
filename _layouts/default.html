@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-   {% include head.html %}
+{% include head.html %}
    <body>
       {% include header.html %}
 
       <div class="container">
          <div class="row justify-content-md-center">
             <div class="col"></div>
-            <div class="col-12 col-md-8">
-               {{ content }}
-            </div>
+               <div class="col-12 col-md-8">
+                  {{ content }}
+               </div>
             <div class="col"></div>
          </div> <!-- row -->
       </div> <!-- container -->
 
       {% include footer.html %}
-
       {% include foot.html %}
 
+      <script>
+         // ignore query params in path
+         // https://jsq.goatcounter.com/code#ignore-query-parameters-in-path
+         window.goatcounter = {
+            path: location.pathname || '/',
+         }
+      </script>
       <script data-goatcounter="https://jsq.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
-
    </body>
 </html>
