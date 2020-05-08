@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [ethics, tech, web]
+tags: [ethics, tech, web, analytics]
 date: 2018-04-22T10:00:00-07:00
 title: Removing Google Analytics, too
 subtitle: null

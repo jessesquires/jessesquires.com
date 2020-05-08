@@ -8,7 +8,7 @@
 
 This is my personal site and blog.
 
-Built with [Jekyll](https://jekyllrb.com), [Bootstrap](https://getbootstrap.com), [jQuery](https://jquery.com), and [Font Awesome](https://fortawesome.github.io/Font-Awesome/). Hosted at [NearlyFreeSpeech](https://nearlyfreespeech.net/).
+Built with [Jekyll](https://jekyllrb.com), [Bootstrap](https://getbootstrap.com), [jQuery](https://jquery.com), and [Font Awesome](https://fontawesome.com). Hosted at [NearlyFreeSpeech](https://nearlyfreespeech.net/).
 
 ## Requirements
 
@@ -43,6 +43,7 @@ $ yarn upgrade --latest
 
 ### Other
 
+- [GoatCounter Analytics](https://www.goatcounter.com)
 - [Ubuntu Mono font](https://www.google.com/fonts/specimen/Ubuntu+Mono)
 
 ## Usage
