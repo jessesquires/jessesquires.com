@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [ethics, tech, web, analytics]
+tags: [ethics, tech, web, analytics, open-source]
 date: 2020-05-08T14:24:43-07:00
 title: Simple, private, and open source analytics with GoatCounter
 ---
