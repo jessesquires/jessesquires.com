@@ -11,6 +11,8 @@ More generally, I hope to contribute to a society that values community over hie
 
 **Other interests:** reading books, bike touring, trail running, body modification, hook suspension, tea and coffee, cognitive science, moral philosophy, avant-garde art, punk/hardcore/metal, worker power.
 
+You can read this website's [privacy policy here](/privacy).
+
 You can [contact me here](/contact).
 
 <div class="row">
