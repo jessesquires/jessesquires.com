@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [essay]
+categories: [essays]
 tags: [tech, apps]
 date: 2020-05-16T19:21:42-07:00
 title: "On non-native apps: JavaScript doesn't suck but your app might"
