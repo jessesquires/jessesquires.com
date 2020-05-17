@@ -29,7 +29,7 @@ I [tweeted a joke](https://twitter.com/jesse_squires/status/1099113115080257537)
 
 {% include post_image.html %}
 
-I expected to get a few laughs, but now [the tweet](https://twitter.com/jesse_squires/status/1099113115080257537) has gone viral (at least for me at over 3,000 retweets and over 9,000 likes). I think speaks to how visceral this topic is among engineers and project managers. Software engineering was on my mind, but unsurprisingly, it resonated with many folks from other engineering disciplines, too. It is even more comical to me given the context in which I wrote it.
+I expected to get a few laughs, but now [the tweet](https://twitter.com/jesse_squires/status/1099113115080257537) has gone viral (at least for me at over 3,000 retweets and over 9,000 likes). I think it speaks to how visceral this topic is among engineers and project managers. Software engineering was on my mind, but unsurprisingly, it resonated with many folks from other engineering disciplines, too. It is even more comical to me given the context in which I wrote it.
 
 #### Why are we so bad at this
 
