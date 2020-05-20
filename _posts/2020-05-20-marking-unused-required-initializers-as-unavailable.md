@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [ios, macos, swift, uikit]
+tags: [ios, macos, swift, uikit, swiftlint]
 date: 2020-05-20T09:30:34-07:00
 title: 'Swift tip: marking unused required initializers as unavailable'
 ---
@@ -32,3 +32,6 @@ required init?(coder: NSCoder) {
 Now, at compile-time, this initializer is inaccessible. Or technically, at "auto-complete while you type time".
 
 You might have the idea of putting this in an extension or a protocol, so that you can avoid typing the boilerplate for every `UIView` and `UIViewController` subclass. Unfortunately, that is not possible because `required` initializers must be provided in subclass declarations. So, using `@available` is the best we can do.
+
+**UPDATE:** Thanks to [JP for pointing out](https://twitter.com/simjp/status/1263202678663872513) that there's a [SwiftLint rule](https://realm.github.io/SwiftLint/unavailable_function.html) for exactly this. Unfortunately, it does not currently support autocorrect.
+
