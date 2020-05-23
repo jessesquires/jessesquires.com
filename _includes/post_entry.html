@@ -29,7 +29,11 @@
     {% endif %}
 
     {% if include.display_tags %}
-    <i class="fa fa-tags" aria-hidden="true"></i> <a class="text-muted border-0" href="/blog/tags" title="tags">{{ post_entry.tags | sort | join: ", " }}</a>
+    <i class="fa fa-tags" aria-hidden="true"></i>
+        {% assign sorted_tags = post_entry.tags | sort %}
+        {% for tag in sorted_tags %}
+        <a class="text-muted border-0" href="/blog/tags/{{ tag }}" title="tag: {{ tag }}">{{ tag }}</a>{% if tag != sorted_tags.last %},{% endif %}
+        {% endfor %}
     {% endif %}
 </p>
 {% endif %}
