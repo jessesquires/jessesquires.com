@@ -22,7 +22,10 @@
 {% if include.display_categories or include.display_tags %}
 <p class="text-muted">
     {% if include.display_categories %}
-    <i class="fa fa-bookmark" aria-hidden="true"></i> <a class="text-muted border-0" href="/blog" title="categories">{{ post_entry.categories | sort | join: ", " }}</a>
+    <i class="fa fa-bookmark" aria-hidden="true"></i>
+        {% for category in post_entry.categories %}
+        <a class="text-muted border-0" href="/blog/{{ category }}" title="category: {{ category }}">{{ category }}</a>
+        {% endfor %}
     {% endif %}
 
     {% if include.display_tags %}

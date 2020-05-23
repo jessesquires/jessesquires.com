@@ -3,10 +3,13 @@
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
+
+    {% assign url_components = page.url | split:"/" %}
+
     <div class="navbar-collapse collapse" id="navbar">
         <ul class="navbar-nav">
             <li class="nav-item mr-2">
-                <a class="nav-link {% if page.url == '/blog/' %}active{% endif %}" href="/blog/">writing</a>
+                <a class="nav-link {% if url_components[1] == 'blog' %}active{% endif %}" href="/blog/">writing</a>
             </li>
             <li class="nav-item mr-2">
                 <a class="nav-link {% if page.url == '/speaking/' %}active{% endif %}" href="/speaking/">speaking</a>
