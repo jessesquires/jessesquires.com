@@ -42,3 +42,7 @@ new:
 .PHONY: date
 date:
 	./scripts/current-date-time.swift
+
+.PHONY: deploy-github
+deploy-github:
+	./scripts/deploy_github.sh
