@@ -1,8 +1,7 @@
+
 {% assign base_edit_url = 'https://github.com/jessesquires/jessesquires.com/edit/master/_posts/' %}
 
-{% assign issue_date = page.date | date: "%Y-%m-%d" %}
-{% assign page_title = page.url | remove: '/blog/' | remove: '/' %}
-{% assign file_name = issue_date | append: '-' | append: page_title | append: '.md' %}
+{% assign file_name = page.url | remove: '/blog/' | slugify | append: '.md' %}
 
 {% assign edit_url = base_edit_url | append: file_name %}
 
