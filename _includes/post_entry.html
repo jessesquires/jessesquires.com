@@ -1,6 +1,6 @@
 {% assign post_entry = include.post_entry %}
 
-<h1 class="post-title"><a href="{{ post_entry.url }}">{{ post_entry.title }}</a></h1>
+<h1 class="font-weight-light text-break"><a href="{{ post_entry.url }}">{{ post_entry.title }}</a></h1>
 
 {% assign date_display = post_entry.date | date_to_string %}
 {% assign date_hover = post_entry.date | date: "%d %b %Y %r %Z" %}
@@ -13,8 +13,8 @@
 
 {% if post_entry.date-updated %}
     <div class="post-date-updated d-block">
-    <span class="badge badge-dark">
-        <p title="{{ post_entry.date-updated | date: '%d %b %Y %r %Z' }}">Updated: {{ post_entry.date-updated | date_to_string }}</p>
+    <span class="badge badge-dark pt-0 pb-0">
+        <p class="p-0" title="{{ post_entry.date-updated | date: '%d %b %Y %r %Z' }}">Updated: {{ post_entry.date-updated | date_to_string }}</p>
     </span>
     </div>
 {% endif %}

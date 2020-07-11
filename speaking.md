@@ -21,7 +21,7 @@ Feel free to [contact me](/contact) about speaking at your event!
     <table class="table table-striped">
         <thead>
             <tr>
-                <th class="table-date-column"><i class="fa fa-calendar fa-lg" aria-hidden="true"></i></th>
+                <th width="100"><i class="fa fa-calendar fa-lg" aria-hidden="true"></i></th>
                 <th><i class="fa fa-quote-left fa-lg" aria-hidden="true"></i></th>
                 <th><i class="fa fa-video-camera fa-lg" aria-hidden="true"></i></th>
                 <th><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i></th>
@@ -35,7 +35,7 @@ Feel free to [contact me](/contact) about speaking at your event!
         {% assign location = talk.location %}
         {% assign links = talk.links %}
             <tr>
-                <td class="table-date-column">{{ talk.date }}</td>
+                <td>{{ talk.date }}</td>
                 <td><i>{{ talk.title }}</i></td>
                 <td><a href="{{ event.link }}">{{ event.name }}</a></td>
                 <td><a href="{{ location.link }}">{{ location.name }}</a>, {{ location.city }}</td>
