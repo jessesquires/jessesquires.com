@@ -32,7 +32,7 @@ let choice = readLine()
 let category = Category(choice)
 
 print("Enter title:", terminator: " ")
-let title = readLine() ?? "untitled"
+let title = (readLine() ?? "untitled").trimmingCharacters(in: .whitespacesAndNewlines)
 
 let fullDateTime = ISO8601DateFormatter.string(
     from: Date(),
