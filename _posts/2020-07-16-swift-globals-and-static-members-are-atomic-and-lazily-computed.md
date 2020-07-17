@@ -32,7 +32,7 @@ There is also a post on the [older, original (but now abandoned) Swift Blog](htt
 
 ### Atomicity and being thread-safe... or not?
 
-Given this, there are a few important things to note. The concept of atomicity is distinct from the concept of thread-safety. This is, atomicity does not imply thread-safety, but if something is thread-safe it must be atomic.
+Given this, there are a few important things to note. The concept of atomicity is distinct from the concept of thread-safety. Atomicity does not imply thread-safety, but if something is thread-safe it must be atomic.
 
 Atomicity describes the integrity of reading and writing to a variable. From the [Programming with Objective-C archive documentation](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/EncapsulatingData/EncapsulatingData.html):
 
