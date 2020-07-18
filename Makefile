@@ -29,11 +29,11 @@ future:
 
 .PHONY: pub
 pub:
-	./scripts/publish.sh
+	./scripts/publish.zsh
 
 .PHONY: tags
 tags:
-	./scripts/tags_publish.sh
+	./scripts/tags_publish.zsh
 
 .PHONY: new
 new:
@@ -45,4 +45,4 @@ date:
 
 .PHONY: deploy-github
 deploy-github:
-	./scripts/deploy_github.sh
+	./scripts/deploy_github.zsh

@@ -1,5 +1,7 @@
 #!/usr/bin/swift
 
+// prints the current timestamp, formatted for jekyll
+
 import Foundation
 
 let fullDateTime = ISO8601DateFormatter.string(
