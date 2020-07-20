@@ -20,11 +20,16 @@ hr {
 }
 
 header {
-  h2 {
+  p {
     font-size: 14px;
     line-height: 19px;
     display: inline-block;
     padding-left: 1rem;
+  }
+
+  code {
+    background-color: $color-bg;
+    font-weight: bolder;
   }
 }
 
