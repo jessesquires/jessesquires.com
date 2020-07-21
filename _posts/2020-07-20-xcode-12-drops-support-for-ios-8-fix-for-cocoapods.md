@@ -16,7 +16,7 @@ If you are using CocoaPods with Xcode 12 beta, then you have probably seen this 
 The iOS Simulator deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 8.0, but the range of supported deployment target versions is 9.0 to 14.0.99.
 ```
 
-This is happening because support for iOS 8 has been dropped, but the minimum deployment target for the pod is iOS 8. [This older GitHub issue](https://github.com/CocoaPods/CocoaPods/issues/7314) on CocoaPods discusses this a bit, as well as [this recently opened issue](https://github.com/CocoaPods/CocoaPods/issues/9884).
+This is happening because support for iOS 8 has been dropped, but the minimum deployment target for the pod is iOS 8. [This older GitHub issue](https://github.com/CocoaPods/CocoaPods/issues/7314) on CocoaPods discusses this a bit, as well as [this recently opened issue](https://github.com/CocoaPods/CocoaPods/issues/9884). Note that even if your minimum deployment target is greater than iOS 8, you will still see this error.
 
 Until this is fixed in CocoaPods, you can add the following to your `Podfile` as a workaround:
 
