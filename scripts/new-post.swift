@@ -2,24 +2,29 @@
 
 import Foundation
 
+func exitOnInvalidInput() -> Never {
+    print("\n⚠️  Invalid selection. Oops.\n")
+    exit(1)
+}
+
 enum Category: String {
     case dev = "software-dev"
     case essay = "essays"
     case readingNotes = "reading-notes"
 
     init(_ choice: String?) {
-        let value = Int(choice ?? "0")!
+        let value = Int(choice ?? "0") ?? -1
         switch value {
         case 1: self = .dev
         case 2: self = .essay
         case 3: self = .readingNotes
         default:
-            fatalError("Invalid category choice: \(value)")
+            exitOnInvalidInput()
         }
     }
 }
 
-print("=== New Post ===\n")
+print("\n=== New Post ===\n")
 
 print("""
 Category options:
@@ -33,6 +38,13 @@ let category = Category(choice)
 
 print("Enter title:", terminator: " ")
 let title = (readLine() ?? "untitled").trimmingCharacters(in: .whitespacesAndNewlines)
+
+print("Draft or Post? (d/p):", terminator: " ")
+let draftOrPostChoice = (readLine() ?? "").lowercased()
+if draftOrPostChoice != "d" && draftOrPostChoice != "p" {
+    exitOnInvalidInput()
+}
+let isDraft = (draftOrPostChoice == "d")
 
 let fullDateTime = ISO8601DateFormatter.string(
     from: Date(),
@@ -94,13 +106,14 @@ let dateOnly = ISO8601DateFormatter.string(
 
 let dashedTitle = title.localizedLowercase.replacingOccurrences(of: " ", with: "-")
 
-let filePath = "./_posts/\(dateOnly)-\(dashedTitle).md"
+let filePath = "./\(isDraft ? "_drafts" : "_posts")/\(dateOnly)-\(dashedTitle).md"
 
-print("\nCreating file: \(filePath)")
+print("\nCreating new \(isDraft ? "draft" : "post"): \(filePath)")
 
 let result = FileManager.default.createFile(atPath: filePath, contents: postData, attributes: nil)
 if !result {
-    print("🚫 Error creating file \(filePath)")
+    print("🚫  Error creating file \(filePath)")
+    exit(1)
 } else {
     print("Opening...")
     let proc = Process()
@@ -110,4 +123,4 @@ if !result {
     proc.waitUntilExit()
 }
 
-print("Done.")
+print("Done. 🎉\n")
