@@ -1,3 +1,12 @@
 
 <script src="/node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // ignore query params in path
+    // https://jsq.goatcounter.com/code#ignore-query-parameters-in-path
+    window.goatcounter = {
+        path: location.pathname || '/',
+    }
+</script>
+<script data-goatcounter="https://jsq.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
