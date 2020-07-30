@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [xcode, git, github, ci]
+tags: [xcode, git, github, ci, github-actions, travis-ci]
 date: 2020-01-06T11:03:45-08:00
 title: Selecting an Xcode version on GitHub Actions CI
 ---
