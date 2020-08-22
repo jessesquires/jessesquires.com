@@ -3,7 +3,7 @@ layout: null
 ---
 
 {
-    "version": "https://jsonfeed.org/version/1",
+    "version": "https://jsonfeed.org/version/1.1",
     "title": "{{ site.title }}",
     "home_page_url": "{{ site.url }}",
     "feed_url": "{{ site.url }}{{ site.feeds.json }}",
@@ -11,6 +11,7 @@ layout: null
     "icon": "{{ site.url }}{{ site.logo }}",
     "favicon": "{{ site.url }}/favicon.ico",
     "expired": false,
+    "language": "en-US",
     "author": {
         "name": "{{ site.author.name }}",
         "url": "{{ site.url }}",
