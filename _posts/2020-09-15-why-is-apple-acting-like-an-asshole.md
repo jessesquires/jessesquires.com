@@ -21,15 +21,14 @@ Historically, these events announce new hardware and the upcoming release of the
 - All of the new hardware will run the latest version of iOS (or watchOS, or tvOS).
 - The next major release of iOS is announced to be shipping on Friday (in a few days) or sometime the following week, like the next Tuesday.
 
-But today, Apple announced that iOS 14 is shipping **tomorrow**. This was near the end of the event &mdash; at roughly 11:00 AM Pacific time. This means West Coast developers have half a day to put the final touches on their app updates for iOS 14 **AND** get their apps submitted with the just-released Xcode 12 GM **AND** get through App Store review. None of those tasks are trivial. If you happen to be working on the East Coast, this means you were given just a few hours before the working day was over to get your app ready and submitted. And if you live in Europe or anywhere else in the world, well, go fuck yourself and good luck tomorrow!
+But today, Apple announced that iOS 14 is shipping **tomorrow**. This was near the end of the event &mdash; at roughly 11:00 AM Pacific time. This means West Coast developers have half a day to put the final touches on their app updates for iOS 14 **AND** get their apps submitted with the just-released Xcode 12 GM **AND** get through App Store review. None of those tasks are trivial, and no one familiar with them would agree that this is a sufficient amount of time to complete them. If you happen to be working on the East Coast, this means you were given just a few hours before the working day was over to get your app ready and submitted. And if you live in Europe or anywhere else in the world, well, go fuck yourself and good luck tomorrow!
 
 On top of this, critical bugs still exist in the latest releases of the SDKs, Xcode 12, and iOS 14. It seems they will not be addressed.
 
 {% include break.html %}
 
-Given the increasingly tenuous relationship that Apple has with developers, I do not understand how it could be in their interest to act like such an asshole right now. Not to mention, how unlikely it is that they will even be able to review all of these app submissions in time. This is an outright negligent response to relationships the company has damaged over the past few years. Announcing that iOS 14 ships tomorrow with virtually no notice to developers is yet another breach of trust, and quite frankly feels like a big 'fuck you' to developers. What purpose does it serve to place this last-minute, unnecessary stress on third-party developers?
+Given the increasingly tenuous relationship that Apple has with developers, I do not understand how it could be in their interest to act like such an asshole right now. Not to mention, it is unlikely that they will even be able to review all of these app submissions in time. We already do not feel valued due to the aforementioned issues, and this is an outright negligent response to developer relationships the company has damaged over the past few years. Announcing that iOS 14 ships tomorrow with virtually no notice to developers is yet another breach of trust, another disappointment, and quite frankly feels like a big 'fuck you' to developers. What purpose does it serve to place this last-minute, unnecessary stress on third-party developers?
 
-Who is in charge of iOS releases at Apple and thought this was a good idea? Who is the head of Developer Relations and thought this was a good idea?
+Who is in charge of iOS releases at Apple that thought this was a good idea? Who is the head of Developer Relations that thought this was a good idea?
 
 To whomever made these decisions: **y'all fucked up. Again.**
-
