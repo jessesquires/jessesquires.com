@@ -3,6 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [cocoapods, zsh, ios, macos]
 date: 2020-08-26T16:03:48-07:00
+date-updated: 2020-10-06T12:18:23-07:00
 title: zsh could not find CocoaPods
 ---
 
@@ -44,3 +45,26 @@ The [bad advice on Stack Overflow](https://stackoverflow.com/questions/2119064/s
 # yeah... do NOT do this
 sudo gem install -n /usr/local/bin cocoapods
 ```
+
+### Update: a better fix
+
+As expected, there is a better (correct!) way to resolve this, which I discovered after running into issues with this solution.
+
+What prompted the issue was that I needed to switch Ruby versions temporarily to debug an unrelated issue. Much to my dismay, installing and trying to use new Ruby versions (and the gems installed for those versions) via `rbenv` was no longer working. This was expected as the output of `gem env home` was `~/.gem` due to my hack above.
+
+After reviewing [the docs](https://github.com/rbenv/rbenv) for `rbenv`, I re-ran `rbenv init` and updated my `.zprofile` to the following:
+
+```bash
+export RBENV_ROOT=/usr/local/var/rbenv
+eval "$(rbenv init -)"
+```
+
+(Note: I decided to remove the `if` check for `rbenv` because I would rather see an error if `rbenv` does not exist.)
+
+Now, when I run `gem env home` the output is correct:
+
+```bash
+/usr/local/var/rbenv/versions/2.6.5/lib/ruby/gems/2.6.0
+```
+
+Again, I still do not know what happened to initially cause this problem. It was probably a supplemental macOS update that installed overnight or something. Who knows. Anyway, if you come across this problem, this is the right way to resolve it.
