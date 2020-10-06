@@ -3,7 +3,7 @@
 # post-receive git hook
 # should be copied to .git/hooks/post-receive in bare repo on server
 
-export GEM_HOME=/home/protected/gems
+export GEM_HOME=/home/private/.gem
 
 SITE_CHECKOUT=$HOME/site_checkout
 
