@@ -3,6 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [web, jekyll, ruby, git]
 date: 2017-09-10T10:00:00-07:00
+date-updated: 2020-10-07T10:03:48-07:00
 title: Building a site with Jekyll on NearlyFreeSpeech
 subtitle: My blog infrastructure, and migrating off of GitHub pages
 ---
@@ -10,6 +11,10 @@ subtitle: My blog infrastructure, and migrating off of GitHub pages
 This site used to be hosted via [GitHub Pages](https://pages.github.com), but I decided to move to a dedicated host to have more control over how I develop and deploy the site, and how it's configured. A number of limitations and quirks eventually drove me to migrate away from GitHub pages to my excellent and inexpensive bare-bones host, [NearlyFreeSpeech.net](https://www.nearlyfreespeech.net). I was also interested in learning to do all of this on my own, rather than relying on GitHub Pages "magic". If you're looking to setup your own Jekyll-powered site, or if you're looking to migrate off of GitHub Pages, hopefully this is helpful.
 
 <!--excerpt-->
+
+{% include updated_notice.html
+    update_message="This post has been updated to reflect recent changes with NearlyFreeSpeech, as well as changes in my setup."
+%}
 
 ### Overview of this site
 
@@ -40,6 +45,10 @@ So, if I have already registered my domain through [NearlyFreeSpeech](https://ww
 
 Hopefully you've noticed the amazing double-entendre &mdash; "nearly free" as in [incredibly inexpensive](https://www.nearlyfreespeech.net/services/pricing), and "free speech" as in promoting freedom of speech via your own website on the open web. NFSN is a [simple, bare-bones, DIY](https://www.nearlyfreespeech.net/services/hosting) host and domain registrar. They provide every thing you need for most sites, especially simple Jekyll blogs like this one. All of their services are pay-as-you-go or "pay for what you use". My currently monthly charges are about $0.17 per month. Yes, **17 cents**. However, any kind of support is extra, sometimes the forums are cryptic, and there's some additional manual setup/configuration that you need to do sometimes. For me, that trade-off simply means I get to learn more. It is definitely [not for everyone](https://www.reddit.com/r/Wordpress/comments/18e5n9/anyone_use_nearlyfreespeech_as_a_webdev_babynoob/). The other great thing about using an indie host/registrar like NFSN is that it's **not** Amazon or GoDaddy. You are free from the shackles and despair of sleazy, giant corporations and their bullshit.
 
+{% include updated_notice.html
+    update_message="My costs are now around <b>$1.66</b> USD per month, due to some small pricing changes at NFSN and my increased usage. All things considered, this is still incredibly cheap."
+%}
+
 ### Setting up your site
 
 What I'll walk through in this post is installing Jekyll (using the [`github-pages`](https://rubygems.org/gems/github-pages) gem) on NFSN, setting up a bare Git repo, and configuring everything so that you can `git push` to publish new posts or other site updates. The end result will be a workflow similar to using GitHub Pages, only you will have setup everything on your own and will have total control. We'll go through these steps as if this is a fresh setup. Then we'll discuss the different steps needed if you are migrating from GitHub Pages.
@@ -48,13 +57,23 @@ Regarding your actual site and content, I'll assume you've already got those bas
 
 The easiest setup is to use the `github-pages` gem, which should have everything you need.
 
-{% highlight ruby %}
+```ruby
 source 'https://rubygems.org'
 
-gem 'github-pages', '~> 155', group: :jekyll_plugins
-{% endhighlight %}
+gem 'github-pages', group: :jekyll_plugins
+```
 
-Replace `155` with whichever version you need, or omit `~> 155` to always install the latest version.
+This makes the transition from hosting on GitHub Pages to hosting elsewhere smoother, depending on your setup. Alternatively, you can simply use Jekyll directly, which is what I would recommend. My [current Gemfile looks like this](https://github.com/jessesquires/jessesquires.com/blob/master/Gemfile):
+
+```ruby
+source 'https://rubygems.org'
+
+gem 'jekyll', '~> 4.0'
+gem 'jekyll-sitemap'
+
+gem 'danger'
+gem 'danger-prose'
+```
 
 #### SSH
 
@@ -68,7 +87,7 @@ For any NearlyFreeSpeech site, [there are several subdirectories](https://faq.ne
 > This directory is the heart of your site. All of the content in this directory is directly accessible via the web. You can put all your static HTML files, images, .htaccess files, and most scripts in this directory.
 * `/home/protected/` &mdash; This is reserved for content that should be *indirectly* accessible, and other things like custom Ruby gem installs.
 > This directory is available for data files and other content that should be indirectly accessible via the web. For example, putting included source files, libraries, configuration and permanent data files that are used by PHP or CGI scripts into this directory makes them accessible to the script, but prevents them from being directly downloaded over the web.
-* `/home/private/` &mdash; Equivalent to `~`. For anything that should not be accessible via the web, like Git repos.
+* `/home/private/` &mdash; Equivalent to `~`. For anything that should not be accessible via the web, like Git repos, or privately used gems for a Jekyll site.
 > This directory is yours to use for personal files that you do not want accessible via the web at all. For example, if you're building a custom C++ CGI script, it would be appropriate to put the source code in this directory. This directory is also your "home" directory for Unix shell purposes.
 
 Additional notes on `/home/protected/` from NFSN:
@@ -77,20 +96,18 @@ Additional notes on `/home/protected/` from NFSN:
 
 #### Setting up Ruby Gems
 
-First you need to do some setup for Ruby and install [Bundler](http://bundler.io). NFSN is a bit quirky here regarding installing gems, but it's not a big deal. After ssh'ing into NFSN, you'll need to add the following to your `.bash_profile` or `.bashrc`, depending on your setup. ([Explanation of the difference.](http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html))
+First you need to do some setup for Ruby and install [Bundler](http://bundler.io). After ssh'ing into NFSN, you'll need to add the following to your `.bash_profile` or `.bashrc`, depending on your setup. ([Explanation of the difference.](http://www.joshstaiger.org/archives/2005/07/bash_profile_vs.html))
 
-{% highlight bash %}
-export RB_USER_INSTALL='true'
-export GEM_HOME=/home/protected/gems
-{% endhighlight %}
+```bash
+export GEM_HOME=/home/private/.gem
+```
 
 This tells NFSN where to find the gems you've installed. Then:
 
-{% highlight bash %}
-cd /home/protected
-mkdir gems
+```bash
+cd /home/private
 gem install bundler
-{% endhighlight %}
+```
 
 (Actually installing Jekyll will come later.)
 
@@ -98,37 +115,37 @@ gem install bundler
 
 You'll need to create a bare Git repository. This will contain your code and markdown files, and will be your `remote` when you clone the repo to your machine.
 
-{% highlight bash %}
+```bash
 cd /home/private
 mkdir site.git
 cd site.git
 git init --bare
-{% endhighlight %}
+```
 
 You can clone this repo locally.
 
-{% highlight bash %}
+```bash
 # replace "<username>" with your login
 git clone ssh://<username>@ssh.phx.nearlyfreespeech.net/home/private/site.git
-{% endhighlight %}
+```
 
 You also want to create a checkout directory, which is where you'll locally clone your site and build it before publishing.
 
-{% highlight bash %}
+```bash
 cd /home/private
 mkdir site_checkout
 cd site_checkout
 git clone /home/private/site.git/
-{% endhighlight %}
+```
 
 #### Setting up Git hooks
 
 Next you need to setup a [post-receive hook](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) in git. This script will run on your server each time you `git push` to the remote repo on your NFSN server. In the bare repo you created (`site.git`), there will be a `hooks/` directory with sample scripts. You can rename and edit `post-receive.sample` or create a new, empty `post-receive` file. It should contain the following:
 
-{% highlight bash %}
+```bash
 #!/bin/bash
 
-export GEM_HOME=/home/protected/gems
+export GEM_HOME=/home/private/.gem
 
 SITE_CHECKOUT=$HOME/site_checkout
 GIT_DIR=$SITE_CHECKOUT/.git
@@ -136,21 +153,23 @@ PUBLIC_WWW=/home/public
 
 cd $SITE_CHECKOUT
 
+git --git-dir=$GIT_DIR status
 git --git-dir=$GIT_DIR pull -f
+git --git-dir=$GIT_DIR status
 
 bundle install
 bundle exec jekyll build --destination $PUBLIC_WWW
 
 exit
-{% endhighlight %}
+```
 
 This will `cd` into `/private/site_checkout` then run `git pull` to pull the latest changes from the bare repo. Because this runs from the bare repo `hooks/` directory, we need to specify the git checkout directory using `--git-dir`. Then it runs `bundle install` to update or install any gems. (Remember you skipped installing `jekyll` earlier? This takes care of that.) Using Bundler allows you to easily keep gems updated without having to ssh into your server. Finally, it runs `jekyll build` and publishes your generated site (by putting the files in `/home/public`).
 
 Don't forget to make the file executable.
 
-{% highlight bash %}
+```bash
 chmod ug+x /home/private/site.git/hooks/post-receive
-{% endhighlight %}
+```
 
 #### Setting up HTTPS
 
@@ -162,7 +181,7 @@ With all of that setup complete, all that's left is publishing your site and new
 
 ### Migrating off of GitHub Pages
 
-The setup described above basically replicates GitHub Pages on your own server, which makes migrating straightforward.
+The setup described above basically replicates GitHub Pages on your own server, which makes migrating straightforward. Or as mentioned above, you can switch over to using the `jekyll` gem directly, which is a bit lighter than `github-pages`.
 
 #### Configuring Git
 
@@ -189,10 +208,10 @@ These changes take some time to propagate, a few hours or so. Don't panic while 
 
 #### Managing GitHub project sites
 
-As mentioned above, any project sites you had will now only be accessible via `<username>.github.io/<project>` &mdash; not `<mysite>.com/<project>`. You'll need to update anything that links to the later, or make that part of your new NFSN site.
+As mentioned above, any project sites you had hosted on GitHub Pages will now only be accessible via `<username>.github.io/<project>` &mdash; not `<mysite>.com/<project>`. You will need to update anything that links to the later, or make those pages part of your new NFSN site.
 
 After migrating to NFSN, I decided to make a new [jessesquires.github.io](https://github.com/jessesquires/jessesquires.github.io) GitHub Pages site repo. This is simply a landing page and introduction for my GitHub projects, using GitHub's built-in themes. You can view the [site here](https://jessesquires.github.io). Without this, `jessesquires.github.io` would show a 404 error, which is awkward considering my project sites are now only available at `jessesquires.github.io/<project>`. Creating this new GitHub Pages user site avoids that awkwardness and gives a better separation between my personal site and what I'm doing on GitHub. By using a built-in theme, it's trivial to maintain &mdash; just a single `README.md`.
 
 ### Conclusion
 
-I'm really happy with this setup and how simple it is to use. Everything is consolidated on NFSN. Enabling HTTPS was easy. I can eventually customize my site further. Most importantly, I can install and update gems on my own schedule. I don't have to worry about any of the limitations or quirks of GitHub Pages hosting. And while my site is no longer *free*, it is **nearly free**. 😉
+I'm really happy with this setup and how simple it is to use. Everything is consolidated on NFSN. Enabling HTTPS was easy. I can eventually customize my site further. Most importantly, I can install and update gems on my own schedule. I don't have to worry about any of the limitations or quirks of GitHub Pages hosting. And while my site is no longer *free*, it is **nearly free**. &#x1F609;
