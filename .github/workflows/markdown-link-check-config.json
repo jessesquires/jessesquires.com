@@ -1,0 +1,9 @@
+{
+    "ignorePatterns": [
+        {
+            // ignore relative links
+            // examples: '/contact' '/blog/tags/'
+            "pattern": "/\/[^\/][\w\d]*/g"
+        }
+    ]
+}
