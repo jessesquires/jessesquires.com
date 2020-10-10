@@ -50,7 +50,7 @@ Google allows you to create a free [custom search component](https://cse.google.
 
 Creating a [custom DuckDuckGo search](https://duckduckgo.com/search_box) is much simpler. They provide an [`<iframe>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) snippet, which is not ideal. Luckily, you can create and style your own search box with basic html forms &mdash; something Google doesn't offer.
 
-{% highlight html %}
+```html
 <form name="search" action="//duckduckgo.com/">
     <div class="form-group">
         <div class="input-group">
@@ -66,7 +66,7 @@ Creating a [custom DuckDuckGo search](https://duckduckgo.com/search_box) is much
         </div>
     </div>
 </form>
-{% endhighlight %}
+```
 
 This adds a basic form with a few [custom URL parameters](https://duckduckgo.com/params) and custom styling using [bootstrap](https://getbootstrap.com). You can add this to your own site by replacing `jessesquires.com` on line 5 with your own domain. You can see and use my custom search [here]({{ site.url }}/search).
 

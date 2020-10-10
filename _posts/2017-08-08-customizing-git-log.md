@@ -31,15 +31,15 @@ Creating [Git aliases](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases) (o
 
 As you can read in [the docs for git-log](https://www.git-scm.com/docs/git-log), there are **a ton** of options to pass to `log`, including an overwhelming amount of ["pretty format"](https://www.git-scm.com/docs/git-log#_pretty_formats) options. There's a more digestible, high-level overview in [section 2.3 of the Git book](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History). After experimenting with these various options, here's what I came up with:
 
-{% highlight bash %}
+```bash
 $ git log --graph --pretty=format:'commit: %C(bold red)%h%Creset %C(red)<%H>%Creset %C(bold magenta)%d %Creset%ndate: %C(bold yellow)%cd %Creset%C(yellow)%cr%Creset%nauthor: %C(bold blue)%an%Creset %C(blue)<%ae>%Creset%n%C(cyan)%s%n%Creset'
-{% endhighlight %}
+```
 
 Obviously, it is impossible to type this every time you want to run `log`. So you can set an alias called "smartlog". You can also find a [gist here](https://gist.github.com/jessesquires/d0f3fc99be8208394a450ce86443ce7d).
 
-{% highlight bash %}
+```bash
 $ git config --global alias.smartlog "log --graph --pretty=format:'commit: %C(bold red)%h%Creset %C(red)<%H>%Creset %C(bold magenta)%d %Creset%ndate: %C(bold yellow)%cd %Creset%C(yellow)%cr%Creset%nauthor: %C(bold blue)%an%Creset %C(blue)<%ae>%Creset%n%C(cyan)%s%n%Creset'"
-{% endhighlight %}
+```
 
 Here's a comparison (using [IGListKit](https://github.com/Instagram/IGListKit/commits/master)) between the default `git log` (left) and this new `git smartlog` (right):
 
@@ -49,23 +49,23 @@ The default log displays the commit hash, author, date, and *full* commit messag
 
 You've probably noticed that this doesn't exactly match the behavior of `hg smartlog`, which shows only **your** commits. You can fix that by specifying an author, `git smartlog --author='Jesse Squires'`. You can specify anyone on your team, which could also be useful. That command is rather long, so you can set another alias.
 
-{% highlight bash %}
+```bash
 $ git config --global alias.me '!git smartlog --author=Jesse Squires'
 # usage: git me
-{% endhighlight %}
+```
 
 Notice that you can reference your previous alias (`smartlog`) within this one. You can use the same technique to abbreviate `smartlog` to `sl`. Yes, you can set aliases for your aliases.
 
-{% highlight bash %}
+```bash
 $ git config --global alias.sl '!git smartlog'
 # usage: git sl
-{% endhighlight %}
+```
 
 ### Other useful aliases for Git
 
 Here are a few more aliases that I find useful. Some are simply "shortcuts" for existing commands (like `st` for `status`) while others provide more a user-friendly interface for somewhat obscure commands (like `uncommit`).
 
-{% highlight bash %}
+```bash
 alias.co=checkout
 alias.br=branch
 alias.cm=commit
@@ -75,6 +75,6 @@ alias.uncommit=reset --soft HEAD^
 alias.purge=clean -fd
 alias.dif=diff
 alias.pick=cherry-pick
-{% endhighlight %}
+```
 
 Git aliases are pretty powerful and super useful to increase your productivity. Not to mention, they help smooth out Git's rough edges.

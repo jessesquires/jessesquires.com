@@ -32,7 +32,7 @@ Apple's [article](https://developer.apple.com/swift/blog/?id=17) provides an exa
 
 However, failable initializers might seduce you into doing something bad. Suppose we have a blog post object. It requires the body text, the date it was written, and an image. To "simplify" construction of a post, you decide to pass the name of an image, instead of a `UIImage` object.
 
-{% highlight swift %}
+```swift
 
 class MyPost {
 
@@ -53,13 +53,13 @@ class MyPost {
     }
 }
 
-{% endhighlight %}
+```
 
 If the image cannot be constructed, then the initialization of `MyPost` fails. What have we done by designing our `init?` this way? We have disregarded the [SOLID](http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) principles, specifically [single responsibility](http://en.wikipedia.org/wiki/Single_responsibility_principle) and [dependency inversion](http://en.wikipedia.org/wiki/Dependency_inversion_principle). The `MyPost` object is for storing blog post data. It should not be initializing an image. The dependency on `UIImage` is now obfuscated. And finally, we have to do our optional unwrapping dance every time we instantiate a post.
 
 We can fix these issues by passing a non-optional image to our initializer.
 
-{% highlight swift %}
+```swift
 
 class MyBetterPost {
 
@@ -74,7 +74,7 @@ class MyBetterPost {
     }
 }
 
-{% endhighlight %}
+```
 
 Clean and deterministic again. But you're probably thinking, *we still have to handle an optional image __somewhere__*. That's true. When constructing a `UIImage`, the initializer `init(named name: String) -> UIImage?` could return `nil`, but the point is that this should be happening *outside* of this class, and definitely **not** in `init`. There's no good reason to dirty up this class with optionals.
 

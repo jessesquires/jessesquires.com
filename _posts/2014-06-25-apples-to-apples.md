@@ -52,7 +52,7 @@ These two programs were carefully crafted to be a true *apples-to-apples* compar
 
 The following were used for the standard library sorts:
 
-{% highlight swift %}
+```swift
 
 // Swift
 var arr: [Int] = // some array
@@ -64,7 +64,7 @@ NSMutableArray *arr = // some array
     return [n1 compare:n2];
 }];
 
-{% endhighlight %}
+```
 
 <span class="text-muted text-center center table-header-footer">
 Previous Swift std lib sort <a href="https://gist.github.com/jessesquires/06b6bd68a7d18810651f/ee5aa0a7427f830fadd4d369c9d04a895fc2b49b">implementation here</a>.

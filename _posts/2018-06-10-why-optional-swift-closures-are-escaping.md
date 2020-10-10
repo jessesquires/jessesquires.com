@@ -22,17 +22,17 @@ On Twitter, [David Hart explained](https://twitter.com/dhartbit/status/998605843
 
 This seems so obvious to me now, but I honestly had no idea why optional closures were treated differently. Optionals are [just a 2-case enum](https://github.com/apple/swift/blob/master/stdlib/public/core/Optional.swift#L122-L133). Like any other type that owns a closure, that closure is by definition escaping. Thus, an optional closure isn't much different from a struct that has a closure property:
 
-{% highlight swift %}
+```swift
 typealias Handler = () -> Void
 
 struct Closure {
     let handler: Handler
 }
-{% endhighlight %}
+```
 
 And more to the point, it doesn't make sense to annotate non-function types as `@escaping`. Of course, it's quite easy to verify this ourselves:
 
-{% highlight swift %}
+```swift
 func performWorkOptional(handler: Handler?) {
     print(type(of: handler))
 }
@@ -40,11 +40,11 @@ func performWorkOptional(handler: Handler?) {
 performWorkOptional { /* ... */ }
 
 // prints: Optional<() -> ()>
-{% endhighlight %}
+```
 
 And for the non-optional case:
 
-{% highlight swift %}
+```swift
 func performWork(handler: @escaping Handler) {
     print(type(of: handler))
 }
@@ -53,4 +53,4 @@ performWork { /* ... */ }
 
 // prints: () -> ()
 
-{% endhighlight %}
+```

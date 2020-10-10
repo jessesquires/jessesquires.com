@@ -26,7 +26,7 @@ Swift uses a reference-counted memory model and provides automatic memory manage
 In the talk, Ted provides the following examples to illustrate the calling convention **prior** to Swift 4.2, "callee-owned".
 When an object is created, it has a +1 reference count. However, when passed to a function call, it's the obligation of that function to release the object.
 
-{% highlight swift %}
+```swift
 // Swift 4.1 and prior
 // Calling Convention: "Callee-Owned" (+1 retain)
 
@@ -43,11 +43,11 @@ func foo(x: X) {
     ...
     // release x
 }
-{% endhighlight %}
+```
 
 In practice, we can see how this can produce a lot of superfluous, wasteful retain and release calls. (Note that the initial reference count is balanced by the final function call.)
 
-{% highlight swift %}
+```swift
 func caller() {
     // 'x' created with +1 reference count
     let x = X()
@@ -58,13 +58,13 @@ func caller() {
     foo(x) // release x in callee
 
 }
-{% endhighlight %}
+```
 
 
 
 In Swift 4.2, the convention has changed to "Guaranteed".
 
-{% highlight swift %}
+```swift
 // Swift 4.2
 // Calling Convention: "Guaranteed" (+0 retain)
 class X { ... }
@@ -77,7 +77,7 @@ func caller() {
     foo(x)
     // release x
 }
-{% endhighlight %}
+```
 
 It is no longer the callee's responsibility to release the object. So, all of the superfluous retains and releases go away. Ted notes in the talk that this significant reduction in retain and release traffic results in a code size reduction as well as a runtime performance improvement, because all those calls have been removed.
 
@@ -85,7 +85,7 @@ It is no longer the callee's responsibility to release the object. So, all of th
 
 What's more interesting with this change is the case of calling non-inlinable functions across module boundaries. [Michael Gottesman](https://twitter.com/gottesmang/status/1006952128198217729) shared [this gist](https://gist.github.com/gottesmm/524fca6a4e9fb3d5736a1b9d6686c5e8) on Twitter to explain. I doubt many people saw that Tweet, so I wanted to highlight it. I've reproduced the gist below:
 
-{% highlight swift %}
+```swift
 // # Why +0 is a better default than +1 for "normal function arguments".
 //
 // My intention here is to show why +0 is better default in a resilient
@@ -167,7 +167,7 @@ func bar(_ k: Klass) {
 // Notice how since the retains/releases are all in the caller, the optimizer
 // can eliminate /all/ the retain/release traffic and we can actually achieve optimal
 // code without ref counts.
-{% endhighlight %}
+```
 
 That's an edge case to which I hadn't given much thought. In the *old* convention ("callee-owned"), it was not possible to perform this retain/release traffic optimization across modules &mdash; there wasn't enough information, not to mention everyone needs to follow the convention. The result was slower code. But now that the retains and releases are the responsibility of the caller, not the callee, the optimizer can eliminate *all* of the retain/release traffic to produce optimal code.
 

@@ -187,11 +187,11 @@ The setup described above basically replicates GitHub Pages on your own server, 
 
 You'll want to follow the steps above, except for when it comes to your local git repo. With GitHub Pages, you'll already have a repo setup on GitHub and cloned locally. You need to set your `remote.origin` to NFSN (to the bare repo you created there), and add a new remote for GitHub.
 
-{% highlight bash %}
+```bash
 # replace username with your usernames
 git remote set-url origin ssh://<username>@ssh.phx.nearlyfreespeech.net/home/private/site.git
 git remote add github git@github.com:<username>/<username>.github.io.git
-{% endhighlight %}
+```
 
 After this change, `git push origin master` will push your master branch to NFSN and `git push github master` will push to GitHub. If you don't want your site to be open source, then don't add the github remote. Push to NFSN and your entire site (and entire git history) should now be copied over to NFSN.
 

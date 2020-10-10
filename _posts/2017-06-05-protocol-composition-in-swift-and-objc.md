@@ -17,7 +17,7 @@ Let's begin with Objective-C. Optional protocol methods were introduced in Objec
 
 Consider the following example:
 
-{% highlight objc %}
+```objc
 @protocol MyViewControllerDelegate <NSObject>
 
 - (void)didDismissController:(MyViewController *)controller;
@@ -33,29 +33,29 @@ Consider the following example:
 @property (nonatomic, weak) id<MyViewControllerDelegate> delegate;
 
 @end
-{% endhighlight %}
+```
 
 Calling required methods on the `delegate` is straightforward:
 
-{% highlight objc %}
+```objc
 [self.delegate didDismissController:self];
-{% endhighlight %}
+```
 
 With optional methods, not only do you forgo help from the compiler, but you incur the additional runtime cost of checking `-respondsToSelector:` every time you need to message the `delegate` object.
 
-{% highlight objc %}
+```objc
 if ([self.delegate respondsToSelector:@selector(controller:didSelectItem:)]) {
     [self.delegate controller:self didSelectItem:item];
 }
-{% endhighlight %}
+```
 
 ### The problem with `optional`
 
 Swift addresses the safety problems above and offers a convenient `?` syntax for optional members:
 
-{% highlight swift %}
+```swift
 delegate?.controller?(self, didSelect: item)
-{% endhighlight %}
+```
 
 In this case, you do not have to worry about runtime crashes in Swift, but there is another problem. In Swift, `optional` is *not really* "part of the language" or "pure Swift" &mdash; the feature relies on the Objective-C runtime and **it only exists for interoperability with Objective-C**. Any protocol in Swift that contains optional members must be marked as `@objc`. I have [written before]({{ site.url }}{% post_url 2016-06-04-avoiding-objc-in-swift %}) about avoiding `@objc` in your Swift code as much as possible. When `@objc` infiltrates your object graph, nearly everything must inherit from `NSObject` which means you cannot use Swift structs, enums, or other nice features. This leaves you not writing Swift, but merely "Objective-C with a new syntax". Clearly, `optional` isn't much of an option in Swift.
 
@@ -67,7 +67,7 @@ One naive solution is to simply never use `optional` or `@optional`. This is eas
 
 A better approach is to split up large protocols into smaller ones, and provide a unique property (like a delegate) for each one. Again, consider [`UITableViewDataSource`](https://developer.apple.com/reference/uikit/uitableviewdatasource). There are clear semantic groupings for these methods. It could easily be broken up into multiple protocols and `UITableView` could have a property for each one. Ash Furrow [has a great article](https://ashfurrow.com/blog/protocols-and-swift/) on doing exactly that. Thus, we could reimagine these APIs in the following way:
 
-{% highlight swift %}
+```swift
 class TableView {
     weak var dataSource: TableViewDataSource?
     weak var titlesDataSource: TableViewTitlesDataSource?
@@ -93,11 +93,11 @@ protocol TableViewReorderingDataSource: class {
 }
 
 // And so on...
-{% endhighlight %}
+```
 
 This design transfers the "optional-ness" from the protocol itself to an additional optional property on the class. If you want headers and footers in your table view, you can opt-in to those by setting `titlesDataSource`. To opt-out, you can set this property to `nil`. The same applies to `reorderingDataSource`, and so on. This design feels appropriate for `UITableView` at first. Many of the methods are not directly related to one another and there are clear semantic groupings. In practice, however, it feels awkward having to access multiple separate properties to query the same underlying data source.
 
-{% highlight swift %}
+```swift
 // access sections via `dataSource`
 let sections = dataSource?.tableView(tableView: self, numberOfRowsInSection: 0)
 
@@ -106,7 +106,7 @@ let headerTitle = titlesDataSource?.tableView(tableView: self, titleForHeaderInS
 
 // access reordering via `reorderingDataSource`
 let canMove = reorderingDataSource?.tableView(tableView: self, canMoveRowAtIndexPath: IndexPath(row: 0, section: 0))
-{% endhighlight %}
+```
 
 Having these disjoint protocols and properties is not desirable. Despite having nice semantic groupings, all of these methods *are related* in the sense that they all need access to *the same underlying data* in order to work properly together. To accommodate the complete `UITableViewDataSource` protocol, there would be five distinct protocols, each with a corresponding property on `UITableView`. Then you could reorganize the [`UITableViewDelegate`](https://developer.apple.com/reference/uikit/uitableviewdelegate) protocol in the same way, which would have at least 10 protocols and properties. Having this many `dataSource` and `delegate` properties is unintuitive and cumbersome. How can we improve this?
 
@@ -116,7 +116,7 @@ Instead of numerous disjoint protocols, you can design a union of protocols. Thi
 
 Adjusting the table view example above:
 
-{% highlight swift %}
+```swift
 class TableView {
     weak var dataSource: TableViewDataSource?
 }
@@ -131,11 +131,11 @@ protocol TableViewDataSource: class {
 }
 
 // And so on...
-{% endhighlight %}
+```
 
 Now the table view has a single `dataSource` property. The other protocols still exist, but they are absorbed into the `titles` and `reordering` properties. Another positive aspect of this design is that the opt-in/opt-out behavior for the nested protocols is explicitly declared. The conformer to `TableViewDataSource` can return `nil` to opt-out or return `self` to opt-in to these additional methods.
 
-{% highlight swift %}
+```swift
 class MyDataSource: TableViewDataSource, TableViewTitlesDataSource {
 
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -168,28 +168,28 @@ class MyDataSource: TableViewDataSource, TableViewTitlesDataSource {
         return nil
     }
 }
-{% endhighlight %}
+```
 
 Accessing these nested members goes through a single point of access:
 
-{% highlight swift %}
+```swift
 let sections = dataSource?.tableView(tableView: self, numberOfRowsInSection: 0)
 
 let headerTitle = dataSource?.titles?.tableView(tableView: self, titleForHeaderInSection: 0)
 
 let canMove = dataSource?.reordering?.tableView(tableView: self, canMoveRowAtIndexPath: IndexPath(row: 0, section: 0))
-{% endhighlight %}
+```
 
 This reduces the API surface area of `UITableView` by only having a single `dataSource` property instead of five &mdash; not to mention the 10 potential `delegate` properties there could have been after splitting up `UITableViewDelegate`. It unifies all of the methods of the data source protocol without resorting to using `optional`, while allowing you to opt out of the additional behavior in a concise way. In the case of Objective-C, the check for `-respondsToSelector:` becomes a simple check for `nil` instead, and the compiler can enforce that the entire protocol is implemented. Overall, it feels cleaner and much more cohesive, especially at the call site.
 
 **UPDATE:**  [@IanKay](https://twitter.com/IanKay/status/871773445373149184) pointed out that you [can further reduce boilerplate](https://gist.github.com/IanKeen/68eba888221a1a8de03dbbdd8a4dfcf1) from the child protocols by using protocol extensions. For example:
 
-{% highlight swift %}
+```swift
 extension TableViewDataSource {
     var titles: TableViewTitlesDataSource? { return nil }
     var reordering: TableViewReorderingDataSource? { return nil }
 }
-{% endhighlight %}
+```
 
 See [the full gist](https://gist.github.com/IanKeen/68eba888221a1a8de03dbbdd8a4dfcf1) for more details.
 

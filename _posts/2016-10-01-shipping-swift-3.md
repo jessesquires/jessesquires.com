@@ -37,14 +37,14 @@ Updating so many libraries is time consuming, but the branching model outlined i
 
 If the library was initially at version 2.0, here's the gist of what this looks like:
 
-{% highlight bash %}
+```bash
        v2 (Swift 2.2)       v3 (Swift 2.3)      v4 (Swift 3.0)
 o------o--------------------o--------------------o--------------> develop/master
         \                  /                    /
          o--- swift2.3 ---o                    /
                            \                  /
                             o--- swift3.0 ---o
-{% endhighlight %}
+```
 
 ### Deprecations
 

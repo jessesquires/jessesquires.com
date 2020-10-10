@@ -33,7 +33,7 @@ Adding my project was easy. If you have not added your open source projects, you
 
 Here's what [my commit](https://github.com/apple/swift-source-compat-suite/pull/54) included:
 
-{% highlight json %}
+```json
 {
     "repository": "Git",
     "url": "https://github.com/jessesquires/JSQDataSourcesKit.git",
@@ -64,7 +64,7 @@ Here's what [my commit](https://github.com/apple/swift-source-compat-suite/pull/
       }
     ]
 }
-{% endhighlight %}
+```
 
 First, you define all of the metadata about your project and find a commit that compiles with Swift 3. If you tag your releases in git, this is as simple as navigating to your most recent [Swift 3-compatible](https://github.com/jessesquires/JSQDataSourcesKit/releases/tag/6.0.0) release and clicking on [the commit](https://github.com/jessesquires/JSQDataSourcesKit/commit/b764e341713d67ab9c8160929f46e55ad1e2ca07) in the GitHub web interface. This will show you the full commit SHA that you can copy and paste. If you don't tag releases, simply [browse through your commits](https://github.com/jessesquires/JSQDataSourcesKit/commits/develop) until you find one that is suitable.
 
