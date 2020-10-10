@@ -13,11 +13,11 @@ image:
     half_width: false
 ---
 
-[PlanGrid](https://www.plangrid.com) is a [productivity app](https://itunes.apple.com/us/app/plangrid-construction-collaboration/id498795789) for construction fieldworkers. The easiest way to explain it to software developers is that it's like an IDE, Git, and GitHub or JIRA &mdash; but for construction. Think of all the amazing software tools we have to do our jobs as programmers. The equivalent tools for construction simply did not exist before PlanGrid, and they still have a lot of room to grow.
+[PlanGrid](https://www.plangrid.com) is a [productivity app](https://apps.apple.com/us/app/plangrid-construction-collaboration/id498795789) for construction fieldworkers. The easiest way to explain it to software developers is that it's like an IDE, Git, and GitHub or JIRA &mdash; but for construction. Think of all the amazing software tools we have to do our jobs as programmers. The equivalent tools for construction simply did not exist before PlanGrid, and they still have a lot of room to grow.
 
 As software developers, we build software for specific purposes. We anticipate that people will use an app in certain ways. Yet, we often discover that users are behaving differently than we expected. They hack a custom, "unsupported" workflow to workaround an app's unintended limitations. Once we realize this, we have the power to turn these user workarounds into first-class features. However, sometimes we find that our apps are being used in totally different, unimaginable ways.
 
-At PlanGrid, we recently discovered that the app was [being used as a digital archaeological tool](http://popular-archaeology.com/issue/fall-2017/article/adapting-plangrid-to-archaeology).
+At PlanGrid, we recently discovered that the app was [being used as a digital archaeological tool](https://popular-archaeology.com/article/adapting-plangrid-to-archaeology/).
 
 <!--excerpt-->
 

@@ -21,9 +21,9 @@ One clarification from last week &mdash; currying will not removed completely, [
 
 ### Commits and pull requests
 
-[Slava Pestov](https://github.com/slavapestov) pushed [a commit](https://github.com/apple/swift/commit/c258f991f64a431da57fc79b66e879e5062fba3b) that *fixed [91 percent](https://github.com/apple/swift/commit/c258f991f64a431da57fc79b66e879e5062fba3b#commitcomment-14971959) of the outstanding compiler crashers.* 😲
+[Slava Pestov](https://github.com/slavapestov) pushed [a commit](https://github.com/apple/swift/commit/c258f991f64a431da57fc79b66e879e5062fba3b) that *fixed [91 percent](https://github.com/apple/swift/commit/c258f991f64a431da57fc79b66e879e5062fba3b#commitcomment-14971959) of the outstanding compiler crashers.*
 
-[Dominique d'Argent](https://github.com/nubbel) introduced the first [unicode variable name](https://github.com/apple/swift-corelibs-foundation/pull/93#discussion_r47160608) in his implementation of `NSAffineTransform`. This is the only one that I've seen so far. I will happily buy a ☕️ or 🍺 for anyone who can successfully merge a pull request that uses 💩.
+[Dominique d'Argent](https://github.com/nubbel) introduced the first [unicode variable name](https://github.com/apple/swift-corelibs-foundation/pull/93#discussion_r47160608) in his implementation of `NSAffineTransform`. This is the only one that I've seen so far. I will happily buy a &#x2615; or &#x1F37A; for anyone who can successfully merge a pull request that uses &#x1F4A9;.
 
 [Bill Abt](https://github.com/apple/swift/pull/413) and [David Grove](https://github.com/apple/swift-corelibs-libdispatch/pull/15) from IBM made significant contributions to Swift and the core libraries! As Federighi mentioned on The Talk Show, IBM *really* wants to use Swift on the server.
 
@@ -31,17 +31,17 @@ Chris Lattner [fixed](http://github.com/apple/swift/commit/a2d9b10b64c3115c2eed7
 
 [Daniel Duan](https://github.com/dduan) submitted a [pull request](https://github.com/apple/swift/pull/419) to optimize the `Set` collection type. The result is roughly a 42 percent speed improvement. [Whoa!](https://github.com/apple/swift/pull/419#issuecomment-164109613)
 
-[@PracticalSwift](https://twitter.com/practicalswift) fixed [a ton](https://github.com/apple/swift/pull/561) of [typos](https://github.com/apple/swift/pull/526). 😂
+[@PracticalSwift](https://twitter.com/practicalswift) fixed [a ton](https://github.com/apple/swift/pull/561) of [typos](https://github.com/apple/swift/pull/526).
 
 William Dillon [began support](https://github.com/apple/swift/pull/439) for ARMv7 hosts such as the Raspberry Pi, BeagleBone, and Nvidia Tegras.
 
-Brian Gesiak [continued to pursue](https://github.com/apple/swift-corelibs-xctest/pull/14) testing the XCTest framework, and in terms of number of commits, he is now the [#3 contributor](https://github.com/apple/swift-corelibs-xctest/graphs/contributors) on corelibs-xctest. 👏
+Brian Gesiak [continued to pursue](https://github.com/apple/swift-corelibs-xctest/pull/14) testing the XCTest framework, and in terms of number of commits, he is now the [#3 contributor](https://github.com/apple/swift-corelibs-xctest/graphs/contributors) on corelibs-xctest.
 
 ### Proposals
 
 The first independent Swift language evolution proposal has been [accepted](https://twitter.com/clattner_llvm/status/676472122437271552)! You can say goodbye to [C-style for-loops](https://github.com/apple/swift-evolution/blob/master/proposals/0007-remove-c-style-for-loops.md) and say thank you to [Erica Sadun](https://twitter.com/ericasadun). Beginning in Swift 2.2, you'll see warning if you use a C-style for-loop and it will be removed in the 3.0 release. *"For the most part, there was agreement that C-style for loops are quite rare in Swift code, and most of the existing uses would be better written as for-in loops."* Also be sure to note the two potential problems with this change as described in the [announcement](https://lists.swift.org/pipermail/swift-evolution-announce/2015-December/000001.html).
 
-[Max Howell](https://github.com/mxcl), [Daniel Dunbar](https://github.com/ddunbar), and [Mattt Thompson](https://github.com/mattt) have prepared [a proposal](https://github.com/apple/swift-evolution/pull/51) to add testing support to the [Swift package manager](https://github.com/apple/swift-package-manager)! *"Testing is an essential part of modern software development. Tight integration of testing into the Swift Package Manager will help ensure a stable and reliable packaging ecosystem. We propose to extend our conventional package directory layout to accommodate test modules."* 🎉
+[Max Howell](https://github.com/mxcl), [Daniel Dunbar](https://github.com/ddunbar), and [Mattt Thompson](https://github.com/mattt) have prepared [a proposal](https://github.com/apple/swift-evolution/pull/51) to add testing support to the [Swift package manager](https://github.com/apple/swift-package-manager)! *"Testing is an essential part of modern software development. Tight integration of testing into the Swift Package Manager will help ensure a stable and reliable packaging ecosystem. We propose to extend our conventional package directory layout to accommodate test modules."*
 
 Max Moiseev's [proposal](https://github.com/apple/swift-evolution/blob/master/proposals/0014-constrained-AnySequence.md) to constrain `AnySequence.init` is due for review this week. I don't see any reason why this would not be accepted. *"These constraints, in fact, should be applied to `SequenceType` protocol itself (although, that is not currently possible), as we expect every `SequenceType` implementation to satisfy them already."*
 

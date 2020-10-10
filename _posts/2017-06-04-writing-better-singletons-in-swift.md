@@ -7,7 +7,7 @@ title: Writing better singletons in Swift
 subtitle: Avoiding common pitfalls
 ---
 
-In a [previous post](/blog/refactoring-singletons-in-swift/) I discussed strategies for using singletons in a cleaner, more modular way. [Singletons](https://en.wikipedia.org/wiki/Singleton_pattern) are a fact of software development, especially in iOS. *Sometimes* the design pattern actually *is* the right tool for the job. In those situations, how we can improve the way we write our own singleton classes?
+In a [previous post]({{ site.url }}{% post_url 2017-02-10-refactoring-singletons-in-swift %}) I discussed strategies for using singletons in a cleaner, more modular way. [Singletons](https://en.wikipedia.org/wiki/Singleton_pattern) are a fact of software development, especially in iOS. *Sometimes* the design pattern actually *is* the right tool for the job. In those situations, how we can improve the way we write our own singleton classes?
 
 <!--excerpt-->
 

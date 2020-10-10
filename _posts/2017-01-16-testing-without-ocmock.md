@@ -7,7 +7,7 @@ title: Testing and mocking without OCMock
 subtitle: For Swift and Objective-C
 ---
 
-[OCMock](http://ocmock.org) is a powerful [mock object](https://en.wikipedia.org/wiki/Mock_object) unit testing library for Objective-C. Even if you are using Swift, as long as your classes inherit from `NSObject`, you can use [some of its features](http://ocmock.org/swift/). But what if you are writing pure Swift code which does not have access to the dynamic Objective-C runtime? Or, what if you don't want your Swift code to be [hampered](/avoiding-objc-in-swift/) by `NSObject` subclasses and `@objc` annotations? Perhaps, you merely want to avoid dependencies and use 'plain old' `XCTest` with Objective-C. It's relatively easy and lightweight to achieve the same effect in some testing scenarios *without* using `OCMock`.
+[OCMock](http://ocmock.org) is a powerful [mock object](https://en.wikipedia.org/wiki/Mock_object) unit testing library for Objective-C. Even if you are using Swift, as long as your classes inherit from `NSObject`, you can use [some of its features](http://ocmock.org/swift/). But what if you are writing pure Swift code which does not have access to the dynamic Objective-C runtime? Or, what if you don't want your Swift code to be [hampered]({{ site.url }}{% post_url 2016-06-04-avoiding-objc-in-swift %}) by `NSObject` subclasses and `@objc` annotations? Perhaps, you merely want to avoid dependencies and use 'plain old' `XCTest` with Objective-C. It's relatively easy and lightweight to achieve the same effect in some testing scenarios *without* using `OCMock`.
 
 <!--excerpt-->
 
@@ -32,7 +32,7 @@ The most common &mdash; and highly suitable &mdash; uses for mocking are for net
 
 Suppose we have a view controller that displays a "Yes/No" prompt to the user. After the user selects an option, we need to notify another class of the action taken. This class will perform some operations and then update the UI. We want to test that when an option is tapped that the correct delegate method is called.
 
-{% highlight swift %}
+```swift
 protocol ControllerProtocol: class {
     func controllerDidSelectYes(_ controller: Controller) -> Void
     func controllerDidSelectNo(_ controller: Controller) -> Void
@@ -49,22 +49,22 @@ class Controller: UIViewController {
         delegate?.controllerDidSelectNo(self)
     }
 }
-{% endhighlight %}
+```
 
 We could mock `ControllerProtocol` with OCMock in an Objective-C test:
 
-{% highlight objc %}
+```objc
 #import <MyApp/MyApp-Swift.h>
 
 - (void)test {
     id mockProtocol = [OCMockObject niceMockForProtocol:@protocol(ControllerProtocol)];
     // write test...
 }
-{% endhighlight %}
+```
 
 But we want to write our tests in Swift, and it would be nice to avoid another dependency. Let's use `XCTestExpectation`. In our test, we can create a class that conforms to `ControllerProtocol` and has an `XCTestExpectation` property for each protocol method. Each protocol method implementation simply calls `fulfill()` on the appropriate expectation.
 
-{% highlight swift %}
+```swift
 class FakeDelegate: ControllerProtocol {
     var yesExpectation: XCTestExpectation?
     var noExpectation: XCTestExpectation?
@@ -77,11 +77,11 @@ class FakeDelegate: ControllerProtocol {
         noExpectation!.fulfill()
     }
 }
-{% endhighlight %}
+```
 
 Now we can use `FakeDelegate` in our test:
 
-{% highlight swift %}
+```swift
 func testDidTapYes() {
     let controller = Controller()
 
@@ -99,7 +99,7 @@ func testDidTapYes() {
     // wait for our delegate method to be called
     waitForExpectations(timeout: 5, handler: nil)
 }
-{% endhighlight %}
+```
 
 If the test fails, that means tapping this button *does not* notify the delegate.
 

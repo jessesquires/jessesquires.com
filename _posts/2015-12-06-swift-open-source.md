@@ -33,15 +33,15 @@ For the past few days I have been watching the repositories on [GitHub](https://
 
 - There has been close to ~400 pull requests across all of the repos. Many of them accepted and merged.
 
-- After the initial Swift announcement at [WWDC 2014](https://developer.apple.com/videos/play/wwdc2014-402/), I think we all noticed how active the Swift team was on twitter, answering questions and more &mdash; [Chris Lattner](https://twitter.com/clattner_llvm), [Joe Groff](https://twitter.com/jckarter), and [Jordan Rose](https://twitter.com/UINT_MIN) to name a few. Turns out some tweets [resulted](https://github.com/apple/swift/commit/666646fee95bc75ca81e1dc5131989d56bfb0742) in *immediate* bug fixes! 😄
+- After the initial Swift announcement at [WWDC 2014](https://developer.apple.com/videos/play/wwdc2014-402/), I think we all noticed how active the Swift team was on twitter, answering questions and more &mdash; [Chris Lattner](https://twitter.com/clattner_llvm), [Joe Groff](https://twitter.com/jckarter), and [Jordan Rose](https://twitter.com/UINT_MIN) to name a few. Turns out some tweets [resulted](https://github.com/apple/swift/commit/666646fee95bc75ca81e1dc5131989d56bfb0742) in *immediate* bug fixes!
 
 - Remember that [partnership](https://www.apple.com/pr/library/2014/07/15Apple-and-IBM-Forge-Global-Partnership-to-Transform-Enterprise-Mobility.html) with [Apple and IBM](http://www.apple.com/business/mobile-enterprise-apps/)? Then it should not be a surprise that IBM seems to be [very invested](https://developer.ibm.com/swift/2015/12/03/introducing-the-ibm-swift-sandbox/) in server-side Swift. It looks like there is growing momentum behind using Swift on the server.
 
-- Chris Lattner is [merging pull requests](https://github.com/apple/swift/pull/166) at 10pm on Saturday. 😆
+- Chris Lattner is [merging pull requests](https://github.com/apple/swift/pull/166) at 10pm on Saturday.
 
 - We know exactly [what to expect](https://github.com/apple/swift-evolution) for Swift 3.0! No more keynote surprises.
 
-- The [++ and -- operators will be removed](https://github.com/apple/swift-evolution/blob/master/proposals/0004-remove-pre-post-inc-decrement.md) from Swift 3.0. And thanks to [Erica Sadun](https://twitter.com/ericasadun), so will [C-style for-loops](https://github.com/apple/swift-evolution/blob/master/proposals/0007-remove-c-style-for-loops.md). She submitted this proposal on day two! 👏
+- The [++ and -- operators will be removed](https://github.com/apple/swift-evolution/blob/master/proposals/0004-remove-pre-post-inc-decrement.md) from Swift 3.0. And thanks to [Erica Sadun](https://twitter.com/ericasadun), so will [C-style for-loops](https://github.com/apple/swift-evolution/blob/master/proposals/0007-remove-c-style-for-loops.md). She submitted this proposal on day two!
 
 - Chris Lattner [commits](https://github.com/apple/swift/commit/22c3aa0588d2df1a207dcbad85946bab7976894c) *"Pull some ancient history off an internal wiki page for possible historical interest."* What?! Yes please! Nerd alert.
 
@@ -49,11 +49,11 @@ For the past few days I have been watching the repositories on [GitHub](https://
 
 - It looks like there's a [good chance](https://github.com/apple/swift-evolution/pull/33/files) that `typealias` will be replaced with `associated` for associated type declarations.
 
-- [Jacob Bandes-Storch](https://twitter.com/jtbandes) has [submitted](https://github.com/apple/swift/pull/253) [two](https://github.com/apple/swift/pull/272) pull requests that fix a total of over 400 crashes. 😲
+- [Jacob Bandes-Storch](https://twitter.com/jtbandes) has [submitted](https://github.com/apple/swift/pull/253) [two](https://github.com/apple/swift/pull/272) pull requests that fix a total of over 400 crashes.
 
 - The Swift team seems [very keen](https://twitter.com/clattner_llvm/status/673162286127714304) on getting the community involved. No contribution is too small!
 
-- Much of the [swift-corelibs-foundation](https://github.com/apple/swift-corelibs-foundation) framework is currently [unimplemented](https://github.com/apple/swift-corelibs-foundation/search?utf8=✓&q=NSUnimplemented). There seems to be a lot of low hanging fruit. I wonder if this is intentional to encourage contributions, or if it is the result of a tight deadline?
+- Much of the [swift-corelibs-foundation](https://github.com/apple/swift-corelibs-foundation) framework is currently [unimplemented](https://github.com/apple/swift-corelibs-foundation/search?q=NSUnimplemented). There seems to be a lot of low hanging fruit. I wonder if this is intentional to encourage contributions, or if it is the result of a tight deadline?
 
 - The [initial checkin](https://github.com/apple/swift/commit/afc81c1855bf711315b8e5de02db138d3d487eeb) from 2010 was actually revision 4 and imported from an internal SVN repo. "Swift SVN r4". You will notice the following in the header comments: *"This source file is part of the Swift.org open source project. Copyright (c) 2014 - 2015 Apple Inc."* I have three theories:
       1. Commit history was edited and cleaned up before being published on GitHub.

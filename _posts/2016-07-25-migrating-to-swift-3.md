@@ -29,24 +29,24 @@ Here's my basic git workflow for migrating my open source libraries:
 
 This creates the following model:
 
-{% highlight bash %}
+```bash
 o-----o develop (swift 2.2)
        \
         o-----o swift2.3
                \
                 o-----o swift3.0
-{% endhighlight %}
+```
 
 My plan for now is to keep these branches in sync like what you see above. That is, `swift2.3` will be ahead of `develop` and `swift3.0` will be ahead of `swift2.3`. The end goal will be to merge changes from each branch back into a single squashed commit on `develop` when the final release of Xcode 8 is out.
 
-{% highlight bash %}
+```bash
                            merge 2.3           merge 3.0
 o------o                    o                    o-----------o develop
         \                  /                    /
          o--- swift2.3 ---o                    /
                            \                  /
                             o--- swift3.0 ---o
-{% endhighlight %}
+```
 
 Each merge into `develop` will be a major release of the library. For example, if the library is currently at `v2.0`, then the Swift 2.3 merge will result in `v3.0` of the library and the Swift 3.0 merge will result in `v4.0` of the library. This ensures [semantic versioning](http://semver.org) and allows clients to safely migrate between versions *at their own pace* as they adopt the next version of Swift.
 
@@ -58,9 +58,9 @@ So far, the only dependencies I have for this project are my own libraries, whic
 
 Until Xcode 8 is final, you'll need to point your pods to these new branches:
 
-{% highlight ruby %}
+```ruby
 pod 'MyLibrary', :git => 'https://github.com/username/MyLibrary.git', :branch => 'swift3.0'
-{% endhighlight %}
+```
 
 This tells CocoaPods to fetch the latest on the `swift3.0` branch, instead of the latest published version.
 

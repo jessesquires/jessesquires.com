@@ -23,7 +23,7 @@ Let's use a simple, familiar example &mdash; a [`UITableViewCell`](https://devel
 
 Given the problem above, we may design something like the following:
 
-{% highlight swift %}
+```swift
 enum CellStyle {
     case login
     case profile
@@ -79,7 +79,7 @@ class SettingsViewController: UITableViewController {
 
    // ...
 }
-{% endhighlight %}
+```
 
 We create our usual `UITableViewCell` and [`UITableViewController`](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UITableViewController_Class/) subclasses, and define a style `enum`. Within each view controller we set the appropriate style when we create and configure the cell. Easy enough, right?
 
@@ -99,7 +99,7 @@ This approach is fragile, [imperative](https://en.wikipedia.org/wiki/Imperative_
 
 Rather than obfuscate what's happening by exposing merely an `enum`, we can open up our API using a technique known as [inversion of control](https://en.wikipedia.org/wiki/Inversion_of_control). Continuing with our example, what if we create an entirely new model to represent our cell style? Consider the following:
 
-{% highlight swift %}
+```swift
 struct CellStyle {
     let labelColor: UIColor
     let labelFont: UIFont
@@ -123,7 +123,7 @@ class CommonTableCell: UITableViewCell {
 
     // ...
 }
-{% endhighlight %}
+```
 
 Instead of an `enum`, we can create a `struct` that represents our cell style. Not only does this clearly define all attributes of the style, but we can now **map this value directly onto** the cell in a less procedural, more [declarative](https://en.wikipedia.org/wiki/Declarative_programming) way. In other scenarios, we could pass a configuration to a class's designated initializer.
 
@@ -135,7 +135,7 @@ Another reason this design is superior is because it allows us to provide sensib
 
 In Swift, we can provide default values in the initializer:
 
-{% highlight swift %}
+```swift
 struct CellStyle {
     let labelColor: UIColor
     let labelFont: UIFont
@@ -155,11 +155,11 @@ struct CellStyle {
         self.accessory = accessory
     }
 }
-{% endhighlight %}
+```
 
 And for our library-provided styles that we previously defined using an `enum`, we can define properties in an extension:
 
-{% highlight swift %}
+```swift
 extension CellStyle {
     static var settings: CellStyle {
         return CellStyle(labelColor: .purple(),
@@ -172,13 +172,13 @@ extension CellStyle {
 
 // usage:
 cell.apply(style: .settings)
-{% endhighlight %}
+```
 
 Notice the call site can actually remain *unchanged* due to Swift's type inference. Previously `.settings` referred to the `enum` value, but it now refers to the `static var` property in the extension. We can provide a more modular, extensible API without sacrificing conciseness or clarity.
 
 As mentioned above, clients can now effortlessly provide their own styles by adding an extension. Even more, they can choose to only override some of the default properties:
 
-{% highlight swift %}
+```swift
 extension CellStyle {
     static var custom: CellStyle {
         // uses default fonts
@@ -187,7 +187,7 @@ extension CellStyle {
                          accessory: UIImage(named: "action")!)
     }
 }
-{% endhighlight %}
+```
 
 ### Configurations as behaviors
 
@@ -199,9 +199,9 @@ A savvy reader would likely realize by now that this is exactly how the [`URLSes
 
 Let's look at another example on the other side of the spectrum &mdash; [`UIPresentationController`](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIPresentationController_class/). This API allows us to provide custom presentations for view controllers by creating custom presentation controllers. Previously, this API was limited to... an `enum`! The only presentation styles available were those defined by [`UIModalPresentationStyle`](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIViewController_Class/index.html#//apple_ref/swift/enum/c:@E@UIModalPresentationStyle). As we've explored above, this incredibly inflexible for clients. However, `UIKit` unfortunately did not get this new API 100% correct. There are parts of the public API that still depend on `UIModalPresentationStyle` values:
 
-{% highlight swift %}
+```swift
 func adaptivePresentationStyle(for traitCollection: UITraitCollection) -> UIModalPresentationStyle
-{% endhighlight %}
+```
 
 This method requires you to return a `UIModalPresentationStyle` value for the specified `UITraitCollection`. What we *should* be able to do here is return any arbitrary `UIPresentationController`. If you want to learn more, see [my talk](/swifty-presenters/) about these APIs.
 

@@ -97,45 +97,45 @@ Note that with this representation, positive and negative zero (`+0` and `-0`) a
 
 Let's look at an example in base-10. We can represent 123.45 with a significand of 12345 and exponent of -2: `123.45 = 12345 * 10e−2`. In base-2, computing a value from these three components is a bit more complicated but conceptually the same. Swift provides a clear and expressive API that can really help us understand how all of this works.
 
-{% highlight swift %}
+```swift
 let value = Float(0.15625) // 1/8 + 1/32
 
 value.sign          // plus
 value.exponent      // -3
 value.significand   // 1.25
-{% endhighlight %}
+```
 
 We can recompute the decimal value from its component parts. Note that the `radix`, or base, is 2 &mdash; as in base-2 for binary.
 
-{% highlight swift %}
+```swift
 // significand * 2^exponent
 Float(value.significand) * powf(Float(Float.radix), Float(value.exponent))
 // 0.15625
-{% endhighlight %}
+```
 
 Additionally, Swift's APIs allow us to explore the memory layout. We can look at the bit patterns and verify them with this [handy IEEE-754 floating-point converter](https://www.h-schmidt.net/FloatConverter/IEEE754.html).
 
-{% highlight swift %}
+```swift
 // 0.15625
 value.exponentBitPattern    // 124
 value.significandBitPattern // 2097152
-{% endhighlight %}
+```
 
 We can also check the bit counts for each component:
 
-{% highlight swift %}
+```swift
 Float.exponentBitCount       // 8, bits for the exponent
 Float.significandBitCount    // 23, bits for the significand
 
 Double.exponentBitCount      // 11, bits for the exponent
 Double.significandBitCount   // 52, bits for the significand
-{% endhighlight %}
+```
 
 ### Defining `ulp`
 
 Surprisingly, the IEEE standard doesn't define `ulpOfOne` (or [machine epsilon](https://en.wikipedia.org/wiki/Machine_epsilon)) explicitly, so there are a couple of varying definitions. However, most standard libraries provide constants for these values. The most prevalent is the [ISO C Standard](http://www.open-std.org/jtc1/sc22/WG14/www/docs/n1570.pdf) &mdash; `1.19e-07` for 32-bit values (`Float`) and `2.22e-16` for 64-bit values (`Double`). As expected, this is what we see in Swift:
 
-{% highlight swift %}
+```swift
 Float.ulpOfOne
 // 1.192093e-07, or
 // 0.00000011920928955078125
@@ -143,35 +143,35 @@ Float.ulpOfOne
 Double.ulpOfOne
 // 2.220446049250313e-16, or
 // 0.00000000000000022204460492503130808472633361816406250
-{% endhighlight %}
+```
 
 Given these initial epsilon or `ulpOfOne` values, [we can compute](https://en.wikipedia.org/wiki/Unit_in_the_last_place#Definition) the `ulp` for any value `v` with an exponent `exp` as: `epsilon * 2^exp`, where 2 is the radix, or base.
 
-{% highlight swift %}
+```swift
 let value = Float(3.14)
 let ulpOfValue = Float.ulpOfOne * powf(2.0, Float(value.exponent))
 
 ulpOfValue  // 0.00000023841857910156250
 value.ulp   // 0.00000023841857910156250
-{% endhighlight %}
+```
 
 Again, Swift provides a great, readable API for manipulating and exploring the properties of floating-point values. For example, for any value we can check [`.nextUp`](https://developer.apple.com/documentation/swift/floatingpoint/1848104-nextup) to see the next representable value. Given what we've learned so far, we can intuitively reason about what the next number (`.nextUp`) must be and verify our result.
 
-{% highlight swift %}
+```swift
 let value = Float(1.0)
 value.ulp           // 0.00000011920928955078125
 value + value.ulp   // 1.00000011920928955078125
 value.nextUp        // 1.00000011920928955078125
-{% endhighlight %}
+```
 
-{% highlight swift %}
+```swift
 let value = Float(1_000.0)
 value.ulp           //    0.00006103515625000000000
 value + value.ulp   // 1000.00006103515625000000000
 value.nextUp        // 1000.00006103515625000000000
-{% endhighlight %}
+```
 
-{% highlight swift %}
+```swift
 let value = Float(3.14)
 // actually 3.14000010490417480468750 -- because rounding
 
@@ -179,21 +179,21 @@ value               // 3.14000010490417480468750
 value.ulp           // 0.00000023841857910156250
 value + value.ulp   // 3.14000034332275390625000
 value.nextUp        // 3.14000034332275390625000
-{% endhighlight %}
+```
 
 Notice that the `ulp` of 1 is not the same as the `ulp` of 1,000. For each floating-point number `ulp` varies. In fact, the precision of a floating-point value is proportional to its magnitude. The larger a value, the less precise.
 
-{% highlight swift %}
+```swift
 let value = Float(1_000_000_000.0)
 value.ulp     // 64.0
 value.nextUp  // 1000000064.0
-{% endhighlight %}
+```
 
 ### Viewing the source
 
 We can view the Swift standard library source, which lives in [`stdlib/public/core/ FloatingPointTypes.swift.gyb`](https://github.com/apple/swift/blob/master/stdlib/public/core/FloatingPointTypes.swift.gyb#L541-L562). If you've never seen `.gyb` ('generate your boilerplate') files, read [Ole Begemann's post](https://oleb.net/blog/2016/10/swift-stdlib-source/). Per Ole's instructions, we can generate the specific implementation for `Float`.
 
-{% highlight swift %}
+```swift
 public var ulp: Float {
     if !isFinite { return Float.nan }
     if exponentBitPattern > UInt(Float.significandBitCount) {
@@ -216,13 +216,13 @@ public var ulp: Float {
       exponentBitPattern: 0,
       significandBitPattern: 1)
 }
-{% endhighlight %}
+```
 
 Surprising at an initial glance, this is not the simple formula noted above (`epsilon * 2^exponent`). First there are some edge cases to handle, like `Float.nan.ulp` which is `nan`. Then it constructs a new `Float` after computing its constituent components &mdash; the sign, exponent, and significand. This code eventually calls into the public initializer: `init(sign: exponentBitPattern: significandBitPattern:)`. Note that the final return is equivalent to `Float.leastNonzeroMagnitude` (or `FLT_MIN`).
 
 We can view the implementation of this initializer. We see a lot of [bit manipulation](https://en.wikipedia.org/wiki/Bit_manipulation), namely [bitwise AND](https://developer.apple.com/documentation/swift/binaryinteger/2886547) (`&`) and [masking left shift](https://developer.apple.com/documentation/swift/fixedwidthinteger/2924902) (`&<<`).
 
-{% highlight swift %}
+```swift
 public init(sign: FloatingPointSign,
             exponentBitPattern: UInt,
             significandBitPattern: UInt32) {
@@ -237,19 +237,19 @@ public init(sign: FloatingPointSign,
       exponent &<< UInt32(Float.significandBitCount) |
       significand)
 }
-{% endhighlight %}
+```
 
 This initializer eventually calls into `init(bitPattern:)`, where it finally constructs a primitive LLVM 32-bit float (FPIEEE32) from the raw bit pattern.
 
-{% highlight swift %}
+```swift
 public init(bitPattern: UInt32) {
     self.init(_bits: Builtin.bitcast_Int32_FPIEEE32(bitPattern._value))
 }
-{% endhighlight %}
+```
 
 We can break this down and observe each step in a Swift playground. For private APIs like `Float._infinityExponent`, we can look at the source and define them inline.
 
-{% highlight swift %}
+```swift
 // starting value
 let value = Float(3.1415)
 
@@ -285,18 +285,18 @@ let bitPattern = signMaskLeftShift | exponentMaskLeftShift | significand // 8808
 
 // 3. initialize with the computed bit pattern
 let finalUlp = Float(bitPattern: bitPattern) // 2.384186e-07, or 0.00000023841857910156250
-{% endhighlight %}
+```
 
 This code is admittedly quite difficult to follow, but suffice to say it is equivalent to what we originally computed above.
 
-{% highlight swift %}
+```swift
 let value = Float(3.1415)
 let computedUlp = Float.ulpOfOne * powf(Float(Float.radix), Float(value.exponent))
 
 value       // 3.14149999618530273437500
 computedUlp // 0.00000023841857910156250
 value.ulp   // 0.00000023841857910156250
-{% endhighlight %}
+```
 
 ### Conclusion
 

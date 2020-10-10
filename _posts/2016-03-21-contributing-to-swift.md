@@ -13,17 +13,17 @@ image:
     half_width: false
 ---
 
-Earlier this month I had the incredible opportunity to speak at the [try! Swift conference](http://www.tryswiftconf.com/en) in Tokyo, Japan. 🇯🇵 It was such a fun and rewarding experience. A [video of the talk](https://realm.io/news/tryswift-jesse-squires-contributing-open-source-swift/) is now online over at [Realm's](https://realm.io) blog, where it is synced with my [slides](https://speakerdeck.com/jessesquires/contributing-to-open-source-swift). If you have not already seen it, go check it out!
+Earlier this month I had the incredible opportunity to speak at the [try! Swift conference](https://www.tryswift.co) in Tokyo, Japan. 🇯🇵 It was such a fun and rewarding experience. A [video of the talk](https://realm.io/news/tryswift-jesse-squires-contributing-open-source-swift/) is now online over at [Realm's](https://realm.io) blog, where it is synced with my [slides](https://speakerdeck.com/jessesquires/contributing-to-open-source-swift). If you have not already seen it, go check it out!
 
 <!--excerpt-->
 
 ### Live translation
 
-One of the most interesting aspects of the conference was that there was live translation between English and Japanese. Most talks were in given in English, but there were at least a couple of talks given in Japanese each day &mdash; even some non-native speakers presented in Japanese! 😎 The speakers met with the translation team multiple times to review our slide decks before presenting to ensure top quality. Then attendees were given receivers with earphones, and the translators sat in the back in a cubicle listening and translating. We also had Q&A sessions with speakers and attendees where the translators helped bridge the language barrier. It was awesome. 🎉
+One of the most interesting aspects of the conference was that there was live translation between English and Japanese. Most talks were in given in English, but there were at least a couple of talks given in Japanese each day &mdash; even some non-native speakers presented in Japanese! &#x1F60E; The speakers met with the translation team multiple times to review our slide decks before presenting to ensure top quality. Then attendees were given receivers with earphones, and the translators sat in the back in a cubicle listening and translating. We also had Q&A sessions with speakers and attendees where the translators helped bridge the language barrier. It was awesome. &#x1F389;
 
-Because of this, you will notice that I'm speaking somewhat slowly during the presentation and pausing often. And so for me personally, it feels a bit awkward when I watch this. Nonetheless, I think the talk was really well received. If you have any feedback, I would love to hear it. [Let me know!](https://twitter.com/jesse_squires) 😄
+Because of this, you will notice that I'm speaking somewhat slowly during the presentation and pausing often. And so for me personally, it feels a bit awkward when I watch this. Nonetheless, I think the talk was really well received. If you have any feedback, I would love to hear it. [Let me know!](https://twitter.com/jesse_squires) &#x1F604;
 
-Also, one part of preparing for the live translation was providing a rough transcript before the conference. You can find all of my talk materials [on GitHub](https://github.com/jessesquires/talks). And as always, Realm's [transcript](https://realm.io/news/tryswift-jesse-squires-contributing-open-source-swift/) of the talk is excellent. 🙌
+Also, one part of preparing for the live translation was providing a rough transcript before the conference. You can find all of my talk materials [on GitHub](https://github.com/jessesquires/talks). And as always, Realm's [transcript](https://realm.io/news/tryswift-jesse-squires-contributing-open-source-swift/) of the talk is excellent. &#x1F64C;
 
 ### Thoughts
 

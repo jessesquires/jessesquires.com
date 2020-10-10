@@ -7,7 +7,7 @@ title: Call for contributors
 subtitle: Join the JSQMessagesViewController team!
 ---
 
-Do you love writing code? Are you passionate about open source? Do you want to get more involved, but have yet to find a project to which you want contribute? Are you interested in contributing to a widely used, impactful project? Then I have a proposition for you! 😄 I am looking for dedicated core contributors to help maintain [JSQMessagesViewController](https://github.com/jessesquires/JSQMessagesViewController)!
+Do you love writing code? Are you passionate about open source? Do you want to get more involved, but have yet to find a project to which you want contribute? Are you interested in contributing to a widely used, impactful project? Then I have a proposition for you! I am looking for dedicated core contributors to help maintain [JSQMessagesViewController](https://github.com/jessesquires/JSQMessagesViewController)!
 
 <!--excerpt-->
 
@@ -19,7 +19,7 @@ Don't worry &mdash; I still plan to play a large role in the development of the 
 
 ### Impact
 
-Contributing to open source is extremely rewarding and provides you with an opportunity to **give back**. If you are reading this, it is nearly impossible for you to not have benefited from open source in *some way*. You might even use JSQMessages. 😄 Working on this library will give you a chance to work on a high profile, high impact project for the iOS community. Not to mention, you will learn a lot! And it will be fun! 🤓
+Contributing to open source is extremely rewarding and provides you with an opportunity to **give back**. If you are reading this, it is nearly impossible for you to not have benefited from open source in *some way*. You might even use JSQMessages. Working on this library will give you a chance to work on a high profile, high impact project for the iOS community. Not to mention, you will learn a lot! And it will be fun!
 
 If you aren't convinced, here's some data to help!
 

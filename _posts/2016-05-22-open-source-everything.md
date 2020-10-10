@@ -13,7 +13,7 @@ image:
     half_width: false
 ---
 
-I recently had an incredible experience with one of my open source projects that I'd like to share. It's a story of openness and collaboration that I hope other open source project maintainers will find valuable. This post continues the theme of "building successful open source projects" from my [previous article](/swift-documentation/) on documentation.
+I recently had an incredible experience with one of my open source projects that I'd like to share. It's a story of openness and collaboration that I hope other open source project maintainers will find valuable. This post continues the theme of "building successful open source projects" from my [previous article]({{ site.url }}{% post_url 2016-05-20-swift-documentation %}) on documentation.
 
 <!--excerpt-->
 
@@ -32,7 +32,7 @@ The success of this release was the result of a number of attributes about this 
 1. It has [100% API documentation](https://jessesquires.github.io/JSQCoreDataKit/)
 2. It has [96% test coverage](https://codecov.io/gh/jessesquires/JSQCoreDataKit)
 3. It has [continuous integration](https://travis-ci.org/jessesquires/JSQCoreDataKit) with Travis CI
-4. [All issues](https://github.com/jessesquires/JSQCoreDataKit/issues?utf8=✓&q=is%3Aissue) are organized, labeled, and clearly explained
+4. [All issues](https://github.com/jessesquires/JSQCoreDataKit/issues?q=is%3Aissue) are organized, labeled, and clearly explained
 5. Each release has a corresponding [milestone](https://github.com/jessesquires/JSQCoreDataKit/milestones?state=closed) that groups the issues going into it
 
 Collectively, *all* of these things serve as *documentation* &mdash; not just the API documentation itself. By keeping a project organized in this fashion, you can empower *anyone* to easily and successfully contribute.

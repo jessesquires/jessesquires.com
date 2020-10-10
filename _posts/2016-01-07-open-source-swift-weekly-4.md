@@ -15,9 +15,9 @@ Now that the holidays are over, things have started to pick up again on Swift.or
 
 [Austin Zheng](https://github.com/austinzheng) submitted a [pull request](https://github.com/apple/swift/pull/838) to remove to old mirror API.
 
-[Andrew Naylor](https://github.com/argon) merged [changes](https://github.com/apple/swift-corelibs-foundation/pull/181) to speed up JSON parsing in corelibs-foundation. We all know how much the Swift community loves JSON parsing. 😉
+[Andrew Naylor](https://github.com/argon) merged [changes](https://github.com/apple/swift-corelibs-foundation/pull/181) to speed up JSON parsing in corelibs-foundation. We all know how much the Swift community loves JSON parsing.
 
-[Keith Smiley](https://github.com/keith) submitted a [pull request](https://github.com/apple/swift-corelibs-xctest/pull/25) to that adds support for the Swift package manager to corelibs-xctest. 👏
+[Keith Smiley](https://github.com/keith) submitted a [pull request](https://github.com/apple/swift-corelibs-xctest/pull/25) to that adds support for the Swift package manager to corelibs-xctest.
 
 Chris Lattner completely [redesigned](https://github.com/apple/swift/commit/7daaa22d936393f37176ba03975a0eec7277e1fb) the AST representation of parameters.
 
@@ -31,6 +31,6 @@ Doug Gregor has submitted a [proposal](https://github.com/DougGregor/swift-evolu
 
 ### Mailing lists
 
-Doug Gregor [notes](https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20160104/005312.html) some surprising behavior when extending an `@objc` protocol &mdash; the members of the `extension` are not exposed to the Objective-C runtime. 😳 Luckily, I haven't run into this bug myself.
+Doug Gregor [notes](https://lists.swift.org/pipermail/swift-evolution/Week-of-Mon-20160104/005312.html) some surprising behavior when extending an `@objc` protocol &mdash; the members of the `extension` are not exposed to the Objective-C runtime. Luckily, I haven't run into this bug myself.
 
 Finally, is `?.` the ["call-me-maybe" operator](https://twitter.com/uint_min/status/683532142677114880) in Swift? **That's it for this week!**

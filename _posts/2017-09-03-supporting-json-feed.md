@@ -75,8 +75,8 @@ layout: null
 
 Then, you'll need to add a `<link />` tag in the `<head>` section of your site:
 
-{% highlight html %}
+```html
 <link type="application/json" rel="alternate" href="/feed.json" title="YOUR SITE TITLE" />
-{% endhighlight %}
+```
 
 That's all. When you run `jekyll build`, your [full feed]({{ site.url }}{{site.feeds.json }}) will be generated. Now, go add JSON Feed support to your blog, too.

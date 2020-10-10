@@ -19,7 +19,7 @@ You can see [the diff here](https://github.com/jessesquires/jessesquires.com/pul
 
 The main container for the site was previously defined using columns and offsets:
 
-{% highlight html %}
+```html
 <div class="container container-fluid">
     <div class="row">
         <div class="col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
@@ -29,11 +29,11 @@ The main container for the site was previously defined using columns and offsets
         </div> <!-- col -->
     </div> <!-- row -->
 </div> <!-- container -->
-{% endhighlight %}
+```
 
 This is a bit cumbersome and awkward to maintain. It's easy to get wrong. Flexbox simplifies this, allowing you to insert "empty" columns. The code below produces similar results, but rather than using offsets, there are 3 columns where the main content is centered in the center column.
 
-{% highlight html %}
+```html
 <div class="container">
     <div class="row justify-content-md-center">
         <div class="col"></div>
@@ -45,11 +45,11 @@ This is a bit cumbersome and awkward to maintain. It's easy to get wrong. Flexbo
         <div class="col"></div>
     </div> <!-- row -->
 </div> <!-- container -->
-{% endhighlight %}
+```
 
 I was able to simplify tons of CSS and HTML, and even remove some dirty hacks. There are new `.list-unstyled` and `.list-inline` [styles](https://getbootstrap.com/docs/4.0/content/typography/#lists), which I use to build the row of icons in the footer (the links to GitHub, Twitter, LinkedIn, etc). Those are placed in a row and column with these new classes applied. But previously, it required doing:
 
-{% highlight css %}
+```css
 ul li {
     margin-left: 0.25rem;
     margin-right: 0.25rem;
@@ -63,7 +63,7 @@ ul {
     -moz-padding-before: 0px !important;
     -moz-padding-after: 0px !important;
 }
-{% endhighlight %}
+```
 
 These are only a couple of examples. Overall, I had tons of wins across the board with this migration. I'd highly recommend upgrading to v4. If you don't use Bootstrap, you should consider it.
 

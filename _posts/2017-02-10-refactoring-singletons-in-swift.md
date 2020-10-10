@@ -17,7 +17,7 @@ On Apple platforms, singletons are everywhere in the Cocoa and Cocoa Touch frame
 
 When you implicitly reference these &mdash; and your own &mdash; singletons, it increases the amount of effort it takes to change your code. It also makes it difficult or impossible to test your code, because there's no way to change or mock those singletons from outside of the classes in which they are used. Here's what you typically see in an iOS app:
 
-{% highlight swift %}
+```swift
 class MyViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -38,7 +38,7 @@ class MyViewController: UIViewController {
         }
     }
 }
-{% endhighlight %}
+```
 
 This is what I mean by *implicit references* &mdash; you simply use the singleton directly in your class. We can do better. There is a lightweight, easy, and low impact way to improve this in Swift. Swift makes it elegant, too.
 
@@ -47,7 +47,7 @@ This is what I mean by *implicit references* &mdash; you simply use the singleto
 In short, the answer is [dependency injection](https://en.wikipedia.org/wiki/Dependency_injection). This principle says that you should design your classes and functions such that all inputs are explicit. If you refactor the snippet above to use dependency injection, it would look like this:
 
 
-{% highlight swift %}
+```swift
 class MyViewController: UIViewController {
 
     let userManager: CurrentUserManager
@@ -79,21 +79,21 @@ class MyViewController: UIViewController {
         }
     }
 }
-{% endhighlight %}
+```
 
 This class no longer implicitly (or explicitly) depends on any singletons. It explicitly depends on a `CurrentUserManager`, `UserDefaults`, and `URLSession` &mdash; but nothing about these dependencies indicates that they are singletons. This detail no longer matters, but the functionality remains unchanged. The view controller merely knows that instances of these objects exist. At the call site you can pass in the singletons. Again, this detail is irrelevant from the class's perspective.
 
-{% highlight swift %}
+```swift
 let controller = MyViewController(userManager: .shared, defaults: .standard, urlSession: .shared)
 
 present(controller, animated: true, completion: nil)
-{% endhighlight %}
+```
 
 <span class="text-muted"><b>Pro tip: Swift type inference works here. Instead of writing `URLSession.shared`, you can simply write `.shared`.</b></span>
 
 If you ever need to provide a *different* `userDefaults` &mdash; for example, if you need to [share data with App Groups](https://developer.apple.com/library/content/documentation/General/Conceptual/ExtensibilityPG/ExtensionScenarios.html#//apple_ref/doc/uid/TP40014214-CH21-SW6) &mdash; then it's easy to change. In fact, you *do not* have to change any code in this class. Instead of passing in `UserDefaults.standard`, you pass in `UserDefaults(suiteName: "com.myApp")`.
 
-Furthermore, in unit tests you can now pass in fakes or mocks of these classes. Real mocking isn't possible in Swift, but there are [workarounds](/testing-without-ocmock/). It depends on how you want to structure your code. You could use a protocol for `CurrentUserManager`, which you could then "mock" in a test. You could provide a fake suite for `UserDefaults` for testing. You could make `URLSession` optional and pass `nil` in your tests.
+Furthermore, in unit tests you can now pass in fakes or mocks of these classes. Real mocking isn't possible in Swift, but there are [workarounds]({{ site.url }}{% post_url 2017-01-16-testing-without-ocmock %}). It depends on how you want to structure your code. You could use a protocol for `CurrentUserManager`, which you could then "mock" in a test. You could provide a fake suite for `UserDefaults` for testing. You could make `URLSession` optional and pass `nil` in your tests.
 
 ### Refactoring hell
 
@@ -113,7 +113,7 @@ One of my favorite features of Swift is default parameter values. They are incre
 
 You can use the singletons as default parameters:
 
-{% highlight swift %}
+```swift
 class MyViewController: UIViewController {
 
     init(userManager: CurrentUserManager = .shared, defaults: UserDefaults = .standard, urlSession: URLSession = .shared) {
@@ -123,15 +123,15 @@ class MyViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
 }
-{% endhighlight %}
+```
 
 Now, the initializer has not changed from the perspective of the call site. But there is a world of difference in the class itself, which is now using dependency injection and no longer referencing singletons.
 
-{% highlight swift %}
+```swift
 let controller = MyViewController()
 
 present(controller, animated: true, completion: nil)
-{% endhighlight %}
+```
 
 What have you gained with this change? You can refactor every class to use this pattern without updating any call sites. Nothing has changed semantically, nor functionally. Yet, your classes are using dependency injection. They are merely using instances internally. You can test them as described above and maintain a flexible, modular API &mdash; all while the public interface remains unchanged. Essentially, you can continue working in your codebase as if nothing ever changed.
 
@@ -139,13 +139,13 @@ If and when the time comes to pass in custom, non-singleton parameters you can d
 
 If needed, you can even opt-in or opt-out of any of the default values. In the following example, we provide custom `UserDefaults` but keep the default parameters for `CurrentUserManager` and `URLSession`.
 
-{% highlight swift %}
+```swift
 let appGroupDefaults = UserDefaults(suiteName: "com.myApp")!
 
 let controller = MyViewController(defaults: appGroupDefaults)
 
 present(controller, animated: true, completion: nil)
-{% endhighlight %}
+```
 
 ### Conclusion
 

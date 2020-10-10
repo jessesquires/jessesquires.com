@@ -17,7 +17,7 @@ For the purposes of this post, I've simplified the code from the project I'm wor
 
 Suppose we have a group of view controllers that all need a view model and a "cancel" button. Each controller needs to be able to execute its own code when "cancel" is tapped. We may write something like this:
 
-{% highlight swift %}
+```swift
 struct ViewModel {
     let title: String
 }
@@ -27,11 +27,11 @@ protocol ViewControllerType: class {
 
     func didTapCancelButton(sender: UIBarButtonItem)
 }
-{% endhighlight %}
+```
 
 If we stopped here, then each controller would have to add and wire up its own cancel button. That ends up being a lot of boilerplate. We can fix that with an extension (using the old `Selector("")` syntax):
 
-{% highlight swift %}
+```swift
 extension ViewControllerType where Self: UIViewController {
     func configureNavigationItem() {
         navigationItem.leftBarButtonItem = UIBarButtonItem(
@@ -40,11 +40,11 @@ extension ViewControllerType where Self: UIViewController {
             action: Selector("didTapCancelButton:"))
     }
 }
-{% endhighlight %}
+```
 
 Now each controller that conforms to this protocol can call `configureNavigationItem()` from `viewDidLoad()`, which is much better. Our controller might look like this:
 
-{% highlight swift %}
+```swift
 class MyViewController: UIViewController, ViewControllerType {
     var viewModel = ViewModel(title: "Title")
 
@@ -57,14 +57,14 @@ class MyViewController: UIViewController, ViewControllerType {
         // handle tap
     }
 }
-{% endhighlight %}
+```
 
 
 This is rather simple, but you can imagine more complex configurations that we could apply using this strategy.
 
 After updating the snippet above for Swift 2.2, we have the following:
 
-{% highlight swift %}
+```swift
 extension ViewControllerType where Self: UIViewController {
     func configureNavigationItem() {
         navigationItem.leftBarButtonItem = UIBarButtonItem(
@@ -73,15 +73,15 @@ extension ViewControllerType where Self: UIViewController {
             action: #selector(didTapCancelButton(_:)))
     }
 }
-{% endhighlight %}
+```
 
 And now we have a problem, a new compiler error.
 
-{% highlight bash %}
+```bash
 Argument of '#selector' refers to a method that is not exposed to Objective-C.
 
 Fix-it   Add '@objc' to expose this method to Objective-C
-{% endhighlight %}
+```
 
 ### When `@objc` tries to ruin everything
 
@@ -105,7 +105,7 @@ We can decompose this protocol by separating out all of the `@objc` code into it
 
 First we split up the protocol into two protocols, `ViewModelConfigurable` and `NavigationItemConfigurable`. Our previous extension on `ViewControllerType` can move to `NavigationItemConfigurable` instead.
 
-{% highlight swift %}
+```swift
 protocol ViewModelConfigurable {
     var viewModel: ViewModel { get set }
 }
@@ -122,13 +122,13 @@ extension NavigationItemConfigurable where Self: UIViewController {
             action: #selector(didTapCancelButton(_:)))
     }
 }
-{% endhighlight %}
+```
 
 Finally, we can define our original `ViewControllerType` protocol as a `typealias`.
 
-{% highlight swift %}
+```swift
 typealias ViewControllerType = ViewModelConfigurable & NavigationItemConfigurable
-{% endhighlight %}
+```
 
 Now everything works exactly as it did before migrating to Swift 2.2 and our original view controller definition above does not have to change. Nothing is ruined. If you ever face a similar situation, or if you generally want to contain the use of `@objc` (*which you should*), then I highly recommend adopting this strategy.
 

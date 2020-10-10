@@ -14,7 +14,7 @@ image:
     half_width: false
 ---
 
-The Swift community is ecstatic about Swift. There are so many new libraries being released each week that some have created [package indexes](https://swiftmodules.com) &mdash; even [IBM](https://developer.ibm.com/swift/products/package-catalog/). But of course, a library is only as great as its documentation.
+The Swift community is ecstatic about Swift. There are so many new libraries being released each week that some have created [package indexes](https://swiftpackageindex.com) &mdash; even [IBM](https://developer.ibm.com/languages/swift/category/package-catalog/). But of course, a library is only as great as its documentation.
 
 <!--excerpt-->
 
@@ -40,7 +40,7 @@ Writing clear, understandable documentation is not easy to learn and it's more d
 
 Here's an example from [JSQMessagesViewController](http://cocoadocs.org/docsets/JSQMessagesViewController/7.2.0/Protocols/JSQMessagesCollectionViewDataSource.html#//api/name/collectionView:messageDataForItemAtIndexPath:). It's not Swift, but it illustrates these ideas.
 
-{% highlight objc %}
+```objc
 /**
  *  Asks the data source for the message data that corresponds to the specified item at indexPath in the collectionView.
  *
@@ -50,11 +50,11 @@ Here's an example from [JSQMessagesViewController](http://cocoadocs.org/docsets/
  *  @return An initialized object that conforms to the `JSQMessageData` protocol. You must not return `nil` from this method.
  */
 - (id<JSQMessageData>)collectionView:(JSQMessagesCollectionView *)collectionView messageDataForItemAtIndexPath:(NSIndexPath *)indexPath;
-{% endhighlight %}
+```
 
 This reads very similarly to the `UICollectionViewDataSource` method `- collectionView: cellForItemAtIndexPath:`. It follows the precedent set by UIKit, not only in terms of the API design but also the documentation. Doing this allows your library to feel natural and familiar to users.
 
-After enough imitation, you'll eventually find your own voice and get enough experience that you won't need to reference others' documentation in order to write your own. Writing documentation will begin to flow naturally. It might even be fun! 😉
+After enough imitation, you'll eventually find your own voice and get enough experience that you won't need to reference others' documentation in order to write your own. Writing documentation will begin to flow naturally. It might even be fun! &#x1F609;
 
 Also, strive to provide [100% coverage](https://twitter.com/orta/status/471009574276050944). This is relatively easy to do. It's much easier than having 100% test coverage, for example. It's something to be proud of, and it will make you and your library feel complete.
 
@@ -68,7 +68,7 @@ By far, the best way to generate docs for Swift (and Objective-C!) libraries is 
 
 Once installed, just run `jazzy` from the command line with a few configuration parameters and you'll have beautifully generated docs in seconds. The [README](https://github.com/realm/jazzy/blob/master/README.md) has all of the details, but here's an example from [PresenterKit](https://github.com/jessesquires/PresenterKit):
 
-{% highlight bash %}
+```bash
 jazzy --swift-version 2.2 -o ./ \
       --source-directory PresenterKit/ \
       --readme PresenterKit/README.md \
@@ -76,7 +76,7 @@ jazzy --swift-version 2.2 -o ./ \
       -u 'https://twitter.com/jesse_squires' \
       -m 'PresenterKit' \
       -g 'https://github.com/jessesquires/PresenterKit'
-{% endhighlight %}
+```
 
 You need to specify a version of Swift, tell jazzy where your source code is, and provide some basic author information. It couldn't be easier. Run `jazzy --help` to see all of the possible usage options.
 
@@ -116,9 +116,9 @@ This is where it all comes together. On the *gh-pages* branch, I add the *develo
 
 On the [gh-pages](https://github.com/jessesquires/JSQCoreDataKit/tree/gh-pages) branch of [JSQCoreDataKit](https://github.com/jessesquires/JSQCoreDataKit), you'll find two small bash scripts.
 
-The first is [build_docs.sh](https://github.com/jessesquires/JSQCoreDataKit/blob/gh-pages/build_docs.sh), which will update the submodule and build the docs. These can then be previewed in Safari by opening `index.html`.
+The first is [build_docs.sh](https://github.com/jessesquires/JSQCoreDataKit/blob/develop/scripts/build_docs.zsh), which will update the submodule and build the docs. These can then be previewed in Safari by opening `index.html`.
 
-{% highlight bash %}
+```bash
 git submodule update --remote
 
 jazzy --swift-version 2.2 -o ./ \
@@ -128,23 +128,23 @@ jazzy --swift-version 2.2 -o ./ \
       -u 'https://twitter.com/jesse_squires' \
       -m 'JSQCoreDataKit' \
       -g 'https://github.com/jessesquires/JSQCoreDataKit'
-{% endhighlight %}
+```
 
 The second is [publish_docs.sh](https://github.com/jessesquires/JSQCoreDataKit/blob/gh-pages/publish_docs.sh) which will first call the build script, then push the docs to GitHub.
 
-{% highlight bash %}
+```bash
 ./build_docs.sh
 git add .
 git commit -am "auto-update docs"
 git push
 git status
-{% endhighlight %}
+```
 
 #### Workflow
 
 With all of this in place, updating the documentation for my library is painless. I write code and docs, then push to *develop*. Then I switch directories to the *gh-pages* checkout and run `./publish_docs.sh`.
 
-{% highlight bash %}
+```bash
 cd ~/GitHub/JSQCoreDataKit
 # write code and docs
 # commit
@@ -152,7 +152,7 @@ git push
 
 cd ~/GitHub-Pages/JSQCoreDataKit
 ./publish_docs.sh # update docs
-{% endhighlight %}
+```
 
 Right now, I prefer running the `publish_docs.sh` script manually so that the docs only update when I want them to &mdash; for corrections and major releases. However, you could easily do this in the `after_success:` step of your [Travis-CI](https://travis-ci.org) script.
 
