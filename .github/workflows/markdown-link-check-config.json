@@ -2,7 +2,10 @@
     "ignorePatterns": [
         {
             // ignore relative links
+            //
             // examples: '/contact' '/blog/tags/'
+            //
+            // https://regexr.com
             "pattern": "/\/[^\/][\w\d]*/g"
         }
     ]
