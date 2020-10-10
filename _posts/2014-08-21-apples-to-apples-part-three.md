@@ -11,7 +11,7 @@ subtitle: A modest proposal&#58; can Swift outperform plain C?
 
 <!--excerpt-->
 
-In [*Apples to apples, Part II*](/apples-to-apples-part-two/), we discovered that Swift was finally performing better than Objective-C. As expected, some common [reactions](https://twitter.com/OldManKris/status/497102303833255936) and [responses](https://twitter.com/mpweiher/status/497066155224608768) on Twitter were, *then how does it compare to C?* This is precisely what we are investigating today to welcome this week's arrival of [Xcode 6 beta 6](https://developer.apple.com/xcode/downloads/).
+In [*Apples to apples, Part II*]({{ site.url }}{% post_url 2014-08-06-apples-to-apples-part-two %}), we discovered that Swift was finally performing better than Objective-C. As expected, some common [reactions](https://twitter.com/OldManKris/status/497102303833255936) and [responses](https://twitter.com/mpweiher/status/497066155224608768) on Twitter were, *then how does it compare to C?* This is precisely what we are investigating today to welcome this week's arrival of [Xcode 6 beta 6](https://developer.apple.com/xcode/downloads/).
 
 ### Setup
 
@@ -19,7 +19,7 @@ In [*Apples to apples, Part II*](/apples-to-apples-part-two/), we discovered tha
 * *Software:* OS X Mavericks 10.9.4, Xcode 6 beta 6
 * *Hardware:* 2008 unibody MacBook Pro, 2.4 Ghz Intel Core 2 Duo, 8 GB 1067 MHz DDR3 memory
 
-<p>The benchmarks consist of <em><strong>T</strong></em> trials, which are averaged at the end to obtain the average execution time for each algorithm. Each trial begins by generating an array of <em><strong>N</strong></em> random integers in the range <code>[0, UINT32_MAX)</code>. Then, each sorting algorithm is passed a copy of this initial array to sort. The current time is logged before and after each sort and the difference between the two yields the execution time for the algorithm for the current trial. Each execution time is saved to find the average time and standard deviation after all trials are complete.</p>
+The benchmarks consist of <em><strong>T</strong></em> trials, which are averaged at the end to obtain the average execution time for each algorithm. Each trial begins by generating an array of <em><strong>N</strong></em> random integers in the range <code>[0, UINT32_MAX)</code>. Then, each sorting algorithm is passed a copy of this initial array to sort. The current time is logged before and after each sort and the difference between the two yields the execution time for the algorithm for the current trial. Each execution time is saved to find the average time and standard deviation after all trials are complete.
 
 The sorting algorithms are written as [textbook implementations](http://en.wikipedia.org/wiki/Introduction_to_Algorithms) for clarity, objectivity, and fairness to each language. The standard library sort for Swift uses the `sorted()` [function](https://gist.github.com/jessesquires/06b6bd68a7d18810651f#file-sorts-m) while C uses `qsort()` from [cstdlib](http://www.cplusplus.com/reference/cstdlib/qsort/).
 

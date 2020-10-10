@@ -7,7 +7,7 @@ title: Shipping Swift 3.0
 subtitle: An update on my open source libraries
 ---
 
-I'm happy to share that all of my open source Swift libraries have (finally) been updated for Swift 3. If you've been waiting for any of these final releases, you can now run `pod update` or `carthage update` and relax &mdash; sorry it took so long! I wrote about [migrating to Swift 3](/migrating-to-swift-3/) a few months ago and this post shares the final results of the process that I outlined in there.
+I'm happy to share that all of my open source Swift libraries have (finally) been updated for Swift 3. If you've been waiting for any of these final releases, you can now run `pod update` or `carthage update` and relax &mdash; sorry it took so long! I wrote about [migrating to Swift 3]({{ site.url }}{% post_url 2016-07-25-migrating-to-swift-3 %}) a few months ago and this post shares the final results of the process that I outlined in there.
 
 <!--excerpt-->
 
@@ -23,7 +23,7 @@ This will allow you to update these libraries on your own time, without forcing 
 - [JSQWebViewController](https://github.com/jessesquires/JSQWebViewController/releases)
 - [DefaultStringConvertible](https://github.com/jessesquires/DefaultStringConvertible/releases) (Note: this library was not updated to Swift 2.3, only Swift 3.0)
 
-Updating so many libraries is time consuming, but the branching model outlined in [my previous post](/migrating-to-swift-3/) made it simple. Here's the final git flow:
+Updating so many libraries is time consuming, but the branching model outlined in [my previous post]({{ site.url }}{% post_url 2016-07-25-migrating-to-swift-3 %}) made it simple. Here's the final git flow:
 
 1. The `swift2.3` branch is finished and ready
 2. Squash and merge `swift2.3` into `develop`
@@ -48,7 +48,7 @@ o------o--------------------o--------------------o--------------> develop/master
 
 ### Deprecations
 
-Also note that a few of my libraries have been deprecated, which I wrote about [here](/swift-3-sherlocked-my-libraries/). These libraries were no longer valuable in general, or no longer needed in Swift 3.
+Also note that a few of my libraries have been deprecated, which I wrote about [here]({{ site.url }}{% post_url 2016-07-03-swift-3-sherlocked-my-libraries %}). These libraries were no longer valuable in general, or no longer needed in Swift 3.
 
 - [GrandSugarDispatch](https://github.com/jessesquires/GrandSugarDispatch)
 - [JSQNotificationObserverKit](https://github.com/jessesquires/JSQNotificationObserverKit)

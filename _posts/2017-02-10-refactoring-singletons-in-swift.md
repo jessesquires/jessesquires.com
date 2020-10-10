@@ -93,7 +93,7 @@ present(controller, animated: true, completion: nil)
 
 If you ever need to provide a *different* `userDefaults` &mdash; for example, if you need to [share data with App Groups](https://developer.apple.com/library/content/documentation/General/Conceptual/ExtensibilityPG/ExtensionScenarios.html#//apple_ref/doc/uid/TP40014214-CH21-SW6) &mdash; then it's easy to change. In fact, you *do not* have to change any code in this class. Instead of passing in `UserDefaults.standard`, you pass in `UserDefaults(suiteName: "com.myApp")`.
 
-Furthermore, in unit tests you can now pass in fakes or mocks of these classes. Real mocking isn't possible in Swift, but there are [workarounds](/testing-without-ocmock/). It depends on how you want to structure your code. You could use a protocol for `CurrentUserManager`, which you could then "mock" in a test. You could provide a fake suite for `UserDefaults` for testing. You could make `URLSession` optional and pass `nil` in your tests.
+Furthermore, in unit tests you can now pass in fakes or mocks of these classes. Real mocking isn't possible in Swift, but there are [workarounds]({{ site.url }}{% post_url 2017-01-16-testing-without-ocmock %}). It depends on how you want to structure your code. You could use a protocol for `CurrentUserManager`, which you could then "mock" in a test. You could provide a fake suite for `UserDefaults` for testing. You could make `URLSession` optional and pass `nil` in your tests.
 
 ### Refactoring hell
 

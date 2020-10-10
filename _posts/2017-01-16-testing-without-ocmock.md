@@ -7,7 +7,7 @@ title: Testing and mocking without OCMock
 subtitle: For Swift and Objective-C
 ---
 
-[OCMock](http://ocmock.org) is a powerful [mock object](https://en.wikipedia.org/wiki/Mock_object) unit testing library for Objective-C. Even if you are using Swift, as long as your classes inherit from `NSObject`, you can use [some of its features](http://ocmock.org/swift/). But what if you are writing pure Swift code which does not have access to the dynamic Objective-C runtime? Or, what if you don't want your Swift code to be [hampered](/avoiding-objc-in-swift/) by `NSObject` subclasses and `@objc` annotations? Perhaps, you merely want to avoid dependencies and use 'plain old' `XCTest` with Objective-C. It's relatively easy and lightweight to achieve the same effect in some testing scenarios *without* using `OCMock`.
+[OCMock](http://ocmock.org) is a powerful [mock object](https://en.wikipedia.org/wiki/Mock_object) unit testing library for Objective-C. Even if you are using Swift, as long as your classes inherit from `NSObject`, you can use [some of its features](http://ocmock.org/swift/). But what if you are writing pure Swift code which does not have access to the dynamic Objective-C runtime? Or, what if you don't want your Swift code to be [hampered]({{ site.url }}{% post_url 2016-06-04-avoiding-objc-in-swift %}) by `NSObject` subclasses and `@objc` annotations? Perhaps, you merely want to avoid dependencies and use 'plain old' `XCTest` with Objective-C. It's relatively easy and lightweight to achieve the same effect in some testing scenarios *without* using `OCMock`.
 
 <!--excerpt-->
 

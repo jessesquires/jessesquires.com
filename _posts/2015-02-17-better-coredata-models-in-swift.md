@@ -13,7 +13,7 @@ image:
     half_width: false
 ---
 
-As I continue my work with [Core Data](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CoreData/cdProgrammingGuide.html) and [Swift](http://www.apple.com/swift/), I have been trying to find ways to make Core Data **better**. Among my goals are clarity and safety, specifically regarding types. Luckily, we can harness Swift's optionals, enums, and other features to make managed objects more robust and more clear. But even with the improvements that Swift brings, there are still some drawbacks and limitations with Xcode's current toolset.
+As I continue my work with [Core Data](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/) and [Swift](http://www.apple.com/swift/), I have been trying to find ways to make Core Data **better**. Among my goals are clarity and safety, specifically regarding types. Luckily, we can harness Swift's optionals, enums, and other features to make managed objects more robust and more clear. But even with the improvements that Swift brings, there are still some drawbacks and limitations with Xcode's current toolset.
 
 <!--excerpt-->
 

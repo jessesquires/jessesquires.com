@@ -15,7 +15,7 @@ I previously wrote about [writing great documentation in Swift](/swift-documenta
 
 As I mentioned before, you'll want to use Realm's [jazzy](https://github.com/realm/jazzy) &mdash; *Soulful docs for Swift and Objective-C*. Here's an example of the docs script that I use for [PresenterKit](https://github.com/jessesquires/PresenterKit):
 
-{% highlight bash %}
+```bash
 jazzy \
     --clean \
     --author 'Jesse Squires' \
@@ -26,7 +26,8 @@ jazzy \
     --readme 'README.md' \
     --documentation 'Guides/*.md' \
     --output docs/ \
-{% endhighlight %}
+
+```
 
 You need to tell jazzy where your source code is and provide some basic author information. It couldn't be easier. Run `jazzy --help` to see all of the possible usage options.
 
@@ -38,4 +39,4 @@ In the previous post, publishing docs with GitHub was a somewhat clunky process 
 
 ### Complete workflow
 
-Once you've made changes to your code and header docs, run [your script](https://github.com/jessesquires/PresenterKit/blob/develop/build_docs.sh) to generate the documentation which should dump everything into `docs/`. Then simply commit your changes and push to GitHub, where your documentation will be [rendered automatically](https://jessesquires.github.io/JSQCoreDataKit/).
+Once you've made changes to your code and header docs, run [your script](https://github.com/jessesquires/PresenterKit/blob/develop/scripts/build_docs.zsh) to generate the documentation which should dump everything into `docs/`. Then simply commit your changes and push to GitHub, where your documentation will be [rendered automatically](https://jessesquires.github.io/JSQCoreDataKit/).
