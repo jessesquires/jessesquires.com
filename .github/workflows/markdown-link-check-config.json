@@ -1,12 +1,14 @@
 {
+    // Regex: https://regexr.com
     "ignorePatterns": [
         {
-            // ignore relative links
-            //
-            // examples: '/contact' '/blog/tags/'
-            //
-            // https://regexr.com
+            // ignore relative links, example: '/contact'
             "pattern": "/\/[^\/][\w\d]*/g"
         }
-    ]
+    ],
+
+    "retryOn429": false,
+
+    // ignore 0 and 429
+    "aliveStatusCodes":[200, 206, 0, 429]
 }
