@@ -4,6 +4,8 @@
 
 ![Logo](https://www.jessesquires.com/ico/favicon-180-precomposed.png)
 
+www.jessesquires.com/asdfasdfasdfasdf
+
 ## About
 
 This is my personal site and blog.
