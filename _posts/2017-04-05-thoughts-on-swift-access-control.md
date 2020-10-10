@@ -17,13 +17,13 @@ There has been a ton of debate on the [swift-evolution mailing lists](https://li
 
 <!--excerpt-->
 
-⚠️ Warning: some opinions are forthcoming. 😄
+&#x26A0; Warning: some opinions are forthcoming. &#x1F604;
 
 {% include post_image.html %}
 
 ### A brief history of access control
 
-In the early days of Swift &mdash; pre-1.0 &mdash; there were no access controls. These were the golden days of Swift. Everything was public and globally accessible from anywhere. No one had to think about proper encapsulation. There were no month-long email debates (because swift-evolution didn't exist yet). No access controls were the simplest access controls, and no evolution was the best evolution. 😉
+In the early days of Swift &mdash; pre-1.0 &mdash; there were no access controls. These were the golden days of Swift. Everything was public and globally accessible from anywhere. No one had to think about proper encapsulation. There were no month-long email debates (because swift-evolution didn't exist yet). No access controls were the simplest access controls, and no evolution was the best evolution. &#x1F609;
 
 #### Access control arrives
 
@@ -59,7 +59,7 @@ This brings us to the current state of access control in Swift. Paraphrasing fro
 * `fileprivate` access restricts the use of an entity to its own defining source file.
 * `private` access restricts the use of an entity to the enclosing declaration or scope.
 
-In a very short time, Swift nearly doubled its number of access levels from three to five and altered the semantics of two previous keywords. I've seen experienced programmers struggle to explain the difference between them or articulate their appropriate usage. You know something is wrong when it's easier to explain [monads](http://chris.eidhof.nl/post/monads-in-swift/) to a beginner than it is to explain access control levels. 😄
+In a very short time, Swift nearly doubled its number of access levels from three to five and altered the semantics of two previous keywords. I've seen experienced programmers struggle to explain the difference between them or articulate their appropriate usage. You know something is wrong when it's easier to explain [monads](http://chris.eidhof.nl/post/monads-in-swift/) to a beginner than it is to explain access control levels. &#x1F604;
 
 Returning to the philosophy of progressive disclosure, which of these access levels do we regularly need to consider? We can omit `open` for the reasons mentioned above. We can also omit `internal` since it is the default and does not need to be typed explicitly. This leaves `public`, `fileprivate`, and `private` for common, daily usage &mdash; one more keyword than before, with more complex behavior than before.
 
