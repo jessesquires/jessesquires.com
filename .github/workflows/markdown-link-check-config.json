@@ -3,7 +3,7 @@
     "ignorePatterns": [
         {
             // ignore relative links, example: '/contact'
-            "pattern": "/\/[^\/][\w\d]*/g"
+            "pattern": "/^\/{1}[\w\d]*/g"
         }
     ],
 
