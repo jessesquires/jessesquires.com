@@ -4,7 +4,7 @@
 
 ![Logo](https://www.jessesquires.com/ico/favicon-180-precomposed.png)
 
-www.jessesquires.com/asdfasdfasdfasdf
+[Broken link](www.jessesquires.com/asdfasdfasdfasdf)
 
 ## About
 
