@@ -9,6 +9,6 @@
 
     "retryOn429": false,
 
-    // ignore 0 and 429
-    "aliveStatusCodes":[200, 206, 0, 429]
+    // ignore 429
+    "aliveStatusCodes":[200, 206, 429]
 }
