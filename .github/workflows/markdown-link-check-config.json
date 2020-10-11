@@ -1,12 +1,4 @@
 {
-    // Regex: https://regexr.com
-    "ignorePatterns": [
-        {
-            // ignore relative links, example: '/contact'
-            "pattern": "/\/[^\/][\w\d]*/g"
-        }
-    ],
-
     "retryOn429": false,
 
     // ignore 429
