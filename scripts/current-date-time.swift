@@ -1,6 +1,6 @@
 #!/usr/bin/swift
 
-// prints the current timestamp, formatted for jekyll
+/// Prints the current timestamp, formatted for jekyll
 
 import Foundation
 

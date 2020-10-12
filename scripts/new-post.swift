@@ -1,5 +1,8 @@
 #!/usr/bin/swift
 
+/// Generates a new post from a template.
+/// Prompts user for category, title, draft status
+
 import Foundation
 
 func exitOnInvalidInput() -> Never {
