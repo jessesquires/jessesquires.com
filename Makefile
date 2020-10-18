@@ -33,7 +33,7 @@ pub:
 
 .PHONY: tags
 tags:
-	./scripts/tags_publish.zsh
+	./scripts/tag_and_publish.zsh $(TAG)
 
 .PHONY: new
 new:
