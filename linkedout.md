@@ -3,10 +3,7 @@ layout: standalone
 title: Curriculum Vitae
 ---
 
-<h5 class="text-muted"><small><i>Updated: 25 Oct 2020</i></small></h5>
-
-**I'm currently available for iOS freelance and contracting.**
-If you're interested in working together, please **[get in touch](/contact)**.
+<p class="text-muted"><i>Last updated: 25 Oct 2020</i></p>
 
 {% assign resume = site.data.resume %}
 
