@@ -12,4 +12,4 @@ If you appreciate my work, [consider becoming a sponsor](/sponsor).
 
 I'm currently working on personal projects, as well as freelancing and contracting for iOS.
 
-**Need an iOS developer? Hire me!** If you're interested in working together, please **[get in touch](/contact)**.
+{% include hire_me.html %}
