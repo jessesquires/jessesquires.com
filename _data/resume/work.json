@@ -44,8 +44,8 @@
                 "name": "work-instagram.png",
                 "title": "Instagram"
             },
-            "description": "Worked on a number of projects for the main iOS app. We shipped updates to the App Store every two weeks, and eventually shipped weekly.",
             "bullets": [
+                "Shipped updates to the App Store on a weekly schedule.",
                 "Launched the immersive video viewer and IG Events on Search and Explore ([Wired](https://www.wired.com/2015/10/instagrams-new-video-channel-shows-you-whats-happening-now/), [Recode](https://www.vox.com/2015/10/31/11620230/instagram-joins-snapchat-twitter-with-new-event-specific-content), [Mashable](https://mashable.com/2015/10/31/instagram-video-feature-halloween/#ghiqRNNjG5qI)).",
                 "Worked on mobile infra team to refactor the main feed and co-author the open source framework, [IGListKit](https://github.com/Instagram/IGListKit) ([Blog post](https://instagram-engineering.com/open-sourcing-iglistkit-3d66f1e4e9aa)).",
                 "Launched and maintained the new [IG Direct](http://blog.instagram.com/post/159452790942/170411-newdirect) ([TechCrunch](https://techcrunch.com/2017/04/11/instachat-direct/)).",

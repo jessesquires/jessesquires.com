@@ -1,7 +1,7 @@
 
 {% assign section = include.resume_section %}
 
-<h3>{{ section.title }}</h3>
+{% include resume_header.html text=section.title %}
 
 <ul class="list-unstyled">
 {% for entry in section.entries %}

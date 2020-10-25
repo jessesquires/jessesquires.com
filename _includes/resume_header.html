@@ -1,0 +1,7 @@
+{% assign text = include.text %}
+
+<div class="p-2 mt-2 mb-2 bg-light rounded">
+    <h3 class="font-weight-normal" id="{{ text | slugify }}">
+        <a href="#{{ text | slugify }}" class="text-dark">{{ text }}</a>
+    </h3>
+</div>

@@ -3,6 +3,7 @@
     "entries": [
         "Swift",
         "Objective-C",
+        "iOS SDKs",
         "C",
         "C++",
         "JavaScript",
@@ -10,6 +11,10 @@
         "CSS",
         "SQLite",
         "MySQL",
-        "Java"
+        "Ruby",
+        "Java",
+        "Git",
+        "Mercurial",
+        "CI/CD"
     ]
 }
