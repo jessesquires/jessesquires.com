@@ -48,7 +48,7 @@ If you are interested in taking over, [please get in touch]({{ site.url }}/conta
 
 My original goal with the newsletter was to be completely open and community-driven. I wanted to take the model of [iOS Dev Weekly](http://iosdevweekly.com) and transform it into something that was curated and delivered entirely by the community for the community. I think that mostly worked, and it would not have been possible [without the other writers](https://swiftweekly.github.io/authors/). Over the years, the subscribers and followers continued to grow. At conferences, at least a couple of people would thank me for the newsletter.
 
-The [Swift Unwrapped](https://spec.fm/podcasts/swift-unwrapped) podcast, which I co-host with JP, started as a spin-off of the newsletter. Don't worry &mdash; we are both still committed to the podcast! So you can still get some Swift news from us each week. 😄
+The [Swift Unwrapped](https://swiftunwrapped.github.io) podcast, which I co-host with JP, started as a spin-off of the newsletter. Don't worry &mdash; we are both still committed to the podcast! So you can still get some Swift news from us each week. 😄
 
 Perhaps what I'm most excited about is that Swift Weekly Brief served as a model and foundation for [Colin Eberhardt](https://twitter.com/ColinEberhardt) to start his own newsletter, [WebAssembly Weekly](http://wasmweekly.news). I never would have expected [a big 'thank you'](https://github.com/SwiftWeekly/swiftweekly.github.io/issues/339) from Colin! While this newsletter may be ending, it's comforting to know that it helped another begin.
 

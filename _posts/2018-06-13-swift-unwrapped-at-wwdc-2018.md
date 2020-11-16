@@ -12,7 +12,7 @@ image:
     half_width: false
 ---
 
-[Swift Unwrapped](https://spec.fm/podcasts/swift-unwrapped) recorded two episodes in the Podcast studio at WWDC this year. We had [Greg Heo](https://gregheo.com) on to [talk about our reactions to the announcements](https://spec.fm/podcasts/swift-unwrapped/154581) from the Keynote and Platforms State of the Union. Then we [discussed Swift 4.2 and beyond](https://spec.fm/podcasts/swift-unwrapped/154699) with [Ted Kremenek](https://twitter.com/tkremenek).
+[Swift Unwrapped](https://swiftunwrapped.github.io) recorded two episodes in the Podcast studio at WWDC this year. We had [Greg Heo](https://gregheo.com) on to [talk about our reactions to the announcements](https://swiftunwrapped.github.io/episodes/d725b7da/) from the Keynote and Platforms State of the Union. Then we [discussed Swift 4.2 and beyond](https://swiftunwrapped.github.io/episodes/839af3db/) with [Ted Kremenek](https://twitter.com/tkremenek).
 
 <!--excerpt-->
 
@@ -22,7 +22,7 @@ Both are great episodes. We all had a ton of fun doing them. Our thanks goes out
 
 Let us know what you think!
 
-- [Episode 61: WWDC reactions with Greg Heo](https://spec.fm/podcasts/swift-unwrapped/154581)
-- [Episode 62: Interview with Ted Kremenek](https://spec.fm/podcasts/swift-unwrapped/154699)
+- [Episode 61: WWDC reactions with Greg Heo](https://swiftunwrapped.github.io/episodes/d725b7da/)
+- [Episode 62: Interview with Ted Kremenek](https://swiftunwrapped.github.io/episodes/839af3db/)
 
 {% include post_image.html %}

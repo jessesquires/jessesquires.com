@@ -19,7 +19,7 @@ An aside: there's an in-depth [Calling Convention doc](https://github.com/apple/
 
 ### What changed in Swift 4.2?
 
-On [Swift Unwrapped](https://twitter.com/swift_unwrapped), we [discussed these changes with Ted](https://spec.fm/podcasts/swift-unwrapped/154699) in detail. You can also watch the talk from WWDC 2018, [What's New In Swift](https://developer.apple.com/videos/play/wwdc2018/401/).
+On [Swift Unwrapped](https://swiftunwrapped.github.io), we [discussed these changes with Ted](https://swiftunwrapped.github.io/episodes/839af3db/) in detail. You can also watch the talk from WWDC 2018, [What's New In Swift](https://developer.apple.com/videos/play/wwdc2018/401/).
 
 Swift uses a reference-counted memory model and provides automatic memory management via [ARC](https://docs.swift.org/swift-book/LanguageGuide/AutomaticReferenceCounting.html) like Objective-C. This means these changes to calling convention in Swift are totally hidden from the user, since the compiler inserts the calls needed to retain and release objects.
 
