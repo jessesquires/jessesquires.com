@@ -23,11 +23,12 @@
 <p class="text-muted">
     {% if include.display_categories %}
     <i class="fa fa-bookmark" aria-hidden="true"></i>
-        {% for category in post_entry.categories %}
-        <a class="text-muted border-0" href="/blog/{{ category }}" title="category: {{ category }}">{{ category }}</a>
+        {% assign sorted_categories = post_entry.categories | sort %}
+        {% for category in sorted_categories %}
+        <a class="text-muted border-0" href="/blog/{{ category }}" title="category: {{ category }}">{{ category }}</a>{% if category != sorted_categories.last %},{% endif %}
         {% endfor %}
     {% endif %}
-
+    &nbsp;&nbsp;
     {% if include.display_tags %}
     <i class="fa fa-tags" aria-hidden="true"></i>
         {% assign sorted_tags = post_entry.tags | sort %}
