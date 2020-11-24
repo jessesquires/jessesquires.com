@@ -26,8 +26,8 @@ echo '⏩  git status'
 git --git-dir=$GIT_DIR status
 
 echo '🛠  bundle install'
-gem install bundler --without=documentation
-bundle install --without=documentation
+gem install bundler --no-document
+bundle install --no-document
 
 echo '🛠  jekyll build'
 bundle exec jekyll build --destination $PUBLIC_WWW
