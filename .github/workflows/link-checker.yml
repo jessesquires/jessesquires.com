@@ -1,0 +1,19 @@
+name: Link Checker
+
+on:
+  - pull_request
+
+jobs:
+  main:
+    name: Link Check
+    # https://github.com/actions/virtual-environments/tree/main/images/linux
+    runs-on: ubuntu-latest
+    steps:
+      - name: git checkout
+        uses: actions/checkout@v1
+
+      # https://github.com/marketplace/actions/markdown-link-check
+      - name: markdown-link-check
+        uses: gaurav-nelson/github-action-markdown-link-check@v1
+        with:
+          check-modified-files-only: 'yes'

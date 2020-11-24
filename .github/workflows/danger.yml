@@ -1,16 +1,11 @@
-name: CI
+name: Danger
 
 on:
-  push:
-    branches:
-      - master
-  pull_request:
-    branches:
-      - master
+  - pull_request
 
 jobs:
   job-main:
-    name: Build Site
+    name: Review and Lint
     # https://github.com/actions/virtual-environments/tree/main/images/macos
     runs-on: macOS-latest
     steps:
@@ -35,6 +30,9 @@ jobs:
         run: |
           bundle config path vendor/bundle
           bundle install --without=documentation --jobs 4 --retry 3
+          echo "::add-path::/Users/runner/Library/Python/2.7/bin"
 
-      - name: jekyll build
-        run: bundle exec jekyll build
+      - name: danger
+        env:
+          DANGER_GITHUB_API_TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
+        run: bundle exec danger
