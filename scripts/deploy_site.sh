@@ -27,7 +27,7 @@ git --git-dir=$GIT_DIR status
 
 echo '🛠  bundle install'
 gem install bundler --no-document
-bundle install --no-document
+bundle install --jobs 4 --retry 3
 
 echo '🛠  jekyll build'
 bundle exec jekyll build --destination $PUBLIC_WWW
