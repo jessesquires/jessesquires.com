@@ -33,7 +33,7 @@ Every month you'll get your paycheck for all the hours you worked, minus your fa
 
 To celebrate this transition towards advancing COMPANY MISSION STATEMENT, every month, we'll be hand-selecting a dozen ~~employees~~ independent contractors who are executing COMPANY MISSION STATEMENT the best, which is to say, logging the most hours. To express our gratitude, they will receive a $5 Amazon gift card, because hard work should pay off!
 
-This is certainly an exciting new era for COMPANY NAME. If you have any questions at all, please do not hesitate to ask them privately by emailing no-reply@COMPANY.com where our expensive lawyers will respond with rhetorical labyrinths and highfalutin legal jargon. Whatever you do, **do not** discuss these changes with your ~~coworkers~~ fellow contractors.
+This is certainly an exciting new era for COMPANY NAME. If you have any questions at all, please do not hesitate to ask them privately by emailing no-reply@COMPANY.com where our expensive lawyers will respond with rhetorical labyrinths and highfalutin legal jargon. Whatever you do, **do not** discuss these changes with your ~~coworkers~~ fellow contractors &mdash; some of them might be Pinkertons!
 
 **Gooooooo team!**
 
