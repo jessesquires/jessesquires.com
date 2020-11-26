@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [reading-notes]
-tags: [politics, anarchism, capitalism]
+tags: [politics, anarchism, capitalism, racism]
 date: 2020-08-30T18:41:20-07:00
 title: Unpropertied
 subtitle: null

@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [essays]
-tags: [capitalism, politics]
+tags: [capitalism, politics, racism]
 date: 2020-05-17T16:37:55-07:00
 title: Who do they protect?
 subtitle: An essay on police brutality in America
