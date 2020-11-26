@@ -16,7 +16,7 @@ You are free, of course, to brush that off and continue to be "not that into pol
 
 {% include break.html %}
 
-One final note before we dive in. Despite the title of this post, much of what I'm recommending here is not necessarily specific to the tech industry, but all of it is important to understanding it. Everything is interconnected. If we want to deeply discern how the tech industry functions, we must understand the system in which in operates. To be direct, that system is racist, oppressive, neoliberal capitalism. And a key understanding is that racism and corporate authoritarianism are core features of the system, not simply bugs or unintended consequences.
+One final note before we dive in. Despite the title of this post, much of what I'm recommending here is not necessarily specific to the tech industry, but all of it is important to understanding it. Everything is interconnected. If we want to deeply discern how the tech industry functions, we must understand the system in which it operates. To be direct, that system is racist, oppressive, neoliberal capitalism. And a key understanding is that racism and corporate authoritarianism are core features of the system, not simply bugs or unintended consequences.
 
 We must understand how racism (and sexism) function in society in order to fully understand other parts of the system, like the tech industry or any other workplace. Unsurprisingly, [racism](https://www.theverge.com/2020/9/11/21429619/pinterest-workplace-discrimination-finance-team-unequal-culture-bias) and [sexism](https://www.nytimes.com/2018/11/08/technology/google-arbitration-sexual-harassment.html) are still an [enormous problem in the tech industry](https://www.theguardian.com/technology/2017/apr/27/tech-industry-sexism-racism-silicon-valley-study). Silicon Valley's "diversity and inclusion initiatives" continue [to fail](https://www.usatoday.com/story/tech/2020/07/15/facebook-diversity-african-american-black-hispanic-latino-employees/5430124002/). The main obstacle is that tech is a microcosm of neoliberal late-stage capitalism. The issue extends beyond our industry and, frankly, tech is ill-equipped to address these problems because the industry is still overwhelmingly controlled by very rich white men who lack the necessary skills and lived experience to do so.
 
@@ -24,7 +24,7 @@ This language and view of the world may sound extreme to you, but I encourage yo
 
 {% include break.html %}
 
-Below are books, blogs, documentaries, and other various resources. These should also lead to you to many other great authors. I have attempted to group them roughly by topic/genre, but that's difficult because there is so much overlap. Items in each section are in no particular order.
+Below are books, blogs, documentaries, and other various resources. These should also lead you to many other great authors. I have attempted to group them roughly by topic/genre, but that's difficult because there is so much overlap. Items in each section are in no particular order.
 
 While I have read (or watched) many of these, some of them are still on my todo list, but they have been highly recommended by friends I trust. If you think something should be added, let me know! Oh, and please don't buy from Amazon. You should be able to find these [at your local bookstore](https://www.indiebound.org), or public library. When possible, I've linked directly to the independent publisher.
 
