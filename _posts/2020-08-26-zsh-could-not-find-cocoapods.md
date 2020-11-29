@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [cocoapods, zsh, ios, macos]
+tags: [cocoapods, zsh, ios, macos, ruby]
 date: 2020-08-26T16:03:48-07:00
 date-updated: 2020-10-06T12:18:23-07:00
 title: zsh could not find CocoaPods
