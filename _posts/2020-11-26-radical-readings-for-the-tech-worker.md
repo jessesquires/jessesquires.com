@@ -40,7 +40,7 @@ With that said, here is my list of recommendations to get you started!
 
 - [Lean Out](https://repeaterbooks.com/product/lean-out/) by Dawn Foster. This is a concise and well-researched rebuttal to Sheryl Sandberg's "Lean Out" corporate feminist bullshit. It's only about 80 pages, and very good.
 
-- [Race After Technology: Abolitionist Tools for the New Jim Code](https://www.goodreads.com/book/show/42527493-race-after-technology) by Ruha Benjamin.
+- [Race After Technology: Abolitionist Tools for the New Jim Code](https://www.goodreads.com/book/show/42527493-race-after-technology) by Ruha Benjamin. Ruha was recently on the [Data & Society podcast](https://podcasts.apple.com/us/podcast/data-society/id1192380916?i=1000458017089) discussing the book.
 
 - [Riding for Deliveroo: Resistance in the New Economy](https://www.goodreads.com/book/show/45689477-riding-for-deliveroo) by Callum Cant.
 
