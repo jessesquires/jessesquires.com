@@ -1,10 +1,11 @@
-
 {% assign section = include.resume_section %}
 
-{% include resume_header.html text=section.title %}
+{% include resume_header.html text=section.title icon=section.icon %}
 
+{% if section.entries %}
 <ul class="list-unstyled">
 {% for entry in section.entries %}
 {% include resume_entry.html resume_entry=entry %}
 {% endfor %}
 </ul>
+{% endif %}

@@ -1,6 +1,7 @@
 {
     "title": "Skills",
-    "entries": [
+    "icon": "fa-code",
+    "items": [
         "Swift",
         "Objective-C",
         "iOS SDKs",
