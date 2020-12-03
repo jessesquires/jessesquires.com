@@ -3,9 +3,7 @@ layout: standalone
 title: Sponsor
 ---
 
-If you enjoy reading [my blog](/blog), watching [my conference talks](/speaking), or using one of [my open source projects]({{ site.social_links.github }}), please consider becoming a sponsor.
-You can sponsor regularly, or buy me a metaphorical (or actual) cup of coffee.
-Your support is very much appreciated! &#x1F64C;
+If you enjoy reading [my blog](/blog), watching [my conference talks](/speaking), or using one of [my open source projects]({{ site.social_links.github }}), please consider becoming a sponsor. Your support is very much appreciated! &#x1F64C;
 
 ##### <i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Recurring
 
