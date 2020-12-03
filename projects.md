@@ -25,7 +25,7 @@ The newsletter also inspired the [Swift Community Podcast](https://www.swiftcomm
 
 ### Open source
 
-All of my open source projects are on [GitHub]({{ site.social_links.github}}). The "pinned" projects on my profile are the most active, or most well-known. My iOS and macOS libraries are available via [CocoaPods](https://cocoapods.org/owners/1808) and the [Swift Package Manager](https://swiftpm.co/?query=jessesquires). I also contribute to open source under [Hexed Bits on GitHub](https://github.com/hexedbits) and distribute libraries via the [Swift Package Manager](https://swiftpm.co/?query=hexedbits).
+All of my open source projects are on [GitHub]({{ site.social_links.github}}). The "pinned" projects on my profile are the most active, or most well-known. My iOS and macOS libraries are available via [CocoaPods](https://cocoapods.org/owners/1808) and the [Swift Package Manager](https://swiftpackageindex.com). I also contribute to open source under [Hexed Bits on GitHub](https://github.com/hexedbits).
 
 ##### JSQMessagesViewController
 
