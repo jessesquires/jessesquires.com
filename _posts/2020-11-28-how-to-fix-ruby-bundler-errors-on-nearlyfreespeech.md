@@ -3,6 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [ruby, jekyll, web, bundler]
 date: 2020-11-28T22:03:15-08:00
+date-updated: 2020-12-15T11:15:49-08:00
 title: "How to fix Ruby/Bundler error 'No such file or directory' on NearlyFreeSpeech.net"
 ---
 
@@ -95,3 +96,17 @@ bundle exec jekyll build --destination $PUBLIC_WWW
 It does feel somewhat awkward to install Bundler every time I deploy, but: (1) it works, (2) I'm not publishing new posts more than a couple times a week, if that, and (3) it is quite fast with `--no-document`. I think I might be able to improve this workflow using [bundle config](https://bundler.io/v2.1/man/bundle-config.1.html), but I'm not sure.
 
 In any case, if you also host on NearlyFreeSpeech (which I strangely do recommend) and ran into this issue, I hope this helps. And if there is something I can improve here, let me know!
+
+**UPDATE:** 
+
+There's another possible solution here. You can [specify the Ruby version](https://bundler.io/gemfile_ruby.html) in your `Gemfile`.
+
+```ruby
+source 'https://rubygems.org'
+
+ruby '2.7'
+
+gem 'jekyll', '~> 4.0'
+```
+
+This will produce a hard failure when the Ruby version changes on NearlyFreeSpeech. Then you can update your `Gemfile` and local Ruby version, and redeploy your site.
