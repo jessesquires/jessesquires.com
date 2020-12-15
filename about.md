@@ -7,7 +7,7 @@ I'm an independent software developer in Oakland, California. I use [he/him](htt
 
 Regarding work, I'm interested in contributing to and writing software that is actually useful and purposeful, and which prioritizes the privacy, needs, and desires of users rather than the interests of predatory capitalism and surreptitious government surveillance. I have no interest in working on software that is privacy-invasive, user-hostile, or undermines workers' rights.
 
-Outside of work, I enjoy reading, tea and coffee, plants, body modification, and hook suspension. When I'm not running trails or riding my bike, you can likely find me at punk and hardcore shows in the Bay Area. More generally, I hope to contribute to a society that values community over hierarchy, [self-determination over capitalist exploitation](https://crimethinc.com/tce), and public ownership over private property. I dream of a world in which prisons are obsolete, police are abolished, and companies are equally owned by their workers.
+Outside of work, I enjoy reading, tea and coffee, plants, body modification, and hook suspension. When I'm not running trails or riding my bike, you can likely find me at punk and hardcore shows in the Bay Area. More generally, I hope to contribute to a society that values community over hierarchy, [self-determination over capitalist exploitation](https://crimethinc.com/tce), and public ownership over private property. I dream of a world in which prisons are obsolete, police are abolished, and companies are owned and controlled by workers.
 
 You can [contact me here](/contact).
 
