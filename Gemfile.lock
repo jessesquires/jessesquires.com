@@ -102,6 +102,7 @@ GEM
     unicode-display_width (1.7.0)
 
 PLATFORMS
+  amd64-freebsd-11
   x86_64-darwin-19
 
 DEPENDENCIES
