@@ -17,7 +17,6 @@ title: Subscribe
 
 - [Apple Podcasts](https://podcasts.apple.com/podcast/id1209817203)
 - [Overcast](https://overcast.fm/itunes1209817203/swift-unwrapped)
-- [RSS](https://rss.simplecast.com/podcasts/2693/rss)
 
 <h4 class="text-secondary mt-3 mb-0">Twitter</h4>
 
