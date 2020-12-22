@@ -37,7 +37,7 @@ GEM
       ruby2_keywords
     faraday-http-cache (2.2.0)
       faraday (>= 0.8)
-    ffi (1.13.1)
+    ffi (1.14.2)
     forwardable-extended (2.6.0)
     git (1.7.0)
       rchardet (~> 1.8)
@@ -103,6 +103,7 @@ GEM
 
 PLATFORMS
   amd64-freebsd-11
+  ruby
   x86_64-darwin-19
 
 DEPENDENCIES
@@ -115,4 +116,4 @@ RUBY VERSION
    ruby 2.7.2p137
 
 BUNDLED WITH
-   2.2.2
+   2.2.3
