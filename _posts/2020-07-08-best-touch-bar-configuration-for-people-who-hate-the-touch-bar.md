@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [apple, macbook]
+tags: [apple, macbook, touch-bar]
 date: 2020-07-08T22:38:30-07:00
 title: 'The best Touch Bar configuration for people who hate the Touch Bar: Or, how I finally upgraded my 6-year-old MacBook'
 image:
