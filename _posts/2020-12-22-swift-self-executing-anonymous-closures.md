@@ -188,7 +188,7 @@ Then we can make it even more explicit:
 
 ```swift
 // Xcode's documentation popup correctly refers to the declaration let `self`: MyTableCell
-print(type(of: UITableViewCell.`self`)) // let `self`: MyTableCell
+print(type(of: MyTableCell.`self`)) // let `self`: MyTableCell
 ```
 
 With this change, we can see that this is clearly wrong. Additionally, Xcode will syntax highlight "self" differently depending on if there are backticks or not.
@@ -226,11 +226,11 @@ class MyTableCell: UITableViewCell {
 In other words, these two expressions are distinct in this context:
 
 ```swift
-// refers to instance of UITableViewCell
+// refers to instance of MyTableCell
 self
 
 // refers to func `self`() -> Self
-UITableViewCell.`self`
+MyTableCell.`self`
 ```
 
 Yet, the Swift compiler treats them both as ``func `self`() -> Self``.
