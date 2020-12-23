@@ -128,7 +128,7 @@ Second, why is `self` an instance of `(MyTableCell) -> () -> MyTableCell` and **
 
 I'm hoping someone can answer these two questions and explain what is happening. If so, I'll update this post!
 
-In any case, referencing `self` in self-executing anonymous closures for stored properties should be avoided! That `self` is not the `self` you might have been expecting. Watch yourself.
+In any case, referencing `self` in self-executing anonymous closures for stored properties should be discouraged, or avoided entirely! That `self` is perhaps not the `self` you might have been expecting. Watch yourself.
 
 **UPDATES:**
 
