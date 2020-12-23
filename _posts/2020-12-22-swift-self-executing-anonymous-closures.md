@@ -73,7 +73,7 @@ override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
 Upon discovering *what* the problem was, it was now time to ask *why*. My initial intuition was the following:
 
 1. The `button` is a stored constant property that gets initialized immediately via a self-executing anonymous closure
-1. Swift's initialization rules mean that properties *must* be initialized *before* the type that owns them (otherwise, wouldn't that be awkward?)
+1. Swift's initialization rules mean that stored properties (with values, like this one) *must* be initialized *before* the type that owns them
 1. Thus, at the time that `button` is initialized (when the closure is executed), `self` must be `nil`
 1. The method `addTarget(_:, action:, for:)` accepts `Any?` for the target parameter, so passing `nil` would be ok
 1. Conclusion: `self` was just `nil` the whole time! What a goofy mistake!
@@ -97,7 +97,7 @@ class MyTableCell: UITableViewCell {
 
 I paused execution in the debugger to check if `po self` printed `nil`. Instead, it printed `(Function)`. In Swift, [closures are first-class reference types](https://docs.swift.org/swift-book/LanguageGuide/Closures.html). Thus, I concluded that `self` is referring to **the closure**, which is the type `() -> UIButton`. Right? Actually... no. 
 
-Continuing the investigation, I printed `type(of: self)` which returned `(MyTableCell) -> () -> MyTableCell`. What?! This would be a closure that receives a `MyTableCell` instance and returns a closure with the type `() -> MyTableCell`, which accepts nothing and returns a `MyTableCell`. I do not understand why this is the case. 
+Continuing the investigation, I printed `type(of: self)` which returned `(MyTableCell) -> () -> MyTableCell`. What?! This is a closure that receives a `MyTableCell` instance and returns a closure with the type `() -> MyTableCell`, which accepts nothing and returns a `MyTableCell`. I do not understand why this is the case. 
 
 I think most devs would share my initial intuition that `self` refers to `MyTableCell` here, because that is true in other patterns that *look similar* to this one, like [computed properties](https://docs.swift.org/swift-book/LanguageGuide/Properties.html#ID259). Despite this, once realizing that `self` is a function, I think most devs would also intuit that the type **must** be `() -> UIButton`. 
 
@@ -116,7 +116,7 @@ class OuterClass {
     class InnerClass {
         @objc
         func didTapButton(_ sender: UIButton) {
-            print(#function)
+            // do something
         }
     }
 }
@@ -129,3 +129,9 @@ Second, why is `self` an instance of `(MyTableCell) -> () -> MyTableCell` and **
 I'm hoping someone can answer these two questions and explain what is happening. If so, I'll update this post!
 
 In any case, referencing `self` in self-executing anonymous closures for stored properties should be avoided! That `self` is not the `self` you might have been expecting. Watch yourself.
+
+**UPDATES:**
+
+If you declare `button` as `lazy var` instead of `let`, then the expected behavior occurs. That is, `self` is an instance of `MyTableCell` within the self-executing anonymous closure and the call to `addTarget(_:, action:, for:)` works. (Thanks [@Geri_Borbas](https://twitter.com/Geri_Borbas/status/1341594268293586944).) Also noteworthy, in this situation the initializer for `MyTableCell` gets called **before** the `button` closure is executed. However, this makes the situation more confusing &mdash; using `let` versus `lazy var` produces significantly different behavior that is not intuitive at all.
+
+The type `(MyTableCell) -> () -> MyTableCell` appears to refer to the initializer for `MyTableCell`. (Thanks [@eneko](https://twitter.com/eneko/status/1341605571984642048).)
