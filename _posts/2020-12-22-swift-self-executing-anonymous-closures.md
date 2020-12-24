@@ -236,3 +236,7 @@ MyTableCell.`self`
 Yet, the Swift compiler treats them both as ``func `self`() -> Self``.
 
 However, there is one last problem. Correcting the expression `self` (without backticks) to reference the enclosing type introduces another interesting question: what should be order of operations during initialization? When using `let`, the property is initialized **before** the enclosing type. When using `lazy var`, the property is initialized **after** the enclosing type. I am not a compiler expert, so I will not attempt to answer which is better. But if initialization order cannot be changed in the compiler to fix this, then I think the expected behavior would be to produce the same error as non-`NSObject` classes: "Cannot find 'self' in scope".
+
+###### Update 3:
+
+This bug is being tracked at [SR-4559](https://bugs.swift.org/browse/SR-4559) and [SR-4865](https://bugs.swift.org/browse/SR-4865). Thanks to [Nolan Waite](https://bugs.swift.org/secure/ViewProfile.jspa?name=nolanw) for sharing.
