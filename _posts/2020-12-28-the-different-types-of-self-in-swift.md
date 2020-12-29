@@ -86,5 +86,6 @@ Ok, this one does not really have anything to do with Swift &mdash; except when 
 /// Returns the receiver.
 func `self`() -> Self
 
+// usage
 MyClass.`self`
 ```
