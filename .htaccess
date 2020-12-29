@@ -1,29 +1,47 @@
-# custom error pages
+# -----------------
+# custom error page
+# -----------------
 
 ErrorDocument 404 /404.html
 
+# -------------
 # cache-control
-
-# one month for images and fonts
-<filesMatch ".(jpg|jpeg|png|gif|ico|tff|svg|eot|woff|woff2)$">
-Header set Cache-Control "max-age=2628000, public"
-</filesMatch>
+# -------------
 
 # one week for css and js assets
-<filesMatch ".(css|js)$">
+<filesMatch "\.(css|js)$">
 Header set Cache-Control "max-age=604800, public"
 </filesMatch>
 
+# two weeks for images
+<filesMatch "\.(jpg|jpeg|png|gif|ico)$">
+Header set Cache-Control "max-age=1209600, public"
+</filesMatch>
+
+# one month for fonts
+<filesMatch "\.(tff|svg|eot|woff|woff2)$">
+Header set Cache-Control "max-age=2628000, public"
+</filesMatch>
+
+# never for archives
+<filesMatch "\.(zip|tar|dmg)$">
+Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate, public"
+</filesMatch>
+
+# -------------
 # redirects for top-level pages
+# -------------
 
 Redirect 301 /resume/ /linkedout/
 Redirect 301 /work/ /linkedout/
 Redirect 301 /opensource/ /projects/
 Redirect 301 /archive/ /blog/
 
+# -------------
 # redirects for old blog URLs
-# moved from /title to /blog/title
-# updated again from /blog/title to /blog/year/month/day/title
+# 1: moved from /title to /blog/title
+# 2: moved from /blog/title to /blog/year/month/day/title
+# -------------
 
 Redirect 301 /built-with-open-source /blog/2014/06/09/built-with-open-source
 Redirect 301 /apples-to-apples /blog/2014/06/25/apples-to-apples
@@ -76,8 +94,10 @@ Redirect 301 /swift-unwrapped /blog/2017/03/07/swift-unwrapped
 Redirect 301 /thoughts-on-swift-access-control /blog/2017/04/05/thoughts-on-swift-access-control
 Redirect 301 /a-fair-hotel /blog/2017/05/28/a-fair-hotel
 
+# -------------
 # redirects for previous blog URLs
 # moved from /blog/title to /blog/year/month/day/title
+# -------------
 
 Redirect 301 /blog/built-with-open-source /blog/2014/06/09/built-with-open-source
 Redirect 301 /blog/apples-to-apples /blog/2014/06/25/apples-to-apples
