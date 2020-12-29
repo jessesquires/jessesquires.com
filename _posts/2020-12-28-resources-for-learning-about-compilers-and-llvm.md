@@ -10,7 +10,7 @@ Today I cleaned up my various projects and todo's in [OmniFocus](https://www.omn
 
 <!--excerpt-->
 
-One thing I love about OmniFocus is the concept of "dropping" a project or task, which neither deletes the item nor marks it as complete &mdash; a feature sorely lacking in most "Todo" apps. Dropping an item is similar to deletion, but it preserves the record in case you would ever like to return to it. It is removed from view, but you can find again it by search.
+One thing I love about OmniFocus is the concept of "dropping" a project or task, which neither deletes the item nor marks it as complete &mdash; a feature sorely lacking in most "Todo" apps. Dropping an item is similar to deletion, but it preserves the record in case you would ever like to return to it. It is removed from view, but you can find it again by searching.
 
 Today I decided to "drop" my compilers project in OmniFocus. I may return to it one day. Maybe not. In any case, I figured others in the community who want to learn about compilers might find these resources valuable. I have only skimmed them, but they should provide a good starting point. I hope you succeed where I did not.
 
