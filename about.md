@@ -11,7 +11,7 @@ Outside of work, I enjoy reading, tea and coffee, plants, body modification, and
 
 You can [contact me here](/contact).
 
-You can read this website's [privacy policy here](/privacy). 
+You can read this website's [privacy policy here](/privacy), and [subscribe here](/subscribe).
 
 <div class="row mt-4 mb-4">
     <div class="col"></div>
