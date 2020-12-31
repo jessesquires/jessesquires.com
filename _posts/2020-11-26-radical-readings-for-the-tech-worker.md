@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [essays]
-tags: [capitalism, tech, labor, racism, politics, anarchism]
+tags: [capitalism, tech, labor, racism, politics, anarchism, books]
 date: 2020-11-26T13:30:49-08:00
 title: Radical readings for the Tech Worker
 ---
