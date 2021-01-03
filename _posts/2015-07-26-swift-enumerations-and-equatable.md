@@ -5,11 +5,16 @@ tags: [swift, enums]
 date: 2015-07-26T10:00:00-07:00
 title: Swift enumerations and equatable
 subtitle: Implementing equatable for enums with associated values
+date-updated: 2021-01-03T13:40:24-08:00
 ---
 
 Recently, I came across a **case** (*pun intended*) where I needed to compare two instances of an `enum` type in Swift. However, it was an `enum` where some cases had [associated values](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Enumerations.html#//apple_ref/doc/uid/TP40014097-CH12-ID148). At first glance, it is not obvious how to do this.
 
 <!--excerpt-->
+
+{% include updated_notice.html
+update_message='As of Swift 4.1 (proposal <a href="https://github.com/apple/swift-evolution/blob/main/proposals/0185-synthesize-equatable-hashable.md" class="alert-link">SE-0185</a>) the compiler will synthesize <code>Equatable</code> conformance for you. Associated values will also need to conform to <code>Equatable</code>.'
+%}
 
 As you likely know, if you want to compare two instances of a type in Swift, then that type must conform to the [Equatable](http://nshipster.com/swift-comparison-protocols/) protocol. In other words, you must define the `==` operator for the type.
 If the enumeration does not have associated values or if it has a raw-value type, then you get the `==` operator for free from the Swift [Standard Library](https://developer.apple.com/library/prerelease/ios/documentation/General/Reference/SwiftStandardLibraryReference/index.html). For example:
