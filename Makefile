@@ -11,7 +11,8 @@ install:
 
 .PHONY: update
 update:
-	bundle update
+	bundle update --all
+	bundle update --bundler
 	yarn upgrade --latest
 
 .PHONY: watch
