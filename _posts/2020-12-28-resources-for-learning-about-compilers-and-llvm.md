@@ -38,3 +38,5 @@ All of these notes (among many others) are also in my [TIL repo](https://github.
 > In my Advanced Compilers course last fall we spent some time poking around in the LLVM source tree. A million lines of C++ is pretty daunting but I found this to be an interesting exercise and at least some of the students agreed, so I thought I’d try to write up something similar. We’ll be using LLVM 3.9, but the layout isn’t that different for previous (and probably subsequent) releases.
 
 - The [LLVM conference videos](https://www.youtube.com/c/LLVMPROJ/playlists) on YouTube.
+
+- The [LLVM Weekly Newsletter](http://llvmweekly.org). (The LLVM equivalent to iOS Dev Weekly)
