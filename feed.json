@@ -12,11 +12,13 @@ layout: null
     "favicon": "{{ site.url }}/favicon.ico",
     "expired": false,
     "language": "en-US",
-    "author": {
-        "name": "{{ site.author.name }}",
-        "url": "{{ site.url }}",
-        "avatar": "{{ site.url }}{{ site.author.avatar }}"
-    },
+    "authors": [
+        {
+            "name": "{{ site.author.name }}",
+            "url": "{{ site.url }}",
+            "avatar": "{{ site.url }}{{ site.author.avatar }}"
+        }
+    ],
     "items": [
         {% for post in site.posts %}
         {
@@ -29,11 +31,13 @@ layout: null
             {% else %}
             "date_modified": "{{ post.date | date_to_xmlschema }}",
             {% endif %}
-            "author": {
-                "name": "{{ site.author.name }}",
-                "url": "{{ site.url }}",
-                "avatar": "{{ site.url }}{{ site.author.avatar }}"
-            },
+            "authors": [
+                {
+                    "name": "{{ site.author.name }}",
+                    "url": "{{ site.url }}",
+                    "avatar": "{{ site.url }}{{ site.author.avatar }}"
+                }
+            ],
             "summary": {{ post.excerpt | jsonify }},
             "content_html": {{ post.content | jsonify }}
         }{% if forloop.last == false %},{% endif %}
