@@ -44,7 +44,7 @@ GEM
     git (1.8.1)
       rchardet (~> 1.8)
     http_parser.rb (0.6.0)
-    i18n (1.8.6)
+    i18n (1.8.7)
       concurrent-ruby (~> 1.0)
     jekyll (4.1.1)
       addressable (~> 2.4)
@@ -118,4 +118,4 @@ RUBY VERSION
    ruby 2.7.2p137
 
 BUNDLED WITH
-   2.2.4
+   2.2.5
