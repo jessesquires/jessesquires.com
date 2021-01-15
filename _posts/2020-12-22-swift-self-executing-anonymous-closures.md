@@ -27,7 +27,7 @@ class MyClass {
 }
 ```
 
-It is a convenience and concise pattern that helps organize your code. This approach is especially popular when working with UIKit and defining custom views. It simplifies type initializers and is generally easy to read. Recently, I was using this approach and discovered a bug in my code, some very unexpected behavior in Swift, and *maybe* a bug in Swift.
+It is a convenient and concise pattern that helps organize your code. This approach is especially popular when working with UIKit and defining custom views. It simplifies type initializers and is generally easy to read. Recently, I was using this approach and discovered a bug in my code, some very unexpected behavior in Swift, and *maybe* a bug in Swift.
 
 I was building a typical table view which contained cells that had a button subview. Tapping the entire cell and tapping the button within the cell performed different actions. You have probably built something similar before. Here is simplified sample code to illustrate:
 
