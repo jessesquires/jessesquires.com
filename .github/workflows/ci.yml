@@ -33,8 +33,9 @@ jobs:
 
       - name: bundle install
         run: |
+          gem install bundler --no-document
           bundle config path vendor/bundle
-          bundle install --without=documentation --jobs 4 --retry 3
+          bundle install --jobs 4 --retry 3
 
       - name: jekyll build
         run: bundle exec jekyll build
