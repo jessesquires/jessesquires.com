@@ -23,17 +23,13 @@ watch:
 incr:
 	bundle exec jekyll build --watch --incremental
 
-.PHONY: future
-future:
-	bundle exec jekyll build --watch --future
-
 .PHONY: pub
 pub:
 	./scripts/publish.zsh
 
 .PHONY: tags
 tags:
-	./scripts/tag_and_publish.zsh $(TAG)
+	./scripts/tag_and_publish.zsh $(tag)
 
 .PHONY: new
 new:
@@ -46,3 +42,7 @@ date:
 .PHONY: deploy-github
 deploy-github:
 	./scripts/deploy_github.zsh
+
+.PHONY: image-optim
+image-optim:
+	./scripts/imageoptim.zsh $(files)

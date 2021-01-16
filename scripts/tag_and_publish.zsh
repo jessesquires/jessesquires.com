@@ -4,7 +4,7 @@
 
 if [ -z "$1" ]
 then
-    echo "Error: please provide tag"
+    echo "Error: please provide a tag"
     exit
 fi
 
