@@ -33,7 +33,7 @@ jobs:
 
       - name: bundle install
         run: |
-          gem install bundler --no-document
+          # gem install bundler --no-document
           bundle config path vendor/bundle
           bundle install --jobs 4 --retry 3
 
