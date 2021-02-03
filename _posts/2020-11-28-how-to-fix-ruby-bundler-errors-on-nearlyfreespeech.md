@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [ruby, jekyll, web, bundler]
+tags: [ruby, jekyll, web, bundler, nearlyfreespeech, nfsn]
 date: 2020-11-28T22:03:15-08:00
 date-updated: 2020-12-15T11:15:49-08:00
 title: "How to fix Ruby/Bundler error 'No such file or directory' on NearlyFreeSpeech.net"
