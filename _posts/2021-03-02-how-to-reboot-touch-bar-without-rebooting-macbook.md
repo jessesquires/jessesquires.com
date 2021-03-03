@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [macos, macbook, touch-bar, bridge-os]
+tags: [macos, macbook, touch-bar, bridge-os, bugs]
 date: 2021-03-02T20:58:11-08:00
 title: How to reboot the Touch Bar without rebooting your MacBook
 ---

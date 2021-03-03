@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [macos, time-machine, catalina]
+tags: [macos, time-machine, catalina, bugs]
 date: 2020-07-17T13:54:23-07:00
 title: Time Machine error 45
 image:

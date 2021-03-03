@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [macos]
+tags: [macos, bugs]
 date: 2020-04-11T10:30:57-07:00
 title: Previously previously previously relocated items in macOS Catalina
 image:

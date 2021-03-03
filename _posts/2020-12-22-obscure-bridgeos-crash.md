@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [macos, bridgeos, apple, macbook, touch-bar]
+tags: [macos, bridgeos, apple, macbook, touch-bar, bugs]
 date: 2020-12-22T15:33:04-08:00
 title: Obscure bridgeOS crash
 image:
