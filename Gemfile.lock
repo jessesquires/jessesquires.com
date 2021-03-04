@@ -61,6 +61,7 @@ GEM
 
 PLATFORMS
   amd64-freebsd-11
+  amd64-freebsd-12
   ruby
   x86_64-darwin-19
 
