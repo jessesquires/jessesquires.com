@@ -27,3 +27,9 @@ Thanks to [Shai Mishali](https://mobile.twitter.com/freak4pc/status/136641838986
 The first thing I tried was logging out and logging in again, but of course that did not work. I assume that was because the Touch Bar is [powered by bridgeOS]({{ site.url }}{% post_url 2020-12-22-obscure-bridgeos-crash %}), thus logging out of macOS had no effect.
 
 I cannot wait until there is an option to get a MacBook Pro [without a Touch Bar]({{ site.url }}{% post_url 2020-07-08-best-touch-bar-configuration-for-people-who-hate-the-touch-bar %}).
+
+{% include break.html %}
+
+**UPDATE:** [Alex Persian mentioned](https://mobile.twitter.com/alex_persian/status/1367119114775498755) on Twitter that you can also use `sudo killall ControlStrip` and `sudo pkill "Touch Bar agent"`. However, it is not clear how these relate to `TouchBarServer`. Are they child processes of `TouchBarServer`? Who knows. In my brief testing, `sudo killall ControlStrip` appears to have the same effect as `sudo killall TouchBarServer`, while `sudo pkill "Touch Bar agent"` does not seem to do anything.
+
+My plan (and recommendation) is to use only `sudo killall TouchBarServer` for now, and if that does not always fix the Touch Bar freezing, then try these other options.
