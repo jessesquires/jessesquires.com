@@ -65,7 +65,7 @@ Many years ago when I decided to stop using Facebook, there was no bulk delete f
 
 An entirely vacant account was the only way to ensure that I would not return. And, by disabling as many features as possible (like photo tagging), I could no longer be bothered by notifications. Now, of course, it is possible to delete your account, but only after navigating a labyrinth of intentionally obscure, user-hostile settings and manipulative warnings about how you will miss out on every update from your friends. Notably absent are messages about missing out on disinformation, conspiracy theories, and the destruction of western democracy.
 
-Ironically, later on I ended up taking a job at Instagram (long after it was acquired). At the time, Instagram still had its own personality and was largely siloed away from Facebook, unlike today where they are merely windows into the same underlying platform. At the time, I could see the oncoming "Facebookification" of Instagram that I suspected would ruin the platform. (Has you seen Instagram lately? I think that prediction was correct.) So, before I quit, I wrote a script to remove all my posts. Lucky me, I guess.
+Ironically, later on I ended up taking a job at Instagram (long after it was acquired). At the time, Instagram still had its own personality and was largely siloed away from Facebook, unlike today where they are merely windows into the same underlying platform. At the time, I could see the oncoming "Facebookification" of Instagram that I suspected would ruin the platform. (Have you seen Instagram lately? I think that prediction was correct.) So, before I quit, I wrote a script to remove all my posts. Lucky me, I guess.
 
 ### But why though?
 
