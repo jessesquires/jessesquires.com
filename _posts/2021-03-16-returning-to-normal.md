@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [essays]
-tags: [politics]
+tags: [politics, gun-violence]
 date: 2021-03-16T11:41:21-07:00
 title: Returning to normal
 ---
