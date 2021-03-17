@@ -3,6 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [ethics, tech, web]
 date: 2018-02-25T10:00:00-07:00
+date-updated: 2021-03-17T11:07:11-07:00
 title: Replacing Google Search with DuckDuckGo
 subtitle: And how to add a custom DuckDuckGo search box to your site
 image:
@@ -28,6 +29,10 @@ Google's enormity gives it [undue](https://daringfireball.net/linked/2017/09/01/
 The [lack of ethics](https://www.theguardian.com/technology/2016/dec/04/google-democracy-truth-internet-search-facebook) codified into Google search are disappointing and irresponsible. Google has positioned itself as the digital arbiter of truth. However, this is undermined by its pursuit to grab a slice of the attention economy, which requires curating unique search results for each user. This combined with an absence of fact-checking produces outcomes that range from [unfortunate](https://gizmodo.com/googles-algorithm-is-lying-to-you-about-onions-and-blam-1793057789) to [alarming](https://searchengineland.com/googles-one-true-answer-problem-featured-snippets-270549) to [horrifying](https://www.npr.org/sections/thetwo-way/2017/01/10/508363607/what-happened-when-dylann-roof-asked-google-for-information-about-race). Google's curated results have the power to shape and distort people's views. That's an ethical problem.
 
 I'll give them credit though. Google has worked to address some of the problems in the articles that I've linked to above. However, the company's financial incentives remain the same as far as I can tell. As long as they are beholden to satisfying advertisers and scrounging for users' attention, I'm not hopeful that the trolls won't find new ways to turn the search engine into an alt-right propaganda machine again.
+
+{% include updated_notice.html
+    update_message="In completely unsurprising news, Google's search results <a href='https://daringfireball.net/linked/2021/03/04/fowler-google-search' class='alert-link'>have gotten worse</a> over time. And while I'm here &mdash; updating this post 3 years later &mdash; I have to say, DuckDuckGo has been great. I have no complaints."
+%}
 
 ### Benefits of DuckDuckGo
 
