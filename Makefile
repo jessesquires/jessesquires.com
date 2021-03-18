@@ -35,6 +35,10 @@ tags:
 new:
 	./scripts/new-post.swift
 
+.PHONY: update-post
+update-post:
+	./scripts/update-post-date.swift $(p)
+
 .PHONY: date
 date:
 	./scripts/current-date-time.swift
