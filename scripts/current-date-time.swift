@@ -18,17 +18,20 @@ print("Copying to clipboard...")
 let pipe = Pipe()
 
 let echo = Process()
-echo.launchPath = "/usr/bin/env"
+echo.executableURL = URL(fileURLWithPath: "/usr/bin/env")
 echo.arguments = ["echo", fullDateTime]
 echo.standardOutput = pipe
 
 let pbcopy = Process()
-pbcopy.launchPath = "/usr/bin/env"
+pbcopy.executableURL = URL(fileURLWithPath: "/usr/bin/env")
 pbcopy.arguments = ["pbcopy"]
 pbcopy.standardInput = pipe
 
-echo.launch()
-pbcopy.launch()
-pbcopy.waitUntilExit()
-
-print("Done!")
+do {
+    try echo.run()
+    try pbcopy.run()
+    pbcopy.waitUntilExit()
+    print("Done!")
+} catch {
+    print("Error: \(error)")
+}

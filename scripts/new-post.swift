@@ -120,10 +120,13 @@ if !result {
 } else {
     print("Opening...")
     let proc = Process()
-    proc.launchPath = "/usr/bin/env"
+    proc.executableURL = URL(fileURLWithPath: "/usr/bin/env")
     proc.arguments = ["open", filePath]
-    proc.launch()
-    proc.waitUntilExit()
+    do {
+        try proc.run()
+        proc.waitUntilExit()
+        print("Done. 🎉\n")
+    } catch {
+        print("Error: \(error)\n")
+    }
 }
-
-print("Done. 🎉\n")
