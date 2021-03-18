@@ -3,6 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [xcode, testing, ui-testing, ios, ci, uikit]
 date: 2021-03-17T19:59:59-07:00
+date-updated: 2021-03-18T10:44:22-07:00
 title: Xcode UI testing reliability tips for iOS
 ---
 
@@ -50,6 +51,23 @@ override func setUpWithError() throws {
     app.launchArguments.append("-disableAnimations")
     app.launch()
 }
+```
+
+**UPDATE:** Thanks to [Peter Steinberger](https://mobile.twitter.com/steipete) for mentioning [on Twitter](https://mobile.twitter.com/steipete/status/1372460020730843136) that this might cause issues:
+
+> I would not disable animation - this can change callback timing and might lead to missed bugs. Instead, accelerate animations via setting layer.speed on the window.
+
+I have not encountered this issue, but it is good to be aware of. You can follow the same setup that I have described above. Instead of disabling animations, you can set `self.window.layer.speed`. Per the [`CAMediaTiming` docs](https://developer.apple.com/documentation/quartzcore/camediatiming/1427647-speed):
+
+> **speed**<br/>
+> Specifies how time is mapped to receiver’s time space from the parent time space.
+> 
+> For example, if speed is 2.0 local time progresses twice as fast as parent time. Defaults to 1.0.
+
+```swift
+// in your AppDelegate or SceneDelegate
+
+self.window?.layer.speed = 2.0
 ```
 
 ### Increasing timeouts
