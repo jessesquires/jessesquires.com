@@ -10,7 +10,7 @@ As I continue to pursue Mac app development more seriously, I can build on and b
 
 <!--excerpt-->
 
-#### Choosing a deployment target
+### Choosing a deployment target
 
 For iOS, the general rule in the community and "official" guidance from Apple is to support the most recent major version of iOS as well as the previous major release. As of this writing, that would mean supporting iOS 13 and 14. Usually, there is a short period right after a new iOS release where you are supporting the last three versions, the oldest of which is eventually dropped. (Now is around the time that teams are dropping support for iOS 12, if they haven't already.) In some cases, especially for very popular apps at large companies, supporting three (or more) versions of iOS may be the norm, but generally speaking, it is not common.
 
@@ -26,13 +26,13 @@ So, what do we do? I think supporting at least the two latest version of macOS i
 
 My default approach for now is to support at least the last three versions of macOS. As of this writing, that means 10.14 Mojave, 10.15 Catalina, and 11.0 Big Sur. This feels like a good balance to me, as a team of one. However, for some apps, it is interesting to see how low of a deployment target is feasible with as few code changes as possible. For example, if I can set the deployment target back to 10.11 El Capitan **without** having to add any [`#available` checks](https://nshipster.com/available/), then should that be my minimum supported version? I think the biggest consideration should be the maintenance cost, because how would you even test your app on macOS 10.11 El Capitan?
 
-#### Testing on older version of macOS
+### Testing on older version of macOS
 
 Note that, like iOS, setting your macOS deployment target and building with the latest SDKs will give you backwards compatibility for old operating systems for free. So, I could just assume everything works as expected on macOS 10.14 and 10.15, even though I am only building and running on macOS 11.0 during development. Lately, that has been my strategy. And as I mentioned, the macOS SDKs seem much more robust than iOS in terms of backwards compatibility (possibly due to neglect?), but it would be nice to verify that my apps function correctly. If claiming to support older versions of macOS, I want to do my due diligence and _at least_ make sure they work as expected on those older versions, like a _good developer_.
 
 For iOS development, this is quite easy. You can download the old simulator runtimes that you support, then build and run from Xcode. Or even better, you may have an old iPhone or iPad running an older version of iOS that you keep around specifically for testing. Then you can build and run directly on that old device. However, there is no simulator for macOS, and I do not have old Macs running old versions of macOS just lying around. (Maybe long-time Mac developers do?) So... what do I do?
 
-#### Installing older versions of macOS
+### Installing older versions of macOS
 
 The first step is [creating a bootable installer for macOS](https://support.apple.com/en-us/HT201372). Thankfully, Apple provides a support guide for this which contains links to various macOS versions. Notably, the oldest version listed is macOS 10.11 El Capitan. I would say this clearly indicates that you should probably not try to support any version before El Capitan &mdash; which is 6 years old!
 
@@ -48,7 +48,7 @@ Partitioning my Mac's internal drive sounds like a nightmare. My experience with
 
 Installing macOS on a partitioned **external** drive sounds like a great balance. This is the approach I am going to take, using a small external Thunderbolt SSD that I will reserve for this purpose only. This feels like the best middle ground between reliability and invasiveness. However, rebooting in order to test or debug something on macOS 10.14 or 10.15 will be annoying. Luckily, based on feedback from other Mac developers on Twitter, it sounds like it may not be necessary very often.
 
-#### Debugging your app on older versions of macOS
+### Debugging your app on older versions of macOS
 
 This next problem is much more complicated. So far, we have discussed simply **installing and running** your Mac app on an older macOS. But what about **debugging** on older versions of macOS? This is where the real conundrum begins. 
 
@@ -64,7 +64,7 @@ Finally, if you are using **only** Objective-C (I'm looking at pretty much **onl
 
 There is no good solution here. Unfortunately, I do not have the capacity to implement a robust solution for this either. Because I am using Swift and I have little interest in returning to Objective-C, my plan for now is to drop older versions of macOS once they become too burdensome to support.
 
-#### Summary
+### Summary
 
 Before writing this article, I asked folks on Twitter for advice and how they approach these problems. The above is everything I have learned so far. Many thanks to [Jeff Johnson](https://mobile.twitter.com/lapcatsoftware), [Tony Arnold](https://mobile.twitter.com/tonyarnold), [Ellen Teapot](https://mobile.twitter.com/asmallteapot), [Peter Steinberger](https://mobile.twitter.com/steipete), [Nick Lockwood](https://mobile.twitter.com/nicklockwood), [Sam Rowlands](https://mobile.twitter.com/Sam_Ohanaware), and the many others who replied.
 
