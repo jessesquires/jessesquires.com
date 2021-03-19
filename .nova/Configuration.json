@@ -1,0 +1,9 @@
+{
+  "index.ignored_file_patterns" : [
+    "_site\/"
+  ],
+  "index.use_scm_ignored_files" : true,
+  "workspace.preview_append_paths" : false,
+  "workspace.preview_type" : "custom",
+  "workspace.preview_url" : "http:\/\/jessesquires.localhost"
+}
