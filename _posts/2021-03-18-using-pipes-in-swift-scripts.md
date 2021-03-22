@@ -3,6 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [swift, swift-scripting, jekyll, blog]
 date: 2021-03-18T11:05:31-07:00
+date-updated: 2021-03-22T14:14:27-07:00
 title: Using pipes in Swift scripts
 ---
 
@@ -74,3 +75,7 @@ do {
 I continue to print the generated datetime because it is nice to have some visual feedback. (If you do not closely follow Swift scripting, like me, note that [there have been some API deprecations](https://eclecticlight.co/2019/02/02/scripting-in-swift-process-deprecations/) for `Process`.)
 
 This is a simple example. But if you need to chain many commands, connecting all these pipes correctly feels error-prone and tedious. It would be worth writing some abstraction on top of this to simplify and ensure correctness, but I'll leave that as an exercise for the reader.
+
+{% include updated_notice.html
+update_message='Ironically, (and very meta) I have an update for this post. Thanks to <a href="https://mobile.twitter.com/id/status/1372831195977879555" class="alert-link">Ian for pointing out on Twitter</a> that I could also have used <code>NSPasteboard</code>, which is much simpler (only 2 lines of code), instead of using <code>Process</code> and <code>Pipe</code>. The only downside is that requires importing AppKit, which makes this script macOS-specific. However, in my case, that does not matter. Either way, this was a good learning exercise!'
+%}
