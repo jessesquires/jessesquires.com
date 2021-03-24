@@ -9,10 +9,16 @@ install:
 	bundle install
 	yarn install
 
-.PHONY: update
-update:
+.PHONY: update-all
+update-all: update-bundle update-yarn
+
+.PHONY: update-bundle
+update-bundle:
 	bundle update --all
 	bundle update --bundler
+
+.PHONY: update-yarn
+update-yarn:
 	yarn upgrade --latest
 
 .PHONY: watch
