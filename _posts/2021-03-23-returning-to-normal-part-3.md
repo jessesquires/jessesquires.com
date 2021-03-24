@@ -3,6 +3,7 @@ layout: post
 categories: [essays]
 tags: [capitalism, gun-violence, politics]
 date: 2021-03-23T14:53:21-07:00
+date-updated: 2021-03-24T12:17:21-07:00
 title: Returning to normal, Part 3
 ---
 
@@ -29,3 +30,5 @@ After two decades, "intruder drills" are the most ingenious and [most effective]
 This is America. Returning to normal. 
 
 Stay tuned for Part 4, I am sure it will not be long.
+
+**UPDATE:** Apparently, Boulder was [the 7th mass shooting in 7 days](https://www.cnn.com/2021/03/23/us/7-mass-shootings-7-days-trnd/index.html) in the US. I did not see the others in the news. I suppose this has become such a common, mundane occurrence that only a few are able to make national (or international) headlines. I decided I will not be publishing a Part 4. I think it is clear that America is back.
