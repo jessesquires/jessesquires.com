@@ -80,13 +80,13 @@ From [*NSUserDefaults in Practice*](http://dscoder.com/defaults.html), emphasis 
 
 This further validates omitting observers. If the data that you store in `UserDefaults` is queried often, but only modified occasionally, then you don't have much to observe. In most use cases, users will visit a settings view on iOS or preferences panel on macOS, configure some options, and rarely return to modify them again. In my experience, most preferences do not need to be observed in realtime, but instead will be queried upon their next use. Of course, responding to changes for *some* preferences in realtime may be necessary (for example, if they modify your app's appearance). Again, I think it's more appropriate to handle on a case-by-case basis, or build a component outside of this library for observation.
 
-Another issue is that these libraries support `Codable` and `NSCoding` types, which I think is a bad thing to encourage. `UserDefaults` is not intended to store large `data` blobs. You should be using a proper database, or simply writing these `Codable` and `NSCoding` types to disk.
+Another issue is that these libraries support `Codable` and `NSCoding` types, which I think is a bad thing to encourage. `UserDefaults` is not intended to store large data blobs. You should be using a proper database, or simply writing these `Codable` and `NSCoding` types to disk.
 
 Again, from [*NSUserDefaults in Practice*](http://dscoder.com/defaults.html):
 
 > Only types that can be stored in plists can be stored in `NSUserDefaults`. If you want to store arbitrary objects, you'll need to use `NSKeyedArchiver` or similar to make an `NSData` from them first. Often this means you're trying to store something other than user settings...
 
-Finally, there Guillermo Muntaner's [Burritos](https://github.com/guillermomuntaner/Burritos) library, which is collection of many different property wrappers. It is by far [the simplest implementation](https://github.com/guillermomuntaner/Burritos/blob/master/Sources/UserDefault/UserDefault.swift), which I appreciate. Still, it does not handle default and optional values how I would like. And overall, this project feels more like a showcase of examples.
+Finally, there is Guillermo Muntaner's [Burritos](https://github.com/guillermomuntaner/Burritos) library, which is collection of many different property wrappers. It is by far [the simplest implementation](https://github.com/guillermomuntaner/Burritos/blob/master/Sources/UserDefault/UserDefault.swift), which I appreciate. Still, it does not handle default and optional values how I would like. And overall, this project feels more like a showcase of examples.
 
 ### A new library: Foil
 
@@ -200,7 +200,7 @@ extension DefaultsKeys {
 }
 ```
 
-Foil, despite also defining the key name and the default value together, is susceptible to this bug, which is simply inherent to using string-based keys &mdash; which is just how `UserDefaults` works. You can easily introduce the same bug by using the `UserDefaults` API directly. The only way to avoid this bug is to ensure that all key names are unique and to centralize the definition of all key-value pairs, like I have done with the `AppSettings` class in the example above.
+Foil, despite also defining the key name and the default value together, is susceptible to this bug, which is simply inherent to using string-based keys &mdash; which is just how `UserDefaults` works. You can easily introduce the same bug by misusing the `UserDefaults` API directly. The only way to avoid this bug is to ensure that all key names are unique and to centralize the definition of all key-value pairs, like I have done with the `AppSettings` class in the example above.
 
 #### Storing `URL` is special
 
@@ -216,7 +216,7 @@ When attempting to read the value back, I hit another assert with the error: "Co
 let url = UserDefaults.standard.url(forKey: key)
 ```
 
-All other types can use the generic methods `set(_:, forKey:)` and `object(forKey:)` and work as expected. Very strange. Upon re-reading [*NSUserDefaults in Practice*](http://dscoder.com/defaults.html), I learned why:
+All other types can use the generic methods `set(_:, forKey:)` and `object(forKey:)` and work as expected. Very odd. Upon re-reading [*NSUserDefaults in Practice*](http://dscoder.com/defaults.html), I learned why:
 
 > The `-setURL:forKey:` method does what it says on the tin, but is unique in that it's the only `NSUserDefaults` method that lets you store a non-plist type. If you want to store `NSURL`s, you have to use it rather than `-setObject:forKey:`
 
