@@ -3,6 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [macos, testing, apps, debugging, xcode]
 date: 2021-03-19T13:24:11-07:00
+date-updated: 2021-04-06T23:19:04-07:00
 title: How to test your Mac app (or not) and decide which versions of macOS to support (or not)
 ---
 
@@ -77,3 +78,15 @@ Based on the discussions from Twitter, the general consensus in the community an
 1. If you do find a bug when testing (by installing and running, not by building via Xcode), then evaluate the severity of the bug and if it is worth fixing or simply dropping the version of macOS in which it occurs. How many customers would be affected by dropping that macOS release? How much development time and effort will it take to continue supporting that macOS version?
 
 As always, if you have any other tips or advice, let me know!
+
+### Update: what about M1 Macs?
+
+Recently, [Antoine van der Lee](https://www.avanderlee.com) started a [discussion on Twitter](https://mobile.twitter.com/twannl/status/1379087981135429633) centered around the question of testing with an M1 Mac. If you only have an M1 Mac, how do you proceed with all of the above? 
+
+It appears that an internal partition will be more involved due to the substantial changes to [boot and recovery](https://eclecticlight.co/2021/01/14/m1-macs-radically-change-boot-and-recovery/) on M1 Macs. I am not entirely sure how this will work. But, per the discussion above, this was not the best option anyway. Regarding booting from an external drive, it looks like [there have been issues](https://eclecticlight.co/2021/02/10/external-boot-disks-still-dont-work-properly-with-m1-macs/) using [external boot disks with M1 Macs](https://eclecticlight.co/2021/02/27/big-sur-11-2-2-still-doesnt-fix-bugs-with-m1-external-bootable-disks/), but [it is possible](https://eclecticlight.co/2020/12/22/booting-an-m1-mac-from-an-external-disk-it-is-possible/) to do. Regarding virtual machines, I did a brief search and it looks like Parallels and VMware plan to eventually support the M1, but it is not clear when that will happen.
+
+However, all of this is somewhat of a moot point once you realize that M1 Macs **cannot** run versions of macOS prior to Big Sur. Perhaps you could run macOS Catalina in a VM, but I have no idea. As far as I can tell, booting into macOS Catalina (or earlier) via an external disk on an M1 Mac simply will not work. How could it? Prior to Big Sur, macOS has no knowledge of the M1.
+
+What a mess. I guess the best advice is: if you upgrade to an M1, do not get rid of your Intel Mac.
+
+If you have an M1 Mac, I highly recommend checking out Howard Oakley's [excellent collection of articles](https://eclecticlight.co/m1-macs/) about the M1.
