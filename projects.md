@@ -27,6 +27,10 @@ The newsletter also inspired the [Swift Community Podcast](https://www.swiftcomm
 
 All of my open source projects are on [GitHub]({{ site.social_links.github}}). The "pinned" projects on my profile are the most active, or most well-known. My iOS and macOS libraries are available via [CocoaPods](https://cocoapods.org/owners/1808) and the [Swift Package Manager](https://swiftpackageindex.com/jessesquires/). I also contribute to open source under [Hexed Bits on GitHub](https://github.com/hexedbits).
 
+##### TIL (Today I Learned)
+
+I keep public, open source notes in [my TIL repo](https://github.com/jessesquires/til) on GitHub as I learn new things. You can also [view them here](https://jessesquires.github.io/TIL/). These are ultimately helpful for me, but I enjoy making them public to help others as well.
+
 ##### JSQMessagesViewController
 
 My most popular library in the iOS community is [JSQMessagesViewController](https://github.com/jessesquires/JSQMessagesViewController), which is [now deprecated]({{ site.url }}{% post_url 2017-07-16-officially-deprecating-jsqmessagesviewcontroller %}). I was highly active on this project from 2013-2016, and at it's peak it was installed in over 50,000 apps (according to CocoaPods stats) and reached over 11,000 stars on GitHub. I built a community around this project with great care and intention. Like many in the community, I was sad to see it go. What I'm most proud of however, was that it was used in early versions of [Signal for iOS](https://signal.org) (as well as many other lesser known iOS apps).
