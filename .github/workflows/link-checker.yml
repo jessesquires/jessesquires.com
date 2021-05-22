@@ -1,3 +1,6 @@
+# GitHub Actions Virtual Environments
+# https://github.com/actions/virtual-environments/
+
 name: Link Checker
 
 on:
@@ -6,7 +9,6 @@ on:
 jobs:
   main:
     name: Link Check
-    # https://github.com/actions/virtual-environments/tree/main/images/linux
     runs-on: ubuntu-latest
     steps:
       - name: git checkout

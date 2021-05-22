@@ -1,3 +1,6 @@
+# GitHub Actions Virtual Environments
+# https://github.com/actions/virtual-environments/
+
 name: CI
 
 on:
@@ -9,34 +12,24 @@ on:
       - master
 
 jobs:
-  job-main:
+  main:
     name: Build Site
-    # https://github.com/actions/virtual-environments/tree/main/images/macos
-    runs-on: macOS-latest
+    runs-on: ubuntu-latest
     steps:
-      - name: git checkout
-        uses: actions/checkout@v2
-
       - name: ruby versions
         run: |
           ruby --version
           gem --version
-          bundler --version
 
-      - name: cache
-        uses: actions/cache@v2
+      - name: git checkout
+        uses: actions/checkout@v2
+
+      # https://github.com/ruby/setup-ruby
+      - name: ruby setup
+        uses: ruby/setup-ruby@v1
         with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gem-bundler2214-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gem-bundler2214-
-
-      - name: bundle install
-        run: |
-          gem update --system
-          gem install bundler --no-document
-          bundle config path vendor/bundle
-          bundle install --jobs 4 --retry 3
+          ruby-version: 2.7
+          bundler-cache: true
 
       - name: jekyll build
         run: bundle exec jekyll build --verbose --trace
