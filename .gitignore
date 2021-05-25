@@ -36,6 +36,10 @@ node_modules/bootstrap/dist/js/*
 !node_modules/bootstrap/dist/js/*.min.js
 !node_modules/bootstrap/dist/js/*.min.js.map
 
+# popper (via bootstrap)
+
+node_modules/popper.js/
+
 # font awesome
 
 node_modules/font-awesome/*

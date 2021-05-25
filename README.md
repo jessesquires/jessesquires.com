@@ -13,7 +13,7 @@ Built with [Jekyll](https://jekyllrb.com), [Bootstrap](https://getbootstrap.com)
 ## Requirements
 
 - [Bundler](https://bundler.io)
-- [Yarn](https://yarnpkg.com/en/)
+- [NPM](https://www.npmjs.com)
 
 ## Dependencies
 
@@ -26,19 +26,19 @@ Built with [Jekyll](https://jekyllrb.com), [Bootstrap](https://getbootstrap.com)
 #### Updating Gems
 
 ```bash
-$ bundle update
+$ make update-bundle
 ```
 
-### Yarn
+### NPM packages
 
-- [Bootstrap](https://getbootstrap.com) ([pkg](https://yarnpkg.com/en/package/bootstrap))
+- [Bootstrap](https://getbootstrap.com) ([package](https://www.npmjs.com/package/bootstrap))
 - [jQuery](https://jquery.com) ([pkg](https://yarnpkg.com/en/package/jquery))
 - [Font Awesome](https://fortawesome.github.io/Font-Awesome/) ([pkg](https://yarnpkg.com/en/package/font-awesome))
 
-#### Updating Yarn
+#### Updating packages
 
 ```bash
-$ yarn upgrade --latest
+$ make update-deps
 ```
 
 ### Other

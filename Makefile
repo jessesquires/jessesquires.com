@@ -7,19 +7,19 @@ build:
 .PHONY: install
 install:
 	bundle install
-	yarn install
+	npm install
 
 .PHONY: update-all
-update-all: update-bundle update-yarn
+update-all: update-bundle update-deps
 
 .PHONY: update-bundle
 update-bundle:
 	bundle update --all
 	bundle update --bundler
 
-.PHONY: update-yarn
-update-yarn:
-	yarn upgrade --latest
+.PHONY: update-deps
+update-deps:
+	npm update
 
 .PHONY: watch
 watch:
