@@ -1,12 +1,13 @@
 {% assign entry = include.resume_entry %}
 
-<li class="media mt-3">
-    {% if entry.img %}
-    <img src="{{ site.img_url}}/resume/{{ entry.img.name }}" class="mr-3 img-thumbnail img-resume" title="{{ entry.img.title }}" alt="{{ entry.img.title }}">
-    {% endif %}
-
-    <div class="media-body">
-        <h5 class="mt-0 mb-1"><a href="{{ entry.link }}">{{ entry.title }}</a></h5>
+<div class="d-flex mt-2 mb-4 py-1">
+    <div class="flex-shrink-0">
+        {% if entry.img %}
+        <img src="{{ site.img_url}}/resume/{{ entry.img.name }}" class="me-3 img-thumbnail img-resume" title="{{ entry.img.title }}" alt="{{ entry.img.title }}">
+        {% endif %}
+    </div>
+    <div class="flex-grow-1 ms-2">
+        <h5 class="mt-0 mb-1"><a href="{{ entry.link }}" class="text-decoration-none">{{ entry.title }}</a></h5>
 
         {% if entry.end == 'Present' %}
             {% assign entry_end = '<b>Present</b> <i class="fa fa-star" aria-hidden="true"></i>'%}
@@ -14,7 +15,7 @@
             {% assign entry_end = entry.end %}
         {% endif %}
 
-        <h6 class="mt-0 mb-1 text-muted"><small>{{ entry.location}} &bull; {{ entry.start }} &mdash; {{ entry_end }}</small></h6>
+        <h6 class="mt-0 mb-1 text-muted fw-normal"><small>{{ entry.location}} &bull; {{ entry.start }} &mdash; {{ entry_end }}</small></h6>
 
         {% if entry.description %}
         <p class="mt-0 mb-1" markdown="1">{{ entry.description }}</p>
@@ -27,6 +28,5 @@
         {% endfor %}
         </ul>
         {% endif %}
-
     </div>
-</li>
+</div>

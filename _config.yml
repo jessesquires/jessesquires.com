@@ -72,7 +72,6 @@ links:
 social_links:
   twitter: 'https://twitter.com/jesse_squires'
   github: 'https://github.com/jessesquires/'
-  stackoverflow: 'https://stackoverflow.com/users/2195632/jessesquires'
 
 feeds:
   rss: '/feed.xml'

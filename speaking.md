@@ -18,7 +18,7 @@ Feel free to [contact me](/contact) about speaking at your event!
 ### Past talks
 
 <div class="table-responsive">
-    <table class="table table-striped">
+    <table class="table table-striped table-bordered align-middle">
         <thead>
             <tr>
                 <th width="100"><i class="fa fa-calendar fa-lg" aria-hidden="true"></i></th>
@@ -40,7 +40,7 @@ Feel free to [contact me](/contact) about speaking at your event!
                 <td><a href="{{ event.link }}">{{ event.name }}</a></td>
                 <td><a href="{{ location.link }}">{{ location.name }}</a>, {{ location.city }}</td>
                 <td>
-                    <ul class="list-unstyled">
+                    <ul class="list-unstyled list-group list-group-flush text-center">
                     {% if links.slides %}<li><a href="{{ links.slides }}">slides</a></li>{% endif %}
                     {% if links.video %}<li><a href="{{ links.video }}">video</a></li>{% endif %}
                     {% if links.code %}<li><a href="{{ links.code }}">code</a></li>{% endif %}

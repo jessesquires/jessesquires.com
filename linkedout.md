@@ -20,7 +20,7 @@ I’m working on a number of side projects, indie apps, and open source projects
 {% include resume_header.html text="Conference Talks" icon="fa-id-badge" %}
 
 I have spoken at conferences and meetups around the world to share my thoughts, ideas, and experiences about programming,
-software, and community &mdash; particularly open source, iOS, Swift, and Objective-C. 
+software, and community &mdash; particularly open source, iOS, Swift, and Objective-C.
 You can find [a complete list of my talks here](/speaking), including slides, videos, and sample code.
 
 <!-- SKILLS -->
@@ -29,7 +29,7 @@ You can find [a complete list of my talks here](/speaking), including slides, vi
 
 <ul class="list-inline">
 {% for entry in resume.skills.items %}
-<li class="list-inline-item text-monospace">{{ entry }}{% if resume.skills.items.last != entry %}<b> &bull; </b>{% endif %}</li>
+<li class="list-inline-item font-monospace">{{ entry }}{% if resume.skills.items.last != entry %}<b> &bull; </b>{% endif %}</li>
 {% endfor %}
 </ul>
 

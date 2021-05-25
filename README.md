@@ -8,7 +8,7 @@
 
 This is my personal site and blog.
 
-Built with [Jekyll](https://jekyllrb.com), [Bootstrap](https://getbootstrap.com), [jQuery](https://jquery.com), and [Font Awesome](https://fontawesome.com). Hosted at [NearlyFreeSpeech](https://nearlyfreespeech.net).
+Built with [Jekyll](https://jekyllrb.com), [Bootstrap](https://getbootstrap.com), and [Font Awesome](https://fontawesome.com). Hosted at [NearlyFreeSpeech](https://nearlyfreespeech.net).
 
 ## Requirements
 
@@ -32,7 +32,6 @@ $ make update-bundle
 ### NPM packages
 
 - [Bootstrap](https://getbootstrap.com) ([package](https://www.npmjs.com/package/bootstrap))
-- [jQuery](https://jquery.com) ([pkg](https://yarnpkg.com/en/package/jquery))
 - [Font Awesome](https://fortawesome.github.io/Font-Awesome/) ([pkg](https://yarnpkg.com/en/package/font-awesome))
 
 #### Updating packages

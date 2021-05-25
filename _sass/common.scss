@@ -10,10 +10,6 @@ body p {
   padding: 0.25rem 0rem 0.25rem 0rem;
 }
 
-hr {
-  width: 50%;
-}
-
 .branded {
   font-weight: normal;
   font-family: $font-brand;
@@ -63,16 +59,19 @@ h1 > a:link,
 h1 > a:active,
 h1 > a:visited {
   color: $color-brand;
+  text-decoration-style: dotted;
 }
 
 a:hover {
   color: $color-brand-bright;
-  text-decoration: underline dotted;
+}
+
+h1 > a, h1 > a:hover {
+  text-decoration: none;
 }
 
 h1 > a:hover {
   color: $color-brand-bright;
-  text-decoration: none;
 }
 
 a:link > code,

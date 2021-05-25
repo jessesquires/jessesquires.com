@@ -16,7 +16,7 @@ And don't forget to <a href="/subscribe">subscribe here</a>.
 <div class="shadow-none p-2 my-4 bg-light rounded">
 <ul class="nav nav-pills">
     <li class="nav-item">
-        <a class="nav-link border-0 px-2 mr-2 {% if page.url == '/blog/' %}active{% endif %}" href="/blog/">
+        <a class="nav-link px-2 mx-1 {% if page.url == '/blog/' %}active{% endif %}" href="/blog/">
             <i class="fa fa-bookmark fa-fw" aria-hidden="true"></i> all
         </a>
     </li>
@@ -24,20 +24,20 @@ And don't forget to <a href="/subscribe">subscribe here</a>.
     {% for category in site.data.categories %}
     {% assign url = '/blog/' | append: category.name | append: '/' %}
     <li class="nav-item">
-        <a class="nav-link border-0 px-2 mr-2 {% if page.url == url %}active{% endif %}" href="{{ url }}">
+        <a class="nav-link px-2 mx-1 {% if page.url == url %}active{% endif %}" href="{{ url }}">
             <i class="fa fa-fw {{ category.fa-icon }}" aria-hidden="true"></i> {{ category.display-name }}
         </a>
     </li>
     {% endfor %}
 
     <li class="nav-item">
-        <a class="nav-link border-0 px-2 mr-2" href="/blog/tags/">
+        <a class="nav-link px-2 mx-1" href="/blog/tags/">
             <i class="fa fa-tags fa-fw" aria-hidden="true"></i> tags
         </a>
     </li>
 
     <li class="nav-item">
-        <a class="nav-link border-0 px-2 mr-2" href="/search/">
+        <a class="nav-link px-2 mx-1" href="/search/">
             <i class="fa fa-search fa-fw" aria-hidden="true"></i> Search
         </a>
     </li>

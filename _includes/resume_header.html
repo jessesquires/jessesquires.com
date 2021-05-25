@@ -1,8 +1,8 @@
 {% assign text = include.text %}
 
-<div class="p-2 mt-4 mb-2 bg-light rounded">
-    <h3 class="font-weight-normal" id="{{ text | slugify }}">
-        <small><i class="fa fa-fw {{ include.icon }}" aria-hidden="true"></i></small> 
-        <a href="#{{ text | slugify }}" class="text-dark">{{ text }}</a>
+<div class="p-2 my-2 bg-light border-top">
+    <h3 class="fw-normal" id="{{ text | slugify }}">
+        <small><i class="fa fa-fw {{ include.icon }}" aria-hidden="true"></i></small>
+        <a href="#{{ text | slugify }}" class="text-dark text-decoration-none">{{ text }}</a>
     </h3>
 </div>
