@@ -15,44 +15,31 @@ _site/
 xcuserdata/
 *.xcworkspace/xcshareddata
 
-# ignore all extra node_modules from yarn
-# only keep dependency source (not entire git repo)
+# ignore all extra node_modules dependency files
+# only keep necessary source (not entire git repo)
+# ------------------------------------------------
 
 # bootstrap
-
 node_modules/bootstrap/*
+
+# bootstrap js
 !node_modules/bootstrap/dist/
-
 node_modules/bootstrap/dist/*
-!node_modules/bootstrap/dist/css
-!node_modules/bootstrap/dist/fonts
 !node_modules/bootstrap/dist/js
-
-node_modules/bootstrap/dist/css/*
-!node_modules/bootstrap/dist/css/*.min.css
-!node_modules/bootstrap/dist/css/*.min.css.map
-
 node_modules/bootstrap/dist/js/*
-!node_modules/bootstrap/dist/js/*.min.js
-!node_modules/bootstrap/dist/js/*.min.js.map
+!node_modules/bootstrap/dist/js/bootstrap.min.js
+!node_modules/bootstrap/dist/js/bootstrap.min.js.map
+
+# bootstrap scss
+!node_modules/bootstrap/scss
 
 # popper (via bootstrap)
-
-node_modules/popper.js/
+node_modules/@popperjs/
 
 # font awesome
-
 node_modules/font-awesome/*
 !node_modules/font-awesome/css/
 !node_modules/font-awesome/fonts
 
 node_modules/font-awesome/css/*
 !node_modules/font-awesome/css/*.min.css
-
-# jquery
-
-node_modules/jquery/*
-!node_modules/jquery/dist
-
-node_modules/jquery/dist/*
-!node_modules/jquery/dist/*.min.js
