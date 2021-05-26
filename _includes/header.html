@@ -10,27 +10,14 @@
 
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="navbar-nav">
+                {% for item in site.data.navigation.menu %}
+                {% assign link = item.url | replace: '/', '' %}
                 <li class="nav-item mx-1">
-                    <a class="nav-link {% if url_components[1] == 'blog' %}active fw-bolder{% endif %}" href="/blog/">writing</a>
+                    <a class="nav-link {% if page.url == item.url or url_components[1] == link %}active fw-bolder{% endif %}" href="{{ item.url }}">
+                        {{ item.title }}
+                    </a>
                 </li>
-                <li class="nav-item mx-1">
-                    <a class="nav-link {% if page.url == '/speaking/' %}active fw-bolder{% endif %}" href="/speaking/">speaking</a>
-                </li>
-                <li class="nav-item mx-1">
-                    <a class="nav-link {% if page.url == '/projects/' %}active fw-bolder{% endif %}" href="/projects/">projects</a>
-                </li>
-                <li class="nav-item mx-1">
-                    <a class="nav-link {% if page.url == '/subscribe/' %}active fw-bolder{% endif %}" href="/subscribe/">subscribe</a>
-                </li>
-                <li class="nav-item mx-1">
-                    <a class="nav-link {% if page.url == '/sponsor/' %}active fw-bolder{% endif %}" href="/sponsor/">sponsor</a>
-                </li>
-                <li class="nav-item mx-1">
-                    <a class="nav-link {% if page.url == '/linkedout/' %}active fw-bolder{% endif %}" href="/linkedout/">cv</a>
-                </li>
-                <li class="nav-item mx-1">
-                    <a class="nav-link {% if page.url == '/about/' %}active fw-bolder{% endif %}" href="/about/">about</a>
-                </li>
+                {% endfor %}
             </ul>
         </div> <!-- navbar -->
 

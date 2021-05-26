@@ -1,0 +1,21 @@
+menu:
+  - title: writing
+    url: '/blog/'
+
+  - title: speaking
+    url: '/speaking/'
+
+  - title: projects
+    url: '/projects/'
+
+  - title: subscribe
+    url: '/subscribe/'
+
+  - title: sponsor
+    url: '/sponsor/'
+
+  - title: cv
+    url: '/linkedout/'
+
+  - title: about
+    url: '/about/'
