@@ -6,7 +6,7 @@ tags: [conference, talk, speaking]
 
 I enjoy speaking at conferences and meetups to share my thoughts, ideas, and experiences about programming,
 software, and community &mdash; particularly open source, iOS, Swift, and Objective-C.
-You can find the materials and details for all of my talks [on GitHub](https://github.com/jessesquires/talks)
+You can find the materials and details for all of my talks [on GitHub]({{ site.data.github.talks }})
 and all of my slides [on Speaker Deck](https://speakerdeck.com/jessesquires).
 
 Feel free to [contact me]({% link contact.md %}) about speaking at your event!

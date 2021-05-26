@@ -23,7 +23,7 @@ One of the most interesting aspects of the conference was that there was live tr
 
 Because of this, you will notice that I'm speaking somewhat slowly during the presentation and pausing often. And so for me personally, it feels a bit awkward when I watch this. Nonetheless, I think the talk was really well received. If you have any feedback, I would love to hear it. [Let me know!](https://twitter.com/jesse_squires) &#x1F604;
 
-Also, one part of preparing for the live translation was providing a rough transcript before the conference. You can find all of my talk materials [on GitHub](https://github.com/jessesquires/talks). And as always, Realm's [transcript](https://realm.io/news/tryswift-jesse-squires-contributing-open-source-swift/) of the talk is excellent. &#x1F64C;
+Also, one part of preparing for the live translation was providing a rough transcript before the conference. You can find all of my talk materials [on GitHub]({{ site.data.github.talks }}). And as always, Realm's [transcript](https://realm.io/news/tryswift-jesse-squires-contributing-open-source-swift/) of the talk is excellent. &#x1F64C;
 
 ### Thoughts
 
