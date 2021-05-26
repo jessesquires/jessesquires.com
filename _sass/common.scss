@@ -1,11 +1,13 @@
 
 body {
   background-color: $color-bg;
-  padding: 0rem 0rem 2rem 0rem;
+}
+
+body p, li {
+  font-size: 14px;
 }
 
 body p {
-  font-size: 14px;
   line-height: 24px;
   padding: 0.25rem 0rem 0.25rem 0rem;
 }
@@ -29,11 +31,11 @@ header {
   }
 }
 
-h1 > code,
-h2 > code,
-h3 > code {
-  background-color: $color-bg;
-  font-weight: bolder;
+h1, h2, h3, h4, h5 {
+  code {
+    background-color: $color-bg;
+    font-weight: bolder;
+  }
 }
 
 code {
@@ -46,10 +48,6 @@ code {
 code p,
 pre code {
   font-size: 13px;
-}
-
-li {
-  font-size: 14px;
 }
 
 a:link,
@@ -66,17 +64,20 @@ a:hover {
   color: $color-brand-bright;
 }
 
-h1 > a, h1 > a:hover {
-  text-decoration: none;
+h1, h2, h3, h4, h5 {
+  a {
+    text-decoration: none;
+  }
 }
 
-h1 > a:hover {
-  color: $color-brand-bright;
+h1, h2, h3, h4, h5 {
+  a:hover {
+    color: $color-brand-bright;
+  }
 }
 
-a:link > code,
-a:hover > code,
-a:active > code,
-a:visited > code {
-  color: $color-code;
+a:link, a:hover, a:active, a:visited {
+  code {
+    color: $color-code;
+  }
 }

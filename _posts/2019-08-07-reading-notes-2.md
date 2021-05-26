@@ -26,30 +26,18 @@ While Nordgren seems to be focused primarily on romantic partnerships, I think m
 
 On respect versus entitlement:
 
-{% include blockquote.html
-    highlight=true
-    quote="Deciding to not base a relationship on a foundation of entitlement is about respecting others’ independence and self-determination. Your feelings for a person or your history together does not make you entitled to command and control a partner to comply with what is considered normal to do in a relationship."
-%}
+> Deciding to not base a relationship on a foundation of entitlement is about respecting others’ independence and self-determination. Your feelings for a person or your history together does not make you entitled to command and control a partner to comply with what is considered normal to do in a relationship.
 
 On heterosexism and norms:
 
-{% include blockquote.html
-    highlight=true
-    quote="Remember that there is a very powerful normative system in play that dictates what real love is, and how people should live. Many will question you and the validity of your relationships when you don’t follow these norms."
-%}
+> Remember that there is a very powerful normative system in play that dictates what real love is, and how people should live. Many will question you and the validity of your relationships when you don’t follow these norms.
 
 On trust:
 
-{% include blockquote.html
-    highlight=true
-    quote="Sometimes people have so much going on inside themselves that there’s just no energy left to reach out and care for others. Create the kind of relationship where withdrawing is both supported and quickly forgiven, and give people lots of chances to talk, explain, see you and be responsible in the relationship. Remember your core values and to take care of yourself though!"
-%}
+> Sometimes people have so much going on inside themselves that there’s just no energy left to reach out and care for others. Create the kind of relationship where withdrawing is both supported and quickly forgiven, and give people lots of chances to talk, explain, see you and be responsible in the relationship. Remember your core values and to take care of yourself though!
 
 On communication:
 
-{% include blockquote.html
-    highlight=true
-    quote='Radical relationships must have conversation and communication at the heart — not as a state of emergency only brought out to solve “problems”.'
-%}
+> Radical relationships must have conversation and communication at the heart — not as a state of emergency only brought out to solve "problems".
 
 Every relationship we have takes time, effort, and energy to maintain. I think principles like these are required for them to be sustainable, worthwhile, and abundant. But most importantly, we need to learn to reject the arbitrary norms that attempt to coerce and manipulate our behavior in relationships &mdash; whether that's with our loved ones or with our bosses.

@@ -27,10 +27,9 @@ When Craig Federighi arrived at his presentation slide about Objective-C during 
     '
 %}
 
-{% include blockquote.html
-    quote="And then Federighi said, let there be Swift; and there was Swift."
-    source="WWDC 2014, 1:44:48"
-%}
+> And then Federighi said, let there be Swift; and there was Swift.
+>
+> &mdash; WWDC 2014, 1:44:48
 
 The third floor of Moscone West erupted with applause as if we had traveled back in time to Steve Jobs' [2007 announcement](https://www.youtube.com/watch?v=EHWRkuDlNOE) of _**the**_ iPhone: *"An iPod, a phone, and an Internet communicator"*.
 
@@ -198,8 +197,8 @@ Below are the results of running each program over 10 trials with 10,000 integer
 
 <p class="text-muted text-center table-header-footer">Note that <code>-O</code> is the standard optimization level for Swift and <code>-Ofast</code>, though faster, removes <strong>all</strong> safety features (<em>array bounds-checking, integer overflow checking, etc.</em>) from Swift. In other words, do not ship an entire app compiled with <code>-Ofast</code>. More on that below.</p>
 
-<div class="alert alert-info">
-	<h3>Xcode6-beta4 <small><i>1 Aug 2014</i></small></h3>
+{% include updated_notice.html
+	update_message="
 	<p>We see the following notable changes with Xcode-beta4:</p>
 	<ol>
 		<li>Swift is now slightly worse without optimizations. (see <em>Table 1</em>)</li>
@@ -207,7 +206,8 @@ Below are the results of running each program over 10 trials with 10,000 integer
 		<li>Swift's insertion sort has completely turned around, and now outperforms selection sort with significant margins!</li>
 		<li>Swift with agressive optimizations is substantially faster than before, and outperforms Objective-C on every sort.</li>
 	</ol>
-</div>
+	"
+%}
 
 There are a few notable discoveries here:
 

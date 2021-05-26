@@ -11,15 +11,13 @@ A couple of weeks ago I finally got around to adding support for Brent Simmons' 
 
 <!--excerpt-->
 
-{% include blockquote.html
-    highlight=false
-    quote="The JSON Feed format is a pragmatic syndication format, like [RSS](http://cyber.harvard.edu/rss/rss.html) and [Atom](https://tools.ietf.org/html/rfc4287), but with one big difference: it’s JSON instead of XML.
-
-For most developers, JSON is far easier to read and write than XML. Developers may groan at picking up an XML parser, but decoding JSON is often just a single line of code.
-
-Our hope is that, because of the lightness of JSON and simplicity of the JSON Feed format, developers will be more attracted to developing for the open web."
-    source="[JSON Feed Version 1](https://jsonfeed.org/version/1)"
-%}
+> The JSON Feed format is a pragmatic syndication format, like [RSS](http://cyber.harvard.edu/rss/rss.html) and [Atom](https://tools.ietf.org/html/rfc4287), but with one big difference: it’s JSON instead of XML.
+>
+> For most developers, JSON is far easier to read and write than XML. Developers may groan at picking up an XML parser, but decoding JSON is often just a single line of code.
+>
+> Our hope is that, because of the lightness of JSON and simplicity of the JSON Feed format, developers will be more attracted to developing for the open web.
+>
+> &mdash; [JSON Feed Version 1](https://jsonfeed.org/version/1)
 
 There are obvious benefits to adopting JSON Feed over something less modern like RSS/Atom. However, new standards (at least, initially) suffer from the [chicken-and-egg](https://en.wikipedia.org/wiki/Chicken_or_the_egg) problem: feed reader developers have little incentive to support the new JSON Feed format because so few publishers adopt it, while publishers have little incentive to adopt a new format because so few feed readers support it. Not to mention, publishers already have a working solution (RSS/Atom). In this case, I think publishers need to drive this change and eventually feed readers will follow. The good news is that &mdash; like Brent and Manton so clearly articulate &mdash; it's easy *and fun* to work with [JSON](http://json.org).
 

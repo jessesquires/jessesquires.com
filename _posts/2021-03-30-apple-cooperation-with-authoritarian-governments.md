@@ -70,7 +70,7 @@ If you insert a Chinese carrier SIM, apps like TikTok & Apple News no longer fun
 >
 > Updating iPhones to iOS 13.1.1 or above caused the flag emoji to disappear from the emoji keyboard. The flag, commonly used by users to denote Taiwan, can still be displayed by typing “Taiwan” in English, and choosing the flag in prediction candidates.
 
-This unfortunately wasn't a bug, as [the same behavior shipped in iOS 13.2](https://twitter.com/_danielsinclair/status/1180603673967153153?s=21). 
+This unfortunately wasn't a bug, as [the same behavior shipped in iOS 13.2](https://twitter.com/_danielsinclair/status/1180603673967153153?s=21).
 
 See also: reporting by [The Verge](https://www.theverge.com/2019/10/7/20903613/apple-hiding-taiwan-flag-emoji-hong-kong-macau-china).
 

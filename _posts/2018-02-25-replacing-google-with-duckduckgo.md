@@ -38,10 +38,9 @@ I'll give them credit though. Google has worked to address some of the problems 
 
 Similar to many Apple products and services, DuckDuckGo was established with [privacy as a fundamental feature](https://duckduckgo.com/about), not to mention [a company value](https://spreadprivacy.com). While their revenue model is still based on advertising, the service does not mine your data to do so. DuckDuckGo also sometimes adds an affiliate code to some eCommerce sites, but this is done without using any personally identifiable information. All the details are clearly explained [in their privacy policy](https://duckduckgo.com/privacy), which you can compare with the [Google privacy policy](https://www.google.com/policies/privacy/). Google [collects](https://www.google.com/policies/privacy/#infocollect) and [shares](https://www.google.com/policies/privacy/#nosharing) a staggering amount of your data that is personally identifiable. They obscure how they use it behind vague phrases like "improving your user experience", and even after deleting your information from their services they reserve the right to retain a copy for "legitimate business or legal purposes". DuckDuckGo provides a strikingly different policy, which puts privacy first and even includes an ["Information Not Collected"](https://duckduckgo.com/privacy#s3) section.
 
-{% include blockquote.html
-    quote="You can usually find out a lot about a person from their search history."
-    source="Gabriel Weinberg, [DuckDuckGo Privacy](https://duckduckgo.com/privacy#s2)"
-%}
+> You can usually find out a lot about a person from their search history.
+>
+> &mdash; Gabriel Weinberg, [DuckDuckGo Privacy](https://duckduckgo.com/privacy#s2)
 
 Gabriel Weinberg has a rather [comprehensive list](https://www.quora.com/Why-should-I-use-DuckDuckGo-instead-of-Google) of reasons to use DuckDuckGo. I won't bother reiterating each of them, but I will highlight one of my favorite features &mdash; [!bangs](https://duckduckgo.com/bang), which let you search other sites directly. For example, you can type `!giphy oh yeah` into DuckDuckGo and land directly on [Giphy's search results](https://giphy.com/search/oh-yeah) for "oh yeah".
 

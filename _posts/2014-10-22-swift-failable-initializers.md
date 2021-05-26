@@ -15,8 +15,8 @@ Swift is still young and ever-changing. With each release, we have seen dozens o
 
 The idea is simple &mdash; sometimes objects fail to successfully initialize and we need a way to handle this. If you have ever read the iOS or OS X [documentation](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSObject_Class/index.html#//apple_ref/occ/instm/NSObject/init) for the Cocoa frameworks, then you have often had the pleasure of reading method descriptions similar to the following:
 
->**Return Value** <br />
->An initialized object, or `nil` if an object could not be created for some reason that would not result in an exception.
+> **Return Value** <br />
+> An initialized object, or `nil` if an object could not be created for some reason that would not result in an exception.
 
 This is commonplace in Objective-C. When instantiating classes in the Cocoa frameworks, many of them may return `nil` instead of an initialized object. We are used to this. But Swift is different. Swift guarantees that instances will not be `nil`, with the exception of [optionals](https://developer.apple.com/library/mac/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-XID_467). The syntactic difference for a failable initializer &mdash; from `init()` to `init?()` &mdash; is much more subtle than its implications.
 
@@ -33,7 +33,6 @@ Apple's [article](https://developer.apple.com/swift/blog/?id=17) provides an exa
 However, failable initializers might seduce you into doing something bad. Suppose we have a blog post object. It requires the body text, the date it was written, and an image. To "simplify" construction of a post, you decide to pass the name of an image, instead of a `UIImage` object.
 
 ```swift
-
 class MyPost {
 
     let text: String
@@ -52,7 +51,6 @@ class MyPost {
         }
     }
 }
-
 ```
 
 If the image cannot be constructed, then the initialization of `MyPost` fails. What have we done by designing our `init?` this way? We have disregarded the [SOLID](http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)) principles, specifically [single responsibility](http://en.wikipedia.org/wiki/Single_responsibility_principle) and [dependency inversion](http://en.wikipedia.org/wiki/Dependency_inversion_principle). The `MyPost` object is for storing blog post data. It should not be initializing an image. The dependency on `UIImage` is now obfuscated. And finally, we have to do our optional unwrapping dance every time we instantiate a post.
@@ -60,7 +58,6 @@ If the image cannot be constructed, then the initialization of `MyPost` fails. W
 We can fix these issues by passing a non-optional image to our initializer.
 
 ```swift
-
 class MyBetterPost {
 
     let text: String
@@ -73,7 +70,6 @@ class MyBetterPost {
         self.image = image
     }
 }
-
 ```
 
 Clean and deterministic again. But you're probably thinking, *we still have to handle an optional image __somewhere__*. That's true. When constructing a `UIImage`, the initializer `init(named name: String) -> UIImage?` could return `nil`, but the point is that this should be happening *outside* of this class, and definitely **not** in `init`. There's no good reason to dirty up this class with optionals.

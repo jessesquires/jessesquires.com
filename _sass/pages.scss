@@ -1,32 +1,31 @@
 
 .img-resume {
-  width: 75px;
-  height: 75px;
-}
-
-.alert h3 {
-  font-size: 18px;
+  width: 85px;
+  height: 85px;
 }
 
 blockquote {
-  color: $color-gray;
-  padding-left: 1.1rem;
-  padding-right: 1.1rem;
-  border-left: 2px solid $color-gray;
-}
+  color: $secondary;
+  background-color: $light;
 
-blockquote {
+  margin-left: 1.5rem;
+  margin-right: 2.5rem;
+
+  padding-top: 0.5rem;
+  padding-bottom: 0.1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  border-left: 2px solid $secondary;
+
   p {
     font-size: 15px;
   }
 
-  .blockquote-source {
-    p {
-      font-size: 13px;
-    }
-  }
-
-  mark {
-    color: $color-gray;
+  a:link,
+  a:active,
+  a:visited,
+  a:hover {
+    color: inherit;
   }
 }

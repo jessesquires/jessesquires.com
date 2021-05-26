@@ -2,20 +2,19 @@
 # front matter comment to ensure jekyll properly reads file
 ---
 
+@import "../node_modules/bootstrap/scss/bootstrap";
+
 $font-brand: 'Ubuntu Mono', Arial, sans-serif;
 
 $color-bg: #ffffff;
-
-$color-gray: #666666;
 
 $color-brand: #3a98a6;
 $color-brand-bright: #47bacc;
 $color-brand-dark: #1f5259;
 
 $color-code: #c7254e;
-$color-code-bg: #f8f9fa;
+$color-code-bg: $light;
 
-@import "../node_modules/bootstrap/scss/bootstrap";
 @import "common";
 @import "pages";
 @import "post-list";

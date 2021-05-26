@@ -13,10 +13,7 @@ I finished reading Chimamanda Ngozi Adichie's new book, [*Dear Ijeawele, or a Fe
 
 This passage really resonated with me:
 
-{% include blockquote.html
-    highlight=true
-    quote="Teach her to question language. Language is the repository of our prejudices, our beliefs, our assumptions. But to teach her that, you will have to question your own language. A friend of mine says she will never call her daughter 'princess.' People mean well when they say this, but 'princess' is loaded with assumptions of a girl's delicacy, of the prince who will come to save her, etc. This friend prefers 'angel' and 'star.'"
-%}
+> Teach her to question language. Language is the repository of our prejudices, our beliefs, our assumptions. But to teach her that, you will have to question your own language. A friend of mine says she will never call her daughter 'princess.' People mean well when they say this, but 'princess' is loaded with assumptions of a girl's delicacy, of the prince who will come to save her, etc. This friend prefers 'angel' and 'star.'
 
 **Language is the repository of our prejudices.**
 
