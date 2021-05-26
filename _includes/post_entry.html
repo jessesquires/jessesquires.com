@@ -1,47 +1,54 @@
 {% assign post_entry = include.post_entry %}
 
-<h1 class="fw-light text-break"><a href="{{ post_entry.url }}">{{ post_entry.title }}</a></h1>
+<article>
+    <h1 class="fw-light text-break">
+        <a href="{{ post_entry.url }}">{{ post_entry.title }}</a>
+    </h1>
 
-{% assign date_display = post_entry.date | date_to_string %}
-{% assign date_hover = post_entry.date | date: "%d %b %Y %r %Z" %}
+    {% assign date_display = post_entry.date | date_to_string %}
+    {% assign date_hover = post_entry.date | date: "%d %b %Y %r %Z" %}
 
-{% if post_entry.subtitle %}
-    <h2 class="post-subtitle text-dark">{{ post_entry.subtitle }} <small class="post-date text-muted" title="{{ date_hover }}">{{ date_display }}</small></h2>
-{% else %}
-    <h2 class="post-date-subtitle d-inline-block text-muted" title="{{ date_hover }}">{{ date_display }}</h2>
-{% endif %}
+    <h5 class="text-dark {% if post_entry.subtitle %} d-inline-block {% endif %}">
+        {% if post_entry.subtitle %} {{ post_entry.subtitle }} {% endif %}
+        <small class="text-secondary fw-normal" title="{{ date_hover }}">{{ date_display }}</small>
+    </h5>
 
-{% if post_entry.date-updated %}
-    <div class="post-date-updated d-block">
-    <span class="badge bg-dark pt-0 pb-0">
-        <p class="p-0" title="{{ post_entry.date-updated | date: '%d %b %Y %r %Z' }}">Updated: {{ post_entry.date-updated | date_to_string }}</p>
-    </span>
+    {% if post_entry.date-updated %}
+    <div class="d-block">
+        <span class="badge bg-dark mb-2" title="{{ post_entry.date-updated | date: '%d %b %Y %r %Z' }}">
+            Updated: {{ post_entry.date-updated | date_to_string }}
+        </span>
     </div>
-{% endif %}
-
-{% if include.display_categories or include.display_tags %}
-<p class="text-muted">
-    {% if include.display_categories %}
-    <i class="fa fa-bookmark" aria-hidden="true"></i>
-        {% assign sorted_categories = post_entry.categories | sort %}
-        {% for category in sorted_categories %}
-        <a class="text-muted text-decoration-none" href="/blog/{{ category }}" title="category: {{ category }}">{{ category }}</a>{% if category != sorted_categories.last %},{% endif %}
-        {% endfor %}
     {% endif %}
-    &nbsp;&nbsp;
-    {% if include.display_tags %}
-    <i class="fa fa-tags" aria-hidden="true"></i>
-        {% assign sorted_tags = post_entry.tags | sort %}
-        {% for tag in sorted_tags %}
-        <a class="text-muted text-decoration-none" href="/blog/tags/{{ tag }}" title="tag: {{ tag }}">{{ tag }}</a>{% if tag != sorted_tags.last %},{% endif %}
-        {% endfor %}
-    {% endif %}
-</p>
-{% endif %}
 
-{% if include.display_excerpt %}
-<div class="post-excerpt">
-    {{ post_entry.excerpt }}
-    <p><a href="{{ post_entry.url }}" class="text-secondary text-decoration-none">Continue&hellip; <i class="fa fa-chevron-right"></i></a></p>
-</div>
-{% endif %}
+    {% if include.display_categories or include.display_tags %}
+    <p class="text-muted">
+        {% if include.display_categories %}
+        <i class="fa fa-bookmark" aria-hidden="true"></i>
+            {% assign sorted_categories = post_entry.categories | sort %}
+            {% for category in sorted_categories %}
+            <a class="text-muted text-decoration-none" href="/blog/{{ category }}" title="category: {{ category }}">{{ category }}</a>{% if category != sorted_categories.last %},{% endif %}
+            {% endfor %}
+        {% endif %}
+        &nbsp;&nbsp;
+        {% if include.display_tags %}
+        <i class="fa fa-tags" aria-hidden="true"></i>
+            {% assign sorted_tags = post_entry.tags | sort %}
+            {% for tag in sorted_tags %}
+            <a class="text-muted text-decoration-none" href="/blog/tags/{{ tag }}" title="tag: {{ tag }}">{{ tag }}</a>{% if tag != sorted_tags.last %},{% endif %}
+            {% endfor %}
+        {% endif %}
+    </p>
+    {% endif %}
+
+    {% if include.display_excerpt %}
+    <div class="post-excerpt mb-4">
+        {{ post_entry.excerpt }}
+        <p>
+            <a href="{{ post_entry.url }}" class="text-secondary text-decoration-none">
+                Continue&hellip; <i class="fa fa-chevron-right"></i>
+            </a>
+        </p>
+    </div>
+    {% endif %}
+</article>

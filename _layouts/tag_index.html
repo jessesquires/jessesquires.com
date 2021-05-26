@@ -3,22 +3,22 @@ layout: standalone
 title: Writing by tag
 ---
 
-<div class="shadow-none p-2 my-4 bg-light rounded">
+<div class="shadow-none p-2 my-4 bg-light border-top border-bottom">
 <ul class="nav nav-pills">
     <li class="nav-item">
-        <a class="nav-link px-2 {% if page.url == '/blog/tags/' %}active{% endif %}" href="/blog/tags/">
+        <a class="nav-link px-2 py-1 {% if page.url == '/blog/tags/' %}active{% endif %}" href="/blog/tags/">
             <i class="fa fa-tags fa-fw" aria-hidden="true"></i> all
         </a>
     </li>
 
     <li class="nav-item">
-        <a class="nav-link px-2" href="/blog">
+        <a class="nav-link px-2 py-1" href="/blog">
             <i class="fa fa-bookmark fa-fw" aria-hidden="true"></i> categories
         </a>
     </li>
 
     <li class="nav-item">
-        <a class="nav-link px-2" href="/search">
+        <a class="nav-link px-2 py-1" href="/search">
             <i class="fa fa-search fa-fw" aria-hidden="true"></i> search
         </a>
     </li>
@@ -28,7 +28,7 @@ title: Writing by tag
     {% for tag in sorted_tags %}
         {% assign url = '/blog/tags/' | append: tag[0] | append: '/' %}
         <li class="nav-item">
-            <a class="nav-link px-2 {% if page.url == url %}active{% endif %}" href="{{ url }}">
+            <a class="nav-link px-2 py-1 {% if page.url == url %}active{% endif %}" href="{{ url }}">
                 <i class="fa fa-hashtag fa-fw" aria-hidden="true"></i>{{ tag[0] }}
             </a>
         </li>
@@ -44,8 +44,6 @@ title: Writing by tag
 
 <div>
 {% for post in post_list %}
-    <article class="post-entry">
-        {% include post_entry.html post_entry=post display_excerpt=true display_categories=false display_tags=false %}
-    </article>
+    {% include post_entry.html post_entry=post display_excerpt=true display_categories=false display_tags=false %}
 {% endfor %}
 </div>

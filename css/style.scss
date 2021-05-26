@@ -67,7 +67,5 @@ $font-brand: 'Ubuntu Mono', Arial, sans-serif;
 $color-code: #c7254e;
 $color-code-bg: $light;
 
-@import "common";
-@import "pages";
-@import "post-list";
+@import "custom";
 @import "syntax";
