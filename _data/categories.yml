@@ -1,11 +1,11 @@
 - name: software-dev
-  display-name: software dev
-  fa-icon: fa-code
+  title: software dev
+  icon: fa-code
 
 - name: essays
-  display-name: essays
-  fa-icon: fa-pencil
+  title: essays
+  icon: fa-pencil
 
 - name: reading-notes
-  display-name: reading notes
-  fa-icon: fa-book
+  title: reading notes
+  icon: fa-book
