@@ -1,0 +1,23 @@
+- title: GitHub
+  link: 'https://github.com/jessesquires/'
+  icon: fa-github
+
+- title: Twitter
+  link: 'https://twitter.com/jesse_squires'
+  icon: fa-twitter
+
+- title: Subscribe
+  link: '/subscribe'
+  icon: fa-rss-square
+
+- title: Sponsor
+  link: '/sponsor'
+  icon: fa-heart
+
+- title: Privacy
+  link: '/privacy'
+  icon: fa-lock
+
+- title: Search
+  link: '/search'
+  icon: fa-search

@@ -1,6 +1,22 @@
 
 <footer class="container container-fluid pt-4 text-secondary">
-    {% include contact_follow.html %}
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <ul class="list-inline list-unstyled mb-1">
+                    {% for item in site.data.footerItems %}
+                    <li class="list-inline-item">
+                        <a href="{{ item.link }}" class="text-reset" title="{{ item.title }}">
+                            <i class="fa fa-lg fa-fw {{ item.icon }}" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <p class="text-center mt-0 pt-0">
         <small>
             &copy; 2014-{{ site.time | date: '%Y' }} {{ site.author.name }}.
