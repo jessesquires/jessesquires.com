@@ -19,7 +19,7 @@ Header set Cache-Control "max-age=1209600, public"
 </filesMatch>
 
 # one month for fonts
-<filesMatch "\.(tff|svg|eot|woff|woff2)$">
+<filesMatch "\.(ttf|svg|eot|woff|woff2)$">
 Header set Cache-Control "max-age=2628000, public"
 </filesMatch>
 
