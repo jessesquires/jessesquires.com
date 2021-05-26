@@ -1,23 +1,23 @@
 - title: GitHub
-  link: 'https://github.com/jessesquires/'
+  url: 'https://github.com/jessesquires/'
   icon: fa-github
 
 - title: Twitter
-  link: 'https://twitter.com/jesse_squires'
+  url: 'https://twitter.com/jesse_squires'
   icon: fa-twitter
 
 - title: Subscribe
-  link: '/subscribe'
+  url: '/subscribe'
   icon: fa-rss-square
 
 - title: Sponsor
-  link: '/sponsor'
+  url: '/sponsor'
   icon: fa-heart
 
 - title: Privacy
-  link: '/privacy'
+  url: '/privacy'
   icon: fa-lock
 
 - title: Search
-  link: '/search'
+  url: '/search'
   icon: fa-search
