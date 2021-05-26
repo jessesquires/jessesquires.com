@@ -1,8 +1,4 @@
 
-body {
-  background-color: $color-bg;
-}
-
 body p, li {
   font-size: 14px;
 }
@@ -26,14 +22,14 @@ header {
   }
 
   code {
-    background-color: $color-bg;
+    background-color: $body-bg;
     font-weight: bolder;
   }
 }
 
 h1, h2, h3, h4, h5 {
   code {
-    background-color: $color-bg;
+    background-color: $body-bg;
     font-weight: bolder;
   }
 }
@@ -56,23 +52,12 @@ a:visited,
 h1 > a:link,
 h1 > a:active,
 h1 > a:visited {
-  color: $color-brand;
   text-decoration-style: dotted;
-}
-
-a:hover {
-  color: $color-brand-bright;
 }
 
 h1, h2, h3, h4, h5 {
   a {
     text-decoration: none;
-  }
-}
-
-h1, h2, h3, h4, h5 {
-  a:hover {
-    color: $color-brand-bright;
   }
 }
 
