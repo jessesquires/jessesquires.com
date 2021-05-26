@@ -10,12 +10,12 @@
 
     <h5 class="text-dark {% if post_entry.subtitle %} d-inline-block {% endif %}">
         {% if post_entry.subtitle %} {{ post_entry.subtitle }} {% endif %}
-        <small class="text-secondary fw-normal" title="{{ date_hover }}">{{ date_display }}</small>
+        <small class="{% if post_entry.subtitle %} text-secondary {% endif %}" title="{{ date_hover }}">{{ date_display }}</small>
     </h5>
 
     {% if post_entry.date-updated %}
     <div class="d-block">
-        <span class="badge bg-dark mb-2" title="{{ post_entry.date-updated | date: '%d %b %Y %r %Z' }}">
+        <span class="badge bg-light text-secondary border mb-2" title="{{ post_entry.date-updated | date: '%d %b %Y %r %Z' }}">
             Updated: {{ post_entry.date-updated | date_to_string }}
         </span>
     </div>
