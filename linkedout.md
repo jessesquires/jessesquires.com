@@ -23,6 +23,14 @@ I have spoken at conferences and meetups around the world to share my thoughts, 
 software, and community &mdash; particularly open source, iOS, Swift, and Objective-C.
 You can find [a complete list of my talks here](/speaking), including slides, videos, and sample code.
 
+<ul class="mb-4">
+  {% for talk in site.data.talks %}
+  <li>
+    {{ talk.event.name }}, {{ talk.location.city }} &mdash; <i>{{ talk.date }}</i>
+  </li>
+  {% endfor %}
+</ul>
+
 <!-- SKILLS -->
 
 {% include resume_section.html resume_section=resume.skills %}

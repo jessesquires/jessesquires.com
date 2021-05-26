@@ -29,11 +29,10 @@ Feel free to [contact me](/contact) about speaking at your event!
             </tr>
         </thead>
         <tbody>
-        {% for t in site.data.talks %}
-        {% assign talk = t[1] %}
-        {% assign event = talk.event %}
-        {% assign location = talk.location %}
-        {% assign links = talk.links %}
+        {% for talk in site.data.talks %}
+            {% assign event = talk.event %}
+            {% assign location = talk.location %}
+            {% assign links = talk.links %}
             <tr>
                 <td>{{ talk.date }}</td>
                 <td><i>{{ talk.title }}</i></td>
