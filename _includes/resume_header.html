@@ -2,7 +2,9 @@
 
 <div class="p-2 my-2 bg-light border-top">
     <h3 class="fw-normal" id="{{ text | slugify }}">
-        <small><i class="fa fa-fw {{ include.icon }}" aria-hidden="true"></i></small>
+        <small>
+            <i class="bi {{ include.icon }} px-1" role="img" aria-label="{{ text }}"></i>
+        </small>
         <a href="#{{ text | slugify }}" class="text-dark text-decoration-none">{{ text }}</a>
     </h3>
 </div>

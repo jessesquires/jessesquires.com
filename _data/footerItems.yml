@@ -1,23 +1,23 @@
 - title: GitHub
   url: 'https://github.com/jessesquires/'
-  icon: fa-github
+  icon: bi-github
 
 - title: Twitter
   url: 'https://twitter.com/jesse_squires'
-  icon: fa-twitter
+  icon: bi-twitter
 
 - title: Subscribe
   url: '/subscribe'
-  icon: fa-rss-square
+  icon: bi-rss-fill
 
 - title: Sponsor
   url: '/sponsor'
-  icon: fa-heart
+  icon: bi-heart-fill
 
 - title: Privacy
   url: '/privacy'
-  icon: fa-lock
+  icon: bi-shield-lock-fill
 
 - title: Search
   url: '/search'
-  icon: fa-search
+  icon: bi-search

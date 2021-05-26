@@ -1,11 +1,11 @@
 - name: software-dev
   title: software dev
-  icon: fa-code
+  icon: bi-terminal-fill
 
 - name: essays
   title: essays
-  icon: fa-pencil
+  icon: bi-pencil-fill
 
 - name: reading-notes
   title: reading notes
-  icon: fa-book
+  icon: bi-file-text-fill

@@ -1,6 +1,6 @@
 {
     "title": "Publications",
-    "icon": "fa-book",
+    "icon": "bi-newspaper",
     "entries": [
         {
             "title": "Exploring the Computational Limits of Haugeland's Game as a Two-Dimensional Cellular Automaton",

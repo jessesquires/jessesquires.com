@@ -64,8 +64,8 @@ Creating a [custom DuckDuckGo search](https://duckduckgo.com/search_box) is much
             <input type="hidden" value="1" name="kn">
             <input type="hidden" value="1" name="kac">
             <input type="hidden" value="1" name="kc">
-            <span class="input-group-btn"><button class="btn btn-default" type="submit">
-                <i class="fa fa-search" aria-hidden="true"></i></button>
+            <span class="input-group-btn">
+                <button class="btn btn-default" type="submit">Search</button>
             </span>
         </div>
     </div>

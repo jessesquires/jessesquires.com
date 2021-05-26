@@ -6,20 +6,20 @@ title: Writing by tag
 <div class="shadow-none p-2 my-4 bg-light border-top border-bottom">
 <ul class="nav nav-pills">
     <li class="nav-item">
-        <a class="nav-link px-2 py-1 {% if page.url == '/blog/tags/' %}active{% endif %}" href="{{ tags.md }}">
-            <i class="fa fa-tags fa-fw" aria-hidden="true"></i> all
+        <a class="nav-link px-2 py-1 {% if page.url == '/blog/tags/' %}active{% endif %}" href="{% link tags.md %}">
+            <i class="bi bi-asterisk" role="img" aria-label="all"></i> all
         </a>
     </li>
 
     <li class="nav-item">
         <a class="nav-link px-2 py-1" href="{% link blog.md %}">
-            <i class="fa fa-bookmark fa-fw" aria-hidden="true"></i> categories
+            <i class="bi bi-bookmark-fill" role="img" aria-label="categories"></i> categories
         </a>
     </li>
 
     <li class="nav-item">
         <a class="nav-link px-2 py-1" href="{% link search.md %}">
-            <i class="fa fa-search fa-fw" aria-hidden="true"></i> search
+            <i class="bi bi-search" role="img" aria-label="search"></i> Search
         </a>
     </li>
 
@@ -29,7 +29,7 @@ title: Writing by tag
         {% assign url = '/blog/tags/' | append: tag[0] | append: '/' %}
         <li class="nav-item">
             <a class="nav-link px-2 py-1 {% if page.url == url %}active{% endif %}" href="{{ url }}">
-                <i class="fa fa-hashtag fa-fw" aria-hidden="true"></i>{{ tag[0] }}
+                <i class="bi bi-tag-fill" role="img" aria-label="{{ tag[0] }}"></i> {{ tag[0] }}
             </a>
         </li>
     {% endfor %}

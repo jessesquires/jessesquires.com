@@ -16,8 +16,8 @@ xcuserdata/
 *.xcworkspace/xcshareddata
 
 # ignore all extra node_modules dependency files
-# only keep necessary source (not entire git repo)
-# ------------------------------------------------
+# only keep necessary source (not entire project repos)
+# -----------------------------------------------------
 
 # bootstrap
 node_modules/bootstrap/*
@@ -36,10 +36,9 @@ node_modules/bootstrap/dist/js/*
 # popper (via bootstrap)
 node_modules/@popperjs/
 
-# font awesome
-node_modules/font-awesome/*
-!node_modules/font-awesome/css/
-!node_modules/font-awesome/fonts
-
-node_modules/font-awesome/css/*
-!node_modules/font-awesome/css/*.min.css
+# bootstrap icons
+node_modules/bootstrap-icons/*
+!node_modules/bootstrap-icons/font
+node_modules/bootstrap-icons/font/*
+!node_modules/bootstrap-icons/font/bootstrap-icons.css
+!node_modules/bootstrap-icons/font/fonts

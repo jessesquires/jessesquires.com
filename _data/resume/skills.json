@@ -1,6 +1,6 @@
 {
     "title": "Skills",
-    "icon": "fa-code",
+    "icon": "bi-code-slash",
     "items": [
         "Swift",
         "Objective-C",

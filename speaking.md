@@ -21,11 +21,21 @@ Feel free to [contact me]({% link contact.md %}) about speaking at your event!
     <table class="table table-striped table-bordered align-middle">
         <thead>
             <tr>
-                <th width="100"><i class="fa fa-calendar fa-lg" aria-hidden="true"></i></th>
-                <th><i class="fa fa-quote-left fa-lg" aria-hidden="true"></i></th>
-                <th><i class="fa fa-video-camera fa-lg" aria-hidden="true"></i></th>
-                <th><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i></th>
-                <th><i class="fa fa-file-text fa-lg" aria-hidden="true"></i></th>
+                <th width="100">
+                    <i class="bi bi-calendar-week-fill fs-5" role="img" aria-label="Date"></i>
+                </th>
+                <th>
+                    <i class="bi bi-chat-quote-fill fs-5" role="img" aria-label="Title"></i>
+                </th>
+                <th>
+                    <i class="bi bi-camera-reels-fill fs-5" role="img" aria-label="Event"></i>
+                </th>
+                <th>
+                    <i class="bi bi-geo-alt-fill fs-5" role="img" aria-label="Location"></i>
+                </th>
+                <th>
+                    <i class="bi bi-file-earmark-text-fill fs-5" role="img" aria-label="Links"></i>
+                </th>
             </tr>
         </thead>
         <tbody>
