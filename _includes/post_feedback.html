@@ -1,5 +1,5 @@
 
-{% assign base_edit_url = 'https://github.com/jessesquires/jessesquires.com/blob/master/_posts/' %}
+{% assign base_edit_url = site.data.github.repo | append: '/blob/master/_posts/' %}
 
 {% assign file_name = page.url | remove: '/blog/' | slugify | append: '.md' %}
 
@@ -13,7 +13,7 @@
             <p class="text-muted text-center m-0 p-0">
                 <small>
                     Open an <a href="{{ open_issue_url }}" class="text-secondary" target="_blank" rel="noreferrer"><b>issue</b></a>,
-                    submit a <a href="{{ site.links.pull }}" class="text-secondary" target="_blank" rel="noreferrer"><b>pull request</b></a>,
+                    submit a <a href="{{ site.data.github.pull }}" class="text-secondary" target="_blank" rel="noreferrer"><b>pull request</b></a>,
                     or <a href="{{ edit_url }}" class="text-secondary" target="_blank" rel="noreferrer"><b>edit</b></a> this post.
                 </small>
             </p>

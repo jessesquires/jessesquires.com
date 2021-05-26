@@ -63,12 +63,7 @@ author:
   twitter: jesse_squires
   avatar: /ico/avatar.jpg
 
-# Data
-links:
-  github: 'https://github.com/jessesquires/jessesquires.com'
-  issue: 'https://github.com/jessesquires/jessesquires.com/issues/new'
-  pull: 'https://github.com/jessesquires/jessesquires.com/compare'
-
+# Feeds
 feeds:
   rss: '/feed.xml'
   json: '/feed.json'
