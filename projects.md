@@ -3,7 +3,7 @@ layout: standalone
 title: Projects
 ---
 
-I'm working on a number of side projects, indie apps, and [open source projects]({{ site.social_links.github }}).
+I'm working on a number of side projects, indie apps, and [open source projects]({{ site.data.social.github }}).
 I want to highlight a few of them here and link out to others.
 If you are looking for a complete cv, you can [find that here](/linkedout).
 
@@ -25,7 +25,7 @@ The newsletter also inspired the [Swift Community Podcast](https://www.swiftcomm
 
 ### Open source
 
-All of my open source projects are on [GitHub]({{ site.social_links.github}}). The "pinned" projects on my profile are the most active, or most well-known. My iOS and macOS libraries are available via [CocoaPods](https://cocoapods.org/owners/1808) and the [Swift Package Manager](https://swiftpackageindex.com/jessesquires/). I also contribute to open source under [Hexed Bits on GitHub](https://github.com/hexedbits).
+All of my open source projects are on [GitHub]({{ site.data.social.github}}). The "pinned" projects on my profile are the most active, or most well-known. My iOS and macOS libraries are available via [CocoaPods](https://cocoapods.org/owners/1808) and the [Swift Package Manager](https://swiftpackageindex.com/jessesquires/). I also contribute to open source under [Hexed Bits on GitHub](https://github.com/hexedbits).
 
 ##### TIL (Today I Learned)
 

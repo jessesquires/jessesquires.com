@@ -302,7 +302,7 @@ value.ulp   // 0.00000023841857910156250
 
 So that's ulp. There's still a lot to unpack here. I've skipped over some details, but this rabbit hole gets deeper and deeper &mdash; and I had to end this post somewhere. Hopefully this was helpful to better understand ulp and a little about floating-point precision. To see how far the rabbit hole of floating-point numbers goes, check out the links below.
 
-If I got anything wrong, please [let me know]({{ site.social_links.twitter }}) or [open an issue]({{ site.links.issue }})! 😅
+If I got anything wrong, please [let me know]({{ site.data.social.twitter }}) or [open an issue]({{ site.links.issue }})! 😅
 
 ### Further reading and resources
 

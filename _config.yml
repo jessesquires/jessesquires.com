@@ -69,10 +69,6 @@ links:
   issue: 'https://github.com/jessesquires/jessesquires.com/issues/new'
   pull: 'https://github.com/jessesquires/jessesquires.com/compare'
 
-social_links:
-  twitter: 'https://twitter.com/jesse_squires'
-  github: 'https://github.com/jessesquires/'
-
 feeds:
   rss: '/feed.xml'
   json: '/feed.json'

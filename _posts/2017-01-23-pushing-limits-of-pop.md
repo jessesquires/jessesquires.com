@@ -19,7 +19,7 @@ A few months ago, I spoke at [Swift Summit](https://swiftsummit.com) in San Fran
 
 ### Slides and code
 
-You can find my slides [on Speaker Deck](https://speakerdeck.com/jessesquires/pushing-the-limits-of-protocol-oriented-programming) and the code [on GitHub](https://github.com/jessesquires/JSQDataSourcesKit). Note that the code presented in the talk is highly simplified to keep it readable and digestible. Some of the names of protocols and functions are slightly different, too. If you have any feedback, comments, or questions about the code or about the talk itself, please [let me know]({{ site.social_links.twitter }}). I'd love to hear your thoughts!
+You can find my slides [on Speaker Deck](https://speakerdeck.com/jessesquires/pushing-the-limits-of-protocol-oriented-programming) and the code [on GitHub](https://github.com/jessesquires/JSQDataSourcesKit). Note that the code presented in the talk is highly simplified to keep it readable and digestible. Some of the names of protocols and functions are slightly different, too. If you have any feedback, comments, or questions about the code or about the talk itself, please [let me know]({{ site.data.social.twitter }}). I'd love to hear your thoughts!
 
 ### Abstract
 

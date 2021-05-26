@@ -15,7 +15,7 @@ title: Curriculum Vitae
 
 {% include resume_header.html text="Projects & Open Source" icon="fa-code-fork" %}
 
-I’m working on a number of side projects, indie apps, and open source projects. You can find an [overview of my projects here](/projects). My open source projects are [hosted on GitHub]({{ site.social_links.github }}), and my indie apps are [available at Hexed Bits](https://www.hexedbits.com).
+I’m working on a number of side projects, indie apps, and open source projects. You can find an [overview of my projects here](/projects). My open source projects are [hosted on GitHub]({{ site.data.social.github }}), and my indie apps are [available at Hexed Bits](https://www.hexedbits.com).
 
 {% include resume_header.html text="Conference Talks" icon="fa-id-badge" %}
 

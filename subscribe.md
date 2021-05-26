@@ -12,4 +12,4 @@ title: Subscribe
 
 <h4 class="text-secondary mt-3 mb-0">Twitter</h4>
 
-You can [follow me on twitter]({{ site.social_links.twitter }}).
+You can [follow me on twitter]({{ site.data.social.twitter }}).
