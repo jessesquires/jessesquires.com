@@ -63,7 +63,9 @@ author:
   twitter: jesse_squires
   avatar: /ico/avatar.jpg
 
-# Feeds
+# Data
 feeds:
   rss: '/feed.xml'
   json: '/feed.json'
+
+stats_url: 'https://stats.jessesquires.com'
