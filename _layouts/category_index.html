@@ -14,7 +14,7 @@ I also write personal essays and notes on what I'm currently reading.
 <div class="shadow-none p-2 my-4 bg-light border-top border-bottom">
 <ul class="nav nav-pills">
     <li class="nav-item">
-        <a class="nav-link px-2 mx-1 py-1 {% if page.url == '/blog/' %}active{% endif %}" href="/blog/">
+        <a class="nav-link px-2 mx-1 py-1 {% if page.url == '/blog/' %}active{% endif %}" href="{% link blog.md %}">
             <i class="fa fa-bookmark fa-fw" aria-hidden="true"></i> all
         </a>
     </li>
@@ -29,13 +29,13 @@ I also write personal essays and notes on what I'm currently reading.
     {% endfor %}
 
     <li class="nav-item">
-        <a class="nav-link px-2 mx-1 py-1" href="/blog/tags/">
+        <a class="nav-link px-2 mx-1 py-1" href="{% link tags.md %}">
             <i class="fa fa-tags fa-fw" aria-hidden="true"></i> tags
         </a>
     </li>
 
     <li class="nav-item">
-        <a class="nav-link px-2 mx-1 py-1" href="/search/">
+        <a class="nav-link px-2 mx-1 py-1" href="{% link search.md %}">
             <i class="fa fa-search fa-fw" aria-hidden="true"></i> Search
         </a>
     </li>

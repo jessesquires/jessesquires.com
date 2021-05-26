@@ -15,13 +15,13 @@ title: Curriculum Vitae
 
 {% include resume_header.html text="Projects & Open Source" icon="fa-code-fork" %}
 
-I’m working on a number of side projects, indie apps, and open source projects. You can find an [overview of my projects here](/projects). My open source projects are [hosted on GitHub]({{ site.data.social.github }}), and my indie apps are [available at Hexed Bits](https://www.hexedbits.com).
+I’m working on a number of side projects, indie apps, and open source projects. You can find an [overview of my projects here]({% link projects.md %}). My open source projects are [hosted on GitHub]({{ site.data.social.github }}), and my indie apps are [available at Hexed Bits](https://www.hexedbits.com).
 
 {% include resume_header.html text="Conference Talks" icon="fa-id-badge" %}
 
 I have spoken at conferences and meetups around the world to share my thoughts, ideas, and experiences about programming,
 software, and community &mdash; particularly open source, iOS, Swift, and Objective-C.
-You can find [a complete list of my talks here](/speaking), including slides, videos, and sample code.
+You can find [a complete list of my talks here]({% link speaking.md %}), including slides, videos, and sample code.
 
 <ul class="mb-4">
   {% for talk in site.data.talks %}
