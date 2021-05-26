@@ -18,23 +18,23 @@ Feel free to [contact me]({% link contact.md %}) about speaking at your event!
 ### Past talks
 
 <div class="table-responsive">
-    <table class="table table-striped table-bordered align-middle">
+    <table class="table table-sm table-striped table-bordered align-middle">
         <thead>
             <tr>
-                <th width="100">
-                    <i class="bi bi-calendar-week-fill fs-5" role="img" aria-label="Date"></i>
+                <th width="100px">
+                    <i class="bi bi-calendar-week-fill fs-4" role="img" aria-label="Date"></i>
                 </th>
                 <th>
-                    <i class="bi bi-chat-quote-fill fs-5" role="img" aria-label="Title"></i>
+                    <i class="bi bi-chat-quote-fill fs-4" role="img" aria-label="Title"></i>
                 </th>
                 <th>
-                    <i class="bi bi-camera-reels-fill fs-5" role="img" aria-label="Event"></i>
+                    <i class="bi bi-camera-reels-fill fs-4" role="img" aria-label="Event"></i>
                 </th>
                 <th>
-                    <i class="bi bi-geo-alt-fill fs-5" role="img" aria-label="Location"></i>
+                    <i class="bi bi-geo-alt-fill fs-4" role="img" aria-label="Location"></i>
                 </th>
-                <th>
-                    <i class="bi bi-file-earmark-text-fill fs-5" role="img" aria-label="Links"></i>
+                <th width="75px">
+                    <i class="bi bi-file-earmark-text-fill fs-4" role="img" aria-label="Links"></i>
                 </th>
             </tr>
         </thead>
@@ -46,13 +46,13 @@ Feel free to [contact me]({% link contact.md %}) about speaking at your event!
             <tr>
                 <td>{{ talk.date }}</td>
                 <td><i>{{ talk.title }}</i></td>
-                <td><a href="{{ event.link }}">{{ event.name }}</a></td>
-                <td><a href="{{ location.link }}">{{ location.name }}</a>, {{ location.city }}</td>
+                <td><a href="{{ event.link }}" class="text-decoration-none">{{ event.name }}</a></td>
+                <td><a href="{{ location.link }}" class="text-decoration-none">{{ location.name }}</a><br/>{{ location.city }}</td>
                 <td>
                     <ul class="list-unstyled list-group list-group-flush text-center">
-                    {% if links.slides %}<li><a href="{{ links.slides }}">slides</a></li>{% endif %}
-                    {% if links.video %}<li><a href="{{ links.video }}">video</a></li>{% endif %}
-                    {% if links.code %}<li><a href="{{ links.code }}">code</a></li>{% endif %}
+                    {% if links.slides %}<li><a href="{{ links.slides }}" class="text-decoration-none">slides</a></li>{% endif %}
+                    {% if links.video %}<li><a href="{{ links.video }}" class="text-decoration-none">video</a></li>{% endif %}
+                    {% if links.code %}<li><a href="{{ links.code }}" class="text-decoration-none">code</a></li>{% endif %}
                     </ul>
                 </td>
             </tr>

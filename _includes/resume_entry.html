@@ -15,7 +15,7 @@
             {% assign entry_end = entry.end %}
         {% endif %}
 
-        <h6 class="mt-0 mb-1 text-muted fw-normal"><small>{{ entry.location}} &bull; {{ entry.start }} &mdash; {{ entry_end }}</small></h6>
+        <h6 class="mt-0 mb-1 text-muted fw-normal">{{ entry.location}} &bull; {{ entry.start }} &mdash; {{ entry_end }}</h6>
 
         {% if entry.description %}
         <p class="mt-0 mb-1" markdown="1">{{ entry.description }}</p>
