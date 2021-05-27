@@ -3,39 +3,41 @@ layout: standalone
 title: Writing by tag
 ---
 
-<div class="shadow-none p-2 my-4 bg-light border-top border-bottom">
-<ul class="nav nav-pills">
-    <li class="nav-item">
-        <a class="nav-link px-2 py-1 {% if page.url == '/blog/tags/' %}active{% endif %}" href="{% link tags.md %}">
-            <i class="bi bi-asterisk" role="img" aria-label="all"></i> all
-        </a>
-    </li>
-
-    <li class="nav-item">
-        <a class="nav-link px-2 py-1" href="{% link blog.md %}">
-            <i class="bi bi-bookmark-fill" role="img" aria-label="categories"></i> categories
-        </a>
-    </li>
-
-    <li class="nav-item">
-        <a class="nav-link px-2 py-1" href="{% link search.md %}">
-            <i class="bi bi-search" role="img" aria-label="search"></i> Search
-        </a>
-    </li>
-</ul>
-
-<ul class="nav nav-pills">
-    {% assign sorted_tags = site.tags | sort %}
-
-    {% for tag in sorted_tags %}
-        {% assign url = '/blog/tags/' | append: tag[0] | append: '/' %}
+<div>
+    <ul class="nav nav-pills">
         <li class="nav-item">
-            <a class="nav-link px-2 py-1 {% if page.url == url %}active{% endif %}" href="{{ url }}">
-                <i class="bi bi-tag-fill" role="img" aria-label="{{ tag[0] }}"></i> {{ tag[0] }}
+            <a class="nav-link px-2 py-1" href="{% link blog.md %}">
+                <i class="bi bi-bookmark-fill" role="img" aria-label="categories"></i> categories
             </a>
         </li>
-    {% endfor %}
-</ul>
+
+        <li class="nav-item">
+            <a class="nav-link px-2 py-1" href="{% link search.md %}">
+                <i class="bi bi-search" role="img" aria-label="search"></i> Search
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="p-2 mt-2 mb-4 bg-light border-top border-bottom">
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link px-2 py-1 {% if page.url == '/blog/tags/' %}active{% endif %}" href="{% link tags.md %}">
+                <i class="bi bi-asterisk" role="img" aria-label="all"></i> all
+            </a>
+        </li>
+
+        {% assign sorted_tags = site.tags | sort %}
+
+        {% for tag in sorted_tags %}
+            {% assign url = '/blog/tags/' | append: tag[0] | append: '/' %}
+            <li class="nav-item">
+                <a class="nav-link px-2 py-1 {% if page.url == url %}active{% endif %}" href="{{ url }}">
+                    <i class="bi bi-tag-fill" role="img" aria-label="{{ tag[0] }}"></i> {{ tag[0] }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
 </div>
 
 {% if page.tag == null %}
