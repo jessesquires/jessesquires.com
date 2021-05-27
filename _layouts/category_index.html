@@ -11,7 +11,7 @@ I also write personal essays and notes on what I'm currently reading.
 
 <!-- categories: software-dev, essays, reading-notes -->
 
-<div class="shadow-none p-2 my-4 bg-light border-top border-bottom">
+<div class="p-2 my-4 bg-light border-top border-bottom">
 <ul class="nav nav-pills">
     <li class="nav-item">
         <a class="nav-link px-2 mx-1 py-1 {% if page.url == '/blog/' %}active{% endif %}" href="{% link blog.md %}">
@@ -44,12 +44,20 @@ I also write personal essays and notes on what I'm currently reading.
 
 {% if page.category == null %}
     {% assign post_list = site.posts %}
+{% elsif page.category == 'recently-updated' %}
+    {% assign post_list = site.posts | where_exp: "post", "post.date-updated != null" | sort: "date-updated" %}
 {% else %}
     {% assign post_list = site.categories[page.category] %}
 {% endif %}
 
 <div>
-{% for post in post_list %}
-    {% include post_entry.html post_entry=post display_excerpt=true display_categories=false display_tags=false %}
-{% endfor %}
+{% if page.category == 'recently-updated' %}
+    {% for post in post_list reversed %}
+        {% include post_entry.html post_entry=post display_excerpt=true display_categories=false display_tags=false %}
+    {% endfor %}
+{% else %}
+    {% for post in post_list %}
+        {% include post_entry.html post_entry=post display_excerpt=true display_categories=false display_tags=false %}
+    {% endfor %}
+{% endif %}
 </div>

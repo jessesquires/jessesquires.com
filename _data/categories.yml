@@ -9,3 +9,7 @@
 - name: reading-notes
   title: reading notes
   icon: bi-file-text-fill
+
+- name: recently-updated
+  title: updated
+  icon: bi-clock-fill
