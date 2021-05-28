@@ -5,7 +5,7 @@
         <a href="{{ post_entry.url }}">{{ post_entry.title }}</a>
     </h1>
 
-    {% assign date_display = post_entry.date | date_to_string %}
+    {% assign date_display = post_entry.date | date_to_long_string %}
     {% assign date_hover = post_entry.date | date: "%d %b %Y %r %Z" %}
 
     <h5 class="text-dark {% if post_entry.subtitle %} d-inline-block {% endif %}">
@@ -16,7 +16,7 @@
     {% if post_entry.date-updated %}
     <div class="d-block">
         <span class="badge bg-light text-secondary border mb-2" title="{{ post_entry.date-updated | date: '%d %b %Y %r %Z' }}">
-            Updated: {{ post_entry.date-updated | date_to_string }}
+            Updated: {{ post_entry.date-updated | date_to_long_string }}
         </span>
     </div>
     {% endif %}
