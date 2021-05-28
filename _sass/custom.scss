@@ -1,33 +1,21 @@
-
 body p {
   padding: 0.25rem 0rem 0.25rem 0rem;
-}
-
-header {
-  p {
-    font-size: 0.85rem;
-    display: inline-block;
-    padding-left: 1.2rem;
-  }
-
-  code {
-    background-color: $body-bg;
-    font-weight: bolder;
-  }
-}
-
-h1, h2, h3, h4, h5 {
-  code {
-    background-color: $body-bg;
-    font-weight: bolder;
-  }
 }
 
 code {
   color: $color-code;
   background-color: $color-code-bg;
   border-radius: 3px;
-  padding: 3px;
+  border-width: 1px;
+  border-color: $gray-300;
+  border-style: solid;
+  padding: 1px;
+}
+
+pre {
+  code {
+    border: none;
+  }
 }
 
 a:link,
