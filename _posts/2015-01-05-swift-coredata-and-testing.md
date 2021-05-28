@@ -37,7 +37,6 @@ Not very helpful, is it? When I first saw this, it took me a few puzzling minute
 Most of the existing Objective-C Core Data libraries that you'll find implement the following helper methods in some way, if not verbatim. These methods mitigate the awkwardness of inserting new objects into Core Data and avoid [*stringly-typed* Objective-C](http://corner.squareup.com/2014/02/objc-codegenutils.html).
 
 ```swift
-
 @implementation NSManagedObject (Helpers)
 
 + (NSString *)entityName
@@ -52,13 +51,11 @@ Most of the existing Objective-C Core Data libraries that you'll find implement 
 }
 
 @end
-
 ```
 
 I have decided to use Swift for one of my side projects, and in designing the model layer of the app my first thought was to rewrite these methods in Swift. Let's see what that would look like.
 
 ```swift
-
 extension NSManagedObject {
 
     class public func entityName() -> String {
@@ -72,7 +69,6 @@ extension NSManagedObject {
     }
 
 }
-
 ```
 
 Hm. The `entityName()` function just became much less elegant. Remember, we have to prefix our Swift classes for Core Data which means their fully qualified names take the form `<ModuleName>.<ClassName>`. This means we must parse out the *entity name* which is the class name only. This seems fragile and probably isn't a good idea. Additionally, we have to use the `object_getClass()` function from the [Objective-C runtime library](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/ObjCRuntimeRef/index.html), which feels dirty &mdash; *even in Objective-C*. I've always avoided using such [runtime](http://nshipster.com/associated-objects/) [voodoo](http://nshipster.com/method-swizzling/) as much as possible, opting for actual design patterns instead. Even `NSStringFromClass()` feels *wrong* in Swift. And generally speaking, *what do we gain by simply rewriting our __old__ Objective-C code*? **Not much.**
@@ -80,7 +76,6 @@ Hm. The `entityName()` function just became much less elegant. Remember, we have
 Despite these issues, I decided to let it be for the moment so that I could continue working and give some thought to a *swifter* design. I continued building out my model classes, standing up my core data stack, and writing unit tests. Much to my surprise, using the extension functions above crashed when running my unit tests. I ran the same code from the Application Target and everything was fine. After more investigation, I realized that I had just found a Swift compiler [bug](http://openradar.appspot.com/19368054). You can find an [example project](https://github.com/jessesquires/rdar-19368054) on GitHub that exhibits the bug. The issue is that the following function incorrectly returns `nil` in a project's Test Target.
 
 ```swift
-
 class func insertNewObjectForEntityForName(_ entityName: String,
                     inManagedObjectContext context: NSManagedObjectContext) -> AnyObject
 
@@ -106,7 +101,6 @@ Let's reiterate what we are trying to achieve. We want:
 The solution that meets all the criteria above is a convenience initializer:
 
 ```swift
-
 class Person: NSManagedObject {
 
     convenience init(context: NSManagedObjectContext) {
@@ -115,7 +109,6 @@ class Person: NSManagedObject {
     }
 
 }
-
 ```
 
 This is very similar to the original class factory function in the extension. It receives a context and returns a managed object. Regarding (2), it is very clear how this addresses the problematic `NSEntityDescription` class function. In Swift, an initializer is guaranteed to return a non-nil, typed instance, whereas `insertNewObjectForEntityForName(_, inManagedObjectContext:)` returns `AnyObject`. We avoid having to cast the return value altogether.

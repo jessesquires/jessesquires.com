@@ -31,7 +31,6 @@ We are all familiar with handling assets, particularly icons, using the `UIImage
 In the past, we strove to avoid [stringly-typed](https://corner.squareup.com/2014/02/objc-codegenutils.html) Objective-C in Cocoa by creating constants or categories. But rather than apply these same techniques in Swift with an `extension`, we can do something more sophisticated.
 
 ```swift
-
 enum Icon: String {
     case Music
     case Movies
@@ -47,7 +46,6 @@ enum Icon: String {
 // Usage
 let icon = Icon.Music.image() // "music" icon
 let iconSelected = Icon.Music.image(selected: true) // "music-selected" icon
-
 ```
 
 In this example, we are using the new [default enum naming](http://ericasadun.com/2015/07/08/swift-new-stuff-in-xcode-7-beta-3/) for enums with a string raw type. This alone makes a huge difference &mdash; no explicit, hard-coded strings at all! We now have constants for all of our icon names, and the `image(selected:)` method will return the correct `UIImage`.
@@ -59,7 +57,6 @@ You may be thinking that we could implement an extension on `UIImage` instead. B
 Another common use case for constants, or a Swift extension are for the custom colors in an app. It would be nice to be able to use an enum in this scenario, but an enum raw value type must be a **value type** &mdash; sorry `UIColor`. Alternatively, we can use structs and nested structs.
 
 ```swift
-
 struct ColorPalette {
     static let Red = UIColor(red: 1.0, green: 0.1491, blue: 0.0, alpha: 1.0)
     static let Green = UIColor(red: 0.0, green: 0.5628, blue: 0.3188, alpha: 1.0)
@@ -75,7 +72,6 @@ struct ColorPalette {
 // Usage
 let red = ColorPalette.Red
 let darkGray = ColorPalette.Gray.Dark
-
 ```
 
 Again, we should not add our custom colors to `UIColor` globally via an extension. For colors, using an extension presents even more challenges regarding naming. For example if you have a custom red color, you cannot name the method `redColor()` because `UIColor` already defines this class method. Do you name your method `red()`? That's kind of awkward. Do you prefix the method name like you would in Objective-C, `jsq_redColor()`? That's *more* awkward in Swift. Given light and dark versions of colors, do you use `darkPurple()`, or `purpleDark()`? If you have many dark and light variants, it might be better to use the `{colorName}{variant}` naming convention. Regardless, everyone on your team will have different opinions on naming &mdash; and they will *__all__ be great!*

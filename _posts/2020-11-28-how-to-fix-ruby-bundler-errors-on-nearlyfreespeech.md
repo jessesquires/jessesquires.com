@@ -97,7 +97,7 @@ It does feel somewhat awkward to install Bundler every time I deploy, but: (1) i
 
 In any case, if you also host on NearlyFreeSpeech (which I strangely do recommend) and ran into this issue, I hope this helps. And if there is something I can improve here, let me know!
 
-**UPDATE:** 
+**UPDATE:**
 
 There's another possible solution here. You can [specify the Ruby version](https://bundler.io/gemfile_ruby.html) in your `Gemfile`.
 

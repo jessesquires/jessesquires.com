@@ -31,7 +31,6 @@ The [swift-proposal-analyzer](https://github.com/jessesquires/swift-proposal-ana
 In the playground, you are presented with an array of `Proposal` objects, which contain most of the proposal metadata, as well as the raw file contents.
 
 ```swift
-
 final class Proposal {
 
     let title: String
@@ -44,7 +43,6 @@ final class Proposal {
     let fileContents: String
     let wordCount: Int
 }
-
 ```
 
 A `Proposal` has a title and SE number, an array of `Author` objects (1 or more), a `Status`, a filename, the file contents, and the total (rough) word count.
@@ -52,17 +50,14 @@ A `Proposal` has a title and SE number, an array of `Author` objects (1 or more)
 For now, `Author` only contains the author's name.
 
 ```swift
-
 struct Author {
     let name: String
 }
-
 ```
 
 The `Status` of a proposal is defined as an `enum`:
 
 ```swift
-
 enum Status {
     case inReview
     case awaitingReview
@@ -72,7 +67,6 @@ enum Status {
     case rejected
     case withdrawn
 }
-
 ```
 
 We've gone from a directory of plain text files to structured data that we can query and filter. 😎
@@ -82,26 +76,20 @@ We've gone from a directory of plain text files to structured data that we can q
 Here are a few brief examples to show what kinds of questions we can ask and answer.
 
 ```swift
-
 // Find proposals implemented in Swift 3.0
 let implementedInSwift3: [Proposal] = analyzer.proposalsWith(status: .implemented(.v3_0))
-
 ```
 
 ```swift
-
 // Find proposals authored or co-authored by Chris Lattner
 let proposalsByLattner: [Proposal] = analyzer.proposals.filter { p -> Bool in
     p.writtenBy("Chris Lattner")
 }
-
 ```
 
 ```swift
-
 // Find total mentions of "Objective-C" across all proposals
 let count: Int = analyzer.occurrences(of: "Objective-C")
-
 ```
 
 ### Querying the data

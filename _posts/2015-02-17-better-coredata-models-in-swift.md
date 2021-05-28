@@ -28,7 +28,6 @@ You can define minimum and maximum values, provide default values, mark attribut
 For example, imagine we have the following `Employee` class. What fields are required for a save to succeed?
 
 ```objc
-
 @interface Employee : NSManagedObject
 
 @property (nonatomic, retain) NSString * address;
@@ -43,13 +42,11 @@ For example, imagine we have the following `Employee` class. What fields are req
 @property (nonatomic, retain) NSNumber * status;
 
 @end
-
 ```
 
 By contrast, when using Swift we immediately know what properties are optional simply by looking at the code.
 
 ```swift
-
 class Employee: NSManagedObject {
 
     @NSManaged var address: String?
@@ -63,7 +60,6 @@ class Employee: NSManagedObject {
     @NSManaged var salary: NSDecimalNumber
     @NSManaged var status: Int32
 }
-
 ```
 
 <span class="text-muted"><strong>Note:</strong> Xcode does not generate Swift classes accurately when they have optional attributes. You must manually add the `?` for optional values. Further, though <em>The Swift Programming Language</em> guide <a href="https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-ID317">recommends</a> using `Int` for all integer variables, Core Data recommends using specific integer sizes and complains if you attempt to do otherwise, thus the use of `Int32` for the `status` property.</span>
@@ -73,7 +69,6 @@ This seems like a minor detail, but it's a huge win &mdash; especially when you 
 Given this, let's review our `Employee` class. Is `middleName` important? No, let's remove it. Suppose that we know that all employees have an email address with the form: `<firstName><LastName>@<companyName>.com`. Do we really need to store it? No, we can write a function or computed property to generate that. Finally, let's assume that employees should be required to have an `address`. Ahh, this is looking much better now.
 
 ```swift
-
 class Employee: NSManagedObject {
 
     @NSManaged var address: String
@@ -85,7 +80,6 @@ class Employee: NSManagedObject {
     @NSManaged var salary: NSDecimalNumber
     @NSManaged var status: Int32
 }
-
 ```
 
 ### Taking advantage of `typealias`
@@ -93,7 +87,6 @@ class Employee: NSManagedObject {
 Another Swift feature we can use is a [type alias declaration](https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Declarations.html#//apple_ref/doc/uid/TP40014097-CH34-ID361), which allows a new name to refer to an existing type. For an `Employee`, it could be very helpful to work with a `Salary` type instead of an `NSDecimalNumber` type. In the depths of the codebase, there may be operations on `NSDecimalNumber` values where it is not clear what those values represent. A `typealias` makes our model much more descriptive and allows us to operate on values of a much more expressive `Salary` type.
 
 ```swift
-
 class Employee: NSManagedObject {
     // other properties...
 
@@ -101,21 +94,17 @@ class Employee: NSManagedObject {
 
     @NSManaged var salary: Salary
 }
-
 ```
 
 We can then write functions that receive and return an `Employee.Salary` type. Such functions can retain their brevity, while maximizing their clarity.
 
 ```swift
-
 func computeRaise(salary: Employee.Salary) -> Employee.Salary
-
 ```
 
 As noted in [objc.io](http://www.objc.io), *we can take this one step further* by using a [wrapper type](http://www.objc.io/snippets/8.html). To do this with an `NSManagedObject` subclass, we'll need to do some wrapping and unwrapping (no pun intended). First, the original property in Core Data should be marked as `private`. Then we can use a computed property for the new wrapper type that transforms the private property value to and from the wrapper value. This is a bit of work, but the clarity and safety we receive in return are well worth it.
 
 ```swift
-
 struct Salary {
     let amount: NSDecimalNumber
 }
@@ -137,7 +126,6 @@ class Employee: NSManagedObject {
 
 // Usage
 employee.salary = Salary(amount:10000.0)
-
 ```
 
 Unfortunately, for fetch requests you still need to use the underlying private property name, `salaryAmount`. This is because Core Data doesn't know about the `salary` computed property, nor the `Salary` type. However, I think the naming conventions used here minimize confusion. That is, `salary.amount` corresponds to the private `salaryAmount`.
@@ -149,7 +137,6 @@ It is not uncommon for a model object to encode some type of state as an `enum`.
 Let's see what this would look like for the `status` property in the `Employee` class.
 
 ```swift
-
 enum EmployeeStatus: Int32 {
     case ReadyForHire, Hired, Retired, Resigned, Fired, Deceased
 }
@@ -171,7 +158,6 @@ class Employee: NSManagedObject {
 
 // Usage
 employee.status = .Hired
-
 ```
 
 <span class="text-muted"><strong>Note:</strong> Just as in the previous example, for fetch requests you would still need to use the private property name, `statusValue`.</span>

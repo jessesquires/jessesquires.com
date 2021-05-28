@@ -44,7 +44,6 @@ These two programs were carefully crafted to be a true *apples-to-apples* compar
 The following were used for the standard library sorts:
 
 ```swift
-
 // Swift
 var arr: [Int] = // some array
 let newArr = sorted(arr);
@@ -54,7 +53,6 @@ NSMutableArray *arr = // some array
 [arr sortUsingComparator:^NSComparisonResult(NSNumber *n1, NSNumber *n2) {
     return [n1 compare:n2];
 }];
-
 ```
 
 <span class="text-muted text-center center table-header-footer">

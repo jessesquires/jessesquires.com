@@ -40,7 +40,6 @@ As mentioned above, I want to avoid the baggage of `@objc` and prevent `NSObject
 4. **`DataSourceProvider` &mdash;** Data source provider objects are composed of an array of sections, a cell factory, and a bridged data source. (And for collection views, there's also a supplementary view factory.) A provider object orchestrates and mediates the communications between its constituent parts, which know nothing about each other. Finally, as the name suggests, it provides the data source for a table view or a collection view, which happens via its private bridged data source instance. To clients, it looks like this:
 
 ```swift
-
 // TableViewDataSourceProvider
 public var dataSource: UITableViewDataSource {
    return bridgedDataSource
@@ -50,7 +49,6 @@ public var dataSource: UITableViewDataSource {
 public var dataSource: UICollectionViewDataSource {
    return bridgedDataSource
 }
-
 ```
 
 ### Putting it all together
@@ -58,7 +56,6 @@ public var dataSource: UICollectionViewDataSource {
 Let's take a look at how this works in practice. Here's an example for a simple collection view.
 
 ```swift
-
 let section0 = CollectionViewSection(items: ViewModel(), ViewModel(), ViewModel())
 let section1 = CollectionViewSection(items: ViewModel(), ViewModel())
 let allSections = [section0, section1]
@@ -79,7 +76,6 @@ self.provider = CollectionViewDataSourceProvider(
                   supplementaryViewFactory: headerFactory)
 
 self.collectionView.dataSource = provider.dataSource
-
 ```
 
 First, we populate our section objects with our models. Then we create our cell and header view factories. Finally, we pass all of these instances to our data source provider. That's all. The collection view will now display all of our data. The result is an elegant, composed, protocol-oriented, and testable system. You can independently test your models, test that each factory returns correctly configured views, and test that the `provider.dataSource` accurately responds to the `UICollectionViewDataSource` methods. Using this framework with table views follows similarly, with the main exception being that table views do not have supplementary views.
@@ -87,13 +83,11 @@ First, we populate our section objects with our models. Then we create our cell 
 Also remember that the `CollectionViewDataSourceProvider` only speaks to protocols &mdash; not the concrete objects used in the example above. Its signature is the following.
 
 ```swift
-
 public final class CollectionViewDataSourceProvider <
     SectionInfo: CollectionViewSectionInfo,
     CellFactory: CollectionViewCellFactoryType,
     SupplementaryViewFactory: CollectionSupplementaryViewFactoryType
     where CellFactory.Item == SectionInfo.Item, SupplementaryViewFactory.Item == SectionInfo.Item>
-
 ```
 
 Do not be afraid! Before Brent Simmons accuses me of contributing to [angle-bracket-T blindness](http://inessential.com/2015/02/04/random_swift_things), let me explain. There are three generic type parameters. We specify that these three types must conform to the `CollectionViewSectionInfo`, `CollectionViewCellFactoryType`, and `CollectionSupplementaryViewFactoryType` protocols. Finally, the `where` clause specifies that each object must deal with the same kind of model objects (`Item`). This prevents us from trying to use a section of `ModelA` with a cell factory of `ModelB`.
