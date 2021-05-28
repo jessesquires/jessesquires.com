@@ -19,7 +19,7 @@ The Swift community is ecstatic about Swift. There are so many new libraries bei
 <!--excerpt-->
 
 {% include updated_notice.html
-    update_message='After reading this, be sure to checkout my follow-up post, <a href="https://www.jessesquires.com/blog/swift-documentation-part-2/" class="alert-link">Swift documentation, Part 2</a>.'
+    update_message='After reading this, be sure to checkout my follow-up post, <a href="https://www.jessesquires.com/blog/swift-documentation-part-2/">Swift documentation, Part 2</a>.'
 %}
 
 ### Successful open source projects

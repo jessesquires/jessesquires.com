@@ -7,8 +7,8 @@
         {% assign date = page.date-updated %}
     {% endif %}
 
-<div class="alert alert-warning">
-    <h5>Update <small><i>{{ date | date_to_string }}</i></small></h5>
+<div class="d-block bg-light p-3 my-3 border border-2 border-secondary rounded">
+    <h5>Update <small class="text-secondary"><i>{{ date | date_to_long_string }}</i></small></h5>
     <p class="my-0 py-0">
         {{ include.update_message }}
     </p>

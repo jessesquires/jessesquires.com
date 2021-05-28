@@ -31,7 +31,7 @@ The [lack of ethics](https://www.theguardian.com/technology/2016/dec/04/google-d
 I'll give them credit though. Google has worked to address some of the problems in the articles that I've linked to above. However, the company's financial incentives remain the same as far as I can tell. As long as they are beholden to satisfying advertisers and scrounging for users' attention, I'm not hopeful that the trolls won't find new ways to turn the search engine into an alt-right propaganda machine again.
 
 {% include updated_notice.html
-    update_message="In completely unsurprising news, Google's search results <a href='https://daringfireball.net/linked/2021/03/04/fowler-google-search' class='alert-link'>have gotten worse</a> over time. And while I'm here &mdash; updating this post 3 years later &mdash; I have to say, DuckDuckGo has been great. I have no complaints."
+    update_message="In completely unsurprising news, Google's search results <a href='https://daringfireball.net/linked/2021/03/04/fowler-google-search'>have gotten worse</a> over time. And while I'm here &mdash; updating this post 3 years later &mdash; I have to say, DuckDuckGo has been great. I have no complaints."
 %}
 
 ### Benefits of DuckDuckGo

@@ -13,7 +13,7 @@ Mike Ash has a great [Friday Q&A](https://www.mikeash.com/pyblog/friday-qa-2011-
 <!--excerpt-->
 
 {% include updated_notice.html
-    update_message='Inspired by this post, <a href="https://twitter.com/leemorgan" class="alert-link">Lee Morgan</a> has written a build script that generates a Swift source file based on Xcode assets. Checkout the repo <a href="https://github.com/leemorgan/AutoAssets" class="alert-link">AutoAssets</a> on GitHub. Thanks Lee!'
+    update_message='Inspired by this post, <a href="https://twitter.com/leemorgan">Lee Morgan</a> has written a build script that generates a Swift source file based on Xcode assets. Checkout the repo <a href="https://github.com/leemorgan/AutoAssets">AutoAssets</a> on GitHub. Thanks Lee!'
 %}
 
 ### Icon image assets

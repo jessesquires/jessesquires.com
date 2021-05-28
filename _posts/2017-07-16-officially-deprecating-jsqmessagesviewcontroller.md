@@ -13,7 +13,7 @@ Beginning immediately, [JSQMessagesViewController](https://github.com/jessesquir
 <!--excerpt-->
 
 {% include updated_notice.html
-    update_message='The community has started a thread about alternative solutions and is organizing a new GitHub organization for a new community-driven library. This would be a great project to get involved with. See <a href="https://github.com/jessesquires/JSQMessagesViewController/issues/2159" class="alert-link">#2159</a> for details.'
+    update_message='The community has started a thread about alternative solutions and is organizing a new GitHub organization for a new community-driven library. This would be a great project to get involved with. See <a href="https://github.com/jessesquires/JSQMessagesViewController/issues/2159">#2159</a> for details.'
 %}
 
 ### Why now?

@@ -15,7 +15,7 @@ The other day I was attempting to use `FLT_EPSILON` (which I later learned was l
 <!--excerpt-->
 
 {% include updated_notice.html
-    update_message='I gave a talk on the topics discussed in this post and more at iOS Conf Singapore. You can <a href="https://youtu.be/cdRn4DJq9eY" class="alert-link">watch the video here</a>!'
+    update_message='I gave a talk on the topics discussed in this post and more at iOS Conf Singapore. You can <a href="https://youtu.be/cdRn4DJq9eY">watch the video here</a>!'
 %}
 
 {% include image.html

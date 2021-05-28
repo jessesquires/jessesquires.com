@@ -13,7 +13,7 @@ Recently, I came across a **case** (*pun intended*) where I needed to compare tw
 <!--excerpt-->
 
 {% include updated_notice.html
-update_message='As of Swift 4.1 (proposal <a href="https://github.com/apple/swift-evolution/blob/main/proposals/0185-synthesize-equatable-hashable.md" class="alert-link">SE-0185</a>) the compiler will synthesize <code>Equatable</code> conformance for you. Associated values will also need to conform to <code>Equatable</code>.'
+update_message='As of Swift 4.1 (proposal <a href="https://github.com/apple/swift-evolution/blob/main/proposals/0185-synthesize-equatable-hashable.md">SE-0185</a>) the compiler will synthesize <code>Equatable</code> conformance for you. Associated values will also need to conform to <code>Equatable</code>.'
 %}
 
 As you likely know, if you want to compare two instances of a type in Swift, then that type must conform to the [Equatable](http://nshipster.com/swift-comparison-protocols/) protocol. In other words, you must define the `==` operator for the type.

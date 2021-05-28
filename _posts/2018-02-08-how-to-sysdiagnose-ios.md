@@ -19,11 +19,11 @@ When you [file a radar](https://developer.apple.com/bug-reporting/) for a bug on
 
 {% include updated_notice.html
     date='2018-02-09'
-    update_message='Apparently the direct links to the instructions below are not working, even if you are logged-in to your Apple developer account. You can find all sysdiagnose instructions on the <a href="https://developer.apple.com/bug-reporting/profiles-and-logs/?name=sysdiagnose" class="alert-link">official Bug Reporting page</a>.'
+    update_message='Apparently the direct links to the instructions below are not working, even if you are logged-in to your Apple developer account. You can find all sysdiagnose instructions on the <a href="https://developer.apple.com/bug-reporting/profiles-and-logs/?name=sysdiagnose">official Bug Reporting page</a>.'
 %}
 
 {% include updated_notice.html
-    update_message='Many thanks to Michael Prentice for <a href="https://github.com/jessesquires/jessesquires.com/issues/87#issuecomment-450595104" class="alert-link">pointing out</a> that you can also run sysdiagnose on the iOS simulator. To do this, run <code>xcrun simctl diagnose</code> and the output will be placed in <code>/private/tmp/</code>.'
+    update_message='Many thanks to Michael Prentice for <a href="https://github.com/jessesquires/jessesquires.com/issues/87#issuecomment-450595104">pointing out</a> that you can also run sysdiagnose on the iOS simulator. To do this, run <code>xcrun simctl diagnose</code> and the output will be placed in <code>/private/tmp/</code>.'
 %}
 
 {% include post_image.html %}

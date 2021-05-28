@@ -12,19 +12,11 @@ When Craig Federighi arrived at his presentation slide about Objective-C during 
 
 <!--excerpt-->
 
-{% include updated_notice.html
-    update_message='
-    <p class="my-0">
-    	This post has been updated for Xcode6-beta4. All trials were re-run as described below using Xcode6-beta4.
-	</p>
-	<p class="my-0">
-		Major changes to the Swift language include the <a href="https://developer.apple.com/swift/blog/?id=3" class="alert-link">redesign of arrays</a> to have full value semantics and new syntactic sugar &mdash; introduced in Xcode6-beta3.
-		As of the beta4 release, Swift has seen <strong>dramatic</strong> performance improvements. See the updated results below.
-	</p>
-	<p class="my-0">
-		<strong>Note:</strong> because of the new array semantics and syntax, code changes were required for Swift. You can find the previous code on the <code>xcode6-beta1and2</code> branch <a href="https://github.com/jessesquires/swift-sorts/branches" class="alert-link">on GitHub</a>.
-	</p>
-    '
+{% include updated_notice.html update_message='This post has been updated for Xcode6-beta4. All trials were re-run as described below using Xcode6-beta4.
+<br>
+Major changes to the Swift language include the <a href="https://developer.apple.com/swift/blog/?id=3">redesign of arrays</a> to have full value semantics and new syntactic sugar &mdash; introduced in Xcode6-beta3. As of the beta4 release, Swift has seen <strong>dramatic</strong> performance improvements. See the updated results below.
+<br/>
+<b>Note:</b> because of the new array semantics and syntax, code changes were required for Swift. You can find the previous code on the <code>xcode6-beta1and2</code> branch <a href="https://github.com/jessesquires/swift-sorts/branches">on GitHub</a>.'
 %}
 
 > And then Federighi said, let there be Swift; and there was Swift.
@@ -197,17 +189,14 @@ Below are the results of running each program over 10 trials with 10,000 integer
 
 <p class="text-muted text-center table-header-footer">Note that <code>-O</code> is the standard optimization level for Swift and <code>-Ofast</code>, though faster, removes <strong>all</strong> safety features (<em>array bounds-checking, integer overflow checking, etc.</em>) from Swift. In other words, do not ship an entire app compiled with <code>-Ofast</code>. More on that below.</p>
 
-{% include updated_notice.html
-	update_message="
-	<p>We see the following notable changes with Xcode-beta4:</p>
-	<ol>
-		<li>Swift is now slightly worse without optimizations. (see <em>Table 1</em>)</li>
-		<li>With optimizations, Swift performance is incredibly better and much closer to Objective-C. However, Objective-C is still faster. (see <em>Table 2</em>)</li>
-		<li>Swift's insertion sort has completely turned around, and now outperforms selection sort with significant margins!</li>
-		<li>Swift with agressive optimizations is substantially faster than before, and outperforms Objective-C on every sort.</li>
-	</ol>
-	"
-%}
+{% include updated_notice.html update_message="We see the following notable changes with Xcode-beta4:
+<br/>
+<ol>
+	<li>Swift is now slightly worse without optimizations. (see <em>Table 1</em>)</li>
+	<li>With optimizations, Swift performance is incredibly better and much closer to Objective-C. However, Objective-C is still faster. (see <em>Table 2</em>)</li>
+	<li>Swift's insertion sort has completely turned around, and now outperforms selection sort with significant margins!</li>
+	<li>Swift with agressive optimizations is substantially faster than before, and outperforms Objective-C on every sort.</li>
+</ol>"%}
 
 There are a few notable discoveries here:
 
