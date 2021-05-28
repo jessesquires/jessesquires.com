@@ -3,11 +3,6 @@ body p {
   padding: 0.25rem 0rem 0.25rem 0rem;
 }
 
-.branded {
-  font-weight: normal;
-  font-family: $font-brand;
-}
-
 header {
   p {
     font-size: 0.85rem;
@@ -56,11 +51,6 @@ a:link, a:hover, a:active, a:visited {
   }
 }
 
-.img-resume {
-  width: 85px;
-  height: 85px;
-}
-
 blockquote {
   color: $secondary;
   background-color: $light;
@@ -85,6 +75,15 @@ blockquote {
   a:hover {
     color: inherit;
   }
+}
+
+.branded {
+  font-family: $font-brand;
+}
+
+.img-resume {
+  width: 85px;
+  height: 85px;
 }
 
 .post-excerpt p {
