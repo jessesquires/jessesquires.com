@@ -15,8 +15,8 @@ title: Archive
 <ul class="list-unstyled">
 {% for post in each.items %}
 <li>
-<i class="bi bi-caret-right-fill" role="img" aria-label="continue"></i>
-<a href="{{ post.url }}" class="fs-5 text-decoration-none">{{ post.title }}</a>
+    <i class="bi bi-caret-right-fill" role="img" aria-hidden="true"></i>
+    <a href="{{ post.url }}" class="fs-5 text-decoration-none">{{ post.title }}</a>
 </li>
 {% endfor %}
 </ul>
