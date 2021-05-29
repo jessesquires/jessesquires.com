@@ -14,6 +14,20 @@
          </div> <!-- row -->
       </div> <!-- container -->
 
+      <!-- structured data -->
+      <div itemscope>
+         <meta itemprop="canonical" content="{{ page.url | absolute_url }}">
+         <meta itemprop="url" content="{{ page.url | absolute_url }}">
+
+         {% if page.title %}
+         <meta itemprop="name" content="{{ page.title }}">
+         <meta itemprop="description" content="{{ page.excerpt | normalize_whitespace | strip_html | truncatewords: 40 }}">
+         {% else %}
+         <meta itemprop="name" content="{{ site.title }}">
+         <meta itemprop="description" content="{{ site.description }}">
+         {% endif %}
+      </div>
+
       {% include footer.html %}
       {% include foot.html %}
    </body>
