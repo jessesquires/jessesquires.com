@@ -21,7 +21,7 @@
 {% endif %}
 
 {% if include.display_categories or include.display_tags %}
-<p class="text-secondary">
+<div class="text-secondary mt-2 mb-4">
     {% if include.display_categories %}
     <i class="bi bi-bookmark-fill" role="img" aria-label="categories"></i>
         {% assign sorted_categories = post_entry.categories | sort %}
@@ -37,7 +37,7 @@
         <a class="text-reset" href="/blog/tags/{{ tag }}" title="tag: {{ tag }}">{{ tag }}</a>{% if tag != sorted_tags.last %},{% endif %}
         {% endfor %}
     {% endif %}
-</p>
+</div>
 {% endif %}
 
 {% if include.display_excerpt %}
