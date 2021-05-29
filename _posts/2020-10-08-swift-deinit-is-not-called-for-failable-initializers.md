@@ -6,7 +6,7 @@ date: 2020-10-08T12:35:42-07:00
 title: Swift deinit is (sometimes) not called for throwing or failable initializers
 ---
 
-I was [never a fan of failable initializers]({{ site.url }}{% post_url 2014-10-22-swift-failable-initializers %}) in Swift. I do not think this is the correct place to fail and return `nil` *most of the time*. Of course, there are exceptions where a failable initializer is appropriate. But there is another behavior of which to be aware. When constructing a class via a failable initializer, `init?()` &mdash; or a throwing initializer, `init() throws` &mdash; the deinitializer, `deinit`, is **not called** if initialization fails or throws, respectively.
+I was [never a fan of failable initializers]({% post_url 2014-10-22-swift-failable-initializers %}) in Swift. I do not think this is the correct place to fail and return `nil` *most of the time*. Of course, there are exceptions where a failable initializer is appropriate. But there is another behavior of which to be aware. When constructing a class via a failable initializer, `init?()` &mdash; or a throwing initializer, `init() throws` &mdash; the deinitializer, `deinit`, is **not called** if initialization fails or throws, respectively.
 
 <!--excerpt-->
 

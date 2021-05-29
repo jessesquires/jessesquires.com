@@ -93,7 +93,8 @@ image:
 
 <!-- links example -->
 {% raw %}
-link to posts: [link]({{ site.url }}{% post_url 2000-01-01-my-blog-post-title %})
+link to post: [post]({% post_url 2001-01-01-blog-post-title %})
+link to page: [page]({% link page.md %})`
 {% endraw %}
 
 """

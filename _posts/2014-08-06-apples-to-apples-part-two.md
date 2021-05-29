@@ -13,7 +13,7 @@ If at first you don't succeed, try, try again. Practice makes perfect. These pro
 
 This week, Apple has reminded us of the value of this iterative process and its rewards with the fifth beta release of Xcode 6, iOS 8, OS X Yosemite, and most importantly &mdash; *Swift*. This update includes a [number of improvements](http://adcdownload.apple.com//Developer_Tools/xcode_6_beta_5_za4gu6/xcode_6_beta_5_release_notes.pdf), but perhaps the most interesting are those not listed. Swift was rough around the edges during its launch at [WWDC](https://developer.apple.com/wwdc/), but it is **definitely** beginning to live up to its name.
 
-If you missed my first post, [*Apples to Apples*]({{ site.url }}{% post_url 2014-06-25-apples-to-apples %}), you should head over there now to catch up.
+If you missed my first post, [*Apples to Apples*]({% post_url 2014-06-25-apples-to-apples %}), you should head over there now to catch up.
 
 ### Setup
 

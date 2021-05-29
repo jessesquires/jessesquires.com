@@ -11,7 +11,7 @@ image:
     half_width: false
 ---
 
-With [version 11 of Xcode](https://developer.apple.com/documentation/xcode_release_notes/xcode_11_release_notes), the IDE ships with a new feature in the `simctl` tool that can override status bar values for iOS simulators. This allows you to [take better screenshots]({{ site.url }}{% post_url 2014-08-03-status-bars-matter %}) for the App Store without having to worrying about the time, battery level, etc. It is a great improvement, but there are some significant shortcomings. I've written a script to fix at least some of those.
+With [version 11 of Xcode](https://developer.apple.com/documentation/xcode_release_notes/xcode_11_release_notes), the IDE ships with a new feature in the `simctl` tool that can override status bar values for iOS simulators. This allows you to [take better screenshots]({% post_url 2014-08-03-status-bars-matter %}) for the App Store without having to worrying about the time, battery level, etc. It is a great improvement, but there are some significant shortcomings. I've written a script to fix at least some of those.
 
 <!--excerpt-->
 

@@ -58,7 +58,7 @@ Surprisingly, SwiftUI provides an [@AppStorage property wrapper](https://develop
 
 ### The optionals problem
 
-Related to the "default value problem" is the use of optionals. Most developers agree that we should try to [eliminate optionals in Swift as much as possible]({{ site.url }}{% post_url 2015-04-06-swift-failable-initializers-revisited %}). If you provide a default value using `register(defaults:)`, then retrieving it will *always* return *something* (i.e., a non-optional value). This means that in many cases we can be sure a value exists in `UserDefaults`.
+Related to the "default value problem" is the use of optionals. Most developers agree that we should try to [eliminate optionals in Swift as much as possible]({% post_url 2015-04-06-swift-failable-initializers-revisited %}). If you provide a default value using `register(defaults:)`, then retrieving it will *always* return *something* (i.e., a non-optional value). This means that in many cases we can be sure a value exists in `UserDefaults`.
 
 A common problem I see in codebases is a key-value pair for determining if the app is being launched for the first time by a user. Usually this takes the form of an "isFirstAppLaunch" key with a `Bool` value. Often, some manually written wrappers around `UserDefaults` will generically use `object(forKey:)` to get the value, which leaves you with a "truthy" result of either `true`, `false`, or `nil`. Despite the fact that `bool(forKey:)` exists to solve this specific problem, I still see this happen in large codebases.
 

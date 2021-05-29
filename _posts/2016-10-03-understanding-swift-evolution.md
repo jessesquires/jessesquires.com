@@ -7,7 +7,7 @@ title: Understanding Swift Evolution
 subtitle: What can we learn by analyzing the proposals?
 ---
 
-I recently [spoke at the FrenchKit conference]({{ site.url }}{% post_url 2016-09-30-speaking-at-frenchkit %}) about [Swift Evolution](https://github.com/apple/swift-evolution). The [talk](https://speakerdeck.com/jessesquires/140-proposals-in-30-minutes), *140 proposals in 30 minutes*, was originally intended to be an overview of the process and each of the proposals. However, as I was writing the talk, it evolved into something much more interesting. I ended up writing some code to analyze the proposals instead.
+I recently [spoke at the FrenchKit conference]({% post_url 2016-09-30-speaking-at-frenchkit %}) about [Swift Evolution](https://github.com/apple/swift-evolution). The [talk](https://speakerdeck.com/jessesquires/140-proposals-in-30-minutes), *140 proposals in 30 minutes*, was originally intended to be an overview of the process and each of the proposals. However, as I was writing the talk, it evolved into something much more interesting. I ended up writing some code to analyze the proposals instead.
 
 <!--excerpt-->
 

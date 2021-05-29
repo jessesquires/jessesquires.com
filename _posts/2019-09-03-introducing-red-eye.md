@@ -11,7 +11,7 @@ image:
     half_width: false
 ---
 
-I recently released a menu bar Mac app called [Red Eye](https://www.hexedbits.com/redeye/). It's free and you can [download it here](https://www.hexedbits.com/redeye/). It prevents your Mac from going to sleep. Yes, it is a clone of the beloved [Caffeine](http://lightheadsw.com/caffeine/). And yes, it is [the second menu bar app]({{ site.url }}{% post_url 2019-03-26-introducing-lucifer %}) that I've made recently. It is [notarized](https://developer.apple.com/documentation/security/notarizing_your_app_before_distribution) by Apple, so you shouldn't have any problems installing it. I hope you enjoy it!
+I recently released a menu bar Mac app called [Red Eye](https://www.hexedbits.com/redeye/). It's free and you can [download it here](https://www.hexedbits.com/redeye/). It prevents your Mac from going to sleep. Yes, it is a clone of the beloved [Caffeine](http://lightheadsw.com/caffeine/). And yes, it is [the second menu bar app]({% post_url 2019-03-26-introducing-lucifer %}) that I've made recently. It is [notarized](https://developer.apple.com/documentation/security/notarizing_your_app_before_distribution) by Apple, so you shouldn't have any problems installing it. I hope you enjoy it!
 
 <!--excerpt-->
 

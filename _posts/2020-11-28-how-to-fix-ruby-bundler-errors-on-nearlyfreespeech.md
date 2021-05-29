@@ -11,7 +11,7 @@ Part of the joy of having a 'bare bones' DIY host is that sometimes you have to 
 
 <!--excerpt-->
 
-I previously [wrote about my website setup here]({{ site.url }}{% post_url 2017-09-10-building-a-site-with-jekyll-on-nfsn%}). The short version is: I use [Jekyll](https://jekyllrb.com), I host on [NearlyFreeSpeech](https://www.nearlyfreespeech.net), and I deploy with [git](https://git-scm.com) using a [post-receive hook](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks). The source is [mirrored on GitHub](https://github.com/jessesquires/jessesquires.com). Overall, it is very smooth and works great &mdash; except when it breaks.
+I previously [wrote about my website setup here]({% post_url 2017-09-10-building-a-site-with-jekyll-on-nfsn%}). The short version is: I use [Jekyll](https://jekyllrb.com), I host on [NearlyFreeSpeech](https://www.nearlyfreespeech.net), and I deploy with [git](https://git-scm.com) using a [post-receive hook](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks). The source is [mirrored on GitHub](https://github.com/jessesquires/jessesquires.com). Overall, it is very smooth and works great &mdash; except when it breaks.
 
 It took two instances of this recent error for me to fully understand what was happening. I'll explain the error first, then discuss the solution.
 
@@ -36,7 +36,7 @@ Stop.
 
 Prior to this, the last time I had published a post, everything was working. Now, suddenly, "ruby25" could not be found? More curious, if I simply ran `jekyll build`, it succeeded. Only when using Bundler, `bundle exec jekyll build`, was it producing the error.
 
-I [posted on the member forums](https://members.nearlyfreespeech.net/forums/viewtopic.php?t=10725), but didn't fully grasp the answer provided. With some uncertainty, I decided to just redo/reconfigure my RubyGems setup (again, [described here]({{ site.url }}{% post_url 2017-09-10-building-a-site-with-jekyll-on-nfsn%})). After that, everything started working again, so I didn't give it much thought other than "lol computers". But then the error happened again a few days ago, though this time _slightly_ differently:
+I [posted on the member forums](https://members.nearlyfreespeech.net/forums/viewtopic.php?t=10725), but didn't fully grasp the answer provided. With some uncertainty, I decided to just redo/reconfigure my RubyGems setup (again, [described here]({% post_url 2017-09-10-building-a-site-with-jekyll-on-nfsn%})). After that, everything started working again, so I didn't give it much thought other than "lol computers". But then the error happened again a few days ago, though this time _slightly_ differently:
 
 ```
 env: ruby26: No such file or directory

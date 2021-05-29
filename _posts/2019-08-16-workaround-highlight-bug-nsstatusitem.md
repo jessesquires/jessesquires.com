@@ -6,7 +6,7 @@ date: 2019-08-16T08:00:00-07:00
 title: Workaround for highlight bug in NSStatusItem
 ---
 
-Continuing from my [previous post]({{ site.url }}{% post_url 2019-08-15-implementing-right-click-for-nsbutton %}), there is a bug in `NSStatusItem` that I forgot to mention. Thanks to [Michael Tsai](https://mjtsai.com/blog) ([tweet](https://twitter.com/mjtsai/status/1162075417601294336)) for pointing out this workaround.
+Continuing from my [previous post]({% post_url 2019-08-15-implementing-right-click-for-nsbutton %}), there is a bug in `NSStatusItem` that I forgot to mention. Thanks to [Michael Tsai](https://mjtsai.com/blog) ([tweet](https://twitter.com/mjtsai/status/1162075417601294336)) for pointing out this workaround.
 
 <!--excerpt-->
 

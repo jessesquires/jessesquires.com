@@ -10,13 +10,13 @@ image:
     half_width: true
 ---
 
-This is a brief follow-up to [the post I wrote about Time Machine failing]({{ site.url }}{% post_url 2020-01-10-time-machine-failing-on-macos-catalina %}) on macOS Catalina.
+This is a brief follow-up to [the post I wrote about Time Machine failing]({% post_url 2020-01-10-time-machine-failing-on-macos-catalina %}) on macOS Catalina.
 
 <!--excerpt-->
 
 {% include post_image.html %}
 
-I recently [upgraded my 6-year-old MacBook Pro]({{ site.url }}{% post_url 2020-07-08-best-touch-bar-configuration-for-people-who-hate-the-touch-bar %}), and one of the things I was most excited about was to see how many odd, random bugs and quirks would magically fix themselves by having the latest hardware, a clean install of macOS, and a clean install of all of my apps. I did not migrate or restore from Time Machine to specifically have a fresh start.
+I recently [upgraded my 6-year-old MacBook Pro]({% post_url 2020-07-08-best-touch-bar-configuration-for-people-who-hate-the-touch-bar %}), and one of the things I was most excited about was to see how many odd, random bugs and quirks would magically fix themselves by having the latest hardware, a clean install of macOS, and a clean install of all of my apps. I did not migrate or restore from Time Machine to specifically have a fresh start.
 
 As expected, a lot of random issues have disappeared &mdash; Bluetooth flakiness, random UI glitches, etc. This new machine has been running smoothly. And yes, even Time Machine has been automatically backing up without issues. No more "error 45".
 

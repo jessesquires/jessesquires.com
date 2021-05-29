@@ -48,7 +48,7 @@ layout: null
     "items": [
         {% for post in site.posts %}
         {
-            "id": "{{ post.url | absolute_url | sha1 }}",
+            "id": "{{ post.url | absolute_url }}",
             "url": "{{ post.url | absolute_url }}",
             "title": {{ post.title | jsonify }},
             "date_published": "{{ post.date | date_to_xmlschema }}",

@@ -6,7 +6,7 @@ date: 2021-04-07T10:47:19-07:00
 title: Resources for learning SwiftUI
 ---
 
-A few months ago, I shared my notes and [resources for learning about compilers and LLVM]({{ site.url }}{% post_url 2020-12-28-resources-for-learning-about-compilers-and-llvm %}). It turned out to be pretty popular and folks seemed to find it useful. So I decided to do it again, but this time for SwiftUI. However, unlike learning about compilers and LLVM, I am not declaring bankruptcy with learning SwiftUI. While I have still not written a single line of SwiftUI code, I know I eventually will.
+A few months ago, I shared my notes and [resources for learning about compilers and LLVM]({% post_url 2020-12-28-resources-for-learning-about-compilers-and-llvm %}). It turned out to be pretty popular and folks seemed to find it useful. So I decided to do it again, but this time for SwiftUI. However, unlike learning about compilers and LLVM, I am not declaring bankruptcy with learning SwiftUI. While I have still not written a single line of SwiftUI code, I know I eventually will.
 
 <!--excerpt-->
 
@@ -83,7 +83,7 @@ Apps built fully (or mostly) with SwiftUI.
 ##### [Random Color for SwiftUI](https://gist.github.com/steipete/579edd8bd8b25dc8a89b546b54d9222f)
 
 > Setting a random background color is a great way to detect an accidental SwiftUI loop. The tricky part is understanding what triggers the loop tho.
-> 
+>
 > — [@steipete, Peter Steinberger](https://mobile.twitter.com/steipete/status/1379483193708052480)
 
 ### Behind the scenes: How SwiftUI works
@@ -151,10 +151,10 @@ Apps built fully (or mostly) with SwiftUI.
 ##### [A guide to SwiftUI’s state management system](https://www.swiftbysundell.com/articles/swiftui-state-management-guide/)
 
 > What separates SwiftUI from Apple’s previous UI frameworks isn’t just how views and other UI components are defined, but also how view-level state is managed throughout an app that uses it.
-> 
+>
 >  [...]
-> 
-> This week, let’s take a closer look at each of those property wrappers, how they relate to each other, and how they make up different parts of SwiftUI’s overall state management system. 
+>
+> This week, let’s take a closer look at each of those property wrappers, how they relate to each other, and how they make up different parts of SwiftUI’s overall state management system.
 
 ##### [Mastering toolbars in SwiftUI](https://swiftwithmajid.com/2020/07/15/mastering-toolbars-in-swiftui/)
 
@@ -166,7 +166,7 @@ Apps built fully (or mostly) with SwiftUI.
 
 ##### [Generating automatic placeholders for SwiftUI views](https://www.swiftbysundell.com/tips/swiftui-automatic-placeholders/)
 
-> SwiftUI now ships with a new, built-in modifier that makes it really easy to automatically generate a placeholder for any view. 
+> SwiftUI now ships with a new, built-in modifier that makes it really easy to automatically generate a placeholder for any view.
 
 ##### [Creating custom `.redacted` effects](https://fivestars.blog/code/redacted-custom-effects.html)
 

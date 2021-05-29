@@ -6,7 +6,7 @@ date: 2020-12-28T13:39:28-08:00
 title: The different types of self in Swift
 ---
 
-As a brief follow-up to [my previous post]({{ site.url }}{% post_url 2020-12-22-swift-self-executing-anonymous-closures %}), I thought it would be helpful to enumerate the various types of "self" in Swift. It is an overloaded term. As we've seen, it can be quite confusing.
+As a brief follow-up to [my previous post]({% post_url 2020-12-22-swift-self-executing-anonymous-closures %}), I thought it would be helpful to enumerate the various types of "self" in Swift. It is an overloaded term. As we've seen, it can be quite confusing.
 
 <!--excerpt-->
 
@@ -68,7 +68,7 @@ CGFloat.one
 
 #### `- [NSObject self]`
 
-Ok, this one does not really have anything to do with Swift &mdash; except when it does. This was the culprit of the bug described in [the previous post]({{ site.url }}{% post_url 2020-12-22-swift-self-executing-anonymous-closures %}). This is the [instance method](https://developer.apple.com/documentation/objectivec/1418956-nsobject/1418954-self?language=objc) `self` on `NSObject`, which is part of the Objective-C runtime. It exists in Swift because of the interoperability between the two languages. However, as we have seen, this is nothing but a nuisance in Swift when interfacing with subclasses of `NSObject`.
+Ok, this one does not really have anything to do with Swift &mdash; except when it does. This was the culprit of the bug described in [the previous post]({% post_url 2020-12-22-swift-self-executing-anonymous-closures %}). This is the [instance method](https://developer.apple.com/documentation/objectivec/1418956-nsobject/1418954-self?language=objc) `self` on `NSObject`, which is part of the Objective-C runtime. It exists in Swift because of the interoperability between the two languages. However, as we have seen, this is nothing but a nuisance in Swift when interfacing with subclasses of `NSObject`.
 
 [Objective-C](https://developer.apple.com/documentation/objectivec/1418956-nsobject/1418954-self?language=objc) docs:
 

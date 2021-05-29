@@ -7,7 +7,7 @@ title: Don't forget the keyboards
 subtitle: An essay
 ---
 
-You know, the thing that is actually most disheartening, disappointing, frustrating, and plainly sad about [Apple's surprise announcement today]({{ site.url }}{% post_url 2020-09-15-why-is-apple-acting-like-an-asshole %}) is that we will not receive any sort of response to our collective dismay. There will be no public acknowledgment, much less an apology (not that it would help much). Only silence.
+You know, the thing that is actually most disheartening, disappointing, frustrating, and plainly sad about [Apple's surprise announcement today]({% post_url 2020-09-15-why-is-apple-acting-like-an-asshole %}) is that we will not receive any sort of response to our collective dismay. There will be no public acknowledgment, much less an apology (not that it would help much). Only silence.
 
 <!--excerpt-->
 

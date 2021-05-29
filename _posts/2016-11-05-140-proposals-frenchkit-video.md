@@ -13,13 +13,13 @@ image:
     half_width: false
 ---
 
-As you may know, I [spoke at FrenchKit]({{ site.url }}{% post_url 2016-09-30-speaking-at-frenchkit %}) a couple of months ago. The organizers have been working hard to get all of [the videos](http://frenchkit.fr/#videos) edited and uploaded, and my talk is [now available here](https://www.youtube.com/watch?v=0sYQAtoK3VQ). 😄
+As you may know, I [spoke at FrenchKit]({% post_url 2016-09-30-speaking-at-frenchkit %}) a couple of months ago. The organizers have been working hard to get all of [the videos](http://frenchkit.fr/#videos) edited and uploaded, and my talk is [now available here](https://www.youtube.com/watch?v=0sYQAtoK3VQ). 😄
 
 <!--excerpt-->
 
 ### Slides and code
 
-As usual, you can find my slides [on Speaker Deck](https://speakerdeck.com/jessesquires/140-proposals-in-30-minutes) and the code [on GitHub](https://github.com/jessesquires/swift-proposal-analyzer). A few weeks ago I also wrote a post, [*Understanding Swift Evolution*]({{ site.url }}{% post_url 2016-10-03-understanding-swift-evolution %}), that explains the project and results in more detail.
+As usual, you can find my slides [on Speaker Deck](https://speakerdeck.com/jessesquires/140-proposals-in-30-minutes) and the code [on GitHub](https://github.com/jessesquires/swift-proposal-analyzer). A few weeks ago I also wrote a post, [*Understanding Swift Evolution*]({% post_url 2016-10-03-understanding-swift-evolution %}), that explains the project and results in more detail.
 
 ### Abstract
 
