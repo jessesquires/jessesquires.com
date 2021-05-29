@@ -54,6 +54,8 @@ title: Writing by tag
 
 <div>
 {% for post in post_list %}
+    <article>
     {% include post_entry.html post_entry=post display_excerpt=true display_categories=false display_tags=false %}
+    </article>
 {% endfor %}
 </div>

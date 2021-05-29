@@ -1,54 +1,52 @@
 {% assign post_entry = include.post_entry %}
 
-<article>
-    <h1 class="fw-light text-break">
-        <a href="{{ post_entry.url }}">{{ post_entry.title }}</a>
-    </h1>
+<h1 class="fw-light text-break">
+    <a href="{{ post_entry.url }}">{{ post_entry.title }}</a>
+</h1>
 
-    {% assign date_display = post_entry.date | date_to_long_string %}
-    {% assign date_hover = post_entry.date | date: "%d %b %Y %r %Z" %}
+{% assign date_display = post_entry.date | date_to_long_string %}
+{% assign date_hover = post_entry.date | date: "%d %b %Y %r %Z" %}
 
-    <h5 class="text-dark {% if post_entry.subtitle %} d-inline-block {% endif %}">
-        {% if post_entry.subtitle %} {{ post_entry.subtitle }} {% endif %}
-        <small class="{% if post_entry.subtitle %} text-secondary {% endif %}" title="{{ date_hover }}">{{ date_display }}</small>
-    </h5>
+<h5 class="text-dark {% if post_entry.subtitle %} d-inline-block {% endif %}">
+    {% if post_entry.subtitle %} {{ post_entry.subtitle }} {% endif %}
+    <small class="{% if post_entry.subtitle %} text-secondary {% endif %}" title="{{ date_hover }}">{{ date_display }}</small>
+</h5>
 
-    {% if post_entry.date-updated %}
-    <div class="d-block">
-        <span class="badge bg-light text-secondary border mb-2" title="{{ post_entry.date-updated | date: '%d %b %Y %r %Z' }}">
-            Updated: {{ post_entry.date-updated | date_to_long_string }}
-        </span>
-    </div>
+{% if post_entry.date-updated %}
+<div class="d-block">
+    <span class="badge bg-light text-secondary border mb-2" title="{{ post_entry.date-updated | date: '%d %b %Y %r %Z' }}">
+        Updated: {{ post_entry.date-updated | date_to_long_string }}
+    </span>
+</div>
+{% endif %}
+
+{% if include.display_categories or include.display_tags %}
+<p class="text-secondary">
+    {% if include.display_categories %}
+    <i class="bi bi-bookmark-fill" role="img" aria-label="categories"></i>
+        {% assign sorted_categories = post_entry.categories | sort %}
+        {% for category in sorted_categories %}
+        <a class="text-reset" href="/blog/{{ category }}" title="category: {{ category }}">{{ category }}</a>{% if category != sorted_categories.last %},{% endif %}
+        {% endfor %}
     {% endif %}
+    &nbsp;&nbsp;
+    {% if include.display_tags %}
+    <i class="bi bi-tags-fill" role="img" aria-label="tags"></i>
+        {% assign sorted_tags = post_entry.tags | sort %}
+        {% for tag in sorted_tags %}
+        <a class="text-reset" href="/blog/tags/{{ tag }}" title="tag: {{ tag }}">{{ tag }}</a>{% if tag != sorted_tags.last %},{% endif %}
+        {% endfor %}
+    {% endif %}
+</p>
+{% endif %}
 
-    {% if include.display_categories or include.display_tags %}
-    <p class="text-secondary">
-        {% if include.display_categories %}
-        <i class="bi bi-bookmark-fill" role="img" aria-label="categories"></i>
-            {% assign sorted_categories = post_entry.categories | sort %}
-            {% for category in sorted_categories %}
-            <a class="text-reset" href="/blog/{{ category }}" title="category: {{ category }}">{{ category }}</a>{% if category != sorted_categories.last %},{% endif %}
-            {% endfor %}
-        {% endif %}
-        &nbsp;&nbsp;
-        {% if include.display_tags %}
-        <i class="bi bi-tags-fill" role="img" aria-label="tags"></i>
-            {% assign sorted_tags = post_entry.tags | sort %}
-            {% for tag in sorted_tags %}
-            <a class="text-reset" href="/blog/tags/{{ tag }}" title="tag: {{ tag }}">{{ tag }}</a>{% if tag != sorted_tags.last %},{% endif %}
-            {% endfor %}
-        {% endif %}
+{% if include.display_excerpt %}
+<div class="post-excerpt mb-4">
+    {{ post_entry.excerpt }}
+    <p>
+        <a href="{{ post_entry.url }}" class="text-secondary text-decoration-none">
+            Continue&hellip; <i class="bi bi-chevron-double-right" role="img" aria-label="continue"></i>
+        </a>
     </p>
-    {% endif %}
-
-    {% if include.display_excerpt %}
-    <div class="post-excerpt mb-4">
-        {{ post_entry.excerpt }}
-        <p>
-            <a href="{{ post_entry.url }}" class="text-secondary text-decoration-none">
-                Continue&hellip; <i class="bi bi-chevron-double-right" role="img" aria-label="continue"></i>
-            </a>
-        </p>
-    </div>
-    {% endif %}
-</article>
+</div>
+{% endif %}
