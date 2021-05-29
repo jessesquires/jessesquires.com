@@ -50,7 +50,9 @@ layout: null
         <summary type="html">{{ post.excerpt | escape }}</summary>
         {% endif %}
 
-        <content type="html">{{ post.content | escape }}</content>
+        <content type="html" xml:base="{{ site.url }}" xml:lang="en">
+            {{ post.content | escape }}
+        </content>
     </entry>
     {% endfor %}
 </feed>
