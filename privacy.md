@@ -7,4 +7,4 @@ This website implements simple, privacy-aware analytics via [GoatCounter](https:
 
 In the spirit of openness, all of the analytics data is open source, too. You can view it yourself at [stats.jessesquires.com]({{ site.stats_url }}). This data is exactly what I see. The only limitation of this public view is that it updates once per hour instead of in real time.
 
-If you would like to learn more, you can [read my blog post]({{ site.url }}{% post_url 2020-05-08-simple-private-opensource-analytics-with-goatcounter %}).
+If you would like to learn more, you can [read my blog post]({% post_url 2020-05-08-simple-private-opensource-analytics-with-goatcounter %}).
