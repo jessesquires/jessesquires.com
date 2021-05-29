@@ -7,7 +7,7 @@ title: Supporting JSON feed
 subtitle: Now available
 ---
 
-A couple of weeks ago I finally got around to adding support for Brent Simmons' and Manton Reece's [JSON Feed](https://jsonfeed.org/version/1) for this blog. You can subscribe to the feed [here]({{ site.url }}{{site.feeds.json }}). It was simple and fun to implement.
+A couple of weeks ago I finally got around to adding support for Brent Simmons' and Manton Reece's [JSON Feed](https://jsonfeed.org/version/1) for this blog. You can subscribe to the feed [here]({{ site.feeds.json | absolute_url }}). It was simple and fun to implement.
 
 <!--excerpt-->
 
@@ -35,21 +35,21 @@ layout: null
     "version": "https://jsonfeed.org/version/1",
     "title": "{{ site.title }}",
     "home_page_url": "{{ site.url }}",
-    "feed_url": "{{ site.url }}/feed.json",
+    "feed_url": "{{ site.feeds.json | absolute_url }}",
     "description": "{{ site.description }}",
-    "icon": "{{ site.url }}{{ site.logo }}",
-    "favicon": "{{ site.url }}/favicon.ico",
+    "icon": "{{ site.logo | absolute_url }}",
+    "favicon": "{{ site.favicon | absolute_url }}",
     "expired": false,
     "author": {
         "name": "{{ site.author.name }}",
         "url": "{{ site.url }}",
-        "avatar": "{{ site.url }}{{ site.author.avatar }}"
+        "avatar": "{{ site.author.avatar | absolute_url }}"
     },
     "items": [
         {% for post in site.posts %}
         {
             "id": "{{ post.url | absolute_url | sha1 }}",
-            "url": "{{ site.url }}{{ post.url }}",
+            "url": "{{ post.url | absolute_url }}",
             "title": {{ post.title | jsonify }},
             "date_published": "{{ post.date | date_to_xmlschema }}",
             {% if post.date-updated %}
@@ -60,7 +60,7 @@ layout: null
             "author": {
                 "name": "{{ site.author.name }}",
                 "url": "{{ site.url }}",
-                "avatar": "{{ site.url }}{{ site.author.avatar }}"
+                "avatar": "{{ site.author.avatar | absolute_url }}"
             },
             "summary": {{ post.excerpt | jsonify }},
             "content_html": {{ post.content | jsonify }}
@@ -77,4 +77,4 @@ Then, you'll need to add a `<link />` tag in the `<head>` section of your site:
 <link type="application/json" rel="alternate" href="/feed.json" title="YOUR SITE TITLE" />
 ```
 
-That's all. When you run `jekyll build`, your [full feed]({{ site.url }}{{site.feeds.json }}) will be generated. Now, go add JSON Feed support to your blog, too.
+That's all. When you run `jekyll build`, your [full feed]({{ site.feeds.json | absolute_url }}) will be generated. Now, go add JSON Feed support to your blog, too.

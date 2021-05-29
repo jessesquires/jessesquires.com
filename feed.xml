@@ -4,7 +4,7 @@ layout: null
 
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <link href="{{ site.url }}{{ site.feeds.rss }}" rel="self" type="application/atom+xml"/>
+    <link href="{{ site.feeds.rss | absolute_url }}" rel="self" type="application/atom+xml"/>
 
     <title>{{ site.title }}</title>
     <link href="{{ site.url }}/" />
@@ -20,7 +20,7 @@ layout: null
         <uri>{{ site.url }}/</uri>
     </author>
 
-    <icon>{{ site.url }}{{ site.logo }}</icon>
+    <icon>{{ site.logo | absolute_url }}</icon>
 
     <category term="programming"/>
     <category term="ios"/>
@@ -31,8 +31,8 @@ layout: null
 
     {% for post in site.posts %}
     <entry>
-        <link href="{{ site.url }}{{ post.url }}" />
-        <id>{{ site.url }}{{ post.url }}</id>
+        <link href="{{ post.url | absolute_url }}" />
+        <id>{{ post.url | absolute_url }}</id>
 
         <title>{{ post.title }}</title>
 

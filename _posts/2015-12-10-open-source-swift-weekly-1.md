@@ -41,4 +41,4 @@ It looks many developers in the community enjoyed my [previous post]({{ site.url
 
 - Programming is little more than a ["nights and weekends" hobby](https://twitter.com/clattner_llvm/status/674254974629502976) for Chris Lattner.
 
-**That's it for this week!** [Subscribe]({{ site.url }}{{ site.feeds.rss }}) or [follow me]({{ site.data.social.twitter }}) to stay up-to-date!
+**That's it for this week!** [Subscribe]({{ site.feeds.rss | absolute_url }}) or [follow me]({{ site.data.social.twitter }}) to stay up-to-date!

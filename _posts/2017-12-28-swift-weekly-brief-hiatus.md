@@ -42,7 +42,7 @@ First and foremost, I am more than happy to help onboard any newcomers &mdash; w
 
 The newsletter is definitely a valuable resource for the community, and if you want to help it live on, it will have a huge impact. There are thousands of followers and subscribers.
 
-If you are interested in taking over, [please get in touch]({{ site.url }}/contact)!
+If you are interested in taking over, [please get in touch]({{ site.url }}{% link contact.md %})!
 
 ### Impact
 
@@ -66,4 +66,4 @@ I'd like to sincerely thank each of you for reading the newsletter each week, as
 - Garric Nahapetian, [@garricn](https://twitter.com/garricn)
 - Roman Volkov, [@volkovre](https://twitter.com/volkovre)
 
-Again, if you are interested in taking over, [let me know]({{ site.url }}/contact).
+Again, if you are interested in taking over, [let me know]({{ site.url }}{% link contact.md %}).

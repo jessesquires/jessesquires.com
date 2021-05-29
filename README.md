@@ -67,9 +67,10 @@ $ bundle exec jekyll serve # browse to http://localhost:4000
 
 ### Handling Links
 
-- Posts: `[link]({{ site.url }}{% post_url 2000-01-01-my-blog-post-title %})`
-- For site pages, use the [`{% link %}` tag](https://jekyllrb.com/docs/liquid/tags/#links). Example: `[Contact me]({% link contact.md %})`
-- Images: `{{ site.url }}{{ site.img_url}}/path-to/image.png`
+- For posts, use the [`{% post_url %}` tag](https://jekyllrb.com/docs/liquid/tags/#linking-to-posts)
+    - Example: `[link]({{ site.url }}{% post_url 2000-01-01-my-blog-post-title %})`
+- For site pages, use the [`{% link %}` tag](https://jekyllrb.com/docs/liquid/tags/#links).
+    - Example: `[Contact me]({% link contact.md %})`
 
 ### Verifying DNS setup
 

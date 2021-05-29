@@ -17,8 +17,8 @@
         {% endif %}
     </title>
 
-    <meta itemprop="canonical" href="{{ site.url }}{{ page.url }}" />
-    <meta itemprop="url" content="{{ site.url }}{{ page.url }}" />
+    <meta itemprop="canonical" href="{{ page.url | absolute_url }}" />
+    <meta itemprop="url" content="{{ page.url | absolute_url }}" />
     <meta itemprop="about" content="{{ site.description }}" />
 
     {% if page.title %}
@@ -31,14 +31,14 @@
 
     <!-- Open Graph -->
     <meta property="og:site_name" content="{{ site.title }}" />
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta property="og:url" content="{{ page.url | absolute_url }}" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
 
     {% if page.image %}
-    <meta property="og:image" content="{{ site.url }}{{ site.img_url}}/{{ page.image.file }}" />
+    <meta property="og:image" content="{{ site.img_url | append: page.image.file | absolute_url }}" />
     {% else %}
-    <meta property="og:image" content="{{ site.url }}{{ site.logo }}" />
+    <meta property="og:image" content="{{ site.logo | absolute_url }}" />
     {% endif %}
 
     {% if page.title %}
@@ -55,9 +55,9 @@
     <meta name="twitter:creator" content="@{{ site.author.twitter }}" />
 
     {% if page.image %}
-    <meta name="twitter:image" content="{{ site.url }}{{ site.img_url}}/{{ page.image.file }}" />
+    <meta name="twitter:image" content="{{ site.img_url | append: page.image.file | absolute_url }}" />
     {% else %}
-    <meta name="twitter:image" content="{{ site.url }}{{ site.logo }}" />
+    <meta name="twitter:image" content="{{ site.logo | absolute_url }}" />
     {% endif %}
 
     {% if page.title %}
@@ -74,6 +74,6 @@
 
     {% include favicons.html %}
 
-    <link type="application/atom+xml" rel="alternate" href="{{ site.url }}{{ site.feeds.rss }}" title="{{ site.title }}" />
-    <link type="application/feed+json" rel="alternate" href="{{ site.url }}{{ site.feeds.json }}" title="{{ site.title }}" />
+    <link type="application/atom+xml" rel="alternate" href="{{ site.feeds.rss | absolute_url }}" title="{{ site.title }}" />
+    <link type="application/feed+json" rel="alternate" href="{{ site.feeds.json | absolute_url }}" title="{{ site.title }}" />
 </head>

@@ -41,7 +41,7 @@ keep_files:
 
 # Site
 permalink: /blog/:year/:month/:day/:title/
-img_url: /img
+img_url: /img/
 excerpt_separator: <!--excerpt-->
 sass:
   style: compressed
@@ -49,8 +49,9 @@ sass:
 # Metadata
 title: 'Jesse Squires'
 description: 'Turing complete with a stack of 0xdeadbeef'
-url: https://www.jessesquires.com
+url: 'https://www.jessesquires.com'
 logo: /ico/logo.png
+favicon: /favicon.ico
 timezone: America/Los_Angeles
 
 # Author

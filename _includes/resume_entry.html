@@ -3,7 +3,7 @@
 <div class="d-flex mt-2 mb-4 py-1">
     <div class="flex-shrink-0">
         {% if entry.img %}
-        <img src="{{ site.img_url}}/resume/{{ entry.img.name }}" class="me-3 img-thumbnail img-resume" title="{{ entry.img.title }}" alt="{{ entry.img.title }}">
+        <img src="{{ site.img_url | append: 'resume/' | append: entry.img.name }}" class="me-3 img-thumbnail img-resume" title="{{ entry.img.title }}" alt="{{ entry.img.title }}">
         {% endif %}
     </div>
     <div class="flex-grow-1 ms-1">

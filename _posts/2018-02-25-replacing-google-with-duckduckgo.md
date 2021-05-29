@@ -14,7 +14,7 @@ image:
     half_width: false
 ---
 
-I'm not interested in being an advertising product for Google to exploit. I'm also not interested in the company's [unsavory practices](https://daringfireball.net/linked/2017/09/01/hill-google-forbes), in general. I've been using [DuckDuckGo](https://duckduckgo.com) for over a year now, and I'm incredibly happy with it as a replacement for Google Search &mdash; not only for personal usage, but also for implementing a [custom search component]({{ site.url }}/search) for this site.
+I'm not interested in being an advertising product for Google to exploit. I'm also not interested in the company's [unsavory practices](https://daringfireball.net/linked/2017/09/01/hill-google-forbes), in general. I've been using [DuckDuckGo](https://duckduckgo.com) for over a year now, and I'm incredibly happy with it as a replacement for Google Search &mdash; not only for personal usage, but also for implementing a [custom search component]({{ site.url }}{% link search.md %}) for this site.
 
 <!--excerpt-->
 
@@ -72,7 +72,7 @@ Creating a [custom DuckDuckGo search](https://duckduckgo.com/search_box) is much
 </form>
 ```
 
-This adds a basic form with a few [custom URL parameters](https://duckduckgo.com/params) and custom styling using [bootstrap](https://getbootstrap.com). You can add this to your own site by replacing `jessesquires.com` on line 5 with your own domain. You can see and use my custom search [here]({{ site.url }}/search).
+This adds a basic form with a few [custom URL parameters](https://duckduckgo.com/params) and custom styling using [bootstrap](https://getbootstrap.com). You can add this to your own site by replacing `jessesquires.com` on line 5 with your own domain. You can see and use my custom search [here]({{ site.url }}{% link search.md %}).
 
 You can find [the diff on GitHub ](https://github.com/jessesquires/jessesquires.com/commit/d2126bacca43e5f9fb77f980c67fe178d6933673#diff-c9db0e13a328be0eaa311c5b24ad331c) for deleting Google custom search and replacing it with DuckDuckGo. It's much more elegant, lightweight, and just looks better.
 
