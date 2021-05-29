@@ -56,20 +56,20 @@ $ make install
 ### Building the site
 
 ```bash
-$ make build
+$ make
 ```
 
 ### Previewing the site locally
 
 ```bash
-$ bundle exec jekyll serve # browse to http://localhost:4000
+$ make preview
 ```
 
 ### Handling Links
 
 - For posts, use the [`{% post_url %}` tag](https://jekyllrb.com/docs/liquid/tags/#linking-to-posts)
     - Example: `[link]({% post_url 2000-01-01-my-blog-post-title %})`
-- For site pages, use the [`{% link %}` tag](https://jekyllrb.com/docs/liquid/tags/#links).
+- For site pages, use the [`{% link %}` tag](https://jekyllrb.com/docs/liquid/tags/#links)
     - Example: `[Contact me]({% link contact.md %})`
 
 ### Verifying DNS setup
@@ -99,4 +99,4 @@ $ mkdir bin               # if needed
 
 All code is licensed under an [MIT License](https://opensource.org/licenses/MIT).
 
-The *Ubuntu Mono* font is licensed under the [Ubuntu Font License](http://font.ubuntu.com/ufl/).
+The *Ubuntu Mono* font is licensed under the [Ubuntu Font License](https://ubuntu.com/legal/font-licence).

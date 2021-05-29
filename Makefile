@@ -29,6 +29,10 @@ watch:
 incr:
 	bundle exec jekyll build --watch --incremental
 
+.PHONY: preview
+preview:
+	bundle exec jekyll serve
+
 .PHONY: pub
 pub:
 	./scripts/publish.zsh
