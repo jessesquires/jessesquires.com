@@ -26,7 +26,7 @@
     <i class="bi bi-bookmark-fill" role="img" aria-label="categories"></i>
         {% assign sorted_categories = post_entry.categories | sort %}
         {% for category in sorted_categories %}
-        <a class="text-reset" href="{{ site.categories_url }}{{ category }}" title="category: {{ category }}">{{ category }}</a>{% if category != sorted_categories.last %},{% endif %}
+        <a class="text-reset" href="{{ category | category_url }}" title="category: {{ category }}">{{ category }}</a>{% if category != sorted_categories.last %},{% endif %}
         {% endfor %}
     {% endif %}
     &nbsp;&nbsp;
@@ -34,7 +34,7 @@
     <i class="bi bi-tags-fill" role="img" aria-label="tags"></i>
         {% assign sorted_tags = post_entry.tags | sort %}
         {% for tag in sorted_tags %}
-        <a class="text-reset" href="{{ site.tags_url }}{{ tag }}" title="tag: {{ tag }}">{{ tag }}</a>{% if tag != sorted_tags.last %},{% endif %}
+        <a class="text-reset" href="{{ tag | tag_url }}" title="tag: {{ tag }}">{{ tag }}</a>{% if tag != sorted_tags.last %},{% endif %}
         {% endfor %}
     {% endif %}
 </div>

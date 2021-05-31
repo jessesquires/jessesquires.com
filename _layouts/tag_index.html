@@ -36,7 +36,7 @@ title: Writing by tag
         {% assign sorted_tags = site.tags | sort %}
 
         {% for tag in sorted_tags %}
-            {% assign url = site.tags_url | append: tag[0] | append: '/' %}
+            {% capture url %}{{ tag[0] | tag_url }}{% endcapture %}
             <li class="nav-item">
                 <a class="nav-link px-2 py-1 {% if page.url == url %}active{% endif %}" href="{{ url }}">
                     <i class="bi bi-tag-fill" role="img" aria-label="{{ tag[0] }}"></i> {{ tag[0] }}
