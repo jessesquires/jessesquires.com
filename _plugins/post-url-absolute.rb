@@ -1,4 +1,5 @@
-# Custom tag to render absolute urls to posts
+# Custom tag to render absolute urls to posts.
+# Similar to `{% post_url %}` but produces absolute urls.
 #
 # See:
 #    - https://jekyllrb.com/docs/plugins/tags/
@@ -6,7 +7,7 @@
 #    - https://github.com/jekyll/jekyll/blob/76517175e700d80706c9139989053f1c53d9b956/lib/jekyll/filters/url_filters.rb
 
 module Jekyll
-  class PostAbsoluteUrl < Jekyll::Tags::PostUrl
+  class PostUrlAbsolute < Jekyll::Tags::PostUrl
 
     def initialize(tag_name, text, tokens)
       super
@@ -19,4 +20,4 @@ module Jekyll
   end
 end
 
-Liquid::Template.register_tag('post_absolute_url', Jekyll::PostAbsoluteUrl)
+Liquid::Template.register_tag('post_url_absolute', Jekyll::PostUrlAbsolute)
