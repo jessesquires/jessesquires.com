@@ -3,7 +3,7 @@ layout: standalone
 title: Archive
 ---
 
-{% assign groupedPosts = site.posts | group_by_exp:"post", "post.date | date: '%Y %B'"  %}
+{% assign groupedPosts = site.posts | group_by_exp: "post", "post.date | date: '%Y %B'" %}
 {% for each in groupedPosts %}
 
 <div class="p-2 mt-4 mb-2 bg-light border-top">
