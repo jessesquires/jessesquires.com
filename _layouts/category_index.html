@@ -14,19 +14,29 @@ I also write personal essays and notes on what I'm currently reading.
 <div class="p-2 my-4 bg-light border-top border-bottom">
 <ul class="nav nav-pills">
     <li class="nav-item">
-        <a class="nav-link px-2 mx-1 py-1 {% if page.url == '/blog/' %}active{% endif %}" href="{% link blog.md %}">
+        <a class="nav-link px-2 mx-1 py-1 {% if page.url == site.blog_url %}active{% endif %}" href="{% link blog.md %}">
             <i class="bi bi-asterisk" role="img" aria-label="all"></i> all
         </a>
     </li>
 
-    {% for category in site.data.categories %}
-    {% assign url = '/blog/' | append: category.name | append: '/' %}
+    {% for category in site.categories %}
+    {% assign category_name = category[0] %}
+    {% assign category_icon = site.data.categoryIcons[category_name] %}
+    {% assign category_title = category_name | replace: '-', ' ' %}
+    {% assign category_url = site.categories_url | append: category_name | append: '/' %}
     <li class="nav-item">
-        <a class="nav-link px-2 mx-1 py-1 {% if page.url == url %}active{% endif %}" href="{{ url }}">
-            <i class="bi {{ category.icon }}" role="img" aria-label="{{ category.title }}"></i> {{ category.title }}
+        <a class="nav-link px-2 mx-1 py-1 {% if page.url == category_url %}active{% endif %}" href="{{ category_url }}">
+            <i class="bi {{ category_icon }}" role="img" aria-label="{{ category_title }}"></i> {{ category_title }}
         </a>
     </li>
     {% endfor %}
+
+    {% capture updated_link %}{% link recently-updated.md %}{% endcapture %}
+    <li class="nav-item">
+        <a class="nav-link px-2 mx-1 py-1 {% if page.url == updated_link %}active{% endif %}" href="{{ updated_link }}">
+            <i class="bi bi-clock-fill" role="img" aria-label="recently updated"></i> updated
+        </a>
+    </li>
 
     <li class="nav-item">
         <a class="nav-link px-2 mx-1 py-1" href="{% link tags.md %}">

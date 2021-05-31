@@ -1,7 +1,7 @@
 
 {% assign base_edit_url = site.data.github.repo | append: '/blob/master/_posts/' %}
 
-{% assign file_name = page.url | remove: '/blog/' | slugify | append: '.md' %}
+{% assign file_name = page.url | remove: site.blog_url | slugify | append: '.md' %}
 
 {% assign edit_url = base_edit_url | append: file_name %}
 

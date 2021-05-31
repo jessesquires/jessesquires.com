@@ -41,7 +41,6 @@ keep_files:
 
 # Site
 permalink: /blog/:year/:month/:day/:title/
-img_url: /img/
 excerpt_separator: <!--excerpt-->
 sass:
   style: compressed
@@ -65,4 +64,9 @@ feeds:
   rss: '/feed.xml'
   json: '/feed.json'
 
+# URLs
+img_url: /img/
+blog_url: '/blog/'
+categories_url: '/blog/categories/'
+tags_url: '/blog/tags/'
 stats_url: 'https://stats.jessesquires.com'

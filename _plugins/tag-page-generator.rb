@@ -7,7 +7,7 @@ module Jekyll
 
     def generate(site)
       if site.layouts.key? 'tag_index'
-        dir = 'blog/tags'
+        dir = site.config['tags_url']
         site.tags.each_key do |tag|
           site.pages << TagPage.new(site, site.source, File.join(dir, tag), tag)
         end

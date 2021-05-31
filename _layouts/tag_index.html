@@ -28,7 +28,7 @@ title: Writing by tag
 <div class="p-2 mt-2 mb-4 bg-light border-top border-bottom">
     <ul class="nav nav-pills">
         <li class="nav-item">
-            <a class="nav-link px-2 py-1 {% if page.url == '/blog/tags/' %}active{% endif %}" href="{% link tags.md %}">
+            <a class="nav-link px-2 py-1 {% if page.url == site.tags_url %}active{% endif %}" href="{% link tags.md %}">
                 <i class="bi bi-asterisk" role="img" aria-label="all"></i> all
             </a>
         </li>
@@ -36,7 +36,7 @@ title: Writing by tag
         {% assign sorted_tags = site.tags | sort %}
 
         {% for tag in sorted_tags %}
-            {% assign url = '/blog/tags/' | append: tag[0] | append: '/' %}
+            {% assign url = site.tags_url | append: tag[0] | append: '/' %}
             <li class="nav-item">
                 <a class="nav-link px-2 py-1 {% if page.url == url %}active{% endif %}" href="{{ url }}">
                     <i class="bi bi-tag-fill" role="img" aria-label="{{ tag[0] }}"></i> {{ tag[0] }}

@@ -7,7 +7,7 @@ module Jekyll
 
     def generate(site)
       if site.layouts.key? 'category_index'
-        dir = 'blog'
+        dir = site.config['categories_url']
         site.categories.each_key do |category|
           site.pages << CategoryPage.new(site, site.source, File.join(dir, category), category)
         end
