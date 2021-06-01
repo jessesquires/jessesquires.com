@@ -40,6 +40,8 @@ Other random thoughts and impressions:
 
 - Photos.app and Safari are excellent.
 
+- My [Time Machine bug]({% post_url 2021-04-07-time-machine-error-45-big-sur %}) appears to be fixed!
+
 - The [new notification UI is very hard to use](https://neil.computer/notes/apple-ux-ui-is-regressing/). The buttons are hidden until you hover and now it takes multiple clicks to take an action. I hate it.
 
 - The new alerts and modal sheets are [major usability regressions](https://mjtsai.com/blog/2020/07/03/big-surs-narrow-alerts/). The layout, size, and centered text of alerts makes them difficult to read.
