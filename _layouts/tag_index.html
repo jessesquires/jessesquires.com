@@ -28,7 +28,9 @@ title: Writing by tag
 <div class="p-2 mt-2 mb-4 bg-light border-top border-bottom">
     <ul class="nav nav-pills">
         <li class="nav-item">
-            <a class="nav-link px-2 py-1 {% if page.url == site.tags_url %}active{% endif %}" href="{% link tags.md %}">
+            <a class="nav-link px-2 py-1 {% if page.url == site.tags_url %}active{% endif %}"
+                href="{% link tags.md %}"
+                title="{{ site.posts | size }} posts">
                 <i class="bi bi-asterisk" role="img" aria-label="all"></i> all
             </a>
         </li>
@@ -38,7 +40,9 @@ title: Writing by tag
         {% for tag in sorted_tags %}
             {% capture url %}{{ tag[0] | tag_url }}{% endcapture %}
             <li class="nav-item">
-                <a class="nav-link px-2 py-1 {% if page.url == url %}active{% endif %}" href="{{ url }}">
+                <a class="nav-link px-2 py-1 {% if page.url == url %}active{% endif %}"
+                    href="{{ url }}"
+                    title="{{ tag[1] | size }} posts">
                     <i class="bi bi-tag-fill" role="img" aria-label="{{ tag[0] }}"></i> {{ tag[0] }}
                 </a>
             </li>
