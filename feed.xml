@@ -29,7 +29,7 @@ layout: null
     <category term="software design"/>
     <category term="mobile apps"/>
 
-    {% for post in site.posts %}
+    {% for post in site.posts limit: site.feeds.limit %}
     <entry>
         <link href="{{ post.url | absolute_url }}" />
         <id>{{ post.url | absolute_url }}</id>

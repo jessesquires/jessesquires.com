@@ -20,7 +20,7 @@ layout: null
         }
     ],
     "items": [
-        {% for post in site.posts %}
+        {% for post in site.posts limit: site.feeds.limit %}
         {
             "id": "{{ post.url | absolute_url }}",
             "url": "{{ post.url | absolute_url }}",

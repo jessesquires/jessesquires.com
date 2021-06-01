@@ -61,6 +61,7 @@ author:
 
 # Data
 feeds:
+  limit: 30
   rss: '/feed.xml'
   json: '/feed.json'
 
