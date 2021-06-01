@@ -26,9 +26,7 @@ App Library certainly solves a problem for me, but there is room for improvement
 2. Provide an option for sorting: either "by relevancy" (the current default), or alphabetically
 3. Let users choose to show or hide "Suggestions" and "Recently Added", perhaps with an option to show 8 Siri suggestions if "Recently Added" is turned off
 
-{% include break.html %}
-
-I only have one major complaint about the existing folders &mdash; Why is there no "Developer" category? Currently, App Store Connect and TestFlight are placed in "Utilities" while the Apple Developer (née WWDC) app is in "Information & Reading". Furthermore, non-App Store apps (ad-hoc, side-loaded, etc.) are categorized under the developer account name. For example, if I'm working on an app it gets placed in a "Jesse Squires" folder. I understand why that's happening, but it makes no sense. All of these apps should be placed in a "Developer" folder in App Library.
+I only have one major complaint about the existing folders &mdash; why is there no "Developer" category? Currently, App Store Connect and TestFlight are placed in "Utilities" while the Apple Developer (née WWDC) app is in "Information & Reading". Furthermore, non-App Store apps (ad-hoc, side-loaded, etc.) are categorized under the developer account name. For example, if I'm working on an app it gets placed in a "Jesse Squires" folder. I understand why that's happening, but it makes no sense. All of these apps should be placed in a "Developer" folder in App Library.
 
 Finally, why is App Library still not available on iPad? App Library is essentially the iOS equivalent of Launchpad on macOS. As the iPad continues to evolve into a more desktop-like experience, it is baffling that App Library is iPhone-only. (And the same goes for home screen widgets, which are also missing on iPad.)
 
