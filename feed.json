@@ -24,21 +24,19 @@ layout: null
         {
             "id": "{{ post.url | absolute_url }}",
             "url": "{{ post.url | absolute_url }}",
-            "title": {{ post.title | jsonify }},
-            "date_published": "{{ post.date | date_to_xmlschema }}",
-            {% if post.date-updated %}
-            "date_modified": "{{ post.date-updated | date_to_xmlschema }}",
+            {% if post.subtitle %}
+                {% assign title = post.title | append: ": " | append: post.subtitle %}
             {% else %}
-            "date_modified": "{{ post.date | date_to_xmlschema }}",
+                {% assign title = post.title %}
             {% endif %}
-            "authors": [
-                {
-                    "name": "{{ site.author.name }}",
-                    "url": "{{ site.url }}",
-                    "avatar": "{{ site.author.avatar | absolute_url }}"
-                }
-            ],
+            "title": {{ title | jsonify }},
+            "date_published": "{{ post.date | date_to_xmlschema }}",
+            "date_modified": "{{ post.date-updated | default: post.date | date_to_xmlschema }}",
             "summary": {{ post.excerpt | jsonify }},
+            "tags": [
+                {% for tag in post.tags %}"{{ tag }}",{% endfor %}
+                {% for category in post.categories %}"{{ category }}"{% endfor %}
+            ],
             "content_html": {{ post.content | jsonify }}
         }{% if forloop.last == false %},{% endif %}
         {% endfor %}
