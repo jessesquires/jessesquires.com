@@ -75,4 +75,4 @@ Other random thoughts and impressions:
 
 {% include break.html %}
 
-Despite the issues, I would still say I enjoy Big Sur. It works. It hasn't crashed or lost any of my data. My gripes are about tiny cuts and the UI regressions &mdash; all of which can be easily fixed. The problem, however, is if Apple is committed to fixing them or willing to ignore them for multiple years &mdash; [like those keyboards]({% post_url 2020-09-15-don't-forget-the-keyboards %}).
+Despite the issues, I would still say I enjoy Big Sur. It works. It hasn't crashed or lost any of my data. My gripes are about tiny cuts and the UI regressions &mdash; all of which can be easily fixed. The problem, however, is if Apple is committed to fixing them or willing to ignore them for multiple years &mdash; [like those keyboards]({% post_url 2020-09-15-dont-forget-the-keyboards %}).
