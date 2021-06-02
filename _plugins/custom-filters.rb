@@ -13,8 +13,9 @@
 # - Create relative post category urls:
 #    `{{ "software-dev" | category_url }}`
 #
-# - Create relative image asset urls:
+# - Create relative image asset urls with (optional) subdirectory name:
 #    `{{ "photo.jpg" | img_url }}`
+#    `{{ "photo.jpg" | img_url: 'blog' }}`
 #
 # See:
 #    - https://jekyllrb.com/docs/plugins/filters/
@@ -24,9 +25,12 @@
 module Jekyll
   module CustomFilters
 
-    # Returns url to an image asset.
-    def img_url(input)
-      create_url(input, 'img_url')
+    # Returns url to an image asset. Specify an optional subdirectory name.
+    def img_url(input, sub_directory_name = '')
+      if !sub_directory_name.nil? && !sub_directory_name.empty?
+        sub_directory_name.concat("/")
+      end
+      create_url("#{ sub_directory_name }#{ input }", 'img_url')
     end
 
     # Returns url to a post tag.
