@@ -4,13 +4,6 @@ categories: [reading-notes]
 tags: [politics, anarchism, capitalism, racism]
 date: 2020-08-30T18:41:20-07:00
 title: Unpropertied
-subtitle: null
-image:
-    file: TODO
-    alt: TODO
-    caption: null
-    source_link: null
-    half_width: false
 ---
 
 I'm currently reading Marquis Bey's [Anarcho-Blackness: Notes Toward a Black Anarchism](https://www.akpress.org/anarcho-blackness.html). These are some reflections on and excerpts from the fourth chapter, titled *Unpropertied*. This post comes against the backdrop of continued protests and uprisings here in Oakland and the rest of the Bay Area in solidarity with Minneapolis, Kenosha, and the broader fight against police violence.
