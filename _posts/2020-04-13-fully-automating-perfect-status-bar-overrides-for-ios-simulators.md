@@ -34,7 +34,7 @@ Then I had an idea. What if we could include Nine41 as a Swift package? We can. 
 
 First, we need to add Nine41 as a [package dependency in our Xcode project](https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app).
 
-{% include image.html
+{% include blog_image.html
     file='nine41-add-package.png'
     alt='Add Nine41 as a package dependency in Xcode'
     caption='Adding Nine41 as a package dependency in Xcode.'
@@ -68,7 +68,7 @@ All that is left now is to build and run. And it works!
 
 There a few caveats to note. For the first run, Xcode will need to build the package, and if no simulators are running, it will not update the simulator status bars.
 
-{% include image.html
+{% include blog_image.html
     file='nine41-first-build.png'
     alt='Nine41 build output'
     caption='Nine41 build output for the first run.'

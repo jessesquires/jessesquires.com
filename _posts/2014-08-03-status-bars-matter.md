@@ -30,7 +30,7 @@ But even with all of Dan Counsell's [excellent advice](http://dancounsell.com/ar
 
 Status bars matter. If configured well, they go unnoticed. But if they are sloppily ignored, they stick out like a sore thumb. And sadly, there are a lot of sore thumbs in the App Store. Below are actual status bars taken from the screenshots of three different apps curently in the App Store. All apps were on one of the top charts within the top 50.
 
-{% include image.html
+{% include blog_image.html
     file="statusbar-bad1.jpg"
     alt="Status bar example 1"
     caption="Sample 1: status bars seen in the App Store"
@@ -38,7 +38,7 @@ Status bars matter. If configured well, they go unnoticed. But if they are slopp
     half_width=false
 %}
 
-{% include image.html
+{% include blog_image.html
     file="statusbar-bad2.jpg"
     alt="Status bar example 2"
     caption="Sample 2: status bars seen in the App Store"
@@ -46,7 +46,7 @@ Status bars matter. If configured well, they go unnoticed. But if they are slopp
     half_width=false
 %}
 
-{% include image.html
+{% include blog_image.html
     file="statusbar-bad3.jpg"
     alt="Status bar example 3"
     caption="Sample 3: status bars seen in the App Store"

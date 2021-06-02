@@ -39,7 +39,7 @@ At PlanGrid, we recently discovered that the app was [being used as a digital ar
 
 How **awesome** is that! 🤓 I doubt anyone anticipated this use case, and it's remarkable how well-suited the app is as an archaeological tool by default. It's important (and fun) to envision how our apps will be used for the reasons we created them, but sometimes it's even more interesting to see the novel ways in which our users hack our apps to be used for something completely different. That's worth thinking about more often. How could *your* app be used differently?
 
-{% include image.html
+{% include blog_image.html
     file="plangrid-archaeology-2.jpg"
     alt="PlanGrid for Archaeology"
     caption="PlanGrid used for Archaeology"

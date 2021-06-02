@@ -80,7 +80,7 @@ image:
 > TODO: content
 
 <!-- image example -->
-{% include image.html
+{% include blog_image.html
     file=TODO
     alt=TODO
     caption=null

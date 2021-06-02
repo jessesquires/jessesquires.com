@@ -20,7 +20,7 @@ Mike Ash has a great [Friday Q&A](https://www.mikeash.com/pyblog/friday-qa-2011-
 
 We are all familiar with handling assets, particularly icons, using the `UIImage(named:)` API. And since iOS 7, many icons have two distinct visual states &mdash; *lined* and *filled*, or *normal* and *selected*. Thus, we find ourselves with two versions of each icon, for example `UIImage(named:"music")` and `UIImage(named:"music-selected")`.
 
-{% include image.html
+{% include blog_image.html
     file="tabbar.png"
     alt="iOS Tab Bar"
     caption="iOS Tab Bar, iOS Human Interface Guidelines"

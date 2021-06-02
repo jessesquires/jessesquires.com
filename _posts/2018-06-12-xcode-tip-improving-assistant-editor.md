@@ -25,7 +25,7 @@ By default, when you 'Quick Open' a file via `cmd-shift-O`, it opens in the 'Pri
 
 All these issues are remedied by selecting "Uses Focused Editor" from Xcode's Navigation preferences. This setting combined with using the "Move Focus To Editor..." shortcut (`cmd-J`) is perfect. You can quickly switch between editor panes or open new ones, and 'Quick Open' will open the file you select in whichever pane is currently focused.
 
-{% include image.html
+{% include blog_image.html
     file="xcode-cmd-j.png"
     alt="Xcode Move Focus To Editor..."
     caption="cmd-J: Move Focus To Editor..."

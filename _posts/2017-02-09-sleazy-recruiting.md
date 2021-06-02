@@ -50,7 +50,7 @@ Serendipitously, I received the following message **today**. This is a perfect i
 
 Firstly, note the two redactions. **These were two different names.** This person introduced themselves with one name, and signed with a completely different name. This is the beauty in life that wakes me up each morning. I do love pasta, but not copy-pasta. Secondly, if anyone has seen my "impressive background in web development" lying around, please send it back to me along with my "expertise in PHP." LAMP stack for an iOS developer? WAT.
 
-{% include image.html
+{% include blog_image.html
     file="love-lamp.png"
     alt="LAMP stack for an iOS developer"
     caption=null

@@ -13,7 +13,7 @@ layout: null
 
     <title>{{ site.title }}</title>
     <subtitle>{{ site.description }}</subtitle>
-    <icon>{{ site.logo | absolute_url | xml_escape }}</icon>
+    <icon>{% link_absolute {{ site.logo | img_url }} %}</icon>
     <rights>Copyright © 2012-{{ site.time | date: '%Y' }}, {{ site.author.name }}</rights>
     <author>
         <name>{{ site.author.name | xml_escape }}</name>

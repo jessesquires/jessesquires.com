@@ -18,11 +18,9 @@ The other day I was attempting to use `FLT_EPSILON` (which I later learned was l
     update_message='I gave a talk on the topics discussed in this post and more at iOS Conf Singapore. You can <a href="https://youtu.be/cdRn4DJq9eY">watch the video here</a>!'
 %}
 
-{% include image.html
-    external_url="https://media.giphy.com/media/xDQ3Oql1BN54c/giphy.gif"
+{% include blog_image.html
+    file="dogscience.gif"
     alt="dog science"
-    caption=null
-    source_link=null
     half_width=false
 %}
 
@@ -71,7 +69,7 @@ Floating-point numbers, however, are more complex and difficult to represent in 
 
 Computers obviously cannot represent *all* of the integers &mdash; from negative to positive infinity &mdash; which is why we have `INT_MIN`, `INT_MAX`, and other constants. Similarly, floating-point numbers are bound by `FLT_MIN` and `FLT_MAX` (or `DBL_MIN` and `DBL_MAX`). But more importantly, computers cannot represent **all** of the rational and irrational numbers between these bounds. While the representable integers are countable within their specified bounds of `INT_MIN` and `INT_MAX`, the floating-point numbers that occur between `FLT_MIN` and `FLT_MAX` are *infinite*. It's clear that we need some kind of rounding mechanism, which means not all numbers are representable. Such a rounding mechanism will provide a way to determine *the distance from one value to the next representable value* &mdash; or, ulp. Thus, aside from the obvious limitations of silicon chips, this is why ulp needs to exist.
 
-{% include image.html
+{% include blog_image.html
     file="numbers.jpg"
     alt="Numbers"
     caption=null
@@ -85,7 +83,7 @@ Before we define ulp, let's briefly review the memory layout for floating-point 
 
 First, integers are exact and can be represented directly in binary format. Signed integers are typically represented in [two's complement](https://en.wikipedia.org/wiki/Two%27s_complement), but that's an implementation detail. Conceptually, you have an integer which is stored as some bits. For example, `6` which is `0b0110`. Floating-point numbers have three components: a sign, an exponent (which is [biased](https://en.wikipedia.org/wiki/Exponent_bias)), and a significand. For single precision, there's 1 bit for the sign, 8 bits for the exponent, and 23 bits for the significand &mdash; 32 bits total. Double precision provides 11 bits for the exponent and 52 bits for the significand, which totals 64 bits. I won't discuss the more elaborate details about how floating-point numbers work in this post, but you'll find additional reading at the end.
 
-{% include image.html
+{% include blog_image.html
     file="float32memory.png"
     alt="Floating-point format, binary32"
     caption="IEEE 754 single-precision binary floating-point format"

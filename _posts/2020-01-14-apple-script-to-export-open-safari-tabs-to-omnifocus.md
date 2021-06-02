@@ -27,7 +27,7 @@ The first script will collect all of the open tabs in the front-most Safari wind
 
 The second script is similar, with a slight variation. It creates a single inbox item instead of one. The item title follows the pattern "`First_Tab_Name` + `N` other tabs", for example "The Omni Group + 4 other tabs". The item notes field contains a list of all the tabs, including the title and URL. Here is the result:
 
-{% include image.html
+{% include blog_image.html
     file="omnifocus-tabs-single-item.png"
     alt="OmniFocus inbox"
     caption="OmniFocus inbox with a single item for all Safari tabs"
@@ -36,7 +36,7 @@ The second script is similar, with a slight variation. It creates a single inbox
 
 Having these two variations is convenient and the one that I choose depends on the context of what I am doing. When the scripts finish, they post a notification.
 
-{% include image.html
+{% include blog_image.html
     file="omnifocus-notif.png"
     alt="AppleScript notification"
     caption="AppleScript notification"

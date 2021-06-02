@@ -8,7 +8,7 @@ layout: null
     "home_page_url": "{{ site.url }}",
     "feed_url": "{{ site.feeds.json | absolute_url }}",
     "description": "{{ site.description }}",
-    "icon": "{{ site.logo | absolute_url }}",
+    "icon": "{% link_absolute {{ site.logo | img_url }} %}",
     "favicon": "{{ site.favicon | absolute_url }}",
     "expired": false,
     "language": "en-US",
@@ -16,7 +16,7 @@ layout: null
         {
             "name": "{{ site.author.name }}",
             "url": "{{ site.url }}",
-            "avatar": "{{ site.author.avatar | absolute_url }}"
+            "avatar": "{% link_absolute {{ site.author.avatar | img_url }} %}"
         }
     ],
     "items": [

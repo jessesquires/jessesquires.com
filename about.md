@@ -14,10 +14,10 @@ You can [contact me here]({% link contact.md %}).
 You can read this website's [privacy policy here]({% link privacy.md %}) and [subscribe here]({% link subscribe.md %}).
 
 <div class="row mt-4 mb-4">
-    <div class="col"></div>
-    <div class="col-12 col-sm-8 col-md-6 col-lg-6">
-        <img class="img-thumbnail img-fluid center" src="{{ site.author.avatar }}" title="Jesse Squires" alt="Jesse Squires"/>
-    </div>
-    <div class="col"></div>
+{% include image.html
+    file=site.author.avatar
+    alt="Jesse Squires"
+    half_width=true
+%}
 </div>
 

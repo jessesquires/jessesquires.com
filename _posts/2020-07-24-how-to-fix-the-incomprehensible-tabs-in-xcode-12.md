@@ -27,7 +27,7 @@ After reaching peak frustration, I went to Twitter to ask what was going on. A l
 
 You need to open Xcode's Navigation preferences, and for "Navigation Style" select "Open In Place". The new "inner tab bar" will disappear, and the previous tab behavior (and shortcuts!) will be restored.
 
-{% include image.html
+{% include blog_image.html
     file='xcode12-tabs-prefs.png'
     alt='Xcode 12 betas 3 settings to disable tabs-in-tabs behavior'
     caption='Xcode 12 betas 3 settings to disable tabs-in-tabs behavior'

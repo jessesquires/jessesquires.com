@@ -24,9 +24,9 @@
     <meta property="og:locale" content="en_US">
 
     {% if page.image %}
-    <meta property="og:image" content="{{ site.img_url | append: page.image.file | absolute_url }}">
+    <meta property="og:image" content="{% link_absolute {{ page.image.file | img_url: 'blog' }} %}">
     {% else %}
-    <meta property="og:image" content="{{ site.logo | absolute_url }}">
+    <meta property="og:image" content="{% link_absolute {{ site.logo | img_url }} %}">
     {% endif %}
 
     {% if page.title %}
@@ -43,9 +43,9 @@
     <meta name="twitter:creator" content="@{{ site.author.twitter }}">
 
     {% if page.image %}
-    <meta name="twitter:image" content="{{ site.img_url | append: page.image.file | absolute_url }}">
+    <meta name="twitter:image" content="{% link_absolute {{ page.image.file | img_url: 'blog' }} %}">
     {% else %}
-    <meta name="twitter:image" content="{{ site.logo | absolute_url }}">
+    <meta name="twitter:image" content="{% link_absolute {{ site.logo | img_url }} %}">
     {% endif %}
 
     {% if page.title %}

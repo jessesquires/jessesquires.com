@@ -31,7 +31,7 @@ Aside from the fantastic lineup of [speakers](http://frenchkit.fr/#programme), I
 
 The organizers opened with a mock Apple-esque keynote. It was hilarious and I hope this part was also recorded. The conference closed with &#x1F9C0; and &#x1F377; (of course) and a fun pub quiz. We had a good time with lots of laughs.
 
-{% include image.html
+{% include blog_image.html
     file="frenchkit-michel.jpg"
     alt="FrenchKit pub quiz"
     caption="Michel explains the specs of the Macintosh Classic I, which had something called a 'headphone jack'?"

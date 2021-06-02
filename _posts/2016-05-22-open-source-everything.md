@@ -39,7 +39,7 @@ Collectively, *all* of these things serve as *documentation* &mdash; not just th
 
 With excellent API documentation and test coverage, contributors can fix bugs and add features without worrying about breaking something. Together, the docs and tests provide the complete picture for how your APIs should behave. Continuous integration keeps this in check by regularly running tests for each change, and notifying you of any regressions in test failures or test coverage. Once [travis-ci](https://travis-ci.org/jessesquires/JSQCoreDataKit) and [codecov.io](https://codecov.io/gh/jessesquires/JSQCoreDataKit) were green for each pull request, I was **certain** that it was safe to merge. To me, this is the most liberating feeling in software development.
 
-{% include image.html
+{% include blog_image.html
     file="tests_pass.jpg"
     alt="All tests pass"
     caption=null

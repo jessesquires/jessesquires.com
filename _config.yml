@@ -49,7 +49,7 @@ sass:
 title: 'Jesse Squires'
 description: 'Turing complete with a stack of 0xdeadbeef'
 url: 'https://www.jessesquires.com'
-logo: /ico/logo.png
+logo: logo.png
 favicon: /favicon.ico
 timezone: America/Los_Angeles
 
@@ -57,7 +57,7 @@ timezone: America/Los_Angeles
 author:
   name: 'Jesse Squires'
   twitter: jesse_squires
-  avatar: /ico/avatar.jpg
+  avatar: avatar.jpg
 
 # Data
 feeds:
@@ -66,7 +66,7 @@ feeds:
   json: '/feed.json'
 
 # URLs
-img_url: /img/
+img_url: '/img/'
 blog_url: '/blog/'
 categories_url: '/blog/categories/'
 tags_url: '/blog/tags/'

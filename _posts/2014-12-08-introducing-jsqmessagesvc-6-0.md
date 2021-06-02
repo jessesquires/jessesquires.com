@@ -33,7 +33,7 @@ The component was originally implemented with a `UITableView`, until [version 5.
 
 The flagship feature of 6.0 is the *most requested* feature to date &mdash; media messages. In order to display anything other than text in the message bubbles, some major changes were required in the core library. With these new changes it is now possible to display **any arbitrary** `UIView` in a message bubble. The messages view (picture above) is backed by subclasses of `UICollectionViewCell`, `UICollectionView`, and `UICollectionViewFlowLayout`. Each message is represented as a cell in the collection view and has a number of customizable subviews and properties, which are outlined in the following diagram. The labels for the subviews in the diagram are the names of the actual subview properties for a cell. See the [JSQMessagesCollectionViewCell](http://cocoadocs.org/docsets/JSQMessagesViewController/6.1.0/Classes/JSQMessagesCollectionViewCell.html) documentation for further details.
 
-{% include image.html
+{% include blog_image.html
     file="jsqmessages_cell_anatomy.jpg"
     alt="Anatomy of a cell"
     caption="Anatomy of a cell"
@@ -69,7 +69,7 @@ Finally, I want to mention that the library *does* provide concrete model classe
 
 Earlier I mentioned that the new media message API allows you to display **any arbitrary** `UIView` in a message bubble. This means that your media message can be *anything* and you only need to implement the `JSQMessageMediaData` protocol that defines how to display your specific media. For example, media data could be a [CLLocation](https://developer.apple.com/library/mac/documentation/CoreLocation/Reference/CLLocation_Class/index.html), or a [UIImage](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIImage_Class/index.html), or an [ABRecordRef](https://developer.apple.com/library/ios/documentation/AddressBook/Reference/ABRecordRef_iPhoneOS/index.html#//apple_ref/c/tdef/ABRecordRef). The 6.0 release provides 3 concrete media types: `JSQLocationMediaItem`, `JSQPhotoMediaItem`, and `JSQVideoMediaItem`. I think these are the most common kind of media that users want to send and that developers want to support. They should cover about 80 percent of use cases.
 
-{% include image.html
+{% include blog_image.html
     file="jsqmessages_media_type.jpg"
     alt="JSQMessage Media Items"
     caption="Provided media message types"
