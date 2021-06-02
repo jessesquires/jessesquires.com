@@ -1,13 +1,20 @@
-# Custom filters to render post tag and post category urls.
+# Custom filters to render:
+#    - post tag urls
+#    - post category urls
+#    - image asset urls
+#
+# All urls are relative, but can be made absolute using `{{ value | absolute_url }}`
+#
 # Examples:
 #
-# - Create relative and absolute post tag urls:
+# - Create relative post tag urls:
 #    `{{ "macos" | tag_url }}`
-#    `{{ "macos" | tag_url: true }}`
 #
-# - Create relative and absolute post category urls:
+# - Create relative post category urls:
 #    `{{ "software-dev" | category_url }}`
-#    `{{ "software-dev" | category_url: true }}`
+#
+# - Create relative image asset urls:
+#    `{{ "photo.jpg" | img_url }}`
 #
 # See:
 #    - https://jekyllrb.com/docs/plugins/filters/
@@ -16,28 +23,32 @@
 
 module Jekyll
   module CustomFilters
-    include Jekyll::Filters::URLFilters
 
-    # Returns url to a post tag. Pass `true` to make absolute, `false` to make relative.
-    def tag_url(input, is_absolute = false)
-      create_url(input, 'tags_url', is_absolute)
+    # Returns url to an image asset.
+    def img_url(input)
+      create_url(input, 'img_url')
     end
 
-    # Returns url to a post category. Pass `true` to make absolute, `false` to make relative.
-    def category_url(input, is_absolute = false)
-      create_url(input, 'categories_url', is_absolute)
+    # Returns url to a post tag.
+    def tag_url(input)
+      create_url("#{ input }/", 'tags_url')
+    end
+
+    # Returns url to a post category.
+    def category_url(input)
+      create_url("#{ input }/", 'categories_url')
     end
 
     private
 
-    def create_url(tag_name, config_key, is_absolute)
+    def create_url(input, config_key)
       base_url = @context.registers[:site].config[config_key]
+
       if base_url.nil?
         abort "Cannot find site config value for key: #{ config_key }"
       end
-      relative_url = "#{ base_url }#{ tag_name }/"
 
-      return is_absolute ? absolute_url("#{ relative_url }") : relative_url
+      return "#{ base_url }#{ input }"
     end
   end
 end
