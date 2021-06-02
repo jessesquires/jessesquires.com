@@ -69,7 +69,7 @@ $ make preview
 
 - For posts, use the [`{% post_url %}` tag](https://jekyllrb.com/docs/liquid/tags/#linking-to-posts)
     - Example: `[link]({% post_url 2000-01-01-my-blog-post-title %})`
-- For site pages, use the [`{% link %}` tag](https://jekyllrb.com/docs/liquid/tags/#links)
+- For site pages and assets, use the [`{% link %}` tag](https://jekyllrb.com/docs/liquid/tags/#links)
     - Example: `[Contact me]({% link contact.md %})`
 
 ### Verifying DNS setup
