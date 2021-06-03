@@ -10,10 +10,11 @@
 
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="navbar-nav">
-                {% for item in site.data.navigation.menu %}
-                {% assign link = item.url | replace: '/', '' %}
+                {% for item in site.data.navigation %}
+                {% capture url %}{% link {{ item.page }} %}{% endcapture %}
+                {% assign component = url | replace: '/', '' %}
                 <li class="nav-item mx-1">
-                    <a class="nav-link {% if page.url == item.url or url_components[1] == link %}active fw-bolder{% endif %}" href="{{ item.url }}">
+                    <a class="nav-link {% if page.url == url or url_components[1] == component %}active fw-bolder{% endif %}" href="{{ url }}">
                         {{ item.title }}
                     </a>
                 </li>

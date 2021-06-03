@@ -1,21 +1,20 @@
-menu:
-  - title: writing
-    url: '/blog/'
+- title: writing
+  page: blog.md
 
-  - title: speaking
-    url: '/speaking/'
+- title: speaking
+  page: speaking.md
 
-  - title: projects
-    url: '/projects/'
+- title: projects
+  page: projects.md
 
-  - title: subscribe
-    url: '/subscribe/'
+- title: subscribe
+  page: subscribe.md
 
-  - title: sponsor
-    url: '/sponsor/'
+- title: sponsor
+  page: sponsor.md
 
-  - title: cv
-    url: '/linkedout/'
+- title: cv
+  page: linkedout.md
 
-  - title: about
-    url: '/about/'
+- title: about
+  page: about.md
