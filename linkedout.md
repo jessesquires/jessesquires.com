@@ -17,6 +17,8 @@ title: Curriculum Vitae
 
 I’m working on a number of side projects, indie apps, and open source projects. You can find an [overview of my projects here]({% link projects.md %}). My open source projects are [hosted on GitHub]({{ site.data.social.github }}), and my indie apps are [available at Hexed Bits](https://www.hexedbits.com).
 
+<!-- TALKS -->
+
 {% include resume_header.html text="Conference Talks" icon="bi-person-badge" %}
 
 I have spoken at conferences and meetups around the world to share my thoughts, ideas, and experiences about programming,

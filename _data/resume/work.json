@@ -1,6 +1,6 @@
 {
     "title": "Work Experience",
-    "icon": "bi-gear-wide-connected",
+    "icon": "bi-kanban",
     "entries": [
         {
             "title": "HexedBits",
@@ -12,7 +12,7 @@
                 "name": "work-hexedbits.png",
                 "title": "HexedBits"
             },
-            "description": "Independent and freelance app development. Contracting and consulting for iOS with various clients."
+            "description": "Independent and freelance app development. See [hexedbits.com](https://www.hexedbits.com)."
         },
         {
             "title": "Software Engineer (iOS), PlanGrid",
