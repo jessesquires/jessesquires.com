@@ -1,0 +1,109 @@
+title: Work Experience
+icon: bi-kanban
+entries:
+
+  - title: HexedBits
+    location: Remote
+    start: Aug 2019
+    end: Present
+    link: 'https://www.hexedbits.com'
+    img:
+      name: work-hexedbits.png
+      title: HexedBits
+    description: "Independent and freelance app development. See [hexedbits.com](https://www.hexedbits.com)."
+
+  - title: Software Engineer (iOS), PlanGrid
+    location: San Francisco, CA
+    start: May 2017
+    end: July 2019
+    link: 'https://www.plangrid.com'
+    img:
+      name: work-plangrid.png
+      title: PlanGrid
+    description: "Note: PlanGrid was acquired by [Autodesk](https://www.autodesk.com)
+      in [November 2018](https://adsknews.autodesk.com/pressrelease/autodesk-to-acquire-plangrid)."
+    bullets:
+      - "Shipped a number of features: polygon annotation tools, multiple assignees and
+        followers for Tasks, user groups, Tasks 'rewrite' to include planned work and
+        issues ('sheetless tasks'), advanced filtering and sorting for Tasks. All features
+        included local database migrations and syncing with backend, as the app must be
+        completely functional offline. We used SQLite directly and maintained our own
+        SQLite DSL in Swift."
+      - "Contributed to a number of mobile infrastructure improvements, including building
+        out internal frameworks, adding pull request automation with [Danger](https://danger.systems),
+        and improving code quality with [SwiftLint](https://www.github.com/realm/SwiftLint)."
+      - "Helped release and maintain open source framework, [ReactiveLists](https://www.github.com/plangrid/ReactiveLists)."
+      - "Acted as Release Captain to manage biweekly releases, which includes triaging
+        bug/crash reports, managing branches and fixes, and submitting final build to
+        AppStore Connect. We used [Fastlane](https://fastlane.tools) to automate much
+        of the process."
+      - "Helped refine interview process for new candidates, including developing questions and quizzes."
+      - "Mentored new hires and junior teammates."
+
+  - title: Software Engineer (iOS), Instagram
+    location: Menlo Park, CA
+    start: May 2015
+    end: May 2017
+    link: 'https://www.instagram.com'
+    img:
+      name: work-instagram.png
+      title: Instagram
+    bullets:
+      - "Shipped updates to the App Store on a weekly schedule."
+      - "Launched the immersive video viewer and IG Events on Search and Explore ([Wired](https://www.wired.com/2015/10/instagrams-new-video-channel-shows-you-whats-happening-now/),
+        [Recode](https://www.vox.com/2015/10/31/11620230/instagram-joins-snapchat-twitter-with-new-event-specific-content),
+        [Mashable](https://mashable.com/2015/10/31/instagram-video-feature-halloween/#ghiqRNNjG5qI))."
+      - "Worked on mobile infra team to refactor the main feed and co-author the open source
+        framework, [IGListKit](https://github.com/Instagram/IGListKit) ([Blog post](https://instagram-engineering.com/open-sourcing-iglistkit-3d66f1e4e9aa))."
+      - "Launched and maintained the new [IG Direct](http://blog.instagram.com/post/159452790942/170411-newdirect)
+        ([TechCrunch](https://techcrunch.com/2017/04/11/instachat-direct/))."
+      - "Rewrote entire Direct messaging infrastructure on the iOS client using IGListKit,
+        including moving to protocol-oriented, immutable models."
+      - "Deployed new features and experiments via Facebook’s A/B testing frameworks."
+      - "Acted as Release Captain to manage biweekly releases, which includes triaging
+        bug/crash reports, managing branches and cherry-picks, and submitting final build to AppStore Connect."
+      - "Mentored new hires and junior teammates via 1:1 talks, as well as code reviews."
+
+  - title: Software Engineer (iOS), Rosetta Stone
+    location: San Francisco, CA
+    start: Sep 2013
+    end: May 2015
+    link: 'https://www.rosettastone.com'
+    img:
+      name: work-rosettastone.png
+      title: Rosetta Stone
+    bullets:
+      - "Released and maintained the [Advanced Languages](https://apps.apple.com/us/app/id879261486) app.
+        It was previously named Advanced English For Business."
+      - "Used CoreText and speech recognition engine to build a read-along learning activity."
+      - "Built vocabulary cards, matching, and other learning activity frameworks."
+      - "Authored over a dozen internal frameworks (private CocoaPods) in efforts to build up mobile infrastructure."
+      - "Worked effectively with remote teammates."
+      - "Authored and published the company's first ever [open-source projects](https://github.com/rosettastone/)."
+
+  - title: Independent Contractor (iOS), Hemoglobe
+    location: Remote
+    start: Jan 2013
+    end: Apr 2013
+    link: 'https://www.hemoglobe.com'
+    img:
+      name: work-hemoglobe.jpg
+      title: Hemoglobe
+    description: "A collaboration with designer [Michael Schultz](https://michaelschultz.com)
+      and funded by Affinity Biotech. Hemoglobe was an iOS app for staying in touch
+      and meeting new people with bleeding disorders. It was shutdown in early 2016
+      and is no longer available."
+    bullets:
+      - "Built the entire app and collaborated with Michael on implementing his designs."
+      - "Used [Parse](https://parseplatform.org) BaaS for backend."
+      - "Features included a feed of nearby users, private 1:1 messaging, and user profiles."
+
+  - title: HexedBits
+    location: Remote
+    start: Jan 2012
+    end: Jan 2014
+    link: 'https://www.hexedbits.com'
+    img:
+      name: work-hexedbits.png
+      title: HexedBits
+    description: "Independent and freelance app development. See [hexedbits.com](https://www.hexedbits.com)."
