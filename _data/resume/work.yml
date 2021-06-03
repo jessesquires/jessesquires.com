@@ -10,7 +10,36 @@ entries:
     img:
       name: work-hexedbits.png
       title: HexedBits
-    description: "Independent and freelance app development. See [hexedbits.com](https://www.hexedbits.com)."
+    description: "Independent app development. See [hexedbits.com](https://www.hexedbits.com)."
+
+  - title: Independent Contractor (iOS), Duolingo
+    location: Remote
+    start: Jan 2020
+    end: May 2021
+    link: 'https://www.duolingo.com'
+    img:
+      name: work-duolingo.png
+      title: Duolingo
+    description: "Hired as an independent contractor for the 'User Delight' team, working on the main iOS app.
+      I worked part-time and reported to Peter Chapman."
+    bullets:
+      - "Built a custom, internal, in-app 'shake-to-report' bug reporting tool that communicated with the
+        [Jira API](https://developer.atlassian.com/server/jira/platform/rest-apis/) to create tickets,
+        and the [Slack API](https://api.slack.com) to post some reports directly to specific channels.
+        Reports included device and OS metadata, user and app metadata, screenshots, and logs."
+      - "Built a user-facing version of 'shake-to-report' for users in the Duolingo Beta Program,
+        which sent reports to Zendesk using the Zendesk SDK."
+      - "Implemented an app-wide maintenance mode that could be triggered when backend services were experiencing outages.
+        This utilized a middleware layer in the networking stack to pause all network activity in the app and periodically ping
+        a status micro-service to check if the API was available again."
+      - "Worked closely with designers to implement [Dark Mode](https://twitter.com/duolingo/status/1258411479453368320) for the entire app,
+        which required significant refactoring in the legacy codebase."
+      - "Worked closely with designers to implement various animations and UI polish throughout the app to 'delight' users. This included
+        character animations and progress bar sparkle animations during lessons."
+      - "Implemented various sound effects throughout the app."
+      - "Implemented custom crash reporting using [PLCrashReporter](https://github.com/microsoft/plcrashreporter)."
+      - "Most features shipped behind experiment flags using Duolingo's custom experimentation framework."
+      - "Provided regularly, timely updates on the progress of projects via Jira and Slack."
 
   - title: Software Engineer (iOS), PlanGrid
     location: San Francisco, CA
@@ -20,8 +49,8 @@ entries:
     img:
       name: work-plangrid.png
       title: PlanGrid
-    description: "Note: PlanGrid was acquired by [Autodesk](https://www.autodesk.com)
-      in [November 2018](https://adsknews.autodesk.com/pressrelease/autodesk-to-acquire-plangrid)."
+    description: "*Note: PlanGrid was acquired by [Autodesk](https://www.autodesk.com)
+      in [November 2018](https://adsknews.autodesk.com/pressrelease/autodesk-to-acquire-plangrid).*"
     bullets:
       - "Shipped a number of features: polygon annotation tools, multiple assignees and
         followers for Tasks, user groups, Tasks 'rewrite' to include planned work and
@@ -106,4 +135,4 @@ entries:
     img:
       name: work-hexedbits.png
       title: HexedBits
-    description: "Independent and freelance app development. See [hexedbits.com](https://www.hexedbits.com)."
+    description: "Independent app development. See [hexedbits.com](https://www.hexedbits.com)."
