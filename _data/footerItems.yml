@@ -7,17 +7,17 @@
   icon: bi-twitter
 
 - title: Subscribe
-  url: '/subscribe'
+  page: subscribe.md
   icon: bi-rss-fill
 
 - title: Sponsor
-  url: '/sponsor'
+  page: sponsor.md
   icon: bi-heart-fill
 
 - title: Privacy
-  url: '/privacy'
+  page: privacy.md
   icon: bi-shield-lock-fill
 
 - title: Search
-  url: '/search'
+  page: search.md
   icon: bi-search
