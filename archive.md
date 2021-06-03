@@ -1,6 +1,7 @@
 ---
 layout: standalone
 title: Archive
+permalink: /blog/archive
 ---
 
 {% assign groupedPosts = site.posts | group_by_exp: "post", "post.date | date: '%Y %B'" %}
