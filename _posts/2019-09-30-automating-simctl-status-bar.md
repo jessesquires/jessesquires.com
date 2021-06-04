@@ -77,7 +77,10 @@ extension Process {
 
 ### Parsing the devices list
 
-**UPDATE:** *There is an easier way to parse the device list. As [Marcelo Fabri](https://twitter.com/marcelofabri_/status/1178840949134200832) noted on Twitter, you can pass `-j` to `xcrun simctl list devices` to get a JSON representation of devices. I have updated [the script on GitHub](https://github.com/jessesquires/Nine41) to use this method instead. However, I'll leave the rest of this post as it was. The parsing of devices is just an implementation detail.*
+{% include updated_notice.html
+update_message="
+There is an easier way to parse the device list. As [Marcelo Fabri](https://twitter.com/marcelofabri_/status/1178840949134200832) noted on Twitter, you can pass `-j` to `xcrun simctl list devices` to get a JSON representation of devices. I have updated [the script on GitHub](https://github.com/jessesquires/Nine41) to use this method instead. However, I'll leave the rest of this post as it was. The parsing of devices is just an implementation detail.
+" %}
 
 Next we need to parse the list of devices. There are 3 distinct pieces of information: name, identifier, and status. A device name could be *anything*, which means we cannot expect it to follow any specific format. In fact, in the example output above there are multiple variations. The most reliable way to retrieve each piece of information is to write a regular expression to match the device identifier.
 

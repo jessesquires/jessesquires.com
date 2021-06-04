@@ -15,7 +15,10 @@ I went down a rabbit hole today, because I thought I needed this (I did not). In
 
 Searching for why, I eventually found [this thread on the Apple Developer Forums](https://developer.apple.com/forums/thread/666060?answerId=645336022#645336022). Ironically, it links [to this StackOverflow thread](https://stackoverflow.com/questions/24111984/how-do-you-test-functions-and-closures-for-equality), which links to [this old Apple Dev Forums thread](https://devforums.apple.com/message/1035180#1035180), which, of course, is now a broken link since no one at Apple could be bothered to do web development properly when [the new forums launched](https://developer.apple.com/news/?id=obvo7r3i) last year.
 
-**Update:** A reader has kindly pointed out that the broken link to Chris’s post was not lost _last year_, but rather in the _previous transition_ from private to public forums, which happened some years earlier. I have lost count of how many times the Apple Dev Forums have undergone changes. [This thread on the forums](https://developer.apple.com/forums/thread/653468?answerId=620033022#620033022) has details. It is, of course, answered by none other than the valuable, legendary [Quinn](https://github.com/macshome/The-Wisdom-of-Quinn).
+{% include updated_notice.html
+update_message="
+A reader has kindly pointed out that the broken link to Chris’s post was not lost _last year_, but rather in the _previous transition_ from private to public forums, which happened some years earlier. I have lost count of how many times the Apple Dev Forums have undergone changes. [This thread on the forums](https://developer.apple.com/forums/thread/653468?answerId=620033022#620033022) has details. It is, of course, answered by none other than the valuable, legendary [Quinn](https://github.com/macshome/The-Wisdom-of-Quinn).
+" %}
 
 Anyway. Apparently, somewhere in the ether of the old forums exists the following answer from [Chris Lattner](https://twitter.com/clattner_llvm). (Thankfully, the person on StackOverflow directly quoted the forum thread instead of just posting a link.)
 

@@ -1,17 +1,9 @@
 
-{% if page.date-updated %}
-
-    {% if include.date != null %}
-        {% assign date = include.date %}
-    {% else %}
-        {% assign date = page.date-updated %}
-    {% endif %}
-
-<div class="d-block bg-light p-3 my-3 border border-2 border-secondary rounded">
-    <h5>Update <small class="text-secondary"><i>{{ date | date_to_long_string }}</i></small></h5>
-    <p class="my-0 py-0">
-        {{ include.update_message }}
-    </p>
+<div class="d-block bg-light pt-3 px-3 pb-0 my-3 border border-2 border-secondary rounded update-notice">
+    <h5>Update
+        <small class="text-secondary">
+            <i>{{ include.date | default: page.date-updated | date_to_long_string }}</i>
+        </small>
+    </h5>
+    {{ include.update_message | markdownify }}
 </div>
-
-{% endif %}

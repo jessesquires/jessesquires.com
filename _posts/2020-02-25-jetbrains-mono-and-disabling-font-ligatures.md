@@ -22,8 +22,13 @@ In Sublime Text, you can add the following options to your preferences file to d
 
 And now your eyes can rest. If you prefer ligatures, don't @ me.
 
-**Update:** There is [an open issue](https://github.com/JetBrains/JetBrainsMono/issues/19) on GitHub discussing providing a version without ligatures.
+{% include updated_notice.html
+date="2020-02-26"
+update_message="
+There is [an open issue](https://github.com/JetBrains/JetBrainsMono/issues/19) on GitHub discussing providing a version without ligatures.
+" %}
 
 {% include updated_notice.html
-    update_message='Good news! JetBrains has <a href="https://github.com/JetBrains/JetBrainsMono/releases/tag/v1.0.4">released a no ligature version (1.0.4)</a>. It is called <i>JetBrains Mono NL</i>.'
-%}
+update_message='
+Good news! JetBrains has <a href="https://github.com/JetBrains/JetBrainsMono/releases/tag/v1.0.4">released a no ligature version (1.0.4)</a>. It is called <i>JetBrains Mono NL</i>.
+' %}

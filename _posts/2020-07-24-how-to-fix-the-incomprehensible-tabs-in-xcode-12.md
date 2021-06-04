@@ -13,11 +13,14 @@ image:
     half_width: false
 ---
 
-**Update:** This post was originally written during Xcode 12 beta 3, but has been updated to reflect the final release of Xcode 12.
-
 [Xcode 12 was released](https://developer.apple.com/documentation/xcode-release-notes/xcode-12-release-notes) and it includes a change to how tabs and navigation work. In Xcode 12, the tabs have their own tabs. It makes no sense to me. I know we are supposed to be nice to each other about software, but this new UI/UX is beyond incomprehensible. What made it worse is that this new "tabs within tabs" was the default setting (overriding preferences I had previously set) and I could not figure out how to restore the previous (desired) behavior.
 
 <!--excerpt-->
+
+{% include updated_notice.html
+update_message="
+This post was originally written during Xcode 12 beta 3, but has been updated to reflect the final release of Xcode 12.
+" %}
 
 Even worse than that, the keyboard shortcuts I have memorized for navigating, opening, and closing tabs were not working. The shortcuts I have committed to muscle memory only seemed to control the inner tabs, not the outer tabs. It was an unintelligible mess.
 

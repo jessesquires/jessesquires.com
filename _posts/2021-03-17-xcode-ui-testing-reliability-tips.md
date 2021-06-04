@@ -7,7 +7,7 @@ date-updated: 2021-03-18T10:44:22-07:00
 title: Xcode UI testing reliability tips for iOS
 ---
 
-Xcode's UI testing framework has had its ups and downs over the years. Most recently, it has been much more robust and reliable in my experience. However, tests still tend to flake sometimes. Here are some ways that I have been able to reduce flakiness in UI tests. 
+Xcode's UI testing framework has had its ups and downs over the years. Most recently, it has been much more robust and reliable in my experience. However, tests still tend to flake sometimes. Here are some ways that I have been able to reduce flakiness in UI tests.
 
 <!--excerpt-->
 
@@ -23,16 +23,16 @@ One easy way to achieve this is by passing launch arguments and parsing them in 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    func application(_ application: UIApplication, 
+    func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // app setup code...
-            
+
         #if DEBUG
         if CommandLine.arguments.contains("-disableAnimations") {
             UIView.setAnimationsEnabled(false)
         }
         #endif
-    
+
         return true
     }
 }
@@ -53,7 +53,9 @@ override func setUpWithError() throws {
 }
 ```
 
-**UPDATE:** Thanks to [Peter Steinberger](https://mobile.twitter.com/steipete) for mentioning [on Twitter](https://mobile.twitter.com/steipete/status/1372460020730843136) that this might cause issues:
+{% include updated_notice.html
+update_message="
+Thanks to [Peter Steinberger](https://mobile.twitter.com/steipete) for mentioning [on Twitter](https://mobile.twitter.com/steipete/status/1372460020730843136) that this might cause issues:
 
 > I would not disable animation - this can change callback timing and might lead to missed bugs. Instead, accelerate animations via setting layer.speed on the window.
 
@@ -61,7 +63,7 @@ I have not encountered this issue, but it is good to be aware of. You can follow
 
 > **speed**<br/>
 > Specifies how time is mapped to receiver’s time space from the parent time space.
-> 
+>
 > For example, if speed is 2.0 local time progresses twice as fast as parent time. Defaults to 1.0.
 
 ```swift
@@ -69,6 +71,7 @@ I have not encountered this issue, but it is good to be aware of. You can follow
 
 self.window?.layer.speed = 2.0
 ```
+" %}
 
 ### Increasing timeouts
 

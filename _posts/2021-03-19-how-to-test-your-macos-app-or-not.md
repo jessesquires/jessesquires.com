@@ -7,7 +7,7 @@ date-updated: 2021-04-06T23:19:04-07:00
 title: How to test your Mac app (or not) and decide which versions of macOS to support (or not)
 ---
 
-As I continue to pursue Mac app development more seriously, I can build on and borrow from my many years of iOS experience. While many aspects of writing Mac apps are very similar to iOS, or at least *somewhat familiar*, other aspects are quite different. One of the big differences is testing, and deciding how many versions of macOS to support.  
+As I continue to pursue Mac app development more seriously, I can build on and borrow from my many years of iOS experience. While many aspects of writing Mac apps are very similar to iOS, or at least *somewhat familiar*, other aspects are quite different. One of the big differences is testing, and deciding how many versions of macOS to support.
 
 <!--excerpt-->
 
@@ -17,7 +17,7 @@ For iOS, the general rule in the community and "official" guidance from Apple is
 
 In any case, there is ample data not only provided [by Apple on their App Store support page](https://developer.apple.com/support/app-store/), but third-party analytics companies [like Mixpanel also report their own data](https://mixpanel.com/trends/#report/ios_14). Even popular tech blogs, like [MacRumors regularly repost](https://www.macrumors.com/2020/12/16/ios-14-installed-81-percent-iphones/) this information as well, in case you do not follow these primary sources.
 
-Notably absent is any information about macOS adoption rates. Try to search, and you will be met with disappointment. The best (that is, *only*) information I could find, was [this data from StatCounter](https://gs.statcounter.com/macos-version-market-share/desktop/worldwide/#monthly-202003-202102-bar), which measures desktop market share worldwide based on web traffic. I do not know anything about this company or whether this data is accurate and trustworthy. It also is not entirely clear from their charts if "macOS version market share" is in relation to only macOS users or all users of all desktop operating systems. We are left with *some vague idea* about what macOS adoption is like, but it does not seem reliable. 
+Notably absent is any information about macOS adoption rates. Try to search, and you will be met with disappointment. The best (that is, *only*) information I could find, was [this data from StatCounter](https://gs.statcounter.com/macos-version-market-share/desktop/worldwide/#monthly-202003-202102-bar), which measures desktop market share worldwide based on web traffic. I do not know anything about this company or whether this data is accurate and trustworthy. It also is not entirely clear from their charts if "macOS version market share" is in relation to only macOS users or all users of all desktop operating systems. We are left with *some vague idea* about what macOS adoption is like, but it does not seem reliable.
 
 Of course, one reason for the discrepancy in data between iOS and macOS is because of the App Store &mdash; which is the only method of software distribution for iOS, but is optional (and largely neglected) for macOS. This makes it rather easy, especially for third-parties, to compile this data for iOS. Presumably, Apple has data on macOS adoption rates, which they could derive from serving software updates, but they refuse to publish it. (Perhaps this is because macOS adoption rates are so bad compared to iOS?)
 
@@ -51,11 +51,11 @@ Installing macOS on a partitioned **external** drive sounds like a great balance
 
 ### Debugging your app on older versions of macOS
 
-This next problem is much more complicated. So far, we have discussed simply **installing and running** your Mac app on an older macOS. But what about **debugging** on older versions of macOS? This is where the real conundrum begins. 
+This next problem is much more complicated. So far, we have discussed simply **installing and running** your Mac app on an older macOS. But what about **debugging** on older versions of macOS? This is where the real conundrum begins.
 
-As you know, *eventually* every major Xcode release requires the latest release of macOS. This is happening right now with [Xcode 12.5](https://developer.apple.com/documentation/xcode-release-notes/xcode-12_5-beta-release-notes) (currently in beta), which requires macOS Big Sur 11.0 or later. If you want to build and run your app on macOS 10.15 and earlier, you will need to use Xcode 12.4 or earlier. 
+As you know, *eventually* every major Xcode release requires the latest release of macOS. This is happening right now with [Xcode 12.5](https://developer.apple.com/documentation/xcode-release-notes/xcode-12_5-beta-release-notes) (currently in beta), which requires macOS Big Sur 11.0 or later. If you want to build and run your app on macOS 10.15 and earlier, you will need to use Xcode 12.4 or earlier.
 
-But it gets more complicated than that. Because every major release of Xcode eventually drops support for prior versions of macOS, you must continue reverting to prior releases of Xcode. Essentially, this means each time you go back to a previous macOS, you also need to go back to a previous Xcode. And by now I'm sure you've realized the problem &mdash; what if your app's Xcode project **cannot be built with older versions of Xcode?** 
+But it gets more complicated than that. Because every major release of Xcode eventually drops support for prior versions of macOS, you must continue reverting to prior releases of Xcode. Essentially, this means each time you go back to a previous macOS, you also need to go back to a previous Xcode. And by now I'm sure you've realized the problem &mdash; what if your app's Xcode project **cannot be built with older versions of Xcode?**
 
 The primary barrier to using an old Xcode is the Swift Language and Compiler version. Newer versions of the Swift Compiler can compile older versions of the Swift Language &mdash; but only to a certain point. (For example, you cannot use the latest compiler to mix Swift 1.0 with Swift 5.0.) However, older versions of the Swift Compiler do not know about future versions. You may be able to workaround this using [Swift's version checking](https://nshipster.com/swift-system-version-checking/), for example `#if swift(<5)`. Depending on your app, this may or may not be feasible, not to mention the increased maintenance burden.
 
@@ -79,9 +79,11 @@ Based on the discussions from Twitter, the general consensus in the community an
 
 As always, if you have any other tips or advice, let me know!
 
-### Update: what about M1 Macs?
+{% include updated_notice.html
+update_message="
+### What about M1 Macs?
 
-Recently, [Antoine van der Lee](https://www.avanderlee.com) started a [discussion on Twitter](https://mobile.twitter.com/twannl/status/1379087981135429633) centered around the question of testing with an M1 Mac. If you only have an M1 Mac, how do you proceed with all of the above? 
+Recently, [Antoine van der Lee](https://www.avanderlee.com) started a [discussion on Twitter](https://mobile.twitter.com/twannl/status/1379087981135429633) centered around the question of testing with an M1 Mac. If you only have an M1 Mac, how do you proceed with all of the above?
 
 It appears that an internal partition will be more involved due to the substantial changes to [boot and recovery](https://eclecticlight.co/2021/01/14/m1-macs-radically-change-boot-and-recovery/) on M1 Macs. I am not entirely sure how this will work. But, per the discussion above, this was not the best option anyway. Regarding booting from an external drive, it looks like [there have been issues](https://eclecticlight.co/2021/02/10/external-boot-disks-still-dont-work-properly-with-m1-macs/) using [external boot disks with M1 Macs](https://eclecticlight.co/2021/02/27/big-sur-11-2-2-still-doesnt-fix-bugs-with-m1-external-bootable-disks/), but [it is possible](https://eclecticlight.co/2020/12/22/booting-an-m1-mac-from-an-external-disk-it-is-possible/) to do. Regarding virtual machines, I did a brief search and it looks like Parallels and VMware plan to eventually support the M1, but it is not clear when that will happen.
 
@@ -90,3 +92,4 @@ However, all of this is somewhat of a moot point once you realize that M1 Macs *
 What a mess. I guess the best advice is: if you upgrade to an M1, do not get rid of your Intel Mac.
 
 If you have an M1 Mac, I highly recommend checking out Howard Oakley's [excellent collection of articles](https://eclecticlight.co/m1-macs/) about the M1.
+" %}

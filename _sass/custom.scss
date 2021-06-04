@@ -65,6 +65,10 @@ blockquote {
   }
 }
 
+.update-notice > blockquote {
+  background-color: $body-bg;
+}
+
 .branded {
   font-family: $font-brand;
 }

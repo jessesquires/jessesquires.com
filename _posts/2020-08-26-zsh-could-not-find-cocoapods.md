@@ -46,7 +46,9 @@ The [bad advice on Stack Overflow](https://stackoverflow.com/questions/2119064/s
 sudo gem install -n /usr/local/bin cocoapods
 ```
 
-### Update: a better fix
+{% include updated_notice.html
+update_message='
+#### A better fix
 
 As expected, there is a better (correct!) way to resolve this, which I discovered after running into issues with this solution.
 
@@ -68,3 +70,4 @@ Now, when I run `gem env home` the output is correct:
 ```
 
 Again, I still do not know what happened to initially cause this problem. It was probably a supplemental macOS update that installed overnight or something. Who knows. Anyway, if you come across this problem, this is the right way to resolve it.
+' %}
