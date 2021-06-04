@@ -3,6 +3,7 @@ layout: post
 categories: [essays]
 tags: [tech, ethics]
 date: 2019-08-13T10:00:00-07:00
+date-updated: 2021-06-04T12:21:19-07:00
 title: Linked Out
 subtitle: Or why I'm getting off of LinkedIn
 ---
@@ -32,3 +33,8 @@ The other side of this story is that my first job and every job after helped bui
 I wanted to completely delete my account. However, I have a custom URL, `/jessesquires` and I do not want someone else to "take over" part of what was my online identity. That is a recipe for confusion, or embarrassment, or worse. Instead, I have left the account open and have removed most of the information, leaving only recent work positions.
 
 Most importantly, this is also about ownership and control of my data. Why should I freely give such an enormous amount of personal data to a corporation so it can own and monetize it? Especially considering I have **this** &mdash; *my own website* &mdash; that I control completely. I should host my résumé myself. So now I am. And if I ever want, I will delete *it* too.
+
+{% include updated_notice.html
+update_message="
+Unsurprisingly, it looks like LinkedIn has [fully succumbed to the cesspool of the attention economy](https://index.medium.com/shameless-work-influencers-are-the-bane-of-linkedin-5f458bb046aa), with a news feed that's full of influencers and other bullshit. I'm glad I will never login again.
+" %}
