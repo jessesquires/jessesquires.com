@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [web, bootstrap]
+tags: [web, bootstrap, website-infra]
 date: 2018-04-16T10:00:00-07:00
 title: Upgrading to Bootstrap 4
 subtitle: And some minor design tweaks

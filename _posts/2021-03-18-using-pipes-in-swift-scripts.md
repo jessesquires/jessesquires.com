@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [swift, swift-scripting, jekyll, blog]
+tags: [swift, swift-scripting, jekyll, website-infra]
 date: 2021-03-18T11:05:31-07:00
 date-updated: 2021-03-22T14:14:27-07:00
 title: Using pipes in Swift scripts

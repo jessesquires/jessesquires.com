@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [web, jekyll, ruby, git, nearlyfreespeech, nfsn]
+tags: [web, jekyll, ruby, git, nearlyfreespeech, nfsn, website-infra]
 date: 2017-09-10T10:00:00-07:00
 date-updated: 2020-10-07T10:03:48-07:00
 title: Building a site with Jekyll on NearlyFreeSpeech

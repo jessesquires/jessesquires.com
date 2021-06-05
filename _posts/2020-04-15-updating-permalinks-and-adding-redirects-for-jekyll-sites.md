@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [jekyll, web]
+tags: [jekyll, web, website-infra]
 date: 2020-04-15T11:40:58-07:00
 title: Updating permalinks and adding redirects for Jekyll sites
 ---
