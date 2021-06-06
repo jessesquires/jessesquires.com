@@ -45,8 +45,8 @@ tags:
 new:
 	./scripts/new-post.swift
 
-.PHONY: update-post
-update-post:
+.PHONY: post-update
+post-update:
 	./scripts/update-post-date.swift $(p)
 
 .PHONY: date
