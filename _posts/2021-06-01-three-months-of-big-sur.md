@@ -40,7 +40,7 @@ Other random thoughts and impressions:
 
 - Photos.app and Safari are excellent.
 
-- My [Time Machine bug]({% post_url 2021-04-07-time-machine-error-45-big-sur %}) appears to be fixed!
+- My [Time Machine bug]({% post_url_absolute 2021-04-07-time-machine-error-45-big-sur %}) appears to be fixed!
 
 - The [new notification UI is very hard to use](https://neil.computer/notes/apple-ux-ui-is-regressing/). The buttons are hidden until you hover and now it takes multiple clicks to take an action. I hate it.
 
@@ -75,4 +75,4 @@ Other random thoughts and impressions:
 
 {% include break.html %}
 
-Despite the issues, I would still say I enjoy Big Sur. It works. It hasn't crashed or lost any of my data. My gripes are about tiny cuts and the UI regressions &mdash; all of which can be easily fixed. The problem, however, is if Apple is committed to fixing them or willing to ignore them for multiple years &mdash; [like those keyboards]({% post_url 2020-09-15-dont-forget-the-keyboards %}).
+Despite the issues, I would still say I enjoy Big Sur. It works. It hasn't crashed or lost any of my data. My gripes are about tiny cuts and the UI regressions &mdash; all of which can be easily fixed. The problem, however, is if Apple is committed to fixing them or willing to ignore them for multiple years &mdash; [like those keyboards]({% post_url_absolute 2020-09-15-dont-forget-the-keyboards %}).

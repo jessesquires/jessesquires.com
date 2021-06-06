@@ -6,7 +6,7 @@ date: 2020-03-04T21:22:45-08:00
 title: Another issue with SwiftPM Xcode integration
 ---
 
-I recently [wrote about using SwiftPM instead of CocoaPods]({% post_url 2020-02-24-replacing-cocoapods-with-swiftpm %}), which included a list of pros and cons. While working on one of my projects that is using SwiftPM, I realized another issue with how SwiftPM currently integrates with Xcode.
+I recently [wrote about using SwiftPM instead of CocoaPods]({% post_url_absolute 2020-02-24-replacing-cocoapods-with-swiftpm %}), which included a list of pros and cons. While working on one of my projects that is using SwiftPM, I realized another issue with how SwiftPM currently integrates with Xcode.
 
 <!--excerpt-->
 

@@ -12,7 +12,7 @@ image:
     half_width: false
 ---
 
-I few months ago I [wrote a script]({% post_url 2019-09-30-automating-simctl-status-bar %}) to override status bar display settings in the iOS simulator using the new `simctl status_bar` feature in Xcode 11. This was great, but it still required that you manually run the script after launching simulators. This was not ideal, as [Dave pointed out in iOS Dev Weekly](https://iosdevweekly.com/issues/424#tools) when he challenged me to automate this anytime a simulator launches.
+I few months ago I [wrote a script]({% post_url_absolute 2019-09-30-automating-simctl-status-bar %}) to override status bar display settings in the iOS simulator using the new `simctl status_bar` feature in Xcode 11. This was great, but it still required that you manually run the script after launching simulators. This was not ideal, as [Dave pointed out in iOS Dev Weekly](https://iosdevweekly.com/issues/424#tools) when he challenged me to automate this anytime a simulator launches.
 
 <!--excerpt-->
 
@@ -84,7 +84,7 @@ The script has to parse the JSON for the list of devices using `xcrun simctl lis
 
 Next, you will have to set this up for each project you are working on individually. It is not ideal, but I do not know of a better solution. However, this is similar to other boilerplate setup that you always have to do, like running SwiftLint, for example.
 
-Finally, because we are using the Swift Package Manager, we face [the drawbacks and shortcomings]({% post_url 2020-02-24-replacing-cocoapods-with-swiftpm %}) that I wrote about before. Using CocoaPods instead would probably fix this, though I have not written a `.podspec` yet. Feel free to [send me a pull request](https://github.com/jessesquires/Nine41/pulls). 😄
+Finally, because we are using the Swift Package Manager, we face [the drawbacks and shortcomings]({% post_url_absolute 2020-02-24-replacing-cocoapods-with-swiftpm %}) that I wrote about before. Using CocoaPods instead would probably fix this, though I have not written a `.podspec` yet. Feel free to [send me a pull request](https://github.com/jessesquires/Nine41/pulls). 😄
 
 ### Bonus Trivia
 

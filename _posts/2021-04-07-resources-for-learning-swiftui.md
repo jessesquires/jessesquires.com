@@ -6,7 +6,7 @@ date: 2021-04-07T10:47:19-07:00
 title: Resources for learning SwiftUI
 ---
 
-A few months ago, I shared my notes and [resources for learning about compilers and LLVM]({% post_url 2020-12-28-resources-for-learning-about-compilers-and-llvm %}). It turned out to be pretty popular and folks seemed to find it useful. So I decided to do it again, but this time for SwiftUI. However, unlike learning about compilers and LLVM, I am not declaring bankruptcy with learning SwiftUI. While I have still not written a single line of SwiftUI code, I know I eventually will.
+A few months ago, I shared my notes and [resources for learning about compilers and LLVM]({% post_url_absolute 2020-12-28-resources-for-learning-about-compilers-and-llvm %}). It turned out to be pretty popular and folks seemed to find it useful. So I decided to do it again, but this time for SwiftUI. However, unlike learning about compilers and LLVM, I am not declaring bankruptcy with learning SwiftUI. While I have still not written a single line of SwiftUI code, I know I eventually will.
 
 <!--excerpt-->
 

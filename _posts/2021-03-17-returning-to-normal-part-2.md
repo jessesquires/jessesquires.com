@@ -6,7 +6,7 @@ date: 2021-03-17T17:39:44-07:00
 title: Returning to normal, Part 2
 ---
 
-I did not expect that I would have to follow-up on [yesterday's essay]({% post_url 2021-03-16-returning-to-normal %}) so soon, but I can't say I'm surprised. In the past 24 hours, there were two mass shootings in the US. It is shocking and horrifying, yet somehow entirely predictable.
+I did not expect that I would have to follow-up on [yesterday's essay]({% post_url_absolute 2021-03-16-returning-to-normal %}) so soon, but I can't say I'm surprised. In the past 24 hours, there were two mass shootings in the US. It is shocking and horrifying, yet somehow entirely predictable.
 
 <!--excerpt-->
 

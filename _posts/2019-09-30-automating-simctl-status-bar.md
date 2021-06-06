@@ -7,11 +7,11 @@ title: A script to automate overriding iOS simulator status bar values
 date-updated: 2019-09-30T19:00:00-07:00
 ---
 
-I recently [wrote about]({% post_url 2019-09-26-overriding-status-bar-settings-ios-simulator %}) overriding iOS simulator status bar display settings using `simctl status_bar`. In that post I provided some ways we can improve the tool, but I realized we can do even better.
+I recently [wrote about]({% post_url_absolute 2019-09-26-overriding-status-bar-settings-ios-simulator %}) overriding iOS simulator status bar display settings using `simctl status_bar`. In that post I provided some ways we can improve the tool, but I realized we can do even better.
 
 <!--excerpt-->
 
-[My previous solution]({% post_url 2019-09-26-overriding-status-bar-settings-ios-simulator %}), was to wrap `simctl status_bar` in a custom command to make it easier to use:
+[My previous solution]({% post_url_absolute 2019-09-26-overriding-status-bar-settings-ios-simulator %}), was to wrap `simctl status_bar` in a custom command to make it easier to use:
 
 ```bash
 $ fix_status_bar "iPhone 11"

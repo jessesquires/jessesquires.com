@@ -25,4 +25,4 @@ These opening paragraphs are remarkably prescient. Goldman wrote this in 1940. I
 >
 > My answer is neither the one nor the other. I am against dictatorship and Fascism as I am opposed to parliamentary regimes and so-called political democracy.
 
-As I've [written before]({% post_url 2018-07-19-blaming-homelessness-on-the-homeless-sf %}), the true problems we are facing are not just failures of the system, but the system itself. Our capitalist democracy could not deliver freedom and equity in 1940, it cannot now, nor will it in the future.
+As I've [written before]({% post_url_absolute 2018-07-19-blaming-homelessness-on-the-homeless-sf %}), the true problems we are facing are not just failures of the system, but the system itself. Our capitalist democracy could not deliver freedom and equity in 1940, it cannot now, nor will it in the future.

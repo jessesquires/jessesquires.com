@@ -24,9 +24,9 @@ Thanks to [Shai Mishali](https://mobile.twitter.com/freak4pc/status/136641838986
 
 {% include break.html %}
 
-The first thing I tried was logging out and logging in again, but of course that did not work. I assume that was because the Touch Bar is [powered by bridgeOS]({% post_url 2020-12-22-obscure-bridgeos-crash %}), thus logging out of macOS had no effect.
+The first thing I tried was logging out and logging in again, but of course that did not work. I assume that was because the Touch Bar is [powered by bridgeOS]({% post_url_absolute 2020-12-22-obscure-bridgeos-crash %}), thus logging out of macOS had no effect.
 
-I cannot wait until there is an option to get a MacBook Pro [without a Touch Bar]({% post_url 2020-07-08-best-touch-bar-configuration-for-people-who-hate-the-touch-bar %}).
+I cannot wait until there is an option to get a MacBook Pro [without a Touch Bar]({% post_url_absolute 2020-07-08-best-touch-bar-configuration-for-people-who-hate-the-touch-bar %}).
 
 {% include break.html %}
 

@@ -16,7 +16,7 @@ I just pushed a small update to Lucifer. You can [download it here](https://www.
 
 Notable changes:
 
-- Previously, clicking on the status bar item opened a menu from which *you then* had to toggle Dark Mode. Obviously, this was not ideal. I wanted a single click. As I've written, [the APIs for this are not very intuitive]({% post_url 2019-08-15-implementing-right-click-for-nsbutton %}). Now, in this version, a left-click will immediately toggle Dark Mode and a right-click will open the menu.
+- Previously, clicking on the status bar item opened a menu from which *you then* had to toggle Dark Mode. Obviously, this was not ideal. I wanted a single click. As I've written, [the APIs for this are not very intuitive]({% post_url_absolute 2019-08-15-implementing-right-click-for-nsbutton %}). Now, in this version, a left-click will immediately toggle Dark Mode and a right-click will open the menu.
 
 - I implemented a simple "About" view that you can open from the menu, like a typical Mac app would have. There is also an "easter egg" on this view. Just for fun.
 

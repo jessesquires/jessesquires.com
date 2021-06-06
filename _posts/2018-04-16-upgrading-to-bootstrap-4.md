@@ -11,7 +11,7 @@ I just updated my blog to use [Bootstrap 4.1](https://blog.getbootstrap.com/2018
 
 <!--excerpt-->
 
-I’m not a web developer, which is probably why it took me so long to update this. I can only write CSS and HTML for so many hours before I'm ready to move on to something else. It's fun, but in small quantities. That's also why I use [Jekyll](https://jekyllrb.com). Most of the time I only have to write markdown. But that’s what’s great about having a blog. In addition to writing, which I enjoy, this site is my primary exposure to web development and web design. It’s a fun hobby to build and maintain your own site, which [I've written about before]({% post_url 2017-09-10-building-a-site-with-jekyll-on-nfsn %}).
+I’m not a web developer, which is probably why it took me so long to update this. I can only write CSS and HTML for so many hours before I'm ready to move on to something else. It's fun, but in small quantities. That's also why I use [Jekyll](https://jekyllrb.com). Most of the time I only have to write markdown. But that’s what’s great about having a blog. In addition to writing, which I enjoy, this site is my primary exposure to web development and web design. It’s a fun hobby to build and maintain your own site, which [I've written about before]({% post_url_absolute 2017-09-10-building-a-site-with-jekyll-on-nfsn %}).
 
 ### Migrating
 
@@ -73,7 +73,7 @@ I’m not a designer, so I mostly use the defaults with a few minor overrides. S
 
 ### Refactoring
 
-While fixing things that broke in the new version, I decided to refactor some duplicate code into new components using [jekyll includes](https://jekyllrb.com/docs/templates/#includes). A new [`_includes/post_entry.html`](https://github.com/jessesquires/jessesquires.com/blob/master/_includes/post_entry.html) contains the code for rendering a post title, subtitle, and date. This was either duplicated or inconsistent across the site, but now it's used on the [main page]({{ site.url }}), individual posts like this one, and the [archive]({% link archive.md %}) page. This is one of my favorite features of Jekyll.
+While fixing things that broke in the new version, I decided to refactor some duplicate code into new components using [jekyll includes](https://jekyllrb.com/docs/templates/#includes). A new [`_includes/post_entry.html`](https://github.com/jessesquires/jessesquires.com/blob/master/_includes/post_entry.html) contains the code for rendering a post title, subtitle, and date. This was either duplicated or inconsistent across the site, but now it's used on the [main page]({{ site.url }}), individual posts like this one, and the [archive]({% link_absolute archive.md %}) page. This is one of my favorite features of Jekyll.
 
 ### Make your own
 

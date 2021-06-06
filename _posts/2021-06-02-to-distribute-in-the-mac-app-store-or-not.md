@@ -41,7 +41,7 @@ So this brings me to the question I need to answer. Do I spend my time and effor
 
 &#x1F6AB; Sandboxing requires a lot of development effort and resources. It produces a worse user experience, in general, but it is especially terrible for my app.
 
-&#x1F6AB; There is a risk of an outright rejection during the initial submission. All that effort to sandbox would be wasted if Apple does not want my app in its store. I am currently 2 for 2 on rejections. See: [Lucifer]({% post_url 2019-03-26-introducing-lucifer %}) and [Red Eye]({% post_url 2019-09-03-introducing-red-eye %}). Admittedly, these are unserious, hobby apps &mdash; but still.
+&#x1F6AB; There is a risk of an outright rejection during the initial submission. All that effort to sandbox would be wasted if Apple does not want my app in its store. I am currently 2 for 2 on rejections. See: [Lucifer]({% post_url_absolute 2019-03-26-introducing-lucifer %}) and [Red Eye]({% post_url_absolute 2019-09-03-introducing-red-eye %}). Admittedly, these are unserious, hobby apps &mdash; but still.
 
 &#x1F6AB; Even once accepted, I will potentially be subject to [arbitrary, bullshit rejections](https://lapcatsoftware.com/articles/review-folly.html) during updates, or possibly [complete removal](https://mjtsai.com/blog/2020/10/20/stadium-removed-from-the-app-store/).
 

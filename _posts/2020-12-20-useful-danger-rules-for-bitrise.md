@@ -6,7 +6,7 @@ date: 2020-12-20T20:28:41-08:00
 title: Useful Danger rules for Bitrise
 ---
 
-This is a quick follow-up to my [previous post]({% post_url 2020-12-15-running-multiple-dangers %}). The client project I'm working on is also using Bitrise for CI, which I must say is quite good. If you are looking for a hosted CI service I would highly recommend checking them out.
+This is a quick follow-up to my [previous post]({% post_url_absolute 2020-12-15-running-multiple-dangers %}). The client project I'm working on is also using Bitrise for CI, which I must say is quite good. If you are looking for a hosted CI service I would highly recommend checking them out.
 
 <!--excerpt-->
 
