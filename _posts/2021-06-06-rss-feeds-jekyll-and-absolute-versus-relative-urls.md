@@ -172,6 +172,6 @@ Similar to `post_url`, Jekyll has a [`link` Tag](https://jekyllrb.com/docs/liqui
 
 {% include break.html %}
 
-Admittedly, it does feel kind of awkward to use absolute URLs to your own site within your own site. But the alternative would be to do some very heavy and ugly manual processing when generating your feed. So I am content with this solution.
+Admittedly, it does feel kind of awkward to link to pages on your own site within your own site using absolute URLs. But the alternative would be to do some very heavy and ugly manual processing when generating your feed. So I am content with this solution.
 
-Also, It is worth clarifying that you can still use `link` and `post_url` on other pages on your site &mdash; those are not included in your RSS/Atom feed. Only within the contents of your blog posts should you use the `*_absolute` variants.
+Also, it is worth clarifying that you can still use `link` and `post_url` on other pages on your site &mdash; those are not included in your RSS/Atom feed. Only within the contents of your blog posts should you use the `*_absolute` variants.
