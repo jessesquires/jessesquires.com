@@ -168,4 +168,10 @@ This produces the following HTML:
 <a href="https://myblog.com/2021/01/01/some-title/">previous post</a>
 ```
 
-Similar to `post_url`, Jekyll has a [`link` Tag](https://jekyllrb.com/docs/liquid/tags/#links) that you can use for linking to pages and other resources like images. Unfortunately, it also produces relative URLs and also does not work with `absolute_url`. You can implement a custom `link_absolute` Tag in the same way as `post_url_absolute` above. I'll leave that as an exercise for the reader.
+Similar to `post_url`, Jekyll has a [`link` Tag](https://jekyllrb.com/docs/liquid/tags/#links) that you can use for linking to pages and other resources like images. Unfortunately, it also produces relative URLs and also does not work with `absolute_url`. You can implement a custom `link_absolute` Tag in the same way as `post_url_absolute` above. I'll leave that as an exercise for the reader. As always, you can find the source for this site [on GitHub]({{ site.data.github.repo }}).
+
+{% include break.html %}
+
+Admittedly, it does feel kind of awkward to use absolute URLs to your own site within your own site. But the alternative would be to do some very heavy and ugly manual processing when generating your feed. So I am content with this solution.
+
+Also, It is worth clarifying that you can still use `link` and `post_url` on other pages on your site &mdash; those are not included in your RSS/Atom feed. Only within the contents of your blog posts should you use the `*_absolute` variants.
