@@ -13,7 +13,7 @@ You can find my indie iOS and macOS apps at [Hexed Bits](https://hexedbits.com).
 
 ### Swift Unwrapped
 
-I co-host the [Swift Unwrapped](https://swiftunwrapped.github.io) podcast with my good friend, [JP Simard](https://www.jpsim.com). We started this podcast in February 2017 and continue to publish new episodes. We have welcomed a number of guests to our show, including members of the [Swift Core Team](https://swift.org/community/#community-structure). We were even mentioned on the official Swift [blog post announcing the Swift 5.1 release](https://swift.org/blog/swift-5-1-released/).
+I co-hosted the [Swift Unwrapped](https://swiftunwrapped.github.io) podcast with my good friend, [JP Simard](https://www.jpsim.com) from February 2017 to June 2021. We welcomed a number of guests to our show, including members of the [Swift Core Team](https://swift.org/community/#community-structure). We were even mentioned on the official Swift [blog post announcing the Swift 5.1 release](https://swift.org/blog/swift-5-1-released/). During its lifetime, the podcast was downloaded over 800,000 times. You can listen to episodes [here](https://swiftunwrapped.github.io).
 
 ### Swift Weekly Brief
 
@@ -33,8 +33,8 @@ I keep public, open source notes in [my TIL repo](https://github.com/jessesquire
 
 ##### JSQMessagesViewController
 
-My most popular library in the iOS community is [JSQMessagesViewController](https://github.com/jessesquires/JSQMessagesViewController), which is [now deprecated]({% post_url 2017-07-16-officially-deprecating-jsqmessagesviewcontroller %}). I was highly active on this project from 2013-2016, and at it's peak it was installed in over 50,000 apps (according to CocoaPods stats) and reached over 11,000 stars on GitHub. I built a community around this project with great care and intention. Like many in the community, I was sad to see it go. What I'm most proud of however, was that it was used in early versions of [Signal for iOS](https://signal.org) (as well as many other lesser known iOS apps).
+My most popular library in the iOS community is [JSQMessagesViewController](https://github.com/jessesquires/JSQMessagesViewController), which is [now deprecated]({% post_url 2017-07-16-officially-deprecating-jsqmessagesviewcontroller %}). I was highly active on this project from 2013 to 2016, and at it's peak it was installed in over 50,000 apps (according to the now-defunct CocoaPods stats) and reached over 11,000 stars on GitHub. I built a community around this project with great care and intention. Like many in the community, I was sad to see it go. What I'm most proud of however, was that it was used in early versions of [Signal for iOS](https://signal.org) (as well as many other lesser-known iOS apps).
 
 ##### IGListKit
 
-I co-authored [IGListKit](https://www.github.com/Instagram/IGListKit) with [Ryan Nystrom](https://twitter.com/_ryannystrom) while working at Instagram. Of all the work I did at that company, this is what I'm most proud of. It was a successful project and widely adopted in the iOS community.
+I co-authored [IGListKit](https://www.github.com/Instagram/IGListKit) with [Ryan Nystrom](https://twitter.com/_ryannystrom) while working at Instagram. Of all the work I did at that company, this is what I'm most proud of. It was a successful project and widely adopted in the iOS community. Eventually, Apple released official APIs inspired by IGListKit, diffable data sources for [collection views](https://developer.apple.com/documentation/uikit/uicollectionviewdiffabledatasource) and [table views](https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource).
