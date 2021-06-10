@@ -4,6 +4,10 @@ title: Archive
 permalink: /blog/archive
 ---
 
+<div class="my-3">
+{% include search_box.html %}
+</div>
+
 {% assign groupedPosts = site.posts | group_by_exp: "post", "post.date | date: '%Y %B'" %}
 {% for each in groupedPosts %}
 
