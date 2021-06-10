@@ -3,6 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [macos, big-sur, apple]
 date: 2021-06-01T10:07:19-07:00
+date-updated: 2021-06-09T22:33:13-07:00
 title: Three months of Big Sur
 ---
 
@@ -72,6 +73,10 @@ Other random thoughts and impressions:
     - The Messages.app is a big improvement over the previous iteration in some aspects, but mostly because the previous app was utterly abandoned. Otherwise, Messages.app is a massive regression, thanks to Catalyst. Having feature parity with the iOS app is great. Hitting `shift return` adds a newline instead of sending your message &mdash; **fucking finally**. However, simple [_Mac-assed_ Mac app](https://inessential.com/2020/03/19/proxyman) expectations are missing. For example, selecting a message thread and hitting `cmd delete` no longer deletes the message. It does nothing, it does not even play the error "you can't do that" sound. This is because of Catalyst. With AppKit, you essentially get that functionality for free.
 
     - Every Catalyst app has _dozens_ of these [little paper cuts](https://daringfireball.net/linked/2019/10/08/catalysts-glaring-shortcomings), and they add up to create an infuriating experience compared to regular [_Mac-assed_ Mac apps](https://inessential.com/2020/03/19/proxyman).
+
+{% include updated_notice.html
+update_message="A reader [has pointed out](https://github.com/jessesquires/jessesquires.com/issues/150) that Books.app is, in fact, _not_ a Catalyst app. So it really is just that bad. You can confirm using `otool -L`.
+" %}
 
 {% include break.html %}
 

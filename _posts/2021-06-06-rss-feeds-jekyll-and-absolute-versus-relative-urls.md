@@ -3,6 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [rss, jekyll, website-infra, web, ruby]
 date: 2021-06-06T09:59:24-07:00
+date-updated: 2021-06-09T21:46:18-07:00
 title: RSS feeds, Jekyll, and absolute versus relative URLs
 ---
 
@@ -172,6 +173,13 @@ Similar to `post_url`, Jekyll has a [`link` Tag](https://jekyllrb.com/docs/liqui
 
 {% include break.html %}
 
-Admittedly, it does feel kind of awkward to link to pages on your own site within your own site using absolute URLs. But the alternative would be to do some very heavy and ugly manual processing when generating your feed. So I am content with this solution.
+Admittedly, it does feel kind of awkward to link to pages on your own site within your own site using absolute URLs. But the alternative would be to do some very heavy and ugly manual processing when generating your feed. So I am content with this solution, if absolute URLs are necessary.
 
-Also, it is worth clarifying that you can still use `link` and `post_url` on other pages on your site &mdash; those are not included in your RSS/Atom feed. Only within the contents of your blog posts should you use the `*_absolute` variants.
+Also, it is worth clarifying that you can still use `link` and `post_url` on other pages on your site &mdash; those are not included in your RSS/Atom feed. Only within the contents of your blog posts should you use the `*_absolute` variants, if desired.
+
+{% include updated_notice.html
+update_message="
+After thinking about this more and discussing on Twitter with folks, I have decided to not use the `*_absolute` variants. Local development is much nicer when using relative URLs, and any feed reader worth using should be handling relative URLs correctly. However, going through this process taught me a lot! I feel much more comfortable writing Jekyll plugins now.
+
+Whichever method you choose, it is very easy to switch &mdash; just find and replace.
+" %}

@@ -3,7 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [ethics, tech, web]
 date: 2018-02-25T10:00:00-07:00
-date-updated: 2021-03-17T11:07:11-07:00
+date-updated: 2021-06-09T21:53:44-07:00
 title: Replacing Google Search with DuckDuckGo
 subtitle: And how to add a custom DuckDuckGo search box to your site
 image:
@@ -31,8 +31,9 @@ The [lack of ethics](https://www.theguardian.com/technology/2016/dec/04/google-d
 I'll give them credit though. Google has worked to address some of the problems in the articles that I've linked to above. However, the company's financial incentives remain the same as far as I can tell. As long as they are beholden to satisfying advertisers and scrounging for users' attention, I'm not hopeful that the trolls won't find new ways to turn the search engine into an alt-right propaganda machine again.
 
 {% include updated_notice.html
-    update_message="In completely unsurprising news, Google's search results <a href='https://daringfireball.net/linked/2021/03/04/fowler-google-search'>have gotten worse</a> over time. And while I'm here &mdash; updating this post 3 years later &mdash; I have to say, DuckDuckGo has been great. I have no complaints."
-%}
+date="2021-03-17T11:07:11-07:00"
+update_message="In completely unsurprising news, Google's search results <a href='https://daringfireball.net/linked/2021/03/04/fowler-google-search'>have gotten worse</a> over time. And while I'm here &mdash; updating this post 3 years later &mdash; I have to say, DuckDuckGo has been great. I have no complaints.
+" %}
 
 ### Benefits of DuckDuckGo
 
@@ -81,3 +82,7 @@ You can find [the diff on GitHub ](https://github.com/jessesquires/jessesquires.
 ### Making the switch
 
 If you value privacy and the open web, it's time to switch. By supporting DuckDuckGo, you will only help improve their service. Contrary to what most giant tech companies would have you believe, *it is possible* to build a great service without exploiting users' privacy and personal information.
+
+{% include updated_notice.html
+update_message="Bing was [caught blocking results](https://mashable.com/article/microsoft-bing-tank-man/) for Tiananmen Square protests in Hong Kong. Per [Gabriel Weinberg](https://mobile.twitter.com/yegg/status/1401216879293874185): \"China banned DuckDuckGo in 2014 and we have no plans to change that.\" It is rare to see a tech company **not** cooperate with authoritarian governments."
+%}
