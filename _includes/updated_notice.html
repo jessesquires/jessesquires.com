@@ -1,8 +1,11 @@
 
+{% assign date = include.date | default: page.date-updated %}
+{% assign date_hover = date | date: "%d %b %Y %r %Z" %}
+
 <div class="d-block bg-light pt-3 px-3 pb-0 my-3 border border-2 border-secondary rounded update-notice">
     <h5>Update
-        <small class="text-secondary">
-            <i>{{ include.date | default: page.date-updated | date_to_long_string }}</i>
+        <small class="text-secondary" title="{{ date_hover }}">
+            <i>{{ date | date_to_long_string }}</i>
         </small>
     </h5>
     {{ include.message | markdownify }}
