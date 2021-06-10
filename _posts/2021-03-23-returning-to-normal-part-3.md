@@ -7,7 +7,7 @@ date-updated: 2021-03-24T12:17:21-07:00
 title: Returning to normal, Part 3
 ---
 
-After only five days, yet another mass shooting has happened in the US. This post follows [Part 1]({% post_url_absolute 2021-03-16-returning-to-normal %}) and [Part 2]({% post_url_absolute 2021-03-17-returning-to-normal-part-2 %}) in this ongoing series documenting how the US is recovering from a life-threatening virus.
+After only five days, yet another mass shooting has happened in the US. This post follows [Part 1]({% post_url 2021-03-16-returning-to-normal %}) and [Part 2]({% post_url 2021-03-17-returning-to-normal-part-2 %}) in this ongoing series documenting how the US is recovering from a life-threatening virus.
 
 <!--excerpt-->
 

@@ -20,7 +20,7 @@ There are [tiny homes in Oakland](https://www.berkeleyside.com/2019/09/11/tiny-h
 
 > In San Francisco, Mayor London Breed launched the Rising Up initiative to provide housing subsidies and job placement services to more than 500 young people experiencing homelessness.
 
-But we already know how Mayor Breed [actually feels about the folks on the street]({% post_url_absolute 2018-07-19-blaming-homelessness-on-the-homeless-sf %}).
+But we already know how Mayor Breed [actually feels about the folks on the street]({% post_url 2018-07-19-blaming-homelessness-on-the-homeless-sf %}).
 
 > The Bay Area will not be able to provide a bed to each of its homeless residents until 2037. But even that projection is optimistic given that Point-in-Time counts only reflect the homeless population on a single night. An actual solution might be much further away.
 

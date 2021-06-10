@@ -24,7 +24,7 @@ The details of the crash leave much to be desired:
 Unexpected SoC (system) watchdog reset occurred
 ```
 
-My guess is that the crash is related to the Touch Bar, [which I loathe]({% post_url_absolute 2020-07-08-best-touch-bar-configuration-for-people-who-hate-the-touch-bar %}). However, it is difficult to tell exactly what occurred given the dearth of information. And an internet search yielded no results.
+My guess is that the crash is related to the Touch Bar, [which I loathe]({% post_url 2020-07-08-best-touch-bar-configuration-for-people-who-hate-the-touch-bar %}). However, it is difficult to tell exactly what occurred given the dearth of information. And an internet search yielded no results.
 
 Why are these laptops still shipping with the Touch Bar? How useful is it, *really*? I dislike it and everyone I know dislikes it too. And now, the fact that it can (potentially) crash my entire machine makes me dislike it even more. 
 

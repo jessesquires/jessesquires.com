@@ -12,7 +12,7 @@ image:
     half_width: false
 ---
 
-Previously, I [discussed]({% post_url_absolute 2018-06-12-xcode-tip-improving-assistant-editor %}) how to make Xcode's 'Assistant Editor' less frustrating when writing Swift. Another trick I learned recently involves using Xcode Behaviors to improve the debugging experience.
+Previously, I [discussed]({% post_url 2018-06-12-xcode-tip-improving-assistant-editor %}) how to make Xcode's 'Assistant Editor' less frustrating when writing Swift. Another trick I learned recently involves using Xcode Behaviors to improve the debugging experience.
 
 <!--excerpt-->
 

@@ -7,7 +7,7 @@ title: On the value of benchmarks
 subtitle: A brief examination of measuring code performance
 ---
 
-As [*Apples to apples, Part II*]({% post_url_absolute 2014-08-06-apples-to-apples-part-two %}) made its way around the web, it was [praised](https://twitter.com/SwiftLang/status/497057489766981632) as well as [critiqued](https://twitter.com/benpickering/status/497127012814041088). The latter largely consisted of questions regarding the real-world applications of these benchmarks. In general, benchmarks should be taken with a grain of salt. I want to take a minute to clarify my thoughts on benchmarks and how I think they can be valuable.
+As [*Apples to apples, Part II*]({% post_url 2014-08-06-apples-to-apples-part-two %}) made its way around the web, it was [praised](https://twitter.com/SwiftLang/status/497057489766981632) as well as [critiqued](https://twitter.com/benpickering/status/497127012814041088). The latter largely consisted of questions regarding the real-world applications of these benchmarks. In general, benchmarks should be taken with a grain of salt. I want to take a minute to clarify my thoughts on benchmarks and how I think they can be valuable.
 
 <!--excerpt-->
 

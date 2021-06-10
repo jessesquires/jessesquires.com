@@ -6,7 +6,7 @@ date: 2020-11-26T13:30:49-08:00
 title: Radical readings for the Tech Worker
 ---
 
-After reading [my recent satire piece]({% post_url_absolute 2020-11-24-seasons-greetings-from-your-ceo-at-tech-company %}), a good friend of mine (and tech worker) asked if I had a list of books or other resources to learn more about labor history and capitalism in the United States, and how the tech industry operates in this broader context. I had been meaning to write about this, and I figured others would likely be interested, too. So, if you are interested in these topics then this is post for you!
+After reading [my recent satire piece]({% post_url 2020-11-24-seasons-greetings-from-your-ceo-at-tech-company %}), a good friend of mine (and tech worker) asked if I had a list of books or other resources to learn more about labor history and capitalism in the United States, and how the tech industry operates in this broader context. I had been meaning to write about this, and I figured others would likely be interested, too. So, if you are interested in these topics then this is post for you!
 
 <!--excerpt-->
 

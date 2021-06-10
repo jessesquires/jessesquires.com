@@ -11,7 +11,7 @@ subtitle: A modest proposal&#58; can Swift outperform plain C?
 
 <!--excerpt-->
 
-In [*Apples to apples, Part II*]({% post_url_absolute 2014-08-06-apples-to-apples-part-two %}), we discovered that Swift was finally performing better than Objective-C. As expected, some common [reactions](https://twitter.com/OldManKris/status/497102303833255936) and [responses](https://twitter.com/mpweiher/status/497066155224608768) on Twitter were, *then how does it compare to C?* This is precisely what we are investigating today to welcome this week's arrival of [Xcode 6 beta 6](https://developer.apple.com/xcode/downloads/).
+In [*Apples to apples, Part II*]({% post_url 2014-08-06-apples-to-apples-part-two %}), we discovered that Swift was finally performing better than Objective-C. As expected, some common [reactions](https://twitter.com/OldManKris/status/497102303833255936) and [responses](https://twitter.com/mpweiher/status/497066155224608768) on Twitter were, *then how does it compare to C?* This is precisely what we are investigating today to welcome this week's arrival of [Xcode 6 beta 6](https://developer.apple.com/xcode/downloads/).
 
 ### Setup
 

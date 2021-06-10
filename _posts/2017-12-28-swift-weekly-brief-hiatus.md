@@ -26,7 +26,7 @@ Next week's issue of [Swift Weekly Brief](https://swiftweekly.github.io) will be
 
 ### Why now?
 
-I'm ready to move on and focus on other projects and priorities, similar to [other projects I've stopped maintaining]({% post_url_absolute 2017-07-16-officially-deprecating-jsqmessagesviewcontroller %}). The 100th issue is a notable milestone, and it happened to arrive at a great time &mdash; the first (and now last) issue of the new year. The flow of Swift evolution proposals has stabilized to a reasonable number, and the new forums are coming soon. It feels like the right time and place for me to stop &mdash; or hand over the reins to someone else.
+I'm ready to move on and focus on other projects and priorities, similar to [other projects I've stopped maintaining]({% post_url 2017-07-16-officially-deprecating-jsqmessagesviewcontroller %}). The 100th issue is a notable milestone, and it happened to arrive at a great time &mdash; the first (and now last) issue of the new year. The flow of Swift evolution proposals has stabilized to a reasonable number, and the new forums are coming soon. It feels like the right time and place for me to stop &mdash; or hand over the reins to someone else.
 
 The majority of issues were a blast to write. It was an incredibly fun project to run, and I learned a ton. However, at times it was stressful and felt like a burden. There was (admittedly self-imposed) pressure to publish every single week, and I was not always prepared or enthusiastic. There was definitely burnout. After taking breaks while other contributors wrote issues, I was always excited to return and write the next one.
 
@@ -42,7 +42,7 @@ First and foremost, I am more than happy to help onboard any newcomers &mdash; w
 
 The newsletter is definitely a valuable resource for the community, and if you want to help it live on, it will have a huge impact. There are thousands of followers and subscribers.
 
-If you are interested in taking over, [please get in touch]({% link_absolute contact.md %})!
+If you are interested in taking over, [please get in touch]({% link contact.md %})!
 
 ### Impact
 
@@ -66,4 +66,4 @@ I'd like to sincerely thank each of you for reading the newsletter each week, as
 - Garric Nahapetian, [@garricn](https://twitter.com/garricn)
 - Roman Volkov, [@volkovre](https://twitter.com/volkovre)
 
-Again, if you are interested in taking over, [let me know]({% link_absolute contact.md %}).
+Again, if you are interested in taking over, [let me know]({% link contact.md %}).

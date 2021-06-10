@@ -13,7 +13,7 @@ image:
     half_width: false
 ---
 
-I recently had an incredible experience with one of my open source projects that I'd like to share. It's a story of openness and collaboration that I hope other open source project maintainers will find valuable. This post continues the theme of "building successful open source projects" from my [previous article]({% post_url_absolute 2016-05-20-swift-documentation %}) on documentation.
+I recently had an incredible experience with one of my open source projects that I'd like to share. It's a story of openness and collaboration that I hope other open source project maintainers will find valuable. This post continues the theme of "building successful open source projects" from my [previous article]({% post_url 2016-05-20-swift-documentation %}) on documentation.
 
 <!--excerpt-->
 

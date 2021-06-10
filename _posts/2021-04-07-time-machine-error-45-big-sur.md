@@ -10,7 +10,7 @@ image:
     half_width: true
 ---
 
-Previously, I [wrote about Time Machine "error 45"]({% post_url_absolute 2020-07-17-time-machine-error-45 %}), an obscure bug in macOS Catalina. I still have no idea what was causing backups to fail, nor what "error 45" means. However, I am happy to report that _I think_ this issue has been fixed in Big Sur.
+Previously, I [wrote about Time Machine "error 45"]({% post_url 2020-07-17-time-machine-error-45 %}), an obscure bug in macOS Catalina. I still have no idea what was causing backups to fail, nor what "error 45" means. However, I am happy to report that _I think_ this issue has been fixed in Big Sur.
 
 <!--excerpt-->
 
