@@ -16,7 +16,7 @@ This is not surprising given the US is the only wealthy, industrialized nation i
 The [stimulus package](https://www.vox.com/2020/3/27/21196202/house-passes-2-trillion-coronavirus-stimulus-package) prioritized private corporations instead of working class people, not to mention the millions of undocumented folks that enrich our economy. We need a [livable minimum wage](https://livingwage.mit.edu/articles/53-the-federal-minimum-wage-hasn-t-increased-in-a-decade-but-the-prices-of-everything-else-has), paid sick leave, paid family leave, paid time off, sustainable unemployment infrastructure, affordable housing, and free health care &mdash; for everyone. This stimulus package did not even waive fees for treating the virus. If you get hospitalized because of the government's irresponsible and miserably inadequate response to this crisis, good luck paying for it.
 
 {% include updated_notice.html
-update_message="
+message="
 Unsurprisingly, it was recently reported that [a tax change in the coronavirus package overwhelmingly benefits millionaires](https://www.washingtonpost.com/business/2020/04/14/coronavirus-law-congress-tax-change/):
 
 > The provision, included by Senate Republicans, will cost taxpayers approximately $90 billion in 2020.

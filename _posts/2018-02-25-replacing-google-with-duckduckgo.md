@@ -32,7 +32,7 @@ I'll give them credit though. Google has worked to address some of the problems 
 
 {% include updated_notice.html
 date="2021-03-17T11:07:11-07:00"
-update_message="In completely unsurprising news, Google's search results <a href='https://daringfireball.net/linked/2021/03/04/fowler-google-search'>have gotten worse</a> over time. And while I'm here &mdash; updating this post 3 years later &mdash; I have to say, DuckDuckGo has been great. I have no complaints.
+message="In completely unsurprising news, Google's search results <a href='https://daringfireball.net/linked/2021/03/04/fowler-google-search'>have gotten worse</a> over time. And while I'm here &mdash; updating this post 3 years later &mdash; I have to say, DuckDuckGo has been great. I have no complaints.
 " %}
 
 ### Benefits of DuckDuckGo
@@ -84,5 +84,5 @@ You can find [the diff on GitHub ](https://github.com/jessesquires/jessesquires.
 If you value privacy and the open web, it's time to switch. By supporting DuckDuckGo, you will only help improve their service. Contrary to what most giant tech companies would have you believe, *it is possible* to build a great service without exploiting users' privacy and personal information.
 
 {% include updated_notice.html
-update_message="Bing was [caught blocking results](https://mashable.com/article/microsoft-bing-tank-man/) for Tiananmen Square protests in Hong Kong. Per [Gabriel Weinberg](https://mobile.twitter.com/yegg/status/1401216879293874185): \"China banned DuckDuckGo in 2014 and we have no plans to change that.\" It is rare to see a tech company **not** cooperate with authoritarian governments."
+message="Bing was [caught blocking results](https://mashable.com/article/microsoft-bing-tank-man/) for Tiananmen Square protests in Hong Kong. Per [Gabriel Weinberg](https://mobile.twitter.com/yegg/status/1401216879293874185): \"China banned DuckDuckGo in 2014 and we have no plans to change that.\" It is rare to see a tech company **not** cooperate with authoritarian governments."
 %}

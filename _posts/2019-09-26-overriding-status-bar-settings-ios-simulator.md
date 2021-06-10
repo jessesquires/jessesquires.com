@@ -58,7 +58,7 @@ One nice-to-have would be to make these overrides the defaults such that you cou
 Another aspect of the simulator status bars on "notch-less" iPhones (iPhones before the X) is that they display "Carrier" for the cellular carrier. I do not think `simctl status_bar` should let you override this with a custom value, since cellular carriers are not the same in all locales. However, I think you should be able to **remove** this. ~~You cannot. But, I suppose most folks are going to be taking screenshots using the latest devices, which means this should not be much of a concern.~~
 
 {% include updated_notice.html
-update_message="
+message="
 Some readers have pointed out that you *can* remove the \"Carrier\" text by specifying `--cellularMode notSupported`. However, this has the unfortunate side-effect of also removing the cellular bars. Also, currently the App Store requires that you provide two sets of screenshots, one for \"notched\" iPhones (e.g. iPhone XS Max) and one for \"notch-less\" (e.g. iPhone 8 Plus). One reader noted a recent experience of getting rejected for using iPhone X screenshots for the iPhone Plus. It appears this shortcoming is worse than I initially anticipated.
 " %}
 

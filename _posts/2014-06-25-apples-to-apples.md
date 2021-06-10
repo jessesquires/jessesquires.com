@@ -12,7 +12,7 @@ When Craig Federighi arrived at his presentation slide about Objective-C during 
 
 <!--excerpt-->
 
-{% include updated_notice.html update_message='
+{% include updated_notice.html message='
 This post has been updated for Xcode6-beta4. All trials were re-run as described below using Xcode6-beta4.
 
 Major changes to the Swift language include the <a href="https://developer.apple.com/swift/blog/?id=3">redesign of arrays</a> to have full value semantics and new syntactic sugar &mdash; introduced in Xcode6-beta3. As of the beta4 release, Swift has seen **dramatic** performance improvements. See the updated results below.
@@ -188,7 +188,7 @@ Below are the results of running each program over 10 trials with 10,000 integer
 
 <p class="text-muted text-center table-header-footer">Note that <code>-O</code> is the standard optimization level for Swift and <code>-Ofast</code>, though faster, removes <strong>all</strong> safety features (<em>array bounds-checking, integer overflow checking, etc.</em>) from Swift. In other words, do not ship an entire app compiled with <code>-Ofast</code>. More on that below.</p>
 
-{% include updated_notice.html update_message="
+{% include updated_notice.html message="
 We see the following notable changes with Xcode-beta4:
 
 - Swift is now slightly worse without optimizations. (see _Table 1_)

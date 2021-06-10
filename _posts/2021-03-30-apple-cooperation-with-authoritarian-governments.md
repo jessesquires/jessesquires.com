@@ -178,7 +178,7 @@ via [Michael Tsai](https://mjtsai.com/blog/2020/12/31/fired-app-reviewer-sues-ap
 See also: reporting by [Ars Technica](https://arstechnica.com/gadgets/2021/03/apple-bent-its-rules-for-russia-and-other-countries-will-take-note/).
 
 {% include updated_notice.html
-update_message="
+message="
 The entries below were added after this piece was first published. I will continue to keep this post up-to-date as new events occur. The date of this notice reflects the last time an update was published.
 "
 %}

@@ -78,7 +78,7 @@ extension Process {
 ### Parsing the devices list
 
 {% include updated_notice.html
-update_message="
+message="
 There is an easier way to parse the device list. As [Marcelo Fabri](https://twitter.com/marcelofabri_/status/1178840949134200832) noted on Twitter, you can pass `-j` to `xcrun simctl list devices` to get a JSON representation of devices. I have updated [the script on GitHub](https://github.com/jessesquires/Nine41) to use this method instead. However, I'll leave the rest of this post as it was. The parsing of devices is just an implementation detail.
 " %}
 

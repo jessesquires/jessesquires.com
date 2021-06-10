@@ -47,7 +47,7 @@ sudo gem install -n /usr/local/bin cocoapods
 ```
 
 {% include updated_notice.html
-update_message='
+message='
 #### A better fix
 
 As expected, there is a better (correct!) way to resolve this, which I discovered after running into issues with this solution.

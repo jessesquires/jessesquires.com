@@ -18,7 +18,7 @@ image:
 <!--excerpt-->
 
 {% include updated_notice.html
-update_message="
+message="
 This post was originally written during Xcode 12 beta 3, but has been updated to reflect the final release of Xcode 12.
 " %}
 

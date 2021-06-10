@@ -5,5 +5,5 @@
             <i>{{ include.date | default: page.date-updated | date_to_long_string }}</i>
         </small>
     </h5>
-    {{ include.update_message | markdownify }}
+    {{ include.message | markdownify }}
 </div>

@@ -178,7 +178,7 @@ Admittedly, it does feel kind of awkward to link to pages on your own site withi
 Also, it is worth clarifying that you can still use `link` and `post_url` on other pages on your site &mdash; those are not included in your RSS/Atom feed. Only within the contents of your blog posts should you use the `*_absolute` variants, if desired.
 
 {% include updated_notice.html
-update_message="
+message="
 After thinking about this more and discussing on Twitter with folks, I have decided to not use the `*_absolute` variants. Local development is much nicer when using relative URLs, and any feed reader worth using should be handling relative URLs correctly. However, going through this process taught me a lot! I feel much more comfortable writing Jekyll plugins now.
 
 Whichever method you choose, it is very easy to switch &mdash; just find and replace.

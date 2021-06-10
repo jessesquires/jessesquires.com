@@ -54,7 +54,7 @@ override func setUpWithError() throws {
 ```
 
 {% include updated_notice.html
-update_message="
+message="
 Thanks to [Peter Steinberger](https://mobile.twitter.com/steipete) for mentioning [on Twitter](https://mobile.twitter.com/steipete/status/1372460020730843136) that this might cause issues:
 
 > I would not disable animation - this can change callback timing and might lead to missed bugs. Instead, accelerate animations via setting layer.speed on the window.

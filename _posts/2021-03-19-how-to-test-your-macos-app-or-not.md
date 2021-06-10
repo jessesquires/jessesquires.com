@@ -80,7 +80,7 @@ Based on the discussions from Twitter, the general consensus in the community an
 As always, if you have any other tips or advice, let me know!
 
 {% include updated_notice.html
-update_message="
+message="
 ### What about M1 Macs?
 
 Recently, [Antoine van der Lee](https://www.avanderlee.com) started a [discussion on Twitter](https://mobile.twitter.com/twannl/status/1379087981135429633) centered around the question of testing with an M1 Mac. If you only have an M1 Mac, how do you proceed with all of the above?

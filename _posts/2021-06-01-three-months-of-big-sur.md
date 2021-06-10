@@ -75,7 +75,7 @@ Other random thoughts and impressions:
     - Every Catalyst app has _dozens_ of these [little paper cuts](https://daringfireball.net/linked/2019/10/08/catalysts-glaring-shortcomings), and they add up to create an infuriating experience compared to regular [_Mac-assed_ Mac apps](https://inessential.com/2020/03/19/proxyman).
 
 {% include updated_notice.html
-update_message="A reader [has pointed out](https://github.com/jessesquires/jessesquires.com/issues/150) that Books.app is, in fact, _not_ a Catalyst app. So it really is just that bad. You can confirm using `otool -L`.
+message="A reader [has pointed out](https://github.com/jessesquires/jessesquires.com/issues/150) that Books.app is, in fact, _not_ a Catalyst app. So it really is just that bad. You can confirm using `otool -L`.
 " %}
 
 {% include break.html %}

@@ -13,7 +13,7 @@ This site used to be hosted via [GitHub Pages](https://pages.github.com), but I 
 <!--excerpt-->
 
 {% include updated_notice.html
-    update_message="This post has been updated to reflect recent changes with NearlyFreeSpeech, as well as changes in my setup."
+    message="This post has been updated to reflect recent changes with NearlyFreeSpeech, as well as changes in my setup."
 %}
 
 ### Overview of this site
@@ -46,7 +46,7 @@ So, if I have already registered my domain through [NearlyFreeSpeech](https://ww
 Hopefully you've noticed the amazing double-entendre &mdash; "nearly free" as in [incredibly inexpensive](https://www.nearlyfreespeech.net/services/pricing), and "free speech" as in promoting freedom of speech via your own website on the open web. NFSN is a [simple, bare-bones, DIY](https://www.nearlyfreespeech.net/services/hosting) host and domain registrar. They provide every thing you need for most sites, especially simple Jekyll blogs like this one. All of their services are pay-as-you-go or "pay for what you use". My currently monthly charges are about $0.17 per month. Yes, **17 cents**. However, any kind of support is extra, sometimes the forums are cryptic, and there's some additional manual setup/configuration that you need to do sometimes. For me, that trade-off simply means I get to learn more. It is definitely [not for everyone](https://www.reddit.com/r/Wordpress/comments/18e5n9/anyone_use_nearlyfreespeech_as_a_webdev_babynoob/). The other great thing about using an indie host/registrar like NFSN is that it's **not** Amazon or GoDaddy. You are free from the shackles and despair of sleazy, giant corporations and their bullshit.
 
 {% include updated_notice.html
-    update_message="My costs are now around <b>$1.66</b> USD per month, due to some small pricing changes at NFSN and my increased usage. All things considered, this is still incredibly cheap."
+    message="My costs are now around <b>$1.66</b> USD per month, due to some small pricing changes at NFSN and my increased usage. All things considered, this is still incredibly cheap."
 %}
 
 ### Setting up your site
