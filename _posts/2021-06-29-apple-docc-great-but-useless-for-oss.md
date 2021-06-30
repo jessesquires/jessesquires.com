@@ -3,6 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [docc, documentation, github, jazzy, open-source, swift, wwdc]
 date: 2021-06-29T16:55:17-07:00
+date-updated: 2021-06-30T11:08:46-07:00
 title: Apple's DocC is excellent, but unusable for open source projects
 ---
 
@@ -45,7 +46,7 @@ There is one last quirk. The default output location for the DocC archive is bur
 
 So far, this may not seem like an issue &mdash; unless you are an open source author and maintainer like me. There is a particularly vibrant community of open source iOS developers on GitHub. Most open source communities have standardized on GitHub, but especially the Apple developer community &mdash; everyone hosts their projects on GitHub. Because of that, we all [host our documentation alongside our projects](https://github.blog/2016-08-22-publish-your-project-documentation-with-github-pages/) using [GitHub Pages](https://pages.github.com). It is an incredibly valuable product and service that is easy to use. First, you generate your docs &mdash; we all use [Jazzy](https://github.com/realm/jazzy) &mdash; then you place them in `docs/` on your default branch. For an example, see the popular [Alamofire](https://github.com/Alamofire/Alamofire) library and [its documentation](https://alamofire.github.io/Alamofire/). I also [wrote about this]({% post_url 2016-05-20-swift-documentation %}) in 2016.
 
-This is what nearly everyone does: host your project on GitHub, generate docs using Jazzy, and host your docs using GitHub Pages. In fact, no open source projects immediately come to mind that do not implement this workflow. I'm sure those projects exist, but they are the _exception_, not the norm. Even Apple [hosts their open source projects on GitHub](https://github.com/apple) now and uses GitHub Pages for [the Swift Evolution proposal site](https://apple.github.io/swift-evolution/).
+This is what nearly everyone does: host your project on GitHub, generate docs using Jazzy, and host your docs using GitHub Pages. In fact, no open source projects immediately come to mind that do not implement this workflow. I'm sure those projects exist, but they are the _exception_, not the norm. Even Apple [hosts their open source projects on GitHub](https://github.com/apple) now and uses GitHub Pages for [the Swift Evolution proposal site](https://apple.github.io/swift-evolution/). More ironically, some teams at Apple actually use Jazzy and publish docs on GitHub Pages like I've described for some of their open source Swift packages, like [SwiftNIO](https://github.com/apple/swift-nio) (see [the docs here](https://apple.github.io/swift-nio/docs/current/NIO/index.html)).
 
 DocC fails to deliver for this extremely popular use case &mdash; in my opinion, the most popular. DocC **does not** work with GitHub Pages &mdash; a **significant** barrier for adoption for essentially all open source projects in the Apple developer community. I experimented with some hacks, but was unable to make DocC do what I need. The GitHub Pages server environment is a bit opaque to the user, but it is intended for [hosting static sites](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages) ([Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll), for example), which DocC does not produce. DocC creates a [Vue.js](https://vuejs.org) web app and requires that you run your own web server to dynamically serve it, as described above. The process feels clunky and overcomplicated compared to GitHub Pages.
 
@@ -72,6 +73,19 @@ And so, we are unable to use the could-have-been-so-great tool that the highly-p
 ### To be open source
 
 Finally, Apple mentioned that DocC will be open sourced later this year. Some folks in the community seem optimistic about what that means for the future of DocC &mdash; maybe some determined, enthusiastic open source contributor will submit a patch that implements a "static site mode" for DocC. But at that point, what have we actually gained?
+
+{% include updated_notice.html
+message="
+This post was updated to include mentioning that Apple actually uses Jazzy and GitHub pages for some of its Swift packages, like SwiftNIO.
+
+Additional updates:
+
+JP and friends maintaining Jazzy have [opened an issue](https://github.com/realm/jazzy/issues/1256) to track adding support for ingesting DocC archives as input, instead of relying on [SourceKitten](https://github.com/jpsim/SourceKitten). So interestingly, what we may end up with is a community-built tool on top of DocC that provides the static site functionality we need.
+
+[Sven Schmidt](https://twitter.com/_sa_s) who maintains the [Swift Package Index](https://swiftpackageindex.com) with [Dave](https://daveverwer.com), suggested [on Twitter](https://twitter.com/_sa_s/status/1410155365270966274) that the Swift Package Index could conceivably generate and host DocC documentation. That would be pretty awesome in my opinion &mdash; it would be [CocoaDocs](https://blog.cocoapods.org/CocoaDocs-Documentation-Sunsetting/) 2.0!
+
+I think what I'm realizing is that community tooling is never going to be replaced by what Apple provides.
+" %}
 
 #### Further Reading
 
