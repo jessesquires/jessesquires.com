@@ -13,7 +13,7 @@ I was very excited at this year's WWDC when Apple [announced DocC](https://devel
 
 ### A brief history
 
-Many folks are probably unaware that the company shipped and maintained a similar tool before, the now-defunct [HeaderDoc](https://developer.apple.com/library/archive/documentation/DeveloperTools/Conceptual/HeaderDoc/intro/intro.html), which had a final [stable release in 2009](https://en.wikipedia.org/wiki/HeaderDoc). Eventually, [Tomaz Kragelj](http://gentlebytes.com/contact/) wrote and released an open source replacement called [AppleDoc](http://gentlebytes.com/appledoc/), which became the standard way for Apple platform developers to publish documentation for their open source libraries. While AppleDoc began to languish from a lack of regular contributors, Swift was announced in 2014. AppleDoc was soon replaced by another community-built tool, [Jazzy](https://github.com/realm/jazzy), authored by [JP Simard](https://www.jpsim.com) and [maintained by various contributors](https://github.com/realm/jazzy/graphs/contributors). More recently, [Mattt](https://nshipster.com/authors/mattt/) took another approach at solving this problem with [swift-doc](https://github.com/SwiftDocOrg/swift-doc). After all these years of the open source community filling in the gaps and building their own tools, Apple finally announced a new first-party solution for generating documentation.
+Many folks are probably unaware that the company shipped and maintained a similar tool before, the now-defunct [HeaderDoc](https://developer.apple.com/library/archive/documentation/DeveloperTools/Conceptual/HeaderDoc/intro/intro.html), which had a final [stable release in 2009](https://en.wikipedia.org/wiki/HeaderDoc). Eventually, [Tomaz Kragelj](http://gentlebytes.com/contact/) wrote and released an open source replacement called [AppleDoc](http://gentlebytes.com/appledoc/), which became the standard way for Apple platform developers to publish documentation for their open source libraries. While AppleDoc began to languish from a lack of regular contributors, Swift was announced in 2014. AppleDoc was soon replaced by another community-built tool, [Jazzy](https://github.com/realm/jazzy), authored by [JP Simard](https://www.jpsim.com) and [maintained by various contributors](https://github.com/realm/jazzy/graphs/contributors). There is also a lesser-known library called [SourceDocs](https://github.com/eneko/SourceDocs), authored by [Eneko Alonso](https://github.com/eneko). More recently, [Mattt](https://nshipster.com/authors/mattt/) took another approach at solving this problem with [swift-doc](https://github.com/SwiftDocOrg/swift-doc). The community has mostly centered around Jazzy. After all these years of the open source community filling in the gaps and building their own tools, Apple finally announced a new first-party solution for generating documentation.
 
 ### Introducing DocC
 
@@ -76,7 +76,7 @@ Finally, Apple mentioned that DocC will be open sourced later this year. Some fo
 
 {% include updated_notice.html
 message="
-This post was updated to include mentioning that Apple actually uses Jazzy and GitHub pages for some of its Swift packages, like SwiftNIO.
+This post was updated to include mentioning SourceDocs, and that Apple actually uses Jazzy and GitHub pages for some of its Swift packages, like SwiftNIO.
 
 Additional updates:
 
