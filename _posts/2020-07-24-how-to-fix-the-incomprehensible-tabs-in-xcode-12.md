@@ -28,7 +28,7 @@ Even worse than that, the keyboard shortcuts I have memorized for navigating, op
 
 After reaching peak frustration, I went to Twitter to ask what was going on. A lot of other folks were having the same problem. Luckily, I discovered how to disable the "tabs with tabs". (Thank you [@CaliCoding](https://twitter.com/calicoding/status/1286500177558175745).)
 
-You need to open Xcode's Navigation preferences, and for "Navigation Style" select "Open In Place". The new "inner tab bar" will disappear, and the previous tab behavior (and shortcuts!) will be restored. For Xcode 12.5 you will need to close all existing windows and reopen to set the changes in effect.
+You need to open Xcode's Navigation preferences, and for "Navigation Style" select "Open In Place". The new "inner tab bar" will disappear, and the previous tab behavior (and shortcuts!) will be restored. For Xcode 12.5, you may need to close all windows and reopen them for the changes to take effect.
 
 {% include blog_image.html
     file='xcode12-tabs-prefs.png'
