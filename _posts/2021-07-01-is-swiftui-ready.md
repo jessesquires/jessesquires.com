@@ -29,7 +29,7 @@ There was also a lot of discussion [on the Twitter thread](https://mobile.twitte
 
 {% include break.html %}
 
-The overwhelming consensus seems to be that SwiftUI is not quite mature enough to write entire apps with it &mdash; that is, _100% pure SwiftUI™_. The reason is two-fold. First, the APIs might be missing, and thus you have to walk across the bridge to UIKit. Second, you may find bugs or occasional performance issues that require going back to UIKit. Despite this, for the scenarios and use cases in which SwiftUI works well, it works **very well** &mdash; it _shines_.
+The overwhelming consensus seems to be that SwiftUI is not quite mature enough to write entire apps with it &mdash; that is, _100% pure SwiftUI™_. The reason is two-fold. First, the APIs you need might be missing, and thus you have to walk across the bridge to UIKit. Second, you may find bugs or occasional performance issues that require going back to UIKit. Despite this, for the scenarios and use cases in which SwiftUI works well, it works **very well** &mdash; it _shines_.
 
 SwiftUI can make development significantly faster. The trade-offs are worth it.
 
@@ -37,7 +37,7 @@ You will definitely have to be comfortable with mixing SwiftUI and UIKit. Apps w
 
 {% include break.html %}
 
-The multi-platform capabilities seems even less ready, specifically the macOS APIs appear to get less attention. In my experience with multi-platform example apps, some APIs did not behave as I expected on macOS, producing some odd results.
+The multi-platform capabilities seem even less ready, specifically the macOS APIs appear to get less attention. In my experience with multi-platform example apps, some APIs did not behave as I expected on macOS, producing some odd results.
 
 {% include break.html %}
 
