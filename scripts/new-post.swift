@@ -75,11 +75,14 @@ image:
 
 <!--excerpt-->
 
+{% raw %}
 {% include post_image.html %}
+{% endraw %}
 
 > TODO: content
 
 <!-- image example -->
+{% raw %}
 {% include blog_image.html
     file=TODO
     alt=TODO
@@ -87,6 +90,7 @@ image:
     source_link=null
     half_width=false
 %}
+{% endraw %}
 
 <!-- break example -->
 {% include break.html %}
@@ -94,7 +98,7 @@ image:
 <!-- links example -->
 {% raw %}
 link to post: [post]({% post_url 2001-01-01-blog-post-title %})
-link to page: [page]({% link page.md %})`
+link to page: [page]({% link page.md %})
 {% endraw %}
 
 """
