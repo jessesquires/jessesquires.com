@@ -3,7 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [docc, documentation, github, jazzy, open-source, swift, wwdc]
 date: 2021-06-29T16:55:17-07:00
-date-updated: 2021-06-30T11:08:46-07:00
+date-updated: 2021-07-11T16:22:04-07:00
 title: Apple's DocC is excellent, but unusable for open source projects
 ---
 
@@ -75,6 +75,7 @@ And so, we are unable to use the could-have-been-so-great tool that the highly-p
 Finally, Apple mentioned that DocC will be open sourced later this year. Some folks in the community seem optimistic about what that means for the future of DocC &mdash; maybe some determined, enthusiastic open source contributor will submit a patch that implements a "static site mode" for DocC. But at that point, what have we actually gained?
 
 {% include updated_notice.html
+date="2021-06-30T11:08:46-07:00"
 message="
 This post was updated to include mentioning SourceDocs, and that Apple actually uses Jazzy and GitHub pages for some of its Swift packages, like SwiftNIO.
 
@@ -85,6 +86,11 @@ JP and friends maintaining Jazzy have [opened an issue](https://github.com/realm
 [Sven Schmidt](https://twitter.com/_sa_s) who maintains the [Swift Package Index](https://swiftpackageindex.com) with [Dave](https://daveverwer.com), suggested [on Twitter](https://twitter.com/_sa_s/status/1410155365270966274) that the Swift Package Index could conceivably generate and host DocC documentation. That would be pretty awesome in my opinion &mdash; it would be [CocoaDocs](https://blog.cocoapods.org/CocoaDocs-Documentation-Sunsetting/) 2.0!
 
 I think what I'm realizing is that community tooling is never going to be replaced by what Apple provides.
+" %}
+
+{% include updated_notice.html
+message="
+[Helge Heß](https://github.com/helje5) has written a post about [converting DocC archives into static HTML sites](http://www.alwaysrightinstitute.com/docz/). You can find the project [on GitHub](https://github.com/DoccZz/docc2html). It is currently still a work-in-progress, but a promising start.
 " %}
 
 #### Further Reading
