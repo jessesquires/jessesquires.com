@@ -19,7 +19,6 @@ This is my personal site and blog. It is built with [Jekyll](https://jekyllrb.co
 
 - [jekyll](https://jekyllrb.com) ([Latest](https://github.com/jekyll/jekyll/releases/latest)) ([Cheat Sheet](https://learn.cloudcannon.com/jekyll-cheat-sheet/))
 - [jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap)
-- [jekyll-paginate](https://github.com/jekyll/jekyll-paginate)
 
 #### Updating Gems
 
