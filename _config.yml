@@ -16,15 +16,17 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   # custom excludes
+  - .gitignore
   - Makefile
   - Dangerfile
   - LICENSE
   - README.md
   - assets/
   - package.json
-  - yarn.lock
+  - package-lock.json
   - scripts/
   - .github/
+  - .nova/
 
 include:
   - .htaccess
