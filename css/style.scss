@@ -67,8 +67,11 @@ $line-height-base: 1.7;
 
 // 5. Add additional custom code here
 $font-brand: 'Ubuntu Mono', Arial, sans-serif;
-$color-code: $red-500;
-$color-code-bg: $light;
+$color-code: $gray-700;
+$color-code-bg: $gray-100;
+$color-code-border: $gray-400;
+$code-border-radius: 3px;
+$code-border-width: 1px;
 
 @import "custom";
 @import "syntax";

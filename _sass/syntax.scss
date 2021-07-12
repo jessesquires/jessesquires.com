@@ -1,5 +1,3 @@
-$color-code-block-bg: #f8f8f8;
-
 /* custom */
 
 .highlight pre code {
@@ -10,10 +8,12 @@ $color-code-block-bg: #f8f8f8;
 }
 
 .highlight pre, pre, .highlight .hll {
-  background-color: $color-code-block-bg;
-  border: 1px solid #ccc;
+  background-color: $color-code-bg;
+  border-color: $color-code-border;
+  border-width: $code-border-width;
+  border-radius: $code-border-radius;
+  border-style: solid;
   padding: 6px 10px;
-  border-radius: 3px;
 }
 
 /*
@@ -25,7 +25,7 @@ $color-code-block-bg: #f8f8f8;
  */
 
 .highlight {
-  background-color: $color-code-block-bg;
+  background-color: $color-code-bg;
 }
 .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }

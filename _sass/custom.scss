@@ -5,16 +5,18 @@ body p {
 code {
   color: $color-code;
   background-color: $color-code-bg;
-  border-radius: 3px;
-  border-width: 1px;
-  border-color: $gray-300;
+  border-color: $color-code-border;
+  border-width: $code-border-width;
+  border-radius: $code-border-radius;
   border-style: solid;
-  padding: 1px;
+  padding: 2px;
+  font-weight: bolder;
 }
 
 pre {
   code {
     border: none;
+    font-weight: normal;
   }
 }
 
