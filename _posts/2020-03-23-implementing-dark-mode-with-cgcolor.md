@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [ios, uikit, xcode, debugging]
+tags: [ios, uikit, xcode, debugging, dark-mode]
 date: 2020-03-23T18:25:11-07:00
 title: Implementing Dark Mode and using CGColor
 ---
