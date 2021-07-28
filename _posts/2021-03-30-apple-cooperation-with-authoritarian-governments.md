@@ -3,7 +3,7 @@ layout: post
 categories: [essays]
 tags: [tech, politics, capitalism, apple]
 date: 2021-03-30T19:56:17-07:00
-date-updated: 2021-06-04T14:36:17-07:00
+date-updated: 2021-07-27T23:58:01-07:00
 title: Apple's cooperation with authoritarian governments
 ---
 
@@ -177,6 +177,8 @@ via [Michael Tsai](https://mjtsai.com/blog/2020/12/31/fired-app-reviewer-sues-ap
 
 See also: reporting by [Ars Technica](https://arstechnica.com/gadgets/2021/03/apple-bent-its-rules-for-russia-and-other-countries-will-take-note/).
 
+{% include break.html %}
+
 {% include updated_notice.html
 message="
 The entries below were added after this piece was first published. I will continue to keep this post up-to-date as new events occur. The date of this notice reflects the last time an update was published.
@@ -210,6 +212,14 @@ The entries below were added after this piece was first published. I will contin
 > Mr. Cook often talks about Apple’s commitment to civil liberties and privacy. But to stay on the right side of Chinese regulators, his company has put the data of its Chinese customers at risk and has aided government censorship in the Chinese version of its App Store. After Chinese employees complained, it even dropped the “Designed by Apple in California” slogan from the backs of iPhones.
 
 See also: [MacRumors](https://www.macrumors.com/2021/05/17/apple-security-compromises-china-icloud/), [Daring Fireball](https://daringfireball.net/2021/05/nyt_apple_china_icloud), and [Michael Tsai](https://mjtsai.com/blog/2021/05/19/a-hard-bargain-for-apple-in-china/).
+
+##### June 2021 &mdash; Apple's new 'private relay' feature will not be available in multiple countries
+
+[Stephen Nellis and Paresh Dave writing for Reuters](https://www.reuters.com/world/china/apples-new-private-relay-feature-will-not-be-available-china-2021-06-07/):
+
+> Apple Inc on Monday said a new "private relay" feature designed to obscure a user's web browsing behavior from internet service providers and advertisers will not be available in China for regulatory reasons.
+>
+> Apple said it also will not offer "private relay" in Belarus, Colombia, Egypt, Kazakhstan, Saudi Arabia, South Africa, Turkmenistan, Uganda and the Philippines.
 
 {% include break.html %}
 
