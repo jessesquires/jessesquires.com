@@ -80,6 +80,8 @@ AppSettings.shared
     .store(in: &cancellable)
 ```
 
+You can simplify this further by using the [`@Published` propperty wrapper](https://developer.apple.com/documentation/combine/published).
+
 ### Third-party libraries
 
 Finally, there are a handful of open source reactive extension libraries available for Swift that you may already be using. I won't dive into these, but the implementations and concepts would be similar to using Combine.
