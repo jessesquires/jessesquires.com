@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [macos, macbook, touch-bar, bridge-os, bugs]
+tags: [macos, macbook, touch-bar, bridgeos, bugs]
 date: 2021-03-02T20:58:11-08:00
 title: How to reboot the Touch Bar without rebooting your MacBook
 ---
@@ -16,7 +16,7 @@ So you do not forget this later, you can add a custom shell command to your `.zp
 
 ```bash
 function touchbar-reboot() {
-    sudo killall TouchBarServer 
+    sudo killall TouchBarServer
 }
 ```
 
