@@ -9,4 +9,8 @@ You can learn more [about me here]({% link about.md %}).
 If you appreciate my work, [consider becoming a sponsor]({% link sponsor.md %}).
 I'm currently focusing on personal projects, while doing contract work for various clients.
 
-{% include hire_me.html %}
+<div class="d-block bg-light px-4 pt-3 mt-4 border rounded" markdown="1">
+**Need an iOS developer?**<br/>
+I am available for hire for freelance and contract work for iOS.
+If you are interested in working together, please [**get in touch**]({% link hire-me.md %}).
+</div>
