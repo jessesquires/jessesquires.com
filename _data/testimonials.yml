@@ -1,8 +1,20 @@
+- name: Rustin Reese
+  link: 'https://www.linkedin.com/in/rustin-reese/'
+  company: RxSaver
+  position: Engineering Manager
+  year: 2020-2021
+  testimonial: "Immediate impact. As a manager, that was my initial assessment of Jesse after shortly joining us on RxSaver in a part time iOS role.
+    Over time that assessment proved naive and simplistic, but no less true.
+    Jesse's expertise and experience naturally brings a velocity and throughput lift that any organization will feel and value greatly.
+    However, Jesse's passion to make iOS code bases better, coupled with his ability to help shape direction through
+    respectful sharing of nuanced opinion, has had a much deeper and longer lasting effect on RxSaver's iOS app and team culture.
+    As a manager, I couldn't be more impressed."
+
 - name: Mike Caloud
   link: 'https://www.linkedin.com/in/michaelcaloud/'
   company: Rosetta Stone
   position: Director of Mobile Engineering
-  year: 2015
+  year: 2013-2015
   testimonial: "Industrious, talented, quick learner — all phrases that come to mind when I think about Jesse.
     As his manager I worked closely with him, and got to examine up close the code he wrote, and the systems he designed, which were always high quality.
     He has a knack for software development, and he constantly impressed me with his well-designed solutions that he quickly and effortlessly implemented.
@@ -14,7 +26,7 @@
   link: 'https://www.linkedin.com/in/yoonchung/'
   company: Rosetta Stone
   position: Senior Director of Product Program Management
-  year: 2015
+  year: 2013-2015
   testimonial: "Aside from his great sense of humor and impeccable taste in coffee,
     Jesse is one of the most talented software engineers I have worked with at Rosetta Stone.
     This is a person who truly believes in giving back to the development community and raising the bar for developers where ever he goes.
