@@ -87,6 +87,10 @@ $ mkdir bin               # if needed
 
 > **Copyright &copy; 2014-present Jesse Squires.**
 
+⚠️ You **MAY NOT** reproduce or re-publish this site and its content in its entirety on your own, or otherwise rebrand or impersonate `jessesquires.com`. ⚠️
+
+If you would like to use this site as a template for your own custom site, [use my designated template repo](https://github.com/jessesquires/template-jekyll-site) and refer to this site as an example.
+
 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
 All code is licensed under an [MIT License](https://opensource.org/licenses/MIT).
