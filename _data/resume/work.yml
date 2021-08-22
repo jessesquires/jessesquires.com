@@ -41,6 +41,27 @@ entries:
       - "Most features shipped behind experiment flags using Duolingo's custom experimentation framework."
       - "Provided regularly, timely updates on the progress of projects via Jira and Slack."
 
+  - title: Independent Contractor (iOS), RxSaver
+    location: Remote
+    start: Oct 2019, Oct 2020
+    end: Aug 2021
+    link: 'https://www.rxsaver.com'
+    img:
+      name: work-rxsaver.png
+      title: RxSaver
+    description: "Hired as an independent contractor multiple times over a span of a couple years.
+      I worked part-time and reported to Rustin Reese.
+      *Note: RxSaver was [acquired](https://www.fiercehealthcare.com/tech/goodrx-reports-mixed-q1-results-as-executives-shrug-off-amazon-pharmacy-competition) by [GoodRx](https://www.goodrx.com) in [May 2021](https://www.bloomberg.com/news/articles/2021-05-13/goodrx-said-to-buy-perelman-s-rxsaver-business-for-50-million).*"
+    bullets:
+      - "Helped rewrite legacy Objective-C app in Swift."
+      - "Focused heavily on implementing iOS best practices and general code quality improvements."
+      - "Migrated CI from BuddyBuild to Bitrise."
+      - "Optimized Bitrise workflows, automated pull requests with Danger, implemented SwiftLint."
+      - "Increased unit test coverage."
+      - "Rewrote, optimized, and stubbed network requests in UI tests, resulting in 2.3X faster execution."
+      - "Implemented saving recent search terms."
+      - "Implemented push notifications."
+
   - title: Software Engineer (iOS), PlanGrid
     location: San Francisco, CA
     start: May 2017
