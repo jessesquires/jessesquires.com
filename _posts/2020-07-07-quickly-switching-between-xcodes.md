@@ -3,6 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [xcode, ios, macos]
 date: 2020-07-07T20:16:16-07:00
+date-updated: 2021-08-22T22:21:26-07:00
 title: Quickly switching between Xcodes
 ---
 
@@ -38,3 +39,8 @@ function xcswitch() {
 It checks your current Xcode selection, then switches to the other one. This makes some assumptions, namely that you only ever have two Xcodes installed like me &mdash; `Xcode.app` and `Xcode-beta.app`. It also assumes they are installed in `/Applications`. This should work as-is for most folks, but you can tweak it for your needs.
 
 If you find this useful, you can copy it to your `.bash_profile` or `.zprofile` and invoke it by calling `xcswitch`.
+
+{% include updated_notice.html
+message="
+You can make this even better by following Keith Smiley's tip to [switch Xcode versions without a password](https://www.smileykeith.com/2021/08/12/xcode-select-sudoers/).
+" %}

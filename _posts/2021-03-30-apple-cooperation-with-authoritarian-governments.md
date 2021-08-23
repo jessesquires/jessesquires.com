@@ -3,7 +3,7 @@ layout: post
 categories: [essays]
 tags: [tech, politics, capitalism, apple]
 date: 2021-03-30T19:56:17-07:00
-date-updated: 2021-07-27T23:58:01-07:00
+date-updated: 2021-08-22T22:15:56-07:00
 title: Apple's cooperation with authoritarian governments
 ---
 
@@ -220,6 +220,20 @@ See also: [MacRumors](https://www.macrumors.com/2021/05/17/apple-security-compro
 > Apple Inc on Monday said a new "private relay" feature designed to obscure a user's web browsing behavior from internet service providers and advertisers will not be available in China for regulatory reasons.
 >
 > Apple said it also will not offer "private relay" in Belarus, Colombia, Egypt, Kazakhstan, Saudi Arabia, South Africa, Turkmenistan, Uganda and the Philippines.
+
+##### August 2021 &mdash; Engrave Danger: An Analysis of Apple Engraving Censorship across Six Regions
+
+[Jeffrey Knockel and Lotus Ruan at The Citizen Lab](https://citizenlab.ca/2021/08/engrave-danger-an-analysis-of-apple-engraving-censorship-across-six-regions/):
+
+> We analyzed Apple’s filtering of product engravings in six regions, discovering 1,105 keyword filtering rules used to moderate their content.
+>
+> Across all six regions we analyzed, we found that Apple’s content moderation practices pertaining to derogatory, racist, or sexual content are inconsistently applied and that Apple’s public-facing documents failed to explain how it derives their keyword lists.
+>
+> Within mainland China, we found that Apple censors political content including broad references to Chinese leadership and China’s political system, names of dissidents and independent news organizations, and general terms relating to religions, democracy, and human rights.
+>
+> We found that part of Apple’s mainland China political censorship bleeds into both Hong Kong and Taiwan. Much of this censorship exceeds Apple’s legal obligations in Hong Kong, and we are aware of no legal justification for the political censorship of content in Taiwan.
+>
+> We present evidence that Apple does not fully understand what content they censor and that, rather than each censored keyword being born of careful consideration, many seem to have been thoughtlessly reappropriated from other sources.
 
 {% include break.html %}
 
