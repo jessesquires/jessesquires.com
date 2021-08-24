@@ -12,6 +12,7 @@ When GitHub actions first launched, the recommended way to cache your Bundler de
 
 I'm not quite sure when this changed. Here's how you used to cache Bundler using [GitHub's cache action](https://github.com/actions/cache).
 
+{% raw %}
 ```yaml
 # workflow.yml
 
@@ -23,6 +24,7 @@ I'm not quite sure when this changed. Here's how you used to cache Bundler using
     restore-keys: |
       ${{ runner.os }}-gem-bundler-
 ```
+{% endraw %}
 
 Apparently, caching gems with Bundler is [not trivial](https://github.com/actions/cache/blob/main/examples.md#ruby---bundler) and actually [quite difficult](https://github.com/ruby/setup-ruby#caching-bundle-install-manually) to get correct. I don't know the details, but I do know that my GitHub workflows started failing in strange ways when attempting to use `actions/cache`. When updating gems and especially when updating Bundler to a new version, the caching would fail on GitHub's CI machines, which resulted in `bundle exec` failing because no gems could be found.
 
