@@ -5,7 +5,9 @@ title: Hire Me
 
 Need an iOS developer? Look no further! I am available for hire for freelance and contract work for iOS. If you don't know much about me, take a look around this site to learn more. While my availability varies, I can usually work a maximum of 15-30 hours per week on any given project. I am not pursuing full-time employment at this time.
 
-**If you are interested in working together, please [get in touch]({% link contact.md %}).** I typically get booked quickly, so I recommend reaching out sooner rather than later. Please be as descriptive as you can about your project and what you are looking for.
+<div class="d-block bg-light px-4 pt-3 my-4 border rounded" markdown="1">
+**If you are interested in working together, you can [contact me here]({% link contact.md %}).** I typically get booked quickly, so I recommend reaching out sooner rather than later. Please be as detailed as possible about your project and what you are looking for.
+</div>
 
 ### Testimonials
 
