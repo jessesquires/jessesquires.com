@@ -3,6 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [swift, swiftui, wwdc, uikit, ios, macos]
 date: 2021-07-01T17:31:30-07:00
+date-updated: 2021-09-11T10:51:18-07:00
 title: Is SwiftUI ready?
 ---
 
@@ -91,3 +92,11 @@ These API limitations will start to diminish eventually, but the yearly release 
 {% include break.html %}
 
 I hope this was helpful for folks who are, like me, trying to consider if and how much you should start using SwiftUI. If you are targeting iOS 14 and above, or especially iOS 15, it sounds like now is a great time to start experimenting. Let me know if I should add anything else to this post!
+
+{% include updated_notice.html
+message="This post has been updated to include everything you see below this notice. The date reflects the last time an update occurred."
+%}
+
+It looks like SwiftUI seems to be breaking across OS releases on all platforms. See [this thread from @stroughtonsmith](https://twitter.com/stroughtonsmith/status/1430746752039231496):
+
+> SwiftUI metrics & padding changes in macOS 12 are… ‘a problem’. I’m seeing all kinds of wrong behavior across my apps, compared to macOS 11. Fixing for one will break the other, which would mean a lot of nasty if statements. I hear iOS 15 has similar issues.
