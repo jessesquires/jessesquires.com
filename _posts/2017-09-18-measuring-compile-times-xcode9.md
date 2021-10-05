@@ -48,4 +48,4 @@ Using these flags is obviously a temporary (and kind of hacky) solution to impro
 
 I'm hoping using these flags &mdash; and having to change your code to improve compilation times &mdash; will soon be a hack of the past. Eventually it will be, we just don't know when.
 
-If you are interested in learning more about the type-checker design and implementation, see [this doc in the main Swift repo](https://github.com/apple/swift/blob/master/docs/TypeChecker.rst). But beware, it was last updated about a year ago in October 2016.
+If you are interested in learning more about the type-checker design and implementation, see [this doc in the main Swift repo](https://github.com/apple/swift/blob/main/docs/TypeChecker.md). ~But beware, it was last updated about a year ago in October 2016.~
