@@ -33,7 +33,7 @@ I also write personal essays and notes on what I'm currently reading.
     </li>
     {% endfor %}
 
-    {% assign updated_posts = site.posts | where_exp: "post", "post.date-updated != null" | sort: "date-updated" %}
+    {% assign updated_posts = site.posts | where_exp: "post", "post.date-updated != null" %}
     {% capture updated_link %}{% link recently-updated.md %}{% endcapture %}
     <li class="nav-item">
         <a class="nav-link px-2 mx-1 py-1 {% if page.url == updated_link %}active{% endif %}"
@@ -65,7 +65,7 @@ I also write personal essays and notes on what I'm currently reading.
 
 <div>
 {% if page.category == 'recently-updated' %}
-    {% for post in updated_posts reversed limit: site.feeds.limit %}
+    {% for post in updated_posts limit: site.feeds.limit %}
         <article>
         {% include post_entry.html post_entry=post display_excerpt=true display_categories=false display_tags=false %}
         </article>
