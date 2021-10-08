@@ -33,7 +33,8 @@ I also write personal essays and notes on what I'm currently reading.
     </li>
     {% endfor %}
 
-    {% assign updated_posts = site.posts | where_exp: "post", "post.date-updated != null" %}
+    {% assign updated_posts = site.posts | where_exp: "post", "post.date-updated != null" | sort: "date-updated" %}
+
     {% capture updated_link %}{% link recently-updated.md %}{% endcapture %}
     <li class="nav-item">
         <a class="nav-link px-2 mx-1 py-1 {% if page.url == updated_link %}active{% endif %}"
@@ -65,7 +66,20 @@ I also write personal essays and notes on what I'm currently reading.
 
 <div>
 {% if page.category == 'recently-updated' %}
-    {% for post in updated_posts limit: site.feeds.limit %}
+    {% for post in updated_posts reversed %}
+        <!-- WORKAROUND for bug (?) in `limit:`
+
+        The `updated_posts` variable (above) is filtered and sorted by `post.date-updated`.
+        Previously, this loop used `limit: site.feeds.limit` to limit the total number of posts shown,
+        similar to how `post_list` is handled below.
+
+        However, even though we are using `reversed` to sort by the most recently updated post first,
+        `limit:` appears to limit the count in-order using the *non-reversed* array.
+        Thus, you end up with the first `N` updated posts rather than the `N` most recent.
+
+        To fix, we need to manually check the loop index against our feed limit, then break out of the loop.
+        -->
+        {% if forloop.index > site.feeds.limit %} {% break %} {% endif %}
         <article>
         {% include post_entry.html post_entry=post display_excerpt=true display_categories=false display_tags=false %}
         </article>
