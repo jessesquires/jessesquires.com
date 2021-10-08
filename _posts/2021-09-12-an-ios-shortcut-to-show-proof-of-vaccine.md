@@ -3,6 +3,7 @@ layout: post
 categories: [essays]
 tags: [ios, ios-shortcuts]
 date: 2021-09-12T15:46:48-07:00
+date-updated: 2021-10-07T22:05:44-07:00
 title: An iOS shortcut to show proof of vaccine
 image:
     file: "shortcut-vaccine-proof-1.jpg"
@@ -28,6 +29,19 @@ Once we have the URL, we can create a simple shortcut that opens that URL.
 
 {% include post_image.html %}
 
+{% include updated_notice.html
+message="
+As of iOS 15, Shortcuts now has an action to open a file in the Files app. This method is much easier and simpler. You need to select the \"Open File\" action, then select the file from the Files app. See the new screenshot below.
+" %}
+
+{% include blog_image.html
+file="shortcut-vaccine-proof-3.jpg"
+alt="Simpler iOS 15 proof of vaccine shortcut code"
+caption="Simpler iOS 15 proof of vaccine shortcut code"
+source_link=null
+half_width=true
+%}
+
 Then, you can add this shortcut to your homescreen or display it in a Shortcuts widget.
 
 {% include blog_image.html
@@ -39,3 +53,8 @@ Then, you can add this shortcut to your homescreen or display it in a Shortcuts 
 %}
 
 That's it! Now tapping this shortcut will open and present this file in Files app. It's fast and easy.
+
+{% include updated_notice.html
+message="
+Additionally, in iOS 15.1 (currently in beta), you will be able to [add your COVID Vaccination Card to the Wallet App](https://www.macrumors.com/2021/09/21/ios-15-vaccine-card-wallet-app/). However, this will only work in states and health organizations that support SMART Health Cards.
+" %}
