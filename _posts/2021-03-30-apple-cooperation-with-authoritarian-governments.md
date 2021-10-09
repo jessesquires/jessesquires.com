@@ -235,6 +235,14 @@ See also: [MacRumors](https://www.macrumors.com/2021/05/17/apple-security-compro
 >
 > We present evidence that Apple does not fully understand what content they censor and that, rather than each censored keyword being born of careful consideration, many seem to have been thoughtlessly reappropriated from other sources.
 
+##### September 2021 &mdash; Apple removes Navalny app from stores before Russian elections
+
+[Justin Sherman writing for Wired](https://www.wired.com/story/opinion-in-russia-apple-and-google-staff-get-muscled-up-by-the-state/):
+
+> Earlier this month, when the Kremlin told multiple Big Tech companies to suppress political opposition amid nationwide elections in Russia, their answer was unequivocal: no. Yet just two weeks later, Apple and Google deleted from their app stores the Smart Voting app, opposition leader Alexey Navalny and his party’s primary tool for consolidating votes against Vladimir Putin’s regime. Then Telegram and Google-owned YouTube also restricted access to the recommendations for opposition candidates that Navalny was sharing on these platforms.
+
+See also: [Reuters](https://www.reuters.com/world/europe/google-apple-remove-navalny-app-stores-russian-elections-begin-2021-09-17/).
+
 {% include break.html %}
 
 ### Conclusion
