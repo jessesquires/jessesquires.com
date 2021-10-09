@@ -3,6 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [tech, web]
 date: 2018-06-24T10:00:00-07:00
+date-updated: 2021-10-08T20:10:38-07:00
 title: Choosing a VPN service
 ---
 
@@ -39,3 +40,8 @@ Some questions to consider:
 I've been using [NordVPN](https://nordvpn.com) for a couple of years now. They check most of the important boxes for me regarding security, ease-of-use, and affordability. They have a clear [Terms of Service](https://nordvpn.com/terms-of-service/) and a strict no-logs policy. They are recommended by [PrivacyTools.io](https://www.privacytools.io/#vpn). They operate under the jurisdiction of Panama, a country with a reputation for not giving a shit. Being associated with Panama is not something you would look for [in a politician](https://en.wikipedia.org/wiki/List_of_people_named_in_the_Panama_Papers), but for a VPN service? Probably for the best. (Again, avoiding [the Fourteen Eyes](https://www.privacytools.io/#ukusa) is the main priority.)
 
 Nord has a good set of features, strong encryption by default, an extensive list of servers to choose, excellent macOS and iOS client apps, and reasonably priced plans. They are not perfect however (no VPN is!), and you can see their shortcomings on the [VPN comparison chart](https://thatoneprivacysite.net/vpn-comparison-chart/) and their [interview with TorrentFreak](https://torrentfreak.com/vpn-services-keep-anonymous-2018/). However, these trade-offs are acceptable to me for now. What's important is staying informed about your current VPN provider and making sure the things you care about most aren't changing &mdash; like getting acquired by Facebook or McAfee.
+
+{% include updated_notice.html
+message="
+See Michael Tsai's recent round up on [the business of VPNs](https://mjtsai.com/blog/2021/10/08/the-business-of-vpns/). Many popular services are becoming significantly less trustworthy.
+" %}
