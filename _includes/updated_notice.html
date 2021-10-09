@@ -1,11 +1,14 @@
 
 {% assign date = include.date | default: page.date-updated %}
 {% assign date_hover = date | date: "%d %b %Y %r %Z" %}
+{% assign date_string = date | date_to_long_string %}
+{% assign id = "updated " | append: date_string | slugify %}
 
 <div class="d-block bg-light pt-3 px-3 pb-0 my-3 border border-2 border-secondary rounded update-notice">
-    <h5>Update
+    <h5 id="{{ id }}">
+        <a href="#{{ id }}" class="text-reset"><i class="bi bi-link"></i> Update</a>
         <small class="text-secondary" title="{{ date_hover }}">
-            <i>{{ date | date_to_long_string }}</i>
+            <i>{{ date_string }}</i>
         </small>
     </h5>
     {{ include.message | markdownify }}
