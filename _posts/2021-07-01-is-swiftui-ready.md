@@ -3,7 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [swift, swiftui, wwdc, uikit, ios, macos]
 date: 2021-07-01T17:31:30-07:00
-date-updated: 2021-09-11T10:51:18-07:00
+date-updated: 2021-10-08T20:22:56-07:00
 title: Is SwiftUI ready?
 ---
 
@@ -100,3 +100,9 @@ message="This post has been updated to include everything you see below this not
 It looks like SwiftUI seems to be breaking across OS releases on all platforms. See [this thread from @stroughtonsmith](https://twitter.com/stroughtonsmith/status/1430746752039231496):
 
 > SwiftUI metrics & padding changes in macOS 12 are… ‘a problem’. I’m seeing all kinds of wrong behavior across my apps, compared to macOS 11. Fixing for one will break the other, which would mean a lot of nasty if statements. I hear iOS 15 has similar issues.
+
+The breakage in iOS 15 and general instability of SwiftUI seems to be getting more attention lately. Specifically, the Shortcuts app in iOS 15 was supposedly rewritten (at least partially) in SwiftUI and the results are not encouraging. See Michael Tsai's roundup, [iOS 15 Shortcuts and SwiftUI](https://mjtsai.com/blog/2021/10/01/ios-15-shortcuts-and-swiftui/).
+
+More from [@stroughtonsmith](https://twitter.com/stroughtonsmith/status/1443692971187130373):
+
+> We're in 'year 3' of SwiftUI, and my base advice remains unchanged — it is great for auxiliary non-critical UI layouts (inspector sidebars, settings windows, and panels), watchOS apps, and rapid prototyping. Beyond that, it just does not meet the bar for complex, reliable apps.
