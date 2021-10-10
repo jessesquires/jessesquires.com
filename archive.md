@@ -22,6 +22,11 @@ permalink: /blog/archive/
 <li>
     <i class="bi bi-caret-right-fill" role="img" aria-hidden="true"></i>
     <a href="{{ post.url }}" class="fs-5 text-decoration-none">{{ post.title }}</a>
+    {% if post.date-updated %}
+    <span class="badge bg-light text-secondary border mx-1" title="{{ post.date-updated | date: '%d %b %Y %r %Z' }}">
+        Updated
+    </span>
+    {% endif %}
 </li>
 {% endfor %}
 </ul>
