@@ -1,7 +1,7 @@
 ---
 layout: standalone
 title: Archive
-permalink: /blog/archive
+permalink: /blog/archive/
 ---
 
 <div class="my-3">
