@@ -38,7 +38,11 @@ Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate, public
 # -------------
 
 Redirect 301 /resume/ /linkedout/
+Redirect 301 /resume /linkedout/
+Redirect 301 /cv/ /linkedout/
+Redirect 301 /cv /linkedout/
 Redirect 301 /work/ /linkedout/
+Redirect 301 /work /linkedout/
 Redirect 301 /opensource/ /projects/
 
 # -------------
