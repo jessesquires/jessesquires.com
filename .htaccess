@@ -44,6 +44,7 @@ Redirect 301 /cv /linkedout/
 Redirect 301 /work/ /linkedout/
 Redirect 301 /work /linkedout/
 Redirect 301 /opensource/ /projects/
+Redirect 301 /opensource /projects/
 
 # -------------
 # redirects for old blog URLs
