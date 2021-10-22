@@ -64,12 +64,6 @@ $ make
 $ make preview
 ```
 
-### Verifying DNS setup
-
-```bash
-$ dig www.jessesquires.com +nostats +nocomments +nocmd
-```
-
 ### Install software on NFSN
 
 ```bash
@@ -81,6 +75,26 @@ $ mkdir bin               # if needed
 # follow any install instructions
 # put binary in protected/bin/
 # add `export PATH=$PATH:/home/protected/bin/` to your `.bash_profile`
+```
+
+## Validation
+
+### Feeds
+- https://validator.w3.org/feed/
+- https://json-feed-validator.herokuapp.com
+
+### Markup
+- https://validator.w3.org/nu/
+
+### Structured Data
+- https://cards-dev.twitter.com/validator
+- https://www.opengraphcheck.com
+- https://search.google.com/structured-data/testing-tool
+
+### DNS setup
+
+```bash
+$ dig www.jessesquires.com +nostats +nocomments +nocmd
 ```
 
 ## License
