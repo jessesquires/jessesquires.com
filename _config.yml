@@ -66,6 +66,8 @@ feeds:
   limit: 30
   rss: '/feed.xml'
   json: '/feed.json'
+  rss-updates-only: '/feeds/updates.xml'
+  json-updates-only: '/feeds/updates.json'
 
 # URLs
 img_url: '/img/'

@@ -1,4 +1,4 @@
 ---
 layout: feed_json
-updates_only: false
+updates_only: true
 ---

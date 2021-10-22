@@ -1,0 +1,52 @@
+---
+layout: null
+---
+
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <link href="{{ page.url | absolute_url }}" rel="self" type="application/atom+xml" />
+    <generator uri="https://jekyllrb.com/" version="{{ jekyll.version }}">Jekyll</generator>
+
+    <id>{{ site.url }}/</id>
+    <link href="{{ site.url }}/" />
+    <updated>{{ site.time | date_to_xmlschema }}</updated>
+
+    <title>{{ site.title }}{% if page.updates_only %}: Recently Updated{% endif %}</title>
+    <subtitle>{{ site.description }}</subtitle>
+    <icon>{% link_absolute {{ site.logo | img_url }} %}</icon>
+    <rights>Copyright © 2012-{{ site.time | date: '%Y' }}, {{ site.author.name }}</rights>
+    <author>
+        <name>{{ site.author.name | xml_escape }}</name>
+        <uri>{{ site.url }}/</uri>
+    </author>
+
+    {% if page.updates_only %}
+        {% assign post_list = site.posts | where_exp: "post", "post.date-updated != null" | sort: "date-updated" %}
+    {% else %}
+        {% assign post_list = site.posts | sort: "date" %}
+    {% endif %}
+
+    {% for post in post_list reversed %}
+    {% if forloop.index > site.feeds.limit %} {% break %} {% endif %}
+    <entry xml:lang="en">
+        <id>{{ post.url | absolute_url | xml_escape }}</id>
+        <link href="{{ post.url | absolute_url }}" />
+
+        {% assign full_title = post.title %}
+        {% if post.subtitle %} {% assign full_title = post.title | append: ": " | append: post.subtitle %} {% endif %}
+        {% if page.updates_only %} {% assign full_title = "[Updated] " | append: full_title %} {% endif %}
+
+        <title>{{ full_title | xml_escape }}</title>
+        <published>{{ post.date | date_to_xmlschema }}</published>
+        <updated>{{ post.date-updated | default: post.date | date_to_xmlschema }}</updated>
+
+        {% for category in post.categories %}<category term="{{ category | xml_escape }}" />{% endfor %}
+        {% for tag in post.tags %}<category term="{{ tag | xml_escape }}" />{% endfor %}
+        <summary type="html">{{ post.excerpt | xml_escape }}</summary>
+
+        <content type="html" xml:base="{{ site.url }}" xml:lang="en">
+            {{ post.content | xml_escape }}
+        </content>
+    </entry>
+    {% endfor %}
+</feed>
