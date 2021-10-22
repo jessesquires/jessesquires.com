@@ -3,7 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [ethics, tech, web]
 date: 2018-02-25T10:00:00-07:00
-date-updated: 2021-06-09T21:53:44-07:00
+date-updated: 2021-10-22T13:28:00-07:00
 title: Replacing Google Search with DuckDuckGo
 subtitle: And how to add a custom DuckDuckGo search box to your site
 image:
@@ -84,5 +84,15 @@ You can find [the diff on GitHub ](https://github.com/jessesquires/jessesquires.
 If you value privacy and the open web, it's time to switch. By supporting DuckDuckGo, you will only help improve their service. Contrary to what most giant tech companies would have you believe, *it is possible* to build a great service without exploiting users' privacy and personal information.
 
 {% include updated_notice.html
+date="2021-06-09T21:53:44-07:00"
 message="Bing was [caught blocking results](https://mashable.com/article/microsoft-bing-tank-man/) for Tiananmen Square protests in Hong Kong. Per [Gabriel Weinberg](https://mobile.twitter.com/yegg/status/1401216879293874185): \"China banned DuckDuckGo in 2014 and we have no plans to change that.\" It is rare to see a tech company **not** cooperate with authoritarian governments."
 %}
+
+{% include updated_notice.html
+message="
+[A new report by Thomas Brewster at Forbes](https://forbes.com/sites/thomasbrewster/2021/10/04/google-keyword-warrants-give-us-government-data-on-search-users/): *\"The U.S. government is secretly ordering Google to provide data on anyone typing in certain search terms, an accidentally unsealed court document shows. There are fears such 'keyword warrants' threaten to implicate innocent Web users in serious crimes and are more common than previously thought.\"*
+
+[@DuckDuckGo](https://twitter.com/DuckDuckGo/status/1447559362906447874): *\"Google complies with invasive 'keyword warrants' that identify anyone who searched for a term. DuckDuckGo doesn't have any search histories by design and, bc of that, has had 0 search warrants (of any kind) since our founding in 2008.\"*
+
+Good to know.
+" %}
