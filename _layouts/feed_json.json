@@ -32,11 +32,15 @@ layout: null
             "url": "{{ post.url | absolute_url }}",
 
             {% assign full_title = post.title %}
+            {% assign post_date = post.date %}
             {% if post.subtitle %} {% assign full_title = post.title | append: ": " | append: post.subtitle %} {% endif %}
-            {% if page.updates_only %} {% assign full_title = "[Updated] " | append: full_title %} {% endif %}
+            {% if page.updates_only %}
+                {% assign full_title = "[Updated] " | append: full_title %}
+                {% assign post_date = post.date-updated %}
+            {% endif %}
 
             "title": {{ full_title | jsonify }},
-            "date_published": "{{ post.date | date_to_xmlschema }}",
+            "date_published": "{{ post_date | date_to_xmlschema }}",
             "date_modified": "{{ post.date-updated | default: post.date | date_to_xmlschema }}",
             "summary": {{ post.excerpt | jsonify }},
             "tags": [

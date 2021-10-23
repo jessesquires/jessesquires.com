@@ -33,11 +33,15 @@ layout: null
         <link href="{{ post.url | absolute_url }}" />
 
         {% assign full_title = post.title %}
+        {% assign post_date = post.date %}
         {% if post.subtitle %} {% assign full_title = post.title | append: ": " | append: post.subtitle %} {% endif %}
-        {% if page.updates_only %} {% assign full_title = "[Updated] " | append: full_title %} {% endif %}
+        {% if page.updates_only %}
+            {% assign full_title = "[Updated] " | append: full_title %}
+            {% assign post_date = post.date-updated %}
+        {% endif %}
 
         <title>{{ full_title | xml_escape }}</title>
-        <published>{{ post.date | date_to_xmlschema }}</published>
+        <published>{{ post_date | date_to_xmlschema }}</published>
         <updated>{{ post.date-updated | default: post.date | date_to_xmlschema }}</updated>
 
         {% for category in post.categories %}<category term="{{ category | xml_escape }}" />{% endfor %}
