@@ -3,7 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [ethics, tech, web]
 date: 2018-02-25T10:00:00-07:00
-date-updated: 2021-10-22T13:28:00-07:00
+date-updated: 2021-10-22T20:10:28-07:00
 title: Replacing Google Search with DuckDuckGo
 subtitle: And how to add a custom DuckDuckGo search box to your site
 image:
