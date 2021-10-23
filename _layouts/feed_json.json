@@ -28,18 +28,22 @@ layout: null
 
     {% for post in post_list reversed %}
         {
-            "id": "{{ post.url | absolute_url }}",
-            "url": "{{ post.url | absolute_url }}",
-
-            {% assign full_title = post.title %}
+            {% assign post_title = post.title %}
             {% assign post_date = post.date %}
-            {% if post.subtitle %} {% assign full_title = post.title | append: ": " | append: post.subtitle %} {% endif %}
+            {% assign post_id = post.url | absolute_url %}
+
+            {% if post.subtitle %} {% assign post_title = post.title | append: ": " | append: post.subtitle %} {% endif %}
             {% if page.updates_only %}
-                {% assign full_title = "[Updated] " | append: full_title %}
+                {% assign post_title = "[Updated] " | append: post_title %}
                 {% assign post_date = post.date-updated %}
+                {% assign date_string = post.date-updated | date_to_long_string %}
+                {% assign update_id = "updated " | append: date_string | slugify %}
+                {% assign post_id = post_id | append: "#" | append: update_id %}
             {% endif %}
 
-            "title": {{ full_title | jsonify }},
+            "id": "{{ post_id }}",
+            "url": "{{ post.url | absolute_url }}",
+            "title": {{ post_title | jsonify }},
             "date_published": "{{ post_date | date_to_xmlschema }}",
             "date_modified": "{{ post.date-updated | default: post.date | date_to_xmlschema }}",
             "summary": {{ post.excerpt | jsonify }},
