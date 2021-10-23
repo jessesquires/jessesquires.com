@@ -1,6 +1,6 @@
 ---
 layout: category_index
-title: Writing
+title: Recently Updated
 permalink: /blog/recently-updated/
 category: recently-updated
 ---
