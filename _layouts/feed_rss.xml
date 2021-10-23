@@ -7,7 +7,7 @@ layout: null
     <link href="{{ page.url | absolute_url }}" rel="self" type="application/atom+xml" />
     <generator uri="https://jekyllrb.com/" version="{{ jekyll.version }}">Jekyll</generator>
 
-    <id>{{ site.url }}/</id>
+    <id>{{ site.url }}/{% if page.updates_only %}#updates{% endif %}</id>
     <link href="{{ site.url }}/" />
     <updated>{{ site.time | date_to_xmlschema }}</updated>
 
