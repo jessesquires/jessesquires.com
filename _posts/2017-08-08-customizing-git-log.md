@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [git, open-source]
+tags: [git, git-aliases, open-source]
 date: 2017-08-08T10:00:00-07:00
 title: Customizing git-log
 subtitle: Creating a 'smartlog' alias in git
