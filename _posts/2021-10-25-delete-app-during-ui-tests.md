@@ -3,7 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [ios, ui-testing, ci, xcode]
 date: 2021-10-25T11:36:45-07:00
-title: Deleting your app from the iOS Simulator during UI tests
+title: Deleting your app from the iOS simulator during UI tests
 ---
 
 In last week's issue of [iOS Dev Weekly](https://iosdevweekly.com/issues/530#code), Dave linked to [this tweet](https://twitter.com/azamsharp/status/1449467728796999687) from Mohammad Azam, which linked to [this StackOverflow post](https://stackoverflow.com/questions/33107731/is-there-a-way-to-reset-the-app-between-tests-in-swift-xctest-ui) on resetting your app between UI tests by completely deleting it. It's a very clever idea! This post offers an improved version of the code and some thoughts on when to use this.
