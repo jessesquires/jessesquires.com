@@ -32,7 +32,8 @@ extension XCUIApplication {
             appName = uiTestRunnerName.replacingOccurrences(of: "UITests-Runner", with: "")
         }
 
-        let appIcon = springboard.icons[appName]
+        /// use `firstMatch` because icon may appear in iPad dock
+        let appIcon = springboard.icons[appName].firstMatch
         if appIcon.waitForExistence(timeout: timeout) {
             appIcon.press(forDuration: 2)
         } else {
