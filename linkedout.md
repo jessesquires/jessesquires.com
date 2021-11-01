@@ -15,7 +15,7 @@ After working for a number of years as a full-time employee at various companies
 
 <!-- PROJECTS -->
 
-{% include resume_header.html text="Projects & Open Source" icon="bi-terminal" %}
+{% include resume_header.html text="Projects & Open Source" icon="bi-terminal-fill" %}
 
 I’m working on a number of side projects, indie apps, and open source projects. You can find an [overview of my projects here]({% link projects.md %}). My open source projects are [hosted on GitHub]({{ site.data.social.github }}), and my indie apps are [available at Hexed Bits](https://www.hexedbits.com).
 
