@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [ethics, tech, web]
+tags: [ethics, tech, web, jekyll, bootstrap]
 date: 2018-02-25T10:00:00-07:00
 date-updated: 2021-10-23T10:49:17-07:00
 title: Replacing Google Search with DuckDuckGo
