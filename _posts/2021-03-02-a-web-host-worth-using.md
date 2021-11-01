@@ -7,7 +7,7 @@ title: A web host worth using
 
 ---
 
-I've written [about my web host before]({{ "nearlyfreespeech" | tag_url | absolute_url }}). I've used [NearlyFreeSpeech.net](https://www.nearlyfreespeech.net) for years. It's very "bare bones", very DIY, and very no-bullshit. I highly recommend them, especially if you only need to host a static site. It is so inexpensive you could say it's _nearly_ free.
+I've written [about my web host before]({{ "nearlyfreespeech" | tag_url }}). I've used [NearlyFreeSpeech.net](https://www.nearlyfreespeech.net) for years. It's very "bare bones", very DIY, and very no-bullshit. I highly recommend them, especially if you only need to host a static site. It is so inexpensive you could say it's _nearly_ free.
 
 <!--excerpt-->
 
