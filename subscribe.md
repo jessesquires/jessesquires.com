@@ -13,7 +13,7 @@ title: Subscribe
 
 <h4 class="text-secondary mt-3 mb-0">Updates feed</h4>
 
-<p class="mb-0">I periodically publish updates to older posts on my blog. Subscribe to the updates feed for updated posts only.</p>
+<p class="mb-0">I periodically <a href="{% link recently-updated.md %}">publish updates</a> to older posts on my blog. Subscribe to the updates feed for updated posts only.</p>
 
 - [RSS (updates-only)]({{ site.feeds.rss-updates-only }})
 - [JSON (updates-only)]({{ site.feeds.json-updates-only }})
