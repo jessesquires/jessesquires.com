@@ -3,6 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [jekyll, web, bootstrap, nearlyfreespeech, nfsn, github]
 date: 2021-11-01T12:21:32-07:00
+date-updated: 2021-11-05T21:53:09-07:00
 title: How to start a blog or portfolio website, for developers
 ---
 
@@ -94,3 +95,8 @@ As I mentioned before, the mainstream platforms might be a better fit for what y
 One alternative that is similar to Jekyll would be using John Sundell's [Publish](https://github.com/johnsundell/publish), which is a static site generator written in Swift. This might appeal more to iOS developers. You could write your entire site in Swift. I do not have any experience with this, but I'm sure you can find tutorials, examples, and guides online. [Kaya Thomas](https://twitter.com/kthomas901/status/1284692707537858561) used Publish for [her personal website](https://kaya.dev), and I think it looks great. And of course, [Swift by Sundell](https://www.swiftbysundell.com) uses Publish, if you want another example.
 
 However, if you have the time, patience, and interest then I highly encourage you to explore a new technology stack. If you are primarily an iOS developer, building your own website with Jekyll is great way to explore something completely different.
+
+{% include updated_notice.html
+message="
+[daiyi (chris)](https://twitter.com/daiyitastic) just published an interesting article, [*How to automate previews for Github Pages*](https://daiyi.co/blog/pr-previews-for-github-pages/). It's a pretty neat hack to get previews for website changes without having to run Jekyll locally or publish first. If you are going all-in on a GitHub pages site, this might be of interest to you.
+" %}
