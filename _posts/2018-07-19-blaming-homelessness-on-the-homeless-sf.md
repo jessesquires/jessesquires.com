@@ -3,6 +3,7 @@ layout: post
 categories: [essays]
 tags: [ethics, capitalism, politics, homelessness]
 date: 2018-07-19T10:00:00-07:00
+date-updated: 2021-11-06T11:47:05-07:00
 title: Hold it! Or, how to blame homelessness on the homeless in San Francisco
 subtitle: An essay on capital and compassion
 image:
@@ -87,3 +88,12 @@ Resisting the atrocities of capitalism is a never-ending struggle. Aside from pe
 - **Volunteer with [ECS SF](http://www.ecs-sf.org)** to have a direct impact in helping these folks by serving a meal or cleaning the facilities.
 
 - [**Do not call the cops**](http://brokeassstuart.com/blog/2016/02/18/what-to-do-when-someone-is-having-a-mental-health-crisis-on-the-street/) if you see a homeless person having a mental health crisis &mdash; contact the [Mobile Crisis Team](http://www.sfresourceconnect.org/detail.php?&tax=RP-1500&s=1&id=18844997), [Concrn.org](http://concrn.org), or the [SF Homeless Outreach Team](http://sfhomeless.wikia.com/wiki/Homeless_Outreach_Team_-_HOT_Team_-_H.O.T._Team).
+
+{% include updated_notice.html
+message="
+In the [latest episode of Last Week Tonight](https://www.youtube.com/watch?v=liptMbjF3EE), John Oliver's main story was on homelessness. You should watch it. And it should be no surprise that circumstances have worsened rather than improved since I wrote this essay about 3 years ago. The pandemic certainly hasn't helped, but it's not the main culprit. The issues are the same and have existed for decades. The pandemic just exposed and exacerbated our problems in new ways.
+
+As discussed in the episode, the solution is relatively simple: to end homelessness, you need to give people homes. House people, no questions asked. And pay for it by taxing greedy, predatory billionaires. Everything else &mdash; treatment for addition, employment, etc. &mdash; comes second. There is no hope to address any other concerns unless you house people first.
+
+Capitalism has conditioned us to view a person experiencing homelessness as an individual failure, rather than our collective failure as a society to provide basic human needs, rights, and dignity to everyone. But capitalism is not capable, nor designed, to care for and meet the needs of everyone &mdash; if it were, we wouldn't be discussing this.
+" %}
