@@ -3,6 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [ios, xcode, swiftpm, swift]
 date: 2021-11-03T11:43:37-07:00
+date-updated: 2021-11-17T16:14:19-08:00
 title: How to test an iOS Swift package without an Xcode project
 ---
 
@@ -26,3 +27,8 @@ xcodebuild test -scheme MyScheme -sdk iphonesimulator15.0 -destination "OS=15.0,
 ```
 
 This makes working with iOS packages much nicer, especially for non-UI iOS libraries where you never need to actually run on a simulator. This also simplifies running tests on CI. However, you still cannot build **and run** a Swift package on the iOS simulator.
+
+{% include updated_notice.html
+message="
+Reader [Bernd Rabe has pointed out](https://github.com/jessesquires/jessesquires.com/issues/158) that testing packages this way prevents Xcode from collecting code coverage results, which I have also noticed. You win some, you lose some, I guess. I do not know of any workarounds at this time. If you need code coverage, you will need to keep using an Xcode project.
+" %}
