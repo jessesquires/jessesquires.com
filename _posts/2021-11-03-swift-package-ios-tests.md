@@ -26,7 +26,7 @@ If you have only a `Package.swift`, you can build and test via `xcodebuild` simi
 xcodebuild test -scheme MyScheme -sdk iphonesimulator15.0 -destination "OS=15.0,name=iPhone 13 Mini"
 ```
 
-This makes working with iOS packages much nicer, especially for non-UI iOS libraries where you never need to actually run on a simulator. This also simplifies running tests on CI. However, you still cannot build **and run** a Swift package on the iOS simulator.
+This makes working with iOS packages much nicer, especially for non-UI iOS libraries where you never need to actually run on a simulator. This also simplifies running tests on CI.
 
 {% include updated_notice.html
 message="
