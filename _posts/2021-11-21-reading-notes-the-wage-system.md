@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [reading-notes]
-tags: [capitalism, labor, politics, anarchism]
+tags: [capitalism, labor, politics, anarchism, work]
 date: 2021-11-21T22:06:28-08:00
 title: "Reading Notes: The Wage System"
 ---
