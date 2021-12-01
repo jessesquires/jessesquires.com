@@ -42,7 +42,7 @@ Unnecessary? Please. Annoying? Don't be so modest. Putting a screen on something
 
 > After all, we’re used to doing as much research as we want before buying a product online, but very little of that information is available in the brick-and-mortar shopping experience. Avakian said Cooler Screens is changing that: “You could ask the screens, ‘Show me all the vegan items’ or ‘How many calories are in this product?’”
 
-This is a truly remarkable breakthrough. Until now, there has been no way to tell if an item is vegan or how many calories it has. Cooler Screens have taken the screens out of our pockets and put them directly in the aisles &mdash; amazing. To assume that the _coolness_ of Cooler Screens is derived merely from their proximity to refrigeration devices would be remiss. These things are _so cool_. You don't even to have open them to see what's inside! Screen time, my ass.
+This is a truly remarkable breakthrough. Until now, there has been no way to tell if an item is vegan or how many calories it has. Cooler Screens have taken the screens out of our pockets and put them directly in the aisles &mdash; doubling as an amazing new advertisement delivery platform. To assume that the _coolness_ of Cooler Screens is derived merely from their proximity to refrigeration devices would be remiss. These things are _so cool_. You don't even to have open them to see what's inside! Screen time, my ass.
 
 You will be pleased to know, dear reader, that yours truly had the pleasure to encounter them in real life. Thus is the joyous experience of a typical Bay Area denizen.
 
