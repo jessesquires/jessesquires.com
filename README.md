@@ -8,6 +8,12 @@
 
 This is my personal site and blog. It is built with [Jekyll](https://jekyllrb.com) and [Bootstrap](https://getbootstrap.com), and hosted at [NearlyFreeSpeech](https://nearlyfreespeech.net).
 
+### ⚠️ Please do not copy and reproduce my site as your own ⚠️
+
+This site is open source, and available to allow folks to submit corrections, as well as help folks learn how to build Jekyll sites.
+
+If you would like to build your own site based on mine, **[please use this template](https://github.com/jessesquires/template-jekyll-site)**. ✌️
+
 ## Requirements
 
 - [Bundler](https://bundler.io)
