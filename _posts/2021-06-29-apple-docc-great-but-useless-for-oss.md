@@ -3,7 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [docc, documentation, github, jazzy, open-source, swift, wwdc]
 date: 2021-06-29T16:55:17-07:00
-date-updated: 2021-07-11T16:22:04-07:00
+date-updated: 2021-12-03T13:19:44-08:00
 title: Apple's DocC is excellent, but unusable for open source projects
 ---
 
@@ -89,8 +89,14 @@ I think what I'm realizing is that community tooling is never going to be replac
 " %}
 
 {% include updated_notice.html
+date="2021-07-11T16:22:04-07:00"
 message="
 [Helge Heß](https://github.com/helje5) has written a post about [converting DocC archives into static HTML sites](http://www.alwaysrightinstitute.com/docz/). You can find the project [on GitHub](https://github.com/DoccZz/docc2html). It is currently still a work-in-progress, but a promising start.
+" %}
+
+{% include updated_notice.html
+message="
+Good news! There's [a new thread](https://forums.swift.org/t/support-hosting-docc-archives-in-static-hosting-environments/53572) on the Swift forums to discuss an official solution to support hosting DocC archives in static hosting environments, like GitHub pages.
 " %}
 
 #### Further Reading
