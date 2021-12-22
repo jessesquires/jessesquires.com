@@ -19,13 +19,9 @@
          <meta itemprop="canonical" content="{{ page.url | absolute_url }}">
          <meta itemprop="url" content="{{ page.url | absolute_url }}">
 
-         {% if page.title %}
-         <meta itemprop="name" content="{{ page.title }}">
-         <meta itemprop="description" content="{{ page.excerpt | normalize_whitespace | strip_html | truncatewords: 40 }}">
-         {% else %}
-         <meta itemprop="name" content="{{ site.title }}">
-         <meta itemprop="description" content="{{ site.description }}">
-         {% endif %}
+         <!-- "imported" from head.html -->
+         <meta itemprop="name" content="{{ page_title }}">
+         <meta itemprop="description" content="{{ page_description }}">
       </div>
 
       {% include footer.html %}
