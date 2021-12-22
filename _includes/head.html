@@ -37,7 +37,7 @@
         {% assign description = site.description %}
     {% endif %}
 
-    {% capture page_description %} {{ description | normalize_whitespace | strip_html | truncatewords: 40 }} {% endcapture %}
+    {% capture page_description %}{{ description | normalize_whitespace | strip_html | truncatewords: 40 }}{% endcapture %}
 
     <!-- Open Graph -->
     <meta property="og:site_name" content="{{ site.title }}">
