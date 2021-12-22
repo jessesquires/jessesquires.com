@@ -52,7 +52,7 @@ layout: null
                 {% for category in post.categories %}"{{ category }}"{% endfor %}
             ],
             "content_html": {{ post.content | jsonify }}
-        } {% if forloop.index > site.feeds.limit %} {% break %} {% else %}, {% endif %}
+        } {% if forloop.last == true or forloop.index > site.feeds.limit %} {% break %} {% else %}, {% endif %}
     {% endfor %}
     ]
 }
