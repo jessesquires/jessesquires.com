@@ -17,44 +17,44 @@
         {% endif %}
     </title>
 
+    {% if page.image %}
+        {% capture page_image %} {% link_absolute {{ page.image.file | img_url: 'blog' }} %} {% endcapture %}
+    {% else %}
+        {% capture page_image %} {% link_absolute {{ site.logo | img_url }} %} {% endcapture %}
+    {% endif %}
+
+    {% if page.title %}
+        {% assign page_title = page.title %}
+    {% else %}
+        {% assign page_title = site.title %}
+    {% endif %}
+
+    {% if page.excerpt %}
+        {% assign description = page.excerpt %}
+    {% elsif page.description %}
+        {% assign description = page.description %}
+    {% else %}
+        {% assign description = site.description %}
+    {% endif %}
+
+    {% capture page_description %} {{ description | normalize_whitespace | strip_html | truncatewords: 40 }} {% endcapture %}
+
     <!-- Open Graph -->
     <meta property="og:site_name" content="{{ site.title }}">
     <meta property="og:url" content="{{ page.url | absolute_url }}">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_US">
-
-    {% if page.image %}
-    <meta property="og:image" content="{% link_absolute {{ page.image.file | img_url: 'blog' }} %}">
-    {% else %}
-    <meta property="og:image" content="{% link_absolute {{ site.logo | img_url }} %}">
-    {% endif %}
-
-    {% if page.title %}
-    <meta property="og:title" content="{{ page.title }}">
-    <meta property="og:description" content="{{ page.excerpt | normalize_whitespace | strip_html | truncatewords: 40 }}"/>
-    {% else %}
-    <meta property="og:title" content="{{ site.title }}">
-    <meta property="og:description" content="{{ site.description }}">
-    {% endif %}
+    <meta property="og:image" content="{{ page_image }}">
+    <meta property="og:title" content="{{ page_title }}">
+    <meta property="og:description" content="{{ page_description }}"/>
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@{{ site.author.twitter }}">
     <meta name="twitter:creator" content="@{{ site.author.twitter }}">
-
-    {% if page.image %}
-    <meta name="twitter:image" content="{% link_absolute {{ page.image.file | img_url: 'blog' }} %}">
-    {% else %}
-    <meta name="twitter:image" content="{% link_absolute {{ site.logo | img_url }} %}">
-    {% endif %}
-
-    {% if page.title %}
-    <meta name="twitter:title" content="{{ page.title }}">
-    <meta name="twitter:description" content="{{ page.excerpt | normalize_whitespace | strip_html | truncatewords: 40 }}">
-    {% else %}
-    <meta name="twitter:title" content="{{ site.title }}">
-    <meta name="twitter:description" content="{{ site.description }}">
-    {% endif %}
+    <meta name="twitter:image" content="{{ page_image }}">
+    <meta name="twitter:title" content="{{ page_title }}">
+    <meta name="twitter:description" content="{{ page_description }}">
 
     <link href="/font/ubuntuMono/ubuntuMono.css" rel="stylesheet">
     <link href="/node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
