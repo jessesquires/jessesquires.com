@@ -1,3 +1,5 @@
+export JEKYLL_ENV=development
+
 .DEFAULT: build
 
 .PHONY: build

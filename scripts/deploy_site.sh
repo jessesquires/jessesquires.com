@@ -30,7 +30,7 @@ gem install bundler --no-document
 bundle install --jobs 4 --retry 3
 
 echo '🛠  jekyll build'
-bundle exec jekyll build --destination $PUBLIC_WWW
+JEKYLL_ENV=production bundle exec jekyll build --destination $PUBLIC_WWW
 
 echo ' '
 echo '🌈  Done! Site built and deployed successfully.'
