@@ -3,7 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [docc, documentation, github, jazzy, open-source, swift, wwdc]
 date: 2021-06-29T16:55:17-07:00
-date-updated: 2021-12-03T13:19:44-08:00
+date-updated: 2021-12-30T17:31:10-08:00
 title: Apple's DocC is excellent, but unusable for open source projects
 ---
 
@@ -95,8 +95,14 @@ message="
 " %}
 
 {% include updated_notice.html
+date="2021-12-03T13:19:44-08:00"
 message="
 Good news! There's [a new thread](https://forums.swift.org/t/support-hosting-docc-archives-in-static-hosting-environments/53572) on the Swift forums to discuss an official solution to support hosting DocC archives in static hosting environments, like GitHub pages.
+" %}
+
+{% include updated_notice.html
+message="
+There's more good news to share! And hopefully this will be the final update to this post. A pull request ([#44](https://github.com/apple/swift-docc/pull/44)) to add static hosting support to DocC has merged into the main branch of [the swift-docc repo](https://github.com/apple/swift-docc). A second pull request ([#56](https://github.com/apple/swift-docc/pull/56)) is currently open to pick the changes into the `release/5.6` branch, which matches the [main Swift repo's](https://github.com/apple/swift/tree/release/5.6) `release/5.6` branch. So, I believe we should expect an official release of DocC with support for static hosting alongside the release of Swift 5.6. However, there's been no official post on [Swift.org](https://www.swift.org) about the timeline or roadmap for Swift 5.6. It will likely be summer 2022.
 " %}
 
 #### Further Reading
