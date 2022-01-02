@@ -17,7 +17,7 @@ I co-hosted the [Swift Unwrapped](https://swiftunwrapped.github.io) podcast with
 
 ### Swift Weekly Brief
 
-I started the [Swift Weekly Brief](https://swiftweekly.github.io) newsletter in December 2015, and was the primary author until January 2018 before handing it off to the community. Since, [Bas Broek](https://twitter.com/BasThomas) has kindly taken over as the primary author.
+I started the [Swift Weekly Brief](https://swiftweekly.github.io) newsletter in December 2015, and was the primary author until January 2018 before handing it off to the community. Since then, [other contributors](https://swiftweekly.github.io/authors/) have kindly taken over maintaining the project.
 
 I started this project with the intention of making it a community effort. To my knowledge it was the first newsletter of its kind, to be completely open source, and run by the community, for the community. I'm proud to say it inspired [Colin Eberhardt](https://twitter.com/ColinEberhardt) to [start his own](https://github.com/SwiftWeekly/swiftweekly.github.io/issues/339) newsletter, [WebAssembly Weekly](http://wasmweekly.news), which started as a fork of Swift Weekly Brief. Furthermore, I volunteered to help build [a newsletter for the Tech Workers Coalition](https://github.com/techworkersco/techworkersco.github.io), which is also modeled after Swift Weekly Brief.
 
