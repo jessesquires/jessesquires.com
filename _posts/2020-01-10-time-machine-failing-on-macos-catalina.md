@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [macos, time-machine, catalina]
+tags: [macos, time-machine, macos-catalina]
 date: 2020-01-10T12:26:27-08:00
 title: Time Machine failing on macOS Catalina
 image:

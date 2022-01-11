@@ -1,12 +1,12 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [macos, time-machine, big-sur, bugs]
+tags: [macos, time-machine, macos-big-sur, bugs]
 date: 2021-04-07T22:00:05-07:00
 title: Time Machine error 45 is fixed in Big Sur
 image:
     file: time-machine-fail.png
-    alt: "Time Machine backups failing"
+    alt: "Time Machine backups failing on macOS Big Sur"
     half_width: true
 ---
 
@@ -16,6 +16,6 @@ Previously, I [wrote about Time Machine "error 45"]({% post_url 2020-07-17-time-
 
 {% include post_image.html %}
 
-I upgraded the same machine experiencing this issue &mdash; a 2020 Intel MacBook Pro &mdash; to Big Sur a little over a month ago. So far, so good. Time Machine has been working consistently and reliably. No more "error 45" failures. 
+I upgraded the same machine experiencing this issue &mdash; a 2020 Intel MacBook Pro &mdash; to Big Sur a little over a month ago. So far, so good. Time Machine has been working consistently and reliably. No more "error 45" failures.
 
 I hope the error does not return, but if it does, I will update this post.

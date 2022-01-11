@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [macos, big-sur, apple]
+tags: [macos, macos-big-sur, apple]
 date: 2021-06-01T10:07:19-07:00
 date-updated: 2021-06-09T22:33:13-07:00
 title: Three months of Big Sur
