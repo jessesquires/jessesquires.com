@@ -25,7 +25,9 @@ For now, rebooting my MacBook has "fixed" the issue and backups are working agai
 
 {% include updated_notice.html
 message="
-Reader [David Humphrey](https://twitter.com/humphd/status/1481049310888439814) mentioned a better possible workaround:
+Two readers have provided some tips on Twitter. [David Humphrey](https://twitter.com/humphd/status/1481049310888439814) mentioned a better possible workaround:
 
 > I had something like this with Time Machine backups to my Synology, and it turned out to be macOS holding open simultaneous connections, which is why rebooting fixed it. When it happens now, I know that I can go and force a disconnect of the user on the NAS and that fixes.
+
+[Rodrigo Escobar](https://twitter.com/RodAEscobar/status/1481040662027898885) shared [James Pond's Time Machine troubleshooting docs](http://oldtoad.net/pondini.org/TM/Troubleshooting.html). Specifically, [item C17](http://oldtoad.net/pondini.org/TM/C17.html) (\"sparse bundle could not be accessed\") seems to match! The options to resolve are consistent with David's comments above.
 " %}
