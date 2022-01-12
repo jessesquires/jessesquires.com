@@ -3,6 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [macos, time-machine, macos-monterey, bugs]
 date: 2022-01-11T14:22:19-08:00
+date-updated: 2022-01-11T16:18:22-08:00
 title: Time Machine error 35 in macOS Monterey
 image:
     file: time-machine-fail-again.jpg
@@ -21,3 +22,10 @@ The error message is basically the same as before, _"the backup disk image could
 For now, rebooting my MacBook has "fixed" the issue and backups are working again --- but this is likely only temporary. I expect to see the error again soon, and I supposed I'll just have to reboot again. And again. And again.
 
 {% include post_image.html %}
+
+{% include updated_notice.html
+message="
+Reader [David Humphrey](https://twitter.com/humphd/status/1481049310888439814) mentioned a better possible workaround:
+
+> I had something like this with Time Machine backups to my Synology, and it turned out to be macOS holding open simultaneous connections, which is why rebooting fixed it. When it happens now, I know that I can go and force a disconnect of the user on the NAS and that fixes.
+" %}
