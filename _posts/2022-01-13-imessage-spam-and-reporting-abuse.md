@@ -4,7 +4,7 @@ categories: [essays]
 tags: [apple, imessage, tech]
 date: 2022-01-13T11:24:35-08:00
 title: iMessage spam and reporting abuse
-subtitle: How many taps does it take a block a bad actor?
+subtitle: How many taps does it take to block a bad actor?
 image:
     file: imessage-spam-1.jpg
     alt: iMessage spam screenshot
