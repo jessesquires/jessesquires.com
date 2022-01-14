@@ -11,7 +11,7 @@ Need an iOS developer? Look no further! I am available for hire for freelance an
 
 ### Testimonials
 
-I've worked at a number of different companies as a full-time software engineer, as well as an independent contractor. With [nearly a decade of experience]({% link linkedout.md %}), I've worked with a lot of great folks over the years. Here's what a few of them have to say.
+I've worked at a number of different companies as a full-time software engineer, as well as an independent contractor. With [a decade of experience]({% link linkedout.md %}), I've worked with a lot of great folks over the years. Here's what a few of them have to say.
 
 <ul class="list-unstyled">
 {% for each in site.data.testimonials %}
