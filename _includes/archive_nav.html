@@ -1,0 +1,28 @@
+{% assign years = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+
+<ul class="nav nav-pills mt-3">
+    <li class="nav-item">
+        <a href="{% link archive-home.html %}"
+           class="nav-link px-2 mx-1 py-1 {% if page.url == site.archive_url %}active{% endif %}"
+           title="{{ site.posts.size }} posts">
+            <i class="bi bi-asterisk" role="img" aria-label="all"></i> all
+        </a>
+    </li>
+
+    {% for each in years %}
+    {% capture url %}{{ each.name | archive_url }}{% endcapture %}
+    <li class="nav-item">
+        <a href="{{ url }}"
+           class="nav-link px-2 mx-1 py-1 {% if page.url == url %}active{% endif %}"
+           title="{{ each.size }} posts">
+            <i class="bi bi-calendar3" role="img" aria-label="{{ each.name }}"></i> {{ each.name }}
+        </a>
+    </li>
+    {% endfor %}
+
+    <li class="nav-item">
+        <a href="{% link search.md %}" class="nav-link px-2 mx-1 py-1">
+            <i class="bi bi-search" role="img" aria-label="search"></i> search
+        </a>
+    </li>
+</ul>

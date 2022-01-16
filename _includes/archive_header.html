@@ -1,0 +1,7 @@
+{% assign title = include.title %}
+
+<div class="p-2 mt-4 mb-2 bg-light border-top">
+    <h3 class="text-secondary" id="{{ title | slugify }}">
+        <a href="#{{ title | slugify }}" class="text-reset">{{ title }}</a>
+    </h3>
+</div>

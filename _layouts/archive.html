@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="mb-1">
+    <h1 class="fs-2">Archive</h1>
+
+    {% include archive_nav.html %}
+
+    {% assign groupedPosts = page.posts | group_by_exp: "post", "post.date | date: '%B'" %}
+
+    {% for each in groupedPosts reversed %}
+        {% include archive_header.html title=each.name %}
+
+        <ul class="list-unstyled">
+        {% for post in each.items reversed %}
+            <li>{% include archive_item.html post=post %}</li>
+        {% endfor %}
+        </ul>
+    {% endfor %}
+</div>

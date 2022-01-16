@@ -42,7 +42,7 @@ To create a page that lists only the recently updated posts is similar to how yo
 
 Again, you can see my [recently updated page here]({% link recently-updated.md %}). This page does not get much traffic, but it is nice to have some output to verify that everything is working as expected. Note that because we sorted by `date-updated`, when iterating through the posts we need to use `reversed` so that the most recently updated post displays first.
 
-There's one bug I encountered. I use `limit:` to only display the 30 most recent entries. (For more, you can [visit the archive]({% link archive.md %}).) For the regular list of posts, that looks like this:
+There's one bug I encountered. I use `limit:` to only display the 30 most recent entries. (For more, you can [visit the archive]({% link archive-home.html %}).) For the regular list of posts, that looks like this:
 
 {% raw %}
 ```liquid

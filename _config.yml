@@ -1,6 +1,7 @@
 # Dependencies
 plugins:
   - jekyll-sitemap
+  - jekyll-archives
 
 # File rules
 exclude:
@@ -61,6 +62,14 @@ author:
   twitter: jesse_squires
   avatar: avatar.jpg
 
+# Archives Config
+jekyll-archives:
+  enabled:
+    - year
+  layout: archive
+  permalinks:
+    year: '/blog/archive/:year/'
+
 # Data
 feeds:
   limit: 30
@@ -74,4 +83,5 @@ img_url: '/img/'
 blog_url: '/blog/'
 categories_url: '/blog/categories/'
 tags_url: '/blog/tags/'
+archive_url: '/blog/archive/'
 stats_url: 'https://stats.jessesquires.com'

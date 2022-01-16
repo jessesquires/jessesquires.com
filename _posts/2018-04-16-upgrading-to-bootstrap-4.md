@@ -73,7 +73,7 @@ I’m not a designer, so I mostly use the defaults with a few minor overrides. S
 
 ### Refactoring
 
-While fixing things that broke in the new version, I decided to refactor some duplicate code into new components using [jekyll includes](https://jekyllrb.com/docs/templates/#includes). A new [`_includes/post_entry.html`](https://github.com/jessesquires/jessesquires.com/blob/master/_includes/post_entry.html) contains the code for rendering a post title, subtitle, and date. This was either duplicated or inconsistent across the site, but now it's used on the [main page]({{ site.url }}), individual posts like this one, and the [archive]({% link archive.md %}) page. This is one of my favorite features of Jekyll.
+While fixing things that broke in the new version, I decided to refactor some duplicate code into new components using [jekyll includes](https://jekyllrb.com/docs/templates/#includes). A new [`_includes/post_entry.html`](https://github.com/jessesquires/jessesquires.com/blob/master/_includes/post_entry.html) contains the code for rendering a post title, subtitle, and date. This was either duplicated or inconsistent across the site, but now it's used on the [main page]({{ site.url }}), individual posts like this one, and the [archive]({% link archive-home.html %}) page. This is one of my favorite features of Jekyll.
 
 ### Make your own
 

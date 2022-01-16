@@ -43,6 +43,11 @@ module Jekyll
       create_url("#{ input }/", 'categories_url')
     end
 
+    # Returns url to an archive page.
+    def archive_url(input)
+      create_url("#{ input }/", 'archive_url')
+    end
+
     private
 
     def create_url(input, config_key)

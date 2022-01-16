@@ -29,6 +29,8 @@ GEM
       rouge (~> 3.0)
       safe_yaml (~> 1.0)
       terminal-table (~> 2.0)
+    jekyll-archives (2.2.1)
+      jekyll (>= 3.6, < 5.0)
     jekyll-sass-converter (2.1.0)
       sassc (> 2.0.1, < 3.0)
     jekyll-sitemap (1.4.0)
@@ -67,6 +69,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 4.0)
+  jekyll-archives
   jekyll-sitemap
 
 RUBY VERSION

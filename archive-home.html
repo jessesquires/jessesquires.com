@@ -1,0 +1,19 @@
+---
+layout: standalone
+title: Archive
+permalink: /blog/archive/
+---
+
+{% include archive_nav.html %}
+
+{% assign groupedPosts = site.posts | group_by_exp: "post", "post.date | date: '%Y %B'" %}
+
+{% for each in groupedPosts %}
+    {% include archive_header.html title=each.name %}
+
+    <ul class="list-unstyled">
+    {% for post in each.items %}
+        <li>{% include archive_item.html post=post %}</li>
+    {% endfor %}
+    </ul>
+{% endfor %}

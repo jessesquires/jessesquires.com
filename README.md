@@ -25,6 +25,7 @@ If you would like to build your own site based on mine, **[please use this templ
 
 - [jekyll](https://jekyllrb.com) ([Latest](https://github.com/jekyll/jekyll/releases/latest)) ([Cheat Sheet](https://learn.cloudcannon.com/jekyll-cheat-sheet/))
 - [jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap)
+- [jekyll-archives](https://github.com/jekyll/jekyll-archives)
 
 #### Updating Gems
 
