@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [essays]
+categories: [software-dev]
 tags: [tech, privacy, ethics]
 date: 2022-01-14T12:05:24-08:00
 title: Users, Privacy, and Consent

@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [essays]
+categories: [software-dev]
 tags: [apple, imessage, tech]
 date: 2022-01-13T11:24:35-08:00
 title: iMessage spam and reporting abuse

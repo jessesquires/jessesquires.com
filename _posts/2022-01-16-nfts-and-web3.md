@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [essays]
+categories: [software-dev]
 tags: [tech, web, nfts, cryptocurrency]
 date: 2022-01-16T11:41:19-08:00
 title: NFTs and web3

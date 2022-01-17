@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [essays]
+categories: [software-dev]
 tags: [ios, apple, app-library, bugs]
 date: 2022-01-11T16:16:03-08:00
 title: iOS App Library is drunk
