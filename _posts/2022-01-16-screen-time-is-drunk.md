@@ -12,7 +12,7 @@ image:
     half_width: true
 ---
 
-Speaking of [drunk software]({% post_url 2022-01-11-ios-app-library-is-drunk %}), Screen Time on iOS and macOS has been shockingly buggy for me lately. It reports that I spent over 22 hours on my devices in a single day last week, and nearly 10 hours on another day this week. In both instances, a significant portion of the usage is supposedly occurring after midnight.
+Speaking of [drunk software]({% post_url 2022-01-11-ios-app-library-is-drunk %}) and [not being in service to our possessions]({% post_url 2022-01-16-the-best-and-the-worst %}), Screen Time on iOS and macOS has been shockingly buggy for me lately. It reports that I spent over 22 hours on my devices in a single day last week, and nearly 10 hours on another day this week. In both instances, a significant portion of the usage is supposedly occurring after midnight.
 
 <!--excerpt-->
 
