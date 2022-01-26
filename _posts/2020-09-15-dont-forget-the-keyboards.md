@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [essays]
-tags: [apple, ios, capitalism]
+tags: [apple, ios, capitalism, dev-relations]
 date: 2020-09-15T23:21:35-07:00
 title: Don't forget the keyboards
 subtitle: An essay

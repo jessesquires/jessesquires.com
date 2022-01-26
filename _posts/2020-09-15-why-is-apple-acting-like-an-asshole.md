@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [apple, app-store, ios]
+tags: [apple, app-store, ios, dev-relations]
 date: 2020-09-15T18:12:21-07:00
 title: Why is Apple acting like an Asshole?
 image:
