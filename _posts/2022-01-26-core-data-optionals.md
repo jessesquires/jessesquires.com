@@ -130,6 +130,8 @@ Now we have most of the usual protections in place --- however, there are some c
 
 As mentioned, there's a lot of manual work here to enforce the rules that Swift usually enforces for us. When you modify your models in the Xcode editor and in code, you need to be sure their properties match in type and optionality, that you update the designated initializer correctly, and that you update your tests. This requires a lot of diligence, which can be especially difficult when working on a large team. Having complete unit test coverage is absolutely essential in this scenario, which also requires due diligence to maintain.
 
+In case it isn't obvious, all of this means you should not let Xcode automatically generate your managed object subclass definitions. This was already problematic since Xcode started keeping these definitions in `/DerivedData/` instead of in your root project directory. It is easy enough to write these classes yourself, you don't need Xcode to do it (incorrectly) for you. The added benefit is that you can place these files under version control instead of relying on Xcode's "magic".
+
 Also beware of bridging issues with Objective-C and Swift. In Objective-C, you can use the `NS_UNAVAILABLE` macro to mark initializers as unavailable like we did above for Swift. Further, you can utilize Objective-C's [nullablity annotations](https://developer.apple.com/documentation/swift/objective-c_and_c_code_customization/designating_nullability_in_objective-c_apis) to improve inter-op with Swift.
 
 Finally, there is a risk of running into issues with [faulting](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/FaultingandUniquing.html). In my experience, this is mostly theoretical and does not present an issue in practice. However, it is something to take note of.
@@ -156,4 +158,4 @@ I _think_ this means that it could be possible to fetch objects whose non-option
 
 Under default behavior, Core Data will fetch all properties in your model. For a one-to-one relationship, the other model's properties will be cached and the fault will fire immediately when accessing that managed object. For one-to-many relationships, represented by collections, there is less of a worry, since an empty collection is not a crash risk. In other words, you _should_ be fine with regard to faulting, but you should double-check your fetch requests. Again, I have not experienced problems with this in practice, and unit tests should help find and prevent problems.
 
-I hope this helps you improve your Core Data models!
+I hope this helps you improve your Core Data models! All of the boilerplate is unfortunate, but it is surely better than nothing.
