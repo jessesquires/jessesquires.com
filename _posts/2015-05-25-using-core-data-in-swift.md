@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [swift, ios, coredata]
+tags: [swift, ios, core-data]
 date: 2015-05-25T10:00:00-07:00
 title: Using Core Data in Swift
 subtitle: Talk at Realm in San Francisco

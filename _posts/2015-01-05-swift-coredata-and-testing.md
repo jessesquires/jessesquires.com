@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [swift, ios, xcode, coredata, bugs, testing]
+tags: [swift, ios, xcode, core-data, bugs, testing]
 date: 2015-01-05T10:00:00-07:00
 title: Swift, Core Data, and unit testing
 subtitle: Working around Swift's constraints to unit test models
