@@ -3,7 +3,7 @@ layout: post
 categories: [reading-notes]
 tags: [relationships, anarchism]
 date: 2019-08-07T10:00:00-07:00
-title: ! 'Reading Notes #2: Relationship Anarchy'
+title: "Reading Notes: Relationship Anarchy"
 ---
 
 A friend recently sent me [*The short instructional manifesto for relationship anarchy*](https://theanarchistlibrary.org/library/andie-nordgren-the-short-instructional-manifesto-for-relationship-anarchy) by Andie Nordgren. It is short and a good primer on relationship anarchy if you are not familiar. Take a look.

@@ -3,8 +3,7 @@ layout: post
 categories: [reading-notes]
 tags: [capitalism, politics, labor]
 date: 2019-03-22T10:00:00-07:00
-title: ! 'Reading Notes #1: The Individual, Society, and the State'
-subtitle: null
+title: "Reading Notes: The Individual, Society, and the State"
 ---
 
 I intend to start a new series of posts called *Reading Notes* where I publish notes, excerpts, and thoughts on what I'm currently reading. My goals are to better document my notes and thoughts on what I'm reading for my future self, and give myself a reason to write more blog posts (in general, but also more non-technical ones). I also hope to inspire you, dear reader, to read some of these books and essays.

@@ -3,7 +3,7 @@ layout: post
 categories: [reading-notes]
 tags: [politics]
 date: 2019-09-29T15:00:00-07:00
-title: ! 'Reading Notes #3: The Fire Next Time'
+title: "Reading Notes: The Fire Next Time"
 ---
 
 Notes and excerpts from *The Fire Next Time* by James Baldwin.

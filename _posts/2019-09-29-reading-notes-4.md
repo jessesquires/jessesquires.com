@@ -3,7 +3,7 @@ layout: post
 categories: [reading-notes]
 tags: [politics, ethics, capitalism, homelessness]
 date: 2019-09-29 T18:00:00-07:00
-title: ! 'Reading Notes #4: Bay Area Homelessness report'
+title: "Reading Notes: Bay Area Homelessness report"
 ---
 
 The [Bay Area Council Economic Institute](http://www.bayareaeconomy.org) recently released a report titled [*Bay Area Homelessness: A Regional View of a Regional Crisis*](http://www.bayareaeconomy.org/files/pdf/Homelessness_Report_2019_web.pdf). Unfortunately, I did not have time to read the entire report, but the executive summary contains some interesting bits. If you have time to read at least that, I'd recommend it.
