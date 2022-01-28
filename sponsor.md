@@ -10,4 +10,4 @@ If you enjoy reading [my blog]({% link blog.md %}), watching [my conference talk
 - [PayPal](https://www.paypal.me/jessesquires)
 - [SquareCash](https://cash.app/$jsq)
 
-Alternatively, you can [buy my apps](https://www.hexedbits.com)! &#x270C;&#xFE0F;
+**Alternatively, you can [buy my apps](https://www.hexedbits.com)!** &#x270C;&#xFE0F;
