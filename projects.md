@@ -4,7 +4,7 @@ title: Projects
 ---
 
 I'm working on a number of side projects, indie apps, and [open source projects]({{ site.data.social.github }}).
-I want to highlight a few of them here and link out to others.
+I want to highlight a few of them here and link to others.
 If you are looking for a complete cv, you can [find that here]({% link linkedout.md %}).
 
 ### Apps

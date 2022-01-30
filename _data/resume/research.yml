@@ -11,7 +11,8 @@ entries:
       name: school-iu.png
       title: Indiana University
     description: "Visiting Undergraduate Research Fellowship (VURF) in Cognitive Science.
-    Awarded to only one or two students each year. I worked on the following research projects."
+    Awarded to only one or two students each year. I took graduate-level courses, earning a 3.60 GPA.
+    I worked on the following research projects."
     bullets:
       - "**Advisor: Dr. Randy Beer.** Researched evolutionary algorithms, evolutionary
         robotics and dynamical systems approaches to behavior and cognition. Developed
@@ -38,12 +39,12 @@ entries:
     img:
       name: school-usf.png
       title: University of South Florida
-    description: Research experience for undergraduates (REU) summer program.
+    description: "Research experience for undergraduates (REU) summer program, funded by [NSF](https://www.nsf.gov).
+    I conducted research in Ubiquitous Sensing under the supervision of Dr. Jay Ligatti and Dr. Larry Hall."
     bullets:
       - "Researched mobile mapping applications and mobile device sensors."
       - "Developed a trail mapping application for Android OS that uses only sensor data,
-        not GPS, to map trails in real time and produced a research paper and poster on
-        the project."
+        not GPS, to map trails in real time."
+      - "Produced a research paper and poster on the project."
       - "Awarded 1st place in the REU Poster Competition."
-      - "Presented at Math, Engineering and Science Conference (MESCON) 2012 at University
-        of Evansville."
+      - "Presented at Math, Engineering and Science Conference (MESCON) 2012 at University of Evansville."
