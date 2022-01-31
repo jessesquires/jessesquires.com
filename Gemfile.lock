@@ -9,10 +9,10 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
     eventmachine (1.2.7)
-    ffi (1.15.4)
+    ffi (1.15.5)
     forwardable-extended (2.6.0)
     http_parser.rb (0.8.0)
-    i18n (1.8.11)
+    i18n (1.9.1)
       concurrent-ruby (~> 1.0)
     jekyll (4.2.1)
       addressable (~> 2.4)
@@ -42,7 +42,7 @@ GEM
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
     liquid (4.0.3)
-    listen (3.7.0)
+    listen (3.7.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
@@ -76,4 +76,4 @@ RUBY VERSION
    ruby 2.7.2p137
 
 BUNDLED WITH
-   2.3.0
+   2.3.6
