@@ -1,7 +1,6 @@
 title: Work Experience
 icon: bi-kanban
 entries:
-
   - title: HexedBits
     location: Remote
     start: Aug 2019
@@ -11,6 +10,32 @@ entries:
       name: work-hexedbits.png
       title: HexedBits
     description: "Independent app development. See [hexedbits.com](https://www.hexedbits.com)."
+
+  - title: Independent Contractor (iOS), Hopscotch
+    location: Remote
+    start: Jul 2021
+    end: Feb 2022
+    link: 'https://www.gethopscotch.com'
+    img:
+      name: work-hopscotch.png
+      title: Hopscotch
+    description: "Hired as an independent contractor to work on the Hopscotch iOS app.
+    While I did work on a few user-facing features, a large portion of my time was spent on infrastructure work --- paying
+    off some technical debt, automating the release process and other tedious development tasks, improving code quality
+    and organization, and improving developer productivity."
+    bullets:
+      - "Implemented the \"Open Project\" language feature, which allows users to link to other projects."
+      - "Implemented local variables. Previously, the language only supported globals."
+      - "Performed significant project-wide refactorings to improve developer productivity and facilitate easier feature development.
+        This involved reconfiguring the app into sensible framework modules."
+      - "Improved general project infrastructure and automation. Automated project setup and CocoaPods installation with Make."
+      - "Automated tedious development tasks using GitHub Actions."
+      - "Improved testing infrastructure to reduce test flakes and speed up CI."
+      - "Implemented CI/CD using Bitrise. Automated generating builds and commenting on PRs with build status."
+      - "Automated portions of code review with Danger."
+      - "Wrote documentation for the project, testing infrastructure, and CI setup."
+      - "Interviewed potential candidates and helped refine interview process."
+      - "Produced resources for conducting interviews (questions, sample projects, rubrics for evaluation)."
 
   - title: Independent Contractor (iOS), Duolingo
     location: Remote
@@ -65,7 +90,7 @@ entries:
   - title: Software Engineer (iOS), PlanGrid
     location: San Francisco, CA
     start: May 2017
-    end: July 2019
+    end: Jul 2019
     link: 'https://www.plangrid.com'
     img:
       name: work-plangrid.png
