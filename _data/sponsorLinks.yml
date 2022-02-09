@@ -1,0 +1,19 @@
+- title: Buy my apps! &#x270C;&#xFE0F;
+  url: 'https://www.hexedbits.com'
+  icon: bi-apple
+
+- title: GitHub Sponsors
+  url: 'https://github.com/sponsors/jessesquires'
+  icon: bi-github
+
+- title: PayPal
+  url: 'https://www.paypal.me/jessesquires'
+  icon: bi-paypal
+
+- title: Cash App
+  url: 'https://cash.app/$jsq'
+  icon: bi-coin
+
+- title: Liberapay
+  url: 'https://liberapay.com/jsq/'
+  icon: bi-cash-stack
