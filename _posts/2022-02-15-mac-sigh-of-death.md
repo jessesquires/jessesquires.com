@@ -3,6 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [apple, bugs, macos, macbook]
 date: 2022-02-15T21:17:09-08:00
+date-updated: 2022-02-16T11:39:03-08:00
 title: The MacBook sigh of death
 image:
     file: mac-sigh-of-death-1.jpg
@@ -37,3 +38,18 @@ Upon rebooting, the "Problem Report for macOS" window appears as expected. Usual
 Finally, I vaguely remember reading another blog post from someone about this exact issue. It was awhile back, perhaps during a macOS beta, and they also called it the "sigh of death". Unfortunately, I could not find the article anywhere on the web. If anyone recalls this post or can find it, please send me the link and I'll update this post to link to it.
 
 And if you are experiencing this issue, or have any idea about what's happening, please let me know.
+
+{% include updated_notice.html
+message="
+Thank you [Michael Tsai](https://twitter.com/mjtsai/status/1493986603156525056) for finding the post I was referring to above, [The Big Sur Sneeze](https://mjtsai.com/blog/2020/12/23/the-big-sur-sneeze/). My memory of that post was not entirely accurate. The details are slightly different than what I describe in this post, but it seems likely that the underlying issue is the same.
+
+Also, a few folks on Twitter commented that they have experienced this issue.
+
+[@MrThon](https://twitter.com/MrThon/status/1494004392122585093):
+
+> I have the same problem after I unplug the dock with external screen, then later plug it back, external screen does not come back and then sigh and reboot
+
+[Grant Butler](https://twitter.com/grantjbutler/status/1494008856506101761):
+
+> Yeah, that’s where I’ve been experiencing it. Plug in a USB-C/DisplayPort monitor, and then after a few seconds, the get the sigh and reboot.
+" %}
