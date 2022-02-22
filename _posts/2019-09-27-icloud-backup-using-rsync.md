@@ -3,6 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [icloud, apple, ios, macos]
 date: 2019-09-27T10:00:00-07:00
+date-updated: 2022-02-21T18:52:38-08:00
 title: Backing up your iCloud Drive files using rsync
 ---
 
@@ -67,3 +68,7 @@ You can use the `--dry-run` option to preview what would be transfered without a
 This will backup **only your** iCloud Drive files. Any app-specific files (like Pages documents in `com~apple~Pages/`) will not be included. If you want to backup any of those files, you will need to write a similar script with those target directories as the source. If you want to backup *everything*, specify the root `~/Library/Mobile Documents/` directory &mdash; but beware, this might be *a lot* of data. For example, `iCloud~com~apple~iBooks/` contains *all* of your synced iBooks that were not purchased from the iBook Store. I have a lot of those.
 
 That's it! You can read the `rsync` docs (`man rsync`) for more details and options, but this should get you started.
+
+{% include updated_notice.html
+message="Howard Oakley has published a helpful, detailed [guide about backing up iCloud documents](https://eclecticlight.co/2022/02/21/can-you-back-up-icloud-documents/). I recommend reading it if you are interested in learning more.
+" %}
