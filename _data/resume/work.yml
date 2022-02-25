@@ -25,7 +25,7 @@ entries:
     and organization, and improving developer productivity."
     bullets:
       - "Implemented the \"Open Project\" language feature, which allows users to link to other projects."
-      - "Implemented local variables. Previously, the language only supported globals."
+      - "Implemented local variables language feature. Previously, the language only supported globals."
       - "Performed significant project-wide refactorings to improve developer productivity and facilitate easier feature development.
         This involved reconfiguring the app into sensible framework modules."
       - "Improved general project infrastructure and automation. Automated project setup and CocoaPods installation with Make."
