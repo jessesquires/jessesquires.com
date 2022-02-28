@@ -11,6 +11,19 @@ entries:
       title: HexedBits
     description: "Independent app development. See [hexedbits.com](https://www.hexedbits.com)."
 
+  - title: Independent Contractor (iOS), Duolingo
+    location: Remote
+    start: Feb 2022
+    end: Present
+    link: 'https://www.duolingo.com'
+    img:
+      name: work-duolingo.png
+      title: Duolingo
+    description: "Returned to Duolingo as an independent contractor after some time away. (See below.)
+      I rejoined the 'User Delight' team, working on the main iOS app. I worked part-time and reported to Peter Chapman."
+    bullets:
+      - "TBA / in-progress"
+
   - title: Independent Contractor (iOS), Hopscotch
     location: Remote
     start: Jul 2021
@@ -19,7 +32,7 @@ entries:
     img:
       name: work-hopscotch.png
       title: Hopscotch
-    description: "Hired as an independent contractor to work on the Hopscotch iOS app.
+    description: "Hired as an independent contractor (part-time) to work on the Hopscotch iOS app.
     While I did work on a few user-facing features, a large portion of my time was spent on infrastructure work --- paying
     off some technical debt, automating the release process and other tedious development tasks, improving code quality
     and organization, and improving developer productivity."
