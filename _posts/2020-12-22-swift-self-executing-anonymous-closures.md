@@ -3,7 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [ios, swift, closures, debugging, uikit]
 date: 2020-12-22T18:24:28-08:00
-date-updated: 2021-11-05T22:01:20-07:00
+date-updated: 2022-03-02T11:12:41-08:00
 title: What type is self in a Swift self-executing anonymous closure used to initialize a stored property?
 subtitle: The answer might surprise you
 ---
@@ -255,8 +255,15 @@ This bug is being tracked at [SR-4559](https://bugs.swift.org/browse/SR-4559) an
 " %}
 
 {% include updated_notice.html
+date="2021-11-05T22:01:20-07:00"
 message="
 As of September 2021, [SR-4559](https://bugs.swift.org/browse/SR-4559) has been marked as resolved. The [pull request is here](https://github.com/apple/swift/pull/37992) and according to the description the fix is to emit a warning indicating that the `self` reference is likely not the one you intended.
 
 The fix is not yet included in Xcode 13.1 (13A1030d), nor Xcode 13.2 beta (13C5066c). However, the [latest release of SwiftLint](https://github.com/realm/SwiftLint/releases/tag/0.45.0) includes [a new rule](https://realm.github.io/SwiftLint/self_in_property_initialization.html) (`self_in_property_initialization`) to emit a warning for this exact issue.
+" %}
+
+{% include updated_notice.html
+date="2022-03-02T11:12:41-08:00"
+message="
+Good news! As of [Xcode 13.3 beta](https://developer.apple.com/documentation/xcode-release-notes/xcode-13_3-release-notes), which includes Swift 5.6, the compiler now emits a warning for this issue.
 " %}
