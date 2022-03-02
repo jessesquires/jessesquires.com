@@ -1,7 +1,7 @@
 #!/usr/bin/swift
 
-/// Prints the current timestamp, formatted for jekyll.
-/// Copies it to the clipboard.
+/// Prints the current timestamp, formatted for Jekyll.
+/// Copies it and the update notice include to the clipboard.
 
 import AppKit
 import Foundation
@@ -12,17 +12,23 @@ let fullDateTime = ISO8601DateFormatter.string(
     formatOptions: [.withFullDate, .withFullTime]
 )
 
+let updateNoticeText = """
+{% include updated_notice.html
+date="\(fullDateTime)"
+message="
+Update message goes here.
+" %}
+"""
+
 print(fullDateTime)
 print("")
-print("""
-{% include updated_notice.html
-message="
-Copy this. Text goes here.
-" %}
-""")
+print(updateNoticeText)
 print("")
 
 NSPasteboard.general.clearContents()
-NSPasteboard.general.setString("date-updated: \(fullDateTime)", forType: .string)
+NSPasteboard.general.setString(
+    "date-updated: \(fullDateTime)\n\n\(updateNoticeText)",
+    forType: .string
+)
 
 print("Copied to clipboard!")
