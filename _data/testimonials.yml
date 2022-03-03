@@ -1,24 +1,36 @@
+- name: Samantha John
+  link: 'https://www.linkedin.com/in/samanthajohn/'
+  company: Hopscotch Technologies
+  position: Co-Founder and CEO
+  year: 2021-2022
+  testimonial: "Working with Jesse is a dream. His technical knowledge is top tier,
+  so I always felt confident that he was using best practices. He can move between upgrading your infrastructure,
+  refactoring your code, or shipping features quickly. Lastly, Jesse is an extremely clear and direct communicator.
+  I never had to wonder what he was working on because he took care to keep the team up to date."
+
 - name: Peter Chapman
   link: 'https://www.linkedin.com/in/🎢-peter-chapman-a6008b3a/'
   company: Duolingo
   position: Engineering Director
   year: 2020-2021
-  testimonial: "We had the pleasure to work with Jesse to improve the user experience of our flagship iOS app for learning languages.
-  Jesse is exceptionally knowledgeable about the platform and consistently applies that background to make the codebase better for both
-   our developers and our learners. On top of that, when working on new functionality Jesse applies sincere empathy for our learners,
-   working with design and product to make sure the latest update is productive and delightful!"
+  testimonial: "We had the pleasure to work with Jesse to improve the user experience of our flagship iOS
+  app for learning languages. Jesse is exceptionally knowledgeable about the platform and consistently applies
+  that background to make the codebase better for both our developers and our learners. On top of that,
+  when working on new functionality Jesse applies sincere empathy for our learners, working with design
+  and product to make sure the latest update is productive and delightful!"
 
 - name: Rustin Reese
   link: 'https://www.linkedin.com/in/rustin-reese/'
   company: RxSaver
   position: Engineering Manager
   year: 2019-2021
-  testimonial: "Immediate impact. As a manager, that was my initial assessment of Jesse after shortly joining us on RxSaver in a part time iOS role.
-    Over time that assessment proved naive and simplistic, but no less true.
-    Jesse's expertise and experience naturally brings a velocity and throughput lift that any organization will feel and value greatly.
-    However, Jesse's passion to make iOS code bases better, coupled with his ability to help shape direction through
-    respectful sharing of nuanced opinion, has had a much deeper and longer lasting effect on RxSaver's iOS app and team culture.
-    As a manager, I couldn't be more impressed."
+  testimonial: "Immediate impact. As a manager, that was my initial assessment of Jesse after
+  shortly joining us on RxSaver in a part time iOS role. Over time that assessment proved naive and simplistic,
+  but no less true. Jesse's expertise and experience naturally brings a velocity and throughput lift that any
+  organization will feel and value greatly. However, Jesse's passion to make iOS code bases better,
+  coupled with his ability to help shape direction through respectful sharing of nuanced opinion,
+  has had a much deeper and longer lasting effect on RxSaver's iOS app and team culture.
+  As a manager, I couldn't be more impressed."
 
 - name: Mike Caloud
   link: 'https://www.linkedin.com/in/michaelcaloud/'
@@ -26,11 +38,12 @@
   position: Director of Mobile Engineering
   year: 2013-2015
   testimonial: "Industrious, talented, quick learner — all phrases that come to mind when I think about Jesse.
-    As his manager I worked closely with him, and got to examine up close the code he wrote, and the systems he designed, which were always high quality.
-    He has a knack for software development, and he constantly impressed me with his well-designed solutions that he quickly and effortlessly implemented.
-    His peers highly respected his work, and would often seek out his feedback.
-    They loved working with him — he made them better developers, and he was always good company to be around.
-    I greatly enjoyed my time working with him, and would love to again. Any team would be lucky to have him."
+  As his manager I worked closely with him, and got to examine up close the code he wrote, and the systems he designed,
+  which were always high quality. He has a knack for software development, and he constantly impressed me with
+  his well-designed solutions that he quickly and effortlessly implemented. His peers highly respected his work,
+  and would often seek out his feedback. They loved working with him — he made them better developers, and he was
+  always good company to be around. I greatly enjoyed my time working with him, and would love to again.
+  Any team would be lucky to have him."
 
 - name: Yoon Chung
   link: 'https://www.linkedin.com/in/yoonchung/'
@@ -38,8 +51,8 @@
   position: Senior Director of Product Program Management
   year: 2013-2015
   testimonial: "Aside from his great sense of humor and impeccable taste in coffee,
-    Jesse is one of the most talented software engineers I have worked with at Rosetta Stone.
-    This is a person who truly believes in giving back to the development community and raising the bar for developers where ever he goes.
-    Whip smart, quick, and an incredible work ethic make him someone you want in your team.
-    Trust me, the man can make one minute rice in 55 seconds.
-    Hire him if the chance opens up and thank me later. He's that damn good."
+  Jesse is one of the most talented software engineers I have worked with at Rosetta Stone.
+  This is a person who truly believes in giving back to the development community and raising the bar for
+  developers where ever he goes. Whip smart, quick, and an incredible work ethic make him someone you want in your team.
+  Trust me, the man can make one minute rice in 55 seconds. Hire him if the chance opens up and thank me later.
+  He's that damn good."
