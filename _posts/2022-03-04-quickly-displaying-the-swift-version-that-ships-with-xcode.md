@@ -3,8 +3,8 @@ layout: post
 categories: [software-dev]
 tags: [xcode, ios, macos]
 date: 2022-03-04T13:10:11-08:00
+date-updated: 2022-03-09T13:48:45-08:00
 title: Quickly displaying the Swift version that ships with Xcode
-
 ---
 
 I previously [wrote about]({% post_url 2020-07-07-quickly-switching-between-xcodes %}) writing a custom shell command to quickly switch between Xcodes. But recently, I needed to determine the version of Swift that is bundled with Xcode --- specifically the version of Swift that is shipping with the current Xcode 13.3 beta. I was pretty sure that it is Swift 5.6, but I wanted to know for certain.
@@ -15,6 +15,12 @@ Strangely, the [Xcode beta release notes](https://developer.apple.com/documentat
 
 Luckily, we can find this by calling `swiftc --version`, but for the Xcode Beta we need to know the full path bundled with the app. It is located at `/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc`, which is a mouthful and difficult to remember.
 
+{% include updated_notice.html
+date="2022-03-09T13:48:45-08:00"
+message="
+Thanks to [Sven Schmidt](https://mobile.twitter.com/_sa_s/status/1500379619744178179) for offering improvements here to simplify the script and make it more robust. We can use `DEVELOPER_DIR` to specify which Xcode to use and then invoke `xcrun` to avoid having to use the exact path to the binaries. The script below has been updated.
+" %}
+
 The custom commands below build on [what I previously wrote]({% post_url 2020-07-07-quickly-switching-between-xcodes %}) to switch between Xcode versions. I've added a new command, `xcwhich` that displays the currently selected Xcode, and then prints all the version information for both Xcode.app and Xcode-beta.app.
 
 ```zsh
@@ -23,11 +29,12 @@ function xcwhich() {
     _xcselect false
     echo ""
     echo "RELEASE"
-    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -version
-    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+    env DEVELOPER_DIR=/Applications/Xcode.app xcrun xcodebuild -version
+    env DEVELOPER_DIR=/Applications/Xcode.app xcrun swift --version
+
     echo "\nBETA"
-    /Applications/Xcode-beta.app/Contents/Developer/usr/bin/xcodebuild -version
-    /Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+    env DEVELOPER_DIR=/Applications/Xcode-beta.app xcrun xcodebuild -version
+    env DEVELOPER_DIR=/Applications/Xcode-beta.app xcrun swift --version
 }
 
 # switch between release and beta Xcodes
