@@ -3,6 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [ci, github-actions, github]
 date: 2021-08-24T22:08:13-07:00
+date-updated: 2022-03-21T10:48:00-07:00
 title: Useful label-based GitHub Actions workflows
 ---
 
@@ -78,3 +79,32 @@ jobs:
 This will check if the pull request has the `do not merge` label. If it does, the workflow will fail. Once you remove the label, the workflow will pass.
 
 To make this workflow actually prevent merging requires a few extra steps. You need to set up [branch protection rules](https://docs.github.com/en/github/administering-a-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule) for your main branch and require this workflow to pass before a pull request can be merged. Once configured, the "merge" button will only be enabled if this workflow succeeds.
+
+{% include updated_notice.html
+date="2022-03-21T10:48:00-07:00"
+message="Thanks to my friend [Ben Asher](https://benasher.co) for [sharing](https://twitter.com/benasher44/status/1503460237331734528) an improvement to the 'Do Not Merge' workflow, which can be rewritten **without** using third-party actions. You can find it below.
+
+Also, I've started maintaining a collection of useful workflows [on GitHub](https://github.com/jessesquires/gh-workflows). Check them out.
+" %}
+
+{% raw %}
+```yaml
+name: Do Not Merge
+
+on:
+  pull_request:
+    types: [synchronize, opened, reopened, labeled, unlabeled]
+
+jobs:
+  do-not-merge:
+    if: ${{ contains(github.event.*.labels.*.name, 'do not merge') }}
+    name: Prevent Merging
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check for label
+        run: |
+          echo "Pull request is labeled as 'do not merge'"
+          echo "This workflow fails so that the pull request cannot be merged"
+          exit 1
+```
+{% endraw %}
