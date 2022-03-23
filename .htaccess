@@ -23,11 +23,6 @@ Header set Cache-Control "max-age=1209600, public"
 Header set Cache-Control "max-age=2628000, public"
 </filesMatch>
 
-# one month for html
-<filesMatch "\.(html)$">
-Header set Cache-Control "max-age=2628000, public"
-</filesMatch>
-
 # never for archives or feeds (xml, json)
 <filesMatch "\.(zip|tar|dmg|xml|json)$">
 Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate, public"
