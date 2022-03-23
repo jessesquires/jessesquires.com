@@ -7,6 +7,7 @@ title: ! 'Agile by degrees: How to estimate engineering project timelines'
 subtitle: You were always wrong, until now
 image:
     file: engineering_estimates.jpg
+    alt: 'Software engineers during their daily stand-up meeting'
     caption: 'Software engineers during their daily stand-up meeting'
     half_width: false
 ---
