@@ -1,6 +1,7 @@
 ---
 layout: standalone
 title: Contact
+description: How to contact me
 ---
 
 You can contact me by emailing **jesse** at *this domain name*.

@@ -1,6 +1,7 @@
 ---
 layout: standalone
 title: Subscribe
+description: Subscribe to my blog!
 ---
 
 <h4 class="mt-4 mb-0">Main feed</h4>

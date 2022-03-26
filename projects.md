@@ -1,6 +1,7 @@
 ---
 layout: standalone
 title: Projects
+description: My active and notable projects
 ---
 
 I'm working on a number of side projects, indie apps, and [open source projects]({{ site.data.social.github }}).

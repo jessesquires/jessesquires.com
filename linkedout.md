@@ -1,6 +1,7 @@
 ---
 layout: standalone
 title: Curriculum Vitae
+description: My full resume and work history
 ---
 
 <p class="text-muted"><i>Last updated: February 2022</i></p>

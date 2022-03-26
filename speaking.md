@@ -1,6 +1,7 @@
 ---
 layout: standalone
 title: Speaking
+description: All of my conference talks
 tags: [conference, talk, speaking]
 ---
 

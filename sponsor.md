@@ -1,6 +1,7 @@
 ---
 layout: standalone
 title: Sponsor
+description: Sponsor my work!
 ---
 
 If you enjoy reading [my blog]({% link blog.md %}), watching [my conference talks]({% link speaking.md %}), or using one of [my open source projects]({{ site.data.social.github }}), consider becoming a sponsor. Your support is very much appreciated! &#x1F64C;

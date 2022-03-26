@@ -1,6 +1,6 @@
 ---
 layout: default
-tags: [hexed bits, software development, programming, engineering, design patterns, ios, objective-c, swift, ethics]
+tags: [hexed bits, software development, programming, engineering, design patterns, ios, macos, tvOS, watchOS, xcode, objective-c, swift, ethics, app store, github, open-source]
 ---
 
 I'm an independent iOS and macOS developer, and [open source contributor]({{ site.data.social.github }}).
