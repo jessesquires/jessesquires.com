@@ -1,5 +1,5 @@
 ---
 layout: category_index
 title: Writing
-description: My blog
+description: All recent blog posts
 ---
