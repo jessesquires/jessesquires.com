@@ -6,6 +6,7 @@ date: 2018-11-07T10:00:00-07:00
 title: Debugging a subtle Swift bug that will make you facepalm
 image:
     file: swift-function-ref.jpg
+    alt: Swift Function Reference Meme
     half_width: false
 ---
 

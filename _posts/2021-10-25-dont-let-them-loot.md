@@ -6,7 +6,7 @@ date: 2021-10-25T10:23:55-07:00
 title: Don't let them loot, they said, as their streets became rivers
 image:
     file: disaster-capitalism-1.jpg
-    alt: null
+    alt: recycling disaster capitalism meme
     caption: null
     source_link: null
     half_width: false
