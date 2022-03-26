@@ -1,20 +1,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="{{ site.author.name }}">
+    <meta name="copyright" content="&copy; 2014-{{ site.time | date: '%Y' }} {{ site.author.name }}">
 
     {% if page.tags %}
     <meta name="keywords" content="{{ page.tags | sort | join: ', ' }}">
     {% endif %}
 
-    <meta name="description" content="{{ site.description }}">
-    <meta name="author" content="{{ site.author.name }}">
-    <meta name="copyright" content="&copy; 2014-{{ site.time | date: '%Y' }} {{ site.author.name }}">
     <title>
-        {% if page.title %}
-            {{ page.title }} &middot; {{ site.title }}
-        {% else %}
-            {{ site.title }} &middot; {{ site.description }}
-        {% endif %}
+    {% if page.title %}
+        {{ page.title }} &middot; {{ site.title }}
+    {% else %}
+        {{ site.title }} &middot; {{ site.description }}
+    {% endif %}
     </title>
 
     {% if page.image %}
@@ -38,6 +37,8 @@
     {% endif %}
 
     {% capture page_description %}{{ description | normalize_whitespace | strip_html | truncatewords: 40 }}{% endcapture %}
+
+    <meta name="description" content="{{ page_description }}">
 
     <!-- Open Graph -->
     <meta property="og:site_name" content="{{ site.title }}">
