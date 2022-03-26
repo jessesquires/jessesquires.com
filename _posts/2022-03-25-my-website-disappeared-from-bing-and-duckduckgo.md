@@ -51,3 +51,7 @@ If you have any advice, please let me know!
 {% include break.html %}
 
 There's one last thing. The issue described above was also happening with another one of my websites, [hexedbits.com](https://www.hexedbits.com). Google search was working, but not Bing and DuckDuckGo. However, Bing showed a standard _"no results"_ message for HexedBits. Since submitting the URL and sitemap to Bing and Yandex, content from hexedbits.com is now appearing correctly on Bing, DuckDuckGo, and Yandex. This really has me wondering what could have gone wrong. Hopefully, the indexing issues for jessesquires.com will be resolved soon.
+
+{% include break.html %}
+
+All of this emphasizes the frustrating lack of transparency around search engines and how they work. It is infuriating to be essentially helpless trying to debug and resolve issues with your site not being properly indexed. I will forever lament that search was not a core component of the Internet itself, but was instead a feature that private corporations had to bolt on top.
