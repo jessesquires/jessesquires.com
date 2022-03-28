@@ -3,6 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [ci, danger, github, github-actions, open-source]
 date: 2020-04-10T12:59:29-07:00
+date-updated: 2022-03-28T10:48:49-07:00
 title: Running Danger on GitHub Actions
 ---
 
@@ -16,25 +17,22 @@ With the setup complete, all you need to do is implement your [workflow](https:/
 
 {% raw %}
 ```yaml
-# .github/workflows/danger.yml
-
 name: Danger
 
 on:
   pull_request:
-    branches:
-      - master
-      - dev
+    types: [synchronize, opened, reopened, labeled, unlabeled, edited]
+
 env:
-  DEVELOPER_DIR: /Applications/Xcode_11.4.app/Contents/Developer
+  DEVELOPER_DIR: /Applications/Xcode_13.2.1.app/Contents/Developer
 
 jobs:
-  job-danger:
+  main:
     name: Review, Lint, Verify
     runs-on: macOS-latest
     steps:
       - name: git checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v3
 
       - name: ruby versions
         run: |
@@ -42,29 +40,26 @@ jobs:
           gem --version
           bundler --version
 
-      - name: cache gems
-        uses: actions/cache@v1
+      - name: ruby setup
+        uses: ruby/setup-ruby@v1
         with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gem-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gem-
-
-      - name: bundle install
-        run: |
-          bundle config path vendor/bundle
-          bundle install --without=documentation --jobs 4 --retry 3
+          ruby-version: 2.7
+          bundler-cache: true
 
       # additional steps here, if needed
 
       - name: danger
         env:
           DANGER_GITHUB_API_TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN }}
-        run: bundle exec danger
-```
+        run: bundle exec danger --verbose
+  ```
 {% endraw %}
 
-This workflow will only be triggered on pull requests, which is convenient. The first four steps are just boilerplate for [checking out the repo](https://github.com/actions/checkout), installing ruby gems, and [caching them](https://github.com/actions/cache/blob/master/examples.md#ruby---bundler). The final step is what executes `danger` and makes use of the `DANGER_GITHUB_API_TOKEN` secret that you created.
+This workflow will only be triggered on pull requests, which is convenient. The first four steps are just boilerplate for [checking out the repo](https://github.com/actions/checkout) and [setting up ruby](https://github.com/ruby/setup-ruby). The final step executes `danger` and makes use of the `DANGER_GITHUB_API_TOKEN` secret that you created.
 
-If your `Dangerfile` does not require any additional data, you can use this workflow as-is. Otherwise, you can add additional steps after the `bundle install` step and before the `danger` step. For example, suppose you need access to `xcodebuild` output for a specific Danger plugin, you can add a step that builds your project. For non-Xcode projects, the same applies. Add any additional steps you need before `danger` is called.
+If your `Dangerfile` does not require any additional data, you can use this workflow as-is. Otherwise, you can add additional steps after the `ruby setup` step and before the `danger` step. For example, suppose you need access to `xcodebuild` output for a specific Danger plugin, you can add a step that builds your project. For non-Xcode projects, the same applies. Add any additional steps you need before `danger` is called.
 
+{% include updated_notice.html
+date="2022-03-28T10:48:49-07:00"
+message="This workflow has been updated to reflect various changes and improvements to GitHub Actions, namely by using the more modern approach to [setting up ruby and caching gems](https://github.com/ruby/setup-ruby).
+" %}
