@@ -1,7 +1,8 @@
 title: Work Experience
 icon: bi-kanban
 entries:
-  - title: HexedBits
+  - title: Indie Software Developer
+    organization: HexedBits
     location: Remote
     start: Aug 2019
     end: Present
@@ -11,7 +12,8 @@ entries:
       title: HexedBits
     description: "Independent app development. See [hexedbits.com](https://www.hexedbits.com)."
 
-  - title: Independent Contractor (iOS), Duolingo
+  - title: Independent Contractor (iOS)
+    organization: Duolingo
     location: Remote
     start: Feb 2022
     end: Present
@@ -24,7 +26,8 @@ entries:
     bullets:
       - "TBA / in-progress"
 
-  - title: Independent Contractor (iOS), Hopscotch
+  - title: Independent Contractor (iOS)
+    organization: Hopscotch
     location: Remote
     start: Jul 2021
     end: Present
@@ -50,7 +53,8 @@ entries:
       - "Interviewed potential candidates and helped refine interview process."
       - "Produced resources for conducting interviews (questions, sample projects, rubrics for evaluation)."
 
-  - title: Independent Contractor (iOS), Duolingo
+  - title: Independent Contractor (iOS)
+    organization: Duolingo
     location: Remote
     start: Jan 2020
     end: May 2021
@@ -79,7 +83,8 @@ entries:
       - "Most features shipped behind experiment flags using Duolingo's custom experimentation framework."
       - "Provided regularly, timely updates on the progress of projects via Jira and Slack."
 
-  - title: Independent Contractor (iOS), RxSaver
+  - title: Independent Contractor (iOS)
+    organization: RxSaver
     location: Remote
     start: Oct 2019, Oct 2020
     end: Aug 2021
@@ -100,7 +105,8 @@ entries:
       - "Implemented saving recent search terms."
       - "Implemented push notifications."
 
-  - title: Software Engineer (iOS), PlanGrid
+  - title: Software Engineer (iOS)
+    organization: PlanGrid
     location: San Francisco, CA
     start: May 2017
     end: Jul 2019
@@ -128,7 +134,8 @@ entries:
       - "Helped refine interview process for new candidates, including developing questions and quizzes."
       - "Mentored new hires and junior teammates."
 
-  - title: Software Engineer (iOS), Instagram
+  - title: Software Engineer (iOS)
+    organization: Instagram
     location: Menlo Park, CA
     start: May 2015
     end: May 2017
@@ -152,7 +159,8 @@ entries:
         bug/crash reports, managing branches and cherry-picks, and submitting final build to AppStore Connect."
       - "Mentored new hires and junior teammates via 1:1 talks, as well as code reviews."
 
-  - title: Software Engineer (iOS), Rosetta Stone
+  - title: Software Engineer (iOS)
+    organization: Rosetta Stone
     location: San Francisco, CA
     start: Sep 2013
     end: May 2015
@@ -169,7 +177,8 @@ entries:
       - "Worked effectively with remote teammates."
       - "Authored and published the company's first ever [open-source projects](https://github.com/rosettastone/)."
 
-  - title: Independent Contractor (iOS), Hemoglobe
+  - title: Independent Contractor (iOS)
+    organization: Hemoglobe
     location: Remote
     start: Jan 2013
     end: Apr 2013
@@ -186,7 +195,8 @@ entries:
       - "Used [Parse](https://parseplatform.org) BaaS for backend."
       - "Features included a feed of nearby users, private 1:1 messaging, and user profiles."
 
-  - title: HexedBits
+  - title: Indie Software Developer
+    organization: HexedBits
     location: Remote
     start: Jan 2012
     end: Jan 2014

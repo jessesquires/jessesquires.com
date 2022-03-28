@@ -1,8 +1,8 @@
 title: Education
 icon: bi-mortarboard-fill
 entries:
-
-  - title: B.S. Computer Science, University of Evansville
+  - title: B.S. Computer Science
+    organization: University of Evansville
     location: Evansville, IN
     start: Aug 2008
     end: May 2012
@@ -29,11 +29,15 @@ entries:
       - "Study Abroad: Harlaxton College &mdash; Grantham, England &mdash; Fall 2009"
       - "Study Abroad: Amauta Spanish School &mdash; Cusco, Peru &mdash; Summer 2009"
 
-  - title: Computer Science Supplemental Instructor, U of E
+  - title: Computer Science Supplemental Instructor
+    organization: University of Evansville
     location: Evansville, IN
     start: Sep 2010
     end: May 2012
     link: 'https://www.evansville.edu/majors/eecs/computerScience.cfm'
+    img:
+      name: school-ue.png
+      title: University of Evansville
     description: Tutoring funded by the Computer Science department.
     bullets:
       - "Tutored students in Computer Science classes who desired help outside of class."

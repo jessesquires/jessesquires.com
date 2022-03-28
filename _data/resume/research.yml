@@ -1,9 +1,9 @@
 title: Research Experience
 icon: bi-sliders
 entries:
-
-  - title: Visiting Undergraduate Research Fellowship, IU
-    location: Indiana University, Bloomington, IN
+  - title: Visiting Undergraduate Research Fellowship
+    organization: Indiana University
+    location: Bloomington, IN
     start: Aug 2012
     end: Jul 2013
     link: 'http://www.cogs.indiana.edu/undergraduate/opportunities/visiting-undergraduate-research.php'
@@ -31,8 +31,9 @@ entries:
         trivia questions, after which all responses are displayed and each user has the
         opportunity to re-evaluate his or her answer based on the group’s collective response."
 
-  - title: Undergraduate Researcher, USF
-    location: University of South Florida, Tampa, FL
+  - title: Undergraduate Researcher
+    organization: University of South Florida
+    location: Tampa, FL
     start: Jun 2011
     end: Aug 2011
     link: 'https://www.usf.edu/engineering/research/undergraduate-research.aspx'
