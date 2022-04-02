@@ -3,6 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [web, bing, duckduckgo, search, google]
 date: 2022-03-25T21:45:53-07:00
+date-updated: 2022-04-01T17:19:24-07:00
 title: My website disappeared from Bing and DuckDuckGo
 ---
 
@@ -55,3 +56,12 @@ There's one last thing. The issue described above was also happening with anothe
 {% include break.html %}
 
 All of this emphasizes the frustrating lack of transparency around search engines and how they work. It is infuriating to be essentially helpless trying to debug and resolve issues with your site not being properly indexed. I will forever lament that search was not a core component of the Internet itself, but was instead a feature that private corporations had to bolt on top.
+
+{% include updated_notice.html
+date="2022-04-01T17:19:24-07:00"
+message="Good news! Well, sort of. I heard back from Bing Support. They confirmed that they received my report and have \"escalated this request to the engineering team.\" _[Editor's note: not April fools.]_
+
+Also of note, [Delisa pointed out](https://mobile.twitter.com/kattrali/status/1507666040561582086) that this might be related to the [algorithmic changes that DuckDuckGo has been making lately](https://mjtsai.com/blog/2022/03/14/duckduckgo-will-down-rank-russian-disinformation-sites/) and noted that queries for dev topics have been noticeably missing things over the past few weeks.
+
+In addition to algorithmic changes, DuckDuckGo has also [\"paused\" its relationship with Yandex](https://www.protocol.com/bulletins/duckduckgo-yandex-ukraine).
+" %}
