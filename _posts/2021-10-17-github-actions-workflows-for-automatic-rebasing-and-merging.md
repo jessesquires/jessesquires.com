@@ -3,6 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [ci, github-actions, github]
 date: 2021-10-17T15:32:28-07:00
+date-updated: 2022-04-13T12:26:15-07:00
 title: GitHub Actions workflows for automatic rebasing and merging
 ---
 
@@ -105,3 +106,10 @@ jobs:
 ### Collecting useful workflows
 
 When combined with the workflows [from my previous post]({% post_url 2021-08-24-useful-label-based-github-actions-workflows %}), I have started to accumulate a decent collection of general-purpose workflows. To keep track, I created a new repo to house them all and track changes, which [you can find here](https://github.com/jessesquires/gh-workflows). All you need to do is copy them to `.github/workflows/` in your own repo, and edit them as needed. The current workflows are centered around automating tedious aspects of managing pull requests, but one can imagine all kinds of use cases for managing GitHub issues, releases, and more. As I write new workflows, I'll be sure to include them in this project.
+
+{% include updated_notice.html
+date="2022-04-13T12:26:15-07:00"
+message="Good news, GitHub [now has these features built-in to pull requests](https://github.blog/changelog/2022-02-03-more-ways-to-keep-your-pull-request-branch-up-to-date/). You can use the \"Update branch\" button to either rebase or merge.
+
+However, these label-based workflows can still be useful for performing these operations in large batches. For example, if you need to rebase many pull requests at once you could select them all and add the label rather than visit each pull request individually and click the \"Update branch\" button.
+" %}
