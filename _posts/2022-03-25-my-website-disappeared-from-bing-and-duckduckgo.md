@@ -3,7 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [web, bing, duckduckgo, search, google]
 date: 2022-03-25T21:45:53-07:00
-date-updated: 2022-04-01T17:19:24-07:00
+date-updated: 2022-04-20T15:14:46-07:00
 title: My website disappeared from Bing and DuckDuckGo
 ---
 
@@ -64,4 +64,12 @@ message="Good news! Well, sort of. I heard back from Bing Support. They confirme
 Also of note, [Delisa pointed out](https://mobile.twitter.com/kattrali/status/1507666040561582086) that this might be related to the [algorithmic changes that DuckDuckGo has been making lately](https://mjtsai.com/blog/2022/03/14/duckduckgo-will-down-rank-russian-disinformation-sites/) and noted that queries for dev topics have been noticeably missing things over the past few weeks.
 
 In addition to algorithmic changes, DuckDuckGo has also [\"paused\" its relationship with Yandex](https://www.protocol.com/bulletins/duckduckgo-yandex-ukraine).
+" %}
+
+{% include updated_notice.html
+date="2022-04-20T15:14:46-07:00"
+message="
+Reader [Nicolas Magand](https://github.com/nicolastjt) left [a comment](https://github.com/jessesquires/jessesquires.com/issues/163) that they are also having the same problem, and shared [this blog post](https://www.linkedin.com/pulse/bing-exploit-allows-website-owners-deindex-chase-watts/), _Bing Exploit Allows Website Owners to Deindex Competitors_. The gist of the article is that Bing has an inferior search algorithm that is subject to negative SEO campaigns from malicious actors, a problem that Google _does not_ have. The general issue of having your website de-indexed from Bing seems to be much more common than I expected.
+
+To reiterate, I really don't give a shit about Bing, per se --- I just want my site indexed by DuckDuckGo again. But, as noted above, it seems the best (only?) way to do that is through Bing. I sent a follow-up email to Bing Support today to check on the status of my support request.
 " %}
