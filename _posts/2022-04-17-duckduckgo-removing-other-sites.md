@@ -3,6 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [web, bing, duckduckgo, search]
 date: 2022-04-17T17:06:31-07:00
+date-updated: 2022-04-19T17:48:30-07:00
 title: DuckDuckGo removing other sites
 ---
 
@@ -41,3 +42,15 @@ However, this doesn't explain the fact that even a search for my name or website
 Well, that seems [to confirm my suspicion]({% post_url 2022-03-25-my-website-disappeared-from-bing-and-duckduckgo %}) that this was ultimately caused by Bing removing my site (and apparently everything else about me) from its index. And, as [previously mentioned]({% post_url 2022-03-25-my-website-disappeared-from-bing-and-duckduckgo %}) I'm still waiting to hear back from Bing Support. Again, the lack of transparency into search engines in general is infuriating. I wonder, why doesn't DuckDuckGo do more to build its own infrastructure to crawl the web and build its search index without relying solely on third parties?
 
 I [used to be really excited about DuckDuckGo]({% post_url 2018-02-25-replacing-google-with-duckduckgo %}), but I'm quickly becoming less of a fan and losing confidence in their results, which seem to be degrading lately. I've had to switch back to Google Search for many queries in the past few months.
+
+{% include updated_notice.html
+date="2022-04-19T17:48:30-07:00"
+message="
+There's [another update from TorrentFreak](https://torrentfreak.com/duckduckgo-restores-pirate-sites-and-points-to-bing-220419/). All of the pirate sites they were tracking have since been restored to the DuckDuckGo search index:
+
+> At this point, it became clear that the search engine wasn't at all happy with what was happening. They never actively removed any of these sites. Instead, a third-party data provider 'removed' the results for them.
+>
+> Like many other smaller search engines, DuckDuckGo uses hundreds of data sources, including Bing. After some back and forths, DuckDuckGo's spokesperson informed us that Microsoft's search engine was the culprit.
+
+My site [still does not appear on DuckDuckGo](https://duckduckgo.com/?q=site%3Ajessesquires.com), nor Bing. I'm still waiting to hear back from Bing Support. I wonder how many other sites are affected by this?
+" %}
