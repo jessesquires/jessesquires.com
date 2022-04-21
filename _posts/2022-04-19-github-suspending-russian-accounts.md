@@ -3,7 +3,8 @@ layout: post
 categories: [software-dev]
 tags: [github, git, open-source, politics]
 date: 2022-04-19T17:59:36-07:00
-title: GitHub can't be trusted. Or, how suspending Russian accounts deleted project history and pull requests
+date-updated: 2022-04-21T13:49:59-07:00
+title: GitHub suspending Russian accounts deleted project history and pull requests
 ---
 
 According to various reports ([[1]](https://www.pcmag.com/news/github-reportedly-suspends-accounts-related-to-sanctioned-russian-orgs), [[2]](https://techweez.com/2022/04/18/github-suspending-accounts-russian-developers/), [[3]](https://www.investing.com/news/cryptocurrency-news/github-suspends-accounts-of-russian-developers-linked-to-sanctioned-firms-2805302), [[4]](https://techthelead.com/russian-developers-get-their-github-accounts-suspended-lose-work-without-warning/)), GitHub is suspending accounts of Russian developers and organizations linked to or associated with organizations sanctioned by the US government over Russia’s invasion of Ukraine. But it appears that GitHub did not think this through entirely, because these account suspensions are fucking up my projects.
@@ -49,3 +50,13 @@ These actions from GitHub are harmful and damaging to open source projects and t
 It's hard enough to maintain open source projects. It's even harder to inherit an old, somewhat neglected project and try to get it back on track. In that scenario, every single pull request, issue, and comment is important for the long-term maintenance and success of the project. Comments, discussions, and code reviews provide valuable context that is not always captured in the commit history --- especially for open source projects that have cycled through multiple maintainers over the years. I think a proper solution from GitHub would have been to leave all contributions intact, freeze the suspected accounts to prevent future activity, and clearly mark the account profile pages as suspended. And then, when possible, flip the switch to fully re-enable the accounts. But apparently GitHub thought the best thing to do was delete it all.
 
 So, thank you GitHub for royally fucking this up.
+
+{% include updated_notice.html
+date="2022-04-21T13:49:59-07:00"
+message="
+Good news! [Martin Woodward](https://twitter.com/martinwoodward), the Senior Director of Developer Relations at GitHub, reached out to let me know that GitHub has restored the missing pull requests, issues, comments, etc. from the Russian developers whose accounts have been suspended. User profiles are also restored, though they do not specifically mention that the accounts are suspended.
+
+According to him, the only mechanism GitHub previously had to suspend accounts was built to target spammers and other malicious actors --- scenarios in which, usually, the best thing to is make the accounts and all activity entirely disappear. Clearly, that was not appropriate in this case. I really appreciate Martin contacting me and helping push for a better solution to this internally at GitHub.
+
+I still disagree with punishing ordinary individuals for atrocities perpetrated by The Russian State (and all States, for that matter), but I suppose most US corporations have little choice but to concede to governmental pressure. That's a topic for another post.
+" %}
