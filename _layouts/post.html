@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% assign full_page_url = site.url | append: page.url %}
+{% assign full_page_url = page.url | absolute_url %}
 
 {% assign issue_title_params = '?title=' | append: page.title %}
 {% assign issue_body_params = '&body=Comments, Questions, Feedback: ' | append: full_page_url %}
