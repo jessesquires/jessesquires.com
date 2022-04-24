@@ -32,6 +32,9 @@ layout: null
         {% assign post_title = post.title %}
         {% assign post_date = post.date %}
         {% assign post_id = post.url | absolute_url %}
+        {% assign post_url = post.url | absolute_url %}
+
+        {% capture notice %}{% include originally_posted_on.html url=post_url %}{% endcapture %}
 
         {% if post.subtitle %} {% assign post_title = post.title | append: ": " | append: post.subtitle %} {% endif %}
         {% if page.updates_only %}
@@ -43,7 +46,7 @@ layout: null
         {% endif %}
 
         <id>{{ post_id | xml_escape }}</id>
-        <link href="{{ post.url | absolute_url }}" />
+        <link href="{{ post_url }}" />
         <title>{{ post_title | xml_escape }}</title>
         <published>{{ post_date | date_to_xmlschema }}</published>
         <updated>{{ post.date-updated | default: post.date | date_to_xmlschema }}</updated>
@@ -53,7 +56,7 @@ layout: null
         <summary type="html">{{ post.excerpt | xml_escape }}</summary>
 
         <content type="html" xml:base="{{ site.url }}" xml:lang="en">
-            {{ post.content | xml_escape }}
+            {{ post.content | append: notice | xml_escape }}
         </content>
     </entry>
     {% endfor %}
