@@ -4,6 +4,7 @@ categories: [software-dev]
 tags: [docc, documentation, github, jazzy, open-source, swift]
 date: 2022-04-22T12:58:41-07:00
 title: Using DocC on GitHub Pages
+date-updated: 2022-04-25T10:27:23-07:00
 subtitle: Pros and Cons
 ---
 
@@ -137,3 +138,14 @@ I think DocC offers a lot of value and has some really cool features like [inter
 
 The main improvement I would like to see with DocC static hosting is making this feature a first-class citizen --- fix the quirky URL scheme and don't require a web server to make it a truly static site. As for DocC features in general, the most important one for me would be reporting documentation coverage.
 
+{% include updated_notice.html
+date="2022-04-25T10:27:23-07:00"
+message="
+Thanks to [Ethan Kusters](https://twitter.com/ethankusters) for sharing [some updates and feedback](https://twitter.com/ethankusters/status/1517620941848678402) on this post:
+
+- To workaround the unstable JSON output, you can set the env variable `export DOCC_JSON_PRETTYPRINT=\"YES\"` as [seen here](https://github.com/apple/swift-markdown/blob/main/bin/update-gh-pages-documentation-site#L36).
+- Turns out DocC _is not_ transforming dashes into underscores. That's Swift doing that, which makes sense now because you have to `import my_swift_package`. My mistake there!
+- For search, Swift-DocC has a [sidebar in active development](https://forums.swift.org/t/swift-docc-sidebar/55250) that offers some basic filtering.
+
+The team is actively working on improving the UX with DocC. I'm excited to see what they come up with!
+" %}
