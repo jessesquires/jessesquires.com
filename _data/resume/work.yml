@@ -45,10 +45,11 @@ entries:
       - "Performed significant project-wide refactorings to improve developer productivity and facilitate easier feature development.
         This involved reconfiguring the app into sensible framework modules."
       - "Improved general project infrastructure and automation. Automated project setup and CocoaPods installation with Make."
-      - "Automated tedious development tasks using GitHub Actions."
+      - "Automated tedious development tasks using GitHub Actions: generating snapshots, labeling PRs, and assigning milestones to PRs"
       - "Improved testing infrastructure to reduce test flakes and speed up CI."
       - "Implemented CI/CD using Bitrise. Automated generating builds and commenting on PRs with build status."
       - "Automated portions of code review with Danger."
+      - "Automated release process: creating release branches, bumping version numbers, opening milestones, uploading to the App Store, etc."
       - "Wrote documentation for the project, testing infrastructure, and CI setup."
       - "Interviewed potential candidates and helped refine interview process."
       - "Produced resources for conducting interviews (questions, sample projects, rubrics for evaluation)."
