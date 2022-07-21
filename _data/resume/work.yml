@@ -24,13 +24,14 @@ entries:
     description: "Returned to Duolingo as an independent contractor after some time away. (See below.)
       I rejoined the 'User Delight' team, working on the main iOS app. I worked part-time and reported to Peter Chapman."
     bullets:
+      - "Implemented a custom main thread watchdog for tracking and logging excessive work on the main thread."
       - "TBA / in-progress"
 
   - title: Independent Contractor (iOS)
     organization: Hopscotch
     location: Remote
     start: Jul 2021
-    end: Present
+    end: Jul 2022
     link: 'https://www.gethopscotch.com'
     img:
       name: work-hopscotch.png
