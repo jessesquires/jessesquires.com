@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [essays]
-tags: [capitalism, work, work-life]
+tags: [capitalism, work, work-life, labor]
 date: 2022-07-25T10:20:44-07:00
 title: Disconnected
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [essays]
-tags: [tech, open-source, labor]
+tags: [tech, open-source, labor, work-life]
 date: 2017-02-08T10:00:00-07:00
 title: Prioritization
 subtitle: Or how I learned to stop worrying and love being a normal human
