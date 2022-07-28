@@ -3,7 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [web, bing, duckduckgo, search, google]
 date: 2022-03-25T21:45:53-07:00
-date-updated: 2022-04-20T15:14:46-07:00
+date-updated: 2022-07-28T12:36:54-07:00
 title: My website disappeared from Bing and DuckDuckGo
 ---
 
@@ -73,3 +73,14 @@ Reader [Nicolas Magand](https://github.com/nicolastjt) left [a comment](https://
 
 To reiterate, I really don't give a shit about Bing, per se --- I just want my site indexed by DuckDuckGo again. But, as noted above, it seems the best (only?) way to do that is through Bing. I sent a follow-up email to Bing Support today to check on the status of my support request.
 " %}
+
+{% capture notice_content %}
+This post is still being circulated and showing up in Google search for folks, so I want to highlight [my recent follow-up post here]({% post_url 2022-07-25-my-website-disappeared-from-bing-and-duckduckgo-part-2 %}).
+
+Also, another reader experiencing this issue emailed me after finding this post via Google. They also [published a blog post here](https://io.bikegremlin.com/28530/microsoft-bing-serp-gone-overnight/) detailing their experience.
+{% endcapture %}
+
+{% include updated_notice.html
+date="2022-07-28T12:36:54-07:00"
+message=notice_content
+%}
