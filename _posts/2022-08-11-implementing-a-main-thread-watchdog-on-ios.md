@@ -204,7 +204,7 @@ final public class Watchdog: NSObject, WatchdogRunLoopObserverDelegate {
 
     public func runLoopDidStall(withDuration duration: TimeInterval) {
         // TODO: implement your custom logging here
-        //    - what is task is currently running?
+        //    - what task is currently running?
         //    - which view controller is currently on screen?
         print("🚫 ⚠️ [Watchdog] main thread blocked for \(duration) seconds")
     }
