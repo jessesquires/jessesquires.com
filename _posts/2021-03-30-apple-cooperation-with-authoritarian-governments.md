@@ -3,7 +3,7 @@ layout: post
 categories: [essays]
 tags: [tech, politics, capitalism, apple]
 date: 2021-03-30T19:56:17-07:00
-date-updated: 2021-08-22T22:15:56-07:00
+date-updated: 2022-08-11T20:13:19-07:00
 title: Apple's cooperation with authoritarian governments
 ---
 
@@ -19,13 +19,13 @@ However, there is still reason to be concerned, because Apple does not have a la
 
 {% include break.html %}
 
-##### January 2017 &mdash; Apple removed NYT from the China App Store
+##### January 2017 --- Apple removed NYT from the China App Store
 
 [Katie Benner and Sui-Lee Wee, reporting for the New York Times](https://www.nytimes.com/2017/01/04/business/media/new-york-times-apps-apple-china.html):
 
 > Apple, complying with what it said was a request from Chinese authorities, removed news apps created by The New York Times from its app store in China late last month.
 
-##### July 2017 &mdash; Apple removes VPN apps from China App Store
+##### July 2017 --- Apple removes VPN apps from China App Store
 
 [Paul Mozur, reporting for the New York Times](https://www.nytimes.com/2017/07/29/technology/china-apple-censorhip.html):
 
@@ -35,15 +35,15 @@ However, there is still reason to be concerned, because Apple does not have a la
 
 [ExpressVPN](https://www.expressvpn.com/blog/china-ios-app-store-removes-vpns/):
 
-> We received notification from Apple today, July 29, 2017 &mdash; at roughly 04:00 GMT, that the ExpressVPN iOS app was removed from the China App Store. Our preliminary research indicates that all major VPN apps for iOS have been removed.
+> We received notification from Apple today, July 29, 2017 --- at roughly 04:00 GMT, that the ExpressVPN iOS app was removed from the China App Store. Our preliminary research indicates that all major VPN apps for iOS have been removed.
 
-##### November 2017 &mdash; Apple removes Skype from China App Store
+##### November 2017 --- Apple removes Skype from China App Store
 
 [Paul Mozur, reporting for the New York Times](https://www.nytimes.com/2017/11/21/business/skype-app-china.html):
 
 > "We have been notified by the Ministry of Public Security that a number of voice over internet protocol apps do not comply with local law. Therefore these apps have been removed from the app store in China," an Apple spokeswoman said Tuesday in an emailed statement responding to questions about Skype’s disappearance from the app store.
 
-##### September 2019 &mdash; Apple adopts a "SIM canary"
+##### September 2019 --- Apple adopts a "SIM canary"
 
 If you insert a Chinese carrier SIM, apps like TikTok & Apple News no longer function.
 
@@ -63,7 +63,7 @@ If you insert a Chinese carrier SIM, apps like TikTok & Apple News no longer fun
 >
 > This is a pretty intense tactic, and I think it will be increasingly more common as the Chinese tech ecosystem diverges. It's pretty concerning that Apple itself adopts it. The Great Firewall is moving to the metal; the VPNs won't work in that future.
 
-##### October 2019 &mdash; Apple removes Taiwan flag emoji in iOS 13
+##### October 2019 --- Apple removes Taiwan flag emoji in iOS 13
 
 [Kris Cheng, reporting for the Hong Kong Free Press](https://hongkongfp.com/2019/10/05/taiwan-flag-emoji-disappears-latest-apple-iphone-keyboard/):
 
@@ -75,7 +75,7 @@ This unfortunately wasn't a bug, as [the same behavior shipped in iOS 13.2](http
 
 See also: reporting by [The Verge](https://www.theverge.com/2019/10/7/20903613/apple-hiding-taiwan-flag-emoji-hong-kong-macau-china).
 
-##### October 2019 &mdash; Apple Removes HKmap.live from the App Store
+##### October 2019 --- Apple Removes HKmap.live from the App Store
 
 [Jack Nicas, writing for The New York Times](https://www.nytimes.com/2019/10/09/technology/apple-hong-kong-app.html):
 
@@ -83,9 +83,9 @@ See also: reporting by [The Verge](https://www.theverge.com/2019/10/7/20903613/a
 
 See also: reporting by [The Verge](https://www.theverge.com/2019/10/10/20908498/apple-ceo-tim-cook-hong-kong-protest-app-removed-store-email-employees-hkmaplive) and [MacRumors](https://www.macrumors.com/2019/10/18/us-lawmakers-condemn-apple-decision-hkmap-app/).
 
-These decisions have real consequences for movements. In January 2021 &mdash; [the Hong Kong police arrested 53 elected pro-democracy officials and activists](https://www.nytimes.com/2021/01/05/world/asia/hong-kong-arrests-national-security-law.html), advancing Beijing's initiative to quash dissent.
+These decisions have real consequences for movements. In January 2021 --- [the Hong Kong police arrested 53 elected pro-democracy officials and activists](https://www.nytimes.com/2021/01/05/world/asia/hong-kong-arrests-national-security-law.html), advancing Beijing's initiative to quash dissent.
 
-##### November 2019 &mdash; Apple changes Crimea map to meet Russian demands
+##### November 2019 --- Apple changes Crimea map to meet Russian demands
 
 [The BBC](https://www.bbc.com/news/technology-50573069):
 
@@ -95,7 +95,7 @@ These decisions have real consequences for movements. In January 2021 &mdash; [t
 >
 > The region, which has a Russian-speaking majority, is now shown as Russian territory on Apple Maps and its Weather app, when viewed from Russia.
 
-##### November 2019 &mdash; Trump re-election campaign ad shot in Apple's Mac Pro plant in Austin
+##### November 2019 --- Trump re-election campaign ad shot in Apple's Mac Pro plant in Austin
 
 [Gruber, at Daring Fireball](https://daringfireball.net/2019/11/cook_trump_campaign_ad):
 
@@ -111,9 +111,9 @@ Admittedly, this event is a bit of an outlier in relation to the others I have l
 
 I find it difficult to reconcile. How can you claim to stand up for human rights while voluntarily participating in a re-election campaign ad for The Human-Rights-Violator-in-Chief? And to top it off, [Tim Cook gifted Trump the 'first' 2019 Mac Pro](https://www.macrumors.com/2021/01/20/tim-cook-donald-trump-mac-pro-gift/). Gruber is adamant that Cook does not support Trump and that Cook personally engaging with Trump does not imply support. However, I fail to see how that is relevant, when Cook is clearly willingly to play the game, regardless of his personal views.
 
-This campaign ad made obvious the tacit acknowledgment that Tim Cook is merely a capitalist &mdash; not a human rights activist. Apple is ultimately beholden to shareholders and investors, which means the pursuit of profit takes priority over anything else &mdash; including and especially human rights violations.
+This campaign ad made obvious the tacit acknowledgment that Tim Cook is merely a capitalist --- not a human rights activist. Apple is ultimately beholden to shareholders and investors, which means the pursuit of profit takes priority over anything else --- including and especially human rights violations.
 
-##### February 2020 &mdash; Apple removed Plague Inc. from Chinese App Store
+##### February 2020 --- Apple removed Plague Inc. from Chinese App Store
 
 [Eliza Gkritsi, writing for TechNode](https://technode.com/2020/02/27/plague-inc-removed-from-chinese-app-stores-amid-outbreak/):
 
@@ -123,7 +123,7 @@ This campaign ad made obvious the tacit acknowledgment that Tim Cook is merely a
 >
 > Chinese authorities have been known to ban adult content and games with politically sensitive hidden messages. Plague Inc. has been praised for its educational value and scientific approach.
 
-##### October 2020 &mdash; Apple forced Telegram to close channels run by Belarus protestors
+##### October 2020 --- Apple forced Telegram to close channels run by Belarus protestors
 
 [Scott Chipolina, writing for Decrypt](https://decrypt.co/44339/telegram-forced-to-close-channels-run-by-belarus-protestors):
 
@@ -131,7 +131,7 @@ This campaign ad made obvious the tacit acknowledgment that Tim Cook is merely a
 
 See also: [Michael Tsai's round up](https://mjtsai.com/blog/2020/10/09/apple-forces-telegram-to-close-channels-run-by-belarus-protestors/), and Daring Fireball's [Telegram, Apple, Belarus, and Conflating ‘Irrelevance’ With ‘Inconvenience’](https://daringfireball.net/2020/10/telegram_apple_belarus)
 
-##### September 2020 &mdash; Apple helps track down BLM protester
+##### September 2020 --- Apple helps track down BLM protester
 
 [Thomas Brewster, reporting for Forbes](https://www.forbes.com/sites/thomasbrewster/2020/09/16/apple-helps-fbi-track-down-george-floyd-protester-accused-of-firebombing-cop-cars/):
 
@@ -147,7 +147,7 @@ Related, [Apple has reportedly dropped plans](https://www.reuters.com/article/us
 
 While this report is not confirmed, it does seem plausible. After years of incrementally advancing the security of iOS and touting its tough stance on privacy, why has Apple not delivered on end-to-end encryption for iCloud? I understand there are many technical challenges, but surely it should be a high priority.
 
-##### December 2020 &mdash; Pham v. Apple
+##### December 2020 --- Pham v. Apple
 
 via [Michael Tsai](https://mjtsai.com/blog/2020/12/31/fired-app-reviewer-sues-apple/):
 
@@ -155,7 +155,7 @@ via [Michael Tsai](https://mjtsai.com/blog/2020/12/31/fired-app-reviewer-sues-ap
 >
 > Defendant Apple became aware of plaintiff Pham’s criticism and defendant Apple’s managers responded by retaliating against plaintiff Pham and ultimately terminating plaintiff Pham.
 
-##### February 2021 &mdash; Apple Removes Apps for Pakistani Government
+##### February 2021 --- Apple Removes Apps for Pakistani Government
 
 [Megha Rajagopalan, reporting for BuzzFeed](https://www.buzzfeednews.com/article/meghara/pakistan-forced-down-ahmadiyya-apps):
 
@@ -165,7 +165,7 @@ via [Michael Tsai](https://mjtsai.com/blog/2020/12/31/fired-app-reviewer-sues-ap
 >
 > At issue are seven religious apps created by the Ahmadi community in the United States, published under the name “Ahmadiyya Muslim Community.”
 
-##### March 2021 &mdash; Apple reportedly agrees to preinstall Russian software
+##### March 2021 --- Apple reportedly agrees to preinstall Russian software
 
 [RadioFreeEurope](https://www.rferl.org/a/apple-russia-iphone-software/31153385.html):
 
@@ -185,7 +185,7 @@ The entries below were added after this piece was first published. I will contin
 "
 %}
 
-##### May 2021 &mdash; Seven Apple Suppliers Accused of Using Forced Labor From Xinjiang
+##### May 2021 --- Seven Apple Suppliers Accused of Using Forced Labor From Xinjiang
 
 [Wayne Ma, reporting for The Information](https://www.theinformation.com/articles/seven-apple-suppliers-accused-of-using-forced-labor-from-xinjiang):
 
@@ -197,7 +197,7 @@ The entries below were added after this piece was first published. I will contin
 >
 > The revelation stands in contrast to Apple’s assertions over the past year that it hasn’t found evidence of forced labor in its supply chain.
 
-##### May 2021 &mdash; Censorship, Surveillance and Profits: A Hard Bargain for Apple in China
+##### May 2021 --- Censorship, Surveillance and Profits: A Hard Bargain for Apple in China
 
 [Jack Nicas, Raymond Zhong, and Daisuke Wakabayashi writing for The New York Times](https://www.nytimes.com/2021/05/17/technology/apple-china-censorship-data.html):
 
@@ -213,7 +213,7 @@ The entries below were added after this piece was first published. I will contin
 
 See also: [MacRumors](https://www.macrumors.com/2021/05/17/apple-security-compromises-china-icloud/), [Daring Fireball](https://daringfireball.net/2021/05/nyt_apple_china_icloud), and [Michael Tsai](https://mjtsai.com/blog/2021/05/19/a-hard-bargain-for-apple-in-china/).
 
-##### June 2021 &mdash; Apple's new 'private relay' feature will not be available in multiple countries
+##### June 2021 --- Apple's new 'private relay' feature will not be available in multiple countries
 
 [Stephen Nellis and Paresh Dave writing for Reuters](https://www.reuters.com/world/china/apples-new-private-relay-feature-will-not-be-available-china-2021-06-07/):
 
@@ -221,7 +221,7 @@ See also: [MacRumors](https://www.macrumors.com/2021/05/17/apple-security-compro
 >
 > Apple said it also will not offer "private relay" in Belarus, Colombia, Egypt, Kazakhstan, Saudi Arabia, South Africa, Turkmenistan, Uganda and the Philippines.
 
-##### August 2021 &mdash; Engrave Danger: An Analysis of Apple Engraving Censorship across Six Regions
+##### August 2021 --- Engrave Danger: An Analysis of Apple Engraving Censorship across Six Regions
 
 [Jeffrey Knockel and Lotus Ruan at The Citizen Lab](https://citizenlab.ca/2021/08/engrave-danger-an-analysis-of-apple-engraving-censorship-across-six-regions/):
 
@@ -235,13 +235,23 @@ See also: [MacRumors](https://www.macrumors.com/2021/05/17/apple-security-compro
 >
 > We present evidence that Apple does not fully understand what content they censor and that, rather than each censored keyword being born of careful consideration, many seem to have been thoughtlessly reappropriated from other sources.
 
-##### September 2021 &mdash; Apple removes Navalny app from stores before Russian elections
+##### September 2021 --- Apple removes Navalny app from stores before Russian elections
 
 [Justin Sherman writing for Wired](https://www.wired.com/story/opinion-in-russia-apple-and-google-staff-get-muscled-up-by-the-state/):
 
 > Earlier this month, when the Kremlin told multiple Big Tech companies to suppress political opposition amid nationwide elections in Russia, their answer was unequivocal: no. Yet just two weeks later, Apple and Google deleted from their app stores the Smart Voting app, opposition leader Alexey Navalny and his party’s primary tool for consolidating votes against Vladimir Putin’s regime. Then Telegram and Google-owned YouTube also restricted access to the recommendations for opposition candidates that Navalny was sharing on these platforms.
 
 See also: [Reuters](https://www.reuters.com/world/europe/google-apple-remove-navalny-app-stores-russian-elections-begin-2021-09-17/).
+
+##### August 2022 --- Apple warns suppliers to follow China rules on 'Taiwan' labeling
+
+[Cheng Ting-Fang and Lauly Li, reporting for Nikkei](https://asia.nikkei.com/Spotlight/Supply-Chain/Apple-warns-suppliers-to-follow-China-rules-on-Taiwan-labeling):
+
+> Apple has asked suppliers to ensure that shipments from Taiwan to China strictly comply with Chinese customs regulations after a recent visit by senior U.S. lawmaker Nancy Pelosi to Taipei stoked fears of rising trade barriers.
+>
+> Apple told suppliers on Friday that China has started strictly enforcing a long-standing rule that Taiwanese-made parts and components must be labeled as being made either in "Taiwan, China" or "Chinese Taipei," sources familiar with the matter told Nikkei Asia, language that indicates the island is part of China.
+
+It is certainly not a good look when you force your suppliers to print CCP state propaganda on Taiwanese-made parts.
 
 {% include break.html %}
 
