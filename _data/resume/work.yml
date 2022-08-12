@@ -25,6 +25,8 @@ entries:
       I rejoined the 'User Delight' team, working on the main iOS app. I worked part-time and reported to Peter Chapman."
     bullets:
       - "Implemented a custom main thread watchdog for tracking and logging excessive work on the main thread."
+      - "Identified and resolved various performance-related issues. Superfluous disk access, excessive networking, etc."
+      - "Optimized Makefile project bootstrapping to avoid unnecessary pod installs and xcode project generation via xcodegen."
       - "TBA / in-progress"
 
   - title: Independent Contractor (iOS)
