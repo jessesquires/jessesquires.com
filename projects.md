@@ -10,7 +10,7 @@ If you are looking for a complete cv, you can [find that here]({% link linkedout
 
 ### Apps
 
-You can find my indie iOS and macOS apps at [Hexed Bits](https://hexedbits.com). As I continue to develop and release new apps, you will find them there.
+You can find my indie iOS and macOS apps at [Hexed Bits](https://hexedbits.com). When I release new apps, you will find them there.
 
 ### Swift Unwrapped
 
@@ -22,7 +22,7 @@ I started the [Swift Weekly Brief](https://swiftweekly.github.io) newsletter in 
 
 I started this project with the intention of making it a community effort. To my knowledge it was the first newsletter of its kind, to be completely open source, and run by the community, for the community. I'm proud to say it inspired [Colin Eberhardt](https://twitter.com/ColinEberhardt) to [start his own](https://github.com/SwiftWeekly/swiftweekly.github.io/issues/339) newsletter, [WebAssembly Weekly](http://wasmweekly.news), which started as a fork of Swift Weekly Brief. Furthermore, I volunteered to help build [a newsletter for the Tech Workers Coalition](https://github.com/techworkersco/techworkersco.github.io), which is also modeled after Swift Weekly Brief.
 
-The newsletter also inspired the [Swift Community Podcast](https://www.swiftcommunitypodcast.org/episodes/1), which is structured in a similar way &mdash; a podcast for the Swift community, by the Swift community. You can [read more about the newsletter here]({% post_url 2017-12-28-swift-weekly-brief-hiatus %}).
+In addition to inspiring other similar Swift-focused newsletters, Swift Weekly Brief also inspired the [Swift Community Podcast](https://github.com/SwiftCommunityPodcast), which is structured in a similar way &mdash; a podcast for the Swift community, by the Swift community. You can [read more about the newsletter here]({% post_url 2017-12-28-swift-weekly-brief-hiatus %}).
 
 ### Open source
 
@@ -34,7 +34,7 @@ I keep public, open source notes in [my TIL repo](https://github.com/jessesquire
 
 ##### JSQMessagesViewController
 
-My most popular library in the iOS community is [JSQMessagesViewController](https://github.com/jessesquires/JSQMessagesViewController), which is [now deprecated]({% post_url 2017-07-16-officially-deprecating-jsqmessagesviewcontroller %}). I was highly active on this project from 2013 to 2016, and at it's peak it was installed in over 50,000 apps (according to the now-defunct CocoaPods stats) and reached over 11,000 stars on GitHub. I built a community around this project with great care and intention. Like many in the community, I was sad to see it go. What I'm most proud of however, was that it was used in early versions of [Signal for iOS](https://signal.org) (as well as many other lesser-known iOS apps).
+My most popular library in the iOS community was [JSQMessagesViewController](https://github.com/jessesquires/JSQMessagesViewController), which is [now deprecated]({% post_url 2017-07-16-officially-deprecating-jsqmessagesviewcontroller %}). I was highly active on this project from 2013 to 2016, and at it's peak it was installed in over 50,000 apps (according to the now-defunct CocoaPods stats) and reached over 11,000 stars on GitHub. I built a community around this project with great care and intention. Like many in the community, I was sad to see it go. What I'm most proud of however, was that it was used in early versions of [Signal for iOS](https://signal.org) (as well as many other lesser-known iOS apps).
 
 ##### IGListKit
 
