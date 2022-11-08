@@ -3,6 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [apple, imessage, tech]
 date: 2022-01-13T11:24:35-08:00
+date-updated: 2022-11-08T11:11:16-08:00
 title: iMessage spam and reporting abuse
 subtitle: How many taps does it take to block a bad actor?
 image:
@@ -72,3 +73,19 @@ The only recourse I have is to block bad actors manually every single time I rec
 In fact, claiming there are only 5 steps is actually quite generous. After you block a contact, you then have to unwind from all these views to _get back_ to your iMessage inbox, which requires 3 more taps. **And then** you have to _manually_ delete the message, which requires another 2 taps. In total, that's 10 fucking taps to block a spammer and delete their message. Absolute madness is an understatement. Who designed this?!
 
 iMessage should offer a quick and easy way to block (and optionally report) bad actors. Rather than give me an option to pin a thread for an unknown (and obvious spammer) contact, it should offer the option to block the sender and report abuse to Apple. Apple could then maintain a list of known bad actors to help curb abuse of its platform.
+
+{% include updated_notice.html
+date="2022-11-08T11:11:16-08:00"
+message="
+Good news! Beginning in iOS 16, some of these issues have been addressed. Now when you delete a message thread from any unknown sender, there is a new option to \"Delete and Report Junk\" and the \"Report Junk\" button always appears in threads from unknown senders. (See the screenshot below.) This is great.
+
+Unfortunately, blocking a contact still requires the litany of steps listed above.
+" %}
+
+{% include blog_image.html
+    file="imessage-spam-6.jpg"
+    alt="iMessage on iOS 16"
+    caption="iMessage on iOS 16, Delete and Report Junk"
+    source_link=null
+    half_width=true
+%}
