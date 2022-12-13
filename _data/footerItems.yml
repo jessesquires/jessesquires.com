@@ -1,10 +1,14 @@
 - title: GitHub
-  url: 'https://github.com/jessesquires/'
+  url: https://github.com/jessesquires
   icon: bi-github
 
 - title: Twitter
-  url: 'https://twitter.com/jesse_squires'
+  url: https://twitter.com/jesse_squires
   icon: bi-twitter
+
+- title: Mastodon
+  url: https://mastodon.social/@jsq
+  icon: bi-mastodon
 
 - title: Subscribe
   page: subscribe.md

@@ -18,6 +18,9 @@ description: Subscribe to my blog!
 - [RSS (updates-only)]({{ site.feeds.rss-updates-only }})
 - [JSON (updates-only)]({{ site.feeds.json-updates-only }})
 
-<h4 class="mt-4 mb-0">Twitter</h4>
+<h4 class="mt-4 mb-0">Social Media</h4>
 
-You can [follow me on Twitter]({{ site.data.social.twitter }}). Newly published and updated posts are automatically tweeted.
+<p class="mb-0">Newly published and updated blog posts are automatically tweeted and posted to Mastodon.</p>
+
+- [@jesse_squires]({{ site.data.social.twitter }})
+- [@jsq@mastodon.social]({{ site.data.social.mastodon }})
