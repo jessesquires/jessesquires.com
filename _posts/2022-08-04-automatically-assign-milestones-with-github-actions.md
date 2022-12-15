@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [ci, github, github-actions, release-process]
+tags: [ci, github, github-actions, release-process, automation]
 date: 2022-08-04T17:16:57-04:00
 title: Automatically assign milestones with GitHub Actions
 ---

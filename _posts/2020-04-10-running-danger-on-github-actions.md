@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [ci, danger, github, github-actions, open-source]
+tags: [ci, danger, github, github-actions, open-source, automation]
 date: 2020-04-10T12:59:29-07:00
 date-updated: 2022-03-28T10:48:49-07:00
 title: Running Danger on GitHub Actions

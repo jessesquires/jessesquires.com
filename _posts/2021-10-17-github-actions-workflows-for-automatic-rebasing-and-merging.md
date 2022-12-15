@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [ci, github-actions, github]
+tags: [ci, github-actions, github, automation]
 date: 2021-10-17T15:32:28-07:00
 date-updated: 2022-04-13T12:26:15-07:00
 title: GitHub Actions workflows for automatic rebasing and merging

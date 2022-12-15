@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [ci, github-actions, github]
+tags: [ci, github-actions, github, automation]
 date: 2021-08-24T22:08:13-07:00
 date-updated: 2022-03-21T10:48:00-07:00
 title: Useful label-based GitHub Actions workflows
