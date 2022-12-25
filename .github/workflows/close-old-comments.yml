@@ -1,0 +1,30 @@
+# GitHub Actions Virtual Environments
+# https://github.com/actions/virtual-environments/
+
+name: Close Old Comments
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    # Run on the 1st and 15th of every month
+    # https://crontab.guru/#0_0_1,15_*_*
+    - cron: 0 0 1,15 * *
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      # https://github.com/actions/stale
+      - uses: actions/stale@v6
+        with:
+          debug-only: true
+          any-of-labels: 'blog comments & questions'
+          days-before-stale: 15
+          days-before-close: 15
+          close-issue-message: "Thanks so much for leaving feedback about this blog post!
+            After 2 weeks of inactivity these issues are automatically closed,
+            but feel free to continue the discussion!"
+          stale-issue-label: ''
+          close-issue-reason: completed
+          days-before-pr-close: -1 # never close a PR
