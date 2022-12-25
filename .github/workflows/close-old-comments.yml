@@ -8,8 +8,8 @@ on:
 
   schedule:
     # Run on the 1st and 15th of every month
-    # https://crontab.guru/#0_0_1,15_*_*
-    - cron: 0 0 1,15 * *
+    # https://crontab.guru/weekly
+    - cron: 0 0 * * 0
 
 jobs:
   main:
