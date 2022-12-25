@@ -18,7 +18,7 @@ jobs:
       # https://github.com/actions/stale
       - uses: actions/stale@v6
         with:
-          debug-only: true
+          # debug-only: true
           any-of-labels: 'blog comments & questions'
           days-before-stale: 15
           days-before-close: 1
