@@ -21,7 +21,7 @@ jobs:
           debug-only: true
           any-of-labels: 'blog comments & questions'
           days-before-stale: 15
-          days-before-close: 15
+          days-before-close: 1
           close-issue-message: "Thanks so much for leaving feedback about this blog post! After 2 weeks of inactivity these issues are automatically closed, but feel free to continue the discussion!"
           stale-issue-label: 'stale'
           close-issue-reason: completed
