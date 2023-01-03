@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    # Run on the 1st and 15th of every month
+    # Run weekly on Sundays
     # https://crontab.guru/weekly
     - cron: 0 0 * * 0
 
