@@ -18,6 +18,7 @@ exclude:
   - vendor/ruby/
   # custom excludes
   - .gitignore
+  - .ruby-version
   - Makefile
   - Dangerfile
   - LICENSE
