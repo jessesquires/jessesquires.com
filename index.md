@@ -11,5 +11,5 @@ I'm currently focusing on personal projects, while doing contract work for vario
 
 <div class="alert alert-primary pb-0 px-4 my-4" markdown="1">
 **Need an iOS developer?** I am available for hire for freelance and contract work for iOS.
-If you are interested in working together, you can <a href="{% link hire-me.md %}" class="alert-link">learn more here</a>.
+If you are interested in working with me, you can <a href="{% link hire-me.md %}" class="alert-link">learn more here</a>.
 </div>
