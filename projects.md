@@ -10,7 +10,7 @@ If you are looking for a complete cv, you can [find that here]({% link linkedout
 
 ### Apps
 
-You can find my indie iOS and macOS apps at [Hexed Bits](https://hexedbits.com). When I release new apps, you will find them there.
+You can find all of my indie iOS and macOS apps at [Hexed Bits](https://hexedbits.com). When I release new apps, you will find them there. Some of them are distributed through the App Store, which you can [find here](https://apps.apple.com/us/developer/jesse-squires/id492262762).
 
 ### Swift Unwrapped
 

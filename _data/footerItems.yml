@@ -2,13 +2,17 @@
   url: https://github.com/jessesquires
   icon: bi-github
 
+- title: Mastodon
+  url: https://mastodon.social/@jsq
+  icon: bi-mastodon
+
 - title: Twitter
   url: https://twitter.com/jesse_squires
   icon: bi-twitter
 
-- title: Mastodon
-  url: https://mastodon.social/@jsq
-  icon: bi-mastodon
+- title: App Store
+  url: https://apps.apple.com/us/developer/jesse-squires/id492262762
+  icon: bi-apple
 
 - title: Subscribe
   page: subscribe.md
