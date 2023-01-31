@@ -3,7 +3,7 @@ layout: post
 categories: [essays]
 tags: [tech, politics, capitalism, apple]
 date: 2021-03-30T19:56:17-07:00
-date-updated: 2022-08-11T20:13:19-07:00
+date-updated: 2023-01-31T11:49:21Z
 title: Apple's cooperation with authoritarian governments
 ---
 
@@ -252,6 +252,14 @@ See also: [Reuters](https://www.reuters.com/world/europe/google-apple-remove-nav
 > Apple told suppliers on Friday that China has started strictly enforcing a long-standing rule that Taiwanese-made parts and components must be labeled as being made either in "Taiwan, China" or "Chinese Taipei," sources familiar with the matter told Nikkei Asia, language that indicates the island is part of China.
 
 It is certainly not a good look when you force your suppliers to print CCP state propaganda on Taiwanese-made parts.
+
+##### January 2023 --- Apple Brings Mainland Chinese Web Censorship To Hong Kong
+
+[Sam Biddle, reporting for The Intercept](https://theintercept.com/2023/01/26/apple-china-censorship-hong-kong-gitlab/):
+
+> Apple quietly expanded the use of Chinese company Tencent's website blacklist to users in Hong Kong --- and no one will answer questions about it.
+>
+> When Safari users in Hong Kong recently tried to load the popular code-sharing website GitLab, they received a strange warning instead: Apple's browser was blocking the site for their own safety. The access was temporarily cut off thanks to Apple's use of a Chinese corporate website blacklist, which resulted in the innocuous site being flagged as a purveyor of misinformation. Neither Tencent, the massive Chinese firm behind the web filter, nor Apple will say how or why the site was censored.
 
 {% include break.html %}
 
