@@ -26,7 +26,7 @@ What will transpire after February 9 is unclear at the moment, so I'm operating 
 
 Because of the announcement, I've run TweetDelete to delete all my content on Twitter and I won't be participating there until we see what happens on February 9. If the automation services to tweet my blog posts continue to work, I will leave them intact. However, I won't be active there much, if at all, going forward. Also, I will not be deleting my account. I'll keep it for historical reasons --- or just to auto-tweet blog posts, if that remains an option.
 
-I know deleting tweets is controversial. Many folks are interested in preserving content and preventing broken links, or saving links to tweets for reference later. My position is that social media is inherently ephemeral and should not persist indefinitely. That's how I use it. Like in real life, I don't record and keep transcripts of every conversation or thought that I have. If something is important, it should exist permanently outside of the guarded corporate walls of social media companies, because they could make any content inaccessible on a whim.
+I know deleting tweets is controversial. Many folks are interested in preserving content and preventing broken links, or saving links to tweets for reference later. My position is that social media is inherently ephemeral and should not persist indefinitely. That's [how I use it]({% post_url 2021-03-16-deleting-tweets-and-other-social-media-content %}). Like in real life, I don't record and keep transcripts of every conversation or thought that I have. If something is important, it should exist permanently outside of the guarded corporate walls of social media companies, because they could make any content inaccessible on a whim.
 
 {% include break.html %}
 
