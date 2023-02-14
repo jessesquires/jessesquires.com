@@ -2,6 +2,7 @@
 plugins:
   - jekyll-sitemap
   - jekyll-archives
+  - jekyll-email-protect
 
 # File rules
 exclude:
@@ -60,6 +61,7 @@ timezone: America/Los_Angeles
 # Author
 author:
   name: 'Jesse Squires'
+  email: jesse@jessesquires.com
   twitter: jesse_squires
   avatar: avatar.jpg
 
