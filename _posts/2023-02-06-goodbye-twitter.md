@@ -3,6 +3,7 @@ layout: post
 categories: [essays]
 tags: [social-media]
 date: 2023-02-06T09:44:56-08:00
+date-updated: 2023-02-14T10:11:50-08:00
 title: Goodbye, Twitter
 ---
 
@@ -33,3 +34,15 @@ I know deleting tweets is controversial. Many folks are interested in preserving
 If you primarily see my blog posts through Twitter, you can instead [subscribe via RSS]({% link subscribe.md %}) and follow me at [@jsq@mastodon.social]({{ site.data.social.mastodon }}).
 
 And if you want to join the party, you can use [this invite link](https://mastodon.social/invite/Bw4iPeR9) for Mastodon.social. As of this writing, it looks like [Fedifinder](https://fedifinder.glitch.me), a similar tool to Movetodon, is still working. I would recommend using it while you can. It involves a more manual process than Movetodon, but it is better than nothing.
+
+{% include updated_notice.html
+date="2023-02-14T10:11:50-08:00"
+message="
+It looks like Twitter's [attempted API changes](https://www.cnbc.com/2023/02/08/twitter-daily-limit-error-prevents-users-from-posting.html) did not [turn out well](https://arstechnica.com/tech-policy/2023/02/twitter-experiencing-international-outages-most-users-cant-tweet-or-dm/). It is truly comical how disorganized and chaotic the company seems to be. On February 8, I received an email from Zapier Support stating they anticipate that any Zap using the Twitter integration will stop working. Then on February 10, Zapier Support sent a second email confirming that Zaps will continue to work:
+
+> Our team has been working to ensure your Zaps continue working regardless of Twitter's unexpected API changes. We're happy to announce that we've found a solution to keep your Twitter Zaps running for the time being. No action is required from you at this time.
+
+It's unclear if Twitter conceded or came to an agreement with Zapier (and, presumably other services like IFTTT). Or, perhaps Zapier is using an unsanctioned workaround, like extracting the API keys from the Twitter mobile apps. (lolz)
+
+Anyway --- for now, that's good news! This means my blog posts should continue to be tweeted automatically. I still have no plans to engage with the service beyond this.
+" %}
