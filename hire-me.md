@@ -7,7 +7,7 @@ description: Need an iOS developer? Hire me!
 Need an iOS developer? Look no further! I am available for hire for freelance and contract work for iOS. If you don't know much about me, take a look around this site to learn more. You can find my [CV here]({% link linkedout.md %}).
 
 <div class="alert alert-primary pb-0 px-4 my-4" markdown="1">
-**If you are interested in working with me, you can <a href="{% link contact.md %}" class="alert-link">contact me here</a>.** I typically get booked quickly, so I recommend reaching out sooner rather than later. Please be as detailed as possible about your project and what you are looking for.
+**<i class="bi bi-star-fill"></i> Interested in working with me? <a href="{% link contact.md %}" class="alert-link">Contact me here</a>.** I typically get booked quickly, so I recommend reaching out sooner rather than later. Please be as detailed as possible about your project and what you are looking for.
 </div>
 
 ### How I work
