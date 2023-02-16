@@ -35,4 +35,10 @@ JEKYLL_ENV=production bundle exec jekyll build --destination $PUBLIC_WWW
 echo ' '
 echo '🌈  Done! Site built and deployed successfully.'
 
+echo ' '
+echo '🧹  Running gem cleanup...'
+gem cleanup
+
+echo ' '
+echo '✨  Fin  ✨'
 exit
