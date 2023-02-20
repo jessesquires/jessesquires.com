@@ -12,11 +12,9 @@ Need an iOS developer? Look no further! I am available for hire for freelance an
 
 ### How I work
 
-- I can work a maximum of 15-30 hours per week on any given project.
-- I typically work with open-ended contracts and charge an hourly rate. However, I am open to working for a flat rate for fixed-length projects.
-- Depending on the nature and scope of the project and your budget, rates can be negotiable.
-- I prefer to avoid frequent, recurring meetings. I usually cannot do more than one meeting per week per project.
-- I am based in Oakland, CA and most often working in the Pacific time zone, although I sometimes travel.
+I have [a decade of experience]({% link linkedout.md %}) developing for Apple platforms. Depending on your company's needs, I'm available to build entire iOS apps from scratch, explore new ideas with quick prototypes, work on new features or fixes for existing apps, and everything in-between. I value clear, direct, proactive communication and getting things done right. With my breadth and depth of experience, I can build solutions efficiently and effectively, always adhering to industry best practices.
+
+I typically work with open-ended contracts at an hourly rate. However, I am open to working for a flat rate for fixed-length projects. Let me know what you are looking for and we can figure out what works best. Depending on the nature and scope of the project and your budget, rates are negotiable. I am based in Oakland, CA and most often working in the Pacific time zone, although I sometimes travel while working.
 
 ### Testimonials
 
