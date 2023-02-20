@@ -5,7 +5,6 @@
 vendor/bundle
 
 # jekyll
-_drafts
 .jekyll-cache
 .jekyll-metadata
 .sass-cache

@@ -42,7 +42,7 @@ a:link, a:hover, a:active, a:visited {
 }
 
 blockquote {
-  color: $secondary;
+  color: $gray-800;
   background-color: $light;
 
   margin-left: 1.5rem;
@@ -55,9 +55,7 @@ blockquote {
 
   border-left: 2px solid $secondary;
 
-  p {
-    font-size: 1rem;
-  }
+  font-size: 1rem;
 
   a:link,
   a:active,
