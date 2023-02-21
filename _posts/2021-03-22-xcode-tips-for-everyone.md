@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [xcode, ios, macos]
+tags: [xcode, ios, macos, xcode-tips]
 date: 2021-03-22T14:54:00-07:00
 title: Xcode tips for everyone
 ---

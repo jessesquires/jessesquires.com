@@ -1,9 +1,9 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [xcode, debugging]
+tags: [xcode, debugging, xcode-tips]
 date: 2018-07-01T10:00:00-07:00
-title: ! 'Xcode tip: Using behaviors to improve debugging'
+title: "Xcode tip: Using behaviors to improve debugging"
 subtitle: null
 image:
     file: xcode-behaviors-debugging.png
