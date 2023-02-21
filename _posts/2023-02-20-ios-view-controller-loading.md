@@ -58,7 +58,7 @@ In large, complex codebases small issues like this grow over time and multiply. 
 
 ### Finding and fixing the bug
 
-Manually checking every view controller in your codebase is not feasible. There are likely hundreds, if not thousands, depending on the size of your app. This is a perfect use case for symbolic breakpoints. We can create a symbolic breakpoint on `-[UIViewController viewDidLoad]`. Then we need to add a couple of actions so that we can see what's happening --- a "Log Message" action with `%B` to print the breakpoint name, and a "Debugger Command" action with `po Sarg1` which will print the instance of the view controller. Finally, we need to tell the debugger to continue after evaluating the actions.
+Manually checking every view controller in your codebase is not feasible. There are likely hundreds, if not thousands, depending on the size of your app. This is a perfect use case for symbolic breakpoints. We can create a symbolic breakpoint on `-[UIViewController viewDidLoad]`. Then we need to add a couple of actions so that we can see what's happening --- a "Log Message" action with `%B` to print the breakpoint name, and a "Debugger Command" action with `po $arg1` which will print the instance of the view controller. Finally, we need to tell the debugger to continue after evaluating the actions.
 
 {% include post_image.html %}
 
