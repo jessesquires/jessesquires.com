@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [icloud, macos, ios, safari, apple]
+tags: [icloud, macos, ios, safari, apple, bugs]
 date: 2023-03-02T10:25:26-08:00
 title: How to fix iCloud Safari tabs syncing bug
 ---
