@@ -63,3 +63,15 @@ deploy-github:
 .PHONY: image-optim
 image-optim:
 	./scripts/imageoptim.zsh $(files)
+
+.PHONY: open
+open:
+	nova .
+
+.PHONY: safari
+safari:
+	open http://jessesquires.localhost
+
+.PHONY: firefox
+firefox:
+	open -a Firefox http://jessesquires.localhost
