@@ -38,4 +38,6 @@ Enable the breakpoint and run the app. As you navigate to new screens, you'll se
 
 Each time a new view appears, you'll see the name of the corresponding view controller class name! Then you can simply search Xcode for that view controller class and find where you need to make edits. If you are still stuck, don't worry. You can ask your team for help, but this time you'll already know roughly _where_ you need to make changes. Also, I recommend that you [share this breakpoint]({% post_url 2023-02-21-xcode-tip-sharing-breakpoints %}) to reuse it in other projects.
 
-Note: unfortunately, I'm not sure what the equivalent strategy would be for this in SwiftUI, if there is one at all. If you have ideas, please let me know and I'll update this post!
+> Note: unfortunately, I'm not sure what the equivalent strategy would be for this in SwiftUI, if there is one at all. If you have ideas, please let me know and I'll update this post!
+
+Finally, if you want to explore even further, you should try using [FLEX](https://github.com/FLEXTool/FLEX) and [Chisel](https://github.com/facebook/chisel).
