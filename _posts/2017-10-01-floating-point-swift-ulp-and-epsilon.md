@@ -3,9 +3,9 @@ layout: post
 categories: [software-dev]
 tags: [swift, floating-point]
 date: 2017-10-01T10:00:00-07:00
+date-updated: 2023-04-03T20:22:50-07:00
 title: Floating-point Swift, ulp, and epsilon
 subtitle: Exploring floating-point precision
-date-updated: 2018-04-18T08:00:00-07:00
 ---
 
 Epsilon. `ε`. The fifth letter of the Greek alphabet. In calculus, an arbitrarily small positive quantity. In formal language theory, [the empty string](https://en.wikipedia.org/wiki/Empty_string). In the theory of computation, the empty transition of an automaton. In the [ISO C Standard](http://www.open-std.org/jtc1/sc22/WG14/www/docs/n1570.pdf), `1.19e-07` for single precision and `2.22e-16` for double precision.
@@ -15,8 +15,9 @@ The other day I was attempting to use `FLT_EPSILON` (which I later learned was l
 <!--excerpt-->
 
 {% include updated_notice.html
-    message='I gave a talk on the topics discussed in this post and more at iOS Conf Singapore. You can <a href="https://youtu.be/cdRn4DJq9eY">watch the video here</a>!'
-%}
+date="2018-04-18T08:00:00-07:00"
+message="I gave a talk on the topics discussed in this post and more at iOS Conf Singapore. You can [watch the video here](https://youtu.be/cdRn4DJq9eY)!
+"%}
 
 {% include blog_image.html
     file="dogscience.gif"
@@ -310,3 +311,9 @@ If I got anything wrong, please [let me know]({{ site.data.social.twitter }}) or
 - [Floating Point Visually Explained](http://fabiensanglard.net/floating_point_visually_explained/), Fabien Sanglard
 - [Lecture Notes on the Status of IEEE 754](https://people.eecs.berkeley.edu/~wkahan/ieee754status/IEEE754.PDF), Prof. W. Kahan, UC Berkeley
 - [IEEE-754 Floating Point Converter](https://www.h-schmidt.net/FloatConverter/IEEE754.html)
+
+{% include updated_notice.html
+date="2023-04-03T20:22:50-07:00"
+message="
+I recently discovered [Xiaodi Wu's](https://twitter.com/xwu) excellent series of articles, [Notes on numerics in Swift](https://numerics.diploid.ca), which were written in 2018-2019. If you want to dive deeper into Swift's numerics, I highly recommend reading these!
+" %}
