@@ -123,12 +123,19 @@ if !result {
     exit(1)
 } else {
     print("Opening...")
-    let proc = Process()
-    proc.executableURL = URL(fileURLWithPath: "/usr/bin/env")
-    proc.arguments = ["open", filePath]
+    let proc1 = Process()
+    proc1.executableURL = URL(fileURLWithPath: "/usr/bin/env")
+    proc1.arguments = ["nova", "."]
+
+    let proc2 = Process()
+    proc2.executableURL = URL(fileURLWithPath: "/usr/bin/env")
+    proc2.arguments = ["open", filePath]
     do {
-        try proc.run()
-        proc.waitUntilExit()
+        try proc1.run()
+        proc1.waitUntilExit()
+
+        try proc2.run()
+        proc2.waitUntilExit()
         print("Done. 🎉\n")
     } catch {
         print("Error: \(error)\n")
