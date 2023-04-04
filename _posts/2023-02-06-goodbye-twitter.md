@@ -3,7 +3,7 @@ layout: post
 categories: [essays]
 tags: [social-media]
 date: 2023-02-06T09:44:56-08:00
-date-updated: 2023-02-14T10:11:50-08:00
+date-updated: 2023-04-03T20:06:16-07:00
 title: Goodbye, Twitter
 ---
 
@@ -45,4 +45,14 @@ It looks like Twitter's [attempted API changes](https://www.cnbc.com/2023/02/08/
 It's unclear if Twitter conceded or came to an agreement with Zapier (and, presumably other services like IFTTT). Or, perhaps Zapier is using an unsanctioned workaround, like extracting the API keys from the Twitter mobile apps. (lolz)
 
 Anyway --- for now, that's good news! This means my blog posts should continue to be tweeted automatically. I still have no plans to engage with the service beyond this.
+" %}
+
+{% include updated_notice.html
+date="2023-04-03T20:06:16-07:00"
+message="
+You may have noticed that my new blog posts and updated posts are still being tweeted automatically. A few readers have mistaken this automation as me returning to Twitter, so I want to be clear: **I am not returning to Twitter**. I have no plans to continue to use the service beyond the automation I have configured with Zapier, which is why I'm writing this update today.
+
+Twitter has officially [announced](https://twittercommunity.com/t/announcing-new-access-tiers-for-the-twitter-api/188728) their new API changes. See also: Michael Tsai's [roundup](https://mjtsai.com/blog/2023/04/03/new-twitter-api-tiers/). It is unclear if my automation via Zapier will break at the end of the month, or if they will start charging me for Twitter integration. Either way, I don't plan on fixing it nor paying for it.
+
+Let's hope it keeps working. Otherwise, you know where else to find me.
 " %}
