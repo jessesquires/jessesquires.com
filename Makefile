@@ -27,6 +27,10 @@ update-deps:
 watch:
 	bundle exec jekyll build --watch
 
+.PHONY: drafts
+drafts:
+	bundle exec jekyll build --drafts
+
 .PHONY: incr
 incr:
 	bundle exec jekyll build
