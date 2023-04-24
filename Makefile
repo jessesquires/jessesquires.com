@@ -29,16 +29,13 @@ watch:
 
 .PHONY: drafts
 drafts:
-	bundle exec jekyll build --drafts
+	bundle exec jekyll build
+	bundle exec jekyll build --drafts --watch --incremental
 
 .PHONY: incr
 incr:
 	bundle exec jekyll build
 	bundle exec jekyll build --watch --incremental
-
-.PHONY: preview
-preview:
-	bundle exec jekyll serve
 
 .PHONY: pub
 pub:
