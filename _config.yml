@@ -37,7 +37,7 @@ include:
   - node_modules/bootstrap/dist/js/bootstrap.min.js
   - node_modules/bootstrap/dist/js/bootstrap.min.js.map
   # bootstrap icons
-  - node_modules/bootstrap-icons/font/bootstrap-icons.css
+  - node_modules/bootstrap-icons/font/bootstrap-icons.min.css
   - node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff
   - node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2
 

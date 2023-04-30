@@ -39,5 +39,5 @@ node_modules/@popperjs/
 node_modules/bootstrap-icons/*
 !node_modules/bootstrap-icons/font
 node_modules/bootstrap-icons/font/*
-!node_modules/bootstrap-icons/font/bootstrap-icons.css
+!node_modules/bootstrap-icons/font/bootstrap-icons.min.css
 !node_modules/bootstrap-icons/font/fonts
