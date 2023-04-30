@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [swift, objective-c, wwdc, xcode]
+tags: [swift, objective-c, wwdc, xcode, series-apples-to-apples]
 date: 2014-06-25T10:00:00-07:00
 title: Apples to apples
 subtitle: A comparison of sorts between Objective-C and Swift
@@ -11,6 +11,8 @@ date-updated: 2014-08-01T10:00:00-07:00
 When Craig Federighi arrived at his presentation slide about Objective-C during this year's [WWDC keynote](http://www.apple.com/apple-events/june-2014/) everyone in the room seemed puzzled, curious, and maybe even a bit uneasy. *What was happening?* As he continued, he considered what Objective-C would be like **without the C**, and the room abruptly filled with rumblings and whispers <sup><a href="#note1" id="superscript1">[1]</a></sup> as developers in the audience confided in those around them. If you had been following the [discussions](http://informalprotocol.com/2014/02/replacing-cocoa/) in our community about the [state of Objective-C](http://nearthespeedoflight.com/article/2014_03_17_objective_next) (and why we [need to replace it](http://ashfurrow.com/blog/we-need-to-replace-objective-c)) during the previous months, you could only have imagined one thing: Objective-C was no more &mdash; at least not as we knew it.
 
 <!--excerpt-->
+
+{% include post_series_notice.html tag="series-apples-to-apples" topic="benchmarking Swift and comparing it to Objective-C"%}
 
 {% include updated_notice.html message='
 This post has been updated for Xcode6-beta4. All trials were re-run as described below using Xcode6-beta4.

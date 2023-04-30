@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [essays]
-tags: [going-indie, indie-dev, contracting, freelance, consulting]
+tags: [series-going-indie, indie-dev, contracting, freelance, consulting]
 date: 2023-04-10T09:47:22-07:00
 title: Going Independent
 subtitle: My experience and reflections 3 years later
