@@ -5,13 +5,14 @@ tags: [swift, objective-c, wwdc, xcode, series-apples-to-apples]
 date: 2014-08-06T10:00:00-07:00
 title: Apples to apples, Part II
 subtitle: An analysis of sorts between Objective-C and Swift
+series:
+    tag: series-apples-to-apples
+    topic: Swift performance compared to Objective-C
 ---
 
 If at first you don't succeed, try, try again. Practice makes perfect. These proverbs have encouraged us all in many different contexts. But in software development, they tug at our heartstrings uniquely. Programmers persevere through countless nights of fixing bugs. Companies march vigilantly toward an [MVP](http://en.wikipedia.org/wiki/Minimum_viable_product). But after 1.0 there is no finish line, there is no bottom of the 9th inning. There are more bugs to be fixed. There are new releases ahead. The march continues, because software is not a *product*, it is a *process*.
 
 <!--excerpt-->
-
-{% include post_series_notice.html tag="series-apples-to-apples" topic="benchmarking Swift and comparing it to Objective-C"%}
 
 This week, Apple has reminded us of the value of this iterative process and its rewards with the fifth beta release of Xcode 6, iOS 8, OS X Yosemite, and most importantly &mdash; *Swift*. This update includes a [number of improvements](http://adcdownload.apple.com//Developer_Tools/xcode_6_beta_5_za4gu6/xcode_6_beta_5_release_notes.pdf), but perhaps the most interesting are those not listed. Swift was rough around the edges during its launch at [WWDC](https://developer.apple.com/wwdc/), but it is **definitely** beginning to live up to its name.
 

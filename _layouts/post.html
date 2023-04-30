@@ -15,7 +15,13 @@ layout: default
     {% include post_entry.html post_entry=page display_excerpt=false display_categories=true display_tags=true %}
 
     <div class="post-content">
-        {{ content }}
+        {{ page.excerpt }}
+
+        {% if page.series %}
+            {% include post_series_notice.html tag=page.series.tag topic=page.series.topic %}
+        {% endif %}
+
+        {{ page.content | remove: page.excerpt }}
     </div> <!-- post-content -->
 </article>
 
