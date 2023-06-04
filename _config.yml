@@ -1,4 +1,6 @@
 # Dependencies
+highlighter: rouge
+
 plugins:
   - jekyll-sitemap
   - jekyll-archives
