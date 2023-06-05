@@ -36,20 +36,6 @@ body p {
   padding: 0.25rem 0rem 0.25rem 0rem;
 }
 
-code {
-  background-color: $code-bg-color;
-  border-radius: $code-border-radius;
-  padding: 2px;
-  font-weight: bolder;
-}
-
-pre {
-  code {
-    border: none;
-    font-weight: normal;
-  }
-}
-
 a:link,
 a:active,
 a:visited,
@@ -61,13 +47,6 @@ h1 > a:visited {
 
 h1, h2, h3, h4, h5 {
   a {
-    text-decoration: none;
-  }
-}
-
-a:link, a:hover, a:active, a:visited {
-  code {
-    color: $code-color;
     text-decoration: none;
   }
 }
