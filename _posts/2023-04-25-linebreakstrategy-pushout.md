@@ -16,7 +16,7 @@ One scenario where adaptivity APIs will not help is when you layout a body of te
 
 Image our text view is laying out text like this:
 
-```
+```bash
 TextKit manages text storage and performs layout of text-based content on iOS and
 macOS.
 ```
@@ -51,7 +51,7 @@ textView.attributedText = NSAttributedString(text)
 
 This will adjust the layout so that there are at least two words on the second line:
 
-```
+```bash
 TextKit manages text storage and performs layout of text-based content on iOS
 and macOS.
 ```
