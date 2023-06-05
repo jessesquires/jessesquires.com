@@ -24,7 +24,7 @@ I've worked at a number of different companies as a full-time software engineer,
 {% for each in site.data.testimonials %}
     <li>
         <p>
-            <i class="bi bi-star-fill text-secondary"></i>
+            <i class="bi bi-star-fill text-body-secondary"></i>
             <b><a href="{{ each.link }}">{{ each.name }}</a></b> &mdash; <i>{{ each.company }}</i>, {{ each.year }}
             <br/>
             <span class="fw-light">{{ each.position }}</span>

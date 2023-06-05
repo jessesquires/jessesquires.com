@@ -8,8 +8,8 @@
 }
 
 .highlight pre, pre, .highlight .hll {
-  background-color: $color-code-bg;
-  border-color: $color-code-border;
+  background-color: $code-bg-color;
+  border-color: $code-border-color;
   border-width: $code-border-width;
   border-radius: $code-border-radius;
   border-style: solid;
@@ -24,9 +24,6 @@
  * rougify style github > style.css
  */
 
-.highlight {
-  background-color: $color-code-bg;
-}
 .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
 .highlight .cm {

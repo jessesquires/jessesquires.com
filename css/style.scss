@@ -12,6 +12,7 @@
 // 2. Include any default variable overrides here
 $color-mode-type: media-query;
 $primary: #3a98a6;
+$code-color: #495057;
 $font-size-base: 0.925rem;
 $line-height-base: 1.7;
 
@@ -70,11 +71,10 @@ $line-height-base: 1.7;
 // 7. Add additional custom code here
 $font-brand: 'Ubuntu Mono', Arial, sans-serif;
 
-$color-code: $gray-700;
-$color-code-bg: $gray-100;
-$color-code-border: $gray-400;
-$code-border-radius: 3px;
-$code-border-width: 1px;
+$code-bg-color: $gray-100;
+$code-border-color: $gray-500;
+$code-border-radius: 8px;
+$code-border-width: 0px;
 
 @import "custom";
 @import "syntax";

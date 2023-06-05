@@ -1,10 +1,10 @@
 {% assign text = include.text %}
 
-<div class="p-2 my-2 bg-light border-top">
+<div class="p-2 my-2 bg-light-dark border-top">
     <h3 class="fw-normal" id="{{ text | slugify }}">
         <small>
             <i class="bi {{ include.icon }} px-1" role="img" aria-label="{{ text }}"></i>
         </small>
-        <a href="#{{ text | slugify }}" class="text-dark text-decoration-none">{{ text }}</a>
+        <a href="#{{ text | slugify }}" class="text-reset text-decoration-none">{{ text }}</a>
     </h3>
 </div>

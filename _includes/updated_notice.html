@@ -4,10 +4,10 @@
 {% assign date_string = date | date_to_long_string %}
 {% assign id = "updated " | append: date_string | slugify %}
 
-<div class="d-block bg-light pt-3 px-3 pb-0 my-3 border border-2 border-secondary rounded update-notice">
+<div class="d-block bg-light-dark pt-3 px-3 pb-0 my-3 border border-2 border-secondary rounded update-notice">
     <h5 id="{{ id }}">
         <a href="#{{ id }}" class="text-reset"><i class="bi bi-link"></i> Update</a>
-        <small class="text-secondary" title="{{ date_hover }}">
+        <small class="text-body-secondary" title="{{ date_hover }}">
             <i>{{ date_string }}</i>
         </small>
     </h5>

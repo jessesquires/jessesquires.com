@@ -7,21 +7,21 @@
 {% assign date_display = post_entry.date | date_to_long_string %}
 {% assign date_hover = post_entry.date | date: "%d %b %Y %r %Z" %}
 
-<h5 class="text-dark {% if post_entry.subtitle %} d-inline-block {% endif %}">
+<h5 class="{% if post_entry.subtitle %} d-inline-block {% endif %}">
     {% if post_entry.subtitle %} {{ post_entry.subtitle }} {% endif %}
-    <small class="{% if post_entry.subtitle %} text-secondary {% endif %}" title="{{ date_hover }}">{{ date_display }}</small>
+    <small class="{% if post_entry.subtitle %} text-body-secondary {% endif %}" title="{{ date_hover }}">{{ date_display }}</small>
 </h5>
 
 {% if post_entry.date-updated %}
 <div class="d-block">
-    <span class="badge bg-light text-secondary border mb-2" title="{{ post_entry.date-updated | date: '%d %b %Y %r %Z' }}">
+    <span class="badge bg-light-dark text-body-secondary border mb-2" title="{{ post_entry.date-updated | date: '%d %b %Y %r %Z' }}">
         Updated: {{ post_entry.date-updated | date_to_long_string }}
     </span>
 </div>
 {% endif %}
 
 {% if include.display_categories or include.display_tags %}
-<div class="text-secondary mt-2 mb-4">
+<div class="text-body-secondary mt-2 mb-4">
     {% if include.display_categories %}
     <i class="bi bi-bookmark-fill" role="img" aria-label="categories"></i>
         {% assign sorted_categories = post_entry.categories | sort %}
@@ -44,7 +44,7 @@
 <div class="post-excerpt mb-4">
     {{ post_entry.excerpt }}
     <p>
-        <a href="{{ post_entry.url }}" class="text-secondary text-decoration-none">
+        <a href="{{ post_entry.url }}" class="text-body-secondary text-decoration-none">
             Continue&hellip; <i class="bi bi-chevron-double-right" role="img" aria-label="continue"></i>
         </a>
     </p>

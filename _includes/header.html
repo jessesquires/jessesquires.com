@@ -9,7 +9,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbar">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav nav-underline">
                 {% for item in site.data.navigation %}
                 {% capture url %}{% link {{ item.page }} %}{% endcapture %}
                 {% assign component = url | replace: '/', '' %}
@@ -25,6 +25,6 @@
     </div> <!-- container -->
 </nav>
 
-<header class="mb-4 bg-light">
-    <p class="branded text-dark d-inline-block py-1 ps-2 m-0">turing complete with a stack of <b>0xdeadbeef</b></p>
+<header class="mb-4 bg-light-dark">
+    <p class="branded d-inline-block py-1 ps-2 m-0">turing complete with a stack of <b>0xdeadbeef</b></p>
 </header>

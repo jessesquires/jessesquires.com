@@ -1,11 +1,44 @@
+@include color-mode(light) {
+    .bg-body-auto,
+    .update-notice > blockquote {
+      background-color: var(--bs-body-bg);
+    }
+
+    .bg-light-dark,
+    blockquote {
+      background-color: $gray-100;
+    }
+
+    .text-light-dark,
+    blockquote {
+      color: $gray-800;
+    }
+}
+
+@include color-mode(dark) {
+    .bg-body-auto,
+    .update-notice > blockquote {
+      background-color: var(--bs-body-bg);
+    }
+
+    .bg-light-dark,
+    blockquote {
+      background-color: $gray-800
+    }
+
+    .text-light-dark,
+    blockquote {
+      color: $gray-100;
+    }
+}
+
 body p {
   padding: 0.25rem 0rem 0.25rem 0rem;
 }
 
 code {
-  color: $color-code;
-  background-color: $color-code-bg;
-  border-color: $color-code-border;
+  background-color: $code-bg-color;
+  border-color: $code-border-color;
   border-width: $code-border-width;
   border-radius: $code-border-radius;
   border-style: solid;
@@ -37,14 +70,12 @@ h1, h2, h3, h4, h5 {
 
 a:link, a:hover, a:active, a:visited {
   code {
-    color: $color-code;
+    color: $code-color;
+    text-decoration: none;
   }
 }
 
 blockquote {
-  color: $gray-800;
-  background-color: $light;
-
   margin-left: 1.5rem;
   margin-right: 2.5rem;
 
@@ -63,10 +94,6 @@ blockquote {
   a:hover {
     color: inherit;
   }
-}
-
-.update-notice > blockquote {
-  background-color: $body-bg;
 }
 
 .branded {
