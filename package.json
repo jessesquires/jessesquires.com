@@ -3,7 +3,7 @@
   "description": "Turing complete with a stack of 0xdeadbeef",
   "private": true,
   "dependencies": {
-    "bootstrap": "^5.0.0",
+    "bootstrap": "^5.3.0",
     "bootstrap-icons": "^1.0.0"
   }
 }
