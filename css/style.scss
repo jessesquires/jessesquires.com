@@ -72,9 +72,7 @@ $line-height-base: 1.7;
 $font-brand: 'Ubuntu Mono', Arial, sans-serif;
 
 $code-bg-color: $gray-100;
-$code-border-color: $gray-500;
-$code-border-radius: 8px;
-$code-border-width: 0px;
+$code-border-radius: 6px;
 
 @import "custom";
 @import "syntax";
