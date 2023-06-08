@@ -1,16 +1,23 @@
 /* custom */
 
-a:link, a:hover, a:active, a:visited {
-  code {
-    color: $code-color;
-    text-decoration: none;
-    border: none;
-  }
+$code-bg-color: #272822;
+$code-border-radius: 6px;
+
+@include color-mode(light) {
+    code {
+      color: $gray-800;
+      background-color: $gray-200;
+    }
+}
+
+@include color-mode(dark) {
+    code {
+      color: $gray-200;
+      background-color: $gray-800
+    }
 }
 
 code {
-  color: $code-color;
-  background-color: $code-bg-color;
   border-radius: $code-border-radius;
   padding: 4px;
   font-weight: bolder;
@@ -18,9 +25,10 @@ code {
 
 pre {
   code {
-    color: $code-color;
-    border: none;
+    color: $gray-100;
+    background-color: $code-bg-color;
     font-weight: normal;
+    border-radius: $code-border-radius;
   }
 }
 
@@ -41,6 +49,9 @@ pre {
  * Rouge + Pygments syntax highlighting
  * - http://jwarby.github.io/jekyll-pygments-themes/languages/javascript.html
  * - https://help.github.com/en/github/working-with-github-pages/about-github-pages-and-jekyll#syntax-highlighting
+ *
+ * MONOKAI THEME:
+ * - https://raw.githubusercontent.com/jwarby/pygments-css/master/monokai.css
  */
 
 .highlight pre { background-color: $code-bg-color; }
