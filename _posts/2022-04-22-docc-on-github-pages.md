@@ -42,7 +42,7 @@ And then you can write a small script to generate docs for GitHub Pages:
 ```bash
 #!/bin/zsh
 
-swift package
+swift package \
     --allow-writing-to-directory ./docs \
     generate-documentation --target MySwiftPackage \
     --disable-indexing \
