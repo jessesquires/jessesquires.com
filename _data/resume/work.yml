@@ -27,6 +27,8 @@ entries:
       - "Implemented a custom main thread watchdog for tracking and logging excessive work on the main thread."
       - "Identified and resolved various performance-related issues. Superfluous disk access, excessive networking, etc."
       - "Optimized Makefile project bootstrapping to avoid unnecessary pod installs and xcode project generation via xcodegen."
+      - "Worked on implementing downloading content for offline lessons."
+      - "Worked on major app-wide refactoring with the goal of making code more testable. This involved identifying and improving inadequate design patterns, removing implicit globals, and implementing dependency injection."
       - "TBA / in-progress"
 
   - title: Independent Contractor (iOS)
@@ -39,16 +41,17 @@ entries:
       name: work-hopscotch.png
       title: Hopscotch
     description: "Hired as an independent contractor (part-time) to work on the Hopscotch iOS app.
-    While I did work on a few user-facing features, a large portion of my time was spent on infrastructure work --- paying
-    off some technical debt, automating the release process and other tedious development tasks, improving code quality
-    and organization, and improving developer productivity."
+      While I did work on a few user-facing features,
+      a large portion of my time was spent on infrastructure work --- paying off some technical debt,
+      automating the release process and other tedious development tasks, improving code quality
+      and organization, and improving developer productivity."
     bullets:
       - "Implemented the \"Open Project\" language feature, which allows users to link to other projects."
       - "Implemented local variables language feature. Previously, the language only supported globals."
       - "Performed significant project-wide refactorings to improve developer productivity and facilitate easier feature development.
         This involved reconfiguring the app into sensible framework modules."
       - "Improved general project infrastructure and automation. Automated project setup and CocoaPods installation with Make."
-      - "Automated tedious development tasks using GitHub Actions: generating snapshots, labeling PRs, and assigning milestones to PRs"
+      - "Automated tedious development tasks using GitHub Actions: generating snapshots, labeling PRs, and assigning milestones to PRs."
       - "Improved testing infrastructure to reduce test flakes and speed up CI."
       - "Implemented CI/CD using Bitrise. Automated generating builds and commenting on PRs with build status."
       - "Automated portions of code review with Danger."
