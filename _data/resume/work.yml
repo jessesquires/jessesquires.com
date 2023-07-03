@@ -29,6 +29,7 @@ entries:
       - "Optimized Makefile project bootstrapping to avoid unnecessary pod installs and xcode project generation via xcodegen."
       - "Worked on implementing downloading content for offline lessons."
       - "Worked on major app-wide refactoring with the goal of making code more testable. This involved identifying and improving inadequate design patterns, removing implicit globals, and implementing dependency injection."
+      - "Improved infrastructure to facilitate writing tests. Created various test helpers/mocks/utilities and organized them into reusable frameworks for feature teams to utilitize in their tests."
       - "TBA / in-progress"
 
   - title: Independent Contractor (iOS)
