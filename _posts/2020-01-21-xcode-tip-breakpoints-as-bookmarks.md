@@ -3,12 +3,20 @@ layout: post
 categories: [software-dev]
 tags: [xcode, debugging, ios, macos, xcode-tips]
 date: 2020-01-21T17:09:36-08:00
+date-updated: 2023-07-11T12:06:52-07:00
 title: "Xcode tip: Using breakpoints as bookmarks"
 ---
 
 Xcode has a great UI for setting and editing breakpoints. I use breakpoints all the time while working and debugging, but I want to share another, unconventional way that I use them.
 
 <!--excerpt-->
+
+
+{% include updated_notice.html
+date="2023-07-11T12:06:52-07:00"
+message="
+I'm happy to share that bookmarks are now a first-class feature in [Xcode 15](https://developer.apple.com/documentation/xcode-release-notes/xcode-15-release-notes)! We no longer have to hack breakpoints like I describe in this post. You can learn more about how they work in [Sarun's recent blog post](https://sarunw.com/posts/bookmark-in-xcode15/).
+" %}
 
 One of the best features is being able to [set and keep breakpoints](https://help.apple.com/xcode/mac/10.2/#/dev9a374afc9) in place, but quickly enable or disable them individually. In the sidebar, you can quickly see a list of all your breakpoints in the [breakpoint navigator](https://help.apple.com/xcode/mac/10.2/#/dev1cf0a324f) and toggle them on or off. Even better, Xcode preserves them across app launches for each project, but they do not affect your git working directory. This makes disabled breakpoints perfect "bookmarks" in your code, that only you can see.
 
