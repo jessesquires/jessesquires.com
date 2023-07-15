@@ -33,6 +33,27 @@ entries:
       - "TBA / in-progress"
 
   - title: Independent Contractor (iOS)
+    organization: Causal Labs
+    location: Remote
+    start: Apr 2023
+    end: Jul 2023
+    link: 'https://causallabs.io'
+    img:
+      name: work-causal.png
+      title: Causal Labs
+    description: "Hired as an independent contractor to build the iOS SDK for Causal. This work was subcontracted through [Fullsend Solutions](https://www.fullsend.io). I was responsible for writing the entire [Causal iOS Client SDK](https://github.com/causalLabs/ios-client-sdk). Causal is a session tracking, feature management, and A/B testing tool."
+    bullets:
+      - "Built the entire initial SDK for iOS. This included defining the entire public API for iOS and writing [Mustache](https://github.com/mustache) templates for Causal's Swift code generation."
+      - "Drafted a development plan and coordinated closely with Causal and Fullsend on development,
+          and provided timely updates on project status."
+      - "Wrote complete documentation for the SDK with 100% coverage, including a 'Getting Started' guide
+          and an example project demonstrating the SDK."
+      - "Wrote a comprehensive unit test suite with ~80% code coverage and implemented CI on GitHub Actions."
+      - "Published SDK via CocoaPods and established release process."
+      - "Wrote developer documentation for working on the SDK."
+      - "Assisted with onboarding and knowledge transfer for new team members who eventually took over the project."
+
+  - title: Independent Contractor (iOS)
     organization: Hopscotch
     location: Remote
     start: Jul 2021
@@ -41,7 +62,7 @@ entries:
     img:
       name: work-hopscotch.png
       title: Hopscotch
-    description: "Hired as an independent contractor (part-time) to work on the Hopscotch iOS app.
+    description: "Hired as an independent contractor to work on the Hopscotch iOS app.
       While I did work on a few user-facing features,
       a large portion of my time was spent on infrastructure work --- paying off some technical debt,
       automating the release process and other tedious development tasks, improving code quality
