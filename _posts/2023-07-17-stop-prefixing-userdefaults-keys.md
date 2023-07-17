@@ -26,9 +26,13 @@ Lastly, if you are convinced to drop the unnecessary prefixes, beware that you w
 {% include updated_notice.html
 date="2023-07-17T11:37:12-07:00"
 message="
-A few folks on Mastodon have pointed out two situations where prefixing might be warranted. Or rather, pointed out problematic scenarios to generally watch out for.
+A few folks on Mastodon have pointed out situations where prefixing might be warranted. Or rather, pointed out problematic scenarios to generally watch out for.
+
+[Greg Heo mentioned](https://mastodon.social/@gregheo/110730986118754748) that you should carefully consider your key names if you are using `UserDefaults` _shared domains_. Typically, this scenario would be sharing between your main app and an extension --- so hopefully you are not colliding with your own key names.
 
 [Matt Massicotte noted](https://mastodon.social/@mattiem/110730470926606357) that some system frameworks store values in your app's `UserDefaults`. For example, AppKit and SwiftUI on macOS store state restoration data, most commonly window size and location. I had forgotten about this. However, I **highly doubt** you'll have naming collisions. For example, here are a couple of keys for one of my apps: `NSWindow Frame com_apple_SwiftUI_Settings_window`, `com_apple_SwiftUI_Settings_selectedTabIndex`.
 
-More importantly, [Andy Ibanez noted](https://mastodon.social/@andy@iosdev.space/110730254596336650) that a third-party dependency might read and write to the same key name. That is very bad! If you are a library author, you **should not** be writing to `UserDefaults.standard`. This is why [`UserDefaults.init(suiteName:)`](https://developer.apple.com/documentation/foundation/userdefaults/1409957-init) exists --- your library should initialize its own suite.
+More importantly, [Andy Ibanez warned](https://mastodon.social/@andy@iosdev.space/110730254596336650) that a third-party dependency might read and write to the same key name. That is very bad! If you are a library author, you **should not** be writing to `UserDefaults.standard`. This is why [`UserDefaults.init(suiteName:)`](https://developer.apple.com/documentation/foundation/userdefaults/1409957-init) exists --- your library should initialize its own suite.
+
+All of these are valid concerns. Still, I think for the _majority_ of use cases, prefixing is not necessary.
 " %}
