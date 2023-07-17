@@ -28,7 +28,7 @@ date="2023-07-17T11:37:12-07:00"
 message="
 A few folks on Mastodon have pointed out situations where prefixing might be warranted. Or rather, pointed out problematic scenarios to generally watch out for.
 
-[Greg Heo mentioned](https://mastodon.social/@gregheo/110730986118754748) that you should carefully consider your key names if you are using `UserDefaults` _shared domains_. Typically, this scenario would be sharing between your main app and an extension --- so hopefully you are not colliding with your own key names.
+[Greg Heo mentioned](https://mastodon.social/@gregheo/110730986118754748) that you should carefully consider your key names if you are using `UserDefaults` _shared domains_. Typically, this scenario would be sharing data between your main app and an extension --- so hopefully you are not colliding with your own key names.
 
 [Matt Massicotte noted](https://mastodon.social/@mattiem/110730470926606357) that some system frameworks store values in your app's `UserDefaults`. For example, AppKit and SwiftUI on macOS store state restoration data, most commonly window size and location. I had forgotten about this. However, I **highly doubt** you'll have naming collisions. For example, here are a couple of keys for one of my apps: `NSWindow Frame com_apple_SwiftUI_Settings_window`, `com_apple_SwiftUI_Settings_selectedTabIndex`.
 
