@@ -52,6 +52,20 @@ do {
     let newDateString = "date: \(fullDateTimeText)"
     let modifiedContents = fileContents.replacingOccurrences(of: dateString, with: newDateString)
     try modifiedContents.write(to: newFilePath, atomically: true, encoding: .utf8)
+
+    print("Opening...")
+    let proc1 = Process()
+    proc1.executableURL = URL(fileURLWithPath: "/usr/bin/env")
+    proc1.arguments = ["nova", "."]
+
+    let proc2 = Process()
+    proc2.executableURL = URL(fileURLWithPath: "/usr/bin/env")
+    proc2.arguments = ["open", newFilePath.path]
+    try proc1.run()
+    proc1.waitUntilExit()
+
+    try proc2.run()
+    proc2.waitUntilExit()
 } catch {
     print("🚫  Error: \(error)")
     exit(1)

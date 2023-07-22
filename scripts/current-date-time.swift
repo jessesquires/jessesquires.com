@@ -12,23 +12,21 @@ let fullDateTime = ISO8601DateFormatter.string(
     formatOptions: [.withFullDate, .withFullTime]
 )
 
-let updateNoticeText = """
+let text = """
+
+date-updated: \(fullDateTime)
+
 {% include updated_notice.html
 date="\(fullDateTime)"
 message="
 Update message goes here.
 " %}
+
 """
 
-print(fullDateTime)
-print("")
-print(updateNoticeText)
-print("")
+print(text)
 
 NSPasteboard.general.clearContents()
-NSPasteboard.general.setString(
-    "date-updated: \(fullDateTime)\n\n\(updateNoticeText)",
-    forType: .string
-)
+NSPasteboard.general.setString(text, forType: .string)
 
 print("Copied to clipboard!")
