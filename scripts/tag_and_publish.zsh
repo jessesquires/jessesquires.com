@@ -2,6 +2,8 @@
 
 # creates a git tag and pushes to NearlyFreeSpeech.net and GitHub mirror
 
+set -e
+
 if [ -z "$1" ]
 then
     echo "Error: please provide a tag"

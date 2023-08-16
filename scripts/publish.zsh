@@ -2,6 +2,8 @@
 
 # pushes changes to NearlyFreeSpeech.net and pushes to GitHub mirror
 
+set -e
+
 echo "🚀  Publishing to NFSN..."
 git push origin
 

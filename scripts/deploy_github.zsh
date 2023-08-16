@@ -2,6 +2,8 @@
 
 # pulls changes from github and deploys to NearlyFreeSpeech.net
 
+set -e
+
 echo '⬇️  Pulling changes from GitHub'
 git pull github master
 
