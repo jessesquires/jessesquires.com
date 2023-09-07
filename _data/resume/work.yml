@@ -22,7 +22,8 @@ entries:
       name: work-duolingo.png
       title: Duolingo
     description: "Returned to Duolingo as an independent contractor after some time away. (See below.)
-      I rejoined the 'User Delight' team, working on the main iOS app. I worked part-time and reported to Peter Chapman."
+      I worked on the 'User Delight' team (again) as well as the 'Client Architecture' team,
+      working on the main iOS app. I reported to Peter Chapman."
     bullets:
       - "Implemented a custom main thread watchdog for tracking and logging excessive work on the main thread."
       - "Identified and resolved various performance-related issues. Superfluous disk access, excessive networking, etc."
@@ -92,7 +93,7 @@ entries:
       name: work-duolingo.png
       title: Duolingo
     description: "Hired as an independent contractor for the 'User Delight' team, working on the main iOS app.
-      I worked part-time and reported to Peter Chapman."
+      I reported to Peter Chapman."
     bullets:
       - "Built a custom, internal, in-app 'shake-to-report' bug reporting tool that communicated with the
         [Jira API](https://developer.atlassian.com/server/jira/platform/rest-apis/) to create tickets,
@@ -122,11 +123,11 @@ entries:
       name: work-rxsaver.png
       title: RxSaver
     description: "Hired as an independent contractor multiple times over a span of a couple years.
-      I worked part-time and reported to Rustin Reese.
+      I reported to Rustin Reese.
       *Note: RxSaver was [acquired](https://www.fiercehealthcare.com/tech/goodrx-reports-mixed-q1-results-as-executives-shrug-off-amazon-pharmacy-competition) by [GoodRx](https://www.goodrx.com) in [May 2021](https://www.bloomberg.com/news/articles/2021-05-13/goodrx-said-to-buy-perelman-s-rxsaver-business-for-50-million).*"
     bullets:
       - "Helped rewrite legacy Objective-C app in Swift."
-      - "Focused heavily on implementing iOS best practices and general code quality improvements."
+      - "Focused on implementing iOS best practices and general code quality improvements."
       - "Migrated CI from BuddyBuild to Bitrise."
       - "Optimized Bitrise workflows, automated pull requests with Danger, implemented SwiftLint."
       - "Increased unit test coverage."
