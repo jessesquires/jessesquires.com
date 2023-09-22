@@ -104,6 +104,9 @@ entries:
       - "Implemented an app-wide maintenance mode that could be triggered when backend services were experiencing outages.
         This utilized a middleware layer in the networking stack to pause all network activity in the app and periodically ping
         a status micro-service to check if the API was available again."
+      - "Built a custom frame rate tracking and logging tool to detect areas of the app with low FPS and where frames
+        were being dropped. This also included an internal FPS debugging tool that developers could activate and
+        observe FPS in real time while running the app."
       - "Worked closely with designers to implement [Dark Mode](https://twitter.com/duolingo/status/1258411479453368320) for the entire app,
         which required significant refactoring in the legacy codebase."
       - "Worked closely with designers to implement various animations and UI polish throughout the app to 'delight' users. This included
