@@ -3,7 +3,7 @@ layout: post
 categories: [essays]
 tags: [tech, politics, capitalism, apple]
 date: 2021-03-30T19:56:17-07:00
-date-updated: 2023-01-31T11:49:21Z
+date-updated: 2023-12-06T13:39:11-08:00
 title: Apple's cooperation with authoritarian governments
 ---
 
@@ -261,7 +261,20 @@ It is certainly not a good look when you force your suppliers to print CCP state
 >
 > When Safari users in Hong Kong recently tried to load the popular code-sharing website GitLab, they received a strange warning instead: Apple's browser was blocking the site for their own safety. The access was temporarily cut off thanks to Apple's use of a Chinese corporate website blacklist, which resulted in the innocuous site being flagged as a purveyor of misinformation. Neither Tencent, the massive Chinese firm behind the web filter, nor Apple will say how or why the site was censored.
 
-{% include break.html %}
+{% include updated_notice.html
+date="2023-12-06T13:39:11-08:00"
+message="Most recent updates below."
+%}
+
+##### December 2023 --- Governments spying on Apple, Google users through push notifications
+
+[Raphael Satter, reporting for Reuters](https://www.reuters.com/technology/cybersecurity/governments-spying-apple-google-users-through-push-notifications-us-senator-2023-12-06/):
+
+> Unidentified governments are surveilling smartphone users via their apps' push notifications, a U.S. senator warned on Wednesday.
+>
+> [In a letter to the Department of Justice](https://www.documentcloud.org/documents/24191267-wyden_smartphone_push_notification_surveillance_letter_to_doj_-_signed), Senator Ron Wyden said foreign officials were demanding the data from Alphabet's Google and Apple. Although details were sparse, the letter lays out yet another path by which governments can track smartphones.
+
+See also: [MacRumors](https://www.macrumors.com/2023/12/06/apple-governments-surveil-push-notifications/), [Michael Tsai](https://mjtsai.com/blog/2023/12/06/governments-using-push-notifications-to-surveil-users/), [9to5Mac](https://9to5mac.com/2023/12/06/push-notification-spying/), [Washington Post](https://www.washingtonpost.com/technology/2023/12/06/push-notifications-surveillance-apple-google/), and [404 Media: _Here's a Warrant Showing the U.S. Government is Monitoring Push Notifications_](https://www.404media.co/us-government-warrant-monitoring-push-notifications-apple-google-yahoo/).
 
 ### Conclusion
 
