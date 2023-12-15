@@ -26,7 +26,7 @@ Update message goes here.
 
 print(text)
 
-NSPasteboard.general.clearContents()
-NSPasteboard.general.setString(text, forType: .string)
-
-print("Copied to clipboard!")
+// NSPasteboard.general.clearContents()
+// NSPasteboard.general.setString(text, forType: .string)
+// print("Copied to clipboard!")
+print("NOT copied to clipboard. Bug: https://github.com/apple/swift/issues/68785")
