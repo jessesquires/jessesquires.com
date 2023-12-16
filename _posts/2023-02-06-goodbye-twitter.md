@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [essays]
-tags: [social-media]
+tags: [social-media, mastodon]
 date: 2023-02-06T09:44:56-08:00
 date-updated: 2023-04-03T20:06:16-07:00
 title: Goodbye, Twitter
