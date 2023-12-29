@@ -3,7 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [apple, apple-watch, tech]
 date: 2022-01-11T15:37:08-08:00
-title: "On third-party Apple Watch apps"
+title: On third-party Apple Watch apps
 ---
 
 One of the things I mentioned in my [Apple Watch first impressions post]({% post_url 2021-12-29-my-first-apple-watch %}) was how awful third-party apps seem to be. This week [Uber silently dropped support](https://www.macrumors.com/2022/01/10/uber-apple-watch-app-discontinued/) for its watch app in a comically terrible way --- opening the app now displays a poorly-worded message and a sad face emoji. What a ridiculous thing to do.
