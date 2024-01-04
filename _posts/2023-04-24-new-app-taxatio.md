@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [ios, macos, swiftui, apps, indie-dev, contracting, freelance, consulting, taxatio-journal]
+tags: [ios, macos, swiftui, apps, mac-app-store, indie-dev, contracting, freelance, consulting, taxatio-journal]
 date: 2023-04-24T09:46:19-07:00
 title: Introducing Taxatio
 image:
