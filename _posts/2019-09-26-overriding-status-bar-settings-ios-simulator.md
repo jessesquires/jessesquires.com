@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [ios, xcode, nine41]
+tags: [series-perfect-status-bars, ios, xcode, nine41]
 date: 2019-09-26T16:00:00-07:00
 title: Overriding status bar display settings in the iOS simulator
 date-updated: 2019-09-28T12:00:00-07:00

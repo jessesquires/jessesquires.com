@@ -1,13 +1,10 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [swift, objective-c, wwdc, xcode, series-apples-to-apples]
+tags: [series-apples-to-apples, swift, objective-c, wwdc, xcode]
 date: 2014-08-06T10:00:00-07:00
 title: Apples to apples, Part II
 subtitle: An analysis of sorts between Objective-C and Swift
-series:
-    tag: series-apples-to-apples
-    topic: Swift performance compared to Objective-C
 ---
 
 If at first you don't succeed, try, try again. Practice makes perfect. These proverbs have encouraged us all in many different contexts. But in software development, they tug at our heartstrings uniquely. Programmers persevere through countless nights of fixing bugs. Companies march vigilantly toward an [MVP](http://en.wikipedia.org/wiki/Minimum_viable_product). But after 1.0 there is no finish line, there is no bottom of the 9th inning. There are more bugs to be fixed. There are new releases ahead. The march continues, because software is not a *product*, it is a *process*.

@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [ios, xcode, nine41]
+tags: [series-perfect-status-bars, ios, xcode, nine41]
 date: 2022-12-14T15:36:51-08:00
 date-updated: 2022-12-14T20:45:36-08:00
 title: "Workaround: simctl status_bar broken for iOS 16 simulators"

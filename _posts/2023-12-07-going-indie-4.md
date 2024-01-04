@@ -4,9 +4,6 @@ categories: [essays]
 tags: [series-going-indie, indie-dev, contracting, freelance, consulting]
 date: 2023-12-07T08:53:52-08:00
 title: "Going Indie: bookkeeping and invoicing"
-series:
-    tag: series-going-indie
-    topic: becoming an indie developer and freelancer
 ---
 
 Welcome to the fourth (and I think final!) part of my going indie series! Previously, I discussed the exciting topics of [business structure, taxes, and retirement]({% post_url 2023-08-16-going-indie-3%}). Today, I'm going to discuss two final topics: bookkeeping and invoicing. The first is about how to correctly track your income and expenses, and the second is about making sure you get paid! Because this is capitalism, baby --- we are not here for passion, we are here to pay those bills.

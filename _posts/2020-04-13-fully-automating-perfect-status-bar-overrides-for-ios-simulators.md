@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [ios, xcode, nine41]
+tags: [series-perfect-status-bars, ios, xcode, nine41]
 date: 2020-04-13T11:46:38-07:00
 title: Fully automating perfect status bar overrides for iOS simulators with Nine41
 image:

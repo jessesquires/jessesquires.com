@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: [software-dev]
-tags: [xcode, ios, nine41]
+tags: [series-perfect-status-bars, xcode, ios, nine41]
 date: 2019-09-30T17:00:00-07:00
 title: A script to automate overriding iOS simulator status bar values
 date-updated: 2019-09-30T19:00:00-07:00

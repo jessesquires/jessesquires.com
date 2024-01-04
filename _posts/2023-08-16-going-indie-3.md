@@ -5,9 +5,6 @@ tags: [series-going-indie, indie-dev, contracting, freelance, consulting]
 date: 2023-08-16T13:06:28+02:00
 date-updated: 2023-08-17T11:59:12+02:00
 title: "Going indie: business structure, taxes, and retirement"
-series:
-    tag: series-going-indie
-    topic: becoming an indie developer and freelancer
 ---
 
 Welcome to the third part of my going indie series! In the [previous post]({% post_url 2023-05-08-going-indie-2 %}), I discussed building a foundation, getting started, and finding clients. In this post, I am going to discuss many of the decidedly _un-fun_ administrative aspects of being freelance and contracting like saving for retirement and --- everyone's favorite --- taxes. Most folks consider these topics to be boring and tedious, but understanding them is critical to your success. The best approach is one of curiosity. As a software developer, you might find the task of optimizing (and minimizing!) your tax burden to be an interesting problem to solve --- I definitely do!

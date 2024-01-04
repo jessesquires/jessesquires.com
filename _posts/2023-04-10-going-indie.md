@@ -5,9 +5,6 @@ tags: [series-going-indie, indie-dev, contracting, freelance, consulting]
 date: 2023-04-10T09:47:22-07:00
 title: Going Independent
 subtitle: My experience and reflections 3 years later
-series:
-    tag: series-going-indie
-    topic: becoming an indie developer and freelancer
 ---
 
 A number of folks have reached out to me recently (and over the years) asking me about my experience going indie. I originally wanted to write this reflection after my first year, but I could not find the time nor motivation. The early days of the pandemic really drained me. However, I hope these past three years of experience will only make this post more valuable to those seeking to do the same thing I did. I am writing this for anyone who is interested in trying to go independent --- either with your own app development business, solo contracting and freelancing, or both.

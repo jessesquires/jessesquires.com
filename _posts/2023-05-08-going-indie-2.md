@@ -4,9 +4,6 @@ categories: [essays]
 tags: [series-going-indie, indie-dev, contracting, freelance, consulting]
 date: 2023-05-08T09:42:09-07:00
 title: "Going Indie: building a foundation, finding clients, and negotiating rates"
-series:
-    tag: series-going-indie
-    topic: becoming an indie developer and freelancer
 ---
 
 Welcome to my next post on going indie! In the [previous one]({% post_url 2023-04-10-going-indie %}), I provided a high-level overview and introduction, and answered some of the most common questions I get from folks. In this post I'm going to dive deeper into how you can prepare to go independent, how to find clients, and other tips.

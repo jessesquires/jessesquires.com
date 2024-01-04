@@ -17,9 +17,7 @@ layout: default
     <div class="post-content">
         {{ page.excerpt }}
 
-        {% if page.series %}
-            {% include post_series_notice.html tag=page.series.tag topic=page.series.topic %}
-        {% endif %}
+        {% include post_series_notice.html %}
 
         {{ page.content | remove: page.excerpt }}
     </div> <!-- post-content -->
