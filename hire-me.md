@@ -16,7 +16,7 @@ project and what you are looking for.
 
 ### Services
 
-Depending on your company's needs, I'm available to build entire iOS apps from scratch, work on existing apps, and everything in-between. I value clear, direct, proactive communication and getting things done right. My depth of experience enables me to work effectively and efficiently, and I always aim to follow industry-standard best practices.
+Depending on your company's needs, I'm available to build entire iOS apps from scratch, work on existing apps, and everything in-between. I value clear, direct, proactive communication and getting things done right. My depth of experience enables me to work quickly and efficiently.
 
  - Build entire iOS apps from the ground up
  - Audit and evaluate an existing codebase to find improvements
@@ -24,11 +24,11 @@ Depending on your company's needs, I'm available to build entire iOS apps from s
  - Update existing apps with new features or bug fixes
  - Refactor existing code to make it more maintainable and testable
  - Explore new product ideas with quick prototypes
- - Assist with your team's code review, offering advice on architecture design and other improvements
+ - Assist with your team's code review, offering advice on architecture design and best practices
 
 ### Rates
 
-I typically work with open-ended, ongoing contracts at an hourly rate. However, I also offer flat rates for fixed-length projects or projects with a single, well-defined deliverable. My rates vary depending on the nature and scope of the project, your budget, and the size of your organization. For example, building an entire app is a much different project than updating an existing app, and a Fortune 500 company is not the same as a non-profit. Please [get in touch]({% link contact.md %}) to discuss your project. Let me know what you are looking for, and we can figure out what works best!
+I typically work with open-ended, ongoing contracts at an hourly rate. However, I also offer flat rates for projects with fixed-lengths and well-defined deliverables. My rates vary depending on the nature and scope of the project, your budget, and the size of your organization. For example, building an entire app is very different than updating an existing app, and a Fortune 500 company is not the same as a non-profit. Please [get in touch]({% link contact.md %}) to discuss your project. Let me know what you are looking for, and we can figure out what works best!
 
 ### Location
 
