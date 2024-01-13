@@ -4,17 +4,35 @@ title: Hire Me
 description: Need an iOS developer? Hire me!
 ---
 
-Need an iOS developer? Look no further! I am available for hire for freelance and contract work for iOS. If you don't know much about me, take a look around this site to learn more. You can find my [CV here]({% link linkedout.md %}).
+Need an iOS developer? Look no further! I am available for consulting, contracting, and freelance work for iOS. I have a decade of experience developing for Apple platforms. You can find my full [CV here]({% link linkedout.md %}).
 
 <div class="alert alert-primary pb-0 px-4 my-4" markdown="1">
-**<i class="bi bi-star-fill"></i> Interested in working with me? <a href="{% link contact.md %}" class="alert-link">Contact me here</a>.** I typically get booked quickly, so I recommend reaching out sooner rather than later. Please be as detailed as possible about your project and what you are looking for.
+**<i class="bi bi-star-fill"></i> Interested in working with me?** I typically get booked quickly,
+so I recommend reaching out sooner rather than later. Please be as detailed as possible about your
+project and what you are looking for.
+<br/><br/>
+<i class="bi bi-envelope-fill"></i> You can **<a href="{% link contact.md %}" class="alert-link">contact me here</a>.**
 </div>
 
-### How I work
+### Services
 
-I have [a decade of experience]({% link linkedout.md %}) developing for Apple platforms. Depending on your company's needs, I'm available to build entire iOS apps from scratch, explore new ideas with quick prototypes, work on new features or fixes for existing apps, and everything in-between. I value clear, direct, proactive communication and getting things done right. With my breadth and depth of experience, I can build solutions efficiently and effectively, always adhering to industry best practices.
+Depending on your company's needs, I'm available to build entire iOS apps from scratch, work on existing apps, and everything in-between. I value clear, direct, proactive communication and getting things done right. My depth of experience enables me to work effectively and efficiently, and I always aim to follow industry-standard best practices.
 
-I typically work with open-ended contracts at an hourly rate. However, I am open to working for a flat rate for fixed-length projects. Let me know what you are looking for and we can figure out what works best. Depending on the nature and scope of the project and your budget, rates are negotiable. I am based in Oakland, CA and most often working in the Pacific time zone, although I sometimes travel while working.
+ - Build entire iOS apps from the ground up
+ - Audit and evaluate an existing codebase to find improvements
+ - Implement tooling and CI/CD automation to make your team and workflow more efficient and deliver more value
+ - Update existing apps with new features or bug fixes
+ - Refactor existing code to make it more maintainable and testable
+ - Explore new product ideas with quick prototypes
+ - Assist with your team's code review, offering advice on architecture design and other improvements
+
+### Rates
+
+I typically work with open-ended, ongoing contracts at an hourly rate. However, I also offer flat rates for fixed-length projects or projects with a single, well-defined deliverable. My rates vary depending on the nature and scope of the project, your budget, and the size of your organization. For example, building an entire app is a much different project than updating an existing app, and a Fortune 500 company is not the same as a non-profit. Please [get in touch]({% link contact.md %}) to discuss your project. Let me know what you are looking for, and we can figure out what works best!
+
+### Location
+
+I work remotely. I'm based in Oakland, CA and most often working in the [Pacific Time Zone](https://en.wikipedia.org/wiki/Pacific_Time_Zone). Occasionally, I travel while working.
 
 ### Testimonials
 
