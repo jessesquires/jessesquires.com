@@ -47,8 +47,7 @@ You can currently upload screenshots for all device sizes, if you wish. There wa
 **Screenshot requirements for iPhone:**
 
 1. Either 6.7-inch or 6.5-inch (The current generation of devices). Scaled versions of these will be used for 6.1-inch and 5.8-inch.
-1. 5.5-inch (iPhone 6s/7/8 Plus).
-1. 4.7-inch (iPhone 6/7/8 and iPhone SE 2nd/3rd Gen).
+1. 5.5-inch (iPhone 6s/7/8 Plus). Scaled versions of these will be used for 4.7-inch, 4-inch, and 3.5-inch.
 
 However, if your app is targeting iOS 17 and later, **generating 5.5-inch screenshots is impossible!** There are [no 5.5-inch devices that can run iOS 17](https://support.apple.com/guide/iphone/models-compatible-with-ios-17-iphe3fa5df43/17.0/ios/17.0)! The iPhones 6s/7/8 Plus stopped at iOS 16. It doesn't make any sense to provide these screenshots if your app only runs on iOS 17 and later.
 
@@ -76,15 +75,15 @@ Here are the changes I would like to see:
 1. Remove all obsolete device sizes from App Store Connect.
 1. Do not require screenshots for devices that cannot run your app, based on its minimum deployment target.
 1. Do not require screenshots solely to distinguish between _home button_ and _home indicator_ devices.
-1. Only require screenshots for additional device sizes when there is a **significant difference** in size and aspect ratio, otherwise use scaled versions of the screenshots for other devices.
+1. (Maybe?) Only require screenshots for additional device sizes when there is a significant difference in size and aspect ratio, otherwise use scaled versions of the screenshots for other devices.
 
 With these changes, developers would only need to provide the following screenshots:
 
 1. iPhone 6.5-inch
-1. iPhone 4.7-inch
+1. iPhone 4.7-inch (optional)
 1. iPad 12.9-inch
 
-That's 3 sets of screenshots instead of 5. Honestly, I would prefer that iPhone 4.7-inch screenshots be optional so that you only need one size per device, but I can see a valid argument against that because they have different aspect ratios. But hopefully, iPhones with 4.7-inch screens will be obsoleted with iOS 18, which then reduces the requirements to only 1 set of screenshots for each device.
+That's 2 sets of screenshots instead of 4, with 1 optional set. I prefer that iPhone 4.7-inch screenshots be optional so that you only need one set per device, but I can see a valid argument against that because they have different aspect ratios. But hopefully, iPhones with 4.7-inch screens will be obsoleted with iOS 18, which then addresses this concern.
 
 ### App Store screenshot requirements for macOS
 
