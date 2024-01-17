@@ -46,7 +46,7 @@ You can currently upload screenshots for all device sizes, if you wish. There wa
 
 **Screenshot requirements for iPhone:**
 
-1. Either 6.7-inch or 6.5-inch (The current generation of devices). Scaled versions of these will be used for 6.1-inch and 5.8-inch.
+1. Either 6.7-inch or 6.5-inch (the current generation of devices). Scaled versions of these will be used for 6.1-inch and 5.8-inch.
 1. 5.5-inch (iPhone 6s/7/8 Plus). Scaled versions of these will be used for 4.7-inch, 4-inch, and 3.5-inch.
 
 However, if your app is targeting iOS 17 and later, **generating 5.5-inch screenshots is impossible!** There are [no 5.5-inch devices that can run iOS 17](https://support.apple.com/guide/iphone/models-compatible-with-ios-17-iphe3fa5df43/17.0/ios/17.0)! The iPhones 6s/7/8 Plus stopped at iOS 16. It doesn't make any sense to provide these screenshots if your app only runs on iOS 17 and later.
