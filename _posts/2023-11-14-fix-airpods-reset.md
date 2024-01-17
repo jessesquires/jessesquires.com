@@ -3,7 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [airpods]
 date: 2023-11-14T12:21:41-08:00
-title: How to fix malfunctioning AirPods by resetting them
+title: How to fix malfunctioning AirPods
 ---
 
 A few weeks ago my AirPods Pro 2 (with Lightning, not USB-C) suddenly started acting buggy and weird. The case no longer made the chime sound when plugging them in to charge. I stopped getting "Left Behind" notifications from the Find My app. After updating to iOS 17, I could not get them to install [the latest firmware](https://www.macrumors.com/2023/11/09/airpods-pro-2-firmware-6b32/), which enables the new features for Adaptive Audio, Conversation Awareness, and Personalized Volume. I had been trying for weeks to [follow the magic steps that will trigger a firmware update](https://www.macrumors.com/how-to/update-airpods/) with no luck. Even worse, after a full charge of both the AirPods and the case, the batteries for all of them would drain to zero percent within 2-3 days.
