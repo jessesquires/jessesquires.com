@@ -209,7 +209,7 @@ fastlane mac appstore_upload
 
 - Even though I run tests frequently during development, I have `fastlane` run all unit tests first as a sanity check --- just in case I forget to run them.
 
-- For building the app, I only need to provide the scheme because I'm using auotmatic codesigning and my `Gymfile` passes `-allowProvisioningUpdates`. I also provide unique names for the output binaries to differentiate between platforms.
+- For building the app, I only need to provide the scheme because I'm using automatic codesigning and my `Gymfile` passes `-allowProvisioningUpdates`. I also provide unique names for the output binaries to differentiate between platforms.
 
 ### Complete workflow
 
