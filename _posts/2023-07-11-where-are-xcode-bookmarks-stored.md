@@ -31,7 +31,7 @@ Furthermore, Xcode filters bookmarks in the UI based on the current `$USER`. Thi
 
 I think this is a reasonable design choice. However, I can imagine scenarios where it would be useful to share bookmarks with your team, similar to breakpoints. For example, if you are trying to debug a problem with your remote team member and you've tracked down the issue to a few specific files and lines, you could bookmark those locations, push your branch, and have the other person checkout that branch. That's a nicer, more precise experience than listing a bunch of filenames and line numbers in a Slack message that will eventually get lost. Another example would be for an interview exercise or a coding tutorial. You could prepare an Xcode project with bookmarks to guide someone through an exercise.
 
-For now, this is not possible in Xcode's UI, but you could easily write a script to move a pre-populated `bookmarks.plist` file to the correct location, based on the current `$USER`.
+For now, this is not possible in Xcode's UI, but you could easily write a script to move a pre-populated `bookmarks.plist` file to the correct location, based on the current `$USER`. That script, however will have to fix the `relative-path` in `bookmarks.plist` if the root directory of the project has a different name.
 
 {% include break.html %}
 
