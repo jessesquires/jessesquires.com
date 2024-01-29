@@ -57,6 +57,10 @@ post-update:
 date:
 	./scripts/current-date-time.swift
 
+.PHONY: random
+random:
+	./scripts/random-post.swift
+
 .PHONY: deploy-github
 deploy-github:
 	./scripts/deploy_github.zsh
