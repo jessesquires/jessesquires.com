@@ -31,7 +31,7 @@ let url = "https://www.jessesquires.com/blog/\(date)\(title)/"
 print("URL: \(url)\n")
 
 let tweet = """
-Random post from the archive:
+From the archive:
 
 \(postTitle)
 \(url)
