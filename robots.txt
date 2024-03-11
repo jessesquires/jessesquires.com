@@ -1,3 +1,7 @@
+User-agent: GPTBot
+Disallow: /
+
 User-agent: *
+Disallow:
 
 Sitemap: https://www.jessesquires.com/sitemap.xml
