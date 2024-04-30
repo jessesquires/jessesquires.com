@@ -3,7 +3,7 @@ layout: post
 categories: [essays]
 tags: [tech, politics, capitalism, apple]
 date: 2021-03-30T19:56:17-07:00
-date-updated: 2023-12-06T13:39:11-08:00
+date-updated: 2024-04-29T20:59:36-07:00
 title: Apple's cooperation with authoritarian governments
 ---
 
@@ -275,6 +275,14 @@ message="Most recent updates below."
 > [In a letter to the Department of Justice](https://www.documentcloud.org/documents/24191267-wyden_smartphone_push_notification_surveillance_letter_to_doj_-_signed), Senator Ron Wyden said foreign officials were demanding the data from Alphabet's Google and Apple. Although details were sparse, the letter lays out yet another path by which governments can track smartphones.
 
 See also: [MacRumors](https://www.macrumors.com/2023/12/06/apple-governments-surveil-push-notifications/), [Michael Tsai](https://mjtsai.com/blog/2023/12/06/governments-using-push-notifications-to-surveil-users/), [9to5Mac](https://9to5mac.com/2023/12/06/push-notification-spying/), [Washington Post](https://www.washingtonpost.com/technology/2023/12/06/push-notifications-surveillance-apple-google/), and [404 Media: _Here's a Warrant Showing the U.S. Government is Monitoring Push Notifications_](https://www.404media.co/us-government-warrant-monitoring-push-notifications-apple-google-yahoo/).
+
+##### April 2024 --- Apple removes popular messaging apps from App Store in China
+
+[MacRumors](https://www.macrumors.com/2024/04/19/apple-pulls-whatsapp-telegram-signal-threads-china/):
+
+> Apple on late Thursday into Friday removed the popular messaging and social media apps WhatsApp, Telegram, Signal, and Threads from its App Store in China at the request of the Chinese government [...]
+>
+> Apple has complied with similar App Store removal orders from the Chinese government in the past for apps related to VPNs, news, and more.
 
 ### Conclusion
 
