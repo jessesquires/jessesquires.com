@@ -21,5 +21,5 @@ You can [contact me here]({% link contact.md %}). You can read this website's [p
 </div>
 
 <small class="text-body-secondary" markdown="1">
-Outside of work, I enjoy reading, tea and coffee, plants, and body modification. When I'm not running trails or riding my bike, you can likely find me at punk, hardcore, and metal shows in the Bay Area. More generally, I hope to contribute to a society that values community and relationships over hierarchy and authority, self-determination over capitalist exploitation, and public ownership over private property. I [dream of a world](https://crimethinc.com/tce) in which prisons are obsolete, police are abolished, and corporations are replaced by worker-owned cooperatives.
+Outside of work, I enjoy reading, tea and coffee, traveling, and taking care of my plants. When I'm not running trails or riding my bike, you can likely find me at punk, hardcore, and metal shows in the Bay Area.
 </small>
