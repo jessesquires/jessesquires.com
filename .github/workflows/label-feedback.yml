@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       issues: write
-    if: ${{ contains(github.event.issue.body, 'Comments, Questions, Feedback:') }}
+    if: ${{ contains(github.event.issue.title, 'Feedback:') || contains(github.event.issue.body, 'Comments, Questions, Feedback:') }}
     steps:
       - run: gh issue edit "$NUMBER" --add-label "$LABELS"
         env:
