@@ -1,0 +1,23 @@
+# GitHub Actions Virtual Environments
+# https://github.com/actions/virtual-environments/
+
+name: Label Feedback Issues
+
+on:
+  issues:
+    types:
+      - opened
+
+jobs:
+  label-issues:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    if: ${{ contains(github.event.issue.body, 'Comments, Questions, Feedback:') }}
+    steps:
+      - run: gh issue edit "$NUMBER" --add-label "$LABELS"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.issue.number }}
+          LABELS: blog comments & questions
