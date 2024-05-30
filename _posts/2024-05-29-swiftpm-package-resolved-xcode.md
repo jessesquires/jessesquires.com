@@ -130,6 +130,8 @@ Note that this only calls `git restore` if the file is _deleted_, in case it has
 
  To make this even better, you can include running this target as part of your bootstrapping process if you are using CocoaPods, Xcodegen, etc. Include this target part of your primary setup flow, and you should rarely have to run it manually.
 
+If you do not use a `Makefile`, then you can write a simple bash script instead with the contents above.
+
 ### Danger: accidental deletions
 
 Unfortunately (again), what we discovered on one of my teams is that the above is not foolproof. Because Xcode can (and literally _does_) randomly delete `Package.resolved` at any time, someone on your team might not notice and commit the file deletion. Oops! If you use a tool like [Danger](https://danger.systems/ruby/) to automate code reviews (which, _you should_), then you can add a rule to catch this mistake.
