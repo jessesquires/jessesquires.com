@@ -3,6 +3,7 @@ layout: post
 categories: [essays]
 tags: [apple, macbook-pro, macbook, macos]
 date: 2023-12-16T10:48:15-08:00
+date-updated: 2024-05-29T18:20:52-07:00
 title: How to fix Mac menu bar icons hidden by the MacBook notch
 ---
 
@@ -74,6 +75,12 @@ There are several third-party applications to help organize and manage all of yo
 3. **Say No to Notch**. (Free with IAPs, [Mac App Store](https://apps.apple.com/us/app/say-no-to-notch/id1639306886)). This is another heavy-handed approach. This one adds a letterboxed-style black bar to the top of your screen and shifts the entire menu bar down below the notch --- along with the entire contents of your screen. I do not like the reduced screen real estate that this creates.
 
 All of these apps have pros and cons. Unfortunately, I was not quite satisfied with any of them. However, your experience and preferences might be very different!
+
+{% include updated_notice.html
+date="2024-05-29T18:20:52-07:00"
+message="
+Thanks to reader [Moritz Thiele](https://github.com/thielem) who [suggested some](https://github.com/jessesquires/jessesquires.com/issues/194) alternative third-party solutions. They use [zNotch](https://github.com/zkondor/znotch) in combination with [Raycast](https://www.raycast.com) shortcuts.
+" %}
 
 ### Conclusion
 
