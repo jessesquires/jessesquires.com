@@ -3,6 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [xcode, ios, macos, bugs, swiftpm, swift, git]
 date: 2024-05-29T19:06:41-07:00
+date-updated: 2024-05-30T09:49:22-07:00
 title: "Workaround: Xcode deletes Package.resolved file and produces 'missing package product' errors"
 ---
 
@@ -59,9 +60,9 @@ If you are working with an Xcode workspace, the file is located at:
 MyApp.xcworkspace/xcshareddata/swiftpm/Package.resolved
 ```
 
-**Side note:** Technically, with SwiftPM's Xcode integration, you actually _do not_ have to check-in `Package.resolved` because the project file, `project.pbxproj` --- everyone's favorite file --- also maintains it's own representation of Swift package dependencies. The project file is located at `MyApp.xcodeproj/project.pbxproj`. If you search the `project.pbxproj` file for `XCRemoteSwiftPackageReference` and `XCSwiftPackageProductDependency`, you will find all the Swift package references for your project.
+When working with only Swift packages, your `Package.swift` file defines all of your package dependencies. This plays a similar role to the `Podfile` in CocoaPods. With SwiftPM's Xcode integration, the project file `project.pbxproj` --- everyone's favorite file --- maintains the list of Swift package dependencies and their pinned versions. Again, this fulfills the same role as the `Podfile`.
 
-For the example `Package.resolved` file above, here is the `project.pbxproj` representation:
+The project file is located at `MyApp.xcodeproj/project.pbxproj`. If you search the `project.pbxproj` file for `XCRemoteSwiftPackageReference` and `XCSwiftPackageProductDependency`, you will find all the Swift package references for your project. For the example `Package.resolved` file above, here is the `project.pbxproj` representation:
 
 ```xml
 /* Begin XCRemoteSwiftPackageReference section */
@@ -76,9 +77,7 @@ For the example `Package.resolved` file above, here is the `project.pbxproj` rep
 /* End XCRemoteSwiftPackageReference section */
 ```
 
-Anyway... I will not attempt to understand `project.pbxproj` or why it even continues to exists at all.
-
-Despite the above, I _still_ think everyone should be checking-in `Package.resolved` to source control. For small teams or individuals that already include their entire `.xcodeproj` or `.xcworkspace` bundles in git, there is nothing else you need to do. However, most teams explicitly ignore `.xcodeproj` and `.xcworkspace` --- ironically, because of `project.pbxproj`, which is a nightmare to resolve when you have conflicts in git. These teams typically use [Xcodegen](https://github.com/yonaskolb/XcodeGen) or a similar tool to generate their project files, thus entirely avoiding merge conflicts on `project.pbxproj`. In this scenario, including the `Package.resolved` file but ignoring everything else requires a bit of work. Here are the git ignore rules needed:
+For small teams or individuals that already include their entire `.xcodeproj` or `.xcworkspace` bundles in git, there is nothing else you need to do. However, most teams explicitly ignore `.xcodeproj` and `.xcworkspace` --- ironically, because of `project.pbxproj`, which is a nightmare to resolve when you have conflicts in git. These teams typically use [Xcodegen](https://github.com/yonaskolb/XcodeGen) or a similar tool to generate their project files, thus entirely avoiding merge conflicts on `project.pbxproj`. In this scenario, including the `Package.resolved` file but ignoring everything else requires a bit of work. Here are the git ignore rules needed:
 
 ```bash
 # .gitignore file
@@ -90,6 +89,14 @@ MyApp.xcworkspace/xcshareddata/*
 MyApp.xcworkspace/xcshareddata/swiftpm/*
 !MyApp.xcworkspace/xcshareddata/swiftpm/Package.resolved
 ```
+
+Note that with tools like Xcodegen, you [define your packages](https://github.com/yonaskolb/XcodeGen/blob/master/Docs/ProjectSpec.md#swift-package) in your `project.yml` file, which essentially is a replacement for `project.pbxproj`.
+
+{% include updated_notice.html
+date="2024-05-30T09:49:22-07:00"
+message="
+Thanks to [Kyle Bashour for pointing out](https://mastodon.social/@kylebshr/112528585781867745#.) a couple of details I got wrong about `project.pbxproj`. This section has been corrected.
+" %}
 
 ### Handling `Package.resolved` deletions
 
@@ -141,4 +148,4 @@ This will fail a pull request if `Package.resolved` was deleted.
 
 To recap: make sure `Package.resolved` is saved in git, use a `Makefile` to quickly and easily restore it, and add a Danger rule to catch mistakes, if needed. This should eliminate all `'Missing package product'` errors. As a last resort, if you are still having trouble, you can run `File > Packages > Resolve Package Versions`. If you search for solutions on StackOverflow or elsewhere, you will find some really elaborate bash scripts that use [fswatch](https://formulae.brew.sh/formula/fswatch) to monitor the file system to workaround this problem. I think this is a bit overkill and prefer the simpler solutions I've offered here.
 
-I would say it's shocking that this bug still hasn't been fixed after 4 years, but this kind of thing is not all that surprising for Apple. It is rather routine that many bugs remain unfixed and tools remain broken for years.
+This is all a bit ridiculous, and I would say it's shocking that this bug still hasn't been fixed after 4 years, but this kind of thing is not all that surprising for Apple. It is rather routine that many bugs remain unfixed and tools remain broken for years.
