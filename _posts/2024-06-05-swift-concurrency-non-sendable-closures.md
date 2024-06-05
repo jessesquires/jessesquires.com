@@ -89,7 +89,7 @@ self.dataSource.applyDiff(snapshot: snapshot) {
 
 Callers could wrap the offending lines in `Task { @MainActor in }` or `MainActor.assumeIsolated { }` to silence these issues. But, that's a burden for callers. Not to mention, the wrapper API does not accurately communicate what is happening here. We do not want a `@Sendable () -> Void` closure. We want a `@MainActor () -> Void` closure.
 
-So, we have situation where the Swift compiler is telling us that the closure being captured needs to be `@Sendable` but we cannot make it `@Sendable`. It is also telling us that the closure loses it's `@MainActor` but we know that the closure will always be called from the main queue. Because of these two problems, we need to find a way to work around the warnings and coerce the compiler into doing what we want.
+So, we have situation where the Swift compiler is telling us that the closure being captured needs to be `@Sendable` but we cannot make it `@Sendable`. It is also telling us that the closure loses its `@MainActor` but we know that the closure will always be called from the main queue. Because of these two problems, we need to find a way to work around the warnings and coerce the compiler into doing what we want.
 
 ### Solution (It's a hack)
 
