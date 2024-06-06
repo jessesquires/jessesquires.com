@@ -3,6 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [swift, concurrency]
 date: 2024-06-05T10:30:35-07:00
+date-updated: 2024-06-05T18:24:16-07:00
 title: "Swift concurrency hack for passing non-sendable closures"
 subtitle: Uncheck yourself before you wreck yourself
 ---
@@ -153,3 +154,32 @@ self.dataSource.applyDiff(snapshot: snapshot) {
 ### Is this good?
 
 Is this a good idea? I am actually not sure! But, it seems like the best thing to do in this scenario. If you are facing a similar situation --- namely, **you know** a captured closure is always called on the main thread and you cannot make it `@Sendable` --- this might be a good solution for you too! However, this is probably _a bad idea_ to attempt to generalize. Use wisely!
+
+{% include updated_notice.html
+date="2024-06-05T18:24:16-07:00"
+message="
+As anticipated, [Matt Massicotte](https://mastodon.social/@mattiem) has come to the rescue, [offering a simpler solution here](https://mastodon.social/@mattiem/112565464652182320). While my clever hack works, we can instead make the closure both `@Sendable` **and** `@MainActor`. After that, we can simply wrap calling the completion closure in `MainActor.assumeIsolated { }`. Here are the changes needed:
+
+```swift
+// The addition of @Sendable is bizarre, but Swift 5.10 needs it.
+// Swift 6 (via SE-0434) will make it unnecessary.
+typealias SnapshotCompletion = @Sendable @MainActor () -> Void
+
+func applyDiff(snapshot: Snapshot, animated: Bool = true, completion: SnapshotCompletion? = nil) {
+    self.diffingQueue.async {
+        // UIKit guarantees `completion` is called on the main queue.
+        self.apply(snapshot, animatingDifferences: animated, completion: {
+            // when you know its on the main actor, perhaps from documentation, but it isn't
+            // encoded in the API, you can use dynamic isolation to make it work
+            MainActor.assumeIsolated {
+                completion?()
+            }
+        })
+    }
+}
+```
+
+This is great. It is much less code. I'm not sure why I didn't _try_ using `@Sendable @MainActor` for the closure. It's probably because I assumed that `@MainActor` _implied_ `@Sendable` --- which apparently _it should_ and _it will_ after [SE-0434](https://github.com/apple/swift-evolution/blob/main/proposals/0434-global-actor-isolated-types-usability.md) in Swift 6.
+
+Anyway, the general idea of this hack might still be useful in other contexts or scenarios --- especially if you cannot adopt Swift 6 and need to stay on Swift 5.10.
+" %}
