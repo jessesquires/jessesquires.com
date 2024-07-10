@@ -3,7 +3,7 @@ layout: post
 categories: [essays]
 tags: [tech, politics, capitalism, apple]
 date: 2021-03-30T19:56:17-07:00
-date-updated: 2024-04-29T20:59:36-07:00
+date-updated: 2024-07-10T12:30:04-07:00
 title: Apple's cooperation with authoritarian governments
 ---
 
@@ -181,7 +181,7 @@ See also: reporting by [Ars Technica](https://arstechnica.com/gadgets/2021/03/ap
 
 {% include updated_notice.html
 message="
-The entries below were added after this piece was first published. I will continue to keep this post up-to-date as new events occur. The date of this notice reflects the last time an update was published.
+The entries below were added after this piece was first published. I will continue to keep this post up-to-date as new events occur. The date of this notice reflects the last time an update was published. Updates are in chronological order. Scroll to the bottom for the most recent update.
 "
 %}
 
@@ -261,11 +261,6 @@ It is certainly not a good look when you force your suppliers to print CCP state
 >
 > When Safari users in Hong Kong recently tried to load the popular code-sharing website GitLab, they received a strange warning instead: Apple's browser was blocking the site for their own safety. The access was temporarily cut off thanks to Apple's use of a Chinese corporate website blacklist, which resulted in the innocuous site being flagged as a purveyor of misinformation. Neither Tencent, the massive Chinese firm behind the web filter, nor Apple will say how or why the site was censored.
 
-{% include updated_notice.html
-date="2023-12-06T13:39:11-08:00"
-message="Most recent updates below."
-%}
-
 ##### December 2023 --- Governments spying on Apple, Google users through push notifications
 
 [Raphael Satter, reporting for Reuters](https://www.reuters.com/technology/cybersecurity/governments-spying-apple-google-users-through-push-notifications-us-senator-2023-12-06/):
@@ -283,6 +278,22 @@ See also: [MacRumors](https://www.macrumors.com/2023/12/06/apple-governments-sur
 > Apple on late Thursday into Friday removed the popular messaging and social media apps WhatsApp, Telegram, Signal, and Threads from its App Store in China at the request of the Chinese government [...]
 >
 > Apple has complied with similar App Store removal orders from the Chinese government in the past for apps related to VPNs, news, and more.
+
+##### July 2024 --- Apple removes VPN apps from the App Store in Russia
+
+[William Gallagher, reporting for Apple Insider](https://appleinsider.com/articles/24/07/05/russia-forces-apple-to-remove-vpn-apps-from-the-app-store):
+
+> Apple has caved to pressure from Russian authorities and removed a number of the best iPhone VPN apps from the App Store in the country.
+>
+> Apple's App Store team has been notifying VPN developers that their apps are being removed "per demand from Roskomnadzor." This the state media watchdog that previously forced both Apple and Google to remove a political app backed by the leader of the country's opposition.
+>
+> [...]
+>
+> Reportedly, VPN usage increased dramatically in Russia following the start of the war with Ukraine. At that point, Russian authorities blocked access to a number of Western social media sites.
+
+See also: [Michael Tsai](https://mjtsai.com/blog/2024/07/05/apple-removes-vpn-apps-from-russian-app-store/)
+
+{% include break.html %}
 
 ### Conclusion
 
