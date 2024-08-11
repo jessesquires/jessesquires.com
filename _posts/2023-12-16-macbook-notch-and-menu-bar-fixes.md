@@ -49,9 +49,8 @@ defaults -currentHost read -globalDomain NSStatusItemSelectionPadding
 ```bash
 defaults -currentHost write -globalDomain NSStatusItemSpacing -int 12
 defaults -currentHost write -globalDomain NSStatusItemSelectionPadding -int 8
+killall SystemUIServer
 ```
-
-**Note:** Unfortunately, you will need to logout and login for the changes to take effect.
 
 After some experimentation, I landed on the values above --- `12` for spacing and `8` for padding fit my needs. You should experiment as well. The smallest tolerable values are probably around `6` or `8`.
 
@@ -60,9 +59,8 @@ After some experimentation, I landed on the values above --- `12` for spacing an
 ```bash
 defaults -currentHost delete -globalDomain NSStatusItemSpacing
 defaults -currentHost delete -globalDomain NSStatusItemSelectionPadding
+killall SystemUIServer
 ```
-
-Again, you will need to logout and login for the changes to take effect.
 
 ### Third-party solutions
 
