@@ -37,13 +37,13 @@ This allows you to provide an entirely custom `View` for the `NavigationLink`. I
 
 ```swift
 struct BetterNavigationLink<Label: View, Destination: View>: View {
-    let label: () -> Label
-    let destination: () -> Destination
+    let label: Label
+    let destination: Destination
 
-    init(@ViewBuilder label: @escaping () -> Label,
-         @ViewBuilder destination: @escaping () -> Destination) {
-        self.label = label
-        self.destination = destination
+    init(@ViewBuilder label: () -> Label,
+         @ViewBuilder destination: () -> Destination) {
+        self.label = label()
+        self.destination = destination()
     }
 
     var body: some View {
@@ -51,13 +51,13 @@ struct BetterNavigationLink<Label: View, Destination: View>: View {
         // Hides default chevron accessory view for NavigationLink
         ZStack {
             NavigationLink {
-                self.destination()
+                self.destination
             } label: {
                 EmptyView()
             }
             .opacity(0)
 
-            self.label()
+            self.label
         }
     }
 }
