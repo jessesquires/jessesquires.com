@@ -4,7 +4,7 @@ title: Curriculum Vitae
 description: My full resume and work history
 ---
 
-<p class="text-muted"><i>Last updated: July 2023</i></p>
+<p class="text-muted"><i>Last updated: September 2024</i></p>
 
 After working for a number of years as a full-time employee at various companies, I went independent at the end of 2019. I'm currently focusing on my own apps and open source projects while doing freelance and contract work for various clients.
 

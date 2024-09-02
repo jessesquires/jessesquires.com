@@ -31,6 +31,11 @@ entries:
       - "Worked on implementing downloading content for offline lessons."
       - "Worked on major app-wide refactoring with the goal of making code more testable. This involved identifying and improving inadequate design patterns, removing implicit globals, and implementing dependency injection."
       - "Improved infrastructure to facilitate writing tests. Created various test helpers/mocks/utilities and organized them into reusable frameworks for feature teams to utilitize in their tests."
+      - "Diagnosed and resolved thermal state performance bugs. The underlying issues pertained to excessive disk access and bugs in caching."
+      - "Diagnosed and resolved thread explosion issues. Resolved by implementing Grand Central Dispatch (GCD) modern best practices."
+      - "Integrated my open source library, [ReactiveCollectionsKit](https://github.com/jessesquires/ReactiveCollectionsKit), to standardize how lists and collections are built across the entire app."
+      - "Discovered and resolved significant performance bugs pertaining to frequent disk access on the main thread. Wrote a new component for managing files on disk for all other teams to use to prevent future issues from reocurring."
+      - "Worked on and developed strategies for incrementally migrating to Swift Structured Concurrency."
       - "TBA / in-progress"
 
   - title: Independent Contractor (iOS)
