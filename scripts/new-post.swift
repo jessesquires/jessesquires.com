@@ -69,9 +69,6 @@ image:
     caption: null
     source_link: null
     half_width: false
-series:
-    tag: null
-    topic: null
 ---
 
 > TODO: excerpt
