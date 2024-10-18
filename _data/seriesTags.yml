@@ -6,3 +6,6 @@ series-perfect-status-bars:
 
 series-apples-to-apples:
     topic: Swift performance compared to Objective-C
+
+series-reactive-collections-kit:
+    topic: ReactiveCollectionsKit
