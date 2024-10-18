@@ -23,9 +23,9 @@ ReactiveCollectionsKit has no third-party dependencies and is written in Swift.
 
 Of course, the obvious question is: _isn't SwiftUI the future?_ It probably _will be_ --- eventually. But the difficult truth is that [it simply isn't right now](https://github.com/jessesquires/TIL/blob/main/apple_platform/swiftui.md#known-issues--workarounds). Why build another UIKit-based library? SwiftUI performance is still a significant issue, not to mention all the bugs, missing APIs, and lack of back-porting new APIs to older OS versions. SwiftUI works best when you only use the latest SDKs and target the latest operating systems. Yet, most of us must support older versions of iOS. Even then, for any sufficiently advanced app SwiftUI alone will not suffice.
 
-SwiftUI still does not provide a proper `UICollectionView` replacement. Yes, `Grid` exists but it is nowhere close to a replacement for `UICollectionView` and the power of `UICollectionViewLayout`. While SwiftUI's `List` is pretty good much of the time, performance can still suffer. Also, both `LazyVStack` and `LazyHStack` suffer from severe performance issues when you have large amounts of data.
+SwiftUI still does not provide a proper `UICollectionView` replacement. Yes, [`Grid`](https://developer.apple.com/documentation/swiftui/grid) exists but it is nowhere close to a replacement for `UICollectionView` and the power of `UICollectionViewLayout`. While SwiftUI's [`List`](https://developer.apple.com/documentation/swiftui/list) is pretty good much of the time, performance can still suffer. Also, both [`LazyVStack`](https://developer.apple.com/documentation/swiftui/LazyVStack) and [`LazyHStack`](https://developer.apple.com/documentation/swiftui/LazyHStack) suffer from severe performance issues when you have large amounts of data.
 
-Luckily, SwiftUI provides solid APIs for interoperability with UIKit so you can easily use ReactiveCollectionsKit in a SwiftUI-based view or app.
+Luckily, SwiftUI provides solid APIs for [integration with UIKit](https://developer.apple.com/documentation/swiftui/uikit-integration) so you can easily use ReactiveCollectionsKit in a SwiftUI-based view or app.
 
 ### ReactiveCollectionsKit overview
 
