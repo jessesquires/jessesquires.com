@@ -15,7 +15,7 @@ Last week I [wrote about setting up a new MacBook Pro]({% post_url 2023-12-04-ne
 
 [I previously wrote]({% post_url 2023-12-04-new-m3-mbp %}):
 
-> I have gripes about the notch. There isn't enough room to display all of my menu bar apps and icons, so... they just get hidden!? Apparently, everyone in Cupertino thinks the best solution to this problem is to hide them with zero indication that there are more that simply can’t be displayed because of the notch. I wasted so much time trying to figure out why Little Snitch and 1Password were not running on my new machine. Was there a compatibility issue with Apple Silicon that I didn't know about? That couldn't be. In turns out, they were running the whole time but they were hidden by the notch.
+> I have gripes about the notch. There isn't enough room to display all of my menu bar apps and icons, so... they just get hidden!? Apparently, everyone in Cupertino thinks the best solution to this problem is to hide them with zero indication that there are more that simply can’t be displayed because of the notch. I wasted so much time trying to figure out why Little Snitch and 1Password were not running on my new machine. Was there a compatibility issue with Apple Silicon that I didn't know about? That couldn't be. It turns out, they were running the whole time but they were hidden by the notch.
 >
 > [...]
 >
