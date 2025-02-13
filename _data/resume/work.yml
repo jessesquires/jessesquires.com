@@ -21,9 +21,11 @@ entries:
     img:
       name: work-duolingo.png
       title: Duolingo
-    description: "Returned to Duolingo as an independent contractor after some time away. (See below.)
-      I worked on the 'User Delight' team (again) as well as the 'Client Architecture' team,
-      working on the main iOS app. I reported to Peter Chapman."
+    description: >
+      Returned to Duolingo as an independent contractor after some time away. (See below.)
+      I worked on the main iOS app under the 'User Delight' team (again)
+      as well as the 'Client Architecture' and 'Engineering Studio' teams.
+      I reported to Peter Chapman.
     bullets:
       - "Implemented a custom main thread watchdog for tracking and logging excessive work on the main thread."
       - "Identified and resolved various performance-related issues. Superfluous disk access, excessive networking, etc."
@@ -36,7 +38,6 @@ entries:
       - "Integrated my open source library, [ReactiveCollectionsKit](https://github.com/jessesquires/ReactiveCollectionsKit), to standardize how lists and collections are built across the entire app."
       - "Discovered and resolved significant performance bugs pertaining to frequent disk access on the main thread. Wrote a new component for managing files on disk for all other teams to use to prevent future issues from reocurring."
       - "Worked on and developed strategies for incrementally migrating to Swift Structured Concurrency."
-      - "TBA / in-progress"
 
   - title: Independent Contractor (iOS)
     organization: Causal Labs
@@ -47,7 +48,11 @@ entries:
     img:
       name: work-causal.png
       title: Causal Labs
-    description: "Hired as an independent contractor to build the iOS SDK for Causal. This work was subcontracted through [Fullsend Solutions](https://www.fullsend.io). I was responsible for writing the entire [Causal iOS Client SDK](https://github.com/causalLabs/ios-client-sdk). Causal is a session tracking, feature management, and A/B testing tool."
+    description: >
+      Hired as an independent contractor to build the iOS SDK for Causal. This work was subcontracted
+      through [Fullsend Solutions](https://www.fullsend.io). I was responsible for writing the entire
+      [Causal iOS Client SDK](https://github.com/causalLabs/ios-client-sdk).
+      Causal is a session tracking, feature management, and A/B testing tool.
     bullets:
       - "Built the entire initial SDK for iOS. This included defining the entire public API for iOS and writing [Mustache](https://github.com/mustache) templates for Causal's Swift code generation."
       - "Drafted a development plan and coordinated closely with Causal and Fullsend on development,
@@ -68,11 +73,12 @@ entries:
     img:
       name: work-hopscotch.png
       title: Hopscotch
-    description: "Hired as an independent contractor to work on the Hopscotch iOS app.
+    description: >
+      Hired as an independent contractor to work on the Hopscotch iOS app.
       While I did work on a few user-facing features,
       a large portion of my time was spent on infrastructure work --- paying off some technical debt,
       automating the release process and other tedious development tasks, improving code quality
-      and organization, and improving developer productivity."
+      and organization, and improving developer productivity.
     bullets:
       - "Implemented the \"Open Project\" language feature, which allows users to link to other projects."
       - "Implemented local variables language feature. Previously, the language only supported globals."
@@ -97,8 +103,9 @@ entries:
     img:
       name: work-duolingo.png
       title: Duolingo
-    description: "Hired as an independent contractor for the 'User Delight' team, working on the main iOS app.
-      I reported to Peter Chapman."
+    description: >
+      Hired as an independent contractor for the 'User Delight' team, working on the main iOS app.
+      I reported to Peter Chapman.
     bullets:
       - "Built a custom, internal, in-app 'shake-to-report' bug reporting tool that communicated with the
         [Jira API](https://developer.atlassian.com/server/jira/platform/rest-apis/) to create tickets,
@@ -130,9 +137,10 @@ entries:
     img:
       name: work-rxsaver.png
       title: RxSaver
-    description: "Hired as an independent contractor multiple times over a span of a couple years.
+    description: >
+      Hired as an independent contractor multiple times over a span of a couple years.
       I reported to Rustin Reese.
-      *Note: RxSaver was [acquired](https://www.fiercehealthcare.com/tech/goodrx-reports-mixed-q1-results-as-executives-shrug-off-amazon-pharmacy-competition) by [GoodRx](https://www.goodrx.com) in [May 2021](https://www.bloomberg.com/news/articles/2021-05-13/goodrx-said-to-buy-perelman-s-rxsaver-business-for-50-million).*"
+      *Note: RxSaver was [acquired](https://www.fiercehealthcare.com/tech/goodrx-reports-mixed-q1-results-as-executives-shrug-off-amazon-pharmacy-competition) by [GoodRx](https://www.goodrx.com) in [May 2021](https://www.bloomberg.com/news/articles/2021-05-13/goodrx-said-to-buy-perelman-s-rxsaver-business-for-50-million).*
     bullets:
       - "Helped rewrite legacy Objective-C app in Swift."
       - "Focused on implementing iOS best practices and general code quality improvements."
@@ -152,8 +160,9 @@ entries:
     img:
       name: work-plangrid.png
       title: PlanGrid
-    description: "*Note: PlanGrid was acquired by [Autodesk](https://www.autodesk.com)
-      in [November 2018](https://adsknews.autodesk.com/pressrelease/autodesk-to-acquire-plangrid).*"
+    description: >
+      *Note: PlanGrid was acquired by [Autodesk](https://www.autodesk.com)
+      in [November 2018](https://adsknews.autodesk.com/pressrelease/autodesk-to-acquire-plangrid).*
     bullets:
       - "Shipped a number of features: polygon annotation tools, multiple assignees and
         followers for Tasks, user groups, Tasks 'rewrite' to include planned work and
@@ -224,10 +233,11 @@ entries:
     img:
       name: work-hemoglobe.jpg
       title: Hemoglobe
-    description: "A collaboration with designer [Michael Schultz](https://michaelschultz.com)
+    description: >
+      A collaboration with designer [Michael Schultz](https://michaelschultz.com)
       and funded by Affinity Biotech. Hemoglobe was an iOS app for staying in touch
       and meeting new people with bleeding disorders. It was shutdown in early 2016
-      and is no longer available."
+      and is no longer available.
     bullets:
       - "Built the entire app and collaborated with Michael on implementing his designs."
       - "Used [Parse](https://parseplatform.org) BaaS for backend."
