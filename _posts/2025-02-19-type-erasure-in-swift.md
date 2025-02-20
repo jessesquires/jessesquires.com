@@ -60,7 +60,12 @@ struct AnyHashable: Hashable {
     }
 
     static func == (left: Self, right: Self) -> Bool {
-        _isEqual(lhs: left, rhs: right)
+        guard let leftBase = left.base as? (any Equatable),
+              let rightBase = right.base as? (any Equatable) else {
+            return false
+        }
+
+        return _isEqual(lhs: leftBase, rhs: rightBase)
     }
 
     private static func _isEqual<T: Equatable, U: Equatable>(lhs: T, rhs: U) -> Bool {
