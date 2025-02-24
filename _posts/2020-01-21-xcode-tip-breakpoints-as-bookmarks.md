@@ -4,7 +4,7 @@ categories: [software-dev]
 tags: [xcode, debugging, ios, macos, xcode-tips]
 date: 2020-01-21T17:09:36-08:00
 date-updated: 2023-07-11T12:06:52-07:00
-title: "Xcode tip: Using breakpoints as bookmarks"
+title: "Xcode Tip: Using breakpoints as bookmarks"
 ---
 
 Xcode has a great UI for setting and editing breakpoints. I use breakpoints all the time while working and debugging, but I want to share another, unconventional way that I use them.

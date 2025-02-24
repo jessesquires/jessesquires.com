@@ -3,7 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [xcode, debugging, ios, macos, xcode-tips]
 date: 2023-02-21T09:46:37-08:00
-title: "Xcode tip: sharing breakpoints across projects"
+title: "Xcode Tip: sharing breakpoints across projects"
 image:
     file: xcode-shared-breakpoints.jpg
     alt: User Breakpoints in Xcode

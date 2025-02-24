@@ -3,7 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [xcode, xcode-tips]
 date: 2018-06-12T10:00:00-07:00
-title: "Xcode tip: Improving the assistant editor"
+title: "Xcode Tip: Improving the assistant editor"
 image:
     file: xcode-assistant-editor.png
     alt: Xcode navigation settings
