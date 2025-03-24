@@ -3,7 +3,7 @@ layout: post
 categories: [software-dev]
 tags: [xcode, macos, mac-app-store, automation, screenshots, ui-testing]
 date: 2025-03-24T11:21:37-04:00
-title: How to automate perfect screenshots for the Mac App Store (and beyond)
+title: How to automate perfect screenshots for the Mac App Store
 image:
     file: mac-screenshot-retrobatch.jpg
     alt: Retrobatch workflow
