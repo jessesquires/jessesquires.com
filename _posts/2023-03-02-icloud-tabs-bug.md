@@ -25,3 +25,5 @@ I finally decided to try to fix it. Most online forums suggest signing out of iC
 1. Launch Safari on all iOS devices.
 
 After doing this, the issue should be fixed!
+
+I wonder whether this can happen repeatedly and if so, how often. Denis
