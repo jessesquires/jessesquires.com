@@ -62,7 +62,7 @@ This solves the problem of automating generating the raw screenshots. Unfortunat
     half_width=false
 %}
 
-The fist image is what screenshotting via Xcode produces --- ugly corners that will display whatever is in the background when your app runs via the UI test suite. The second image is the result after manually processing the image to remove the artifacts. The final image is the output of taking a standard screenshot on macOS. As you can see, my processing is _not quite exact_, but it is close enough.
+The first image is what screenshotting via Xcode produces --- ugly corners that will display whatever is in the background when your app runs via the UI test suite. The second image is the result after manually processing the image to remove the artifacts. The final image is the output of taking a standard screenshot on macOS. As you can see, my processing is _not quite exact_, but it is close enough.
 
 ### Post-processing Xcode screenshots
 
