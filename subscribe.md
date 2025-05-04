@@ -20,7 +20,8 @@ description: Subscribe to my blog!
 
 <h4 class="mt-4 mb-0">Social Media</h4>
 
-<p class="mb-0">You can follow me on Twitter and Mastodon. Newly published and updated blog posts are automatically tweeted and posted.</p>
+<p class="mb-0">You can follow me on Mastodon, Bluesky, and Twitter. Newly published and updated blog posts are automatically posted.</p>
 
-- [@jesse_squires]({{ site.data.social.twitter }})
 - [@jsq@mastodon.social]({{ site.data.social.mastodon }})
+- [@jessesquires.com]({{ site.data.social.bluesky }})
+- [@jesse_squires]({{ site.data.social.twitter }})

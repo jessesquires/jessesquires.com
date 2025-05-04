@@ -6,6 +6,10 @@
   url: https://mastodon.social/@jsq
   icon: bi-mastodon
 
+- title: Bluesky
+  url: https://bsky.app/profile/jessesquires.com
+  icon: bi-bluesky
+
 - title: Twitter
   url: https://twitter.com/jesse_squires
   icon: bi-twitter
