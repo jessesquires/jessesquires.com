@@ -11,16 +11,16 @@ install:
 	bundle install
 	npm install
 
-.PHONY: update-all
-update-all: update-bundle update-deps
+.PHONY: update
+update: update-bundle update-npm
 
 .PHONY: update-bundle
 update-bundle:
 	bundle update --all
 	bundle update --bundler
 
-.PHONY: update-deps
-update-deps:
+.PHONY: update-npm
+update-npm:
 	npm update
 
 .PHONY: watch
