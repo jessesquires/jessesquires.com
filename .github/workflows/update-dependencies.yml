@@ -30,7 +30,9 @@ jobs:
           bundler-cache: true
 
       - name: update bundle
-        run: make update-bundle
+        run: |
+          bundle config set frozen false
+          make update-bundle
 
       # https://github.com/peter-evans/create-pull-request
       - name: create pull request
