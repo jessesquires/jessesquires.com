@@ -1,0 +1,74 @@
+# GitHub Actions Virtual Environments
+# https://github.com/actions/virtual-environments/
+
+name: Update Dependencies
+
+on:
+  workflow_dispatch:
+  schedule:
+    # First day of each month at midnight
+    # https://crontab.guru/#0_0_1_*_*
+    - cron: "0 0 1 * *"
+
+jobs:
+  update-bundle:
+    name: Update bundle
+    runs-on: ubuntu-latest
+    steps:
+      - name: ruby versions
+        run: |
+          ruby --version
+          gem --version
+
+      - name: git checkout
+        uses: actions/checkout@v4
+
+      # https://github.com/ruby/setup-ruby
+      - name: ruby setup
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: update bundle
+        run: make update-bundle
+
+      # https://github.com/peter-evans/create-pull-request
+      - name: create pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: "[automated] update bundle dependencies"
+          title: "[automated] update bundle dependencies"
+          body: "bundle update automated via gitHub actions"
+          branch: automated/update-bundle
+          delete-branch: true
+          reviewers: jessesquires
+
+  update-npm:
+    name: Update npm
+    runs-on: ubuntu-latest
+    steps:
+      - name: npm version
+        run: npm --version
+
+      - name: git checkout
+        uses: actions/checkout@v4
+
+      # https://github.com/actions/setup-node
+      - name: npm setup
+        uses: actions/setup-node@v4
+        with:
+          check-latest: true
+
+      - name: update npm
+        run: make update-npm
+
+      # https://github.com/peter-evans/create-pull-request
+      - name: create pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: "[automated] update npm dependencies"
+          title: "[automated] update npm dependencies"
+          body: "npm update automated via gitHub actions"
+          branch: automated/update-npm
+          delete-branch: true
+          reviewers: jessesquires
