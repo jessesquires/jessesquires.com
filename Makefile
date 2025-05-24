@@ -61,12 +61,6 @@ date:
 random:
 	./scripts/random-post.swift
 
-.PHONY: github
-github:
-	git pull github master
-	make install
-	make build
-
 .PHONY: deploy-github
 deploy-github:
 	./scripts/deploy_github.zsh
