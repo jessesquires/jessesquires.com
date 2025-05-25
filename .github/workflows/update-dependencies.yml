@@ -33,7 +33,6 @@ jobs:
         run: |
           bundle config set frozen false
           make update-bundle
-          touch testing.txt
 
       # https://github.com/peter-evans/create-pull-request
       - name: create pull request
