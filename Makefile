@@ -52,6 +52,14 @@ tags:
 deploy-github:
 	./scripts/deploy_github.zsh
 
+.PHONY: social-main-feed
+social-main-feed:
+	swift run --package-path ~/Developer/mariposa/ mariposa -c ~/.mariposa_config_jsq.yml -f _site/feed.json
+
+.PHONY: social-updates-feed
+social-updates-feed:
+	swift run --package-path ~/Developer/mariposa/ mariposa -c ~/.mariposa_config_jsq.yml -f _site/feeds/updates.json
+
 # ====== Write ====== #
 .PHONY: new
 new:
