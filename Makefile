@@ -78,10 +78,6 @@ date:
 open:
 	nova .
 
-.PHONY: random
-random:
-	./scripts/random-post.swift
-
 .PHONY: image-optim
 image-optim:
 	./scripts/imageoptim.zsh $(files)
