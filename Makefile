@@ -2,10 +2,26 @@ export JEKYLL_ENV=development
 
 .DEFAULT: build
 
+# ====== Build ====== #
 .PHONY: build
 build:
 	bundle exec jekyll build
 
+.PHONY: watch
+watch:
+	bundle exec jekyll build --watch
+
+.PHONY: drafts
+drafts:
+	bundle exec jekyll build
+	bundle exec jekyll build --drafts --watch --incremental
+
+.PHONY: incr
+incr:
+	bundle exec jekyll build
+	bundle exec jekyll build --watch --incremental
+
+# ====== Install ====== #
 .PHONY: install
 install:
 	bundle install
@@ -23,20 +39,7 @@ update-bundle:
 update-npm:
 	npm update
 
-.PHONY: watch
-watch:
-	bundle exec jekyll build --watch
-
-.PHONY: drafts
-drafts:
-	bundle exec jekyll build
-	bundle exec jekyll build --drafts --watch --incremental
-
-.PHONY: incr
-incr:
-	bundle exec jekyll build
-	bundle exec jekyll build --watch --incremental
-
+# ====== Publish ====== #
 .PHONY: pub
 pub:
 	./scripts/publish.zsh
@@ -45,6 +48,11 @@ pub:
 tags:
 	./scripts/tag_and_publish.zsh $(tag)
 
+.PHONY: deploy-github
+deploy-github:
+	./scripts/deploy_github.zsh
+
+# ====== Write ====== #
 .PHONY: new
 new:
 	./scripts/new-post.swift
@@ -57,22 +65,20 @@ post-update:
 date:
 	./scripts/current-date-time.swift
 
+# ====== Utils ====== #
+.PHONY: open
+open:
+	nova .
+
 .PHONY: random
 random:
 	./scripts/random-post.swift
-
-.PHONY: deploy-github
-deploy-github:
-	./scripts/deploy_github.zsh
 
 .PHONY: image-optim
 image-optim:
 	./scripts/imageoptim.zsh $(files)
 
-.PHONY: open
-open:
-	nova .
-
+# ====== Preview ====== #
 .PHONY: safari
 safari:
 	open http://jessesquires.localhost
