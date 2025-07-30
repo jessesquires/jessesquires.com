@@ -4,29 +4,37 @@
 
 ErrorDocument 404 /404.html
 
+# ----------------
+# security headers
+# ----------------
+
+Header set X-Frame-Options "DENY"
+Header set X-Content-Type-Options "nosniff"
+Header set Referrer-Policy "strict-origin-when-cross-origin"
+
 # -------------
 # cache-control
 # -------------
 
 # one week for css and js assets
-<filesMatch "\.(css|js)$">
+<FilesMatch "\.(css|js)$">
 Header set Cache-Control "max-age=604800, public"
-</filesMatch>
+</FilesMatch>
 
 # two weeks for images
-<filesMatch "\.(jpg|jpeg|png|gif|ico)$">
+<FilesMatch "\.(jpg|jpeg|png|gif|ico)$">
 Header set Cache-Control "max-age=1209600, public"
-</filesMatch>
+</FilesMatch>
 
 # one month for fonts
-<filesMatch "\.(ttf|svg|eot|woff|woff2)$">
+<FilesMatch "\.(ttf|svg|eot|woff|woff2)$">
 Header set Cache-Control "max-age=2628000, public"
-</filesMatch>
+</FilesMatch>
 
 # never for archives or feeds (xml, json)
-<filesMatch "\.(zip|tar|dmg|xml|json)$">
+<FilesMatch "\.(zip|tar|dmg|xml|json)$">
 Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate, public"
-</filesMatch>
+</FilesMatch>
 
 # -------------
 # redirects for top-level pages
