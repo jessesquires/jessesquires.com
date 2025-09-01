@@ -21,7 +21,7 @@ jobs:
           gem --version
 
       - name: git checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       # https://github.com/ruby/setup-ruby
       - name: ruby setup
@@ -36,6 +36,7 @@ jobs:
 
       # https://github.com/peter-evans/create-pull-request
       - name: create pull request
+        id: pr1
         uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.PAT_GH_BOT_HAL_9000 }}
@@ -46,6 +47,12 @@ jobs:
           delete-branch: true
           reviewers: jessesquires
 
+      - name: enable automerge
+        if: steps.pr1.outputs.pull-request-operation == 'created'
+        run: gh pr merge --squash --auto "${{ steps.pr1.outputs.pull-request-number }}"
+        env:
+          GH_TOKEN: ${{ secrets.PAT_GH_BOT_HAL_9000 }}
+
   update-npm:
     name: Update npm
     runs-on: ubuntu-latest
@@ -54,7 +61,7 @@ jobs:
         run: npm --version
 
       - name: git checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       # https://github.com/actions/setup-node
       - name: npm setup
@@ -67,6 +74,7 @@ jobs:
 
       # https://github.com/peter-evans/create-pull-request
       - name: create pull request
+        id: pr2
         uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.PAT_GH_BOT_HAL_9000 }}
@@ -76,3 +84,9 @@ jobs:
           branch: automated/update-npm
           delete-branch: true
           reviewers: jessesquires
+
+      - name: enable automerge
+        if: steps.pr2.outputs.pull-request-operation == 'created'
+        run: gh pr merge --squash --auto "${{ steps.pr2.outputs.pull-request-number }}"
+        env:
+          GH_TOKEN: ${{ secrets.PAT_GH_BOT_HAL_9000 }}
