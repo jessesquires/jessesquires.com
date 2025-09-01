@@ -22,7 +22,7 @@ jobs:
           gem --version
 
       - name: git checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       # https://github.com/ruby/setup-ruby
       - name: ruby setup
