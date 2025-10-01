@@ -65,7 +65,7 @@ jobs:
 
       # https://github.com/actions/setup-node
       - name: npm setup
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           check-latest: true
 
