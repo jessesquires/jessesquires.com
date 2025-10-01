@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # https://github.com/actions/stale
-      - uses: actions/stale@v9
+      - uses: actions/stale@v10
         with:
           # debug-only: true
           any-of-labels: 'blog comments & questions'
