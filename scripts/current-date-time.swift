@@ -1,8 +1,4 @@
-#!/usr/bin/env DYLD_FRAMEWORK_PATH=/System/Library/Frameworks /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift
-
-/// NOTE: the above shebang is a workaround.
-/// See: https://github.com/apple/swift/issues/68785
-///      https://github.com/apple/swift/issues/68785#issuecomment-1904624571
+#!/usr/bin/swift
 
 /// Prints the current timestamp, formatted for Jekyll.
 /// Copies it and the update notice include to the clipboard.
@@ -34,4 +30,3 @@ NSPasteboard.general.clearContents()
 NSPasteboard.general.setString(text, forType: .string)
 print("Copied to clipboard!")
 print("✅ Done!")
-print("\n‼️  ⚠️  Has this bug be resolved yet? https://github.com/apple/swift/issues/68785\n")
