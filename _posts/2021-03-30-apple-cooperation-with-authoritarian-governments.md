@@ -3,7 +3,7 @@ layout: post
 categories: [essays]
 tags: [tech, politics, capitalism, apple]
 date: 2021-03-30T19:56:17-07:00
-date-updated: 2024-07-10T12:30:04-07:00
+date-updated: 2025-10-24T12:29:50-07:00
 title: Apple's cooperation with authoritarian governments
 ---
 
@@ -292,6 +292,26 @@ See also: [MacRumors](https://www.macrumors.com/2023/12/06/apple-governments-sur
 > Reportedly, VPN usage increased dramatically in Russia following the start of the war with Ukraine. At that point, Russian authorities blocked access to a number of Western social media sites.
 
 See also: [Michael Tsai](https://mjtsai.com/blog/2024/07/05/apple-removes-vpn-apps-from-russian-app-store/)
+
+##### October 2025 --- Apple removes multiple ICE reporting apps from the App Store
+
+[Pablo Manriquez, reporting for Migrant Insider](https://migrantinsider.com/p/scoop-apple-quietly-made-ice-agents):
+
+> Apple has quietly removed DeICER, a civic-reporting app used to log immigration enforcement activity, from its App Store after a law enforcement complaint — invoking a rule normally reserved for protecting marginalized groups from hate speech.
+
+See also: [Michael Tsai](https://mjtsai.com/blog/2025/10/10/deicer-removed-from-the-app-store/), [Daring Fireball](https://daringfireball.net/linked/2025/10/09/apple-app-store-deicer)
+
+[JOSEPH COX, report for 404 Media](https://www.404media.co/apple-banned-an-app-that-simply-archived-videos-of-ice-abuses/):
+
+> Apple removed an app for preserving TikToks, Instagram reels, news reports, and videos documenting abuses by ICE, 404 Media has learned. The app, called Eyes Up, differs from other banned apps such as ICEBlock which were designed to report sightings of ICE officials in real-time to warn local communities. Eyes Up, meanwhile, was more of an aggregation service pooling together information to preserve evidence in case the material is needed in the future in court.
+
+See also: [Michael Tsai](https://mjtsai.com/blog/2025/10/09/eyes-up-removed-from-the-app-store/), [Daring Fireball](https://daringfireball.net/linked/2025/10/09/apple-banned-eyes-up)
+
+[Business Insider](https://www.businessinsider.com/apple-iceblock-app-store-removed-2025-10):
+
+> Apple has removed ICEBlock, an app that allowed users to monitor and report the location of immigration enforcement officers, from the App Store.
+
+See also: [Michael Tsai](https://mjtsai.com/blog/2025/10/03/iceblock-removed-from-the-app-store/)
 
 {% include break.html %}
 
