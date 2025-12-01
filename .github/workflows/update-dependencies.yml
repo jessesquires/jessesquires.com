@@ -21,7 +21,7 @@ jobs:
           gem --version
 
       - name: git checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       # https://github.com/ruby/setup-ruby
       - name: ruby setup
@@ -61,7 +61,7 @@ jobs:
         run: npm --version
 
       - name: git checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       # https://github.com/actions/setup-node
       - name: npm setup
