@@ -15,18 +15,13 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
+  - vendor/
   # custom excludes
   - .gitignore
   - .ruby-version
   - Makefile
-  - Dangerfile
   - LICENSE
   - README.md
-  - assets/
   - package.json
   - package-lock.json
   - scripts/
