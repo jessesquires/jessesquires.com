@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Ruby version installed on NFSN.
-ruby '~> 3.2.2'
+ruby '~> 3.2.6'
 
 gem 'jekyll', '~> 4.0'
 gem 'jekyll-sitemap'
