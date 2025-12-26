@@ -2,13 +2,13 @@
 
 # ruby
 .bundle/
-vendor/bundle
+vendor/
 
 # jekyll
+_site/
 .jekyll-cache
 .jekyll-metadata
 .sass-cache
-_site/
 
 # swift playgrounds
 xcuserdata/
