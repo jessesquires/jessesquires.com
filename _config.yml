@@ -47,8 +47,23 @@ keep_files:
 # Site
 permalink: /blog/:year/:month/:day/:title/
 excerpt_separator: <!--excerpt-->
+
+# jekyll-sass-converter
+# https://github.com/jekyll/jekyll-sass-converter?tab=readme-ov-file#configuration-options
 sass:
   style: compressed
+  quiet_deps: true
+  # Silence various deprecation warnings from Bootstrap.
+  # This is a known issue and will likely be resolved in v6.
+  #
+  # See the following issues:
+  #   - https://github.com/twbs/bootstrap/issues/41915
+  #   - https://github.com/twbs/bootstrap/issues/40962
+  #   - https://github.com/twbs/bootstrap/issues/40849
+  #
+  # Sass Docs:
+  #   https://sass-lang.com/documentation/breaking-changes/import/
+  silence_deprecations: ['import', 'if-function', 'global-builtin', 'color-functions']
 
 # Metadata
 title: 'Jesse Squires'
