@@ -2,7 +2,7 @@
 
 # ruby
 .bundle/
-vendor/
+vendor/bundle
 
 # jekyll
 _site/
