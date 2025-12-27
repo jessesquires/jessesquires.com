@@ -51,7 +51,7 @@ With that said, here is my list of recommendations to get you started!
 - [Data & Society](https://datasociety.net). (Affiliated with Rosenblat and Marwick, above.) There's an enormous collection of research and reports from Data & Society. You can also follow them on social media, and subscribe to the mailing lists and podcasts. A couple of reports that I've read:
     - [Media Manipulation and Disinformation online](https://datasociety.net/library/media-manipulation-and-disinfo-online/), by Alice Marwick and Becca Lewis.
     - [Alternative Influence](https://datasociety.net/library/alternative-influence/), by Becca Lewis.
-<br/><br/>
+<br><br>
 - [Logic Magazine](https://logicmag.io/#issues).
 
 ### Tech and labor
@@ -59,11 +59,11 @@ With that said, here is my list of recommendations to get you started!
 - [Tech Workers Coalition](https://techworkerscoalition.org):
     - [Newsletter](https://news.techworkerscoalition.org), which we publish roughly every two weeks. There's a lot of good content in [the archives](https://news.techworkerscoalition.org/archive/) as well. The focus is on labor organizing in tech, workers' stories, labor history, critiques of the tech industry, and tech news as it pertains to labor and capital.
     - [Learning Clubs](https://sites.google.com/view/tech-workers-coalition/learning-club). When TWC was more active, we hosted various "Learning Club" meetups, a few of which I organized and led. The format consisted of readings to be completed (as much as you could), and discussion questions to consider. We would meet and discuss the readings. All of the materials are still [available on the site](https://sites.google.com/view/tech-workers-coalition/learning-club). Many topics cover labor history in general, like the [1934 San Francisco General Strike](https://sites.google.com/view/tech-workers-coalition/topics/1934-san-francisco-general-strike). Others cover current labor issues in the tech industry, like the increasing trend toward hiring [Temps, Vendors, and Contractors](https://sites.google.com/view/tech-workers-coalition/topics/temps-vendors-contractors-techs-contingent-workforce) instead of full-time employees. Going through these readings and discussion questions might be a cool thing to do with some friends or partner.
-<br/><br/>
+<br><br>
 - [Notes From Below](https://notesfrombelow.org). These issues in particular:
     - [Issue 2: Technology and The Worker](https://notesfrombelow.org/issue/technology-and-the-worker) (featuring TWC and Wendy Liu)
     - [Issue 3: The Worker and The Union](https://notesfrombelow.org/issue/the-worker-and-the-union)
-<br/><br/>
+<br><br>
 - [Collective Action in Tech](https://collectiveaction.tech), a media and research project to advance the tech workers movement. This provides current and historical perspectives and analysis of the labor movement in tech and tech activism. You can subscribe to their mailing list, and follow them on social media. They have an [impressive collection](https://data.collectiveaction.tech) of stories about workers organizing to take collection action in the tech industry.
 
 - [Workers for Workers](https://www.workersforworkers.org). Collections of essays written by workers for workers about their experiences in the workplace.
@@ -86,11 +86,11 @@ With that said, here is my list of recommendations to get you started!
     - [Work: capitalism, economics, resistance](https://crimethinc.com/books/work)
     - [No Wall They Can Build: A Guide to Borders & Migration Across North America.](https://crimethinc.com/books/no-wall-they-can-build): This is available for free as a PDF at that link, as well as physical book. Alternatively, it is available as an [audiobook podcast](https://crimethinc.com/podcasts/no-wall-they-can-build). As an introduction, you can read [Designed to Kill: Border Policy and How to Change It](https://crimethinc.com/2011/05/22/designed-to-kill-border-policy-and-how-to-change-it), an essay that preceded (and eventually expanded into) the book. You might be wondering, what do borders and migration have to do with capitalism? Well... everything, actually.
     - You can also subscribe and follow various things at [crimethinc.com](https://crimethinc.com). They have an extensive archive of [essays](https://crimethinc.com/library) and [zines](https://crimethinc.com/zines) critiquing capitalism, labor, and related topics.
-<br/><br/>
+<br><br>
 - [Prole.info collective](https://www.prole.info). Free books (PDF) on capitalism, housing/landlords, and work. If you prefer hard copies like me, you can order them through [PM Press](https://www.pmpress.org):
     - [Abolish Work](https://www.pmpress.org/index.php?l=product_detail&p=616)
     - [The Housing Monster](https://www.pmpress.org/index.php?l=product_detail&p=435)
-<br/><br/>
+<br><br>
 - [Labor Law for the Rank and Filer: Building Solidarity While Staying Clear of the Law](https://www.pmpress.org/index.php?l=product_detail&p=325) by Staughton Lynd and Daniel Gross.
 
 - [Why Work? Arguments for the Leisure Society](https://www.pmpress.org/index.php?l=product_detail&p=968), a collection of essays by various authors from various time periods, ranging from the 1930s to the present. It includes Graeber's *Bullshit Jobs* essay mentioned above, as well as an extract from the Prole.info collective titled *Work*.
@@ -126,7 +126,7 @@ With that said, here is my list of recommendations to get you started!
     - [The Case for Reparations](https://www.theatlantic.com/magazine/archive/2014/06/the-case-for-reparations/361631/)
     - [The Black Family in the Age of Mass Incarceration](https://www.theatlantic.com/magazine/archive/2015/10/the-black-family-in-the-age-of-mass-incarceration/403246/)
     - [My President Was Black](https://www.theatlantic.com/magazine/archive/2017/01/my-president-was-black/508793/)
-<br/><br/>
+<br><br>
 - [This Bridge Called My Back: Writings by Radical Women of Color](https://www.goodreads.com/book/show/313110.This_Bridge_Called_My_Back) edited by Cherríe L. Moraga and Gloria E. Anzaldúa.
 
 ### History

@@ -21,18 +21,18 @@ It is incumbent upon *cops themselves* to reject the senseless and racist violen
 
 Maybe the punk band [Anti-Flag](https://www.youtube.com/watch?v=Yu6tk1P2sHM) captured it best:
 
-> *State lies dressed up as evening news* <br/>
-> *We're tired of lies we want the truth!* <br/>
-> *Broadcast by corpses courting you* <br/>
-> *We're tired of lies we want the truth!* <br/>
-> *Most people they will never know* <br/>
-> *We're tired of lies we want the truth!* <br/>
+> *State lies dressed up as evening news* <br>
+> *We're tired of lies we want the truth!* <br>
+> *Broadcast by corpses courting you* <br>
+> *We're tired of lies we want the truth!* <br>
+> *Most people they will never know* <br>
+> *We're tired of lies we want the truth!* <br>
 >
-> *With you or against you?* <br/>
-> *Then I am against you because you're a...* <br/>
+> *With you or against you?* <br>
+> *Then I am against you because you're a...* <br>
 >
-> *Turncoat! Killer! Liar! Thief!* <br/>
-> *Criminal with protection of the law* <br/>
+> *Turncoat! Killer! Liar! Thief!* <br>
+> *Criminal with protection of the law* <br>
 
 {% include break.html %}
 

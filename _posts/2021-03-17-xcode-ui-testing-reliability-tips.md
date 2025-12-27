@@ -61,7 +61,7 @@ Thanks to [Peter Steinberger](https://mobile.twitter.com/steipete) for mentionin
 
 I have not encountered this issue, but it is good to be aware of. You can follow the same setup that I have described above. Instead of disabling animations, you can set `self.window.layer.speed`. Per the [`CAMediaTiming` docs](https://developer.apple.com/documentation/quartzcore/camediatiming/1427647-speed):
 
-> **speed**<br/>
+> **speed**<br>
 > Specifies how time is mapped to receiver’s time space from the parent time space.
 >
 > For example, if speed is 2.0 local time progresses twice as fast as parent time. Defaults to 1.0.

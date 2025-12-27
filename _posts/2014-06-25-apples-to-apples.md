@@ -71,34 +71,34 @@ Below are the results of running each program over 10 trials with 10,000 integer
 			<tr>
 				<th class="text-muted">
 					<em>T</em> = 10
-					<br />
+					<br>
 					<em>N</em> = 10,000
-					<br />
+					<br>
 					Debug
 				</th>
 				<th>Std lib sort</th>
-				<th>Quick sort<br/><code>O(n log n)</code></th>
-				<th>Heap sort<br/><code>O(n log n)</code></th>
-				<th>Insertion sort<br/><code>O(n<sup>2</sup>)</code></th>
-				<th>Selection sort<br/><code>O(n<sup>2</sup>)</code></th>
+				<th>Quick sort<br><code>O(n log n)</code></th>
+				<th>Heap sort<br><code>O(n log n)</code></th>
+				<th>Insertion sort<br><code>O(n<sup>2</sup>)</code></th>
+				<th>Selection sort<br><code>O(n<sup>2</sup>)</code></th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
 				<th>Objective-C <code>-O0</code></th>
-				<td><strike>0.015813 s</strike><br/>0.015732 s</td>
-				<td><strike>0.011393 s</strike><br/>0.011395 s</td>
-				<td><strike>0.023052 s</strike><br/>0.025252 s</td>
-				<td><strike>1.945385 s</strike><br/>1.931189 s</td>
-				<td><strike>3.745795 s</strike><br/>3.762144 s</td>
+				<td><strike>0.015813 s</strike><br>0.015732 s</td>
+				<td><strike>0.011393 s</strike><br>0.011395 s</td>
+				<td><strike>0.023052 s</strike><br>0.025252 s</td>
+				<td><strike>1.945385 s</strike><br>1.931189 s</td>
+				<td><strike>3.745795 s</strike><br>3.762144 s</td>
 			</tr>
 			<tr>
 				<th>Swift <code>-Onone</code></th>
-				<td><strike>1.460893 s</strike><br/>1.536891 s</td>
-				<td><strike>1.585898 s</strike><br/>1.633227 s</td>
-				<td><strike>4.498561 s</strike><br/>4.714571 s</td>
-				<td><strike>599.164323 s</strike><br/>625.810322 s</td>
-				<td><strike>507.968824 s</strike><br/>519.386646 s</td>
+				<td><strike>1.460893 s</strike><br>1.536891 s</td>
+				<td><strike>1.585898 s</strike><br>1.633227 s</td>
+				<td><strike>4.498561 s</strike><br>4.714571 s</td>
+				<td><strike>599.164323 s</strike><br>625.810322 s</td>
+				<td><strike>507.968824 s</strike><br>519.386646 s</td>
 			</tr>
 		</tbody>
 	</table>
@@ -111,34 +111,34 @@ Below are the results of running each program over 10 trials with 10,000 integer
 			<tr>
 				<th class="text-muted">
 					<em>T</em> = 10
-					<br />
+					<br>
 					<em>N</em> = 10,000
-					<br />
+					<br>
 					Release
 				</th>
 				<th>Std lib sort</th>
-				<th>Quick sort<br/><code>O(n log n)</code></th>
-				<th>Heap sort<br/><code>O(n log n)</code></th>
-				<th>Insertion sort<br/><code>O(n<sup>2</sup>)</code></th>
-				<th>Selection sort<br/><code>O(n<sup>2</sup>)</code></th>
+				<th>Quick sort<br><code>O(n log n)</code></th>
+				<th>Heap sort<br><code>O(n log n)</code></th>
+				<th>Insertion sort<br><code>O(n<sup>2</sup>)</code></th>
+				<th>Selection sort<br><code>O(n<sup>2</sup>)</code></th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
 				<th>Objective-C <code>-O3</code></th>
-				<td><strike>0.012037 s</strike><br/>0.012195 s</td>
-				<td><strike>0.010317 s</strike><br/>0.010893 s</td>
-				<td><strike>0.020318 s</strike><br/>0.019672 s</td>
-				<td><strike>1.777335 s</strike><br/>1.778275 s</td>
-				<td><strike>3.508259 s</strike><br/>3.521110 s</td>
+				<td><strike>0.012037 s</strike><br>0.012195 s</td>
+				<td><strike>0.010317 s</strike><br>0.010893 s</td>
+				<td><strike>0.020318 s</strike><br>0.019672 s</td>
+				<td><strike>1.777335 s</strike><br>1.778275 s</td>
+				<td><strike>3.508259 s</strike><br>3.521110 s</td>
 			</tr>
 			<tr>
 				<th>Swift <code>-O</code></th>
-				<td><strike>0.079272 s</strike><br/>0.019062 s</td>
-				<td><strike>0.072787 s</strike><br/>0.007888 s</td>
-				<td><strike>0.212094 s</strike><br/>0.057481 s</td>
-				<td><strike>28.431325 s</strike><br/>4.407984 s</td>
-				<td><strike>8.662720 s</strike><br/>7.028199 s</td>
+				<td><strike>0.079272 s</strike><br>0.019062 s</td>
+				<td><strike>0.072787 s</strike><br>0.007888 s</td>
+				<td><strike>0.212094 s</strike><br>0.057481 s</td>
+				<td><strike>28.431325 s</strike><br>4.407984 s</td>
+				<td><strike>8.662720 s</strike><br>7.028199 s</td>
 			</tr>
 		</tbody>
 	</table>
@@ -153,34 +153,34 @@ Below are the results of running each program over 10 trials with 10,000 integer
 			<tr>
 				<th class="text-muted">
 					<em>T</em> = 10
-					<br />
+					<br>
 					<em>N</em> = 10,000
-					<br />
+					<br>
 					Release
 				</th>
 				<th>Std lib sort</th>
-				<th>Quick sort<br/><code>O(n log n)</code></th>
-				<th>Heap sort<br/><code>O(n log n)</code></th>
-				<th>Insertion sort<br/><code>O(n<sup>2</sup>)</code></th>
-				<th>Selection sort<br/><code>O(n<sup>2</sup>)</code></th>
+				<th>Quick sort<br><code>O(n log n)</code></th>
+				<th>Heap sort<br><code>O(n log n)</code></th>
+				<th>Insertion sort<br><code>O(n<sup>2</sup>)</code></th>
+				<th>Selection sort<br><code>O(n<sup>2</sup>)</code></th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
 				<th>Objective-C <code>-Ofast</code></th>
-				<td><strike>0.012278 s</strike><br/>0.011828 s</td>
-				<td><strike>0.010448 s</strike><br/>0.010285 s</td>
-				<td><strike>0.020256 s</strike><br/>0.019763 s</td>
-				<td><strike>1.787421 s</strike><br/>1.776664 s</td>
-				<td><strike>3.582407 s</strike><br/>3.497402 s</td>
+				<td><strike>0.012278 s</strike><br>0.011828 s</td>
+				<td><strike>0.010448 s</strike><br>0.010285 s</td>
+				<td><strike>0.020256 s</strike><br>0.019763 s</td>
+				<td><strike>1.787421 s</strike><br>1.776664 s</td>
+				<td><strike>3.582407 s</strike><br>3.497402 s</td>
 			</tr>
 			<tr>
 				<th>Swift <code>-Ofast</code></th>
-				<td><strike>0.022573 s</strike><br/>0.001306 s</td>
-				<td><strike>0.005410 s</strike><br/>0.001426 s</td>
-				<td><strike>0.005903 s</strike><br/>0.002259 s</td>
-				<td><strike>0.997563 s</strike><br/>0.297713 s</td>
-				<td><strike>0.113045 s</strike><br/>0.068731 s</td>
+				<td><strike>0.022573 s</strike><br>0.001306 s</td>
+				<td><strike>0.005410 s</strike><br>0.001426 s</td>
+				<td><strike>0.005903 s</strike><br>0.002259 s</td>
+				<td><strike>0.997563 s</strike><br>0.297713 s</td>
+				<td><strike>0.113045 s</strike><br>0.068731 s</td>
 			</tr>
 		</tbody>
 	</table>

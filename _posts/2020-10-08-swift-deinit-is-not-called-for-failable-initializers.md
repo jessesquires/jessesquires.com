@@ -12,7 +12,7 @@ I was [never a fan of failable initializers]({% post_url 2014-10-22-swift-failab
 
 Surprisingly, in the [Swift Programming Language Guide](https://docs.swift.org/swift-book/) the sections on [Failable Initializers](https://docs.swift.org/swift-book/LanguageGuide/Initialization.html#ID224), [Deinitialization](https://docs.swift.org/swift-book/LanguageGuide/Deinitialization.html), and [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html#) do not mention this edge case where `deinit` will not be called. At first glance, it is quite unintuitive &mdash; shouldn't `deinit` *always* get called? After you learn why `deinit` may not be called, it makes sense, but it is not obvious and can lead to incorrect code. Because of this, I think it should be highlighted in the text as a "note" or a "warning" like so:
 
-> <small><b>NOTE</b></small><br/>
+> <small><b>NOTE</b></small><br>
 > If you return `nil` from a failable initializer, `init?()`, or if you throw an error from a throwing initializer, `init() throws`, then `deinit` will **not** get called. This means you must clean up any manually allocated memory or other resources *before* you return `nil` or `throw`.
 
 As dangerous as this may seem, it is correct behavior. It is not memory-safe to call `deinit` if the object (or any part of the hierarchy) is uninitialized. Upon realizing this, it is trivial to come up with examples where calling `deinit` would crash after returning `nil` from `init?()` or throwing an error from `init() throws`.
@@ -110,17 +110,17 @@ class ClassWrapper {
 
 The same discussion, though more concise, also took place [on this Twitter thread](https://twitter.com/chriseidhof/status/692003288804413440) on the same day, when Chris posted about what he found. Doug [also replied there](https://twitter.com/dgregor79/status/692005967467163648).
 
-> *26 Jan 2016* <br/>
-> [**@chriseidhof**](https://twitter.com/chriseidhof/status/692003288804413440) <br/>
+> *26 Jan 2016* <br>
+> [**@chriseidhof**](https://twitter.com/chriseidhof/status/692003288804413440) <br>
 > It looks like Swift 2.2 doesn't call deinit when you return nil from a failable initializer. That looks dangerous. Is this expected?
 
-> [**@dgregor79**](https://twitter.com/dgregor79/status/692005967467163648) <br/>
+> [**@dgregor79**](https://twitter.com/dgregor79/status/692005967467163648) <br>
 > it's correct behavior, because it's not memory-safe to call deinit if any part of the hierarchy is uninitialized
 
-> [**@chriseidhof**](https://twitter.com/chriseidhof/status/692006263576731649) <br/>
+> [**@chriseidhof**](https://twitter.com/chriseidhof/status/692006263576731649) <br>
 > right. But it's a subtle non-obvious thing, now you can e.g. alloc something without the corresponding free if you return nil.
 
-> [**@dgregor79**](https://twitter.com/dgregor79/status/692048367568887809) <br/>
+> [**@dgregor79**](https://twitter.com/dgregor79/status/692048367568887809) <br>
 > one has to be very careful if you're explicitly managing resources (via deinit) and you have throwing/failing initializers.
 
 Notably, Doug also mentions that the same edge case exists for throwing initializers in this last tweet.
@@ -129,13 +129,13 @@ Notably, Doug also mentions that the same edge case exists for throwing initiali
 
 Now, let's return to 2020. About a month ago our friend [Peter Steinberger](https://steipete.me) discovered this again.
 
-> *24 Aug 2020* <br/>
-> [**@steipete**](https://mobile.twitter.com/steipete/status/1297917648102195200) <br/>
+> *24 Aug 2020* <br>
+> [**@steipete**](https://mobile.twitter.com/steipete/status/1297917648102195200) <br>
 > Is deinit called if the initializer is failable?
 
 It brought me joy to see [Doug Gregor come to the rescue again](https://mobile.twitter.com/dgregor79/status/1297919970005811200) with the answer, over **four years later**. &#x1F602;
 
-> [**@dgregor79**](https://mobile.twitter.com/dgregor79/status/1297919970005811200) <br/>
+> [**@dgregor79**](https://mobile.twitter.com/dgregor79/status/1297919970005811200) <br>
 > That’s correct. If an initializer throws or fails, the initialized stored properties of the partially-constructed self will be torn down but the deinit will not be called (because that would violate memory safety).
 
 ### Conclusion

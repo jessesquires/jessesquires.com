@@ -44,16 +44,16 @@ The final row in each table is the difference in speed of Swift compared to Obje
 			<tr>
 				<th class="text-muted">
 					<em>T</em> = 10
-					<br />
+					<br>
 					<em>N</em> = 10,000
-					<br />
+					<br>
 					Debug
 				</th>
 				<th>Std lib sort</th>
-				<th>Quick sort<br/><code>O(n log n)</code></th>
-				<th>Heap sort<br/><code>O(n log n)</code></th>
-				<th>Insertion sort<br/><code>O(n<sup>2</sup>)</code></th>
-				<th>Selection sort<br/><code>O(n<sup>2</sup>)</code></th>
+				<th>Quick sort<br><code>O(n log n)</code></th>
+				<th>Heap sort<br><code>O(n log n)</code></th>
+				<th>Insertion sort<br><code>O(n<sup>2</sup>)</code></th>
+				<th>Selection sort<br><code>O(n<sup>2</sup>)</code></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -94,16 +94,16 @@ When not optimized, Swift is nothing to write home about. You can see that Objec
 			<tr>
 				<th class="text-muted">
 					<em>T</em> = 10
-					<br />
+					<br>
 					<em>N</em> = 10,000
-					<br />
+					<br>
 					Release
 				</th>
 				<th>Std lib sort</th>
-				<th>Quick sort<br/><code>O(n log n)</code></th>
-				<th>Heap sort<br/><code>O(n log n)</code></th>
-				<th>Insertion sort<br/><code>O(n<sup>2</sup>)</code></th>
-				<th>Selection sort<br/><code>O(n<sup>2</sup>)</code></th>
+				<th>Quick sort<br><code>O(n log n)</code></th>
+				<th>Heap sort<br><code>O(n log n)</code></th>
+				<th>Insertion sort<br><code>O(n<sup>2</sup>)</code></th>
+				<th>Selection sort<br><code>O(n<sup>2</sup>)</code></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -144,16 +144,16 @@ If you recall the results from the [previous post](/apples-to-apples/), then thi
 			<tr>
 				<th class="text-muted">
 					<em>T</em> = 10
-					<br />
+					<br>
 					<em>N</em> = 10,000
-					<br />
+					<br>
 					Release
 				</th>
 				<th>Std lib sort</th>
-				<th>Quick sort<br/><code>O(n log n)</code></th>
-				<th>Heap sort<br/><code>O(n log n)</code></th>
-				<th>Insertion sort<br/><code>O(n<sup>2</sup>)</code></th>
-				<th>Selection sort<br/><code>O(n<sup>2</sup>)</code></th>
+				<th>Quick sort<br><code>O(n log n)</code></th>
+				<th>Heap sort<br><code>O(n log n)</code></th>
+				<th>Insertion sort<br><code>O(n<sup>2</sup>)</code></th>
+				<th>Selection sort<br><code>O(n<sup>2</sup>)</code></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -198,16 +198,16 @@ The benchmarks above were gathered with `N = 10,000` to be consistent with the p
 			<tr>
 				<th class="text-muted">
 					<em>T</em> = 10
-					<br />
+					<br>
 					<em>N</em> = 100,000
-					<br />
+					<br>
 					Release
 				</th>
 				<th>Std lib sort</th>
-				<th>Quick sort<br/><code>O(n log n)</code></th>
-				<th>Heap sort<br/><code>O(n log n)</code></th>
-				<th>Insertion sort<br/><code>O(n<sup>2</sup>)</code></th>
-				<th>Selection sort<br/><code>O(n<sup>2</sup>)</code></th>
+				<th>Quick sort<br><code>O(n log n)</code></th>
+				<th>Heap sort<br><code>O(n log n)</code></th>
+				<th>Insertion sort<br><code>O(n<sup>2</sup>)</code></th>
+				<th>Selection sort<br><code>O(n<sup>2</sup>)</code></th>
 			</tr>
 		</thead>
 		<tbody>

@@ -48,7 +48,7 @@ Feel free to [contact me]({% link contact.md %}) about speaking at your event!
                 <td>{{ talk.date }}</td>
                 <td><i>{{ talk.title }}</i></td>
                 <td><a href="{{ event.link }}" class="text-decoration-none">{{ event.name }}</a></td>
-                <td><a href="{{ location.link }}" class="text-decoration-none">{{ location.name }}</a><br/>{{ location.city }}</td>
+                <td><a href="{{ location.link }}" class="text-decoration-none">{{ location.name }}</a><br>{{ location.city }}</td>
                 <td>
                     <ul class="list-unstyled list-group list-group-flush text-center">
                     {% if links.slides %}<li><a href="{{ links.slides }}" class="text-decoration-none">slides</a></li>{% endif %}

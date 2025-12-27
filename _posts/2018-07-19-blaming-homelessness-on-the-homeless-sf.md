@@ -43,31 +43,31 @@ The problem is not the shit on the sidewalks. The problem is that there are thou
 
 What always comes to my mind is the song [*Land* by Fifteen](https://open.spotify.com/track/75UWHCVxZd9dJ1XSSQM0fS?si=yfa56tJKQeq7buON1Py2aQ), an 80s-90s era punk band from Berkeley. East Bay punk will never let you down. Jeff Ott lived on the street for a number of years, and his lyrics get directly to the point.
 
-> The homeless are a problem for only one reason<br/>
-> Their presence raises the question<br/>
-> Who owns the Land?<br/>
-> Who owns the Land?<br/>
+> The homeless are a problem for only one reason<br>
+> Their presence raises the question<br>
+> Who owns the Land?<br>
+> Who owns the Land?<br>
 >
 > [...]
 >
-> This morning I was awoken, by a man with a hand gun<br/>
-> He's got a book of rules that says, I ain't got no right to sleep<br/>
+> This morning I was awoken, by a man with a hand gun<br>
+> He's got a book of rules that says, I ain't got no right to sleep<br>
 >
-> This morning I was awoken, by a man with a hand gun<br/>
-> He's got a book of rules that says, I ain't got no right to be<br/>
+> This morning I was awoken, by a man with a hand gun<br>
+> He's got a book of rules that says, I ain't got no right to be<br>
 >
-> Who owns the Land?<br/>
-> Who owns the Land?<br/>
+> Who owns the Land?<br>
+> Who owns the Land?<br>
 >
 > [...]
 >
-> Is there a connection<br/>
-> Who owns the Land?<br/>
-> To my daily eviction<br/>
-> Who owns the Land?<br/>
-> And the extermination<br/>
-> Who owns the Land?<br/>
-> Of the Native American<br/>
+> Is there a connection<br>
+> Who owns the Land?<br>
+> To my daily eviction<br>
+> Who owns the Land?<br>
+> And the extermination<br>
+> Who owns the Land?<br>
+> Of the Native American<br>
 >
 > [...]
 

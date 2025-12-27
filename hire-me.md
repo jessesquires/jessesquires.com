@@ -10,7 +10,7 @@ Need an iOS developer? Look no further! I am available for consulting, contracti
 **<i class="bi bi-star-fill"></i> Interested in working with me?** I typically get booked quickly,
 so I recommend reaching out sooner rather than later. Please be as detailed as possible about your
 project and what you are looking for.
-<br/><br/>
+<br><br>
 <i class="bi bi-envelope-fill"></i> You can **<a href="{% link contact.md %}" class="alert-link">contact me here</a>.**
 </div>
 
@@ -44,7 +44,7 @@ I've worked at a number of different companies as a full-time software engineer,
         <p>
             <i class="bi bi-star-fill text-body-secondary"></i>
             <b><a href="{{ each.link }}">{{ each.name }}</a></b> &mdash; <i>{{ each.company }}</i>, {{ each.year }}
-            <br/>
+            <br>
             <span class="fw-light">{{ each.position }}</span>
         </p>
         <blockquote>"{{ each.testimonial }}"</blockquote>

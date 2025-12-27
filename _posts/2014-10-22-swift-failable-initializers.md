@@ -15,7 +15,7 @@ Swift is still young and ever-changing. With each release, we have seen dozens o
 
 The idea is simple &mdash; sometimes objects fail to successfully initialize and we need a way to handle this. If you have ever read the iOS or OS X [documentation](https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSObject_Class/index.html#//apple_ref/occ/instm/NSObject/init) for the Cocoa frameworks, then you have often had the pleasure of reading method descriptions similar to the following:
 
-> **Return Value** <br />
+> **Return Value** <br>
 > An initialized object, or `nil` if an object could not be created for some reason that would not result in an exception.
 
 This is commonplace in Objective-C. When instantiating classes in the Cocoa frameworks, many of them may return `nil` instead of an initialized object. We are used to this. But Swift is different. Swift guarantees that instances will not be `nil`, with the exception of [optionals](https://developer.apple.com/library/mac/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-XID_467). The syntactic difference for a failable initializer &mdash; from `init()` to `init?()` &mdash; is much more subtle than its implications.

@@ -41,7 +41,7 @@ Per [the documentation](https://developer.apple.com/documentation/uikit/uicollec
 
 > [...]
 >
-> **completion**<br/>
+> **completion**<br>
 > A closure to execute when the animations are complete. This closure has no return value and takes no parameters. The system calls this closure from the main queue.
 >
 > [...]

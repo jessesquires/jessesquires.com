@@ -28,14 +28,14 @@ In closing the chapter, Bey writes:
 
 > Racial and gendered capitalism rest at the heart of the will to possess and privatize the ownership of possessable things. Thus, anarchism demands its abolition, not a conciliatory reform, for "it is impossible to reform the system of racial capitalism." The capitalist demand for property and its ownership by those in power recognizes only gluttony, and the necessity for exploitation to maximize that gluttony's expansion. This theft is of the first order, and to move toward anarchic life is to steal on the second order, to steal back and let free what is unownable. Indeed, property and capitalism have deemed this stealing back a negatively connoted theft without recognition of its own theft. But we are on to that ol' tired smokescreen. We know what's really up. We've known for a while. We've known, in the final instance, that as the seventeeth-century folk poem goes,
 >
-> The law locks up the man or woman<br/>
-> Who steals the goose off the common<br/>
-> But leaves the greater villain loose<br/>
-> Who steals the common from the goose.<br/>
+> The law locks up the man or woman<br>
+> Who steals the goose off the common<br>
+> But leaves the greater villain loose<br>
+> Who steals the common from the goose.<br>
 >
-> The poor wretched don't escape<br/>
-> If they conspire the law to break;<br/>
-> This must be so but they endure<br/>
-> Those who conspire to make the law.<br/>
+> The poor wretched don't escape<br>
+> If they conspire the law to break;<br>
+> This must be so but they endure<br>
+> Those who conspire to make the law.<br>
 
 Early in US history, only white men who owned property were allowed to vote. While property ownership is no longer a prerequisite for voting, it remains a tool of oppression and exploitation under capitalism. When you begin to understand the idea of property through this lens, rather than how capitalism has conditioned us to think of (and protect) private property, you begin to uncover how the system perpetuates itself and its injustices. Understanding the historical context and inquiring into the current role of property in our society opens the door to a deeper understanding of its function within capitalism.

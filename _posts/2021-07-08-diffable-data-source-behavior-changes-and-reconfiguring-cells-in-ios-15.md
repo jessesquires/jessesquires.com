@@ -93,10 +93,10 @@ If there is no existing cell (for your diffable identifier or for your index pat
 >
 > Gets the cell object at the index path you specify.
 >
-> **Return Value**<br/>
+> **Return Value**<br>
 > The cell object at the corresponding index path. In versions of iOS earlier than iOS 15, this method returns `nil` if the cell isn't visible or if `indexPath` is out of range. In iOS 15 and later, this method returns a non-`nil` cell if the collection view retains a prepared cell at the specified index path, even if the cell isn't currently visible.
 >
-> **Discussion**<br/>
+> **Discussion**<br>
 > In iOS 15 and later, the collection view retains a prepared cell in the following situations:
 > - Cells that the collection view prefetches and retains in its cache of prepared cells, but that aren't visible because the collection view hasn't displayed them yet.
 > - Cells that the collection view finishes displaying and continues to retain in its cache of prepared cells because they remain near the visible region and might scroll back into view.

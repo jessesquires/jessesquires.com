@@ -34,34 +34,34 @@ Below are the results of running each program over 20 trials with 100,000 intege
 			<tr>
 				<th class="text-muted">
 					<em>T</em> = 20
-					<br />
+					<br>
 					<em>N</em> = 100,000
-					<br />
+					<br>
 					Release
 				</th>
 				<th>Std lib sort</th>
-				<th>Quick sort<br/><code>O(n log n)</code></th>
-				<th>Heap sort<br/><code>O(n log n)</code></th>
-				<th>Insertion sort<br/><code>O(n<sup>2</sup>)</code></th>
-				<th>Selection sort<br/><code>O(n<sup>2</sup>)</code></th>
+				<th>Quick sort<br><code>O(n log n)</code></th>
+				<th>Heap sort<br><code>O(n log n)</code></th>
+				<th>Insertion sort<br><code>O(n<sup>2</sup>)</code></th>
+				<th>Selection sort<br><code>O(n<sup>2</sup>)</code></th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
 				<th>C <code>-O3</code></th>
-				<td>0.020853 s<br /><span class="text-muted">(&plusmn; 0.000191)</span></td>
-				<td>0.011243 s<br /><span class="text-muted">(&plusmn; 0.000042)</span></td>
-				<td>0.014909 s<br /><span class="text-muted">(&plusmn; 0.000360)</span></td>
-				<td>7.575798 s<br /><span class="text-muted">(&plusmn; 0.016685)</span></td>
-				<td>6.981794 s<br /><span class="text-muted">(&plusmn; 0.004399)</span></td>
+				<td>0.020853 s<br><span class="text-muted">(&plusmn; 0.000191)</span></td>
+				<td>0.011243 s<br><span class="text-muted">(&plusmn; 0.000042)</span></td>
+				<td>0.014909 s<br><span class="text-muted">(&plusmn; 0.000360)</span></td>
+				<td>7.575798 s<br><span class="text-muted">(&plusmn; 0.016685)</span></td>
+				<td>6.981794 s<br><span class="text-muted">(&plusmn; 0.004399)</span></td>
 			</tr>
 			<tr>
 				<th>Swift <code>-O</code></th>
-				<td>0.014114 s<br /><span class="text-muted">(&plusmn; 0.000413)</span></td>
-				<td>0.016745 s<br /><span class="text-muted">(&plusmn; 0.000202)</span></td>
-				<td>0.042325 s<br /><span class="text-muted">(&plusmn; 0.003881)</span></td>
-				<td>33.819305 s<br /><span class="text-muted">(&plusmn; 0.120471)</span></td>
-				<td>25.255743 s<br /><span class="text-muted">(&plusmn; 0.084152)</span></td>
+				<td>0.014114 s<br><span class="text-muted">(&plusmn; 0.000413)</span></td>
+				<td>0.016745 s<br><span class="text-muted">(&plusmn; 0.000202)</span></td>
+				<td>0.042325 s<br><span class="text-muted">(&plusmn; 0.003881)</span></td>
+				<td>33.819305 s<br><span class="text-muted">(&plusmn; 0.120471)</span></td>
+				<td>25.255743 s<br><span class="text-muted">(&plusmn; 0.084152)</span></td>
 			</tr>
 			<tr class="info text-info">
 				<th>Difference</th>
@@ -88,34 +88,34 @@ Unexpectedly, **Swift outperforms C** for the standard library sort. This may re
 			<tr>
 				<th class="text-muted">
 					<em>T</em> = 20
-					<br />
+					<br>
 					<em>N</em> = 100,000
-					<br />
+					<br>
 					Release
 				</th>
 				<th>Std lib sort</th>
-				<th>Quick sort<br/><code>O(n log n)</code></th>
-				<th>Heap sort<br/><code>O(n log n)</code></th>
-				<th>Insertion sort<br/><code>O(n<sup>2</sup>)</code></th>
-				<th>Selection sort<br/><code>O(n<sup>2</sup>)</code></th>
+				<th>Quick sort<br><code>O(n log n)</code></th>
+				<th>Heap sort<br><code>O(n log n)</code></th>
+				<th>Insertion sort<br><code>O(n<sup>2</sup>)</code></th>
+				<th>Selection sort<br><code>O(n<sup>2</sup>)</code></th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
 				<th>C <code>-Ofast</code></th>
-				<td>0.020861 s<br /><span class="text-muted">(&plusmn; 0.000216)</span></td>
-				<td>0.011245 s<br /><span class="text-muted">(&plusmn; 0.000044)</span></td>
-				<td>0.014932 s<br /><span class="text-muted">(&plusmn; 0.000308)</span></td>
-				<td>7.578673 s<br /><span class="text-muted">(&plusmn; 0.012784)</span></td>
-				<td>6.985793 s<br /><span class="text-muted">(&plusmn; 0.004598)</span></td>
+				<td>0.020861 s<br><span class="text-muted">(&plusmn; 0.000216)</span></td>
+				<td>0.011245 s<br><span class="text-muted">(&plusmn; 0.000044)</span></td>
+				<td>0.014932 s<br><span class="text-muted">(&plusmn; 0.000308)</span></td>
+				<td>7.578673 s<br><span class="text-muted">(&plusmn; 0.012784)</span></td>
+				<td>6.985793 s<br><span class="text-muted">(&plusmn; 0.004598)</span></td>
 			</tr>
 			<tr>
 				<th>Swift <code>-Ounchecked</code></th>
-				<td>0.009508 s<br /><span class="text-muted">(&plusmn; 0.000367)</span></td>
-				<td>0.011953 s<br /><span class="text-muted">(&plusmn; 0.000603)</span></td>
-				<td>0.033006 s<br /><span class="text-muted">(&plusmn; 0.002562)</span></td>
-				<td>30.831836 s<br /><span class="text-muted">(&plusmn; 0.057725)</span></td>
-				<td>9.660987 s<br /><span class="text-muted">(&plusmn; 0.078939)</span></td>
+				<td>0.009508 s<br><span class="text-muted">(&plusmn; 0.000367)</span></td>
+				<td>0.011953 s<br><span class="text-muted">(&plusmn; 0.000603)</span></td>
+				<td>0.033006 s<br><span class="text-muted">(&plusmn; 0.002562)</span></td>
+				<td>30.831836 s<br><span class="text-muted">(&plusmn; 0.057725)</span></td>
+				<td>9.660987 s<br><span class="text-muted">(&plusmn; 0.078939)</span></td>
 			</tr>
 			<tr class="info text-info">
 				<th>Difference</th>

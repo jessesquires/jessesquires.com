@@ -196,9 +196,9 @@ Swimply's founders were no amateurs. Clearly taking cues from the singular trium
 
 Unless you live in Silicon Valley.
 
-<br/>
+<br>
 {% include break.html %}
-<br/>
+<br>
 
 While all of the above products and companies are *very real* and *very humorous*, there is little to laugh about when critiquing the oppressive power structures that control the tech industry and serve to perpetuate systemic inequalities and defend white supremacy. Look no further than Silicon Valley's own backyard, where there exists [the highest density of billionaires](https://www.sfgate.com/bayarea/article/billionaires-San-Francisco-world-report-wealth-x-13832316.php) as well as the [third largest population of people experiencing homelessness](http://www.bayareaeconomy.org/files/pdf/Homelessness_Report_2019_web.pdf) in the entire country.
 

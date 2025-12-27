@@ -10,12 +10,12 @@ entries:
     img:
       name: school-ue.png
       title: University of Evansville
-    description: "Mathematics minor, graduated Cum Laude, GPA 3.56.<br/>Awards, scholarships, and notable activities listed below."
+    description: "Mathematics minor, graduated Cum Laude, GPA 3.56.<br>Awards, scholarships, and notable activities listed below."
     bullets:
-      - "Senior Design Award in Computer Science, 2012. <br/>*Awarded for best senior project
+      - "Senior Design Award in Computer Science, 2012. <br>*Awarded for best senior project
         in Computer Science, judged by local industry members and university professors.*"
       - "Class of 1927 Golden Anniversary Award in Engineering and Computer Science, 2012.
-        <br/>*Awarded to one student for Outstanding Leadership and Service to the Campus
+        <br>*Awarded to one student for Outstanding Leadership and Service to the Campus
         Community at UE, nominated by the dean of the College for Engineering and Computer
         Science.*"
       - "Dean's List, 2008-2012"

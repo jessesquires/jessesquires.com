@@ -45,7 +45,7 @@ Serendipitously, I received the following message **today**. This is a perfect i
 >
 > I’m `<redacted 1>` reaching out to you from Jobspring Partners. I came across your resume while searching online for PHP developers near San Francisco and was eager to get in touch.  You have a really impressive background in web development, and I have one role in particular for which I believe you’d be a good fit. You’d be working with teachers to develop digital resource tools for students, providing their millions of users with access to learning materials. The company is looking for someone with expertise in PHP tech, which you appear to have in abundance. We've place candidates there before and have heard nothing but good things since.  I’d love to tell you more about this position and also open up a discussion about all the exciting things going on in the San Francisco market for developers. Are you free today or tomorrow for a quick call?
 >
-> Best, <br/>
+> Best, <br>
 > `<redacted 2>`
 
 Firstly, note the two redactions. **These were two different names.** This person introduced themselves with one name, and signed with a completely different name. This is the beauty in life that wakes me up each morning. I do love pasta, but not copy-pasta. Secondly, if anyone has seen my "impressive background in web development" lying around, please send it back to me along with my "expertise in PHP." LAMP stack for an iOS developer? WAT.
