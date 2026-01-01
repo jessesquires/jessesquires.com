@@ -37,7 +37,7 @@ jobs:
       # https://github.com/peter-evans/create-pull-request
       - name: create pull request
         id: pr1
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           token: ${{ secrets.PAT_GH_BOT_HAL_9000 }}
           commit-message: "[automated] update bundle dependencies"
@@ -75,7 +75,7 @@ jobs:
       # https://github.com/peter-evans/create-pull-request
       - name: create pull request
         id: pr2
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           token: ${{ secrets.PAT_GH_BOT_HAL_9000 }}
           commit-message: "[automated] update npm dependencies"
