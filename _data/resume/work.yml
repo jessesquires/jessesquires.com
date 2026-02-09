@@ -23,9 +23,8 @@ entries:
       title: Duolingo
     description: >
       Returned to Duolingo as an independent contractor after some time away. (See below.)
-      I worked on the main iOS app under the 'User Delight' team (again)
-      as well as the 'Client Architecture' and 'Engineering Studio' teams.
-      I reported to Peter Chapman.
+      I worked on the main iOS app under various teams: User Delight, Engineering Studio, Client Architecture, and iOS Foundations.
+      I reported to Peter Chapman, Doug Crossley, and Chris Lock.
     bullets:
       - "Implemented a custom main thread watchdog for tracking and logging excessive work on the main thread."
       - "Identified and resolved various performance-related issues. Superfluous disk access, excessive networking, etc."
@@ -38,6 +37,10 @@ entries:
       - "Integrated my open source library, [ReactiveCollectionsKit](https://github.com/jessesquires/ReactiveCollectionsKit), to standardize how lists and collections are built across the entire app."
       - "Discovered and resolved significant performance bugs pertaining to frequent disk access on the main thread. Wrote a new component for managing files on disk for all other teams to use to prevent future issues from reocurring."
       - "Worked on and developed strategies for incrementally migrating to Swift Structured Concurrency."
+      - "Lead effort to completely remove remaining legacy Objective-C code and migrate legacy components to Swift.
+         Shipped migrated components behind experiments to ensure no regressions. Leveraged AI to assist with refactoring and translation."
+      - "Improved core networking infrastructure by implementing more robust retry strategies and better detection of network reachability, in particular when connected to captive portal wifi networks."
+      - "Lead project to migrate core infrastructure off of legacy manual JSON parsing in favor of using Swift's compiler-synthesized parsing implementations via Codable."
 
   - title: Independent Contractor (iOS)
     organization: Causal Labs
