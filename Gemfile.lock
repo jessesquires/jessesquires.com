@@ -96,8 +96,5 @@ DEPENDENCIES
   jekyll-email-protect
   jekyll-sitemap
 
-RUBY VERSION
-  ruby 3.2.6
-
 BUNDLED WITH
   4.0.17
